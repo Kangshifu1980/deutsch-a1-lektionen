@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 17</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 8mm 13mm 4mm 13mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.2; font-size: 11px; }
+.compact .doc-header { padding-bottom: 3px; margin-bottom: 5px; }
+.compact .section-title { margin: 5px 0 3px 0; }
+.compact table { margin-bottom: 3px; }
+.compact table.vocab th, .compact table.vocab td { padding: 2px 5px; }
+.compact .gram-box { padding: 4px 8px; margin-bottom: 3px; }
+.compact .tip-box { padding: 3px 7px; margin: 2px 0; }
+.compact .warn-box { padding: 3px 7px; margin: 2px 0 5px 0; }
+.compact .ubung-header { padding: 2px 8px; }
+.compact .ubung-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .fill-line { margin-bottom: 1px; }
+.compact .footer { margin-top: 3px; padding-top: 2px; }
+.compact .phon-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .kultur-box { padding: 4px 9px; margin: 3px 0 5px 0; }
+.compact .dialog-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .lese-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .mc-block { margin-bottom: 3px; }
+.compact .mc-optionen { margin-bottom: 4px; }
+.compact .ha-box { padding: 4px 9px; }
+.compact .antworten { padding: 4px 9px; }
+.compact .wiederholung-box { padding: 4px 9px; margin-bottom: 5px; }
+.compact .karten-grid { margin-top: 3px; gap: 6px; }
+.compact .sprech-karte { padding: 5px 7px; }
+.compact .sprech-karte .karte-num { padding: 1px 7px; margin-bottom: 3px; }
+.compact .sprech-karte .wort-pill { font-size: 11.5px; padding: 2px 5px; margin-bottom: 3px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 3px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 3px; }
+.compact .game-header { padding: 2px 8px; }
+.compact .game-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .wuerfel-grid { margin: 3px 0 4px 0; gap: 6px; }
+.compact .wuerfel-spalte { padding: 4px 6px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .prompt-tag.satz { background: #fef3c7; color: #92400e; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .game-header: Spielelement (wiederverwendet aus L13-L16) ===== */
+.game-header { background: #ea580c; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.game-body { border: 0.5px solid #fdba74; border-top: none; border-radius: 0 0 5px 5px; padding: 6px 8px; margin-bottom: 4px; background: #fff7ed; }
+.game-body .instr-de { font-size: 10px; color: #7c2d12; font-style: italic; }
+.game-body .instr-vn { font-size: 9.5px; color: #c2410c; font-style: italic; margin-bottom: 4px; }
+
+/* ===== .wuerfel-box: Würfel-Legende (wiederverwendet aus L12/L13/L15) ===== */
+.wuerfel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 4px 0 6px 0; }
+.wuerfel-spalte { background: white; border: 1px solid #fdba74; border-radius: 8px; padding: 6px 8px; }
+.wuerfel-spalte .ws-title { font-size: 9.5px; font-weight: 700; color: #9a3412; text-align: center; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.3px; }
+.wuerfel-zeile { display: flex; align-items: center; gap: 5px; font-size: 10px; margin-bottom: 2px; }
+.wuerfel-zahl { display: inline-flex; align-items: center; justify-content: center; width: 15px; height: 15px; background: #ea580c; color: white; font-weight: 700; font-size: 9px; border-radius: 4px; flex-shrink: 0; }
+.wuerfel-kombi { display: flex; align-items: center; gap: 6px; font-size: 10.5px; margin-bottom: 3px; flex-wrap: wrap; }
+.wuerfel-kombi .wk-num { font-weight: 700; color: #64748b; min-width: 14px; }
+.wuerfel-kombi .wk-set { display: inline-flex; gap: 3px; }
+.wortsalat-arrow { color: #94a3b8; font-weight: 700; }
+
+/* ===== .wetter-vergleich: farbcodierte 3-Spalten-Vergleichstabelle (neu in L17) ===== */
+table.wetter-vergleich th, table.wetter-vergleich td { font-size: 11px; padding: 5px 8px; line-height: 1.5; }
+table.wetter-vergleich th.col-verb { background: #bfdbfe; color: #1e3a8a; }
+table.wetter-vergleich td.col-verb { background: #eff6ff; }
+table.wetter-vergleich th.col-adj { background: #fde68a; color: #92400e; }
+table.wetter-vergleich td.col-adj { background: #fffbeb; }
+table.wetter-vergleich th.col-nomen { background: #bbf7d0; color: #14532d; }
+table.wetter-vergleich td.col-nomen { background: #f0fdf4; }
+.compact table.wetter-vergleich th, .compact table.wetter-vergleich td { padding: 4px 7px; }
+</style>
+</head>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Aussprache + Lernziele + Wortschatz Wetter + Wortschatz Jahreszeiten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 17</h1>
+      <h2>Das Wetter</h2>
+      <h2>Thời tiết</h2>
+    </div>
+    <div class="badge">A1 · Lektion 17</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 16 / Ôn tập Bài 16</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: Imperativ &amp; lokale Präpositionen / Khởi động ngữ pháp: thể mệnh lệnh &amp; giới từ chỉ nơi chốn</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">Imperativ</div>
+        <div class="wh-mund">Ergänze (du-Form): ___ geradeaus! (gehen)</div>
+        <div class="wh-beispiel">Điền dạng mệnh lệnh (du)</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">gegenüber</div>
+        <div class="wh-mund">„Die Bank ist ___ der Post." — welche Präposition passt?</div>
+        <div class="wh-beispiel">Giới từ nào phù hợp?</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Richtig?</div>
+        <div class="wh-mund">„Gehen Sie an das Rathaus vorbei." — ist das richtig?</div>
+        <div class="wh-beispiel">Câu này đúng không? Nếu không, phải sửa thế nào?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aussprache-Minute -->
+  <div class="section-title">🔊 AUSSPRACHE-MINUTE / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Der Diphthong „ei" / Âm đôi „ei"</div>
+    <div class="phon-de">Der Diphthong „ei" wird im Deutschen immer gleich gesprochen — wie das englische „eye". Diese Lektion ist voll davon!</div>
+    <div class="phon-vn">Âm đôi „ei" trong tiếng Đức luôn được phát âm giống nhau — gần giống âm „ai" trong tiếng Việt (như trong từ „hai", „mai"). Cả bài học này đầy ắp âm này!<br>⚠️ Mẹo cho người Việt: đừng tách „ei" thành hai âm rời rạc kiểu „ê-i" — hãy lướt liền mạch và nhanh từ „a" sang „i", đúng như khi bạn nói „hai" hay „mai" trong tiếng Việt. Đồng thời nhớ bật rõ phụ âm cuối của từ, đừng nuốt mất!</div>
+    <div class="phon-beispiele">es schnei<strong>t</strong> (shnai-t) · hei<strong>ß</strong> (hai-x) · der Mai (mai) · wei<strong>ß</strong> (vai-x)</div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Das Wetter beschreiben mit dem unpersönlichen „es" <span class="vn">— Mô tả thời tiết bằng „es" vô nhân xưng</span></p>
+    <p class="de">✔ Wetter-Adjektive prädikativ verwenden (es ist sonnig/windig ...) <span class="vn">— Dùng tính từ chỉ thời tiết làm vị ngữ</span></p>
+    <p class="de">✔ Über Jahreszeiten und Temperaturen sprechen <span class="vn">— Nói về các mùa và nhiệt độ</span></p>
+    <p class="de">✔ Urlaubspläne je nach Wetter machen <span class="vn">— Lên kế hoạch nghỉ mát tùy theo thời tiết</span></p>
+  </div>
+
+  <!-- Wortschatz Wetter -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Wetter / Bảng từ vựng: Thời tiết</div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:20%"><col style="width:33%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>☀️ <span class="die">die</span>Sonne</td><td class="phonetik">DZÔ-nơ</td><td>Die Sonne schein<strong>t</strong> heute. <span class="vn-word">Hôm nay có nắng.</span></td><td class="vn-word">mặt trời</td></tr>
+      <tr><td>🌧️ <span class="der">der</span>Regen</td><td class="phonetik">RÊ-gờn</td><td>Der Regen hör<strong>t</strong> bald auf. <span class="vn-word">Cơn mưa sắp tạnh rồi.</span></td><td class="vn-word">mưa</td></tr>
+      <tr><td>💨 <span class="der">der</span>Win<strong>d</strong></td><td class="phonetik">vin<strong>t</strong></td><td>Der Wind is<strong>t</strong> heute stark. <span class="vn-word">Hôm nay gió to.</span></td><td class="vn-word">gió</td></tr>
+      <tr><td>❄️ <span class="der">der</span>Schnee</td><td class="phonetik">shnê</td><td>Der Schnee lieg<strong>t</strong> schon hoch. <span class="vn-word">Tuyết đã dày rồi.</span></td><td class="vn-word">tuyết</td></tr>
+      <tr><td>⛈️ <span class="das">das</span>Gewitter</td><td class="phonetik">gơ-VÍT-tơ</td><td>Ein Gewitter zieh<strong>t</strong> auf. <span class="vn-word">Một trận giông bão đang kéo đến.</span></td><td class="vn-word">giông bão</td></tr>
+      <tr><td>☁️ <span class="die">die</span>Wolke</td><td class="phonetik">VÔN-kơ</td><td>Der Himmel is<strong>t</strong> voller Wolken. <span class="vn-word">Bầu trời đầy mây.</span></td><td class="vn-word">mây</td></tr>
+      <tr><td>🌫️ <span class="der">der</span>Nebel</td><td class="phonetik">NÊ-bồ</td><td>Heute Morgen war dichter Nebel. <span class="vn-word">Sáng nay sương mù dày đặc.</span></td><td class="vn-word">sương mù</td></tr>
+      <tr><td>💥 <span class="der">der</span>Donner</td><td class="phonetik">ĐÔ-nơ</td><td>Der Donner is<strong>t</strong> sehr laut. <span class="vn-word">Tiếng sấm rất to.</span></td><td class="vn-word">sấm</td></tr>
+      <tr><td>⚡ <span class="der">der</span>Bli<strong>tz</strong></td><td class="phonetik">bli<strong>ts</strong></td><td>Der Blitz war ganz nah. <span class="vn-word">Tia chớp đó vừa xẹt rất gần.</span></td><td class="vn-word">tia chớp</td></tr>
+      <tr><td>🌪️ <span class="der">der</span>Sturm</td><td class="phonetik">shturm</td><td>Ein starker Sturm zieh<strong>t</strong> auf. <span class="vn-word">Một cơn bão mạnh đang kéo đến.</span></td><td class="vn-word">bão</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Wortschatz Jahreszeiten & Temperatur -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Jahreszeiten &amp; Temperatur / Bảng từ vựng: Các mùa &amp; nhiệt độ</div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:20%"><col style="width:33%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🌸 <span class="der">der</span>Frühling</td><td class="phonetik">FRUY-linh</td><td>Im Frühling blühen die Blumen. <span class="vn-word">Mùa xuân hoa nở rộ.</span></td><td class="vn-word">mùa xuân</td></tr>
+      <tr><td>☀️ <span class="der">der</span>Sommer</td><td class="phonetik">DZÔ-mơ</td><td>Der Sommer is<strong>t</strong> meine Lieblingsjahreszeit. <span class="vn-word">Mùa hè là mùa tôi thích nhất.</span></td><td class="vn-word">mùa hè</td></tr>
+      <tr><td>🍂 <span class="der">der</span>Herb<strong>st</strong></td><td class="phonetik">héc<strong>p-st</strong></td><td>Im Herbst fallen die Blätter. <span class="vn-word">Mùa thu lá rụng.</span></td><td class="vn-word">mùa thu</td></tr>
+      <tr><td>⛄ <span class="der">der</span>Winter</td><td class="phonetik">VIN-tơ</td><td>Im Winter schnei<strong>t</strong> es oft. <span class="vn-word">Mùa đông thường có tuyết rơi.</span></td><td class="vn-word">mùa đông</td></tr>
+      <tr><td>🔥 warm</td><td class="phonetik">vam</td><td>Heute is<strong>t</strong> es sehr warm. <span class="vn-word">Hôm nay trời rất ấm.</span></td><td class="vn-word">ấm áp</td></tr>
+      <tr><td>🧊 kal<strong>t</strong></td><td class="phonetik">kal<strong>t</strong></td><td>Im Winter is<strong>t</strong> es kal<strong>t</strong>. <span class="vn-word">Mùa đông trời lạnh.</span></td><td class="vn-word">lạnh</td></tr>
+      <tr><td>🌡️ <span class="das">das</span>Gra<strong>d</strong> (Celsius)</td><td class="phonetik">gra<strong>t</strong></td><td>Es sind heute 20 Grad. <span class="vn-word">Hôm nay 20 độ.</span></td><td class="vn-word">độ (nhiệt độ)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 17</span>
+    <span>Seite 1 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Grammatik 1: Das unpersönliche „es" + Häufige Fehler + Übung 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 17</h1>
+      <h2>Neu: Das unpersönliche „es" / Ngữ pháp mới: „es" vô nhân xưng</h2>
+    </div>
+    <div class="badge">A1 · Lektion 17</div>
+  </div>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — „es" ohne echten Bezug: das Wetter-Es / Ngữ pháp 1: „es" không có nghĩa cụ thể — „es" chỉ thời tiết</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Ganz neues Konzept: Bei Wetterausdrücken gibt es <strong>kein echtes Subjekt</strong> — „es" ist hier nur ein grammatischer Platzhalter, der die Position 1 (oder 2) füllt: „<strong style="color:#1e40af;">Es</strong> regnet." „<strong style="color:#1e40af;">Es</strong> ist kalt."</div>
+    <div class="tip-vn">💡 Khái niệm hoàn toàn mới: Trong các cách diễn đạt về thời tiết <strong>không có chủ ngữ thực sự</strong> — „es" ở đây chỉ là một từ đệm ngữ pháp, đứng ở vị trí số 1 (hoặc số 2) trong câu: „<strong style="color:#1e40af;">Es</strong> regnet." (Trời mưa.) „<strong style="color:#1e40af;">Es</strong> ist kalt." (Trời lạnh.)</div>
+  </div>
+  <div class="gram-box">
+    <h4>🔁 Achtung: Zwei verschiedene „es"! / Chú ý: hai loại „es" khác nhau!</h4>
+    <div class="rule-de"><strong>Wetter-Es (kein Bezug):</strong> „Es regnet." (es = nichts Konkretes) &nbsp;|&nbsp; <strong>Pronomen-Es (mit Bezug):</strong> „Das Kind spielt. Es ist müde." (es = das Kind)</div>
+    <div class="rule-vn"><strong>„es" chỉ thời tiết (không chỉ vật gì cụ thể):</strong> „Es regnet." (es không đại diện cho điều gì cụ thể); <strong>„es" đại từ (có nghĩa cụ thể):</strong> „Das Kind spielt. Es ist müde." (es chỉ „das Kind")</div>
+  </div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Es gibt drei verschiedene Arten, das Wetter auszudrücken — vergleiche genau, damit du sie nicht verwechselst!</div>
+    <div class="tip-vn">💡 Có ba cách khác nhau để diễn đạt về thời tiết trong tiếng Đức — hãy so sánh thật kỹ để không nhầm lẫn!</div>
+  </div>
+
+  <!-- Wetterverb-Liste -->
+  <div class="section-title">🔧 Die Wetterverben ⚠️ — nur diese 5 Wörter sind echte Verben! / Động từ chỉ thời tiết ⚠️ — chỉ 5 từ này là động từ thật sự!</div>
+  <div class="tip-box">
+    <div class="tip-de">⚠️ Nicht jedes Wetter-Wort ist automatisch ein Verb! „der Regen" (Nomen) und „regnen" (Verb) kommen zwar von derselben Wurzel, aber nur „regnen" kann direkt nach „es" stehen. Diese Verben werden fast nur in der „es"-Form gebraucht.</div>
+    <div class="tip-vn">⚠️ Không phải từ nào về thời tiết cũng tự động là động từ! „der Regen" (danh từ) và „regnen" (động từ) tuy cùng gốc từ, nhưng chỉ „regnen" mới có thể đứng ngay sau „es". Các động từ này hầu như chỉ được dùng ở dạng đi cùng „es".</div>
+  </div>
+  <table class="konj">
+    <colgroup><col style="width:100px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Infinitiv</th><th>es-Form</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">regnen</td><td><strong>es regnet</strong> (rê-gnợt)</td><td class="vn-word">trời mưa</td></tr>
+      <tr><td class="pronomen">schneien</td><td><strong>es schneit</strong> (shnai-t)</td><td class="vn-word">trời có tuyết rơi</td></tr>
+      <tr><td class="pronomen">donnern</td><td><strong>es donnert</strong> (đô-nợt)</td><td class="vn-word">trời có sấm</td></tr>
+      <tr><td class="pronomen">blitzen</td><td><strong>es blitzt</strong> (blít-st)</td><td class="vn-word">trời có chớp</td></tr>
+      <tr><td class="pronomen">stürmen</td><td><strong>es stürmt</strong> (stuya-mt)</td><td class="vn-word">trời có bão</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">📊 Vergleich: Verb, Adjektiv oder Nomen? / So sánh: động từ, tính từ hay danh từ?</div>
+  <table class="vocab wetter-vergleich">
+    <colgroup><col style="width:33%"><col style="width:33%"><col style="width:34%"></colgroup>
+    <thead><tr><th class="col-verb">① Wetterverb (es + Verb)</th><th class="col-adj">② es ist + Adjektiv</th><th class="col-nomen">③ es gibt + Nomen (Akk.)</th></tr></thead>
+    <tbody>
+      <tr><td class="col-verb">Es <strong>regnet</strong>. <span class="vn-word">Trời mưa.</span></td><td class="col-adj">Es ist <strong>sonnig</strong>. <span class="vn-word">Trời nắng.</span></td><td class="col-nomen">Es gibt <strong>Regen</strong>. <span class="vn-word">Có mưa.</span></td></tr>
+      <tr><td class="col-verb">Es <strong>schneit</strong>. <span class="vn-word">Trời có tuyết rơi.</span></td><td class="col-adj">Es ist <strong>neblig</strong>. <span class="vn-word">Trời có sương mù.</span></td><td class="col-nomen">Es gibt <strong>Schnee</strong>. <span class="vn-word">Có tuyết.</span></td></tr>
+      <tr><td class="col-verb">Es <strong>donnert</strong>. <span class="vn-word">Trời có sấm.</span></td><td class="col-adj">Es ist <strong>windig</strong>. <span class="vn-word">Trời có gió.</span></td><td class="col-nomen">Es gibt <strong>Gewitter</strong>. <span class="vn-word">Có giông bão.</span></td></tr>
+      <tr><td class="col-verb">Es <strong>blitzt</strong>. <span class="vn-word">Trời có chớp.</span></td><td class="col-adj">Es ist <strong>stürmisch</strong>. <span class="vn-word">Trời có bão.</span></td><td class="col-nomen">Es gibt <strong>Sturm</strong>. <span class="vn-word">Có bão.</span></td></tr>
+    </tbody>
+  </table>
+  <div class="gram-box">
+    <h4>🔁 Der Unterschied auf einen Blick / Sự khác biệt trong một cái nhìn</h4>
+    <div class="rule-de"><span style="background:#bfdbfe; color:#1e3a8a; font-weight:700; padding:1px 6px; border-radius:4px;">① Wetterverb</span> „regnen/schneien/donnern/blitzen/stürmen" sind eigene Verben — sie stehen direkt nach „es", OHNE „ist" oder „gibt"! &nbsp; <span style="background:#fde68a; color:#92400e; font-weight:700; padding:1px 6px; border-radius:4px;">② es ist + Adjektiv</span> beschreibt einen Zustand. &nbsp; <span style="background:#bbf7d0; color:#14532d; font-weight:700; padding:1px 6px; border-radius:4px;">③ es gibt + Nomen</span> braucht ein Nomen im Akkusativ, NIE ein Adjektiv!</div>
+    <div class="rule-vn"><span style="background:#bfdbfe; color:#1e3a8a; font-weight:700; padding:1px 6px; border-radius:4px;">①Động từ chỉ thời tiết</span> „regnen/schneien/donnern/blitzen/stürmen" tự chúng đã là động từ — đứng ngay sau „es", KHÔNG cần „ist" hay „gibt"! &nbsp;<span style="background:#fde68a; color:#92400e; font-weight:700; padding:1px 6px; border-radius:4px;">②es ist + tính từ</span> mô tả một trạng thái. &nbsp;<span style="background:#bbf7d0; color:#14532d; font-weight:700; padding:1px 6px; border-radius:4px;">③es gibt + danh từ</span> cần danh từ ở cách 4 (Akkusativ), KHÔNG BAO GIỜ dùng tính từ!</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Der Regen regnet."</span> → <span class="wb-ok">✅ „Es regnet."</span> — Wetterausdrücke benutzen „es", nicht das Wetterphänomen selbst als Subjekt!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Der Regen regnet."</span> → <span class="wb-ok">✅ „Es regnet."</span> — cách diễn đạt thời tiết dùng „es", không dùng chính hiện tượng thời tiết làm chủ ngữ!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Es ist regnet."</span> → <span class="wb-ok">✅ „Es regnet."</span> — „regnen" ist ein Vollverb, kein „sein" nötig!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Es ist regnet."</span> → <span class="wb-ok">✅ „Es regnet."</span> — „regnen" là động từ thực nghĩa (Vollverb), không cần „sein"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Heute es ist kalt."</span> → <span class="wb-ok">✅ „Heute ist es kalt."</span> — Position-2-Regel: Wenn „heute" am Satzanfang steht, rutscht „es" hinter das Verb!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Heute es ist kalt."</span> → <span class="wb-ok">✅ „Heute ist es kalt."</span> — quy tắc vị trí số 2: khi „heute" đứng đầu câu, „es" phải chuyển ra sau động từ!</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — Wetter-Sätze: Ergänze „es" oder das richtige Verb / Câu về thời tiết: điền „es" hoặc động từ đúng</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze je nach Lücke entweder „es" oder die richtige Verbform.</div>
+    <div class="instr-vn">Điền vào chỗ trống „es" hoặc dạng động từ đúng, tùy theo từng câu.</div>
+    <div class="fill-line"><span class="num">1.</span> <span class="blank"></span> regnet heute den ganzen Tag. <span class="vn-word">(Hôm nay mưa suốt cả ngày.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Im Winter <span class="blank"></span> es oft. (schneien) <span class="vn-word">(Mùa đông thường có tuyết rơi.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Heute <span class="blank"></span> es sehr warm. (sein) <span class="vn-word">(Hôm nay trời rất ấm.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Am Wochenende <span class="blank"></span> es ein Gewitter. (geben) <span class="vn-word">(Cuối tuần có giông bão.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> <span class="blank"></span> ist heute stürmisch. <span class="vn-word">(Hôm nay trời có bão.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Im Frühling <span class="blank"></span> es oft. (regnen) <span class="vn-word">(Mùa xuân thường có mưa.)</span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 17</span>
+    <span>Seite 2 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Grammatik 2: Adjektive nach sein + Häufige Fehler + Übung 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 17</h1>
+      <h2>Wetter-Adjektive nach „sein" / Tính từ chỉ thời tiết sau „sein"</h2>
+    </div>
+    <div class="badge">A1 · Lektion 17</div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Prädikative Adjektive: keine Endung! (Wiederholung aus L7) / Ngữ pháp 2: tính từ vị ngữ — không thêm đuôi! (Ôn lại Bài 7)</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Erinnerst du dich an Lektion 7? Nach „sein" bekommen Adjektive <strong>KEINE Endung</strong> — egal ob Singular oder Plural! Das gilt genauso für Wetter-Adjektive: „Es ist sonnig." nicht „Es ist sonniges."</div>
+    <div class="tip-vn">💡 Bạn còn nhớ Bài 7 không? Sau „sein", tính từ <strong>KHÔNG thêm đuôi</strong> nào cả — dù số ít hay số nhiều! Quy tắc này cũng áp dụng cho tính từ chỉ thời tiết: „Es ist sonnig.", chứ không phải „Es ist sonniges."</div>
+  </div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:26%"><col style="width:52%"></colgroup>
+    <thead><tr><th>Adjektiv</th><th>Tiếng Việt</th><th>Beispiel</th></tr></thead>
+    <tbody>
+      <tr><td>sonnig</td><td class="vn-word">nắng, có nắng</td><td>Es is<strong>t</strong> heute sonnig. <span class="vn-word">Hôm nay trời nắng.</span></td></tr>
+      <tr><td>wolkig</td><td class="vn-word">nhiều mây</td><td>Der Himmel is<strong>t</strong> wolkig. <span class="vn-word">Bầu trời nhiều mây.</span></td></tr>
+      <tr><td>windig</td><td class="vn-word">có gió, lộng gió</td><td>Draußen is<strong>t</strong> es windig. <span class="vn-word">Bên ngoài có gió.</span></td></tr>
+      <tr><td>neblig</td><td class="vn-word">có sương mù</td><td>Am Morgen is<strong>t</strong> es oft neblig. <span class="vn-word">Buổi sáng thường có sương mù.</span></td></tr>
+      <tr><td>stürmi<strong>sch</strong></td><td class="vn-word">có bão, nhiều gió mạnh</td><td>Im Winter is<strong>t</strong> es manchmal stürmisch. <span class="vn-word">Mùa đông đôi khi có bão.</span></td></tr>
+      <tr><td>regneri<strong>sch</strong></td><td class="vn-word">mưa nhiều</td><td>Der Herb<strong>st</strong> is<strong>t</strong> oft regnerisch. <span class="vn-word">Mùa thu thường mưa nhiều.</span></td></tr>
+      <tr><td>schön</td><td class="vn-word">đẹp, tốt</td><td>Das Wetter is<strong>t</strong> heute schön! <span class="vn-word">Hôm nay thời tiết thật đẹp!</span></td></tr>
+    </tbody>
+  </table>
+
+  <!-- Gegenteile-Tabelle -->
+  <div class="section-title">↔️ Gegenteile: Wetter-Adjektive im Kontrast / Từ trái nghĩa: so sánh tính từ chỉ thời tiết</div>
+  <table class="vocab">
+    <colgroup><col style="width:28%"><col style="width:10%"><col style="width:28%"><col style="width:34%"></colgroup>
+    <thead><tr><th>Adjektiv</th><th></th><th>Gegenteil</th><th>Tiếng Việt (cặp từ)</th></tr></thead>
+    <tbody>
+      <tr><td>sonnig</td><td style="text-align:center;">↔️</td><td>bewölk<strong>t</strong></td><td class="vn-word">nắng ↔ nhiều mây, u ám</td></tr>
+      <tr><td>warm</td><td style="text-align:center;">↔️</td><td>kal<strong>t</strong></td><td class="vn-word">ấm ↔ lạnh</td></tr>
+      <tr><td>trocken</td><td style="text-align:center;">↔️</td><td>regneri<strong>sch</strong></td><td class="vn-word">khô ráo ↔ mưa nhiều</td></tr>
+      <tr><td>windig</td><td style="text-align:center;">↔️</td><td>windstill</td><td class="vn-word">có gió ↔ lặng gió</td></tr>
+      <tr><td>hei<strong>ß</strong></td><td style="text-align:center;">↔️</td><td>kühl</td><td class="vn-word">nóng ↔ mát</td></tr>
+    </tbody>
+  </table>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Es ist sonniges heute."</span> → <span class="wb-ok">✅ „Es ist heute sonnig."</span> — prädikative Adjektive (nach „sein") bekommen keine Endung!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Es ist sonniges heute."</span> → <span class="wb-ok">✅ „Es ist heute sonnig."</span> — tính từ vị ngữ (đứng sau „sein") không thêm đuôi!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Das Wetter ist heute schönes."</span> → <span class="wb-ok">✅ „Das Wetter ist heute schön."</span> — auch bei „das Wetter" bleibt das Adjektiv ohne Endung!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Das Wetter ist heute schönes."</span> → <span class="wb-ok">✅ „Das Wetter ist heute schön."</span> — ngay cả khi chủ ngữ là „das Wetter", tính từ vẫn không thêm đuôi!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Der Himmel ist wolkiger heute."</span> → <span class="wb-ok">✅ „Der Himmel ist heute wolkig."</span> — hier brauchst du nur die Grundform, keine Steigerungsform!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Der Himmel ist wolkiger heute."</span> → <span class="wb-ok">✅ „Der Himmel ist heute wolkig."</span> — ở đây chỉ cần dùng dạng nguyên cấp, không cần dạng so sánh hơn!</div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — Wie ist das Wetter? Ergänze das passende Adjektiv / Thời tiết thế nào? Điền tính từ phù hợp</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze das passende Wetter-Adjektiv aus der Tabelle oben — denk daran: keine Endung!</div>
+    <div class="instr-vn">Điền tính từ chỉ thời tiết phù hợp từ bảng phía trên — nhớ rằng: không thêm đuôi!</div>
+    <div class="fill-line"><span class="num">1.</span> Im Sommer ist es oft <span class="blank"></span>. <span class="vn-word">(Mùa hè thường có nắng.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Heute ist der Himmel sehr <span class="blank"></span>. <span class="vn-word">(Hôm nay bầu trời rất nhiều mây.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Im Herbst ist es oft <span class="blank"></span>. <span class="vn-word">(Mùa thu thường có gió.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Am Morgen war es <span class="blank"></span>, man konnte kaum etwas sehen. <span class="vn-word">(Buổi sáng có sương mù, gần như không nhìn thấy gì.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Das Wetter ist heute wirklich <span class="blank"></span>! <span class="vn-word">(Hôm nay thời tiết thật sự rất đẹp!)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Im Winter kann es sehr <span class="blank"></span> sein. <span class="vn-word">(Mùa đông có thể có bão rất mạnh.)</span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 17</span>
+    <span>Seite 3 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (GAME: Wettervorhersage-Rad + Kulturinfo 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 17</h1>
+      <h2>Spiel: Das Wettervorhersage-Rad / Trò chơi: Vòng quay dự báo thời tiết</h2>
+    </div>
+    <div class="badge">A1 · Lektion 17</div>
+  </div>
+
+  <!-- GAME -->
+  <div class="game-header">🎲 GAME — Das Wettervorhersage-Rad (solo spielbar!) / Vòng quay dự báo thời tiết (chơi một mình cũng được!)</div>
+  <div class="game-body">
+    <div class="instr-de">Spielregel: Würfle zweimal (oder wähle zwei Zahlen 1–6) und kombiniere Stadt + Wetter zu einer kleinen Wettervorhersage — genau wie im Fernsehen! Benutze „es" und ein Wetter-Adjektiv oder -Verb.</div>
+    <div class="instr-vn">Luật chơi: Gieo xúc xắc hai lần (hoặc chọn hai số từ 1–6) rồi kết hợp Thành phố + Thời tiết thành một bản dự báo thời tiết ngắn — giống hệt trên tivi! Hãy dùng „es" và một tính từ hoặc động từ chỉ thời tiết.</div>
+    <div class="wuerfel-grid">
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel A: Stadt</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> Berlin</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> Hamburg</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> München</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> Köln</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> Frankfurt</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> Dresden</div>
+      </div>
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel B: Wetter</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> sonnig, 25 °C</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> regnerisch, 12 °C</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> windig, 15 °C</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> es schneit, −2 °C</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> wolkig, 18 °C</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> stürmisch, 10 °C</div>
+      </div>
+    </div>
+    <div class="instr-de" style="margin-bottom:3px;">Vorgegebene Würfe — bilde die Wettervorhersage: <span class="vn-word" style="font-style:normal;">Điền theo các số đã cho, viết thành bản dự báo thời tiết:</span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">1.</span><span class="wk-set"><span class="wuerfel-zahl">3</span><span class="wuerfel-zahl">4</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">2.</span><span class="wk-set"><span class="wuerfel-zahl">1</span><span class="wuerfel-zahl">1</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">3.</span><span class="wk-set"><span class="wuerfel-zahl">5</span><span class="wuerfel-zahl">3</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">4.</span><span class="wk-set" style="color:#9a3412; font-weight:700; font-size:9.5px;">🎲 Freie Runde — würfle selbst!</span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="instr-de" style="margin-top:4px;">🪞 Selbsteinschätzung (kein Partner nötig!): <span class="vn-word" style="font-style:normal;">Tự đánh giá (không cần bạn cùng chơi!):</span></div>
+    <div class="fill-line">Heute bei mir: Es ist <span class="blank-long"></span> und ungefähr <span class="blank"></span> Grad.</div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Wetter-Small-Talk in Deutschland / Kiến thức văn hóa 1: chuyện phiếm về thời tiết ở Đức</div>
+    <div class="kb-de">In Deutschland ist das Wetter eines der beliebtesten Gesprächsthemen im Small Talk — besonders wenn man sich kaum kennt (z. B. an der Bushaltestelle oder im Aufzug). Sätze wie „Schönes Wetter heute, oder?" sind eine höfliche, unverfängliche Art, ein Gespräch zu beginnen. Das liegt vielleicht auch daran, dass sich das Wetter in Deutschland oft sehr schnell ändert!</div>
+    <div class="kb-vn">Ở Đức, thời tiết là một trong những chủ đề trò chuyện phiếm phổ biến nhất — đặc biệt khi hai người chưa quen biết nhau nhiều (ví dụ ở trạm xe buýt hay trong thang máy). Những câu như „Schönes Wetter heute, oder?" (Hôm nay thời tiết đẹp nhỉ?) là cách mở đầu câu chuyện lịch sự và an toàn. Có lẽ cũng vì thời tiết ở Đức thường thay đổi rất nhanh! Ở Việt Nam, người ta thường mở đầu câu chuyện bằng cách hỏi thăm sức khỏe, công việc hay gia đình hơn là bàn về thời tiết — vì khí hậu Việt Nam khá ổn định theo mùa, ít khi thay đổi bất ngờ ngay trong một ngày như ở Đức.</div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Die vier Jahreszeiten in Deutschland / Kiến thức văn hóa 2: bốn mùa ở Đức</div>
+    <div class="kb-de">Deutschland hat vier deutlich unterschiedliche Jahreszeiten: einen kalten, oft schneereichen Winter, einen milden Frühling, einen warmen Sommer und einen bunten Herbst mit fallenden Blättern. Das ist anders als in tropischen Ländern, wo es meist nur eine Regenzeit und eine Trockenzeit gibt, aber keine kalten Winter mit Schnee.</div>
+    <div class="kb-vn">Đức có bốn mùa rõ rệt: mùa đông lạnh giá và thường nhiều tuyết, mùa xuân ôn hòa, mùa hè ấm áp, và mùa thu rực rỡ sắc màu với lá rụng. Điều này khá khác với Việt Nam: miền Bắc tuy cũng có bốn mùa nhưng mùa đông không lạnh đến mức có tuyết, còn miền Nam chủ yếu chỉ có hai mùa — mùa mưa và mùa khô, quanh năm không có mùa đông giá rét kiểu châu Âu. Vì vậy, với nhiều người Việt, cảnh mặc áo khoác dày, đi ủng tuyết hay xúc tuyết trước cửa nhà vào mùa đông ở Đức là một trải nghiệm hoàn toàn mới lạ!</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 17</span>
+    <span>Seite 4 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 5 (Dialog + Lesetext + MC) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 17</h1>
+      <h2>Dialog &amp; Lesetext / Hội thoại &amp; Bài đọc hiểu</h2>
+    </div>
+    <div class="badge">A1 · Lektion 17</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Anna:</span>Was machen wir am Wochenende? Wie wird das Wetter?</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Laut Wettervorhersage regnet es am Samstag, aber am Sonntag soll es sonnig werden.</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Dann machen wir doch am Sonntag einen Ausflug in die Berge!</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Gute Idee! Ist es dort auch warm?</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Es sind ungefähr 20 Grad, also nicht zu heiß und nicht zu kalt.</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Perfekt. Und am Samstag, wenn es regnet?</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Dann bleiben wir zu Hause und spielen Karten, oder wir gehen ins Museum.</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Klingt gut! Ich hoffe nur, dass es am Sonntag nicht doch noch windig wird.</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Keine Sorge, laut Vorhersage ist es ruhig und sonnig!</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Familie Schmidt plant ihren Sommerurlaub und schaut sich die Wettervorhersage für verschiedene Reiseziele an. In Spanien ist es im August meistens sehr heiß — oft über 35 Grad und fast immer sonnig. Das ist Herrn Schmidt zu warm, denn er mag lieber mildes Wetter. Frau Schmidt schlägt deshalb einen Urlaub in Norwegen vor: Dort ist es im Sommer angenehm kühl, zwischen 15 und 20 Grad, und es regnet nur ab und zu. Die Kinder wollen aber lieber ans Meer, wo sie schwimmen können. Nach langer Diskussion einigt sich die Familie auf Italien: Dort ist es warm, aber nicht zu heiß, und es gibt sowohl Strände als auch Berge. Laut Wetterbericht soll es in der geplanten Reisewoche meistens sonnig sein, nur an einem Tag wird ein kurzes Gewitter erwartet. „Ein bisschen Regen macht nichts", sagt Frau Schmidt, „dann besuchen wir einfach ein Museum." Die Familie freut sich schon sehr auf den Urlaub — vor allem, weil das Wetter perfekt für Strand UND Kultur ist.
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Wie ist das Wetter in Spanien im August meistens?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) kalt und regnerisch</span>
+      <span><span class="mc-kreis"></span> b) sehr heiß und sonnig</span>
+      <span><span class="mc-kreis"></span> c) windig und wolkig</span>
+    </div>
+    <div class="mc-frage">2. Warum ist Spanien Herrn Schmidt zu warm?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) er mag lieber mildes Wetter</span>
+      <span><span class="mc-kreis"></span> b) er hat keinen Sonnenschutz</span>
+      <span><span class="mc-kreis"></span> c) er kann nicht schwimmen</span>
+    </div>
+    <div class="mc-frage">3. Wie ist das Wetter in Norwegen im Sommer?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sehr heiß</span>
+      <span><span class="mc-kreis"></span> b) angenehm kühl</span>
+      <span><span class="mc-kreis"></span> c) sehr stürmisch</span>
+    </div>
+    <div class="mc-frage">4. Was möchten die Kinder lieber?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) in die Berge</span>
+      <span><span class="mc-kreis"></span> b) ans Meer</span>
+      <span><span class="mc-kreis"></span> c) in eine Großstadt</span>
+    </div>
+    <div class="mc-frage">5. Für welches Land entscheidet sich die Familie?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Spanien</span>
+      <span><span class="mc-kreis"></span> b) Norwegen</span>
+      <span><span class="mc-kreis"></span> c) Italien</span>
+    </div>
+    <div class="mc-frage">6. Was wird an einem Tag der Reise erwartet?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Schnee</span>
+      <span><span class="mc-kreis"></span> b) ein kurzes Gewitter</span>
+      <span><span class="mc-kreis"></span> c) starker Wind</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Wie ist das Wetter heute bei dir? Welche Jahreszeit magst du am liebsten und warum?</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Hôm nay thời tiết chỗ bạn thế nào? Bạn thích mùa nào nhất và tại sao?</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 17</span>
+    <span>Seite 5 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 6 (Freies Sprechen + Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 17</h1>
+      <h2>Freies Sprechen, Hausaufgaben &amp; Antworten / Nói tự do, bài tập về nhà &amp; đáp án</h2>
+    </div>
+    <div class="badge">A1 · Lektion 17</div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">Wetter heute</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Wie ist das Wetter heute bei dir?</div>
+      <div class="anweisung-vn">Hôm nay thời tiết chỗ bạn thế nào?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">Jahreszeit</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Welche Jahreszeit magst du am liebsten und warum?</div>
+      <div class="anweisung-vn">Bạn thích mùa nào nhất và tại sao?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">Urlaub</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Wohin würdest du bei schönem Wetter am liebsten reisen?</div>
+      <div class="anweisung-vn">Nếu trời đẹp, bạn muốn đi du lịch ở đâu nhất?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">es + Adjektiv</div>
+      <div class="prompt-row"><span class="prompt-tag satz">Satz</span></div>
+      <div class="anweisung-de">Bilde einen Satz mit dem unpersönlichen „es" und einem Wetter-Adjektiv.</div>
+      <div class="anweisung-vn">Đặt một câu với „es" vô nhân xưng và một tính từ chỉ thời tiết.</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Wettervokabeln lernen / Học từ vựng thời tiết:</strong> Schreibe alle Wetter-Wörter und Jahreszeiten mit ihren Artikeln auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết ra giấy tất cả các từ về thời tiết và các mùa kèm mạo từ (der/die/das) — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">✏️ <strong>Wetterbericht schreiben / Viết bản tin thời tiết:</strong> Schreibe deinen eigenen 5-Satz-Wetterbericht für deine Stadt — benutze mindestens 2× das unpersönliche „es" und 2 Wetter-Adjektive.
+      <div class="ha-vn">Viết bản tin thời tiết gồm 5 câu cho thành phố của bạn — dùng ít nhất 2 lần „es" vô nhân xưng và 2 tính từ chỉ thời tiết.</div>
+    </div>
+    <div class="ha-item">📅 <strong>Wetter-Tagebuch / Nhật ký thời tiết:</strong> Notiere 5 Tage lang das Wetter bei dir — benutze dabei jeden Tag einen anderen Satzanfang (Heute ist es ..., Es regnet ..., Der Himmel ist ...).
+      <div class="ha-vn">Ghi lại thời tiết chỗ bạn trong 5 ngày liên tiếp — mỗi ngày dùng một cách mở đầu câu khác nhau (Heute ist es..., Es regnet..., Der Himmel ist...).</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 16):</strong> 1. Geh &nbsp; 2. gegenüber &nbsp; 3. Falsch — richtig ist „Gehen Sie an dem/am Rathaus vorbei." (Dativ)</p>
+    <p><strong>Übung 1 (unpersönliches es):</strong> 1. Es &nbsp; 2. schneit &nbsp; 3. ist &nbsp; 4. gibt &nbsp; 5. Es &nbsp; 6. regnet</p>
+    <p><strong>Übung 2 (Wetter-Adjektive):</strong> 1. sonnig &nbsp; 2. wolkig &nbsp; 3. windig &nbsp; 4. neblig &nbsp; 5. schön &nbsp; 6. stürmisch</p>
+    <p><strong>Game (Wettervorhersage-Rad), Beispiele:</strong> 1. (3,4) In München schneit es heute, es sind minus 2 Grad. &nbsp; 2. (1,1) In Berlin ist es heute sonnig, 25 Grad. &nbsp; 3. (5,3) In Frankfurt ist es heute windig, 15 Grad.</p>
+    <p><strong>Leseverständnis:</strong> 1. b) sehr heiß und sonnig &nbsp; 2. a) er mag lieber mildes Wetter &nbsp; 3. b) angenehm kühl &nbsp; 4. b) ans Meer &nbsp; 5. c) Italien &nbsp; 6. b) ein kurzes Gewitter</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Heute ist es bei mir sonnig und warm. &nbsp; Karte 2: Ich mag den Sommer am liebsten, weil ich gerne schwimmen gehe. &nbsp; Karte 3: Bei schönem Wetter würde ich gerne ans Meer reisen. &nbsp; Karte 4: Es ist heute windig.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 17 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 6 / 6</span>
+  </div>
+</div>
+
+</body>
+</html>

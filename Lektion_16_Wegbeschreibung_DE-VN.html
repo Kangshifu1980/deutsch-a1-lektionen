@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 16</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 7mm 12mm 3mm 12mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.14; font-size: 10.7px; }
+.compact .doc-header { padding-bottom: 2px; margin-bottom: 4px; }
+.compact .section-title { margin: 4px 0 2px 0; }
+.compact table { margin-bottom: 2px; }
+.compact table.vocab th, .compact table.vocab td { padding: 1.5px 5px; }
+.compact .gram-box { padding: 3px 7px; margin-bottom: 2px; }
+.compact .tip-box { padding: 2px 6px; margin: 1px 0; }
+.compact .warn-box { padding: 2px 6px; margin: 1px 0 3px 0; }
+.compact .ubung-header { padding: 1px 7px; }
+.compact .ubung-body { padding: 3px 7px; margin-bottom: 2px; }
+.compact .fill-line { margin-bottom: 0px; }
+.compact .footer { margin-top: 2px; padding-top: 1px; }
+.compact .phon-box { padding: 2px 7px; margin-bottom: 2px; }
+.compact .kultur-box { padding: 3px 8px; margin: 2px 0 3px 0; }
+.compact .dialog-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .lese-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .mc-block { margin-bottom: 2px; }
+.compact .mc-optionen { margin-bottom: 3px; }
+.compact .ha-box { padding: 3px 8px; }
+.compact .antworten { padding: 3px 8px; }
+.compact .wiederholung-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .karten-grid { margin-top: 2px; gap: 5px; }
+.compact .sprech-karte { padding: 4px 6px; }
+.compact .sprech-karte .karte-num { padding: 1px 6px; margin-bottom: 2px; }
+.compact .sprech-karte .wort-pill { font-size: 11px; padding: 2px 4px; margin-bottom: 2px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 2px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 2px; }
+.compact .game-header { padding: 1px 7px; }
+.compact .game-body { padding: 3px 7px; margin-bottom: 2px; }
+.compact .stadtplan-box { padding: 4px 7px; margin-bottom: 3px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .prompt-tag.satz { background: #fef3c7; color: #92400e; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .game-header: Spielelement (wiederverwendet aus L13/L14/L15) ===== */
+.game-header { background: #ea580c; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.game-body { border: 0.5px solid #fdba74; border-top: none; border-radius: 0 0 5px 5px; padding: 6px 8px; margin-bottom: 4px; background: #fff7ed; }
+.game-body .instr-de { font-size: 10px; color: #7c2d12; font-style: italic; }
+.game-body .instr-vn { font-size: 9.5px; color: #c2410c; font-style: italic; margin-bottom: 4px; }
+.wortsalat-arrow { color: #94a3b8; font-weight: 700; }
+.wuerfel-kombi { display: flex; align-items: center; gap: 6px; font-size: 10.5px; margin-bottom: 3px; flex-wrap: wrap; }
+.wuerfel-kombi .wk-num { font-weight: 700; color: #64748b; min-width: 14px; }
+
+/* ===== .stadtplan-box: Stadtplan-Navigator (neu in L16) ===== */
+.stadtplan-box { border: 1px solid #fdba74; border-radius: 8px; padding: 8px 10px; background: white; margin-bottom: 6px; }
+.wortsalat-woerter { display: flex; flex-wrap: wrap; gap: 4px; }
+.wort-chip { display: inline-block; background: #eef2ff; border: 1px solid #c7d2fe; border-radius: 5px; padding: 2px 8px; font-size: 10.5px; color: #3730a3; font-weight: 600; }
+.stadtplan-title { font-size: 10.5px; font-weight: 700; color: #9a3412; margin-bottom: 5px; }
+.stadtplan-grid { display: grid; grid-template-columns: 26px repeat(4, 1fr); grid-template-rows: 20px repeat(4, auto); gap: 3px; }
+.stadtplan-kopf { display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #9a3412; }
+.stadtplan-zelle { background: #fff7ed; border: 1px solid #fdba74; border-radius: 6px; padding: 4px 2px; text-align: center; }
+.stadtplan-zelle .icon { font-size: 15px; display: block; }
+.stadtplan-zelle .label { font-size: 7.5px; color: #7c2d12; font-weight: 600; display: block; margin-top: 1px; }
+.stadtplan-zelle.start { background: #dbeafe; border-color: #93c5fd; }
+.stadtplan-zelle.start .label { color: #1e3a8a; }
+.koord-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 26px; height: 18px; padding: 0 4px; background: #ea580c; color: white; font-weight: 700; font-size: 9.5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Aussprache + Lernziele + Wortschatz Gebäude + Wortschatz Richtungen) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 16</h1>
+      <h2>Wegbeschreibung</h2>
+      <h2>Hỏi đường &amp; chỉ đường</h2>
+    </div>
+    <div class="badge">A1 · Lektion 16</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 15 / Ôn tập Bài 15</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: „schmecken" und „gefallen" + Dativ / Khởi động ngữ pháp: „schmecken" và „gefallen" + Dativ</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">schmecken</div>
+        <div class="wh-mund">Ergänze: Die Suppe ___ mir gut. (schmecken)</div>
+        <div class="wh-beispiel">Điền đúng cấu trúc „schmecken"</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Richtig?</div>
+        <div class="wh-mund">„Die Stühle gefällt ihnen." — ist das richtig?</div>
+        <div class="wh-beispiel">Câu này đúng không? Nếu sai, sửa thế nào?</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Dativ</div>
+        <div class="wh-mund">Wie heißt das Dativpronomen für „ich"?</div>
+        <div class="wh-beispiel">Đại từ Dativ của „ich" là gì?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aussprache-Minute -->
+  <div class="section-title">🔊 AUSSPRACHE-MINUTE / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Die zwei „ch"-Laute: ach-Laut und ich-Laut / Hai âm „ch": ach-Laut và ich-Laut</div>
+    <div class="phon-de">Deutsch hat zwei verschiedene „ch"-Laute: Nach a, o, u, au hörst du den harten <strong>ach-Laut</strong> (hinten im Rachen); nach allen anderen Vokalen und Konsonanten hörst du den weichen <strong>ich-Laut</strong>. Der Ausdruck „nach rechts" enthält sogar beide!</div>
+    <div class="phon-vn">Tiếng Đức có hai âm „ch" khác nhau: sau a, o, u, au bạn nghe âm <strong>ach-Laut</strong> cứng (phát từ sâu trong cổ họng); sau tất cả các nguyên âm và phụ âm khác bạn nghe âm <strong>ich-Laut</strong> mềm, thở nhẹ ở phía trước miệng. Cụm từ „nach rechts" có ngay cả hai âm này!<br>⚠️ Mẹo cho người Việt: đây là hai âm khác nhau về vị trí phát âm — ach-Laut ở sâu cổ họng giống „kh" nặng, còn ich-Laut ở phía trước, nhẹ như hơi thở „hy".</div>
+    <div class="phon-beispiele">n<strong>ach</strong> (đọc: "nakh", ach-Laut) · re<strong>ch</strong>ts (đọc: "réchts", ich-Laut) · Kir<strong>ch</strong>e (đọc: "KIR-chờ", ich-Laut) · a<strong>ch</strong>t (đọc: "akht", ach-Laut)</div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Befehle und Anweisungen geben mit dem Imperativ (du/ihr/Sie) <span class="vn">— đưa ra mệnh lệnh và chỉ dẫn bằng thể mệnh lệnh (du/ihr/Sie)</span></p>
+    <p class="de">✔ Nach dem Weg fragen und antworten <span class="vn">— hỏi đường và chỉ đường</span></p>
+    <p class="de">✔ Lokale Präpositionen für Wegbeschreibungen benutzen (vorbei, gegenüber, zwischen, bis zu) <span class="vn">— dùng giới từ chỉ vị trí để mô tả đường đi (vorbei, gegenüber, zwischen, bis zu)</span></p>
+    <p class="de">✔ Gebäude und Richtungen in der Stadt benennen <span class="vn">— gọi tên các tòa nhà và phương hướng trong thành phố</span></p>
+  </div>
+
+  <!-- Wortschatz Gebäude -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Gebäude in der Stadt / Bảng từ vựng: Các tòa nhà trong thành phố</div>
+  <table class="vocab">
+    <colgroup><col style="width:24%"><col style="width:20%"><col style="width:31%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🏛️ <span class="das">das</span>Rathaus</td><td class="phonetik">RAT-haus</td><td>Das Rathaus is<strong>t</strong> im Zentrum. <span class="vn-word">Tòa thị chính nằm ở trung tâm.</span></td><td class="vn-word">tòa thị chính</td></tr>
+      <tr><td>⛪ <span class="die">die</span>Kir<strong>ch</strong>e</td><td class="phonetik">KIR-chờ</td><td>Die Kirche steh<strong>t</strong> neben dem Park. <span class="vn-word">Nhà thờ nằm cạnh công viên.</span></td><td class="vn-word">nhà thờ</td></tr>
+      <tr><td>🚉 <span class="der">der</span>Bahnhof</td><td class="phonetik">BAN-hôf</td><td>Der Bahnhof is<strong>t</strong> gleich um die Ecke. <span class="vn-word">Nhà ga ngay góc phố đây thôi.</span></td><td class="vn-word">nhà ga</td></tr>
+      <tr><td>🏦 <span class="die">die</span>Bank</td><td class="phonetik">bank</td><td>Die Bank is<strong>t</strong> gegenüber der Pos<strong>t</strong>. <span class="vn-word">Ngân hàng đối diện bưu điện.</span></td><td class="vn-word">ngân hàng</td></tr>
+      <tr><td>💊 <span class="die">die</span>Apotheke</td><td class="phonetik">a-pô-TÊ-cơ</td><td>Die Apotheke hat bis 18 Uhr geöffnet. <span class="vn-word">Hiệu thuốc mở cửa đến 18 giờ.</span></td><td class="vn-word">hiệu thuốc</td></tr>
+      <tr><td>🎨 <span class="das">das</span>Museum</td><td class="phonetik">mu-DZÊ-um</td><td>Das Museum is<strong>t</strong> sehr interessant. <span class="vn-word">Bảo tàng này rất thú vị.</span></td><td class="vn-word">bảo tàng</td></tr>
+      <tr><td>📮 <span class="die">die</span>Pos<strong>t</strong></td><td class="phonetik">post</td><td>Ich muss noch zur Post. <span class="vn-word">Tôi còn phải ghé bưu điện.</span></td><td class="vn-word">bưu điện</td></tr>
+      <tr><td>🛒 <span class="der">der</span>Supermarkt</td><td class="phonetik">ZU-pơ-mact</td><td>Der Supermarkt is<strong>t</strong> ganz in der Nähe. <span class="vn-word">Siêu thị ở rất gần đây.</span></td><td class="vn-word">siêu thị</td></tr>
+      <tr><td>🏥 <span class="das">das</span>Krankenhaus</td><td class="phonetik">CRAN-cờn-haus</td><td>Das Krankenhaus is<strong>t</strong> gleich hinter der Kirche. <span class="vn-word">Bệnh viện ngay sau nhà thờ.</span></td><td class="vn-word">bệnh viện</td></tr>
+      <tr><td>🏫 <span class="die">die</span>Schule</td><td class="phonetik">SHU-lơ</td><td>Die Schule is<strong>t</strong> zwischen dem Park und der Bank. <span class="vn-word">Trường học nằm giữa công viên và ngân hàng.</span></td><td class="vn-word">trường học</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Wortschatz Richtungen -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Richtungen &amp; Wegbeschreibung / Bảng từ vựng: Phương hướng &amp; chỉ đường</div>
+  <table class="vocab">
+    <colgroup><col style="width:24%"><col style="width:20%"><col style="width:31%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>⬅️ links</td><td class="phonetik">links</td><td>Gehen Sie nach links. <span class="vn-word">Xin hãy rẽ trái.</span></td><td class="vn-word">bên trái</td></tr>
+      <tr><td>➡️ re<strong>ch</strong>ts</td><td class="phonetik">réchts</td><td>Biegen Sie rechts ab. <span class="vn-word">Xin hãy rẽ phải.</span></td><td class="vn-word">bên phải</td></tr>
+      <tr><td>⬆️ geradeaus</td><td class="phonetik">gơ-RA-đơ-aus</td><td>Gehen Sie immer geradeaus. <span class="vn-word">Xin hãy luôn đi thẳng.</span></td><td class="vn-word">đi thẳng</td></tr>
+      <tr><td>🚦 <span class="die">die</span>Kreuzung</td><td class="phonetik">CROI-tsung</td><td>An der Kreuzung links abbiegen. <span class="vn-word">Ở ngã tư rẽ trái.</span></td><td class="vn-word">ngã tư</td></tr>
+      <tr><td>🚥 <span class="die">die</span>Ampel</td><td class="phonetik">AM-pồ</td><td>Bei der Ampel rechts. <span class="vn-word">Ở đèn giao thông thì rẽ phải.</span></td><td class="vn-word">đèn giao thông</td></tr>
+      <tr><td>📐 <span class="die">die</span>Ecke</td><td class="phonetik">E-cơ</td><td>Es is<strong>t</strong> gleich um die Ecke. <span class="vn-word">Ngay góc phố thôi.</span></td><td class="vn-word">góc phố</td></tr>
+      <tr><td>🛣️ <span class="die">die</span>Straße</td><td class="phonetik">SHTRA-sơ</td><td>Welche Straße is<strong>t</strong> das? <span class="vn-word">Đây là đường gì vậy?</span></td><td class="vn-word">con đường</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 16</span>
+    <span>Seite 1 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Grammatik 1: Der Imperativ + Verben-Tabelle + Häufige Fehler + Übung 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 16</h1>
+      <h2>Neu: Der Imperativ (du/ihr/Sie) / Điểm ngữ pháp mới: thể mệnh lệnh (du/ihr/Sie)</h2>
+    </div>
+    <div class="badge">A1 · Lektion 16</div>
+  </div>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — Der Imperativ: Befehle &amp; Anweisungen geben / Ngữ pháp 1: thể mệnh lệnh — đưa ra chỉ dẫn</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Ganz neue Verbform: der <strong>Imperativ</strong>! Er hat drei Formen: <strong>du</strong> (Verbstamm, ohne Pronomen und ohne -st!), <strong>ihr</strong> (wie die ihr-Form im Präsens, ohne Pronomen), <strong>Sie</strong> (Infinitiv + Sie, Verb steht ZUERST). Beispiel: „<strong style="color:#1e40af;">Geh</strong> geradeaus!" / „<strong style="color:#1e40af;">Geht</strong> geradeaus!" / „<strong style="color:#1e40af;">Gehen Sie</strong> geradeaus!"</div>
+    <div class="tip-vn">💡 Dạng động từ hoàn toàn mới: <strong>thể mệnh lệnh (Imperativ)</strong>! Có ba dạng: <strong>du</strong> (gốc động từ, không đại từ, không -st!), <strong>ihr</strong> (giống dạng ihr ở thì hiện tại, không đại từ), <strong>Sie</strong> (nguyên mẫu + Sie, động từ đứng ĐẦU câu).</div>
+  </div>
+
+  <!-- Verben-Tabelle -->
+  <div class="section-title">🔧 Verben-Tabelle: Der Imperativ ⚠️ — fünf wichtige Wegbeschreibungs-Verben / Bảng động từ: thể mệnh lệnh ⚠️ — 5 động từ quan trọng để chỉ đường</div>
+  <table class="konj">
+    <colgroup><col style="width:100px"><col style="width:*"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Infinitiv</th><th>du</th><th>ihr</th><th>Sie</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">gehen</td><td><strong>Geh!</strong></td><td><strong>Geht!</strong></td><td><strong>Gehen Sie!</strong></td></tr>
+      <tr><td class="pronomen">folgen</td><td><strong>Folg!</strong></td><td><strong>Folgt!</strong></td><td><strong>Folgen Sie!</strong></td></tr>
+      <tr><td class="pronomen">abbiegen ⚠️</td><td><strong>Bieg ab!</strong></td><td><strong>Biegt ab!</strong></td><td><strong>Biegen Sie ab!</strong></td></tr>
+      <tr><td class="pronomen">nehmen ⚠️</td><td><strong>Nimm!</strong></td><td><strong>Nehmt!</strong></td><td><strong>Nehmen Sie!</strong></td></tr>
+      <tr><td class="pronomen">fahren ⚠️</td><td><strong>Fahr!</strong></td><td><strong>Fahrt!</strong></td><td><strong>Fahren Sie!</strong></td></tr>
+    </tbody>
+  </table>
+  <div class="gram-box">
+    <h4>🔁 Wichtige Regel: e→i bleibt, a→ä NICHT! / Quy tắc quan trọng: e→i giữ nguyên, a→ä thì KHÔNG!</h4>
+    <div class="rule-de">„folgen" zeigt den <strong>Normalfall</strong>: einfach der Verbstamm, keine Änderung nötig. Verben mit <strong>e→i/ie-Wechsel</strong> (wie „nehmen" → „nimmt") behalten diesen Wechsel im Imperativ: „Nimm!" Verben mit <strong>a→ä-Wechsel</strong> (wie „fahren" → „fährt") behalten den Umlaut im Imperativ NICHT: „Fahr!", nicht „Fähr!"</div>
+    <div class="rule-vn">„folgen" cho thấy <strong>trường hợp bình thường</strong>: chỉ cần gốc động từ, không cần thay đổi gì. Động từ có <strong>biến đổi e→i/ie</strong> (như „nehmen" → „nimmt") vẫn giữ biến đổi này ở thể mệnh lệnh: „Nimm!" Động từ có <strong>biến đổi a→ä</strong> (như „fahren" → „fährt") KHÔNG giữ dấu biến âm ở thể mệnh lệnh: „Fahr!", không phải „Fähr!"</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Du gehst geradeaus!" (als Befehl)</span> → <span class="wb-ok">✅ „Geh geradeaus!"</span> — im Imperativ kein Subjektpronomen und keine Personalendung -st!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Du gehst geradeaus!" (làm mệnh lệnh)</span> → <span class="wb-ok">✅ „Geh geradeaus!"</span> — thể mệnh lệnh không có đại từ chủ ngữ và không có đuôi -st!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Fähr geradeaus!"</span> → <span class="wb-ok">✅ „Fahr geradeaus!"</span> — a→ä-Verben ändern sich NICHT im Imperativ (anders als im Präsens)!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Fähr geradeaus!"</span> → <span class="wb-ok">✅ „Fahr geradeaus!"</span> — động từ biến đổi a→ä KHÔNG biến đổi ở thể mệnh lệnh (khác với thì hiện tại)!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Sie gehen geradeaus!" (falsche Wortstellung)</span> → <span class="wb-ok">✅ „Gehen Sie geradeaus!"</span> — bei der Sie-Form steht das Verb ZUERST, dann „Sie"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Sie gehen geradeaus!" (sai trật tự từ)</span> → <span class="wb-ok">✅ „Gehen Sie geradeaus!"</span> — ở dạng Sie, động từ đứng ĐẦU tiên, sau đó mới đến „Sie"!</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — Vom Satz zum Befehl: Bilde den Imperativ / Từ câu trần thuật thành mệnh lệnh</div>
+  <div class="ubung-body">
+    <div class="instr-de">Verwandle jeden Satz in einen Befehl im Imperativ. Achte auf die richtige Form (du/ihr/Sie)!</div>
+    <div class="instr-vn">Biến mỗi câu thành câu mệnh lệnh. Chú ý dùng đúng dạng (du/ihr/Sie)!</div>
+    <div class="fill-line"><span class="num">1.</span> Du gehst geradeaus. <span class="vn-word">(Bạn đi thẳng.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Ihr nehmt die zweite Straße links. <span class="vn-word">(Các bạn đi con đường thứ hai bên trái.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Sie biegen an der Ampel rechts ab. <span class="vn-word">(Ông/bà rẽ phải ở đèn giao thông.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Du fährst bis zur Kreuzung. <span class="vn-word">(Bạn lái xe đến ngã tư.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">5.</span> Ihr folgt der Hauptstraße. <span class="vn-word">(Các bạn đi theo đường chính.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">6.</span> Sie nehmen die erste Straße rechts. <span class="vn-word">(Ông/bà đi con đường đầu tiên bên phải.)</span> → <span class="blank-xl"></span></div>
+  </div>
+
+  <!-- Übung 1b -->
+  <div class="ubung-header">Übung 1b — Lückentext: Der Weg zum Bahnhof / Điền từ: đường đến nhà ga</div>
+  <div class="ubung-body">
+    <div class="instr-de">Du erklärst einem Freund den Weg. Ergänze die Imperativ-Form (du-Form!) des Verbs in Klammern. Achtung: zwei Verben haben einen Vokalwechsel!</div>
+    <div class="instr-vn">Bạn đang chỉ đường cho một người bạn. Điền dạng mệnh lệnh (dạng du!) của động từ trong ngoặc. Chú ý: hai động từ có biến đổi nguyên âm!</div>
+    <div class="fill-line" style="line-height:1.7;"><span class="blank"></span> (1, gehen) zuerst geradeaus bis zur Kreuzung. <span class="blank"></span> (2, abbiegen) dort rechts ab und <span class="blank"></span> (3, fahren) bis zum Museum. <span class="blank"></span> (4, gehen) am Museum vorbei. <span class="blank"></span> (5, nehmen) dann die erste Straße links — der Bahnhof ist gleich auf der rechten Seite!</div>
+    <div class="vn-word" style="display:block; margin-top:2px;">(Trước tiên hãy đi thẳng đến ngã tư. Ở đó hãy rẽ phải và lái xe đến bảo tàng. Hãy đi ngang qua bảo tàng. Sau đó hãy đi con đường đầu tiên bên trái — nhà ga sẽ ngay bên tay phải!)</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 16</span>
+    <span>Seite 2 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Grammatik 2: Lokale Präpositionen + Häufige Fehler + Kulturinfo 1 + Übung 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 16</h1>
+      <h2>Lokale Präpositionen für den Weg / Giới từ chỉ vị trí để mô tả đường đi</h2>
+    </div>
+    <div class="badge">A1 · Lektion 16</div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Präpositionen: vorbei, gegenüber, zwischen, bis zu / Ngữ pháp 2: các giới từ vorbei, gegenüber, zwischen, bis zu</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Diese Präpositionen bauen auf dem <strong>Dativ</strong> aus Lektion 10 und 15 auf.</div>
+    <div class="tip-vn">💡 Các giới từ này dựa trên <strong>Dativ</strong> đã học ở Bài 10 và 15.</div>
+  </div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:26%"><col style="width:52%"></colgroup>
+    <thead><tr><th>Präposition</th><th>Tiếng Việt</th><th>Beispiel</th></tr></thead>
+    <tbody>
+      <tr><td>an ... vorbei <span class="vn-word">(+ Dativ)</span></td><td class="vn-word">đi ngang qua</td><td>Gehen Sie am Rathaus vorbei. <span class="vn-word">Xin hãy đi ngang qua tòa thị chính.</span></td></tr>
+      <tr><td>gegenüber (von) <span class="vn-word">(+ Dativ)</span></td><td class="vn-word">đối diện với</td><td>Die Bank ist gegenüber der Post. <span class="vn-word">Ngân hàng đối diện bưu điện.</span></td></tr>
+      <tr><td>zwischen <span class="vn-word">(+ Dativ)</span></td><td class="vn-word">ở giữa</td><td>Es liegt zwischen der Kirche und dem Museum. <span class="vn-word">Nó nằm giữa nhà thờ và bảo tàng.</span></td></tr>
+      <tr><td>bis zu <span class="vn-word">(+ Dativ)</span></td><td class="vn-word">cho đến</td><td>Fahren Sie bis zur Kreuzung. <span class="vn-word">Xin hãy lái đến ngã tư.</span></td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 Bonus (nicht prüfungsrelevant für A1, aber gut zu kennen): „entlang" bedeutet <strong>dọc theo</strong> und steht als Ausnahme meistens NACH dem Nomen, mit Akkusativ: „Gehen Sie die Straße entlang." Wenn dir das zu schwierig ist, reicht auch einfach: „Gehen Sie geradeaus."</div>
+    <div class="tip-vn">💡 Bonus (không bắt buộc cho A1, nhưng nên biết): „entlang" nghĩa là <strong>dọc theo</strong> và là ngoại lệ — thường đứng SAU danh từ, với Akkusativ: „Gehen Sie die Straße entlang." Nếu thấy khó, chỉ cần dùng: „Gehen Sie geradeaus." là đủ cho A1!</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Gehen Sie an das Rathaus vorbei."</span> → <span class="wb-ok">✅ „Gehen Sie an dem Rathaus vorbei." (am Rathaus)</span> — „an ... vorbei" braucht Dativ, nicht Akkusativ!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Gehen Sie an das Rathaus vorbei."</span> → <span class="wb-ok">✅ „Gehen Sie an dem Rathaus vorbei." (am Rathaus)</span> — „an ... vorbei" cần Dativ, không phải Akkusativ!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Es liegt zwischen die Kirche und die Post."</span> → <span class="wb-ok">✅ „Es liegt zwischen der Kirche und der Post."</span> — Position (Wo?) = Dativ, nicht Akkusativ!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Es liegt zwischen die Kirche und die Post."</span> → <span class="wb-ok">✅ „Es liegt zwischen der Kirche und der Post."</span> — vị trí (Wo?) = Dativ, không phải Akkusativ!</div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Das deutsche Adress-System / Hệ thống địa chỉ ở Đức</div>
+    <div class="kb-de">Eine deutsche Adresse besteht meistens aus Straßenname, Hausnummer, Postleitzahl (PLZ) und Stadt — z. B. „Goethestraße 12, 10115 Berlin". Auf einer Straßenseite stehen meist die geraden Hausnummern, auf der anderen die ungeraden.</div>
+    <div class="kb-vn">Địa chỉ ở Đức thường gồm tên đường, số nhà, mã bưu chính (PLZ) và tên thành phố — ví dụ „Goethestraße 12, 10115 Berlin". Một bên đường thường là số nhà chẵn, bên kia là số lẻ — khác với cách đánh số nhà đôi khi không theo quy luật rõ ràng ở Việt Nam, hệ thống này giúp tìm địa chỉ dễ dàng hơn nhiều.</div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — Präpositionen-Check: Ergänze die richtige Präposition / Điền giới từ đúng</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die passende Präposition (an ... vorbei, gegenüber von, zwischen, bis zu).</div>
+    <div class="instr-vn">Điền giới từ phù hợp (an ... vorbei, gegenüber von, zwischen, bis zu).</div>
+    <div class="fill-line"><span class="num">1.</span> Die Bank ist <span class="blank"></span> der Post. <span class="vn-word">(Ngân hàng đối diện bưu điện.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Gehen Sie <span class="blank"></span> dem Museum <span class="blank"></span>. <span class="vn-word">(Xin hãy đi ngang qua bảo tàng.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Der Bahnhof liegt <span class="blank"></span> der Kirche und dem Park. <span class="vn-word">(Nhà ga nằm giữa nhà thờ và công viên.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Fahren Sie <span class="blank"></span> zur nächsten Kreuzung. <span class="vn-word">(Xin hãy lái đến ngã tư tiếp theo.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Das Krankenhaus liegt <span class="blank"></span> der Schule und der Apotheke. <span class="vn-word">(Bệnh viện nằm giữa trường học và hiệu thuốc.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Das Rathaus ist <span class="blank"></span> dem Supermarkt. <span class="vn-word">(Tòa thị chính đối diện siêu thị.)</span></div>
+  </div>
+
+  <!-- Übung 2b -->
+  <div class="ubung-header">Übung 2b — Lückentext: Beschreibung einer kleinen Stadt / Điền từ: mô tả một thành phố nhỏ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Lies den kurzen Text und ergänze die vier fehlenden Präpositionen. Wähle aus der Wortliste — jedes Wort passt nur einmal!</div>
+    <div class="instr-vn">Đọc đoạn văn ngắn và điền 4 giới từ còn thiếu. Chọn từ danh sách bên dưới — mỗi từ chỉ dùng đúng một lần!</div>
+    <div class="wortsalat-woerter" style="margin-bottom:5px;"><span class="wort-chip">bis zu</span><span class="wort-chip">gegenüber von</span><span class="wort-chip">an ... vorbei</span><span class="wort-chip">zwischen</span></div>
+    <div class="fill-line" style="line-height:1.6;">In unserer Stadt ist die Bank <span class="blank"></span> (1) der Post. Das Rathaus liegt genau <span class="blank"></span> (2) der Kirche und dem Park. Wenn Sie zum Bahnhof wollen, gehen Sie <span class="blank"></span> (3) dem Museum <span class="blank"></span> und folgen Sie der Straße <span class="blank"></span> (4) zur Kreuzung. Von dort ist der Bahnhof nicht mehr weit.</div>
+    <div class="vn-word" style="display:block; margin-top:2px;">(Ngân hàng đối diện bưu điện. Tòa thị chính nằm giữa nhà thờ và công viên. Muốn đến nhà ga, hãy đi ngang qua bảo tàng rồi đi theo đường đến ngã tư. Từ đó nhà ga không còn xa nữa.)</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 16</span>
+    <span>Seite 3 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (GAME: Stadtplan-Navigator + Kulturinfo 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 16</h1>
+      <h2>Spiel: Der Stadtplan-Navigator / Trò chơi: Người dẫn đường bản đồ thành phố</h2>
+    </div>
+    <div class="badge">A1 · Lektion 16</div>
+  </div>
+
+  <!-- GAME -->
+  <div class="game-header">🎲 GAME — Der Stadtplan-Navigator (solo spielbar!) / Người dẫn đường bản đồ thành phố (chơi một mình cũng được!)</div>
+  <div class="game-body">
+    <div class="instr-de">Du bist Tourist und fragst nach dem Weg. Wähle Start und Ziel aus der Karte (oder benutze die vorgegebenen Kombinationen) und beschreibe den Weg im Imperativ — benutze die <strong>Sie</strong>-Form, mindestens 2 Präpositionen aus Grammatik 2 und mindestens 2 Imperativ-Verben!</div>
+    <div class="instr-vn">Bạn là khách du lịch đang hỏi đường. Chọn điểm xuất phát và điểm đến trên bản đồ (hoặc dùng các cặp cho sẵn) và mô tả đường đi bằng thể mệnh lệnh — dùng dạng <strong>Sie</strong>, ít nhất 2 giới từ ở Ngữ pháp 2 và ít nhất 2 động từ mệnh lệnh!</div>
+
+    <div class="stadtplan-box">
+      <div class="stadtplan-title">🗺️ Der Stadtplan / Bản đồ thành phố</div>
+      <div class="stadtplan-grid">
+        <div class="stadtplan-kopf"></div>
+        <div class="stadtplan-kopf">1</div>
+        <div class="stadtplan-kopf">2</div>
+        <div class="stadtplan-kopf">3</div>
+        <div class="stadtplan-kopf">4</div>
+
+        <div class="stadtplan-kopf">A</div>
+        <div class="stadtplan-zelle"><span class="icon">🏛️</span><span class="label">Rathaus</span></div>
+        <div class="stadtplan-zelle"><span class="icon">⛪</span><span class="label">Kirche</span></div>
+        <div class="stadtplan-zelle"><span class="icon">🏦</span><span class="label">Bank</span></div>
+        <div class="stadtplan-zelle"><span class="icon">💊</span><span class="label">Apotheke</span></div>
+
+        <div class="stadtplan-kopf">B</div>
+        <div class="stadtplan-zelle"><span class="icon">🅿️</span><span class="label">Parkplatz</span></div>
+        <div class="stadtplan-zelle"><span class="icon">🚦</span><span class="label">Ampel</span></div>
+        <div class="stadtplan-zelle"><span class="icon">📮</span><span class="label">Post</span></div>
+        <div class="stadtplan-zelle"><span class="icon">🛒</span><span class="label">Supermarkt</span></div>
+
+        <div class="stadtplan-kopf">C</div>
+        <div class="stadtplan-zelle"><span class="icon">🎨</span><span class="label">Museum</span></div>
+        <div class="stadtplan-zelle"><span class="icon">🌳</span><span class="label">Park</span></div>
+        <div class="stadtplan-zelle"><span class="icon">🚉</span><span class="label">Bahnhof</span></div>
+        <div class="stadtplan-zelle"><span class="icon">🏫</span><span class="label">Schule</span></div>
+
+        <div class="stadtplan-kopf">D</div>
+        <div class="stadtplan-zelle"><span class="icon">🏨</span><span class="label">Hotel</span></div>
+        <div class="stadtplan-zelle"><span class="icon">☕</span><span class="label">Café</span></div>
+        <div class="stadtplan-zelle"><span class="icon">🍽️</span><span class="label">Restaurant</span></div>
+        <div class="stadtplan-zelle start"><span class="icon">🏠</span><span class="label">Start (Zuhause)</span></div>
+      </div>
+    </div>
+
+    <div class="instr-de" style="margin-bottom:3px;">Vorgegebene Routen — beschreibe den Weg: <span class="vn-word" style="font-style:normal;">Mô tả đường đi theo các tuyến sau:</span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">1.</span><span class="koord-badge">D4</span><span class="wortsalat-arrow">→</span><span class="koord-badge">C3</span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">2.</span><span class="koord-badge">A1</span><span class="wortsalat-arrow">→</span><span class="koord-badge">D2</span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">3.</span><span class="koord-badge">B4</span><span class="wortsalat-arrow">→</span><span class="koord-badge">A3</span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">4.</span><span style="color:#9a3412; font-weight:700; font-size:9.5px;">🎲 Freie Runde — wähle selbst zwei Orte!</span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Fußgängerzonen in deutschen Innenstädten / Khu phố đi bộ ở trung tâm thành phố Đức</div>
+    <div class="kb-de">In den meisten deutschen Innenstädten gibt es eine <b>Fußgängerzone</b> — einen Bereich, in dem Autos nicht fahren dürfen. Hier findet man Geschäfte, Cafés und oft auch historische Gebäude. Fahrräder dürfen die Fußgängerzone meistens nur schieben, nicht fahren.</div>
+    <div class="kb-vn">Ở hầu hết các trung tâm thành phố Đức đều có <b>khu phố đi bộ</b> — khu vực cấm ô tô đi vào. Ở đây thường có cửa hàng, quán cà phê và nhiều công trình lịch sử. Xe đạp trong khu này thường chỉ được dắt bộ, không được đạp — khác hẳn với nhịp giao thông đông đúc, nhiều xe máy thường thấy ở các thành phố Việt Nam, khu phố đi bộ ở Đức tạo cảm giác yên tĩnh, thong thả để dạo chơi.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 16</span>
+    <span>Seite 4 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 5 (Dialog + Lesetext + MC) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 16</h1>
+      <h2>Dialog &amp; Lesetext / Hội thoại &amp; bài đọc</h2>
+    </div>
+    <div class="badge">A1 · Lektion 16</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Tourist:</span>Entschuldigung, wie komme ich zum Bahnhof?</div>
+    <div class="dialog-line"><span class="speaker">Passant:</span>Kein Problem! Gehen Sie hier geradeaus bis zur Ampel.</div>
+    <div class="dialog-line"><span class="speaker">Tourist:</span>Und dann?</div>
+    <div class="dialog-line"><span class="speaker">Passant:</span>An der Ampel biegen Sie rechts ab und folgen Sie der Hauptstraße.</div>
+    <div class="dialog-line"><span class="speaker">Tourist:</span>Ist das weit?</div>
+    <div class="dialog-line"><span class="speaker">Passant:</span>Nein, nur fünf Minuten zu Fuß. Gehen Sie am Rathaus vorbei, dann sehen Sie den Bahnhof schon.</div>
+    <div class="dialog-line"><span class="speaker">Tourist:</span>Super, vielen Dank!</div>
+    <div class="dialog-line"><span class="speaker">Passant:</span>Gern geschehen! Der Bahnhof liegt übrigens direkt gegenüber vom Museum.</div>
+    <div class="dialog-line"><span class="speaker">Tourist:</span>Perfekt, das hilft mir sehr. Auf Wiedersehen!</div>
+    <div class="dialog-line"><span class="speaker">Passant:</span>Auf Wiedersehen, gute Reise!</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Lukas wohnt in einer kleinen Stadt in Bayern und bekommt heute Besuch von seiner Freundin Linh aus Vietnam. Weil Linh zum ersten Mal in der Stadt ist, schickt Lukas ihr eine genaue Wegbeschreibung vom Bahnhof zu seiner Wohnung. „Geh aus dem Bahnhof direkt geradeaus", schreibt er, „und folge der Bahnhofstraße bis zur zweiten Kreuzung." Danach soll Linh an der Post vorbei gehen und dann links in die Goethestraße abbiegen. Seine Wohnung liegt zwischen einer Bäckerei und einem kleinen Park, direkt gegenüber von der Kirche. „Du kannst mein Haus nicht verfehlen", schreibt Lukas, „es is<strong>t</strong> rot und hat einen großen Baum davor." Linh is<strong>t</strong> ein bisschen nervös, weil sie sich in fremden Städten oft verläuft, aber die Wegbeschreibung is<strong>t</strong> zum Glück sehr klar. Sie druckt die Nachricht aus und nimmt sie mit. Am Bahnhof angekommen, folgt sie genau den Anweisungen: geradeaus, an der Post vorbei, links abbiegen — und tatsächlich, nach zehn Minuten steh<strong>t</strong> sie vor einem roten Haus mit einem großen Baum. Lukas öffnet die Tür und lacht: „Siehs<strong>t</strong> du, so schwer war das gar nicht!"
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Woher kommt Linh?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) aus Japan</span>
+      <span><span class="mc-kreis"></span> b) aus Vietnam</span>
+      <span><span class="mc-kreis"></span> c) aus Korea</span>
+    </div>
+    <div class="mc-frage">2. Was soll Linh zuerst tun, wenn sie aus dem Bahnhof kommt?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) rechts abbiegen</span>
+      <span><span class="mc-kreis"></span> b) geradeaus gehen</span>
+      <span><span class="mc-kreis"></span> c) ein Taxi nehmen</span>
+    </div>
+    <div class="mc-frage">3. Wo soll Linh links abbiegen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) an der Post</span>
+      <span><span class="mc-kreis"></span> b) in die Goethestraße</span>
+      <span><span class="mc-kreis"></span> c) an der Kirche</span>
+    </div>
+    <div class="mc-frage">4. Wo liegt Lukas' Wohnung?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) neben dem Bahnhof</span>
+      <span><span class="mc-kreis"></span> b) zwischen einer Bäckerei und einem Park</span>
+      <span><span class="mc-kreis"></span> c) gegenüber der Post</span>
+    </div>
+    <div class="mc-frage">5. Wie erkennt Linh das Haus?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) es ist blau und hat einen Garten</span>
+      <span><span class="mc-kreis"></span> b) es ist rot und hat einen großen Baum davor</span>
+      <span><span class="mc-kreis"></span> c) es hat eine sehr große Tür</span>
+    </div>
+    <div class="mc-frage">6. Warum ist Linh anfangs nervös?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie mag Lukas nicht</span>
+      <span><span class="mc-kreis"></span> b) sie verläuft sich oft in fremden Städten</span>
+      <span><span class="mc-kreis"></span> c) sie hat den Zug verpasst</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Wie kommt man von deiner Wohnung zur nächsten U-Bahn-Station oder zum nächsten Supermarkt? Beschreibe den Weg!</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Từ nhà bạn đi đến ga tàu điện ngầm hoặc siêu thị gần nhất như thế nào? Hãy mô tả đường đi!</div>
+    </div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">Imperativ</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Wie kommt man von hier zum nächsten Supermarkt?</div>
+      <div class="anweisung-vn">Từ đây đi đến siêu thị gần nhất như thế nào?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">gegenüber</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was liegt in deiner Stadt gegenüber von deiner Schule oder Wohnung?</div>
+      <div class="anweisung-vn">Trong thành phố của bạn, đối diện trường học hoặc nhà bạn là gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">Rollenspiel</div>
+      <div class="prompt-row"><span class="prompt-tag satz">Satz</span></div>
+      <div class="anweisung-de">Ein Tourist fragt dich nach dem Weg zum Bahnhof. Was sagst du?</div>
+      <div class="anweisung-vn">Một du khách hỏi bạn đường đến nhà ga. Bạn sẽ nói gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">Gebäude</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Welche Gebäude gibt es in deiner Nähe? Nenne mindestens 3.</div>
+      <div class="anweisung-vn">Gần bạn có những tòa nhà nào? Kể ít nhất 3 cái.</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 16</span>
+    <span>Seite 5 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 6 (Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 16</h1>
+      <h2>Hausaufgaben &amp; Antworten / Bài tập về nhà &amp; Đáp án</h2>
+    </div>
+    <div class="badge">A1 · Lektion 16</div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Imperativ-Formen üben / Luyện thể mệnh lệnh:</strong> Schreibe die vollständige Imperativ-Konjugation (du/ihr/Sie) von „gehen", „nehmen", „fahren" und „abbiegen" auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết ra giấy đầy đủ 3 dạng mệnh lệnh (du/ihr/Sie) của „gehen", „nehmen", „fahren" và „abbiegen" — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">✏️ <strong>Wegbeschreibung schreiben / Viết chỉ đường:</strong> Schreibe eine Wegbeschreibung von deiner Wohnung zur Schule oder zur Arbeit — benutze mindestens 3 Imperativ-Verben und 2 Präpositionen aus Grammatik 2.
+      <div class="ha-vn">Viết một đoạn chỉ đường từ nhà bạn đến trường hoặc chỗ làm — dùng ít nhất 3 động từ mệnh lệnh và 2 giới từ ở Ngữ pháp 2.</div>
+    </div>
+    <div class="ha-item">🗺️ <strong>Stadtplan zeichnen / Vẽ bản đồ thành phố:</strong> Zeichne eine kleine Karte deiner Nachbarschaft mit mindestens 5 beschrifteten Gebäuden und markiere deinen Wohnort.
+      <div class="ha-vn">Vẽ một bản đồ nhỏ khu vực xung quanh nhà bạn với ít nhất 5 tòa nhà có chú thích, và đánh dấu nơi bạn sống.</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 15):</strong> 1. schmeckt &nbsp; 2. Falsch — richtig ist „Die Stühle gefallen ihnen." (Plural-Verb) &nbsp; 3. mir</p>
+    <p><strong>Übung 1 (Imperativ):</strong> 1. Geh geradeaus! &nbsp; 2. Nehmt die zweite Straße links! &nbsp; 3. Biegen Sie an der Ampel rechts ab! &nbsp; 4. Fahr bis zur Kreuzung! &nbsp; 5. Folgt der Hauptstraße! &nbsp; 6. Nehmen Sie die erste Straße rechts!</p>
+    <p><strong>Übung 1b (Lückentext, du-Form):</strong> 1. Geh &nbsp; 2. Bieg &nbsp; 3. Fahr &nbsp; 4. Geh &nbsp; 5. Nimm</p>
+    <p><strong>Übung 2 (Präpositionen):</strong> 1. gegenüber (von) &nbsp; 2. an ... vorbei &nbsp; 3. zwischen &nbsp; 4. bis &nbsp; 5. zwischen &nbsp; 6. gegenüber (von)</p>
+    <p><strong>Übung 2b (Lückentext):</strong> 1. gegenüber (von) &nbsp; 2. zwischen &nbsp; 3. an ... vorbei &nbsp; 4. bis zu</p>
+    <p><strong>Game (Stadtplan-Navigator), Beispiele:</strong> 1. D4→C3: Gehen Sie geradeaus, biegen Sie an der Ampel links ab und folgen Sie der Straße bis zum Bahnhof. &nbsp; 2. A1→D2: Gehen Sie am Museum vorbei, biegen Sie rechts ab und gehen Sie bis zum Café. &nbsp; 3. B4→A3: Gehen Sie geradeaus und biegen Sie an der Kreuzung links ab, die Bank ist gegenüber der Apotheke.</p>
+    <p><strong>Leseverständnis:</strong> 1. b) aus Vietnam &nbsp; 2. b) geradeaus gehen &nbsp; 3. b) in die Goethestraße &nbsp; 4. b) zwischen einer Bäckerei und einem Park &nbsp; 5. b) es ist rot und hat einen großen Baum davor &nbsp; 6. b) sie verläuft sich oft in fremden Städten</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Gehen Sie geradeaus und biegen Sie an der Kreuzung rechts ab. &nbsp; Karte 2: Gegenüber meiner Schule ist ein Park. &nbsp; Karte 3: Gehen Sie hier links, dann sehen Sie den Bahnhof. &nbsp; Karte 4: Bei mir in der Nähe gibt es eine Bank, einen Supermarkt und eine Apotheke.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 16 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 6 / 6</span>
+  </div>
+</div>
+
+</body>
+</html>

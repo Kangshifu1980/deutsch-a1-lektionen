@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 1</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 9mm 14mm 4mm 14mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plu { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+.wh-box { background: #f0f9ff; border: 0.5px solid #bae6fd; border-radius: 8px; padding: 7px 12px; margin-bottom: 8px; }
+.wh-box .wh-title { font-size: 10.5px; font-weight: 700; color: #075985; margin-bottom: 4px; }
+.wh-item { font-size: 10.5px; color: #1a1a1a; margin-bottom: 3px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 6px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; white-space: nowrap; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 80px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+table.konj tr:nth-child(even) td:not(.pronomen) { background: #f8fafc; }
+table.konj td.irregular { color: #b45309; font-weight: 700; }
+table.konj td.beispiel { text-align: left; font-size: 10px; color: #374151; }
+table.konj td.beispiel span { color: #0f766e; font-size: 9.5px; }
+table.konj td .ipa-sub { display: inline; font-weight: 400; color: #64748b; font-size: 9px; margin-left: 3px; }
+.satzbau { display: flex; gap: 6px; margin: 6px 0; flex-wrap: wrap; }
+.satzbau .pos { border-radius: 6px; padding: 5px 10px; text-align: center; flex: 1; min-width: 80px; }
+.satzbau .pos .pos-num { font-size: 8.5px; font-weight: 700; color: #64748b; text-transform: uppercase; }
+.satzbau .pos .pos-label { font-size: 10.5px; font-weight: 700; }
+.satzbau .pos.subj { background: #dbeafe; border: 1px solid #93c5fd; }
+.satzbau .pos.subj .pos-label { color: #1e40af; }
+.satzbau .pos.verb { background: #fef3c7; border: 1px solid #fcd34d; }
+.satzbau .pos.verb .pos-label { color: #92400e; }
+.satzbau .pos.rest { background: #dcfce7; border: 1px solid #86efac; }
+.satzbau .pos.rest .pos-label { color: #14532d; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 6px 10px; margin-bottom: 6px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 4px; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 5px 9px; margin: 4px 0 8px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 3px; }
+.fehler-item { margin-bottom: 4px; padding-bottom: 4px; border-bottom: 1px dashed #fed7aa; }
+.fehler-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.fehler-item .falsch { color: #b91c1c; font-weight: 700; }
+.fehler-item .richtig { color: #15803d; font-weight: 700; }
+.fehler-item .erkl-de { color: #7c2d12; margin-top: 1px; }
+.fehler-item .erkl-vn { color: #c2410c; font-style: italic; }
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-sub { font-size: 10px; font-weight: 700; color: #4338ca; margin: 2px 0 3px; text-transform: uppercase; letter-spacing: 0.4px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 3px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 6px 8px; margin-bottom: 6px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 4px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 90px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 200px; display: inline-block; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.wortsalat { background: #f8fafc; border: 0.5px dashed #94a3b8; border-radius: 5px; padding: 3px 8px; font-size: 10.5px; color: #374151; margin-bottom: 2px; font-style: italic; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 6px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 10px; color: #166534; margin-bottom: 2px; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 6px 10px; margin-top: 6px; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10.5px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 10px; }
+.footer { margin-top: 8px; padding-top: 4px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.22; font-size: 11.2px; }
+.compact .doc-header { padding-bottom: 4px; margin-bottom: 6px; }
+.compact .section-title { margin: 6px 0 3px 0; }
+.compact table { margin-bottom: 4px; }
+.compact table.vocab th, .compact table.vocab td { padding: 2px 5px; }
+.compact table.konj th, .compact table.konj td { padding: 2px 4px; }
+.compact .gram-box { padding: 5px 9px; margin-bottom: 3px; }
+.compact .warn-box { padding: 3px 7px; margin: 2px 0 8px 0; }
+.compact .kultur-box { padding: 5px 9px; margin: 4px 0 8px 0; }
+.compact .ubung-header { padding: 2px 8px; }
+.compact .ubung-body { padding: 5px 8px; margin-bottom: 4px; }
+.compact .ubung-body .instr-vn { margin-bottom: 2px; }
+.compact .fill-line { margin-bottom: 1px; }
+.compact .footer { margin-top: 4px; padding-top: 3px; }
+.compact .phon-box { padding: 4px 8px; margin-bottom: 4px; }
+.compact .wh-box { padding: 5px 9px; margin-bottom: 6px; }
+
+.roomy { font-size: 12.5px; line-height: 1.55; }
+.roomy .doc-header { margin-bottom: 12px; padding-bottom: 7px; }
+.roomy .section-title { font-size: 12px; margin: 14px 0 7px 0; }
+.roomy .ha-box { padding: 9px 15px; margin-top: 8px; }
+.roomy .ha-box h4 { font-size: 12.5px; margin-bottom: 7px; }
+.roomy .ha-item { font-size: 12px; margin-bottom: 9px; }
+.roomy .ha-item .ha-vn { font-size: 11px; }
+.roomy .antworten { padding: 9px 15px; margin-top: 10px; }
+.roomy .antworten h4 { font-size: 12.5px; margin-bottom: 6px; }
+.roomy .antworten p { font-size: 11.5px; margin-bottom: 5px; line-height: 1.5; }
+.roomy .footer { margin-top: 14px; padding-top: 7px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 6px 10px; margin-bottom: 6px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 2px; }
+.phon-box .phon-de { font-size: 10px; color: #1a1a1a; margin-bottom: 2px; }
+.phon-box .phon-vn { font-size: 9.5px; color: #6d28d9; font-style: italic; margin-bottom: 3px; }
+.phon-box .phon-liste { font-size: 10px; color: #4c1d95; }
+.phon-box .phon-liste span { display: inline-block; margin-right: 12px; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 12px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 12.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 6px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.pronomen { background: #dcfce7; color: #14532d; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.mc-block { margin-bottom: 6px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; flex-direction: column; gap: 1px; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; padding-left: 4px; }
+.mc-optionen span { display: flex; align-items: center; gap: 4px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; flex-shrink: 0; }
+</style>
+</head>
+<body>
+
+<!-- ═════════════════════════════ SEITE 1 / 6 ═════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 1</h1>
+      <h2>Begrüßung &amp; Sich vorstellen / Chào hỏi &amp; Tự giới thiệu</h2>
+    </div>
+    <div class="badge">A1 · Lektion 1 · Seite 1 / 6</div>
+  </div>
+
+  <div class="section-title">⏱️ WIEDERHOLUNG (ca. 5 Min.) / Ôn tập</div>
+  <div class="wh-box">
+    <div class="wh-title">Test zu Lektion 0: Finde und korrigiere 3 Fehler / Kiểm tra bài 0: Tìm và sửa 3 lỗi</div>
+    <div class="wh-item"><b>1.</b> „Ich bin mude." — Was ist falsch? <span class="vn-word">Sai ở đâu?</span></div>
+    <div class="wh-item"><b>2.</b> Wie spricht man „der Tag" am Ende aus? <span class="vn-word">Chữ cuối của "der Tag" đọc thế nào?</span></div>
+    <div class="wh-item"><b>3.</b> „Das Wetter ist schon." — Welches Wort ist falsch? <span class="vn-word">Từ nào bị sai?</span></div>
+  </div>
+
+  <div class="section-title">🔊 AUSSPRACHE-MINUTE (ca. 3 Min.) / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Fokuslaut: Gesprochenes „H" versus stummes Dehnungs-„h" <span style="font-weight:400; color:#7c3aed;">/ Âm trọng tâm: „H" phát âm rõ so với „h" câm kéo dài</span></div>
+    <div class="phon-de">💡 Regel: Am Wortanfang wird „H" immer deutlich gesprochen (viel Luft aus dem Hals). Nach einem Vokal in der Wortmitte ist „h" stumm — es dehnt nur den vorangehenden Vokal, ohne selbst hörbar zu sein.</div>
+    <div class="phon-vn">💡 Quy tắc: Ở đầu từ, „H" luôn được phát âm rõ ràng (đẩy nhiều hơi từ cổ họng) — gần giống âm "h" trong tiếng Việt (như "hoa"). Sau một nguyên âm ở giữa từ, „h" câm — nó chỉ kéo dài nguyên âm phía trước chứ bản thân không phát ra âm.</div>
+    <div class="phon-liste">
+      <span><b>hallo</b> — H phát âm rõ</span>
+      <span><b>heißen</b> — H phát âm rõ</span>
+      <span><b>wohnen</b> — h câm</span>
+      <span><b>gehen</b> — h câm</span>
+    </div>
+  </div>
+
+  <div class="section-title">🎯 LERNZIELE / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✓ Personen formell und informell begrüßen und verabschieden. <span class="vn">— Chào hỏi và tạm biệt theo cách trang trọng và thân mật</span></p>
+    <p class="de">✓ Den eigenen Namen nennen und nach dem Namen anderer fragen. <span class="vn">— Nói tên của mình và hỏi tên người khác</span></p>
+    <p class="de">✓ Die Grundstruktur von Aussagesätzen (Subjekt–Verb–Rest) verstehen. <span class="vn">— Hiểu cấu trúc cơ bản của câu trần thuật (Chủ ngữ–Động từ–Phần còn lại)</span></p>
+    <p class="de">✓ Alle 6 Personalpronomen mit den Verben „sein" und „heißen" im Präsens anwenden. <span class="vn">— Sử dụng cả 6 đại từ nhân xưng với động từ „sein" và „heißen" ở thì hiện tại</span></p>
+  </div>
+
+  <div class="section-title">🎨 FARBKODIERUNG / Mã màu quán từ</div>
+  <div class="legend">
+    <div class="legend-item"><span class="der">der</span> maskulin / giống đực</div>
+    <div class="legend-item"><span class="die">die</span> feminin / giống cái</div>
+    <div class="legend-item"><span class="das">das</span> neutral / giống trung</div>
+    <div class="legend-item"><span class="plu">Plural</span> số nhiều</div>
+    <div class="legend-item"><span class="warn">⚠️</span> unregelmäßig / bất quy tắc</div>
+  </div>
+
+  <div class="section-title">📚 WORTSCHATZ — BEGRÜSSUNG &amp; ABSCHIED / Từ vựng: Chào hỏi &amp; Tạm biệt</div>
+  <table class="vocab">
+    <colgroup><col style="width:26%"><col style="width:24%"><col style="width:40%"><col style="width:10%"></colgroup>
+    <thead><tr><th>Deutsch</th><th>Đọc là</th><th>Tiếng Việt</th><th>⚠️</th></tr></thead>
+    <tbody>
+      <tr><td>Hallo</td><td class="phonetik">ha-lô</td><td class="vn-word">xin chào (thân mật)</td><td></td></tr>
+      <tr><td>Guten Tag</td><td class="phonetik">gú-tần ta<strong>k</strong></td><td class="vn-word">xin chào (trang trọng)</td><td></td></tr>
+      <tr><td>Tschüss</td><td class="phonetik">tsuys</td><td class="vn-word">tạm biệt (thân mật)</td><td></td></tr>
+      <tr><td>Auf Wiedersehen</td><td class="phonetik">auf vi-đơ-zê-ần</td><td class="vn-word">tạm biệt (trang trọng)</td><td></td></tr>
+      <tr><td><span class="der">der</span>Name</td><td class="phonetik">na-mờ</td><td class="vn-word">tên</td><td></td></tr>
+      <tr><td><span class="der">der</span>Vorname</td><td class="phonetik">pho-na-mờ</td><td class="vn-word">tên (tên gọi)</td><td></td></tr>
+      <tr><td><span class="der">der</span>Nachname</td><td class="phonetik">nác-na-mờ</td><td class="vn-word">họ</td><td></td></tr>
+      <tr><td><span class="die">die</span>Begrüßung</td><td class="phonetik">bơ-gruy-sung</td><td class="vn-word">lời chào</td><td></td></tr>
+      <tr><td><span class="der">der</span>Abschie<strong>d</strong></td><td class="phonetik">áp-si<strong>t</strong></td><td class="vn-word">lời tạm biệt</td><td></td></tr>
+      <tr><td>kommen (aus)</td><td class="phonetik">côm-mần</td><td class="vn-word">đến từ (nơi nào đó)</td><td></td></tr>
+      <tr><td>woher?</td><td class="phonetik">vô-he</td><td class="vn-word">từ đâu?</td><td></td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 1</span>
+    <span>Seite 1 / 6</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 2 / 6 ═════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 1</h1>
+      <h2>Grammatik 1: Aussagesatz &amp; „sein" / Ngữ pháp 1: Câu trần thuật &amp; động từ „sein"</h2>
+    </div>
+    <div class="badge">A1 · Lektion 1 · Seite 2 / 6</div>
+  </div>
+
+  <div class="section-title">📖 GRAMMATIK 1 — DER AUSSAGESATZ (SUBJEKT–VERB–REST) &amp; DAS VERB „SEIN" / Cấu trúc câu trần thuật &amp; động từ „sein"</div>
+  <div class="gram-box">
+    <h4>Die Grundstruktur des deutschen Aussagesatzes / Cấu trúc cơ bản của câu trần thuật tiếng Đức</h4>
+    <div class="rule-de">Ein normaler deutscher Aussagesatz folgt immer diesem Muster: <b>Position 1</b> (Subjekt/Personalpronomen) + <b>Position 2</b> (konjugiertes Verb) + <b>Rest</b> (alles Weitere).</div>
+    <div class="rule-vn">Câu trần thuật thông thường trong tiếng Đức luôn theo khuôn mẫu này: <b>Vị trí 1</b> (chủ ngữ/đại từ nhân xưng) + <b>Vị trí 2</b> (động từ đã chia) + <b>Phần còn lại</b> (mọi thứ khác).</div>
+  </div>
+  <div class="satzbau">
+    <div class="pos subj"><div class="pos-num">Position 1</div><div class="pos-label">Ich</div></div>
+    <div class="pos verb"><div class="pos-num">Position 2</div><div class="pos-label">heiße</div></div>
+    <div class="pos rest"><div class="pos-num">Rest</div><div class="pos-label">Max.</div></div>
+  </div>
+  <div class="satzbau">
+    <div class="pos subj"><div class="pos-num">Position 1</div><div class="pos-label">Wir</div></div>
+    <div class="pos verb"><div class="pos-num">Position 2</div><div class="pos-label">sind</div></div>
+    <div class="pos rest"><div class="pos-num">Rest</div><div class="pos-label">Studenten.</div></div>
+  </div>
+
+  <table class="konj">
+    <colgroup><col style="width:30%"><col style="width:22%"><col style="width:48%"></colgroup>
+    <thead><tr><th class="pronomen-col">Pronomen</th><th>sein</th><th>Beispiel</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td class="irregular"><strong>bin</strong></td><td class="beispiel">Ich bin müde. <span>Tôi mệt.</span></td></tr>
+      <tr><td class="pronomen">du</td><td class="irregular">bi<strong>st</strong></td><td class="beispiel">Du bi<strong>st</strong> nett. <span>Bạn tốt bụng.</span></td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td class="irregular">i<strong>st</strong></td><td class="beispiel">Er i<strong>st</strong> Lehrer. <span>Anh ấy là giáo viên.</span></td></tr>
+      <tr><td class="pronomen">wir</td><td class="irregular">sin<strong>d</strong></td><td class="beispiel">Wir sin<strong>d</strong> hier. <span>Chúng tôi ở đây.</span></td></tr>
+      <tr><td class="pronomen">ihr</td><td class="irregular">sei<strong>d</strong></td><td class="beispiel">Ihr sei<strong>d</strong> pünktlich. <span>Các bạn rất đúng giờ.</span></td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td class="irregular">sin<strong>d</strong></td><td class="beispiel">Sie sin<strong>d</strong> Kollegen. <span>Họ / Ông bà là đồng nghiệp.</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="fehler-item">
+      <div><span class="falsch">❌ Falsch:</span> Ihr sind hier.</div>
+      <div><span class="richtig">✅ Richtig:</span> Ihr sei<strong>d</strong> hier.</div>
+      <div class="erkl-de">Erklärung: Zu „ihr" gehört immer <b>seid</b>, niemals <b>sind</b>. „sind" gehört nur zu „wir" und „sie/Sie".</div>
+      <div class="erkl-vn">Giải thích: „ihr" luôn đi với <b>seid</b>, không bao giờ là <b>sind</b>. „sind" chỉ dùng với „wir" và „sie/Sie".</div>
+    </div>
+    <div class="fehler-item">
+      <div><span class="falsch">❌ Falsch:</span> Ich bist Max.</div>
+      <div><span class="richtig">✅ Richtig:</span> Ich bin Max.</div>
+      <div class="erkl-de">Erklärung: „bist" gehört nur zu „du". Bei „ich" heißt es immer <b>bin</b>.</div>
+      <div class="erkl-vn">Giải thích: „bist" chỉ dùng với „du". Với „ich" luôn luôn là <b>bin</b>.</div>
+    </div>
+  </div>
+
+  <div class="ubung-header">📝 ÜBUNG 1 — Lückentext: bin / bist / ist / sind / seid / Bài tập 1: Điền từ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die richtige Form von „sein" für alle 6 Personen.</div>
+    <div class="instr-vn">Hãy điền đúng dạng của „sein" cho cả 6 ngôi. <span style="font-style:normal;">(* Câu 8 là câu hỏi Có/Không — động từ đứng ở vị trí 1, trước chủ ngữ!)</span></div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> Anna. <span class="vn-word small">Tôi là Anna.</span></div>
+        <div class="fill-line"><span class="num">2.</span> Du <span class="blank"></span> sehr nett. <span class="vn-word small">Bạn rất tốt bụng.</span></div>
+        <div class="fill-line"><span class="num">3.</span> Er <span class="blank"></span> Student. <span class="vn-word small">Anh ấy là sinh viên.</span></div>
+        <div class="fill-line"><span class="num">4.</span> Wir <span class="blank"></span> aus Deutschland. <span class="vn-word small">Chúng tôi đến từ Đức.</span></div>
+        <div class="fill-line"><span class="num">5.</span> Ihr <span class="blank"></span> pünktlich. <span class="vn-word small">Các bạn rất đúng giờ.</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">6.</span> Sie (Plural) <span class="blank"></span> Kollegen. <span class="vn-word small">Họ là đồng nghiệp.</span></div>
+        <div class="fill-line"><span class="num">7.</span> Ich <span class="blank"></span> nicht müde. <span class="vn-word small">Tôi không mệt.</span></div>
+        <div class="fill-line"><span class="num">8.*</span> <span class="blank"></span> du aus Berlin? <span class="vn-word small">Bạn đến từ Berlin phải không?</span></div>
+        <div class="fill-line"><span class="num">9.</span> Es <span class="blank"></span> schon spät. <span class="vn-word small">Đã muộn rồi.</span></div>
+        <div class="fill-line"><span class="num">10.</span> Wir <span class="blank"></span> gute Freunde. <span class="vn-word small">Chúng tôi là bạn tốt.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 1</span>
+    <span>Seite 2 / 6</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 3 / 6 ═════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 1</h1>
+      <h2>Grammatik 2: Das Verb „heißen" / Ngữ pháp 2: Động từ „heißen"</h2>
+    </div>
+    <div class="badge">A1 · Lektion 1 · Seite 3 / 6</div>
+  </div>
+
+  <div class="section-title" style="text-transform:none;">📖 GRAMMATIK 2 — DAS VERB „HEIßEN" / Động từ „heißen"</div>
+  <div class="gram-box">
+    <h4>Wie man nach dem Namen fragt und antwortet / Cách hỏi và trả lời về tên</h4>
+    <div class="rule-de">„heißen" ist grundsätzlich regelmäßig — Verbstamm „heiß-" + Endung. Eine Besonderheit: „du" und „er/sie/es" teilen dieselbe Form (heißt), weil der Stamm schon auf „ß" endet.</div>
+    <div class="rule-vn">„heißen" về cơ bản là động từ có quy tắc — thân động từ „heiß-" + đuôi biến đổi. Có một điểm đặc biệt: „du" và „er/sie/es" dùng chung một dạng (heißt), vì thân từ đã kết thúc bằng „ß".</div>
+  </div>
+
+  <table class="konj">
+    <colgroup><col style="width:26%"><col style="width:24%"><col style="width:50%"></colgroup>
+    <thead><tr><th class="pronomen-col">Pronomen</th><th>heißen</th><th>Beispiel</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td><strong>heiße</strong></td><td class="beispiel">Ich heiße Max. <span>Tôi tên là Max.</span></td></tr>
+      <tr><td class="pronomen">du</td><td class="irregular"><strong>heißt</strong></td><td class="beispiel">Du heiß<strong>t</strong> Lisa. <span>Bạn tên là Lisa.</span></td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td class="irregular"><strong>heißt</strong></td><td class="beispiel">Sie heiß<strong>t</strong> Anna. <span>Cô ấy tên là Anna.</span></td></tr>
+      <tr><td class="pronomen">wir</td><td><strong>heißen</strong></td><td class="beispiel">Wir heißen Maria und Tom. <span>Chúng tôi tên là Maria và Tom.</span></td></tr>
+      <tr><td class="pronomen">ihr</td><td class="irregular"><strong>heißt</strong></td><td class="beispiel">Ihr heiß<strong>t</strong> Klaus und Petra. <span>Các bạn tên là Klaus và Petra.</span></td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td><strong>heißen</strong></td><td class="beispiel">Sie heißen Müller. <span>Họ / Ông bà họ Müller.</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="fehler-item">
+      <div><span class="falsch">❌ Falsch:</span> du heißst</div>
+      <div><span class="richtig">✅ Richtig:</span> du heiß<strong>t</strong></div>
+      <div class="erkl-de">Erklärung: Der Stamm „heiß-" endet schon auf einen S-Laut (ß). Deshalb fällt das zusätzliche „s" der Endung „-st" weg: heiß + t = heißt (nicht heißst).</div>
+      <div class="erkl-vn">Giải thích: thân từ „heiß-" đã kết thúc bằng âm S (ß). Vì vậy chữ „s" thừa trong đuôi „-st" bị lược bỏ: heiß + t = heißt (không phải heißst).</div>
+    </div>
+    <div class="fehler-item">
+      <div><span class="falsch">❌ Falsch:</span> er heißen</div>
+      <div><span class="richtig">✅ Richtig:</span> er heiß<strong>t</strong></div>
+      <div class="erkl-de">Erklärung: „er/sie/es" nimmt die Endung -t, nicht die Pluralform -en, die nur zu „wir" und „sie/Sie" gehört.</div>
+      <div class="erkl-vn">Giải thích: „er/sie/es" dùng đuôi -t, không phải dạng số nhiều -en (đuôi -en chỉ dùng với „wir" và „sie/Sie").</div>
+    </div>
+  </div>
+
+  <div class="ubung-header">📝 ÜBUNG 2 — Lückentext: heiße / heißt / heißen / Bài tập 2: Điền từ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die richtige Form von „heißen" für alle 6 Personen.</div>
+    <div class="instr-vn">Hãy điền đúng dạng của „heißen" cho cả 6 ngôi.</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> Klaus. <span class="vn-word small">Tôi tên là Klaus.</span></div>
+        <div class="fill-line"><span class="num">2.</span> Du <span class="blank"></span> Anna. <span class="vn-word small">Bạn tên là Anna.</span></div>
+        <div class="fill-line"><span class="num">3.</span> Er <span class="blank"></span> Tom. <span class="vn-word small">Anh ấy tên là Tom.</span></div>
+        <div class="fill-line"><span class="num">4.</span> Wir <span class="blank"></span> Maria und Peter. <span class="vn-word small">Chúng tôi tên là Maria và Peter.</span></div>
+        <div class="fill-line"><span class="num">5.</span> Ihr <span class="blank"></span> Lisa und Max. <span class="vn-word small">Các bạn tên là Lisa và Max.</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">6.</span> Sie (Plural) <span class="blank"></span> Schmidt. <span class="vn-word small">Họ họ Schmidt.</span></div>
+        <div class="fill-line"><span class="num">7.</span> Wie <span class="blank"></span> du? <span class="vn-word small">Bạn tên là gì?</span></div>
+        <div class="fill-line"><span class="num">8.</span> Wie <span class="blank"></span> Sie? <span class="vn-word small">Ông/Bà tên là gì?</span></div>
+        <div class="fill-line"><span class="num">9.</span> Meine Schwester <span class="blank"></span> Julia. <span class="vn-word small">Em/Chị gái tôi tên là Julia.</span></div>
+        <div class="fill-line"><span class="num">10.</span> Meine Eltern <span class="blank"></span> Herr und Frau Wagner. <span class="vn-word small">Bố mẹ tôi là ông bà Wagner.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Begrüßung: Deutschland versus Vietnam / Chào hỏi: Đức so với Việt Nam</div>
+    <div class="kb-de">Im deutschsprachigen Raum begrüßen sich viele Menschen beim ersten Treffen mit einem <b>Händedruck</b> und kurzem <b>Augenkontakt</b>. Unter Freunden reicht oft ein einfaches „Hallo", manchmal auch eine Umarmung. In Vietnam sind ein leichtes Kopfnicken oder ein sanfter Händedruck ebenfalls üblich; langer direkter Augenkontakt mit älteren Menschen kann je nach Situation als unhöflich empfunden werden. <b>Pünktlichkeit</b> ist in Deutschland besonders bei Schule, Arbeit und offiziellen Terminen wichtig. Wenn man sich verspätet, sollte man möglichst Bescheid geben. Ein Küsschen auf die Wange ist eher unter engen Freunden üblich und normalerweise nicht im geschäftlichen Kontext.</div>
+    <div class="kb-vn">Ở các nước nói tiếng Đức, nhiều người chào nhau trong lần gặp đầu tiên bằng một cái <b>bắt tay</b> và <b>giao tiếp bằng mắt</b> trong thời gian ngắn. Giữa bạn bè, một câu „Hallo" đơn giản thường là đủ, đôi khi họ cũng ôm nhau. Ở Việt Nam, một cái gật đầu nhẹ hoặc một cái bắt tay nhẹ nhàng cũng rất phổ biến; nhìn thẳng lâu vào mắt người lớn tuổi có thể bị coi là thiếu lễ phép tùy tình huống. <b>Đúng giờ</b> đặc biệt quan trọng ở Đức trong trường học, công việc và các cuộc hẹn chính thức. Nếu đến muộn, nên báo trước khi có thể. Hôn nhẹ lên má thường chỉ dùng giữa bạn bè thân thiết và thông thường không dùng trong môi trường công việc.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 1</span>
+    <span>Seite 3 / 6</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 4 / 6 ═════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 1</h1>
+      <h2>Grammatik 3: W-Fragen / Ngữ pháp 3: Câu hỏi W</h2>
+    </div>
+    <div class="badge">A1 · Lektion 1 · Seite 4 / 6</div>
+  </div>
+
+  <div class="section-title">📖 GRAMMATIK 3 — W-FRAGEN (WER, WIE) &amp; SATZSTRUKTUR IM VERGLEICH / Câu hỏi W (wer, wie) &amp; so sánh cấu trúc câu</div>
+  <div class="gram-box">
+    <h4>Position 1 + Position 2 + Position 3 — die goldene Regel / Vị trí 1 + Vị trí 2 + Vị trí 3 — quy tắc vàng</h4>
+    <div class="rule-de">Im Kontrast zum Aussagesatz steht bei W-Fragen (wer, wie, woher, wo …) das Fragewort auf <b>Position 1</b>. Das konjugierte Verb bleibt der Anker und rückt sofort auf <b>Position 2</b> — danach folgt das Subjekt auf Position 3.</div>
+    <div class="rule-vn">Khác với câu trần thuật, trong câu hỏi W (wer, wie, woher, wo …), từ để hỏi đứng ở <b>Vị trí 1</b>. Động từ đã chia vẫn là điểm neo cố định, ngay lập tức chuyển sang <b>Vị trí 2</b> — sau đó mới đến chủ ngữ ở vị trí 3.</div>
+  </div>
+  <div class="satzbau">
+    <div class="pos rest" style="background:#fce7f3; border-color:#f9a8d4;"><div class="pos-num">Position 1</div><div class="pos-label">Wie</div></div>
+    <div class="pos verb"><div class="pos-num">Position 2</div><div class="pos-label">heißt</div></div>
+    <div class="pos subj"><div class="pos-num">Position 3</div><div class="pos-label">du?</div></div>
+  </div>
+
+  <table class="konj">
+    <colgroup><col style="width:22%"><col style="width:38%"><col style="width:40%"></colgroup>
+    <thead><tr><th class="pronomen-col">Pronomen</th><th>W-Frage mit „heißen"</th><th>Đọc là</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td class="beispiel">Wie heiße ich?</td><td class="phonetik">vi hai-sờ ích</td></tr>
+      <tr><td class="pronomen">du</td><td class="beispiel">Wie heiß<strong>t</strong> du?</td><td class="phonetik">vi hais<strong>t</strong> đu</td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td class="beispiel">Wie heiß<strong>t</strong> er?</td><td class="phonetik">vi hais<strong>t</strong> e-a</td></tr>
+      <tr><td class="pronomen">wir</td><td class="beispiel">Wie heißen wir?</td><td class="phonetik">vi hai-sần vi-a</td></tr>
+      <tr><td class="pronomen">ihr</td><td class="beispiel">Wie heiß<strong>t</strong> ihr?</td><td class="phonetik">vi hais<strong>t</strong> i-a</td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td class="beispiel">Wie heißen Sie?</td><td class="phonetik">vi hai-sần zi</td></tr>
+    </tbody>
+  </table>
+
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="fehler-item">
+      <div><span class="falsch">❌ Falsch:</span> Wie du heißt?</div>
+      <div><span class="richtig">✅ Richtig:</span> Wie heiß<strong>t</strong> du?</div>
+      <div class="erkl-de">Erklärung: Das Verb darf bei W-Fragen niemals am Ende stehen — anders als im Vietnamesischen, wo die Wortstellung oft unverändert bleibt. Im Deutschen rückt das Verb sofort nach dem Fragewort auf Position 2, das Subjekt folgt erst danach.</div>
+      <div class="erkl-vn">Giải thích: động từ trong câu hỏi W tuyệt đối không được đứng ở cuối câu — khác với tiếng Việt, nơi trật tự từ trong câu hỏi thường giữ nguyên như câu khẳng định (ví dụ: "Bạn tên là gì?" không đảo động từ). Trong tiếng Đức, động từ luôn đứng ngay sau từ để hỏi ở vị trí 2, chủ ngữ chỉ theo sau đó.</div>
+    </div>
+  </div>
+
+  <div class="ubung-header">📝 ÜBUNG 3 — Wortsalat: Aussagesatz oder W-Frage? / Bài tập 3: Sắp xếp câu (câu trần thuật &amp; câu hỏi)</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ordne die Wörter zu einem grammatisch korrekten Satz.</div>
+    <div class="instr-vn">Hãy sắp xếp các từ thành câu đúng ngữ pháp.</div>
+    <div class="wortsalat">1. heißt / wie / du / ?</div>
+    <div class="fill-line"><span class="blank-long"></span></div>
+    <div class="wortsalat">2. bin / Anna / ich</div>
+    <div class="fill-line"><span class="blank-long"></span></div>
+    <div class="wortsalat">3. das / wer / ist / ?</div>
+    <div class="fill-line"><span class="blank-long"></span></div>
+    <div class="wortsalat">4. seid / pünktlich / ihr</div>
+    <div class="fill-line"><span class="blank-long"></span></div>
+    <div class="wortsalat">5. kommst / woher / du / ?</div>
+    <div class="fill-line"><span class="blank-long"></span></div>
+  </div>
+
+  <div class="section-title">💬 BEISPIELDIALOG / Đoạn hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-sub">Teil A — Informell (unter Freunden) / Phần A — Thân mật (giữa bạn bè)</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Hallo! Wie <b>heiß<strong>t</strong> du</b>?</div>
+    <div class="dialog-line"><span class="speaker">Lisa:</span>Hallo! <b>Ich heiße</b> Lisa. Und du?</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span><b>Ich bin</b> Tom. Woher kommst du?</div>
+    <div class="dialog-line"><span class="speaker">Lisa:</span><b>Ich bin</b> aus Hamburg. Bis<strong>t</strong> <b>du</b> auch aus Hamburg?</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Ja, <b>ich bin</b> auch aus Hamburg! Na dann, bis später — tschüss!</div>
+    <div class="dialog-line"><span class="speaker">Lisa:</span>Tschüss!</div>
+  </div>
+  <div class="dialog-box">
+    <div class="dialog-sub">Teil B — Formell (im Beruf / in der Schule) / Phần B — Trang trọng (nơi làm việc/trường học)</div>
+    <div class="dialog-line"><span class="speaker">Frau Klein:</span>Guten Tag! Wie <b>heißen Sie</b>, bitte?</div>
+    <div class="dialog-line"><span class="speaker">Herr Minh:</span>Guten Tag! <b>Ich heiße</b> Minh. <b>Sind Sie</b> die neue Lehrerin?</div>
+    <div class="dialog-line"><span class="speaker">Frau Klein:</span>Ja, <b>ich bin</b> Frau Klein. Freut mich sehr!</div>
+    <div class="dialog-line"><span class="speaker">Herr Minh:</span>Freut mich auch! Auf Wiedersehen, Frau Klein.</div>
+    <div class="dialog-line"><span class="speaker">Frau Klein:</span>Auf Wiedersehen, Herr Minh!</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 1</span>
+    <span>Seite 4 / 6</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 5 / 6 ═════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 1</h1>
+      <h2>Lesetext &amp; Kultur / Bài đọc hiểu &amp; Văn hóa</h2>
+    </div>
+    <div class="badge">A1 · Lektion 1 · Seite 5 / 6</div>
+  </div>
+
+  <div class="section-title">📖 LESETEXT / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Heute ist der erste Tag im Deutschkurs. Alle Studenten sitzen im Klassenzimmer und lernen sich kennen. Die Lehrerin sagt: „Guten Tag! Ich heiße Frau Bauer. Wie heißt ihr?" Ein Student antwortet: „Ich heiße Jonas und ich bin aus Berlin." Eine andere Studentin sagt: „Ich heiße Mai und ich bin aus Vietnam." Alle sind ein bisschen nervös, aber auch sehr neugierig. Am Ende der Stunde sagt die Lehrerin: „Sehr gut, das war ein toller erster Tag! Bis morgen!"
+  </div>
+
+  <div class="mc-block">
+    <div class="mc-frage">1. Wie heißt die Lehrerin? / Cô giáo tên là gì?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Frau Klein</span>
+      <span><span class="mc-kreis"></span> b) Frau Bauer</span>
+      <span><span class="mc-kreis"></span> c) Frau Minh</span>
+    </div>
+    <div class="mc-frage">2. Woher kommt Jonas? / Jonas đến từ đâu?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) aus Vietnam</span>
+      <span><span class="mc-kreis"></span> b) aus Hamburg</span>
+      <span><span class="mc-kreis"></span> c) aus Berlin</span>
+    </div>
+    <div class="mc-frage">3. Wie heißt die Studentin aus Vietnam? / Nữ sinh viên đến từ Việt Nam tên là gì?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Lisa</span>
+      <span><span class="mc-kreis"></span> b) Mai</span>
+      <span><span class="mc-kreis"></span> c) Anna</span>
+    </div>
+    <div class="mc-frage">4. Wie fühlen sich die Studenten am ersten Tag? / Các sinh viên cảm thấy thế nào vào ngày đầu tiên?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) gelangweilt</span>
+      <span><span class="mc-kreis"></span> b) nervös, aber neugierig</span>
+      <span><span class="mc-kreis"></span> c) wütend</span>
+    </div>
+    <div class="mc-frage">5. Was sagt die Lehrerin am Ende der Stunde? / Cô giáo nói gì vào cuối buổi học?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) „Auf Wiedersehen für immer!"</span>
+      <span><span class="mc-kreis"></span> b) „Das war schwer."</span>
+      <span><span class="mc-kreis"></span> c) „Sehr gut, bis morgen!"</span>
+    </div>
+    <div class="mc-frage" style="margin-top:5px;">✍️ Freie Zusatzfrage / Câu hỏi mở rộng tự do:</div>
+    <div class="small" style="color:#374151;">Wie heißt du? / Bạn tên là gì?</div>
+  </div>
+
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — „Du" versus „Sie" / Văn hóa: „Du" và „Sie"</div>
+    <div class="kb-de">Im Deutschen verwendet man <b>du</b> für eine Person und <b>ihr</b> für mehrere Personen, wenn die Situation informell ist, zum Beispiel bei Familie, Freunden, Mitschülern und Kindern. <b>Sie</b> ist die formelle Anrede für eine oder mehrere Personen und wird immer großgeschrieben. Man verwendet sie häufig bei unbekannten Erwachsenen, Vorgesetzten und in offiziellen Situationen. Wenn man unsicher ist, beginnt man höflich mit „Sie". Später kann jemand vorschlagen: „Wollen wir uns duzen?"</div>
+    <div class="kb-vn">Trong tiếng Đức, <b>du</b> được dùng cho một người và <b>ihr</b> được dùng cho nhiều người trong tình huống thân mật, ví dụ với gia đình, bạn bè, bạn học và trẻ em. <b>Sie</b> là cách xưng hô trang trọng cho một hoặc nhiều người và luôn được viết hoa. Cách này thường được dùng với người lớn chưa quen, cấp trên và trong các tình huống chính thức. Nếu không chắc chắn, nên bắt đầu lịch sự bằng „Sie". Sau đó, người kia có thể đề nghị: „Wollen wir uns duzen?" (Chúng ta chuyển sang xưng „du" nhé?).</div>
+  </div>
+
+  <div class="section-title">🃏 FREIES SPRECHEN (⏱️ 30 Sek. pro Karte) / Luyện nói</div>
+  <div class="tip-box" style="background:#fefce8; border-left:3px solid #ca8a04; border-radius:0 6px 6px 0; padding:5px 9px; margin:4px 0 8px 0; font-size:10px;">
+    <div style="color:#713f12; font-weight:600;">Ziehe eine Karte und löse die Aufgabe sofort mit dem angegebenen Pronomen — du hast nur 30 Sekunden!</div>
+    <div style="color:#854d0e;">Hãy rút một thẻ và thực hiện ngay nhiệm vụ với đại từ được chỉ định — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">Namen sagen</div>
+      <div class="prompt-row"><span class="prompt-tag pronomen">ich</span></div>
+      <div class="anweisung-de">Sag deinen vollständigen Namen!</div>
+      <div class="anweisung-vn">Nói họ tên đầy đủ của bạn!</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">nach Namen fragen</div>
+      <div class="prompt-row"><span class="prompt-tag pronomen">du</span></div>
+      <div class="anweisung-de">Frag deinen Partner nach seinem Namen!</div>
+      <div class="anweisung-vn">Hỏi tên của bạn cùng học!</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">formell begrüßen</div>
+      <div class="prompt-row"><span class="prompt-tag pronomen">Sie</span></div>
+      <div class="anweisung-de">Begrüße eine fremde Person formell!</div>
+      <div class="anweisung-vn">Chào hỏi một người lạ theo cách trang trọng!</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">Freunde verabschieden</div>
+      <div class="prompt-row"><span class="prompt-tag pronomen">ihr</span></div>
+      <div class="anweisung-de">Verabschiede dich informell von zwei Freunden!</div>
+      <div class="anweisung-vn">Tạm biệt hai người bạn theo cách thân mật!</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 1</span>
+    <span>Seite 5 / 6</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 6 / 6 ═════════════════════════════ -->
+<div class="page roomy">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 1</h1>
+      <h2>Hausaufgaben &amp; Antworten / Bài tập về nhà &amp; Đáp án</h2>
+    </div>
+    <div class="badge">A1 · Lektion 1 · Seite 6 / 6</div>
+  </div>
+
+  <div class="ha-box">
+    <h4>🏠 HAUSAUFGABEN / Bài tập về nhà</h4>
+    <div class="ha-item">1. 📊 <strong>Verben konjugieren / Chia động từ:</strong> Schreibe die vollständige Konjugation von „sein" und „heißen" für alle 6 Personen auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết đầy đủ cách chia động từ „sein" và „heißen" cho cả 6 ngôi ra giấy — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">2. ✏️ <strong>Drei Sätze schreiben / Viết ba câu:</strong> Schreibe 3 einfache Sätze über dich selbst mit „sein" und „heißen" (z. B. „Ich bin …", „Ich heiße …").
+      <div class="ha-vn">Viết 3 câu đơn giản về bản thân bạn với „sein" và „heißen" (ví dụ: „Ich bin …", „Ich heiße …").</div>
+    </div>
+    <div class="ha-item">3. 🔀 <strong>Dialogzeilen ordnen / Sắp xếp lại đoạn hội thoại:</strong> Schreibe den informellen Dialog aus Teil A auf einzelne Zettel, mische sie und bringe sie am nächsten Tag wieder in die richtige Reihenfolge.
+      <div class="ha-vn">Viết đoạn hội thoại thân mật ở Phần A ra từng mảnh giấy nhỏ, xáo trộn, rồi hôm sau sắp xếp lại đúng thứ tự.</div>
+    </div>
+  </div>
+
+  <div class="antworten">
+    <h4>✅ ANTWORTEN / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 0):</strong> 1. Ich bin müde. &nbsp; 2. „Tag" — chữ g cuối đọc như "k" &nbsp; 3. Từ „schon" thiếu dấu biến âm Ö → „Das Wetter ist schön."</p>
+    <p><strong>Übung 1 (sein):</strong> 1. bin &nbsp; 2. bist &nbsp; 3. ist &nbsp; 4. sind &nbsp; 5. seid &nbsp; 6. sind &nbsp; 7. bin &nbsp; 8. Bist &nbsp; 9. ist &nbsp; 10. sind</p>
+    <p><strong>Übung 2 (heißen):</strong> 1. heiße &nbsp; 2. heißt &nbsp; 3. heißt &nbsp; 4. heißen &nbsp; 5. heißt &nbsp; 6. heißen &nbsp; 7. heißt &nbsp; 8. heißen &nbsp; 9. heißt &nbsp; 10. heißen</p>
+    <p><strong>Übung 3 (Wortsalat):</strong> 1. Wie heißt du? &nbsp; 2. Ich bin Anna. &nbsp; 3. Wer ist das? &nbsp; 4. Ihr seid pünktlich. &nbsp; 5. Woher kommst du?</p>
+    <p><strong>Lesetext — Multiple Choice:</strong> 1. b) Frau Bauer &nbsp; 2. c) aus Berlin &nbsp; 3. b) Mai &nbsp; 4. b) nervös, aber neugierig &nbsp; 5. c) „Sehr gut, bis morgen!"</p>
+    <p><strong>Freie Zusatzfrage:</strong> Câu trả lời tự do — giáo viên chữa trực tiếp bằng lời.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 1 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 6 / 6</span>
+  </div>
+</div>
+
+</body>
+</html>

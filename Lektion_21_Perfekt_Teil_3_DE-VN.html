@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 21</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 8mm 13mm 4mm 13mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+table.konj td.beispiel { text-align: left; font-size: 10px; color: #374151; }
+table.konj td.beispiel span { color: #0f766e; font-size: 9.5px; }
+table.konj td.hilfsverb { font-weight: 700; }
+table.konj td.hilfsverb.haben { color: #1e40af; }
+table.konj td.hilfsverb.sein { color: #b45309; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.2; font-size: 11px; }
+.compact .doc-header { padding-bottom: 3px; margin-bottom: 5px; }
+.compact .section-title { margin: 5px 0 3px 0; }
+.compact table { margin-bottom: 3px; }
+.compact table.vocab th, .compact table.vocab td { padding: 2px 5px; }
+.compact .gram-box { padding: 4px 8px; margin-bottom: 3px; }
+.compact .tip-box { padding: 3px 7px; margin: 2px 0; }
+.compact .warn-box { padding: 3px 7px; margin: 2px 0 5px 0; }
+.compact .ubung-header { padding: 2px 8px; }
+.compact .ubung-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .fill-line { margin-bottom: 1px; }
+.compact .footer { margin-top: 3px; padding-top: 2px; }
+.compact .phon-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .kultur-box { padding: 4px 9px; margin: 3px 0 5px 0; }
+.compact .dialog-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .lese-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .mc-block { margin-bottom: 3px; }
+.compact .mc-optionen { margin-bottom: 4px; }
+.compact .ha-box { padding: 4px 9px; }
+.compact .antworten { padding: 4px 9px; }
+.compact .wiederholung-box { padding: 4px 9px; margin-bottom: 5px; }
+.compact .karten-grid { margin-top: 3px; gap: 6px; }
+.compact .sprech-karte { padding: 5px 7px; }
+.compact .sprech-karte .karte-num { padding: 1px 7px; margin-bottom: 3px; }
+.compact .sprech-karte .wort-pill { font-size: 11.5px; padding: 2px 5px; margin-bottom: 3px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 3px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 3px; }
+.compact .merk-box { padding: 5px 10px; margin: 4px 0 6px 0; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .prompt-tag.satz { background: #fef3c7; color: #92400e; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .merk-box: Perfekt-Merkkasten (neu in L21) — fasst L19+L20 zusammen und bereitet L21 vor ===== */
+.merk-box { background: #fff1f2; border: 1.5px solid #fda4af; border-radius: 8px; padding: 7px 12px; margin: 6px 0 8px 0; }
+.merk-box .mb-title { font-size: 11px; font-weight: 700; color: #9f1239; margin-bottom: 4px; }
+.merk-box .mb-step { font-size: 10.5px; color: #1a1a1a; margin-bottom: 2px; }
+.merk-box .mb-step strong { color: #9f1239; }
+.merk-box .mb-step .mb-vn { color: #be123c; font-size: 10px; font-style: italic; }
+.merk-box .mb-beispiel { display: inline-block; background: white; border: 0.5px solid #fecdd3; border-radius: 4px; padding: 1px 6px; font-size: 10px; color: #881337; margin-left: 3px; }
+
+/* ===== Partizip-Referenztabelle (neu in L21) ===== */
+table.partizip th.col-inf { background: #dbeafe; color: #1e3a8a; }
+table.partizip td.col-inf { background: #eff6ff; font-weight: 600; }
+table.partizip th.col-part { background: #fde68a; color: #92400e; }
+table.partizip td.col-part { background: #fffbeb; font-weight: 700; }
+table.partizip th.col-hilf { background: #bbf7d0; color: #14532d; width: 60px; }
+table.partizip td.col-hilf { background: #f0fdf4; text-align: center; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Aussprache + Lernziele + Wortschatz Zeitausdrücke) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 21</h1>
+      <h2>Das Perfekt – Teil 3</h2>
+      <h2>Thì hoàn thành (Perfekt) — Phần 3</h2>
+    </div>
+    <div class="badge">A1 · Lektion 21</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 20 / Ôn tập Bài 20</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: Perfekt mit haben &amp; sein / Khởi động ngữ pháp: thì Perfekt với haben &amp; sein</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">kochen</div>
+        <div class="wh-mund">Ich ___ gestern Suppe ___. (Hilfsverb + Partizip II bilden!)</div>
+        <div class="wh-beispiel">Tự tìm ra trợ động từ và phân từ quá khứ đúng!</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">fahren</div>
+        <div class="wh-mund">Wir ___ nach Berlin ___. (Hilfsverb + Partizip II bilden!)</div>
+        <div class="wh-beispiel">Tự tìm ra trợ động từ và phân từ quá khứ đúng!</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">gehen</div>
+        <div class="wh-mund">Ich ___ nach Hause ___. (Hilfsverb + Partizip II bilden!)</div>
+        <div class="wh-beispiel">Tự tìm ra trợ động từ và phân từ quá khứ đúng!</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aussprache-Minute -->
+  <div class="section-title">🔊 AUSSPRACHE-MINUTE / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Fokuslaut: Die Betonung im Partizip II bei trennbaren Verben / Trọng âm: trọng âm trong phân từ quá khứ của động từ tách rời</div>
+    <div class="phon-de">Bei trennbaren Verben wandert das „ge-" mitten ins Wort — aber der Wortakzent bleibt immer auf der <strong>Vorsilbe</strong> (dem trennbaren Präfix), nicht auf dem „ge-"! Sprich laut und deutlich betont:</div>
+    <div class="phon-vn">Ở động từ tách rời, „ge-" sẽ chen vào giữa từ — nhưng trọng âm luôn rơi vào <strong>tiền tố tách rời</strong>, chứ không rơi vào „ge-"! Hãy đọc to và nhấn rõ trọng âm:</div>
+    <div class="phon-beispiele"><strong>AUF</strong>gestanden (AUF-gờ-stan-đờn) — không phải auf<strong>GE</strong>standen! &nbsp;|&nbsp; <strong>EIN</strong>gekauft (AIN-gờ-kauft) &nbsp;|&nbsp; <strong>AN</strong>gerufen (AN-gờ-ru-phờn) &nbsp;|&nbsp; <strong>FERN</strong>gesehen (FEN-gờ-dzê-ơn)</div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 LERNZIELE / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">✅ Ich kann die 12 wichtigsten unregelmäßigen Partizipien aktiv und korrekt anwenden.</p>
+    <p class="vn">✅ Tôi có thể sử dụng chủ động và chính xác 12 phân từ quá khứ bất quy tắc quan trọng nhất.</p>
+    <p class="de">✅ Ich kann trennbare Verben korrekt ins Perfekt setzen (Präfix + ge + Stamm).</p>
+    <p class="vn">✅ Tôi có thể chia đúng thì Perfekt cho động từ tách rời (tiền tố + ge + gốc từ).</p>
+    <p class="de">✅ Ich kann sicher zwischen den Hilfsverben haben und sein entscheiden.</p>
+    <p class="vn">✅ Tôi có thể tự tin phân biệt và chọn đúng trợ động từ haben hay sein.</p>
+  </div>
+
+  <!-- Wortschatz Zeitausdrücke -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Zeitausdrücke der Vergangenheit / Bảng từ vựng: Trạng từ chỉ thời gian quá khứ</div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:20%"><col style="width:33%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>📅 gestern</td><td class="phonetik">GÉ-stơn</td><td>Gestern habe ich viel gearbeite<strong>t</strong>. <span class="vn-word">Hôm qua tôi đã làm việc rất nhiều.</span></td><td class="vn-word">hôm qua</td></tr>
+      <tr><td>📅 vorgestern</td><td class="phonetik">FO-ghé-stơn</td><td>Vorgestern habe ich sie angerufen. <span class="vn-word">Hôm kia tôi đã gọi điện cho cô ấy.</span></td><td class="vn-word">hôm kia</td></tr>
+      <tr><td>📅 letzte Woche</td><td class="phonetik">LÉT-stơ VÔ-khơ</td><td>Letzte Woche bin ich krank gewesen. <span class="vn-word">Tuần trước tôi đã bị ốm.</span></td><td class="vn-word">tuần trước</td></tr>
+      <tr><td>📅 letzten Mona<strong>t</strong></td><td class="phonetik">LÉT-stơn MÔ-na<strong>t</strong></td><td>Letzten Monat habe ich viel gelesen. <span class="vn-word">Tháng trước tôi đã đọc rất nhiều.</span></td><td class="vn-word">tháng trước</td></tr>
+      <tr><td>📅 letztes Jahr</td><td class="phonetik">LÉT-stơs yaa</td><td>Letztes Jahr sind wir nach Rom gefahren. <span class="vn-word">Năm ngoái chúng tôi đã đi Roma.</span></td><td class="vn-word">năm ngoái</td></tr>
+      <tr><td>📅 neulich</td><td class="phonetik">NOI-lích</td><td>Neulich habe ich einen Film gesehen. <span class="vn-word">Gần đây tôi đã xem một bộ phim.</span></td><td class="vn-word">gần đây, mới đây</td></tr>
+      <tr><td>📅 vor zwei Tagen</td><td class="phonetik">fo tsvai TA-gờn</td><td>Vor zwei Tagen hat sie mir geholfen. <span class="vn-word">Hai ngày trước cô ấy đã giúp tôi.</span></td><td class="vn-word">hai ngày trước</td></tr>
+      <tr><td>🏫 <span class="die">die</span>Schule</td><td class="phonetik">SHU-lơ</td><td>Ich habe die Schule schon vergessen. <span class="vn-word">Tôi đã quên mất chuyện trường lớp rồi.</span></td><td class="vn-word">trường học</td></tr>
+      <tr><td>💼 <span class="die">die</span>Arbei<strong>t</strong></td><td class="phonetik">AR-bai<strong>t</strong></td><td>Die Arbeit hat lange gedauer<strong>t</strong>. <span class="vn-word">Công việc kéo dài rất lâu.</span></td><td class="vn-word">công việc</td></tr>
+      <tr><td>📺 <span class="die">die</span>Nachrichten (Pl.)</td><td class="phonetik">NAKH-rích-tờn</td><td>Wir haben die Nachrichten gesehen. <span class="vn-word">Chúng tôi đã xem bản tin.</span></td><td class="vn-word">tin tức, bản tin</td></tr>
+      <tr><td>🛒 <span class="der">der</span>Supermark<strong>t</strong></td><td class="phonetik">ZU-pơ-mac<strong>t</strong></td><td>Ich war im Supermarkt einkaufen. <span class="vn-word">Tôi đã đi siêu thị mua đồ.</span></td><td class="vn-word">siêu thị</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 21</span>
+    <span>Seite 1 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Verben-Tabelle unregelmäßig + Merkkasten + Grammatik 1 + Häufige Fehler + Übung 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 21</h1>
+      <h2>Unregelmäßige Partizipien / Phân từ quá khứ bất quy tắc</h2>
+    </div>
+    <div class="badge">A1 · Lektion 21</div>
+  </div>
+
+  <!-- Verben-Tabelle -->
+  <div class="section-title">🔧 Verben-Tabelle: Die 12 wichtigsten unregelmäßigen Partizipien ⚠️ / Bảng động từ: 12 phân từ quá khứ bất quy tắc quan trọng nhất ⚠️</div>
+  <table class="konj partizip">
+    <colgroup><col style="width:33%"><col style="width:33%"><col style="width:*"></colgroup>
+    <thead><tr><th class="col-inf">Infinitiv</th><th class="col-part">Partizip II</th><th class="col-hilf">Hilfsverb</th></tr></thead>
+    <tbody>
+      <tr><td class="col-inf">essen</td><td class="col-part">gegessen (gơ-GHÉT-sờn)</td><td class="col-hilf">haben</td></tr>
+      <tr><td class="col-inf">trinken</td><td class="col-part">getrunken (gơ-TRUN-kờn)</td><td class="col-hilf">haben</td></tr>
+      <tr><td class="col-inf">lesen</td><td class="col-part">gelesen (gơ-LÊ-dzờn)</td><td class="col-hilf">haben</td></tr>
+      <tr><td class="col-inf">schreiben</td><td class="col-part">geschrieben (gơ-SHRI-bờn)</td><td class="col-hilf">haben</td></tr>
+      <tr><td class="col-inf">sehen</td><td class="col-part">gesehen (gơ-DZÊ-ơn)</td><td class="col-hilf">haben</td></tr>
+      <tr><td class="col-inf">nehmen</td><td class="col-part">genommen (gơ-NÔ-mờn)</td><td class="col-hilf">haben</td></tr>
+      <tr><td class="col-inf">geben</td><td class="col-part">gegeben (gơ-GHÊ-bờn)</td><td class="col-hilf">haben</td></tr>
+      <tr><td class="col-inf">finden</td><td class="col-part">gefunden (gơ-FUN-đờn)</td><td class="col-hilf">haben</td></tr>
+      <tr><td class="col-inf">sprechen</td><td class="col-part">gesprochen (gơ-SHPRÔ-khờn)</td><td class="col-hilf">haben</td></tr>
+      <tr><td class="col-inf">helfen</td><td class="col-part">geholfen (gơ-HÔN-phờn)</td><td class="col-hilf">haben</td></tr>
+      <tr><td class="col-inf">schlafen</td><td class="col-part">geschlafen (gơ-SHLA-phờn)</td><td class="col-hilf">haben</td></tr>
+      <tr><td class="col-inf">vergessen ⚠️</td><td class="col-part">vergessen (fe-GHÉT-sờn)</td><td class="col-hilf">haben</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 Achtung bei „vergessen": Das Partizip sieht genauso aus wie der Infinitiv — <strong>kein „ge-"</strong>, weil „ver-" schon eine unbetonte Vorsilbe ist!</div>
+    <div class="tip-vn">💡 Chú ý với „vergessen": phân từ quá khứ trông giống hệt nguyên mẫu — <strong>không có „ge-"</strong>, vì „ver-" vốn đã là một tiền tố không nhấn trọng âm!</div>
+  </div>
+
+  <!-- Merkkasten -->
+  <div class="merk-box">
+    <div class="mb-title">🧠 Perfekt-Merkkasten — Alles aus L19 &amp; L20 auf einen Blick / Hộp ghi nhớ Perfekt — tổng hợp kiến thức từ Bài 19 &amp; 20</div>
+    <div class="mb-step"><strong>1. Hilfsverb wählen / Chọn trợ động từ:</strong> Bewegung → <strong>sein</strong> &nbsp;|&nbsp; alles andere → <strong>haben</strong> <span class="mb-vn">động từ chỉ chuyển động dùng sein, còn lại hầu hết dùng haben</span></div>
+    <div class="mb-step"><strong>2. Partizip bilden / Cấu tạo phân từ:</strong></div>
+    <div class="mb-step" style="margin-left:10px;">• regelmäßig → ge...t <span class="mb-beispiel">gekocht</span></div>
+    <div class="mb-step" style="margin-left:10px;">• unregelmäßig → meistens ge...en <span class="mb-beispiel">gegessen</span></div>
+    <div class="mb-step" style="margin-left:10px;">• trennbar → Präfix + ge + Stamm <span class="mb-beispiel">eingekauft</span> <span class="mb-beispiel">aufgestanden</span></div>
+  </div>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — Unregelmäßige Partizipien / Ngữ pháp 1: phân từ quá khứ bất quy tắc</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Unregelmäßige Verben ändern im Partizip II oft ihren <strong>Stammvokal</strong> (der Wortkern verändert sich) und enden meistens auf <strong>-en</strong> statt auf -t: „<strong style="color:#1e40af;">essen</strong>" → „<strong style="color:#b45309;">gegessen</strong>", nicht „geesst"!</div>
+    <div class="tip-vn">💡 Động từ bất quy tắc thường thay đổi <strong>nguyên âm gốc</strong> ở phân từ quá khứ (phần lõi của từ thay đổi) và phần lớn kết thúc bằng <strong>-en</strong> thay vì -t: „essen" → „gegessen", không phải „geesst"!</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich habe Pizza geesst."</span> → <span class="wb-ok">✅ „Ich habe Pizza gegessen."</span> — „essen" ist unregelmäßig, kein „ge...t"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich habe Pizza geesst."</span> → <span class="wb-ok">✅ „Ich habe Pizza gegessen."</span> — „essen" là động từ bất quy tắc, không dùng „ge...t"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Er hat mir geholft."</span> → <span class="wb-ok">✅ „Er hat mir geholfen."</span> — die Endung ist -en, nicht -t!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Er hat mir geholft."</span> → <span class="wb-ok">✅ „Er hat mir geholfen."</span> — đuôi từ là -en, không phải -t!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich habe das gevergessen."</span> → <span class="wb-ok">✅ „Ich habe das vergessen."</span> — bei „ver-" gibt es KEIN zusätzliches „ge-"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich habe das gevergessen."</span> → <span class="wb-ok">✅ „Ich habe das vergessen."</span> — với tiền tố „ver-" KHÔNG có thêm „ge-" nào cả!</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — Partizip-Puzzle: Setze das richtige Partizip II ein / Ghép phân từ: điền đúng phân từ quá khứ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze jeden Satz mit dem korrekten Partizip II aus der Tabelle oben.</div>
+    <div class="instr-vn">Điền vào mỗi câu phân từ quá khứ đúng từ bảng phía trên.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich habe gestern ein Buch <span class="blank"></span>. (lesen) <span class="vn-word">(Hôm qua tôi đã đọc một quyển sách.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Wir haben zusammen Kaffee <span class="blank"></span>. (trinken) <span class="vn-word">(Chúng tôi đã cùng nhau uống cà phê.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Sie hat mit ihrer Mutter <span class="blank"></span>. (sprechen) <span class="vn-word">(Cô ấy đã nói chuyện với mẹ.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Er hat mir bei den Hausaufgaben <span class="blank"></span>. (helfen) <span class="vn-word">(Anh ấy đã giúp tôi làm bài tập.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Ich habe meinen Schlüssel <span class="blank"></span>. (vergessen) <span class="vn-word">(Tôi đã quên chìa khóa của mình.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Wir haben acht Stunden <span class="blank"></span>. (schlafen) <span class="vn-word">(Chúng tôi đã ngủ tám tiếng.)</span></div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — Noch mehr Partizip-Training: neue Sätze, neue Verben / Luyện thêm phân từ: câu mới, động từ mới</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze auch diese Sätze mit dem korrekten Partizip II — diesmal mit den restlichen 6 Verben aus der Tabelle.</div>
+    <div class="instr-vn">Điền tiếp các câu này với phân từ quá khứ đúng — lần này dùng 6 động từ còn lại trong bảng.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich habe heute Morgen ein Ei <span class="blank"></span>. (essen) <span class="vn-word">(Sáng nay tôi đã ăn một quả trứng.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Wir haben den neuen Film im Kino <span class="blank"></span>. (sehen) <span class="vn-word">(Chúng tôi đã xem bộ phim mới ở rạp.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Er hat den Bus um 8 Uhr <span class="blank"></span>. (nehmen) <span class="vn-word">(Anh ấy đã đón xe buýt lúc 8 giờ.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Die Lehrerin hat uns viele Informationen <span class="blank"></span>. (geben) <span class="vn-word">(Cô giáo đã cho chúng tôi nhiều thông tin.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Ich habe meinen Schlüssel endlich <span class="blank"></span>. (finden) <span class="vn-word">(Cuối cùng tôi cũng đã tìm thấy chìa khóa của mình.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Sie hat einen langen Brief <span class="blank"></span>. (schreiben) <span class="vn-word">(Cô ấy đã viết một lá thư dài.)</span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 21</span>
+    <span>Seite 2 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Kulturinfo 1 + Verben-Tabelle trennbar + Grammatik 2 + Häufige Fehler + Übung 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 21</h1>
+      <h2>Trennbare Verben im Perfekt / Động từ tách rời ở thì Perfekt</h2>
+    </div>
+    <div class="badge">A1 · Lektion 21</div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Mündliches und schriftliches Deutsch / Kiến thức văn hóa 1: tiếng Đức khẩu ngữ và văn viết</div>
+    <div class="kb-de">In der gesprochenen Sprache sagen Deutsche fast immer: „Ich habe gegessen." Aber in Büchern, Zeitungen und formellen Texten liest man häufig das Präteritum: „Ich aß." A1-Lernende brauchen sich darüber keine Sorgen zu machen — im Alltag, am Telefon und in privaten Nachrichten verwenden fast alle Deutschen fast ausschließlich das Perfekt, das du in L19–L21 gelernt hast!</div>
+    <div class="kb-vn">Trong khẩu ngữ, người Đức hầu như luôn nói: „Ich habe gegessen." (Tôi đã ăn rồi.) Nhưng trong sách, báo và văn bản trang trọng, ta thường gặp thì quá khứ đơn (Präteritum): „Ich aß." Người học trình độ A1 không cần lo lắng về điều này — trong đời sống hằng ngày, khi gọi điện hay nhắn tin riêng tư, hầu hết người Đức gần như chỉ dùng thì Perfekt mà bạn đã học ở Bài 19–21!</div>
+  </div>
+
+  <!-- Verben-Tabelle -->
+  <div class="section-title">🔧 Verben-Tabelle: Trennbare Verben im Perfekt ⚠️ — bekannter Wortschatz, neue Grammatik / Bảng động từ: động từ tách rời ở thì Perfekt ⚠️ — từ vựng quen thuộc, ngữ pháp mới</div>
+  <table class="konj partizip">
+    <colgroup><col style="width:33%"><col style="width:33%"><col style="width:*"></colgroup>
+    <thead><tr><th class="col-inf">Infinitiv</th><th class="col-part">Partizip II</th><th class="col-hilf">Hilfsverb</th></tr></thead>
+    <tbody>
+      <tr><td class="col-inf">aufstehen <span class="vn-word">(L11)</span></td><td class="col-part">aufgestanden (AUF-gờ-stan-đờn)</td><td class="col-hilf">sein</td></tr>
+      <tr><td class="col-inf">einkaufen <span class="vn-word">(L9)</span></td><td class="col-part">eingekauft (AIN-gờ-kauft)</td><td class="col-hilf">haben</td></tr>
+      <tr><td class="col-inf">fernsehen <span class="vn-word">(L3)</span></td><td class="col-part">ferngesehen (FEN-gờ-dzê-ơn)</td><td class="col-hilf">haben</td></tr>
+      <tr><td class="col-inf">anrufen <span class="vn-word">(L4)</span></td><td class="col-part">angerufen (AN-gờ-ru-phờn)</td><td class="col-hilf">haben</td></tr>
+      <tr><td class="col-inf">mitkommen <span class="vn-word">(L2)</span></td><td class="col-part">mitgekommen (MIT-gờ-kô-mờn)</td><td class="col-hilf">sein</td></tr>
+      <tr><td class="col-inf">zurückkommen <span class="vn-word">(L2)</span></td><td class="col-part">zurückgekommen (tsu-RUYK-gờ-kô-mờn)</td><td class="col-hilf">sein</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Das „ge-" wandert mitten ins Wort / Ngữ pháp 2: „ge-" chen vào giữa từ</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Bei trennbaren Verben (aus L11) steht das „ge-" NICHT ganz vorne, sondern <strong>zwischen Präfix und Stamm</strong>: <strong style="color:#1e40af;">auf</strong> + ge + <strong style="color:#b45309;">standen</strong> = „<strong>aufgestanden</strong>". Formel: Präfix + ge + Partizipstamm.</div>
+    <div class="tip-vn">💡 Ở động từ tách rời (đã học ở Bài 11), „ge-" KHÔNG đứng ở đầu từ, mà chen vào <strong>giữa tiền tố và gốc từ</strong>: <strong>auf</strong> + ge + <strong>standen</strong> = „<strong>aufgestanden</strong>". Công thức: tiền tố + ge + gốc phân từ.</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich habe gefernsehen."</span> → <span class="wb-ok">✅ „Ich habe ferngesehen."</span> — das „ge-" gehört zwischen „fern" und „sehen", nicht davor!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich habe gefernsehen."</span> → <span class="wb-ok">✅ „Ich habe ferngesehen."</span> — „ge-" phải đứng giữa „fern" và „sehen", không đứng trước!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich bin gestern angekommen früh."</span> → <span class="wb-ok">✅ „Ich bin gestern früh aufgestanden."</span> — das Partizip steht ganz am Satzende!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich bin gestern angekommen früh."</span> → <span class="wb-ok">✅ „Ich bin gestern früh aufgestanden."</span> — phân từ phải đứng ở cuối câu!</div>
+  </div>
+
+  <!-- Übung 3 -->
+  <div class="ubung-header">Übung 3 — Trennbar bilden: Schreibe das Partizip II / Chia động từ tách rời: viết phân từ quá khứ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bilde das Partizip II der trennbaren Verben und ergänze den Satz.</div>
+    <div class="instr-vn">Cấu tạo phân từ quá khứ của các động từ tách rời và hoàn thành câu.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich bin heute um 7 Uhr <span class="blank"></span>. (aufstehen) <span class="vn-word">(Hôm nay tôi đã dậy lúc 7 giờ.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Meine Mutter hat gestern <span class="blank"></span>. (einkaufen) <span class="vn-word">(Mẹ tôi đã đi mua sắm hôm qua.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Ich habe meinen Freund <span class="blank"></span>. (anrufen) <span class="vn-word">(Tôi đã gọi điện cho bạn tôi.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Am Abend haben wir <span class="blank"></span>. (fernsehen) <span class="vn-word">(Tối qua chúng tôi đã xem tivi.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Er ist zur Party <span class="blank"></span>. (mitkommen) <span class="vn-word">(Anh ấy đã cùng đi dự tiệc.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Sie ist spät <span class="blank"></span>. (zurückkommen) <span class="vn-word">(Cô ấy đã quay về muộn.)</span></div>
+  </div>
+
+  <!-- Übung 4 -->
+  <div class="ubung-header">Übung 4 — Noch mehr trennbare Verben: neue Sätze, neue Personen / Luyện thêm động từ tách rời: câu mới, ngôi mới</div>
+  <div class="ubung-body">
+    <div class="instr-de">Dieselben Verben, aber neue Sätze und andere Personen — bilde wieder das Partizip II.</div>
+    <div class="instr-vn">Vẫn những động từ đó, nhưng câu mới và ngôi khác — hãy viết lại phân từ quá khứ đúng.</div>
+    <div class="fill-line"><span class="num">1.</span> Wann bist du heute <span class="blank"></span>? (aufstehen) <span class="vn-word">(Hôm nay bạn dậy lúc mấy giờ?)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Meine Eltern haben am Samstag für die Party <span class="blank"></span>. (einkaufen) <span class="vn-word">(Bố mẹ tôi đã mua đồ cho bữa tiệc vào thứ Bảy.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Hast du deine Oma schon <span class="blank"></span>? (anrufen) <span class="vn-word">(Bạn đã gọi điện cho bà chưa?)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Die Kinder haben bis spät in die Nacht <span class="blank"></span>. (fernsehen) <span class="vn-word">(Bọn trẻ đã xem tivi đến tận khuya.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Ist deine Schwester zum Konzert <span class="blank"></span>? (mitkommen) <span class="vn-word">(Em gái bạn có cùng đi buổi hòa nhạc không?)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Wann seid ihr von der Reise <span class="blank"></span>? (zurückkommen) <span class="vn-word">(Các bạn đã trở về từ chuyến đi khi nào?)</span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 21</span>
+    <span>Seite 3 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Grammatik 3: Das ganze Perfekt + Häufige Fehler + Übung 3 + Beispieldialog) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 21</h1>
+      <h2>Grammatik 3 – Das ganze Perfekt: Welches Hilfsverb passt? / Ngữ pháp 3 – Toàn cảnh thì Perfekt: trợ động từ nào phù hợp?</h2>
+    </div>
+    <div class="badge">A1 · Lektion 21</div>
+  </div>
+
+  <!-- Grammatik 3 -->
+  <div class="tip-box">
+    <div class="tip-de">💡 Jetzt verbinden wir alles aus L19, L20 und L21! Die meisten Verben nehmen <strong>haben</strong>. Nur zwei Gruppen nehmen <strong>sein</strong>: (1) Bewegung von A nach B (fahren, gehen, kommen, aufstehen ...) und (2) Zustandsveränderung (werden, aufwachen, einschlafen ...). Bei trennbaren Verben gilt dieselbe Regel wie beim Grundverb: „stehen" → haben, aber „aufstehen" (Bewegung!) → sein.</div>
+    <div class="tip-vn">💡 Bây giờ chúng ta kết hợp tất cả kiến thức từ Bài 19, 20 và 21! Phần lớn động từ dùng <strong>haben</strong>. Chỉ có hai nhóm dùng <strong>sein</strong>: (1) chuyển động từ A đến B (fahren, gehen, kommen, aufstehen...) và (2) thay đổi trạng thái (werden, aufwachen, einschlafen...). Với động từ tách rời, quy tắc áp dụng giống hệt động từ gốc: „stehen" → haben, nhưng „aufstehen" (chuyển động!) → sein.</div>
+  </div>
+  <div class="gram-box">
+    <h4>🔁 Die Entscheidungs-Kette / Chuỗi quyết định</h4>
+    <div class="rule-de">Frage 1: Bewegt sich das Subjekt von einem Ort zu einem anderen? → JA → <strong>sein</strong> (gehen, fahren, kommen, aufstehen, mitkommen, zurückkommen) &nbsp;|&nbsp; Frage 2: Verändert sich ein Zustand? → JA → <strong>sein</strong> &nbsp;|&nbsp; Sonst → <strong>haben</strong> (essen, trinken, lesen, einkaufen, anrufen, fernsehen ...)</div>
+    <div class="rule-vn">Câu hỏi 1: Chủ ngữ có di chuyển từ nơi này sang nơi khác không? → CÓ → <strong>sein</strong> (gehen, fahren, kommen, aufstehen, mitkommen, zurückkommen); Câu hỏi 2: Có sự thay đổi trạng thái không? → CÓ → <strong>sein</strong>; Nếu không → <strong>haben</strong> (essen, trinken, lesen, einkaufen, anrufen, fernsehen...)</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich habe aufgestanden."</span> → <span class="wb-ok">✅ „Ich bin aufgestanden."</span> — „aufstehen" ist Bewegung, also „sein"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich habe aufgestanden."</span> → <span class="wb-ok">✅ „Ich bin aufgestanden."</span> — „aufstehen" là động từ chuyển động, nên dùng „sein"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich bin ferngesehen."</span> → <span class="wb-ok">✅ „Ich habe ferngesehen."</span> — Fernsehen ist keine Bewegung, also „haben"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich bin ferngesehen."</span> → <span class="wb-ok">✅ „Ich habe ferngesehen."</span> — xem tivi không phải chuyển động, nên dùng „haben"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Wir sind eingekauft."</span> → <span class="wb-ok">✅ „Wir haben eingekauft."</span> — einkaufen ist eine Tätigkeit, keine Ortsveränderung!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Wir sind eingekauft."</span> → <span class="wb-ok">✅ „Wir haben eingekauft."</span> — mua sắm là một hoạt động, không phải sự thay đổi vị trí!</div>
+  </div>
+
+  <!-- Übung 5 -->
+  <div class="ubung-header">Übung 5 — Der große Perfekt-Sortiertest: haben oder sein? / Bài kiểm tra phân loại Perfekt: haben hay sein?</div>
+  <div class="ubung-body">
+    <div class="instr-de">Wähle das richtige Hilfsverb und bilde den vollständigen Perfekt-Satz.</div>
+    <div class="instr-vn">Chọn trợ động từ đúng và viết thành câu Perfekt hoàn chỉnh.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich ___ gestern viel Wasser <span class="blank"></span>. (trinken) <span class="vn-word">(Hôm qua tôi đã uống nhiều nước.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Du ___ heute Morgen früh <span class="blank"></span>. (aufstehen) <span class="vn-word">(Sáng nay bạn đã dậy sớm.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Er ___ seine Schlüssel <span class="blank"></span>. (vergessen) <span class="vn-word">(Anh ấy đã quên chìa khóa của mình.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Wir ___ gestern Abend <span class="blank"></span>. (fernsehen) <span class="vn-word">(Tối qua chúng tôi đã xem tivi.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Sie ___ zur Party <span class="blank"></span>. (mitkommen) <span class="vn-word">(Cô ấy đã cùng đi dự tiệc.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Ihr ___ mir mit den Hausaufgaben <span class="blank"></span>. (helfen) <span class="vn-word">(Các bạn đã giúp tôi làm bài tập.)</span></div>
+  </div>
+
+  <!-- Übung 6 -->
+  <div class="ubung-header">Übung 6 — Der große Perfekt-Marathon: L19 + L20 + L21 kombiniert! / Cuộc chạy marathon Perfekt: kết hợp Bài 19 + 20 + 21!</div>
+  <div class="ubung-body">
+    <div class="instr-de">Jetzt kommt alles zusammen: regelmäßige Verben (L19), Bewegungsverben (L20) und unregelmäßige/trennbare Verben (L21). Ergänze Hilfsverb UND Partizip II.</div>
+    <div class="instr-vn">Bây giờ tất cả kết hợp lại: động từ có quy tắc (Bài 19), động từ chỉ chuyển động (Bài 20) và động từ bất quy tắc/tách rời (Bài 21). Điền cả trợ động từ VÀ phân từ quá khứ.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich ___ gestern Nudeln ___. (kochen) <span class="vn-word">(Hôm qua tôi đã nấu mì.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Wir ___ letztes Jahr nach Spanien ___. (fahren) <span class="vn-word">(Năm ngoái chúng tôi đã lái xe đi Tây Ban Nha.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Er ___ am Wochenende Fußball ___. (spielen) <span class="vn-word">(Anh ấy đã đá bóng vào cuối tuần.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Sie ___ letzte Woche zu spät ___. (kommen) <span class="vn-word">(Tuần trước cô ấy đã đến muộn.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Ich ___ gestern ein spannendes Buch ___. (lesen) <span class="vn-word">(Hôm qua tôi đã đọc một quyển sách hấp dẫn.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Du ___ heute früh ___. (aufstehen) <span class="vn-word">(Hôm nay bạn đã dậy sớm.)</span></div>
+    <div class="fill-line"><span class="num">7.</span> Wir ___ den Bus um 9 Uhr ___. (nehmen) <span class="vn-word">(Chúng tôi đã đón xe buýt lúc 9 giờ.)</span></div>
+    <div class="fill-line"><span class="num">8.</span> Ihr ___ eure Freunde ___. (anrufen) <span class="vn-word">(Các bạn đã gọi điện cho bạn bè của mình.)</span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 21</span>
+    <span>Seite 4 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 5 (Kulturinfo 2 + Lesetext + MC-Fragen) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 21</h1>
+      <h2>Dialog, Lesetext &amp; Kulturinfo / Hội thoại, bài đọc hiểu &amp; kiến thức văn hóa</h2>
+    </div>
+    <div class="badge">A1 · Lektion 21</div>
+  </div>
+
+  <!-- Beispieldialog -->
+  <div class="section-title">💬 BEISPIELDIALOG / Hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Lena:</span>Wie war dein Tag gestern?</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Ganz gut! Ich bin früh aufgestanden.</div>
+    <div class="dialog-line"><span class="speaker">Lena:</span>Und dann?</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Ich habe gefrühstückt und dann meine Freundin angerufen.</div>
+    <div class="dialog-line"><span class="speaker">Lena:</span>Habt ihr euch getroffen?</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Ja! Wir sind zusammen einkaufen gegangen und haben ein Buch gekauft.</div>
+    <div class="dialog-line"><span class="speaker">Lena:</span>Und am Abend?</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Am Abend habe ich ferngesehen. Dann bin ich schlafen gegangen.</div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Der Samstag als Einkaufstag in Deutschland / Kiến thức văn hóa 2: thứ Bảy — ngày mua sắm ở Đức</div>
+    <div class="kb-de">In Deutschland haben die meisten Geschäfte sonntags geschlossen — das nennt man den „Sonntagsschutz". Deshalb ist der Samstag für viele Deutsche der wichtigste Einkaufstag der Woche: Supermärkte, Einkaufsstraßen und Innenstädte sind oft sehr voll. Viele Familien haben samstags eingekauft, das Wochenende geplant und Freunde angerufen, bevor am Sonntag fast alle Läden geschlossen bleiben.</div>
+    <div class="kb-vn">Ở Đức, hầu hết các cửa hàng đều đóng cửa vào Chủ nhật — điều này được gọi là „bảo vệ ngày Chủ nhật" (Sonntagsschutz). Vì vậy, thứ Bảy là ngày mua sắm quan trọng nhất trong tuần đối với nhiều người Đức: siêu thị, phố mua sắm và trung tâm thành phố thường rất đông đúc. Nhiều gia đình đi mua sắm, lên kế hoạch cuối tuần và gọi điện cho bạn bè vào thứ Bảy, vì Chủ nhật hầu như mọi cửa hàng đều đóng cửa. Điều này khá khác với Việt Nam, nơi các cửa hàng, siêu thị và chợ thường mở cửa đều đặn suốt cả tuần kể cả Chủ nhật, nên không có một ngày mua sắm "bắt buộc" cố định như ở Đức.</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Am Samstag ist Familie Berger früh aufgestanden, denn sie hatten viel zu tun. Zuerst hat Frau Berger gefrühstückt und dann ihre Schwester angerufen, um sich für den Nachmittag zu verabreden. Danach sind die Kinder mit ihrem Vater in den Supermarkt gefahren, weil sie für die ganze Woche eingekauft haben. Sie haben Brot, Obst und Gemüse gekauft und dabei auch an Getränke für die Geburtstagsfeier am Sonntag gedacht. Am Nachmittag hat Frau Berger ein Buch gelesen, während die Kinder mit ihren Freunden gesprochen haben. Am Abend hat die ganze Familie zusammen gegessen und danach gemeinsam die Nachrichten gesehen. Herr Berger hat fast vergessen, dass er noch einen wichtigen Anruf machen musste — zum Glück ist ihm das rechtzeitig eingefallen! Nach einem langen, aber schönen Tag sind alle müde ins Bett gegangen.
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Warum ist Familie Berger am Samstag früh aufgestanden?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) weil sie viel zu tun hatten</span>
+      <span><span class="mc-kreis"></span> b) weil das Wetter schlecht war</span>
+      <span><span class="mc-kreis"></span> c) weil sie verreisen wollten</span>
+    </div>
+    <div class="mc-frage">2. Wen hat Frau Berger angerufen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) ihre Mutter</span>
+      <span><span class="mc-kreis"></span> b) ihre Schwester</span>
+      <span><span class="mc-kreis"></span> c) ihre Freundin</span>
+    </div>
+    <div class="mc-frage">3. Wer ist mit dem Vater in den Supermarkt gefahren?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) die Kinder</span>
+      <span><span class="mc-kreis"></span> b) die Nachbarn</span>
+      <span><span class="mc-kreis"></span> c) niemand</span>
+    </div>
+    <div class="mc-frage">4. Was hat Frau Berger am Nachmittag gemacht?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie hat geschlafen</span>
+      <span><span class="mc-kreis"></span> b) sie hat ein Buch gelesen</span>
+      <span><span class="mc-kreis"></span> c) sie hat ferngesehen</span>
+    </div>
+    <div class="mc-frage">5. Was hat Herr Berger fast vergessen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) einen wichtigen Anruf</span>
+      <span><span class="mc-kreis"></span> b) das Abendessen</span>
+      <span><span class="mc-kreis"></span> c) den Geburtstag</span>
+    </div>
+    <div class="mc-frage">6. Was hat die Familie am Abend zusammen gesehen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) einen Film</span>
+      <span><span class="mc-kreis"></span> b) die Nachrichten</span>
+      <span><span class="mc-kreis"></span> c) ein Fußballspiel</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Was hast du letztes Wochenende gemacht? Erzähle mindestens 3 Sätze im Perfekt.</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Cuối tuần trước bạn đã làm gì? Hãy kể ít nhất 3 câu ở thì Perfekt.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 21</span>
+    <span>Seite 5 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 6 (Freies Sprechen + Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 21</h1>
+      <h2>Freies Sprechen, Hausaufgaben &amp; Antworten / Nói tự do, bài tập về nhà &amp; đáp án</h2>
+    </div>
+    <div class="badge">A1 · Lektion 21</div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">gestern</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was hast du gestern gegessen und getrunken?</div>
+      <div class="anweisung-vn">Hôm qua bạn đã ăn gì và uống gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">aufstehen</div>
+      <div class="prompt-row"><span class="prompt-tag satz">Satz</span></div>
+      <div class="anweisung-de">Bilde einen Satz im Perfekt mit „aufstehen".</div>
+      <div class="anweisung-vn">Đặt một câu ở thì Perfekt với „aufstehen".</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">letzte Woche</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Hast du letzte Woche jemanden angerufen? Wen?</div>
+      <div class="anweisung-vn">Tuần trước bạn đã gọi điện cho ai chưa? Là ai?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">haben oder sein?</div>
+      <div class="prompt-row"><span class="prompt-tag satz">Satz</span></div>
+      <div class="anweisung-de">Bilde einen Satz im Perfekt mit „einkaufen" — welches Hilfsverb brauchst du?</div>
+      <div class="anweisung-vn">Đặt một câu ở thì Perfekt với „einkaufen" — cần trợ động từ nào?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Partizip-Liste lernen / Học danh sách phân từ:</strong> Schreibe alle 18 Verben aus dieser Lektion mit Infinitiv, Partizip II und Hilfsverb auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết ra giấy cả 18 động từ trong bài này cùng nguyên mẫu, phân từ II và trợ động từ — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">✏️ <strong>„Mein Tag gestern" schreiben / Viết „Ngày hôm qua của tôi":</strong> Schreibe einen kurzen Text (6–8 Sätze) über deinen gestrigen Tag im Perfekt. Pflicht: mindestens 2 unregelmäßige Verben, 2 trennbare Verben, 1× haben-Satz und 1× sein-Satz.
+      <div class="ha-vn">Viết một đoạn văn ngắn (6–8 câu) kể về ngày hôm qua của bạn ở thì Perfekt. Yêu cầu: ít nhất 2 động từ bất quy tắc, 2 động từ tách rời, 1 câu dùng haben và 1 câu dùng sein.</div>
+    </div>
+    <div class="ha-item">📅 <strong>Interview-Aufgabe / Nhiệm vụ phỏng vấn:</strong> Frage eine Person „Was hast du letztes Wochenende gemacht?" und notiere die Antwort in vollständigen Perfekt-Sätzen.
+      <div class="ha-vn">Hỏi một người „Was hast du letztes Wochenende gemacht?" (Cuối tuần trước bạn đã làm gì?) và ghi lại câu trả lời bằng các câu Perfekt hoàn chỉnh.</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 19/20):</strong> 1. habe gekocht &nbsp; 2. sind gefahren &nbsp; 3. bin gegangen</p>
+    <p><strong>Übung 1 (unregelmäßige Partizipien):</strong> 1. gelesen &nbsp; 2. getrunken &nbsp; 3. gesprochen &nbsp; 4. geholfen &nbsp; 5. vergessen &nbsp; 6. geschlafen</p>
+    <p><strong>Übung 2 (unregelmäßige Partizipien, Teil 2):</strong> 1. gegessen &nbsp; 2. gesehen &nbsp; 3. genommen &nbsp; 4. gegeben &nbsp; 5. gefunden &nbsp; 6. geschrieben</p>
+    <p><strong>Übung 3 (trennbare Verben):</strong> 1. aufgestanden &nbsp; 2. eingekauft &nbsp; 3. angerufen &nbsp; 4. ferngesehen &nbsp; 5. mitgekommen &nbsp; 6. zurückgekommen</p>
+    <p><strong>Übung 4 (trennbare Verben, Teil 2):</strong> 1. aufgestanden &nbsp; 2. eingekauft &nbsp; 3. angerufen &nbsp; 4. ferngesehen &nbsp; 5. mitgekommen &nbsp; 6. zurückgekommen</p>
+    <p><strong>Übung 5 (haben oder sein):</strong> 1. habe getrunken &nbsp; 2. bist aufgestanden &nbsp; 3. hat vergessen &nbsp; 4. haben ferngesehen &nbsp; 5. ist mitgekommen &nbsp; 6. habt geholfen</p>
+    <p><strong>Übung 6 (Perfekt-Marathon L19+L20+L21):</strong> 1. habe gekocht &nbsp; 2. sind gefahren &nbsp; 3. hat gespielt &nbsp; 4. ist gekommen &nbsp; 5. habe gelesen &nbsp; 6. bist aufgestanden &nbsp; 7. haben genommen &nbsp; 8. habt angerufen</p>
+    <p><strong>Leseverständnis:</strong> 1. a) weil sie viel zu tun hatten &nbsp; 2. b) ihre Schwester &nbsp; 3. a) die Kinder &nbsp; 4. b) sie hat ein Buch gelesen &nbsp; 5. a) einen wichtigen Anruf &nbsp; 6. b) die Nachrichten</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ich habe gestern Reis gegessen und Wasser getrunken. &nbsp; Karte 2: Ich bin heute um 8 Uhr aufgestanden. &nbsp; Karte 3: Ja, ich habe letzte Woche meine Mutter angerufen. &nbsp; Karte 4: Ich habe gestern eingekauft. (haben, weil keine Bewegung im Fokus steht)</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 21 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 6 / 6</span>
+  </div>
+</div>
+
+</body>
+</html>

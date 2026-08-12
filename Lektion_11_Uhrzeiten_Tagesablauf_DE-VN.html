@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 11</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 7mm 12mm 3mm 12mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.14; font-size: 10.7px; }
+.compact .doc-header { padding-bottom: 2px; margin-bottom: 4px; }
+.compact .section-title { margin: 4px 0 2px 0; }
+.compact table { margin-bottom: 2px; }
+.compact table.vocab th, .compact table.vocab td { padding: 1.5px 5px; }
+.compact .gram-box { padding: 3px 7px; margin-bottom: 2px; }
+.compact .tip-box { padding: 2px 6px; margin: 1px 0; }
+.compact .warn-box { padding: 2px 6px; margin: 1px 0 3px 0; }
+.compact .ubung-header { padding: 1px 7px; }
+.compact .ubung-body { padding: 3px 7px; margin-bottom: 2px; }
+.compact .fill-line { margin-bottom: 0px; }
+.compact .footer { margin-top: 2px; padding-top: 1px; }
+.compact .phon-box { padding: 2px 7px; margin-bottom: 2px; }
+.compact .kultur-box { padding: 3px 8px; margin: 2px 0 3px 0; }
+.compact .dialog-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .lese-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .mc-block { margin-bottom: 2px; }
+.compact .mc-optionen { margin-bottom: 3px; }
+.compact .ha-box { padding: 3px 8px; }
+.compact .antworten { padding: 3px 8px; }
+.compact .wiederholung-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .karten-grid { margin-top: 2px; gap: 5px; }
+.compact .sprech-karte { padding: 4px 6px; }
+.compact .sprech-karte .karte-num { padding: 1px 6px; margin-bottom: 2px; }
+.compact .sprech-karte .wort-pill { font-size: 11px; padding: 2px 4px; margin-bottom: 2px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 2px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 2px; }
+.compact .gegenteile-box { padding: 4px 9px; margin-bottom: 3px; }
+.compact .wortsalat-item { margin-bottom: 3px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .gegenteile-box: Zuordnungsspiel ===== */
+.gegenteile-box { border: 1px solid #cbd5e1; border-radius: 8px; padding: 7px 12px; background: #fafafa; margin-bottom: 5px; }
+.gegenteile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 18px; }
+.gegenteile-spalte-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.4px; color: #94a3b8; font-weight: 700; margin-bottom: 3px; }
+.gt-item { display: flex; align-items: center; gap: 6px; font-size: 10.5px; margin-bottom: 3px; }
+.gt-chip { display: inline-block; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-weight: 700; font-size: 10px; padding: 2px 8px; border-radius: 6px; min-width: 18px; text-align: center; }
+.gt-letter { display: inline-block; background: #fce7f3; border: 1px solid #f9a8d4; color: #9d174d; font-weight: 700; font-size: 10px; padding: 2px 8px; border-radius: 6px; min-width: 18px; text-align: center; }
+.gt-blank { border-bottom: 1px solid #94a3b8; min-width: 26px; display: inline-block; text-align: center; }
+
+/* ===== .wortsalat: Satzbau-Scramble (auch für das Spiel genutzt) ===== */
+.wortsalat-item { margin-bottom: 6px; }
+.wortsalat-num { font-weight: 700; color: #64748b; margin-right: 4px; font-size: 10.5px; }
+.wortsalat-situation { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 2px; margin-left: 20px; }
+.wortsalat-woerter { display: inline-flex; gap: 4px; flex-wrap: wrap; vertical-align: middle; }
+.wort-chip { display: inline-block; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 6px; }
+.wortsalat-answer-row { display: flex; align-items: center; gap: 6px; margin-top: 2px; margin-left: 20px; }
+.wortsalat-arrow { color: #94a3b8; font-weight: 700; }
+
+/* ===== .game-header: Spielelement (aktive Auflockerung) ===== */
+.game-header { background: #ea580c; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.game-body { border: 0.5px solid #fdba74; border-top: none; border-radius: 0 0 5px 5px; padding: 6px 8px; margin-bottom: 4px; background: #fff7ed; }
+.game-body .instr-de { font-size: 10px; color: #7c2d12; font-style: italic; }
+.game-body .instr-vn { font-size: 9.5px; color: #c2410c; font-style: italic; margin-bottom: 4px; }
+.game-body .wort-chip { background: #ffedd5; border-color: #fdba74; color: #7c2d12; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Phonetik + Lernziele + Wortschatz Uhrzeit + Tageszeiten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 11</h1>
+      <h2>Uhrzeiten &amp; Tagesablauf</h2>
+      <h2>Giờ giấc &amp; Nhịp sinh hoạt hằng ngày</h2>
+    </div>
+    <div class="badge">A1 · Lektion 11</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 10 / Ôn tập Bài 10</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: Lokaler Dativ mit „in", „an", „auf" / Khởi động ngữ pháp: Dativ chỉ vị trí</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">im/am</div>
+        <div class="wh-mund">Ergänze: Der Tisch ist ___ Zimmer. (in + dem)</div>
+        <div class="wh-beispiel">Dùng dạng rút gọn nào: im hay am?</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">an der Wand</div>
+        <div class="wh-mund">Wo hängt die Lampe? (Präposition + Artikel)</div>
+        <div class="wh-beispiel">Đèn treo ở đâu trên tường? Dùng giới từ nào?</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Richtig?</div>
+        <div class="wh-mund">„Das Bild ist auf der Wand." — ist das richtig?</div>
+        <div class="wh-beispiel">Câu này đúng không? Nếu sai, sửa thế nào?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Die Uhrzeit formell (offiziell) und informell (umgangssprachlich) nennen <span class="vn">— nói giờ theo cách trang trọng (chính thức) và thân mật (hằng ngày)</span></p>
+    <p class="de">✔ Trennbare Verben korrekt in der Verbklammer verwenden <span class="vn">— dùng đúng động từ tách được trong cấu trúc khung câu (Verbklammer)</span></p>
+    <p class="de">✔ Mit „um", „gegen" und „von...bis" Zeitpunkte und Zeiträume ausdrücken <span class="vn">— dùng „um", „gegen" và „von...bis" để diễn đạt mốc thời gian và khoảng thời gian</span></p>
+    <p class="de">✔ Den eigenen Tagesablauf chronologisch und zusammenhängend beschreiben <span class="vn">— miêu tả nhịp sinh hoạt hằng ngày của mình theo trình tự thời gian, mạch lạc</span></p>
+  </div>
+
+  <!-- Legende -->
+  <div class="section-title">🎨 Farbkodierung / Mã màu quán từ</div>
+  <div class="legend">
+    <div class="legend-item"><span class="der">der</span> maskulin / giống đực</div>
+    <div class="legend-item"><span class="die">die</span> feminin / giống cái</div>
+    <div class="legend-item"><span class="das">das</span> neutral / giống trung</div>
+    <div class="legend-item"><span class="warn">⚠️</span> unregelmäßig / bất quy tắc</div>
+  </div>
+
+  <!-- Phonetik -->
+  <div class="section-title">🔊 Aussprache-Minute / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Langes vs. kurzes „a" + der Ach-Laut: „nach" vs. „acht" / So sánh „a" dài và „a" ngắn + âm „ach-Laut"</div>
+    <div class="phon-de">Beide Wörter enden auf denselben kehligen Ach-Laut (den du nach „a/o/u" schon kennst) — der Unterschied liegt allein in der Länge des „a"! „nach" hat ein langes, gedehntes „a", „acht" dagegen ein kurzes, knackiges „a". Achte bei Uhrzeiten genau darauf: „Viertel nach acht" enthält beide Varianten direkt nebeneinander!</div>
+    <div class="phon-vn">Cả hai từ đều kết thúc bằng cùng một âm „ach-Laut" phát ra từ cổ họng (âm này xuất hiện sau „a/o/u" mà bạn đã học) — điểm khác biệt duy nhất nằm ở độ dài của âm „a"! „nach" có âm „a" dài, kéo dài hơi; „acht" thì có âm „a" ngắn, gọn. Khi nói giờ hãy chú ý kỹ: „Viertel nach acht" (tám giờ mười lăm) có cả hai biến thể nằm cạnh nhau!<br>⚠️ Mẹo cho người Việt: âm „ach-Laut" phát từ sâu trong cổ họng, gần giống „kh" nhưng mạnh và ma sát hơn — khác hẳn với „ich-Laut" nhẹ nhàng ở phía trước miệng.</div>
+    <div class="phon-beispiele">Beispiele: n<strong>a</strong>ch (đọc: "nakh", dài) · <strong>a</strong>cht (đọc: "akht", ngắn) · Viertel n<strong>a</strong>ch <strong>a</strong>cht (đọc: "fia-tồ nakh akht")</div>
+  </div>
+
+  <!-- Wortschatz Uhrzeit -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Die Uhrzeit / Bảng từ vựng: Giờ giấc</div>
+  <table class="vocab">
+    <colgroup><col style="width:18%"><col style="width:18%"><col style="width:39%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🕐 <span class="die">die</span>Uhr</td><td class="phonetik">u-a</td><td>Wie viel Uhr is<strong>t</strong> es? <span class="vn-word">Bây giờ là mấy giờ?</span></td><td class="vn-word">đồng hồ, giờ</td></tr>
+      <tr><td>⏳ <span class="die">die</span>Stunde</td><td class="phonetik">stun-đơ</td><td>Der Deutschkurs dauer<strong>t</strong> eine Stunde. <span class="vn-word">Khóa tiếng Đức kéo dài một tiếng.</span></td><td class="vn-word">giờ, tiếng đồng hồ</td></tr>
+      <tr><td>⏱️ <span class="die">die</span>Minute</td><td class="phonetik">mi-nu-tơ</td><td>Ich komme in fünf Minuten. <span class="vn-word">Năm phút nữa tôi đến.</span></td><td class="vn-word">phút</td></tr>
+      <tr><td>🕓 <span class="das">das</span>Viertel</td><td class="phonetik">fia-tồ</td><td>Es is<strong>t</strong> Viertel nach neun. <span class="vn-word">Bây giờ là chín giờ mười lăm.</span></td><td class="vn-word">một phần tư (giờ)</td></tr>
+      <tr><td>➗ halb</td><td class="phonetik">hal-p (b cuối đọc thành "p"!)</td><td>Es is<strong>t</strong> halb ach<strong>t</strong>. <span class="vn-word">Bây giờ là bảy giờ rưỡi.</span></td><td class="vn-word">rưỡi (giờ)</td></tr>
+      <tr><td>➡️ nach</td><td class="phonetik">nakh (ach-Laut, dài)</td><td>zehn nach zwei <span class="vn-word">hai giờ mười phút</span></td><td class="vn-word">…qua, sau…</td></tr>
+      <tr><td>⬅️ vor</td><td class="phonetik">fô-a</td><td>zehn vor zwei <span class="vn-word">còn mười phút nữa là hai giờ</span></td><td class="vn-word">còn…, trước…</td></tr>
+      <tr><td>🌙 <span class="die">die</span>Mitternach<strong>t</strong></td><td class="phonetik">mit-tơ-nakht</td><td>Um Mitternach<strong>t</strong> schlafe ich schon. <span class="vn-word">Vào lúc nửa đêm thì tôi đã ngủ rồi.</span></td><td class="vn-word">nửa đêm</td></tr>
+      <tr><td>☀️ <span class="der">der</span>Mittag</td><td class="phonetik">mit-tak (g cuối đọc thành "k"!)</td><td>Um Mittag esse ich zu Hause. <span class="vn-word">Vào buổi trưa tôi ăn ở nhà.</span></td><td class="vn-word">buổi trưa, giữa trưa</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 Achtung, Logikfalle: „halb acht" bedeutet <strong>7:30</strong>, nicht 8:30! Man denkt auf Deutsch vorwärts zur nächsten vollen Stunde — „halb" heißt „auf dem halben Weg zu acht Uhr".</div>
+    <div class="tip-vn">💡 Chú ý bẫy logic: „halb acht" nghĩa là <strong>7:30</strong>, không phải 8:30! Người Đức nghĩ hướng về phía giờ tròn kế tiếp — „halb" nghĩa là „đi được nửa đường tới tám giờ".</div>
+  </div>
+
+  <!-- Uhrzeit: Offiziell vs. Informell -->
+  <div class="section-title">🕘 Uhrzeit sagen: Offiziell vs. Informell / Cách nói giờ: chính thức &amp; thân mật</div>
+  <table class="vocab">
+    <colgroup><col style="width:14%"><col style="width:43%"><col style="width:43%"></colgroup>
+    <thead>
+      <tr>
+        <th>Digital</th>
+        <th style="background:#dbeafe; color:#1e40af;">🔵 Offiziell (formell)</th>
+        <th style="background:#ffedd5; color:#9a3412;">🟠 Informell (umgangssprachlich)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="font-weight:700;">9:00</td>
+        <td style="background:#eff6ff; color:#1e3a8a;">neun Uhr</td>
+        <td style="background:#fff7ed; color:#7c2d12;">Punk<strong>t</strong> neun</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700;">9:05</td>
+        <td style="background:#eff6ff; color:#1e3a8a;">neun Uhr fünf</td>
+        <td style="background:#fff7ed; color:#7c2d12;">fünf nach neun</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700;">9:15</td>
+        <td style="background:#eff6ff; color:#1e3a8a;">neun Uhr fünfzehn</td>
+        <td style="background:#fff7ed; color:#7c2d12;">Viertel nach neun</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700;">9:30</td>
+        <td style="background:#eff6ff; color:#1e3a8a;">neun Uhr dreißig</td>
+        <td style="background:#fff7ed; color:#7c2d12;">halb zehn ⚠️</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700;">9:40</td>
+        <td style="background:#eff6ff; color:#1e3a8a;">neun Uhr vierzig</td>
+        <td style="background:#fff7ed; color:#7c2d12;">zwanzig vor zehn</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700;">9:45</td>
+        <td style="background:#eff6ff; color:#1e3a8a;">neun Uhr fünfundvierzig</td>
+        <td style="background:#fff7ed; color:#7c2d12;">Viertel vor zehn</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700;">9:55</td>
+        <td style="background:#eff6ff; color:#1e3a8a;">neun Uhr fünfundfünfzig</td>
+        <td style="background:#fff7ed; color:#7c2d12;">fünf vor zehn</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 <span style="color:#1e40af; font-weight:700;">Offiziell</span> hörst du am Bahnhof, im Radio oder auf Digitaluhren. <span style="color:#9a3412; font-weight:700;">Informell</span> benutzt du im Gespräch mit Freunden und Familie. Die ⚠️-Zeile „halb zehn" ist die häufigste Fehlerquelle — sie bedeutet 9:30, nicht 10:30!</div>
+    <div class="tip-vn">💡 Cách nói <span style="color:#1e40af; font-weight:700;">chính thức</span> nghe ở nhà ga, đài radio hoặc trên đồng hồ điện tử. Cách nói <span style="color:#9a3412; font-weight:700;">thân mật</span> dùng khi nói chuyện với bạn bè, gia đình. Dòng có ⚠️ „halb zehn" là lỗi hay gặp nhất — nghĩa là 9:30, không phải 10:30!</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 11</span>
+    <span>Seite 1 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Tageszeiten-Wortschatz + Verben-Tabelle trennbare Verben komplett + Grammatik 1 + Häufige Fehler + GAME) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 11</h1>
+      <h2>Trennbare Verben &amp; die Verbklammer / Động từ tách được &amp; cấu trúc khung câu</h2>
+    </div>
+    <div class="badge">A1 · Lektion 11</div>
+  </div>
+
+  <!-- Wortschatz Tagesablauf -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Tageszeiten &amp; Tagesablauf / Bảng từ vựng: Thời điểm trong ngày &amp; Nhịp sinh hoạt</div>
+  <table class="vocab">
+    <colgroup><col style="width:20%"><col style="width:16%"><col style="width:14%"><col style="width:28%"><col style="width:22%"></colgroup>
+    <thead><tr><th>Tageszeit</th><th>Aussprache (Quốc Ngữ)</th><th>Adverb</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🌅 <span class="der">der</span>Morgen</td><td class="phonetik">moóc-gờn</td><td>morgens</td><td>Morgens trinke ich Kaffee. <span class="vn-word">Buổi sáng tôi uống cà phê.</span></td><td class="vn-word">buổi sáng</td></tr>
+      <tr><td>🌤️ <span class="der">der</span>Vormittag</td><td class="phonetik">fô-mi-tak</td><td>vormittags</td><td>Vormittags arbeite ich. <span class="vn-word">Buổi sáng (trước trưa) tôi làm việc.</span></td><td class="vn-word">buổi sáng (trước trưa)</td></tr>
+      <tr><td>🌇 <span class="der">der</span>Nachmittag</td><td class="phonetik">nakh-mi-tak</td><td>nachmittags</td><td>Nachmittags lerne ich Deutsch. <span class="vn-word">Buổi chiều tôi học tiếng Đức.</span></td><td class="vn-word">buổi chiều</td></tr>
+      <tr><td>🌆 <span class="der">der</span>Aben<strong>d</strong></td><td class="phonetik">a-bờn-t (d cuối đọc thành "t"!)</td><td>abends</td><td>Abends sehe ich fern. <span class="vn-word">Buổi tối tôi xem ti vi.</span></td><td class="vn-word">buổi tối</td></tr>
+      <tr><td>🌃 <span class="die">die</span>Na<strong>cht</strong></td><td class="phonetik">nakht</td><td>nachts</td><td>Nachts schlafe ich tief. <span class="vn-word">Ban đêm tôi ngủ rất say.</span></td><td class="vn-word">ban đêm</td></tr>
+      <tr><td>📅 <span class="der">der</span>Tag</td><td class="phonetik">tak (g cuối đọc thành "k"!)</td><td>täglich</td><td>Mein Tag beginn<strong>t</strong> um 7 Uhr. <span class="vn-word">Ngày của tôi bắt đầu lúc 7 giờ.</span></td><td class="vn-word">ngày</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Verben-Tabelle -->
+  <div class="section-title">🔧 Verben-Tabelle: Trennbares Verb „aufstehen" — vollständig konjugiert / Bảng động từ: „aufstehen" — chia đầy đủ</div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Pronomen</th><th>aufstehen</th><th>Beispiel / Câu ví dụ</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td>stehe ... <strong>auf</strong></td><td class="beispiel" style="text-align:left;">Ich stehe um 7 Uhr auf. <span class="vn-word">Tôi dậy lúc 7 giờ.</span></td></tr>
+      <tr><td class="pronomen">du</td><td>stehst ... <strong>auf</strong></td><td class="beispiel" style="text-align:left;">Du stehst früh auf. <span class="vn-word">Bạn dậy sớm.</span></td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td>steht ... <strong>auf</strong></td><td class="beispiel" style="text-align:left;">Er steht um 6 Uhr auf. <span class="vn-word">Anh ấy dậy lúc 6 giờ.</span></td></tr>
+      <tr><td class="pronomen">wir</td><td>stehen ... <strong>auf</strong></td><td class="beispiel" style="text-align:left;">Wir stehen zusammen auf. <span class="vn-word">Chúng tôi cùng dậy.</span></td></tr>
+      <tr><td class="pronomen">ihr</td><td>steht ... <strong>auf</strong></td><td class="beispiel" style="text-align:left;">Ihr steht spät auf. <span class="vn-word">Các bạn dậy muộn.</span></td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td>stehen ... <strong>auf</strong></td><td class="beispiel" style="text-align:left;">Sie stehen um 8 Uhr auf. <span class="vn-word">Họ / Ông bà dậy lúc 8 giờ.</span></td></tr>
+    </tbody>
+  </table>
+
+  <table class="vocab">
+    <colgroup><col style="width:20%"><col style="width:22%"><col style="width:42%"><col style="width:16%"></colgroup>
+    <thead><tr><th>Weitere trennbare Verben</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>an|fangen</td><td class="phonetik">an-phang-ơn</td><td>Der Unterricht fäng<strong>t</strong> um 9 Uhr an. <span class="vn-word">Buổi học bắt đầu lúc 9 giờ.</span></td><td class="vn-word">bắt đầu</td></tr>
+      <tr><td>auf|hören</td><td class="phonetik">auf-hơ-rơn (ö≈ơ, môi tròn)</td><td>Ich höre um 17 Uhr auf. <span class="vn-word">Tôi kết thúc (làm việc) lúc 17 giờ.</span></td><td class="vn-word">kết thúc, ngừng</td></tr>
+      <tr><td>ein|kaufen</td><td class="phonetik">ain-kau-phờn</td><td>Lisa kauf<strong>t</strong> im Supermarkt ein. <span class="vn-word">Lisa mua sắm ở siêu thị.</span></td><td class="vn-word">mua sắm</td></tr>
+      <tr><td>an|rufen</td><td class="phonetik">an-ru-phờn</td><td>Er ruf<strong>t</strong> am Abend seine Mutter an. <span class="vn-word">Buổi tối anh ấy gọi điện cho mẹ.</span></td><td class="vn-word">gọi điện thoại</td></tr>
+      <tr><td>fern|sehen ⚠️</td><td class="phonetik">fe-an-zê-ơn</td><td>Wir sehen abends gerne fern. <span class="vn-word">Buổi tối chúng tôi thích xem ti vi.</span></td><td class="vn-word">xem ti vi</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — Die Verbklammer bei trennbaren Verben / Ngữ pháp 1: Cấu trúc khung câu với động từ tách được</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Trennbare Verben bestehen aus <strong>Präfix + Stamm</strong> (z. B. auf + stehen). Im Hauptsatz wird nur der <strong>Stamm konjugiert</strong> und bleibt auf <strong>Position 2</strong> — das Präfix wandert dagegen ganz ans <strong>Satzende</strong>. Stamm und Präfix umschließen so den Rest des Satzes wie eine Klammer — daher der Name „Verbklammer".</div>
+    <div class="tip-vn">💡 Động từ tách được gồm <strong>tiền tố + gốc từ</strong> (VD: auf + stehen). Trong câu chính, chỉ <strong>gốc từ được chia</strong> và đứng ở <strong>vị trí thứ 2</strong> — còn tiền tố thì chuyển hẳn ra <strong>cuối câu</strong>. Gốc từ và tiền tố như hai gọng kìm ôm lấy phần còn lại của câu ở giữa — vì vậy gọi là „Verbklammer" (khung động từ).</div>
+  </div>
+  <div class="gram-box">
+    <h4>Satzmuster / Mẫu câu</h4>
+    <div class="rule-de">Ich <strong style="color:#1e40af;">stehe</strong> um 7 Uhr <strong style="color:#b45309;">auf</strong>. &nbsp;|&nbsp; Der Deutschkurs <strong style="color:#1e40af;">fängt</strong> um 9 Uhr <strong style="color:#b45309;">an</strong>.</div>
+    <div class="rule-vn">Vị trí 2 = gốc từ (xanh) &nbsp;|&nbsp; cuối câu = tiền tố (cam)</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich stehe auf um 7 Uhr."</span> → <span class="wb-ok">✅ „Ich stehe um 7 Uhr auf."</span> — das Präfix bleibt nicht direkt beim Verb, sondern wandert ganz ans Satzende!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich stehe auf um 7 Uhr."</span> → <span class="wb-ok">✅ „Ich stehe um 7 Uhr auf."</span> — tiền tố không đứng ngay sau động từ mà phải chuyển hẳn ra cuối câu!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich aufstehe um 7 Uhr."</span> → <span class="wb-ok">✅ „Ich stehe um 7 Uhr auf."</span> — man darf das Verb nicht als Ganzes auf Position 2 stellen; nur der Stamm wird konjugiert!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich aufstehe um 7 Uhr."</span> → <span class="wb-ok">✅ „Ich stehe um 7 Uhr auf."</span> — không được đặt cả động từ nguyên vẹn ở vị trí 2; chỉ có gốc từ mới được chia!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Fängt der Unterricht an um 9 Uhr?"</span> → <span class="wb-ok">✅ „Fängt der Unterricht um 9 Uhr an?"</span> — auch in Fragen bleibt das Präfix ganz am Satzende!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Fängt der Unterricht an um 9 Uhr?"</span> → <span class="wb-ok">✅ „Fängt der Unterricht um 9 Uhr an?"</span> — kể cả trong câu hỏi, tiền tố vẫn ở cuối câu!</div>
+  </div>
+
+  <!-- GAME -->
+  <div class="game-header">🎮 GAME — Das Satzbau-Fließband: Wirf das Präfix ans Ende! / Băng chuyền câu: ném tiền tố ra cuối câu!</div>
+  <div class="game-body">
+    <div class="instr-de">Spielregel: Die Wörter sind völlig durcheinander. Wer baut im Live-Chat am schnellsten den richtigen Satz? Achtung: Die Vorsilbe (das Präfix) gehört immer ganz ans Satzende!</div>
+    <div class="instr-vn">Luật chơi: Các từ đã bị xáo trộn hoàn toàn. Ai ghép được câu đúng nhanh nhất trong khung chat trực tiếp? Chú ý: tiền tố luôn thuộc về vị trí cuối cùng của câu!</div>
+
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">1.</span>
+      <div class="wortsalat-woerter"><span class="wort-chip">auf</span><span class="wort-chip">Ich</span><span class="wort-chip">um 6 Uhr</span><span class="wort-chip">stehe</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">2.</span>
+      <div class="wortsalat-woerter"><span class="wort-chip">Der Deutschkurs</span><span class="wort-chip">um 9:00 Uhr</span><span class="wort-chip">fängt</span><span class="wort-chip">an</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">3.</span>
+      <div class="wortsalat-woerter"><span class="wort-chip">Lisa</span><span class="wort-chip">kauft</span><span class="wort-chip">im Supermarkt</span><span class="wort-chip">ein</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">4.</span>
+      <div class="wortsalat-woerter"><span class="wort-chip">sieht</span><span class="wort-chip">Max</span><span class="wort-chip">am Abend</span><span class="wort-chip">fern</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">5.</span>
+      <div class="wortsalat-woerter"><span class="wort-chip">Hörst</span><span class="wort-chip">du</span><span class="wort-chip">um 17:00 Uhr</span><span class="wort-chip">auf</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 11</span>
+    <span>Seite 2 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Übung 1 + Grammatik 2 + Häufige Fehler + Übung 2 + Kulturinfo 1 + Kulturinfo 2, kompakt) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 11</h1>
+      <h2>Übungen &amp; Zeitangaben: um, gegen, von...bis / Bài tập &amp; trạng ngữ chỉ thời gian</h2>
+    </div>
+    <div class="badge">A1 · Lektion 11</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — Verbklammer-Baukasten: Ergänze das trennbare Verb / Điền động từ tách được vào cấu trúc khung câu</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die passende Form des Verbs in Klammern — denk an die Verbklammer (Stamm auf Position 2, Präfix am Ende)!</div>
+    <div class="instr-vn">Điền dạng đúng của động từ trong ngoặc — nhớ cấu trúc khung câu (gốc từ ở vị trí 2, tiền tố ở cuối)!</div>
+    <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> um 6 Uhr <span class="blank"></span>. (aufstehen <span class="vn-word">dậy</span>)</div>
+    <div class="fill-line"><span class="num">2.</span> Der Film <span class="blank"></span> um 20 Uhr <span class="blank"></span>. (anfangen <span class="vn-word">bắt đầu</span>)</div>
+    <div class="fill-line"><span class="num">3.</span> Wir <span class="blank"></span> am Samstag <span class="blank"></span>. (einkaufen <span class="vn-word">mua sắm</span>)</div>
+    <div class="fill-line"><span class="num">4.</span> Du <span class="blank"></span> deine Freundin <span class="blank"></span>. (anrufen <span class="vn-word">gọi điện thoại</span>)</div>
+    <div class="fill-line"><span class="num">5.</span> Ihr <span class="blank"></span> am Abend gerne <span class="blank"></span>. (fernsehen <span class="vn-word">xem ti vi</span>)</div>
+    <div class="fill-line"><span class="num">6.</span> Wann <span class="blank"></span> der Kurs <span class="blank"></span>? (aufhören <span class="vn-word">kết thúc</span>)</div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Zeitangaben: „um", „gegen" und „von...bis" / Ngữ pháp 2: Trạng ngữ chỉ thời gian</div>
+  <table class="vocab">
+    <colgroup><col style="width:16%"><col style="width:32%"><col style="width:52%"></colgroup>
+    <thead><tr><th>Präposition</th><th>Bedeutung</th><th>Beispiel</th></tr></thead>
+    <tbody>
+      <tr><td><strong>um</strong></td><td class="vn-word">mốc thời gian chính xác</td><td>Ich stehe um 7 Uhr auf. <span class="vn-word">Tôi dậy lúc 7 giờ.</span></td></tr>
+      <tr><td><strong>gegen</strong></td><td class="vn-word">mốc thời gian ước chừng (khoảng)</td><td>Ich komme gegen 8 Uhr an. <span class="vn-word">Tôi đến khoảng 8 giờ.</span></td></tr>
+      <tr><td><strong>von...bis</strong></td><td class="vn-word">khoảng thời gian, thời lượng</td><td>Ich arbeite von 8 bis 16 Uhr. <span class="vn-word">Tôi làm việc từ 8 giờ đến 16 giờ.</span></td></tr>
+    </tbody>
+  </table>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich arbeite von 8 bis um 16 Uhr."</span> → <span class="wb-ok">✅ „Ich arbeite von 8 bis 16 Uhr."</span> — bei „von...bis" braucht der zweite Teil kein zusätzliches „um"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich arbeite von 8 bis um 16 Uhr."</span> → <span class="wb-ok">✅ „Ich arbeite von 8 bis 16 Uhr."</span> — trong cấu trúc „von...bis", phần thứ hai không cần thêm „um"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich stehe in 7 Uhr auf."</span> → <span class="wb-ok">✅ „Ich stehe um 7 Uhr auf."</span> — bei einer genauen Uhrzeit steht immer „um", nicht „in"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich stehe in 7 Uhr auf."</span> → <span class="wb-ok">✅ „Ich stehe um 7 Uhr auf."</span> — với giờ chính xác luôn dùng „um", không dùng „in"!</div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — Lückentext: „um", „gegen" oder „von...bis"? / Điền từ: „um", „gegen" hay „von...bis"?</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die passende Präposition. Manchmal brauchst du zwei Lücken für „von...bis"!</div>
+    <div class="instr-vn">Điền giới từ phù hợp. Đôi khi „von...bis" cần điền hai chỗ trống!</div>
+    <div class="fill-line"><span class="num">1.</span> Ich stehe <span class="blank"></span> 7 Uhr auf. <span class="vn-word">(Tôi dậy lúc 7 giờ.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Der Unterricht dauert <span class="blank"></span> 9 <span class="blank"></span> 11 Uhr. <span class="vn-word">(Buổi học kéo dài từ 9 đến 11 giờ.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Wir treffen uns <span class="blank"></span> Mittag, so <span class="blank"></span> 12 Uhr. <span class="vn-word">(Chúng tôi gặp nhau vào buổi trưa, khoảng 12 giờ.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Das Geschäft hat <span class="blank"></span> 9 <span class="blank"></span> 20 Uhr geöffnet. <span class="vn-word">(Cửa hàng mở cửa từ 9 đến 20 giờ.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Er kommt <span class="blank"></span> 18 Uhr nach Hause. <span class="vn-word">(Anh ấy về nhà lúc 18 giờ — rất đúng giờ.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> <span class="blank"></span> Mitternacht schlafen die meisten Leute schon. <span class="vn-word">(Hầu hết mọi người đã ngủ vào lúc nửa đêm.)</span></div>
+    <div class="fill-line"><span class="num">7.</span> Die Pause ist <span class="blank"></span> 12 <span class="blank"></span> 13 Uhr. <span class="vn-word">(Giờ nghỉ là từ 12 đến 13 giờ.)</span></div>
+    <div class="fill-line"><span class="num">8.</span> Der Film beginnt <span class="blank"></span> 20 Uhr — vielleicht etwas später. <span class="vn-word">(Phim bắt đầu khoảng 20 giờ — có thể muộn hơn một chút.)</span></div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Pünktlichkeit in Deutschland / Sự đúng giờ ở Đức</div>
+    <div class="kb-de">Pünktlichkeit gilt in Deutschland als wichtige Tugend: Wer „um 9 Uhr" eingeladen ist, sollte spätestens dann da sein. Nur die Deutsche Bahn ist manchmal nicht so pünktlich — darüber machen sich Deutsche gerne selbst lustig!</div>
+    <div class="kb-vn">Ở Đức, đúng giờ được xem là một đức tính quan trọng: hẹn „9 giờ" thì phải có mặt đúng lúc đó, không trễ. Điều này khác với thói quen giờ dây thun khá phổ biến ở Việt Nam — với người Đức, đến trễ dù chỉ vài phút cũng bị coi là thiếu tôn trọng.</div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Ruhezeit: Mittagsruhe &amp; Sonntagsruhe / Giờ yên tĩnh: nghỉ trưa &amp; ngày Chủ nhật</div>
+    <div class="kb-de">In Deutschland gibt es geschützte <b>Ruhezeiten</b>: zwischen 13 und 15 Uhr sowie am ganzen Sonntag sollte man keinen Lärm machen. Viele Geschäfte haben sonntags komplett geschlossen.</div>
+    <div class="kb-vn">Ở Đức có những <b>khung giờ yên tĩnh</b> được bảo vệ: khoảng 13–15 giờ và cả ngày Chủ nhật không được gây ồn. Điều này khá khác với Việt Nam, nơi cửa hàng và sinh hoạt buổi trưa/Chủ nhật vẫn diễn ra bình thường — ở Đức hầu hết cửa hàng đóng cửa hẳn vào Chủ nhật.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 11</span>
+    <span>Seite 3 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Dialog + Lesetext + MC + Freies Sprechen + Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 11</h1>
+      <h2>Dialog, Lesetext &amp; Finale / Hội thoại, bài đọc &amp; tổng kết</h2>
+    </div>
+    <div class="badge">A1 · Lektion 11</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Tom:</span>Guten Morgen, Sara! Du siehst müde aus. Wie spät is<strong>t</strong> es überhaupt?</div>
+    <div class="dialog-line"><span class="speaker">Sara:</span>Es is<strong>t</strong> erst halb neun. Ich stehe normalerweise erst gegen 10 Uhr auf — ich bin eine echte Nachteule.</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Wirklich? Ich stehe jeden Tag um 6 Uhr auf, jogge und frühstücke um 7 Uhr.</div>
+    <div class="dialog-line"><span class="speaker">Sara:</span>Das könnte ich nie! Bei mir fäng<strong>t</strong> der Tag erst richtig an, wenn ich meinen ersten Kaffee trinke.</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Und wann arbeitest du?</div>
+    <div class="dialog-line"><span class="speaker">Sara:</span>Ich arbeite von 11 bis 19 Uhr im Homeoffice. Danach kaufe ich oft noch schnell ein.</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Ich höre schon um 16 Uhr auf. Dann rufe ich oft meine Eltern an und sehe abends fern.</div>
+    <div class="dialog-line"><span class="speaker">Sara:</span>Klingt entspannt! Ich schlafe selten vor Mitternach<strong>t</strong> ein — wir zwei sind wirklich ein perfektes Gegenteil!</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Ich heiße Max und studiere Informatik in Leipzig. Mein Tagesablauf ist ziemlich strukturiert, denn ich stehe jeden Werktag um 6:30 Uhr auf. Zuerst dusche ich, dann frühstücke ich schnell — meistens nur ein Brot mit Käse und einen Kaffee. Um 7:45 Uhr fahre ich mit dem Fahrrad zur Universität, denn mein erster Kurs fäng<strong>t</strong> um 8:30 Uhr an. Vormittags habe ich meistens zwei oder drei Vorlesungen, von 8:30 bis etwa 12 Uhr. Gegen Mittag treffe ich mich oft mit Freunden in der Mensa und wir essen zusammen. Nachmittags arbeite ich in der Bibliothek: Von 13 bis 16 Uhr lerne ich dort für Prüfungen, denn zu Hause kann ich mich schlechter konzentrieren. Um 17 Uhr höre ich mit dem Lernen auf und mache Sport — ich gehe zweimal pro Woche ins Fitnessstudio. Abends koche ich gerne selbst, und gegen 19 Uhr rufe ich oft meine Familie an, um ihnen von meinem Tag zu erzählen. Später sehe ich manchmal fern oder treffe mich mit meiner WG-Partnerin im Wohnzimmer. Am Wochenende ist alles anders: Dann stehe ich viel später auf, meistens erst gegen 10 Uhr, und der Tag beginn<strong>t</strong> viel entspannter. Unter der Woche gehe ich meistens schon um 23 Uhr ins Be<strong>tt</strong>, denn um 6:30 Uhr klingelt der Wecker schon wieder. Mein Tagesablauf ist anstrengend, aber ich mag die klare Struktur — sie hilft mir, Studium und Privatleben gut zu organisieren.
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Wann steht Max an Werktagen auf?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) um 6:30 Uhr</span>
+      <span><span class="mc-kreis"></span> b) um 7:45 Uhr</span>
+      <span><span class="mc-kreis"></span> c) um 8:30 Uhr</span>
+    </div>
+    <div class="mc-frage">2. Wann fängt sein erster Kurs an?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) um 7:45 Uhr</span>
+      <span><span class="mc-kreis"></span> b) um 8:30 Uhr</span>
+      <span><span class="mc-kreis"></span> c) um 12 Uhr</span>
+    </div>
+    <div class="mc-frage">3. Von wann bis wann lernt Max in der Bibliothek?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) von 8:30 bis 12 Uhr</span>
+      <span><span class="mc-kreis"></span> b) von 13 bis 16 Uhr</span>
+      <span><span class="mc-kreis"></span> c) von 17 bis 19 Uhr</span>
+    </div>
+    <div class="mc-frage">4. Was macht Max um 17 Uhr?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) er kauft ein</span>
+      <span><span class="mc-kreis"></span> b) er hört mit dem Lernen auf und macht Sport</span>
+      <span><span class="mc-kreis"></span> c) er ruft seine Familie an</span>
+    </div>
+    <div class="mc-frage">5. Wen ruft Max gegen 19 Uhr an?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) seine Freunde</span>
+      <span><span class="mc-kreis"></span> b) seine WG-Partnerin</span>
+      <span><span class="mc-kreis"></span> c) seine Familie</span>
+    </div>
+    <div class="mc-frage">6. Wie ist Max' Tagesablauf am Wochenende?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) genauso wie unter der Woche</span>
+      <span><span class="mc-kreis"></span> b) er steht später auf und es ist entspannter</span>
+      <span><span class="mc-kreis"></span> c) er lernt noch mehr in der Bibliothek</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Wie sieht dein typischer Tagesablauf aus? Wann stehst du auf, und wann gehst du ins Bett?</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Nhịp sinh hoạt hằng ngày của bạn thường như thế nào? Bạn dậy lúc mấy giờ, và đi ngủ lúc mấy giờ?</div>
+    </div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">aufstehen</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Um wie viel Uhr stehst du normalerweise auf?</div>
+      <div class="anweisung-vn">Bạn thường dậy lúc mấy giờ?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">Wochenende</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Ist dein Tagesablauf am Wochenende anders? Wie?</div>
+      <div class="anweisung-vn">Nhịp sinh hoạt cuối tuần của bạn có khác không? Khác như thế nào?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">Frühaufsteher / Nachteule</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Bist du eher ein Frühaufsteher oder eine Nachteule?</div>
+      <div class="anweisung-vn">Bạn thiên về kiểu dậy sớm hay cú đêm hơn?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">von...bis</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Satz</span></div>
+      <div class="anweisung-de">Bilde einen Satz mit „von...bis" über deinen Arbeits- oder Schultag.</div>
+      <div class="anweisung-vn">Đặt một câu với „von...bis" về giờ làm việc hoặc giờ học của bạn.</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Verben konjugieren / Chia động từ:</strong> Schreibe die vollständige Konjugation von „anfangen" und „einkaufen" für alle 6 Personen auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết ra giấy đầy đủ 6 ngôi chia của „anfangen" và „einkaufen" — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">📝 <strong>Meinen Tagesablauf beschreiben / Miêu tả nhịp sinh hoạt của tôi:</strong> Schreibe 6–8 Sätze über deinen typischen Tag. Benutze mindestens 3 trennbare Verben und mindestens je einmal „um", „gegen" und „von...bis".
+      <div class="ha-vn">Viết 6–8 câu về một ngày điển hình của bạn. Dùng ít nhất 3 động từ tách được, và mỗi từ „um", „gegen", „von...bis" ít nhất một lần.</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 10):</strong> 1. im (in + dem, das Zimmer ist neutral) &nbsp; 2. an der Wand &nbsp; 3. Falsch — richtig ist „Das Bild ist an der Wand." (Bilder hängen seitlich AN der Wand, nicht AUF ihr)</p>
+    <p><strong>Game (Satzbau-Fließband):</strong> 1. Ich stehe um 6 Uhr auf. &nbsp; 2. Der Deutschkurs fängt um 9:00 Uhr an. &nbsp; 3. Lisa kauft im Supermarkt ein. &nbsp; 4. Max sieht am Abend fern. &nbsp; 5. Hörst du um 17:00 Uhr auf?</p>
+    <p><strong>Übung 1 (Verbklammer-Baukasten):</strong> 1. stehe ... auf &nbsp; 2. fängt ... an &nbsp; 3. kaufen ... ein &nbsp; 4. rufst ... an &nbsp; 5. seht ... fern &nbsp; 6. hört ... auf</p>
+    <p><strong>Übung 2 (um/gegen/von...bis):</strong> 1. um &nbsp; 2. von / bis &nbsp; 3. um / gegen &nbsp; 4. von / bis &nbsp; 5. um &nbsp; 6. Um (Mitternacht) &nbsp; 7. von / bis &nbsp; 8. gegen</p>
+    <p><strong>Leseverständnis:</strong> 1. a) um 6:30 Uhr &nbsp; 2. b) um 8:30 Uhr &nbsp; 3. b) von 13 bis 16 Uhr &nbsp; 4. b) er hört mit dem Lernen auf und macht Sport &nbsp; 5. c) seine Familie &nbsp; 6. b) er steht später auf und es ist entspannter</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ich stehe um 7 Uhr auf. &nbsp; Karte 2: Ja, am Wochenende stehe ich später auf. &nbsp; Karte 3: Ich bin eher ein Frühaufsteher. &nbsp; Karte 4: Ich arbeite von 9 bis 17 Uhr.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 11 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 4 / 4</span>
+  </div>
+</div>
+
+</body>
+</html>

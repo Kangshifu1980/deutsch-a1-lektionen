@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 10</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 8mm 13mm 4mm 13mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.2; font-size: 11px; }
+.compact .doc-header { padding-bottom: 3px; margin-bottom: 5px; }
+.compact .section-title { margin: 5px 0 3px 0; }
+.compact table { margin-bottom: 3px; }
+.compact table.vocab th, .compact table.vocab td { padding: 2px 5px; }
+.compact .gram-box { padding: 4px 8px; margin-bottom: 3px; }
+.compact .tip-box { padding: 3px 7px; margin: 2px 0; }
+.compact .warn-box { padding: 3px 7px; margin: 2px 0 5px 0; }
+.compact .ubung-header { padding: 2px 8px; }
+.compact .ubung-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .fill-line { margin-bottom: 1px; }
+.compact .footer { margin-top: 3px; padding-top: 2px; }
+.compact .phon-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .kultur-box { padding: 4px 9px; margin: 3px 0 5px 0; }
+.compact .dialog-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .lese-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .mc-block { margin-bottom: 3px; }
+.compact .mc-optionen { margin-bottom: 4px; }
+.compact .ha-box { padding: 4px 9px; }
+.compact .antworten { padding: 4px 9px; }
+.compact .wiederholung-box { padding: 4px 9px; margin-bottom: 5px; }
+.compact .karten-grid { margin-top: 3px; gap: 6px; }
+.compact .sprech-karte { padding: 5px 7px; }
+.compact .sprech-karte .karte-num { padding: 1px 7px; margin-bottom: 3px; }
+.compact .sprech-karte .wort-pill { font-size: 11.5px; padding: 2px 5px; margin-bottom: 3px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 3px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 3px; }
+.compact .gegenteile-box { padding: 5px 10px; margin-bottom: 4px; }
+.compact .wortsalat-item { margin-bottom: 4px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .gegenteile-box: Zuordnungsspiel (wiederverwendet für Möbel-Zimmer-Matching) ===== */
+.gegenteile-box { border: 1px solid #cbd5e1; border-radius: 8px; padding: 7px 12px; background: #fafafa; margin-bottom: 5px; }
+.gegenteile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 18px; }
+.gegenteile-spalte-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.4px; color: #94a3b8; font-weight: 700; margin-bottom: 3px; }
+.gt-item { display: flex; align-items: center; gap: 6px; font-size: 10.5px; margin-bottom: 3px; }
+.gt-chip { display: inline-block; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-weight: 700; font-size: 10px; padding: 2px 8px; border-radius: 6px; min-width: 18px; text-align: center; }
+.gt-letter { display: inline-block; background: #fce7f3; border: 1px solid #f9a8d4; color: #9d174d; font-weight: 700; font-size: 10px; padding: 2px 8px; border-radius: 6px; min-width: 18px; text-align: center; }
+.gt-blank { border-bottom: 1px solid #94a3b8; min-width: 26px; display: inline-block; text-align: center; }
+
+/* ===== .wortsalat: Satzbau-Scramble ===== */
+.wortsalat-item { margin-bottom: 6px; }
+.wortsalat-num { font-weight: 700; color: #64748b; margin-right: 4px; font-size: 10.5px; }
+.wortsalat-situation { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 2px; margin-left: 20px; }
+.wortsalat-woerter { display: inline-flex; gap: 4px; flex-wrap: wrap; vertical-align: middle; }
+.wort-chip { display: inline-block; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 6px; }
+.wortsalat-answer-row { display: flex; align-items: center; gap: 6px; margin-top: 2px; margin-left: 20px; }
+.wortsalat-arrow { color: #94a3b8; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Phonetik + Lernziele + Wortschatz + Phrasen-Tabelle) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 10</h1>
+      <h2>Die Wohnung</h2>
+      <h2>Căn hộ / Nơi ở</h2>
+    </div>
+    <div class="badge">A1 · Lektion 10</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 9 / Ôn tập Bài 9</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: möchten &amp; kosten / Khởi động ngữ pháp: möchten và kosten</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">möchte</div>
+        <div class="wh-mund">Ergänze: Ich ___ den Pullover. (möchten)</div>
+        <div class="wh-beispiel">Điền dạng chia của „möchten" ở ngôi „ich"</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">kosten</div>
+        <div class="wh-mund">Ergänze: Die Schuhe ___ 50 Euro. (kosten)</div>
+        <div class="wh-beispiel">Danh từ số nhiều cần dạng động từ nào?</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Richtig?</div>
+        <div class="wh-mund">Ist „Ich möchte den roten Pullover." ein guter A1-Satz?</div>
+        <div class="wh-beispiel">Đây có phải câu phù hợp với trình độ A1 không?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Zimmer und Möbelstücke benennen <span class="vn">— gọi tên các phòng và đồ nội thất</span></p>
+    <p class="de">✔ Mit den Präpositionen „in", „an", „auf" + Dativ sagen, WO sich etwas befindet <span class="vn">— dùng giới từ „in", „an", „auf" + Dativ để nói vị trí của đồ vật</span></p>
+    <p class="de">✔ Die Kontraktionen „im" und „am" korrekt verwenden <span class="vn">— dùng đúng dạng rút gọn „im" và „am"</span></p>
+    <p class="de">✔ Die eigene Wohnung und die Position der Möbel beschreiben <span class="vn">— miêu tả nơi ở của mình và vị trí đồ nội thất</span></p>
+  </div>
+
+  <!-- Legende -->
+  <div class="section-title">🎨 Farbkodierung / Mã màu quán từ</div>
+  <div class="legend">
+    <div class="legend-item"><span class="der">der</span> maskulin / giống đực</div>
+    <div class="legend-item"><span class="die">die</span> feminin / giống cái</div>
+    <div class="legend-item"><span class="das">das</span> neutral / giống trung</div>
+    <div class="legend-item"><span class="warn">⚠️</span> unregelmäßig / bất quy tắc</div>
+  </div>
+
+  <!-- Phonetik -->
+  <div class="section-title">🔊 Aussprache-Minute / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Der Diphthong „au" in „Haus" / Nguyên âm đôi „au" trong „Haus"</div>
+    <div class="phon-de">„au" wird gesprochen, indem man bei „a" beginnt und zu „u" gleitet. Achtung: Im Plural „Häuser" wird daraus durch den Umlaut ein ganz anderer Laut (wie „eu")! Du kennst „Frau" schon aus Lektion 1 — genau derselbe Laut steckt in „Haus".</div>
+    <div class="phon-vn">„au" đọc nối liền: bắt đầu bằng „a" rồi lướt sang „u", nghe gần giống „ao" trong tiếng Việt (như „chào"). Chú ý: ở số nhiều „Häuser", vì có dấu biến âm (Umlaut) nên biến thành một âm hoàn toàn khác, nghe gần giống „oi". Bạn đã học „Frau" ở Bài 1 — chính là âm này trong „Haus".<br>⚠️ Mẹo cho người Việt: „Haus" kết thúc bằng „-s" — hãy bật rõ âm „s" cuối, đừng nuốt mất!</div>
+    <div class="phon-beispiele">Beispiele: H<strong>aus</strong> (đọc: "ha-us") · Fr<strong>au</strong> (đọc: "phrao") · H<strong>äu</strong>ser (đọc: "hoi-dzơ", số nhiều!)</div>
+  </div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Der „ich-Laut" — z. B. in „Küche" und „Teppich": Die Zunge liegt vorne am Gaumen, die Luft strömt sanft und hauchig — kein „kh"-Laut wie im Vietnamesischen!</div>
+    <div class="tip-vn">💡 Âm „ich-Laut" (như trong „Küche", „Teppich"): lưỡi đặt phía trước, hơi thở nhẹ nhàng thoát ra qua khe hẹp — một âm thở nhẹ, KHÔNG phải âm „kh" nặng ở cổ họng như tiếng Việt!</div>
+  </div>
+
+  <!-- Wortschatz Zimmer -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Zimmer / Bảng từ vựng: Phòng</div>
+  <table class="vocab">
+    <colgroup><col style="width:20%"><col style="width:18%"><col style="width:37%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Zimmer</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🍳 <span class="die">die</span>Küche</td><td class="phonetik">kư-chờ</td><td>Die Küche is<strong>t</strong> klein. <span class="vn-word">Nhà bếp thì nhỏ.</span></td><td class="vn-word">nhà bếp</td></tr>
+      <tr><td>🛋️ <span class="das">das</span>Wohnzimmer</td><td class="phonetik">vôn-xim-mơ</td><td>Das Wohnzimmer is<strong>t</strong> groß. <span class="vn-word">Phòng khách thì rộng.</span></td><td class="vn-word">phòng khách</td></tr>
+      <tr><td>🛏️ <span class="das">das</span>Schlafzimmer</td><td class="phonetik">sláp-xim-mơ</td><td>Das Schlafzimmer is<strong>t</strong> ruhig. <span class="vn-word">Phòng ngủ thì yên tĩnh.</span></td><td class="vn-word">phòng ngủ</td></tr>
+      <tr><td>🛁 <span class="das">das</span>Ba<strong>d</strong></td><td class="phonetik">ba<strong>t</strong> (d cuối đọc thành "t"!)</td><td>Das Ba<strong>d</strong> is<strong>t</strong> modern. <span class="vn-word">Phòng tắm thì hiện đại.</span></td><td class="vn-word">phòng tắm</td></tr>
+      <tr><td>🚪 <span class="der">der</span>Flur</td><td class="phonetik">flu-a</td><td>Der Flur is<strong>t</strong> lang. <span class="vn-word">Hành lang thì dài.</span></td><td class="vn-word">hành lang</td></tr>
+      <tr><td>💻 <span class="das">das</span>Arbeitszimmer</td><td class="phonetik">ác-baits-xim-mơ</td><td>Das Arbeitszimmer is<strong>t</strong> hell. <span class="vn-word">Phòng làm việc thì sáng.</span></td><td class="vn-word">phòng làm việc</td></tr>
+      <tr><td>🌿 <span class="der">der</span>Balkon</td><td class="phonetik">ban-kon</td><td>Der Balkon is<strong>t</strong> schön. <span class="vn-word">Ban công thì đẹp.</span></td><td class="vn-word">ban công</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 Wohnungstypen: <span class="die">die</span>Wohnung (vô-nung) căn hộ · <span class="das">das</span>Hau<strong>s</strong> (ha-us) ngôi nhà · <span class="die">die</span>WG (vê-ghê) nhà ở ghép (viết tắt của „Wohngemeinschaft")</div>
+    <div class="tip-vn">💡 Ba loại nơi ở phổ biến — xem giải thích tiếng Đức phía trên.</div>
+  </div>
+
+  <!-- Wortschatz Möbel -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Möbel / Bảng từ vựng: Đồ nội thất</div>
+  <table class="vocab">
+    <colgroup><col style="width:18%"><col style="width:16%"><col style="width:41%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Möbelstück</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🍽️ <span class="der">der</span>Ti<strong>sch</strong></td><td class="phonetik">ti-sờ</td><td>Der Ti<strong>sch</strong> steh<strong>t</strong> in der Küche. <span class="vn-word">Cái bàn ở trong bếp.</span></td><td class="vn-word">cái bàn</td></tr>
+      <tr><td>🪑 <span class="der">der</span>Stuhl</td><td class="phonetik">stu-l (st đọc "sht")</td><td>Der Stuhl steh<strong>t</strong> am Tisch. <span class="vn-word">Cái ghế ở cạnh bàn.</span></td><td class="vn-word">cái ghế</td></tr>
+      <tr><td>🛏️ <span class="das">das</span>Be<strong>tt</strong></td><td class="phonetik">be<strong>t</strong></td><td>Das Be<strong>tt</strong> steh<strong>t</strong> im Schlafzimmer. <span class="vn-word">Cái giường ở trong phòng ngủ.</span></td><td class="vn-word">cái giường</td></tr>
+      <tr><td>🚪 <span class="der">der</span>Schra<strong>nk</strong></td><td class="phonetik">schra-nk</td><td>Der Schra<strong>nk</strong> steh<strong>t</strong> im Schlafzimmer. <span class="vn-word">Cái tủ ở trong phòng ngủ.</span></td><td class="vn-word">cái tủ</td></tr>
+      <tr><td>🛋️ <span class="das">das</span>Sofa</td><td class="phonetik">dô-fa</td><td>Das Sofa steh<strong>t</strong> im Wohnzimmer. <span class="vn-word">Cái ghế sofa ở trong phòng khách.</span></td><td class="vn-word">ghế sofa</td></tr>
+      <tr><td>💡 <span class="die">die</span>Lampe</td><td class="phonetik">lam-pơ</td><td>Die Lampe häng<strong>t</strong> an der Wan<strong>d</strong>. <span class="vn-word">Cái đèn treo trên tường.</span></td><td class="vn-word">cái đèn</td></tr>
+      <tr><td>📚 <span class="das">das</span>Regal</td><td class="phonetik">rê-gan</td><td>Das Regal steh<strong>t</strong> im Wohnzimmer. <span class="vn-word">Cái kệ ở trong phòng khách.</span></td><td class="vn-word">cái kệ / giá sách</td></tr>
+      <tr><td>🟫 <span class="der">der</span>Teppi<strong>ch</strong></td><td class="phonetik">tê-pích (ich-Laut, thở nhẹ)</td><td>Der Teppi<strong>ch</strong> lieg<strong>t</strong> auf dem Boden. <span class="vn-word">Tấm thảm trải trên sàn nhà.</span></td><td class="vn-word">tấm thảm</td></tr>
+      <tr><td>🧱 <span class="die">die</span>Wan<strong>d</strong></td><td class="phonetik">van<strong>t</strong> (d cuối đọc thành "t"!)</td><td>Die Wan<strong>d</strong> is<strong>t</strong> weiß. <span class="vn-word">Bức tường màu trắng.</span></td><td class="vn-word">bức tường</td></tr>
+      <tr><td>⬜ <span class="der">der</span>Boden</td><td class="phonetik">bô-đơn</td><td>Der Boden is<strong>t</strong> warm. <span class="vn-word">Sàn nhà thì ấm.</span></td><td class="vn-word">sàn nhà</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 10</span>
+    <span>Seite 1 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Positionsverben + Grammatik 1: Dativ mit in/an/auf + Häufige Fehler + Übung 1 + Kulturinfo 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 10</h1>
+      <h2>Der Dativ: Wo ist das Möbelstück? / Dativ: Đồ nội thất ở đâu?</h2>
+    </div>
+    <div class="badge">A1 · Lektion 10</div>
+  </div>
+
+  <!-- Phrasen-Tabelle -->
+  <div class="section-title">🔧 Phrasen-Tabelle: Positionsverben „stehen", „liegen", „hängen" / Động từ chỉ vị trí</div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Person</th><th>stehen (stehend)</th><th>liegen (liegend)</th><th>hängen (hängend)</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td>stehe</td><td>liege</td><td>hänge</td></tr>
+      <tr><td class="pronomen">du</td><td>stehst</td><td>liegst</td><td>hängst</td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td>steht</td><td>liegt</td><td>hängt</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 Deutsche benutzen oft „stehen"/„liegen"/„hängen" statt „sein", um genauer zu beschreiben, WIE ein Möbelstück positioniert ist: der Tisch <strong>steht</strong> (aufrecht), der Teppich <strong>liegt</strong> (flach), die Lampe <strong>hängt</strong> (an der Wand/Decke).</div>
+    <div class="tip-vn">💡 Người Đức thường dùng „stehen"/„liegen"/„hängen" thay vì „sein" để miêu tả chính xác TƯ THẾ của đồ vật: cái bàn thì „đứng" (steh<strong>t</strong> — thẳng đứng trên chân), tấm thảm thì „nằm" (lieg<strong>t</strong> — trải phẳng), cái đèn thì „treo" (häng<strong>t</strong> — trên tường/trần nhà).</div>
+  </div>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — Lokaler Dativ mit „in", „an", „auf" (Frage: Wo?) / Ngữ pháp 1: Dativ chỉ vị trí (câu hỏi: Wo? — ở đâu?)</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Ganz neuer Fall: der <strong>Dativ</strong>! Bei der Frage „Wo?" (nicht „Wohin?") stehen „in", „an" und „auf" immer mit Dativ. Wichtig: Das ist eine ANDERE Regel als der Akkusativ aus Lektion 8/9 — verwechsle sie nicht!</div>
+    <div class="tip-vn">💡 Đây là một cách hoàn toàn mới: <strong>Dativ (cách thứ ba)</strong>! Khi trả lời „Wo?" (ở đâu? — không phải „Wohin?" đi đâu?), „in", „an", „auf" luôn đi với Dativ. Lưu ý: đây là quy tắc KHÁC với Akkusativ đã học ở Bài 8/9 — đừng nhầm lẫn!</div>
+  </div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Genus</th><th>Nominativ → Dativ</th><th>Kontraktion</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen"><span class="der">der</span>(m)</td><td>der Tisch → <span class="der">dem</span>Tisch</td><td>in + dem = <strong>im</strong> / an + dem = <strong>am</strong></td></tr>
+      <tr><td class="pronomen"><span class="die">die</span>(f)</td><td>die Küche → <span class="die">der</span>Küche</td><td>keine Kontraktion</td></tr>
+      <tr><td class="pronomen"><span class="das">das</span>(n)</td><td>das Zimmer → <span class="das">dem</span>Zimmer</td><td>in + dem = <strong>im</strong> / an + dem = <strong>am</strong></td></tr>
+      <tr><td class="pronomen">Plural</td><td>die Zimmer → <span class="plural">den</span>Zimmer<strong>n</strong></td><td>keine Kontraktion, aber Nomen +n</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">🔮 Bonus: Auch der <strong>unbestimmte</strong> Artikel ändert sich im Dativ nach demselben Muster: ein → <strong>einem</strong> (m/n), eine → <strong>einer</strong> (f). Beispiel: „Ich wohne in einer Wohnung." „auf dem Tisch" (auf + dem) wird NICHT zusammengezogen — nur „in" und „an" bilden Kontraktionen!</div>
+    <div class="tip-vn">🔮 Bổ sung: Quán từ bất định trong Dativ cũng đổi theo quy luật tương tự: ein → <strong>einem</strong> (giống đực/trung), eine → <strong>einer</strong> (giống cái). Ví dụ: „Ich wohne in einer Wohnung." (Tôi sống trong một căn hộ.) „auf dem Tisch" (auf + dem) <strong>KHÔNG</strong> rút gọn — chỉ „in" và „an" mới tạo dạng rút gọn!</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Der Tisch steht in der Zimmer."</span> → <span class="wb-ok">✅ „Der Tisch steht im Zimmer."</span> — „das Zimmer" ist neutral → in dem = im, nicht „in der"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Der Tisch steht in der Zimmer."</span> → <span class="wb-ok">✅ „Der Tisch steht im Zimmer."</span> — „das Zimmer" là danh từ giống trung → in dem = im, không phải „in der"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Die Lampe steht in dem Tisch."</span> → <span class="wb-ok">✅ „Die Lampe steht auf dem Tisch."</span> — Bedeutungsfehler: „auf" = oben drauf, „in" = innen drin. Eine Lampe steht AUF dem Tisch, nicht IN dem Tisch!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Die Lampe steht in dem Tisch."</span> → <span class="wb-ok">✅ „Die Lampe steht auf dem Tisch."</span> — sai về nghĩa: „auf" = ở trên bề mặt, „in" = ở bên trong. Đèn đặt Ở TRÊN bàn, không phải Ở TRONG bàn!</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — Das Wohnungs-Suchspiel: Möbel &amp; Zimmer / Trò chơi tìm đồ: Đồ nội thất &amp; Phòng</div>
+  <div class="ubung-body">
+    <div class="instr-de">Teil A: Verbinde jedes Möbelstück mit dem passenden Zimmer. Teil B: Schreibe zu jedem Paar einen vollständigen Satz mit „im"/„in der".</div>
+    <div class="instr-vn">Phần A: Nối mỗi đồ nội thất với phòng phù hợp. Phần B: Viết một câu hoàn chỉnh cho mỗi cặp, dùng „im"/„in der".</div>
+
+    <div class="small" style="font-weight:700; color:#1e3a8a; margin:4px 0 2px 0;">Teil A — Zuordnung / Nối cặp</div>
+    <div class="gegenteile-box">
+      <div class="gegenteile-grid">
+        <div>
+          <div class="gegenteile-spalte-label">Möbelstück</div>
+          <div class="gt-item"><span class="gt-chip">1</span> das Bett <span class="gt-blank"></span></div>
+          <div class="gt-item"><span class="gt-chip">2</span> das Sofa <span class="gt-blank"></span></div>
+          <div class="gt-item"><span class="gt-chip">3</span> der Tisch <span class="gt-blank"></span></div>
+        </div>
+        <div>
+          <div class="gegenteile-spalte-label">Zimmer</div>
+          <div class="gt-item"><span class="gt-letter">A</span> das Wohnzimmer</div>
+          <div class="gt-item"><span class="gt-letter">B</span> die Küche</div>
+          <div class="gt-item"><span class="gt-letter">C</span> das Schlafzimmer</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="small" style="font-weight:700; color:#1e3a8a; margin:6px 0 2px 0;">Teil B — Vollständige Sätze / Câu hoàn chỉnh</div>
+    <div class="fill-line"><span class="num">1.</span> Das Bett <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Das Sofa <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Der Tisch <span class="blank-xl"></span></div>
+  </div>
+
+  <!-- Übung 2: Lückentext stehen/liegen/hängen -->
+  <div class="ubung-header">Übung 2 — Lückentext: „stehen", „liegen" oder „hängen"? / Điền từ: „stehen", „liegen" hay „hängen"?</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die richtige Form von „stehen", „liegen" oder „hängen". Achte auf Singular/Plural!</div>
+    <div class="instr-vn">Điền dạng đúng của „stehen", „liegen" hoặc „hängen". Chú ý số ít/số nhiều!</div>
+    <div class="fill-line"><span class="num">1.</span> Der Tisch <span class="blank"></span> in der Küche.</div>
+    <div class="fill-line"><span class="num">2.</span> Der Teppich <span class="blank"></span> auf dem Boden.</div>
+    <div class="fill-line"><span class="num">3.</span> Die Lampe <span class="blank"></span> an der Wand.</div>
+    <div class="fill-line"><span class="num">4.</span> Das Bett <span class="blank"></span> im Schlafzimmer.</div>
+    <div class="fill-line"><span class="num">5.</span> Die Bücher <span class="blank"></span> auf dem Regal.</div>
+    <div class="fill-line"><span class="num">6.</span> Der Stuhl <span class="blank"></span> am Tisch.</div>
+    <div class="fill-line"><span class="num">7.</span> Die Zeitung <span class="blank"></span> auf dem Tisch.</div>
+    <div class="fill-line"><span class="num">8.</span> Das Bild <span class="blank"></span> an der Wand.</div>
+    <div class="tip-box">
+      <div class="tip-de">💡 Tipp: Bücher „stehen" im Regal (aufrecht!), obwohl man vielleicht „liegen" erwarten würde — ein typisches Deutsch-Detail!</div>
+      <div class="tip-vn">💡 Mẹo nhỏ: Sách thì „stehen" trên kệ (đứng thẳng!), dù bạn có thể nghĩ là „liegen" — đây là một chi tiết rất đặc trưng của tiếng Đức!</div>
+    </div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — WG-Kultur in Deutschland / Văn hóa ở ghép (WG) tại Đức</div>
+    <div class="kb-de">Vor allem Studierende teilen sich oft eine <b>WG (Wohngemeinschaft)</b>: jede/r hat ein eigenes Zimmer, Küche und Bad werden gemeinsam genutzt. Manche WGs laden Bewerber sogar zum „WG-Casting" ein!</div>
+    <div class="kb-vn">Ở Đức, sinh viên hay <b>ở ghép (WG)</b> — mỗi người một phòng riêng, dùng chung bếp và nhà tắm. Khác với Việt Nam, nơi con cái thường ở cùng gia đình lâu dài, người Đức xem việc sống tự lập từ sớm là điều bình thường.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 10</span>
+    <span>Seite 2 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Grammatik 2: in/an/auf Bedeutung + Häufige Fehler + Übung 2 + Kulturinfo 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 10</h1>
+      <h2>in, an, auf — Bedeutungsunterschiede / Phân biệt ý nghĩa</h2>
+    </div>
+    <div class="badge">A1 · Lektion 10</div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Bedeutung: „in" vs. „an" vs. „auf" / Ngữ pháp 2: Phân biệt nghĩa</div>
+  <table class="vocab">
+    <colgroup><col style="width:14%"><col style="width:38%"><col style="width:48%"></colgroup>
+    <thead><tr><th>Präposition</th><th>Bedeutung</th><th>Beispiel</th></tr></thead>
+    <tbody>
+      <tr><td><strong>in</strong></td><td class="vn-word">bên trong, ở trong</td><td>in der Küche, im Zimmer</td></tr>
+      <tr><td><strong>an</strong></td><td class="vn-word">bên cạnh, tựa vào</td><td>an der Wand, am Tisch</td></tr>
+      <tr><td><strong>auf</strong></td><td class="vn-word">ở trên bề mặt</td><td>auf dem Tisch, auf dem Boden</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 Bildlich gedacht: „in" = eine Box (innen), „an" = eine Wand (seitlicher Kontakt), „auf" = ein Tisch (Oberfläche, oben drauf). Diese drei Bilder helfen dir, die Präposition intuitiv richtig zu wählen!</div>
+    <div class="tip-vn">💡 Hình dung: „in" = một cái hộp (bên trong), „an" = một bức tường (tiếp xúc bên cạnh), „auf" = một cái bàn (bề mặt, ở trên). Ba hình ảnh này giúp bạn chọn đúng giới từ theo trực giác!</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Der Schrank steht an der Zimmer."</span> → <span class="wb-ok">✅ „Der Schrank steht im Zimmer."</span> — der Schrank steht INNEN im Raum, nicht seitlich an etwas → „in", nicht „an"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Der Schrank steht an der Zimmer."</span> → <span class="wb-ok">✅ „Der Schrank steht im Zimmer."</span> — cái tủ đứng BÊN TRONG phòng, không tựa vào cái gì → dùng „in", không dùng „an"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Das Bild steht auf der Wand."</span> → <span class="wb-ok">✅ „Das Bild hängt an der Wand."</span> — Bilder hängen seitlich AN der Wand (vertikaler Kontakt), nicht AUF einer Oberfläche!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Das Bild steht auf der Wand."</span> → <span class="wb-ok">✅ „Das Bild hängt an der Wand."</span> — tranh treo „TRÊN" tường theo chiều thẳng đứng, không phải „ở trên bề mặt" nằm ngang!</div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 3 — Zimmer-Check: Situations-Satzbau-Scramble / Kiểm tra phòng: Sắp xếp câu theo tình huống</div>
+  <div class="ubung-body">
+    <div class="instr-de">Lies die Situation und bringe die Wörter in die richtige Reihenfolge — achte auf Dativ-Artikel und Kontraktion!</div>
+    <div class="instr-vn">Đọc tình huống và sắp xếp các từ theo đúng thứ tự — chú ý quán từ Dativ và dạng rút gọn!</div>
+
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">1.</span>
+      <div class="wortsalat-situation">Situation: Küchentisch 🍽️</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">Küche</span><span class="wort-chip">steht</span><span class="wort-chip">der</span><span class="wort-chip">in</span><span class="wort-chip">der</span><span class="wort-chip">Tisch</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">2.</span>
+      <div class="wortsalat-situation">Situation: gemütlicher Abend 🛋️</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">Wohnzimmer</span><span class="wort-chip">Sofa</span><span class="wort-chip">im</span><span class="wort-chip">steht</span><span class="wort-chip">das</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">3.</span>
+      <div class="wortsalat-situation">Situation: Morgenlektüre 📰</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">dem</span><span class="wort-chip">liegt</span><span class="wort-chip">Zeitung</span><span class="wort-chip">Tisch</span><span class="wort-chip">auf</span><span class="wort-chip">die</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">4.</span>
+      <div class="wortsalat-situation">Situation: Wanddekoration 💡</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">der</span><span class="wort-chip">hängt</span><span class="wort-chip">Wand</span><span class="wort-chip">die</span><span class="wort-chip">an</span><span class="wort-chip">Lampe</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">5.</span>
+      <div class="wortsalat-situation">Situation: Nachtruhe 🛏️</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">Schlafzimmer</span><span class="wort-chip">Bett</span><span class="wort-chip">im</span><span class="wort-chip">das</span><span class="wort-chip">steht</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">6.</span>
+      <div class="wortsalat-situation">Situation: weicher Untergrund 🧶</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">Boden</span><span class="wort-chip">dem</span><span class="wort-chip">liegt</span><span class="wort-chip">Teppich</span><span class="wort-chip">der</span><span class="wort-chip">auf</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Mülltrennung in der deutschen Wohnung / Phân loại rác trong nhà ở Đức</div>
+    <div class="kb-de">In deutschen Wohnungen gibt es meist <b>vier Mülltonnen</b>: Gelb, Blau, Braun, Schwarz/Grau. Mülltrennung ist Pflicht — Nachbarn achten oft genau darauf!</div>
+    <div class="kb-vn">Nhà ở Đức thường có <b>bốn loại thùng rác</b> phân theo màu. Phân loại rác là bắt buộc — khác với thói quen gộp chung rác phổ biến ở Việt Nam, nên đây là điều cần chú ý ngay khi mới sang Đức.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 10</span>
+    <span>Seite 3 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Dialog + Lesetext + MC + Freies Sprechen + Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 10</h1>
+      <h2>Dialog, Lesetext &amp; Finale / Hội thoại, bài đọc &amp; tổng kết</h2>
+    </div>
+    <div class="badge">A1 · Lektion 10</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Vermieter:</span>Guten Tag! Willkommen zur Wohnungsbesichtigung. Das is<strong>t</strong> das Wohnzimmer.</div>
+    <div class="dialog-line"><span class="speaker">Interessentin:</span>Sehr schön! Wo is<strong>t</strong> die Küche?</div>
+    <div class="dialog-line"><span class="speaker">Vermieter:</span>Die Küche is<strong>t</strong> dort, direkt am Flur. Sie is<strong>t</strong> klein, aber praktisch.</div>
+    <div class="dialog-line"><span class="speaker">Interessentin:</span>Und wie viele Schlafzimmer gib<strong>t</strong> es?</div>
+    <div class="dialog-line"><span class="speaker">Vermieter:</span>Zwei Schlafzimmer. Im ersten Zimmer steh<strong>t</strong> schon ein Be<strong>tt</strong> und ein Schra<strong>nk</strong>.</div>
+    <div class="dialog-line"><span class="speaker">Interessentin:</span>Perfekt für eine WG! Gib<strong>t</strong> es auch einen Balkon?</div>
+    <div class="dialog-line"><span class="speaker">Vermieter:</span>Ja, der Balkon is<strong>t</strong> am Wohnzimmer. Er is<strong>t</strong> klein, aber sehr sonnig.</div>
+    <div class="dialog-line"><span class="speaker">Interessentin:</span>Ich finde die Wohnung toll. Ich möchte sie nehmen!</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Ich heiße Laura und wohne in einer Wohnung in Berlin. Die Wohnung is<strong>t</strong> schön und ha<strong>t</strong> vier Zimmer: die Küche, das Wohnzimmer, das Schlafzimmer und das Ba<strong>d</strong>. In der Küche steh<strong>t</strong> ein Tisch mit vier Stühlen. Der Tisch is<strong>t</strong> groß, und die Stühle stehen direkt am Tisch. Auf dem Tisch lieg<strong>t</strong> oft eine Zeitung, und daneben steh<strong>t</strong> eine Kaffeetasse. Im Wohnzimmer gib<strong>t</strong> es ein Sofa und ein Regal. Auf dem Regal stehen viele Bücher, denn ich lese sehr gern. Das Sofa is<strong>t</strong> bequem, und an der Wan<strong>d</strong> häng<strong>t</strong> eine Lampe. Im Schlafzimmer steh<strong>t</strong> mein Be<strong>tt</strong>, und daneben is<strong>t</strong> ein Schra<strong>nk</strong> für meine Kleidung. Der Schrank is<strong>t</strong> klein, aber praktisch. Auf dem Boden lieg<strong>t</strong> ein Teppi<strong>ch</strong>; er is<strong>t</strong> weich und warm. Ich wohne nicht allein — ich habe eine WG-Partnerin. Sie heiß<strong>t</strong> Nina und komm<strong>t</strong> aus Hamburg. Ninas Zimmer lieg<strong>t</strong> auch am Flur, direkt neben der Küche. Wir teilen die Küche und das Ba<strong>d</strong> zusammen. Jede von uns ha<strong>t</strong> ihr eigenes Schlafzimmer, das is<strong>t</strong> uns sehr wichtig. Am Wochenende sitzen wir oft zusammen im Wohnzimmer, trinken Tee und sprechen über unsere Woche. Manchmal kommen auch Freunde zu Besuch, und dann sitzen alle auf dem Sofa und auf dem Teppich. Meine Wohnung is<strong>t</strong> klein, aber sehr gemütlich. Ich bin sehr glücklich hier!
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Wo wohnt Laura?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) in München</span>
+      <span><span class="mc-kreis"></span> b) in Berlin</span>
+      <span><span class="mc-kreis"></span> c) in Hamburg</span>
+    </div>
+    <div class="mc-frage">2. Wie viele Zimmer hat die Wohnung?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) drei</span>
+      <span><span class="mc-kreis"></span> b) vier</span>
+      <span><span class="mc-kreis"></span> c) fünf</span>
+    </div>
+    <div class="mc-frage">3. Was liegt auf dem Tisch in der Küche?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) ein Regal</span>
+      <span><span class="mc-kreis"></span> b) eine Zeitung</span>
+      <span><span class="mc-kreis"></span> c) eine Lampe</span>
+    </div>
+    <div class="mc-frage">4. Wo hängt die Lampe?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) an der Wand</span>
+      <span><span class="mc-kreis"></span> b) auf dem Boden</span>
+      <span><span class="mc-kreis"></span> c) im Schrank</span>
+    </div>
+    <div class="mc-frage">5. Woher kommt Nina?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) aus München</span>
+      <span><span class="mc-kreis"></span> b) aus Berlin</span>
+      <span><span class="mc-kreis"></span> c) aus Hamburg</span>
+    </div>
+    <div class="mc-frage">6. Was machen Laura und Nina am Wochenende?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie kochen zusammen</span>
+      <span><span class="mc-kreis"></span> b) sie sitzen im Wohnzimmer und trinken Tee</span>
+      <span><span class="mc-kreis"></span> c) sie gehen einkaufen</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Wie sieht dein Zimmer aus? Was steht dort? Beschreibe mit „in", „an" oder „auf".</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Phòng của bạn trông như thế nào? Trong đó có gì? Miêu tả bằng „in", „an" hoặc „auf".</div>
+    </div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">Zimmer</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Wie viele Zimmer hat deine Wohnung?</div>
+      <div class="anweisung-vn">Căn hộ của bạn có bao nhiêu phòng?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">Möbel</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Beschreibe dein Wohnzimmer. Was ist dort?</div>
+      <div class="anweisung-vn">Hãy miêu tả phòng khách của bạn. Trong đó có gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">im/am/auf dem</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Satz</span></div>
+      <div class="anweisung-de">Bilde einen Satz mit „im", „am" oder „auf dem".</div>
+      <div class="anweisung-vn">Đặt một câu với „im", „am" hoặc „auf dem".</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">WG</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Möchtest du in einer WG wohnen? Warum (nicht)?</div>
+      <div class="anweisung-vn">Bạn có muốn sống trong nhà ở ghép (WG) không? Tại sao (không)?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Kontraktionen lernen / Học các dạng rút gọn:</strong> Schreibe die Dativ-Tabelle (der→dem/im, die→der, das→dem/im) auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết bảng Dativ (der→dem/im, die→der, das→dem/im) ra giấy — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">✍️ <strong>Beschreibung schreiben / Viết miêu tả:</strong> Beschreibe dein Zimmer oder deine Wohnung in 5 Sätzen. Benutze mindestens 3-mal „in", „an" oder „auf".
+      <div class="ha-vn">Miêu tả phòng hoặc nơi ở của bạn bằng 5 câu. Dùng ít nhất 3 lần „in", „an" hoặc „auf".</div>
+    </div>
+    <div class="ha-item">🔍 <strong>Fehlerjagd / Trò săn lỗi:</strong> Suche in einem deutschen Wohnungsinserat (online) 2 Sätze mit „in"/„an"/„auf" und prüfe, ob der Dativ-Artikel richtig verwendet wurde.
+      <div class="ha-vn">Tìm một quảng cáo cho thuê nhà bằng tiếng Đức trên mạng, tìm 2 câu có „in"/„an"/„auf" và kiểm tra quán từ Dativ đã dùng đúng chưa.</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 9):</strong> 1. möchte &nbsp; 2. kosten &nbsp; 3. Nein — das wäre Adjektivdeklination, zu schwer für A1; richtig ist „Ich möchte den Pullover. Er ist rot."</p>
+    <p><strong>Übung 1, Teil A (Zuordnung):</strong> 1 → C (das Bett → Schlafzimmer) &nbsp; 2 → A (das Sofa → Wohnzimmer) &nbsp; 3 → B (der Tisch → Küche)</p>
+    <p><strong>Übung 1, Teil B (Sätze):</strong> 1. Das Bett ist im Schlafzimmer. &nbsp; 2. Das Sofa ist im Wohnzimmer. &nbsp; 3. Der Tisch ist in der Küche.</p>
+    <p><strong>Übung 2 (Lückentext stehen/liegen/hängen):</strong> 1. steht &nbsp; 2. liegt &nbsp; 3. hängt &nbsp; 4. steht &nbsp; 5. stehen &nbsp; 6. steht &nbsp; 7. liegt &nbsp; 8. hängt</p>
+    <p><strong>Übung 3 (Satzbau-Scramble):</strong> 1. Der Tisch ist in der Küche. &nbsp; 2. Das Sofa ist im Wohnzimmer. &nbsp; 3. Die Zeitung liegt auf dem Tisch. &nbsp; 4. Die Lampe hängt an der Wand. &nbsp; 5. Das Bett steht im Schlafzimmer. &nbsp; 6. Der Teppich liegt auf dem Boden.</p>
+    <p><strong>Leseverständnis:</strong> 1. b) in Berlin &nbsp; 2. b) vier &nbsp; 3. b) eine Zeitung &nbsp; 4. a) an der Wand &nbsp; 5. c) aus Hamburg &nbsp; 6. b) sie sitzen im Wohnzimmer und trinken Tee</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Meine Wohnung hat drei Zimmer. &nbsp; Karte 2: In meinem Wohnzimmer stehen ein Sofa und ein Regal. &nbsp; Karte 3: Das Buch liegt auf dem Tisch. &nbsp; Karte 4: Ja, eine WG ist sozial und günstig.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 10 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 4 / 4</span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 22</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 8mm 13mm 4mm 13mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+table.konj td.beispiel { text-align: left; font-size: 10px; color: #374151; }
+table.konj td.beispiel span { color: #0f766e; font-size: 9.5px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.2; font-size: 11px; }
+.compact .doc-header { padding-bottom: 3px; margin-bottom: 5px; }
+.compact .section-title { margin: 5px 0 3px 0; }
+.compact table { margin-bottom: 3px; }
+.compact table.vocab th, .compact table.vocab td { padding: 2px 5px; }
+.compact .gram-box { padding: 4px 8px; margin-bottom: 3px; }
+.compact .tip-box { padding: 3px 7px; margin: 2px 0; }
+.compact .warn-box { padding: 3px 7px; margin: 2px 0 5px 0; }
+.compact .ubung-header { padding: 2px 8px; }
+.compact .ubung-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .fill-line { margin-bottom: 1px; }
+.compact .footer { margin-top: 3px; padding-top: 2px; }
+.compact .phon-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .kultur-box { padding: 4px 9px; margin: 3px 0 5px 0; }
+.compact .dialog-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .lese-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .mc-block { margin-bottom: 3px; }
+.compact .mc-optionen { margin-bottom: 4px; }
+.compact .ha-box { padding: 4px 9px; }
+.compact .antworten { padding: 4px 9px; }
+.compact .wiederholung-box { padding: 4px 9px; margin-bottom: 5px; }
+.compact .karten-grid { margin-top: 3px; gap: 6px; }
+.compact .sprech-karte { padding: 5px 7px; }
+.compact .sprech-karte .karte-num { padding: 1px 7px; margin-bottom: 3px; }
+.compact .sprech-karte .wort-pill { font-size: 11.5px; padding: 2px 5px; margin-bottom: 3px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 3px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 3px; }
+.compact .merk-box { padding: 5px 10px; margin: 4px 0 6px 0; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .prompt-tag.satz { background: #fef3c7; color: #92400e; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .merk-box: wiederverwendet aus L21, zwei Varianten in L22 (Steigerung + Verbstellung) ===== */
+.merk-box { background: #fff1f2; border: 1.5px solid #fda4af; border-radius: 8px; padding: 7px 12px; margin: 6px 0 8px 0; }
+.merk-box .mb-title { font-size: 11px; font-weight: 700; color: #9f1239; margin-bottom: 4px; }
+.merk-box .mb-step { font-size: 10.5px; color: #1a1a1a; margin-bottom: 2px; }
+.merk-box .mb-step strong { color: #9f1239; }
+.merk-box .mb-step .mb-vn { color: #be123c; font-size: 10px; font-style: italic; }
+.merk-box .mb-beispiel { display: inline-block; background: white; border: 0.5px solid #fecdd3; border-radius: 4px; padding: 1px 6px; font-size: 10px; color: #881337; margin-left: 3px; }
+.merk-box.verbstellung { text-align: center; }
+.merk-box .vs-zeile { font-size: 12px; font-weight: 700; color: #1e3a8a; margin: 3px 0; }
+.merk-box .vs-zeile .vs-dass { color: #9f1239; }
+.merk-box .vs-zeile .vs-verb { color: #ea580c; text-decoration: underline; }
+.merk-box .vs-pfeil { color: #94a3b8; font-size: 13px; }
+.merk-box .vs-regel { font-size: 10px; color: #7e22ce; font-style: italic; margin-top: 3px; }
+
+/* ===== Steigerung-Referenztabelle (neu in L22, wiederverwendet aus .partizip-Layout von L21) ===== */
+table.steigerung th.col-inf { background: #dbeafe; color: #1e3a8a; }
+table.steigerung td.col-inf { background: #eff6ff; font-weight: 600; }
+table.steigerung th.col-part { background: #fde68a; color: #92400e; }
+table.steigerung td.col-part { background: #fffbeb; font-weight: 700; }
+table.steigerung th.col-hilf { background: #bbf7d0; color: #14532d; }
+table.steigerung td.col-hilf { background: #f0fdf4; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Aussprache + Lernziele + Wortschatz) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 22</h1>
+      <h2>Vergleiche &amp; Meinungen</h2>
+      <h2>So sánh &amp; Ý kiến</h2>
+    </div>
+    <div class="badge">A1 · Lektion 22</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 21 / Ôn tập Bài 21</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: Perfekt — Hilfsverb + Partizip II selbst bilden / Khởi động ngữ pháp: tự chia trợ động từ + phân từ II ở thì Perfekt</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">lesen</div>
+        <div class="wh-mund">Ich ___ gestern ein Buch ___. (Hilfsverb + Partizip II bilden!)</div>
+        <div class="wh-beispiel">Tự tìm ra trợ động từ và phân từ quá khứ đúng!</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">aufstehen</div>
+        <div class="wh-mund">Du ___ heute früh ___. (Hilfsverb + Partizip II bilden!)</div>
+        <div class="wh-beispiel">Tự tìm ra trợ động từ và phân từ quá khứ đúng!</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">anrufen</div>
+        <div class="wh-mund">Wir ___ unsere Freunde ___. (Hilfsverb + Partizip II bilden!)</div>
+        <div class="wh-beispiel">Tự tìm ra trợ động từ và phân từ quá khứ đúng!</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aussprache-Minute -->
+  <div class="section-title">🔊 AUSSPRACHE-MINUTE / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Fokuslaut: Der Umlaut im Komparativ / Trọng tâm: biến âm (Umlaut) trong thể so sánh hơn</div>
+    <div class="phon-de">Manche Adjektive bekommen im Komparativ und Superlativ einen <strong>Umlaut</strong> (a→ä, o→ö, u→ü). Der Umlaut verändert den Klang des Vokals deutlich — sprich ihn bewusst „heller" als den normalen Vokal:</div>
+    <div class="phon-vn">Một số tính từ khi chia ở thể so sánh hơn và so sánh nhất sẽ có <strong>biến âm (Umlaut)</strong> (a→ä, o→ö, u→ü). Biến âm làm thay đổi rõ rệt âm sắc của nguyên âm — hãy cố tình phát âm nó „sáng" hơn nguyên âm bình thường:<br>⚠️ Mẹo cho người Việt: đây là âm khó vì tiếng Việt không có kiểu biến âm này — hãy luyện riêng từng cặp ä/ö/ü với âm gốc a/o/u để cảm nhận rõ sự khác biệt!</div>
+    <div class="phon-beispiele">groß (grôx) → gr<strong>ö</strong>ßer (GRUY-xơ) &nbsp;|&nbsp; alt (alt) → <strong>ä</strong>lter (ÉL-tơ) &nbsp;|&nbsp; jung (yung) → j<strong>ü</strong>nger (YUYNG-ơ) &nbsp;|&nbsp; warm (vam) → w<strong>ä</strong>rmer (VE-mơ)</div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 LERNZIELE / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">✅ Ich kann Adjektive im Komparativ und Superlativ korrekt bilden (regelmäßig, mit Umlaut, unregelmäßig).</p>
+    <p class="vn">✅ Tôi có thể chia đúng tính từ ở thể so sánh hơn và so sánh nhất (có quy tắc, có biến âm, bất quy tắc).</p>
+    <p class="de">✅ Ich kann meine Meinung mit „Ich finde, dass..." und „Ich glaube, dass..." ausdrücken — mit dem Verb am Satzende.</p>
+    <p class="vn">✅ Tôi có thể diễn đạt ý kiến của mình bằng „Ich finde, dass..." và „Ich glaube, dass..." — với động từ ở cuối câu.</p>
+    <p class="de">✅ Ich kann zwei Dinge vergleichen und meine Präferenz begründen.</p>
+    <p class="vn">✅ Tôi có thể so sánh hai sự vật và giải thích lý do tôi thích cái nào hơn.</p>
+  </div>
+
+  <!-- Wortschatz Adjektive -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Vergleichsadjektive / Bảng từ vựng: Tính từ so sánh</div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:20%"><col style="width:33%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>📏 gro<strong>ß</strong></td><td class="phonetik">grô<strong>x</strong></td><td>Berlin is<strong>t</strong> eine große Stadt. <span class="vn-word">Berlin là một thành phố lớn.</span></td><td class="vn-word">to, lớn</td></tr>
+      <tr><td>📏 klein</td><td class="phonetik">klain</td><td>Meine Wohnung is<strong>t</strong> klein. <span class="vn-word">Căn hộ của tôi nhỏ.</span></td><td class="vn-word">nhỏ</td></tr>
+      <tr><td>💰 teuer</td><td class="phonetik">TOI-ơ</td><td>Das Hotel is<strong>t</strong> sehr teuer. <span class="vn-word">Khách sạn này rất đắt.</span></td><td class="vn-word">đắt</td></tr>
+      <tr><td>💰 billig</td><td class="phonetik">BÍ-lích</td><td>Der Markt is<strong>t</strong> billig. <span class="vn-word">Khu chợ này rẻ.</span></td><td class="vn-word">rẻ</td></tr>
+      <tr><td>🏃 schnell</td><td class="phonetik">shnen</td><td>Der Zug is<strong>t</strong> schnell. <span class="vn-word">Tàu hỏa nhanh.</span></td><td class="vn-word">nhanh</td></tr>
+      <tr><td>🎂 al<strong>t</strong></td><td class="phonetik">al<strong>t</strong></td><td>Das Gebäude is<strong>t</strong> sehr alt. <span class="vn-word">Tòa nhà này rất cũ.</span></td><td class="vn-word">già, cũ</td></tr>
+      <tr><td>🎂 jung</td><td class="phonetik">yung</td><td>Sie is<strong>t</strong> noch jung. <span class="vn-word">Cô ấy vẫn còn trẻ.</span></td><td class="vn-word">trẻ</td></tr>
+      <tr><td>🔥 warm</td><td class="phonetik">vam</td><td>Im Süden is<strong>t</strong> es warm. <span class="vn-word">Ở miền Nam trời ấm.</span></td><td class="vn-word">ấm áp</td></tr>
+      <tr><td>⭐ gu<strong>t</strong></td><td class="phonetik">gu<strong>t</strong></td><td>Das Essen is<strong>t</strong> gut. <span class="vn-word">Món ăn này ngon.</span></td><td class="vn-word">tốt, ngon</td></tr>
+      <tr><td>📚 interessan<strong>t</strong></td><td class="phonetik">in-tơ-re-SAN<strong>T</strong></td><td>Der Film war interessan<strong>t</strong>. <span class="vn-word">Bộ phim đó thú vị.</span></td><td class="vn-word">thú vị</td></tr>
+      <tr><td>😴 langweilig</td><td class="phonetik">LANG-vai-lích</td><td>Der Vortrag war langweilig. <span class="vn-word">Buổi thuyết trình đó nhàm chán.</span></td><td class="vn-word">nhàm chán</td></tr>
+      <tr><td>⛰️ ho<strong>ch</strong></td><td class="phonetik">hô<strong>kh</strong></td><td>Der Turm is<strong>t</strong> sehr hoch. <span class="vn-word">Tòa tháp này rất cao.</span></td><td class="vn-word">cao</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Wortschatz Meinungsausdrücke -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Meinung ausdrücken / Bảng từ vựng: Diễn đạt ý kiến</div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:20%"><col style="width:33%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort/Ausdruck</th><th>Status</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>💭 ich finde, dass ...</td><td class="vn-word">🟢 chủ động</td><td>Ich finde, dass Berlin schön ist. <span class="vn-word">Tôi thấy Berlin đẹp.</span></td><td class="vn-word">tôi thấy rằng...</td></tr>
+      <tr><td>💭 ich glaube, dass ...</td><td class="vn-word">🟢 chủ động</td><td>Ich glaube, dass es morgen regnet. <span class="vn-word">Tôi tin rằng ngày mai trời sẽ mưa.</span></td><td class="vn-word">tôi tin rằng...</td></tr>
+      <tr><td>❤️ ich mag</td><td class="vn-word">🟢 chủ động</td><td>Ich mag diese Stadt. <span class="vn-word">Tôi thích thành phố này.</span></td><td class="vn-word">tôi thích</td></tr>
+      <tr><td>⚖️ als</td><td class="vn-word">🟢 chủ động</td><td>Berlin ist größer als Leipzig. <span class="vn-word">Berlin lớn hơn Leipzig.</span></td><td class="vn-word">hơn (than)</td></tr>
+      <tr><td>💭 ich denke, dass ...</td><td class="vn-word">⚪ nhận biết</td><td>Ich denke, dass es stimmt. <span class="vn-word">Tôi nghĩ điều đó đúng.</span></td><td class="vn-word">tôi nghĩ rằng...</td></tr>
+      <tr><td>💭 meiner Meinung nach</td><td class="vn-word">⚪ nhận biết</td><td>Meiner Meinung nach ist das richtig. <span class="vn-word">Theo ý kiến của tôi, điều đó đúng.</span></td><td class="vn-word">theo ý kiến của tôi</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 🟢 = diese Ausdrücke übst du aktiv und produzierst sie selbst. &nbsp; ⚪ = diese Ausdrücke musst du nur erkennen/verstehen können, nicht aktiv anwenden.</div>
+    <div class="tip-vn">💡 🟢 = những cách diễn đạt này bạn cần luyện tập chủ động và tự sử dụng. ⚪ = những cách diễn đạt này bạn chỉ cần hiểu/nhận biết được, không cần chủ động sử dụng.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 22</span>
+    <span>Seite 1 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Steigerung-Tabelle + Merkkasten + Grammatik 1: Komparativ + Häufige Fehler + Übung 1 + Übung 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 22</h1>
+      <h2>Der Komparativ / Thể so sánh hơn</h2>
+    </div>
+    <div class="badge">A1 · Lektion 22</div>
+  </div>
+
+  <!-- Steigerung-Tabelle -->
+  <div class="section-title">🔧 Referenztabelle: Grundform → Komparativ → Superlativ ⚠️ / Bảng tham chiếu: cấp gốc → so sánh hơn → so sánh nhất ⚠️</div>
+  <table class="konj steigerung">
+    <colgroup><col style="width:33%"><col style="width:33%"><col style="width:*"></colgroup>
+    <thead><tr><th class="col-inf">Grundform</th><th class="col-part">Komparativ</th><th class="col-hilf">Superlativ</th></tr></thead>
+    <tbody>
+      <tr><td class="col-inf">schnell</td><td class="col-part">schneller</td><td class="col-hilf">am schnellsten</td></tr>
+      <tr><td class="col-inf">klein</td><td class="col-part">kleiner</td><td class="col-hilf">am kleinsten</td></tr>
+      <tr><td class="col-inf">billig</td><td class="col-part">billiger</td><td class="col-hilf">am billigsten</td></tr>
+      <tr><td class="col-inf">interessant</td><td class="col-part">interessanter</td><td class="col-hilf">am interessantesten</td></tr>
+      <tr><td class="col-inf">groß ⚠️</td><td class="col-part">größer</td><td class="col-hilf">am größten</td></tr>
+      <tr><td class="col-inf">alt ⚠️</td><td class="col-part">älter</td><td class="col-hilf">am ältesten</td></tr>
+      <tr><td class="col-inf">jung ⚠️</td><td class="col-part">jünger</td><td class="col-hilf">am jüngsten</td></tr>
+      <tr><td class="col-inf">warm ⚠️</td><td class="col-part">wärmer</td><td class="col-hilf">am wärmsten</td></tr>
+      <tr><td class="col-inf">gut ⚠️⚠️</td><td class="col-part">besser</td><td class="col-hilf">am besten</td></tr>
+      <tr><td class="col-inf">viel ⚠️⚠️</td><td class="col-part">mehr</td><td class="col-hilf">am meisten</td></tr>
+      <tr><td class="col-inf">gern ⚠️⚠️</td><td class="col-part">lieber</td><td class="col-hilf">am liebsten</td></tr>
+      <tr><td class="col-inf">hoch ⚠️⚠️</td><td class="col-part">höher</td><td class="col-hilf">am höchsten</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Merkkasten -->
+  <div class="merk-box">
+    <div class="mb-title">🧠 Steigerungs-Merkkasten — Drei Bildungstypen auf einen Blick / Hộp ghi nhớ: ba cách chia thể so sánh trong một cái nhìn</div>
+    <div class="mb-step"><strong>1. regelmäßig / có quy tắc:</strong> + er / + am ...sten <span class="mb-beispiel">schnell → schneller → am schnellsten</span></div>
+    <div class="mb-step"><strong>2. mit Umlaut / có biến âm:</strong> a→ä, o→ö, u→ü + er / am ...sten <span class="mb-beispiel">groß → größer → am größten</span></div>
+    <div class="mb-step"><strong>3. unregelmäßig / bất quy tắc:</strong> ganz neue Form <span class="mb-beispiel">gut → besser → am besten</span></div>
+    <div class="mb-step" style="margin-top:3px;">⚠️ Nach dem Komparativ folgt <strong>als</strong>: „Berlin ist größer <strong>als</strong> Leipzig." &nbsp; ⚠️ Der Superlativ braucht immer <strong>am</strong>: „Berlin ist <strong>am</strong> größten."</div>
+  </div>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — Der Komparativ / Ngữ pháp 1: thể so sánh hơn</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Der Komparativ vergleicht zwei Dinge. Formel: Ding A + sein + Adjektiv<strong>-er</strong> + als + Ding B. Beispiel: „<strong style="color:#1e40af;">Der Zug</strong> ist <strong style="color:#b45309;">schneller</strong> als <strong style="color:#1e40af;">das Auto</strong>."</div>
+    <div class="tip-vn">💡 Thể so sánh hơn dùng để so sánh hai sự vật. Công thức: Sự vật A + sein + tính từ<strong>-er</strong> + als + Sự vật B.</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Der Zug ist mehr schnell als das Auto."</span> → <span class="wb-ok">✅ „Der Zug ist schneller als das Auto."</span> — im Deutschen hängt man „-er" ans Adjektiv, „mehr" gibt es hier nicht!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Der Zug ist mehr schnell als das Auto."</span> → <span class="wb-ok">✅ „Der Zug ist schneller als das Auto."</span> — trong tiếng Đức, „-er" được gắn trực tiếp vào tính từ, ở đây không có „mehr"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Berlin ist groser als Leipzig."</span> → <span class="wb-ok">✅ „Berlin ist größer als Leipzig."</span> — den Umlaut nicht vergessen!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Berlin ist groser als Leipzig."</span> → <span class="wb-ok">✅ „Berlin ist größer als Leipzig."</span> — đừng quên biến âm!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Berlin ist größer wie Leipzig."</span> → <span class="wb-ok">✅ „Berlin ist größer als Leipzig."</span> — nach dem Komparativ kommt „als", nicht „wie"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Berlin ist größer wie Leipzig."</span> → <span class="wb-ok">✅ „Berlin ist größer als Leipzig."</span> — sau thể so sánh hơn dùng „als", không dùng „wie"!</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — Komparativ bilden: Vergleiche mit „als" / Chia thể so sánh hơn: so sánh với „als"</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bilde den Komparativ und ergänze den Satz.</div>
+    <div class="instr-vn">Chia thể so sánh hơn và hoàn thành câu.</div>
+    <div class="fill-line"><span class="num">1.</span> Berlin ist <span class="blank"></span> als Leipzig. (groß) <span class="vn-word">(Berlin lớn hơn Leipzig.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Das Auto ist <span class="blank"></span> als das Fahrrad. (schnell) <span class="vn-word">(Ô tô nhanh hơn xe đạp.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Diese Wohnung ist <span class="blank"></span> als die andere. (klein) <span class="vn-word">(Căn hộ này nhỏ hơn căn kia.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Der Kaffee hier ist <span class="blank"></span> als der Tee. (billig) <span class="vn-word">(Cà phê ở đây rẻ hơn trà.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Mein Bruder ist <span class="blank"></span> als ich. (jung) <span class="vn-word">(Em trai tôi trẻ hơn tôi.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Der Film war <span class="blank"></span> als das Buch. (interessant) <span class="vn-word">(Bộ phim thú vị hơn quyển sách.)</span></div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — Noch mehr Komparativ-Training: neue Sätze, neue Personen / Luyện thêm thể so sánh hơn: câu mới, người mới</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bilde auch hier den Komparativ — mit neuen Subjekten und Situationen.</div>
+    <div class="instr-vn">Chia thể so sánh hơn ở đây nữa — với chủ ngữ và tình huống mới.</div>
+    <div class="fill-line"><span class="num">1.</span> Meine Oma ist <span class="blank"></span> als mein Opa. (alt) <span class="vn-word">(Bà tôi lớn tuổi hơn ông tôi.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Im Süden ist es <span class="blank"></span> als im Norden. (warm) <span class="vn-word">(Miền Nam ấm hơn miền Bắc.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Der Zug ist <span class="blank"></span> als das Auto. (schnell) <span class="vn-word">(Tàu hỏa nhanh hơn ô tô.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Diese Stadt ist <span class="blank"></span> als meine Heimatstadt. (klein) <span class="vn-word">(Thành phố này nhỏ hơn quê tôi.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Das neue Handy ist <span class="blank"></span> als das alte. (billig) <span class="vn-word">(Điện thoại mới rẻ hơn cái cũ.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Dieses Buch ist <span class="blank"></span> als der Film. (interessant) <span class="vn-word">(Quyển sách này thú vị hơn bộ phim.)</span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 22</span>
+    <span>Seite 2 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Grammatik 2: Superlativ + Häufige Fehler + Übung 3 + Übung 4 + Kulturinfo 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 22</h1>
+      <h2>Der Superlativ / Thể so sánh nhất</h2>
+    </div>
+    <div class="badge">A1 · Lektion 22</div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Der Superlativ / Ngữ pháp 2: thể so sánh nhất</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Es gibt <strong>zwei</strong> Superlativ-Formen — welche du brauchst, hängt davon ab, ob danach ein Nomen kommt!</div>
+    <div class="tip-vn">💡 Có <strong>hai</strong> dạng so sánh nhất — dùng dạng nào phụ thuộc vào việc phía sau có danh từ hay không!</div>
+  </div>
+  <div class="gram-box">
+    <h4>🔁 Ohne Nomen vs. mit Nomen / Không có danh từ và có danh từ</h4>
+    <table class="vocab" style="margin-top:3px;">
+      <colgroup><col style="width:50%"><col style="width:50%"></colgroup>
+      <thead><tr><th>① ohne Nomen → am + -sten</th><th>② mit Nomen → der/die/das + -ste</th></tr></thead>
+      <tbody>
+        <tr><td>Berlin ist <strong>am größten</strong>.</td><td>Berlin ist <strong>die größte Stadt</strong>.</td></tr>
+        <tr><td>Pizza schmeckt <strong>am besten</strong>.</td><td>Das ist <strong>die beste Pizza</strong>.</td></tr>
+        <tr><td>Er fährt <strong>am schnellsten</strong>.</td><td>Das ist <strong>der schnellste Zug</strong>.</td></tr>
+        <tr><td>Das Auto ist <strong>am teuersten</strong>.</td><td>Das ist <strong>das teuerste Auto</strong>.</td></tr>
+      </tbody>
+    </table>
+    <div class="rule-de" style="margin-top:4px;"><strong>Merksatz:</strong> Kein Nomen danach → <strong>am</strong> + Adjektiv-sten. &nbsp; Nomen danach → <strong>der/die/das</strong> + Adjektiv-ste.</div>
+    <div class="rule-vn"><strong>Câu ghi nhớ:</strong> Không có danh từ phía sau → <strong>am</strong> + tính từ-sten. Có danh từ phía sau → <strong>der/die/das</strong> + tính từ-ste.</div>
+  </div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Warum siehst du im Dialog „Hamburg ist die schönste Stadt.", obwohl du gerade „am schönsten" gelernt hast? Weil hier ein Nomen („Stadt") folgt — dann brauchst du Form ②, nicht Form ①!</div>
+    <div class="tip-vn">💡 Tại sao trong đoạn hội thoại bạn thấy „Hamburg ist die schönste Stadt.", trong khi vừa học „am schönsten"? Vì ở đây có một danh từ theo sau („Stadt") — lúc này cần dùng dạng ②, không phải dạng ①!</div>
+  </div>
+  <div class="gram-box">
+    <h4>🔁 Die drei wichtigsten unregelmäßigen Formen — auch hier beide Varianten! / Ba dạng bất quy tắc quan trọng nhất — ở đây cũng có cả hai dạng!</h4>
+    <div class="rule-de"><strong>gut → besser → am besten / der/die/das beste</strong> &nbsp;|&nbsp; <strong>viel → mehr → am meisten / der/die/das meiste</strong> &nbsp;|&nbsp; <strong>gern → lieber → am liebsten</strong> (kein Nomen möglich, nur Form ①!)</div>
+    <div class="rule-vn"><strong>gut→besser→am besten / der/die/das beste</strong>; <strong>viel→mehr→am meisten / der/die/das meiste</strong>; <strong>gern→lieber→am liebsten</strong> (không thể thêm danh từ, chỉ có dạng ①!)</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Berlin ist größten."</span> → <span class="wb-ok">✅ „Berlin ist am größten."</span> — ohne Nomen danach brauchst du immer „am"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Berlin ist größten."</span> → <span class="wb-ok">✅ „Berlin ist am größten."</span> — nếu phía sau không có danh từ, luôn phải dùng „am"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Das ist das guteste Restaurant."</span> → <span class="wb-ok">✅ „Das ist das beste Restaurant."</span> — „gut" ist unregelmäßig: gut → besser → beste!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Das ist das guteste Restaurant."</span> → <span class="wb-ok">✅ „Das ist das beste Restaurant."</span> — „gut" là từ bất quy tắc: gut → besser → beste!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Das ist das am größten Café."</span> → <span class="wb-ok">✅ „Das ist das größte Café."</span> — vor einem Nomen NIE „am" verwenden, sondern der/die/das + -ste!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Das ist das am größten Café."</span> → <span class="wb-ok">✅ „Das ist das größte Café."</span> — trước danh từ KHÔNG BAO GIỜ dùng „am", mà phải dùng der/die/das + -ste!</div>
+  </div>
+
+  <!-- Übung 3 -->
+  <div class="ubung-header">Übung 3 — Superlativ bilden / Chia thể so sánh nhất</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bilde den Superlativ und ergänze den Satz. Achtung: Hier folgt immer ein Nomen → Form ② (der/die/das + -ste)!</div>
+    <div class="instr-vn">Chia thể so sánh nhất và hoàn thành câu. Chú ý: ở đây luôn có danh từ theo sau → dùng dạng ② (der/die/das + -ste)!</div>
+    <div class="fill-line"><span class="num">1.</span> Berlin ist die <span class="blank"></span> Stadt in Deutschland. (groß) <span class="vn-word">(Berlin là thành phố lớn nhất nước Đức.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Mein Onkel ist der <span class="blank"></span> in der Familie. (alt) <span class="vn-word">(Chú tôi là người lớn tuổi nhất trong gia đình.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Der ICE ist der <span class="blank"></span> Zug. (schnell) <span class="vn-word">(ICE là tàu hỏa nhanh nhất.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Das ist das <span class="blank"></span> Café in der Stadt. (klein) <span class="vn-word">(Đây là quán cà phê nhỏ nhất thành phố.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Das ist das <span class="blank"></span> Restaurant hier. (billig) <span class="vn-word">(Đây là nhà hàng rẻ nhất ở đây.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Das war der <span class="blank"></span> Film des Jahres. (interessant) <span class="vn-word">(Đó là bộ phim thú vị nhất trong năm.)</span></div>
+  </div>
+
+  <!-- Übung 4 -->
+  <div class="ubung-header">Übung 4 — Die unregelmäßigen Superlative üben / Luyện thể so sánh nhất bất quy tắc</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bilde den Superlativ — Achtung, hier sind viele unregelmäßige Formen dabei, UND du musst jedes Mal entscheiden: Form ① (am) oder Form ② (der/die/das)?</div>
+    <div class="instr-vn">Chia thể so sánh nhất — chú ý, ở đây có nhiều dạng bất quy tắc, VÀ mỗi lần bạn phải phán đoán: dùng dạng ① (am) hay dạng ② (der/die/das)?</div>
+    <div class="fill-line"><span class="num">1.</span> Das ist das <span class="blank"></span> Restaurant der Stadt. (gut) <span class="vn-word">(Đây là nhà hàng tốt nhất thành phố.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Ich esse am <span class="blank"></span> Pizza. (gern) <span class="vn-word">(Tôi thích ăn pizza nhất.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Er hat das <span class="blank"></span> Geld von allen. (viel) <span class="vn-word">(Anh ấy có nhiều tiền nhất trong tất cả mọi người.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Der Fernsehturm ist das <span class="blank"></span> Gebäude in Berlin. (hoch) <span class="vn-word">(Tháp truyền hình là tòa nhà cao nhất Berlin.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Mein jüngster Bruder ist der <span class="blank"></span> in der Familie. (jung) <span class="vn-word">(Em trai út của tôi là người trẻ nhất trong gia đình.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Im Sommer ist es am <span class="blank"></span>. (warm) <span class="vn-word">(Mùa hè là lúc ấm nhất.)</span></div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Superlative in der Werbung / Kiến thức văn hóa 1: thể so sánh nhất trong quảng cáo</div>
+    <div class="kb-de">Öffne einen Prospekt, eine Zeitung oder eine Werbe-App in Deutschland, und du siehst den Superlativ überall: „Deutschlands günstigster Preis", „Das beste Angebot", „Unsere schnellste Lieferung". Werbung liebt Superlative, weil sie besonders stark wirken — auch wenn sie sprachlich manchmal vereinfacht sind. Wenn du diese Muster erkennst, verstehst du plötzlich viel mehr von dem, was um dich herum auf Deutsch steht!</div>
+    <div class="kb-vn">Hãy mở một tờ rơi, một tờ báo hay một ứng dụng quảng cáo ở Đức, bạn sẽ thấy thể so sánh nhất ở khắp mọi nơi: „Deutschlands günstigster Preis" (Giá tốt nhất nước Đức), „Das beste Angebot" (Ưu đãi tốt nhất), „Unsere schnellste Lieferung" (Giao hàng nhanh nhất của chúng tôi). Quảng cáo rất thích dùng thể so sánh nhất vì nó tạo ấn tượng mạnh — dù đôi khi cách diễn đạt bị đơn giản hóa. Nếu bạn nhận ra được mẫu câu này, bạn sẽ đột nhiên hiểu được nhiều hơn những gì xung quanh bạn viết bằng tiếng Đức! Ở Việt Nam, quảng cáo cũng thường dùng những cách diễn đạt tương tự như „giá tốt nhất", „ưu đãi lớn nhất" — nên mẫu câu này chắc hẳn sẽ khá quen thuộc với bạn.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 22</span>
+    <span>Seite 3 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Grammatik 3: dass-Satz mit Verbstellungs-Merkkasten + Häufige Fehler + Übung 5 + Übung 6) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 22</h1>
+      <h2>Grammatik 3 – Meinung äußern: der Nebensatz mit „dass" / Ngữ pháp 3 – Diễn đạt ý kiến: mệnh đề phụ với „dass"</h2>
+    </div>
+    <div class="badge">A1 · Lektion 22</div>
+  </div>
+
+  <div class="tip-box">
+    <div class="tip-de">💡 Mit „Ich finde, dass..." oder „Ich glaube, dass..." äußerst du deine Meinung. Das Wort „dass" selbst ist einfach — die eigentliche Herausforderung ist die <strong>Wortstellung</strong>: Im Nebensatz nach „dass" steht das konjugierte Verb ganz am <strong>Ende</strong> des Satzes!</div>
+    <div class="tip-vn">💡 Dùng „Ich finde, dass..." hoặc „Ich glaube, dass..." để diễn đạt ý kiến của bạn. Bản thân từ „dass" rất đơn giản — thử thách thực sự nằm ở <strong>trật tự từ</strong>: trong mệnh đề phụ sau „dass", động từ đã chia phải đứng ở <strong>cuối</strong> câu!</div>
+  </div>
+
+  <!-- Merkkasten Verbstellung -->
+  <div class="merk-box verbstellung">
+    <div class="mb-title">🧠 Verbstellungs-Merkkasten — Das Verb wandert ans Ende! / Hộp ghi nhớ trật tự từ — động từ chuyển ra cuối câu!</div>
+    <div class="vs-zeile">Ich finde,</div>
+    <div class="vs-pfeil">↓</div>
+    <div class="vs-zeile"><span class="vs-dass">dass</span> Berlin größer <span class="vs-verb">ist</span>.</div>
+    <div class="vs-pfeil">↓</div>
+    <div class="vs-zeile">Verb <span class="vs-verb">immer ganz hinten!</span></div>
+    <div class="vs-regel">Vergleiche: Hauptsatz „Berlin ist größer." (Verb Position 2) → Nebensatz „..., dass Berlin größer ist." (Verb ganz am Ende!)</div>
+  </div>
+
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich finde, dass ist Berlin größer."</span> → <span class="wb-ok">✅ „Ich finde, dass Berlin größer ist."</span> — das Verb „ist" muss ganz ans Satzende, nicht direkt nach „dass"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich finde, dass ist Berlin größer."</span> → <span class="wb-ok">✅ „Ich finde, dass Berlin größer ist."</span> — động từ „ist" phải đứng ở cuối câu, không đứng ngay sau „dass"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich finde Berlin ist größer."</span> (ohne „dass") → <span class="wb-ok">✅ „Ich finde, dass Berlin größer ist."</span> — vergiss „dass" nicht, sonst bleibt das Verb an der falschen Position!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich finde Berlin ist größer."</span> (không có „dass") → <span class="wb-ok">✅ „Ich finde, dass Berlin größer ist."</span> — đừng quên „dass", nếu không động từ sẽ ở sai vị trí!</div>
+  </div>
+
+  <!-- Übung 5 -->
+  <div class="ubung-header">Übung 5 — dass-Sätze bilden: Achte auf die Verbstellung! / Đặt câu với „dass": chú ý trật tự động từ!</div>
+  <div class="ubung-body">
+    <div class="instr-de">Verbinde die zwei Satzteile zu einem korrekten dass-Satz.</div>
+    <div class="instr-vn">Nối hai phần câu thành một câu „dass" đúng ngữ pháp.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich finde / Deutsch ist interessant → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Ich glaube / das Wetter wird besser → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Ich finde / die Stadt ist schön → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Ich glaube / er kommt morgen → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">5.</span> Ich finde / das Essen schmeckt gut → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">6.</span> Ich glaube / sie hat recht → <span class="blank-xl"></span></div>
+  </div>
+
+  <!-- Übung 6 -->
+  <div class="ubung-header">Übung 6 — Der große Vergleichs-Marathon: Komparativ/Superlativ + dass kombiniert! / Cuộc chạy marathon so sánh: kết hợp thể so sánh hơn/nhất + dass!</div>
+  <div class="ubung-body">
+    <div class="instr-de">Jetzt kommt alles zusammen: Bilde einen dass-Satz UND setze das Adjektiv in die richtige Steigerungsform (Komparativ, oder Superlativ Form ① am / Form ② der/die/das — je nachdem, ob ein Nomen folgt).</div>
+    <div class="instr-vn">Bây giờ tất cả kết hợp lại: đặt một câu „dass" ĐỒNG THỜI chia tính từ đúng thể so sánh (so sánh hơn, hoặc so sánh nhất dạng ① am / dạng ② der/die/das — tùy vào có danh từ theo sau hay không).</div>
+    <div class="fill-line"><span class="num">1.</span> Ich finde, dass Berlin <span class="blank"></span> ist als Leipzig. (groß) <span class="vn-word">(Tôi thấy Berlin lớn hơn Leipzig.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Ich glaube, dass der Zug <span class="blank"></span> ist als das Auto. (schnell) <span class="vn-word">(Tôi tin rằng tàu hỏa nhanh hơn ô tô.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Ich finde, dass München das <span class="blank"></span> Restaurant hat. (gut) <span class="vn-word">(Tôi thấy München có nhà hàng tốt nhất.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Ich glaube, dass der Sommer <span class="blank"></span> ist als der Winter. (warm) <span class="vn-word">(Tôi tin rằng mùa hè ấm hơn mùa đông.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Ich finde, dass Hamburg die <span class="blank"></span> Stadt ist. (interessant) <span class="vn-word">(Tôi thấy Hamburg là thành phố thú vị nhất.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Ich glaube, dass mein Bruder <span class="blank"></span> Bücher liest als ich. (viel) <span class="vn-word">(Tôi tin rằng anh trai tôi đọc nhiều sách hơn tôi.)</span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 22</span>
+    <span>Seite 4 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 5 (Beispieldialog + Kulturinfo 2 + Lesetext + MC-Fragen) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 22</h1>
+      <h2>Dialog, Lesetext &amp; Kulturinfo / Hội thoại, bài đọc hiểu &amp; kiến thức văn hóa</h2>
+    </div>
+    <div class="badge">A1 · Lektion 22</div>
+  </div>
+
+  <!-- Beispieldialog -->
+  <div class="section-title">💬 BEISPIELDIALOG / Hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Jonas:</span>Warst du schon mal in Berlin?</div>
+    <div class="dialog-line"><span class="speaker">Lena:</span>Ja! Ich finde, dass Berlin interessanter ist als Leipzig.</div>
+    <div class="dialog-line"><span class="speaker">Jonas:</span>Wirklich? Und wie ist es mit den Preisen?</div>
+    <div class="dialog-line"><span class="speaker">Lena:</span>München ist teurer als Dresden, aber Berlin finde ich okay.</div>
+    <div class="dialog-line"><span class="speaker">Jonas:</span>Und welche Stadt gefällt dir am besten?</div>
+    <div class="dialog-line"><span class="speaker">Lena:</span>Ich glaube, dass mir Hamburg am besten gefällt — wegen des Wassers!</div>
+    <div class="dialog-line"><span class="speaker">Jonas:</span>Interessant! Ich finde, dass Hamburg auch die schönste Stadt ist.</div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Nord- vs. Süddeutschland / Kiến thức văn hóa 2: miền Bắc và miền Nam nước Đức</div>
+    <div class="kb-de">Norddeutschland und Süddeutschland unterscheiden sich stark! Im Süden (z. B. Bayern) ist es im Sommer wärmer und es gibt Berge, während der Norden (z. B. Hamburg) flacher, windiger und näher am Meer ist. Süddeutsche Städte wie München sind oft teurer als norddeutsche Städte. Auch der Dialekt klingt anders: Bayerisch ist für Anfänger meist schwerer zu verstehen als Norddeutsch. Viele Deutsche diskutieren gern darüber, welche Region schöner ist — eine typische Vergleichs-Debatte!</div>
+    <div class="kb-vn">Miền Bắc và miền Nam nước Đức khác nhau rất nhiều! Ở miền Nam (ví dụ Bayern), mùa hè ấm hơn và có núi non, trong khi miền Bắc (ví dụ Hamburg) bằng phẳng hơn, nhiều gió hơn và gần biển hơn. Các thành phố miền Nam như München thường đắt đỏ hơn các thành phố miền Bắc. Giọng địa phương cũng khác nhau: tiếng Bayern thường khó hiểu hơn đối với người mới học so với giọng Bắc Đức. Nhiều người Đức thích tranh luận xem vùng nào đẹp hơn — một cuộc tranh luận so sánh điển hình! Điều này có phần giống với việc so sánh các vùng miền ở Việt Nam — chẳng hạn miền Bắc và miền Nam cũng thường được đem ra so sánh về khí hậu, ẩm thực hay giọng nói.</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Tom kommt aus Hamburg und Anna kommt aus München. Die beiden Freunde vergleichen gerne ihre Städte. Tom findet, dass es in Hamburg oft regnet, aber im Sommer ist es dort angenehm kühler als in München. Anna glaubt, dass München wärmer und sonniger ist, besonders im Frühling. Beim Verkehr sind sich beide einig: Die U-Bahn in München fährt pünktlicher, aber Hamburgs Hafen ist viel größer und interessanter. In der Freizeit geht Tom gern spazieren, weil es am Wasser viele schöne Wege gibt. Anna findet, dass die Berge in der Nähe von München noch schöner sind als das Meer. Bei den Kosten sind sie sich auch einig: München ist teurer als Hamburg, besonders die Mieten. Am Ende sagt Tom: „Ich finde, dass jede Stadt ihre eigenen Vorteile hat." Anna lacht und antwortet: „Ich glaube, das ist die beste Antwort von allen!"
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Woher kommt Tom?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) München</span>
+      <span><span class="mc-kreis"></span> b) Hamburg</span>
+      <span><span class="mc-kreis"></span> c) Berlin</span>
+    </div>
+    <div class="mc-frage">2. Wie ist das Wetter in München laut Anna?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) kälter</span>
+      <span><span class="mc-kreis"></span> b) wärmer und sonniger</span>
+      <span><span class="mc-kreis"></span> c) neblig</span>
+    </div>
+    <div class="mc-frage">3. Was ist laut den beiden pünktlicher?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) der Bus in Hamburg</span>
+      <span><span class="mc-kreis"></span> b) die U-Bahn in München</span>
+      <span><span class="mc-kreis"></span> c) der Zug</span>
+    </div>
+    <div class="mc-frage">4. Was findet Tom in seiner Freizeit schön?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) die Berge</span>
+      <span><span class="mc-kreis"></span> b) die Wege am Wasser</span>
+      <span><span class="mc-kreis"></span> c) die Innenstadt</span>
+    </div>
+    <div class="mc-frage">5. Was ist in München teurer?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) das Essen</span>
+      <span><span class="mc-kreis"></span> b) die Mieten</span>
+      <span><span class="mc-kreis"></span> c) die Kleidung</span>
+    </div>
+    <div class="mc-frage">6. Was sagt Tom am Ende?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) München ist besser</span>
+      <span><span class="mc-kreis"></span> b) jede Stadt hat eigene Vorteile</span>
+      <span><span class="mc-kreis"></span> c) Hamburg ist am schönsten</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Vergleiche deine Heimatstadt mit einer anderen Stadt. Was findest du besser und warum?</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: So sánh quê hương của bạn với một thành phố khác. Bạn thấy thành phố nào tốt hơn và vì sao?</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 22</span>
+    <span>Seite 5 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 6 (Freies Sprechen + Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 22</h1>
+      <h2>Freies Sprechen, Hausaufgaben &amp; Antworten / Nói tự do, bài tập về nhà &amp; đáp án</h2>
+    </div>
+    <div class="badge">A1 · Lektion 22</div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">Komparativ</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Vergleiche zwei Städte, die du kennst.</div>
+      <div class="anweisung-vn">So sánh hai thành phố mà bạn biết.</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">Superlativ</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was ist für dich das beste Essen? Warum?</div>
+      <div class="anweisung-vn">Món ăn nào là ngon nhất đối với bạn? Vì sao?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">dass-Satz</div>
+      <div class="prompt-row"><span class="prompt-tag satz">Satz</span></div>
+      <div class="anweisung-de">Bilde einen Satz mit „Ich finde, dass..."</div>
+      <div class="anweisung-vn">Đặt một câu với „Ich finde, dass..."</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">Kombiniert</div>
+      <div class="prompt-row"><span class="prompt-tag satz">Satz</span></div>
+      <div class="anweisung-de">Vergleiche zwei Handys/Autos und sag deine Meinung mit „dass".</div>
+      <div class="anweisung-vn">So sánh hai chiếc điện thoại/ô tô và nêu ý kiến của bạn bằng „dass".</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Adjektiv-Liste lernen / Học danh sách tính từ:</strong> Schreibe alle 12 Adjektive mit Komparativ und Superlativ auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết ra giấy cả 12 tính từ cùng thể so sánh hơn và so sánh nhất của chúng — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">✏️ <strong>Vergleichstext schreiben / Viết đoạn văn so sánh:</strong> Vergleiche deine Stadt mit einer anderen Stadt (6–8 Sätze). Pflicht: 2× Komparativ, 1× Superlativ, 2× dass-Satz, mindestens 5 verschiedene Adjektive.
+      <div class="ha-vn">So sánh thành phố của bạn với một thành phố khác (6–8 câu). Yêu cầu: 2 lần thể so sánh hơn, 1 lần thể so sánh nhất, 2 lần câu „dass", ít nhất 5 tính từ khác nhau.</div>
+    </div>
+    <div class="ha-item">📅 <strong>Interview-Aufgabe / Nhiệm vụ phỏng vấn:</strong> Frage eine Person „Was findest du besser: X oder Y?" und notiere die Antwort mit einem dass-Satz.
+      <div class="ha-vn">Hỏi một người „Was findest du besser: X oder Y?" (Bạn thấy cái nào tốt hơn: X hay Y?) và ghi lại câu trả lời bằng một câu „dass".</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 21):</strong> 1. habe gelesen &nbsp; 2. bist aufgestanden &nbsp; 3. haben angerufen</p>
+    <p><strong>Übung 1 (Komparativ):</strong> 1. größer &nbsp; 2. schneller &nbsp; 3. kleiner &nbsp; 4. billiger &nbsp; 5. jünger &nbsp; 6. interessanter</p>
+    <p><strong>Übung 2 (Komparativ, Teil 2):</strong> 1. älter &nbsp; 2. wärmer &nbsp; 3. schneller &nbsp; 4. kleiner &nbsp; 5. billiger &nbsp; 6. interessanter</p>
+    <p><strong>Übung 3 (Superlativ):</strong> 1. größte &nbsp; 2. älteste &nbsp; 3. schnellste &nbsp; 4. kleinste &nbsp; 5. billigste &nbsp; 6. interessanteste</p>
+    <p><strong>Übung 4 (unregelmäßige Superlative):</strong> 1. beste &nbsp; 2. liebsten &nbsp; 3. meiste &nbsp; 4. höchste &nbsp; 5. jüngste &nbsp; 6. wärmsten</p>
+    <p><strong>Übung 5 (dass-Sätze):</strong> 1. Ich finde, dass Deutsch interessant ist. &nbsp; 2. Ich glaube, dass das Wetter besser wird. &nbsp; 3. Ich finde, dass die Stadt schön ist. &nbsp; 4. Ich glaube, dass er morgen kommt. &nbsp; 5. Ich finde, dass das Essen gut schmeckt. &nbsp; 6. Ich glaube, dass sie recht hat.</p>
+    <p><strong>Übung 6 (Vergleichs-Marathon):</strong> 1. größer &nbsp; 2. schneller &nbsp; 3. beste &nbsp; 4. wärmer &nbsp; 5. interessanteste &nbsp; 6. mehr</p>
+    <p><strong>Leseverständnis:</strong> 1. b) Hamburg &nbsp; 2. b) wärmer und sonniger &nbsp; 3. b) die U-Bahn in München &nbsp; 4. b) die Wege am Wasser &nbsp; 5. b) die Mieten &nbsp; 6. b) jede Stadt hat eigene Vorteile</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ich finde, dass Berlin größer ist als meine Heimatstadt. &nbsp; Karte 2: Für mich ist Pizza am besten, weil sie so vielseitig ist. &nbsp; Karte 3: Ich finde, dass Deutsch nicht so schwer ist. &nbsp; Karte 4: Ich glaube, dass das neue Handy besser ist als das alte.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 22 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 6 / 6</span>
+  </div>
+</div>
+
+</body>
+</html>

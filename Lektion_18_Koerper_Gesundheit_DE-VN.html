@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 18</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 8mm 13mm 4mm 13mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.2; font-size: 11px; }
+.compact .doc-header { padding-bottom: 3px; margin-bottom: 5px; }
+.compact .section-title { margin: 5px 0 3px 0; }
+.compact table { margin-bottom: 3px; }
+.compact table.vocab th, .compact table.vocab td { padding: 2px 5px; }
+.compact .gram-box { padding: 4px 8px; margin-bottom: 3px; }
+.compact .tip-box { padding: 3px 7px; margin: 2px 0; }
+.compact .warn-box { padding: 3px 7px; margin: 2px 0 5px 0; }
+.compact .ubung-header { padding: 2px 8px; }
+.compact .ubung-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .fill-line { margin-bottom: 1px; }
+.compact .footer { margin-top: 3px; padding-top: 2px; }
+.compact .phon-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .kultur-box { padding: 4px 9px; margin: 3px 0 5px 0; }
+.compact .dialog-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .lese-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .mc-block { margin-bottom: 3px; }
+.compact .mc-optionen { margin-bottom: 4px; }
+.compact .ha-box { padding: 4px 9px; }
+.compact .antworten { padding: 4px 9px; }
+.compact .wiederholung-box { padding: 4px 9px; margin-bottom: 5px; }
+.compact .karten-grid { margin-top: 3px; gap: 6px; }
+.compact .sprech-karte { padding: 5px 7px; }
+.compact .sprech-karte .karte-num { padding: 1px 7px; margin-bottom: 3px; }
+.compact .sprech-karte .wort-pill { font-size: 11.5px; padding: 2px 5px; margin-bottom: 3px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 3px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 3px; }
+.compact .game-header { padding: 2px 8px; }
+.compact .game-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .wuerfel-grid { margin: 3px 0 4px 0; gap: 6px; }
+.compact .wuerfel-spalte { padding: 4px 6px; }
+.compact .baukasten-box { padding: 5px 10px; margin-bottom: 4px; }
+.compact .brief-karte { padding: 6px 9px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .prompt-tag.satz { background: #fef3c7; color: #92400e; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .baukasten-box & .brief-karte: Schreib-Format (wiederverwendet aus L6/L12/L13/L15) ===== */
+.baukasten-box { border: 1px solid #fde68a; border-radius: 8px; padding: 7px 12px; background: #fffbeb; margin-bottom: 6px; }
+.baukasten-title { font-size: 10.5px; font-weight: 700; color: #92400e; margin-bottom: 4px; }
+.baukasten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px 10px; }
+.baukasten-kategorie-label { font-size: 9px; font-weight: 700; text-transform: uppercase; color: #b45309; margin-bottom: 3px; border-bottom: 1px solid #fde68a; padding-bottom: 2px; }
+.baukasten-phrase { font-size: 10px; color: #1a1a1a; margin-bottom: 4px; background: white; border: 1px solid #fde68a; border-radius: 5px; padding: 3px 6px; }
+.baukasten-phrase .bp-vn { display: block; color: #0f766e; font-size: 9px; font-style: italic; margin-top: 1px; }
+.brief-karte { border: 1.5px dashed #94a3b8; border-radius: 8px; padding: 8px 12px; background: #fafafa; min-height: 145px; }
+.brief-karte .bk-header { font-size: 10px; font-weight: 700; color: #475569; margin-bottom: 6px; display: flex; justify-content: space-between; }
+.brief-lines { border-bottom: 1px solid #cbd5e1; height: 16px; margin-bottom: 6px; }
+
+/* ===== .koerper-tabelle: farbcodierte Symptom-Struktur (neu in L18) ===== */
+table.koerper-struktur th, table.koerper-struktur td { font-size: 11px; padding: 5px 8px; line-height: 1.5; }
+table.koerper-struktur th.col-teil { background: #bfdbfe; color: #1e3a8a; }
+table.koerper-struktur td.col-teil { background: #eff6ff; }
+table.koerper-struktur th.col-satz { background: #fecaca; color: #7f1d1d; }
+table.koerper-struktur td.col-satz { background: #fef2f2; }
+.compact table.koerper-struktur th, .compact table.koerper-struktur td { padding: 4px 7px; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Aussprache + Lernziele + Wortschatz Körperteile + Wortschatz Krankheiten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 18</h1>
+      <h2>Körper &amp; Gesundheit</h2>
+      <h2>Cơ thể &amp; Sức khỏe</h2>
+    </div>
+    <div class="badge">A1 · Lektion 18</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 17 / Ôn tập Bài 17</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: Unpersönliches „es" &amp; Wetter-Adjektive / Khởi động ngữ pháp: „es" vô nhân xưng &amp; tính từ chỉ thời tiết</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">es regnet</div>
+        <div class="wh-mund">Ergänze: Im Winter ___ es oft. (schneien)</div>
+        <div class="wh-beispiel">Điền động từ chỉ thời tiết phù hợp</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Adjektiv-Endung?</div>
+        <div class="wh-mund">„Es ist heute sonniges." — ist das richtig?</div>
+        <div class="wh-beispiel">Câu này đúng không? Nếu không, phải sửa thế nào?</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Position 2</div>
+        <div class="wh-mund">Ordne: heute / ist / es / kalt</div>
+        <div class="wh-beispiel">Sắp xếp thành câu đúng</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aussprache-Minute -->
+  <div class="section-title">🔊 AUSSPRACHE-MINUTE / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Das vokalische „er" am Wortende / Âm „er" hóa nguyên âm ở cuối từ</div>
+    <div class="phon-de">Am Ende eines Wortes wird „er" im Deutschen meistens nicht als richtiges „r" gesprochen, sondern als kurzer, weicher Vokal — ähnlich wie ein ganz kurzes „a". Diese Lektion ist voll davon!</div>
+    <div class="phon-vn">Ở cuối từ, „er" trong tiếng Đức thường không được phát âm như một âm „r" thật sự, mà biến thành một nguyên âm ngắn và nhẹ — giống như âm „ơ" rất ngắn trong tiếng Việt. Cả bài học này đầy ắp âm này!<br>⚠️ Mẹo cho người Việt: đừng cong hay rung lưỡi để phát âm „r" ở đây — chỉ cần buông lỏng lưỡi và phát ra một âm „ơ" ngắn, nhẹ, gần như nuốt bớt đi!</div>
+    <div class="phon-beispiele">der Körper (KUYA-pơ) · das Fieber (FI-bơ) · der Doktor (đôc-TO) · das Pflaster (PFLA-stơ) · außer (AU-sơ)</div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Körperteile benennen <span class="vn">— Gọi tên các bộ phận cơ thể</span></p>
+    <p class="de">✔ Schmerzen und Beschwerden beschreiben (Mein Kopf tut weh / Ich habe Halsschmerzen) <span class="vn">— Miêu tả cơn đau và triệu chứng khó chịu</span></p>
+    <p class="de">✔ Beim Arzt einen Termin machen und über Symptome sprechen <span class="vn">— Đặt lịch hẹn khám bác sĩ và nói về triệu chứng</span></p>
+    <p class="de">✔ Ratschläge im Imperativ verstehen und geben <span class="vn">— Hiểu và đưa ra lời khuyên bằng thể mệnh lệnh</span></p>
+  </div>
+
+  <!-- Wortschatz Körperteile -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Körperteile / Bảng từ vựng: Các bộ phận cơ thể</div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:20%"><col style="width:33%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🧠 <span class="der">der</span>Kopf</td><td class="phonetik">kôpf</td><td>Mein Kopf tu<strong>t</strong> weh. <span class="vn-word">Tôi đau đầu.</span></td><td class="vn-word">đầu</td></tr>
+      <tr><td>👁️ <span class="das">das</span>Auge <span class="plural">die Augen</span></td><td class="phonetik">AU-gơ</td><td>Meine Augen sin<strong>d</strong> müde. <span class="vn-word">Mắt tôi mỏi.</span></td><td class="vn-word">mắt</td></tr>
+      <tr><td>👃 <span class="die">die</span>Nase</td><td class="phonetik">NA-dzơ</td><td>Meine Nase läuft. <span class="vn-word">Tôi bị sổ mũi.</span></td><td class="vn-word">mũi</td></tr>
+      <tr><td>👄 <span class="der">der</span>Mun<strong>d</strong></td><td class="phonetik">mun<strong>t</strong></td><td>Öffnen Sie den Mun<strong>d</strong>, bitte. <span class="vn-word">Xin hãy há miệng ra.</span></td><td class="vn-word">miệng</td></tr>
+      <tr><td>👂 <span class="das">das</span>Ohr <span class="plural">die Ohren</span></td><td class="phonetik">o</td><td>Mein Ohr tu<strong>t</strong> weh. <span class="vn-word">Tôi đau tai.</span></td><td class="vn-word">tai</td></tr>
+      <tr><td>💆 <span class="der">der</span>Hal<strong>s</strong></td><td class="phonetik">hal<strong>x</strong></td><td>Mein Hals tu<strong>t</strong> weh. <span class="vn-word">Tôi đau cổ họng.</span></td><td class="vn-word">cổ / cổ họng</td></tr>
+      <tr><td>💪 <span class="der">der</span>Arm <span class="plural">die Arme</span></td><td class="phonetik">am</td><td>Mein Arm is<strong>t</strong> stark. <span class="vn-word">Cánh tay tôi khỏe.</span></td><td class="vn-word">cánh tay</td></tr>
+      <tr><td>✋ <span class="die">die</span>Han<strong>d</strong> <span class="plural">die Hände</span></td><td class="phonetik">han<strong>t</strong></td><td>Meine Hand is<strong>t</strong> kal<strong>t</strong>. <span class="vn-word">Tay tôi lạnh.</span></td><td class="vn-word">bàn tay / tay</td></tr>
+      <tr><td>🤰 <span class="der">der</span>Bau<strong>ch</strong></td><td class="phonetik">bau-kh</td><td>Mein Bauch tu<strong>t</strong> weh. <span class="vn-word">Tôi đau bụng.</span></td><td class="vn-word">bụng</td></tr>
+      <tr><td>🔙 <span class="der">der</span>Rücken</td><td class="phonetik">RUY-ken</td><td>Mein Rücken tu<strong>t</strong> weh. <span class="vn-word">Tôi đau lưng.</span></td><td class="vn-word">lưng</td></tr>
+      <tr><td>🦵 <span class="das">das</span>Bein <span class="plural">die Beine</span></td><td class="phonetik">bain</td><td>Meine Beine tun weh. <span class="vn-word">Chân tôi đau.</span></td><td class="vn-word">chân</td></tr>
+      <tr><td>🦶 <span class="der">der</span>Fu<strong>ß</strong> <span class="plural">die Füße</span></td><td class="phonetik">fu<strong>x</strong></td><td>Mein Fuß tu<strong>t</strong> weh. <span class="vn-word">Tôi đau bàn chân.</span></td><td class="vn-word">bàn chân</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Wortschatz Krankheiten -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Krankheiten &amp; Symptome / Bảng từ vựng: Bệnh tật &amp; triệu chứng</div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:20%"><col style="width:33%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🤕 <span class="plural">die</span>Kopfschmerzen</td><td class="phonetik">KÔPF-shméc-tsn</td><td>Ich habe starke Kopfschmerzen. <span class="vn-word">Tôi bị đau đầu dữ dội.</span></td><td class="vn-word">đau đầu</td></tr>
+      <tr><td>🤢 <span class="plural">die</span>Bauchschmerzen</td><td class="phonetik">BAU-khơ-shméc-tsn</td><td>Ich habe Bauchschmerzen. <span class="vn-word">Tôi bị đau bụng.</span></td><td class="vn-word">đau bụng</td></tr>
+      <tr><td>🌡️ <span class="das">das</span>Fieber</td><td class="phonetik">FI-bơ</td><td>Ich habe Fieber. <span class="vn-word">Tôi bị sốt.</span></td><td class="vn-word">sốt</td></tr>
+      <tr><td>😷 <span class="der">der</span>Husten</td><td class="phonetik">HU-stơn</td><td>Ich habe seit gestern Husten. <span class="vn-word">Tôi bị ho từ hôm qua.</span></td><td class="vn-word">ho</td></tr>
+      <tr><td>🤧 <span class="der">der</span>Schnupfen</td><td class="phonetik">SHNÚP-phơn</td><td>Ich habe einen Schnupfen. <span class="vn-word">Tôi bị sổ mũi.</span></td><td class="vn-word">sổ mũi</td></tr>
+      <tr><td>🥶 <span class="die">die</span>Erkältung</td><td class="phonetik">e-KEN-tung</td><td>Ich habe eine Erkältung. <span class="vn-word">Tôi bị cảm lạnh.</span></td><td class="vn-word">cảm lạnh</td></tr>
+      <tr><td>🤒 <span class="die">die</span>Grippe</td><td class="phonetik">GRÍP-pơ</td><td>Er hat die Grippe. <span class="vn-word">Anh ấy bị cúm.</span></td><td class="vn-word">cúm</td></tr>
+      <tr><td>😖 <span class="der">der</span>Schmerz <span class="plural">die Schmerzen</span></td><td class="phonetik">shméc</td><td>Wo genau is<strong>t</strong> der Schmerz? <span class="vn-word">Chính xác thì bạn đau ở đâu?</span></td><td class="vn-word">cơn đau</td></tr>
+      <tr><td>🤧 krank</td><td class="phonetik">krank</td><td>Ich bin heute krank. <span class="vn-word">Hôm nay tôi bị ốm.</span></td><td class="vn-word">ốm, bị bệnh</td></tr>
+      <tr><td>💪 gesun<strong>d</strong></td><td class="phonetik">gơ-DZUN<strong>t</strong></td><td>Zum Glück bin ich wieder gesun<strong>d</strong>. <span class="vn-word">May quá, tôi lại khỏe mạnh rồi.</span></td><td class="vn-word">khỏe mạnh</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 18</span>
+    <span>Seite 1 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Verben/Phrasen-Tabelle + Grammatik 1: Schmerzen-Struktur + Häufige Fehler + Übung 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 18</h1>
+      <h2>Wie sagt man, dass etwas weh tut? / Làm sao để nói rằng chỗ nào đó đau?</h2>
+    </div>
+    <div class="badge">A1 · Lektion 18</div>
+  </div>
+
+  <!-- Verben/Phrasen-Tabelle -->
+  <div class="section-title">🔧 Verben &amp; Phrasen-Tabelle: Beim Arzt / Bảng động từ &amp; cụm từ: Đi khám bác sĩ</div>
+  <table class="vocab">
+    <colgroup><col style="width:30%"><col style="width:35%"><col style="width:35%"></colgroup>
+    <thead><tr><th>Verb / Phrase</th><th>Beispiel</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>weh tun</td><td>Mein Bein tu<strong>t</strong> weh.</td><td class="vn-word">đau</td></tr>
+      <tr><td>sich fühlen</td><td>Wie fühl<strong>st</strong> du dich heute?</td><td class="vn-word">cảm thấy (trong người)</td></tr>
+      <tr><td>Fieber messen</td><td>Die Ärztin mi<strong>ss</strong>t mein Fieber.</td><td class="vn-word">đo nhiệt độ, đo sốt</td></tr>
+      <tr><td>einen Termin vereinbaren</td><td>Ich möchte einen Termin vereinbaren.</td><td class="vn-word">đặt lịch hẹn</td></tr>
+      <tr><td>zum Ar<strong>zt</strong> gehen</td><td>Ich mu<strong>ss</strong> morgen zum Arzt gehen.</td><td class="vn-word">đi khám bác sĩ</td></tr>
+      <tr><td>ein Reze<strong>pt</strong> bekommen</td><td>Ich bekomme ein Rezept für Tabletten.</td><td class="vn-word">nhận đơn thuốc</td></tr>
+      <tr><td>sich ausruhen</td><td>Ruh dich zu Hause aus!</td><td class="vn-word">nghỉ ngơi</td></tr>
+      <tr><td>sich krankschreiben lassen</td><td>Ich lasse mich krankschreiben.</td><td class="vn-word">xin giấy nghỉ ốm</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — „weh tun" &amp; „Schmerzen haben": Beschwerden ausdrücken / Ngữ pháp 1: dùng „weh tun" &amp; „Schmerzen haben" để diễn đạt triệu chứng khó chịu</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Für Beschwerden gibt es zwei einfache, feste Satzmuster — beide bleiben komplett im Nominativ, ganz ohne komplizierte Endungen!</div>
+    <div class="tip-vn">💡 Để diễn đạt triệu chứng khó chịu, có hai mẫu câu đơn giản, cố định — cả hai đều hoàn toàn ở cách 1 (Nominativ), không cần thêm đuôi phức tạp nào!</div>
+  </div>
+  <table class="vocab koerper-struktur">
+    <colgroup><col style="width:20%"><col style="width:40%"><col style="width:40%"></colgroup>
+    <thead><tr><th class="col-teil">Muster</th><th class="col-satz">Beispiel</th><th class="col-satz">Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td class="col-teil">① mein/meine + Körperteil + tut/tun weh</td><td class="col-satz"><strong>Mein Kopf tut weh.</strong> / <strong>Meine Beine tun weh.</strong></td><td class="col-satz">Tôi đau đầu. / Chân tôi đau.</td></tr>
+      <tr><td class="col-teil">② Ich habe + Körperteil + -schmerzen</td><td class="col-satz"><strong>Ich habe Kopfschmerzen.</strong> / <strong>Ich habe Halsschmerzen.</strong></td><td class="col-satz">Tôi đau đầu. / Tôi đau họng.</td></tr>
+    </tbody>
+  </table>
+  <div class="gram-box">
+    <h4>🔁 Wichtig: der/die/das Körperteil → mein/meine (Nominativ) / Quan trọng: der/die/das + bộ phận cơ thể → mein/meine (cách 1)</h4>
+    <div class="rule-de"><span class="der">der</span>Kopf → <strong>mein</strong> Kopf &nbsp;|&nbsp; <span class="die">die</span>Hand → <strong>meine</strong> Hand &nbsp;|&nbsp; <span class="das">das</span>Bein → <strong>mein</strong> Bein &nbsp;|&nbsp; Plural (<span class="plural">die</span>Beine) → <strong>meine</strong> Beine, und das Verb wird <strong>tun</strong> (nicht tut)!</div>
+    <div class="rule-vn">Mạo từ sở hữu ở cách 1 đi theo giống của danh từ: der→mein, die→meine, das→mein; số nhiều luôn dùng meine, và động từ cũng phải chia ở dạng số nhiều tun (không phải tut)!</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich habe Kopfschmerz."</span> → <span class="wb-ok">✅ „Ich habe Kopfschmerzen."</span> — „-schmerzen" steht bei Beschwerden immer im Plural!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich habe Kopfschmerz."</span> → <span class="wb-ok">✅ „Ich habe Kopfschmerzen."</span> — „-schmerzen" khi diễn đạt triệu chứng luôn ở dạng số nhiều!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Meine Kopf tut weh."</span> → <span class="wb-ok">✅ „Mein Kopf tut weh."</span> — „der Kopf" ist maskulin, also „mein", nicht „meine"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Meine Kopf tut weh."</span> → <span class="wb-ok">✅ „Mein Kopf tut weh."</span> — „der Kopf" là danh từ giống đực, nên dùng „mein", không dùng „meine"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Meine Beine tut weh."</span> → <span class="wb-ok">✅ „Meine Beine tun weh."</span> — bei Plural (die Beine) muss auch das Verb im Plural stehen: tun, nicht tut!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Meine Beine tut weh."</span> → <span class="wb-ok">✅ „Meine Beine tun weh."</span> — ở số nhiều (die Beine), động từ cũng phải chia số nhiều: tun, không phải tut!</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — Was tut weh? Ergänze mein/meine + tut/tun oder das Schmerzen-Wort / Đau ở đâu? Điền mein/meine + tut/tun hoặc từ chỉ cơn đau</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die Sätze mit dem passenden Possessivartikel, dem passenden Verb oder dem passenden Schmerzen-Wort.</div>
+    <div class="instr-vn">Điền mạo từ sở hữu, động từ hoặc từ chỉ cơn đau phù hợp vào câu.</div>
+    <div class="fill-line"><span class="num">1.</span> <span class="blank"></span> Bauch tut weh. <span class="vn-word">(Tôi đau bụng.) — der Bauch</span></div>
+    <div class="fill-line"><span class="num">2.</span> Meine Ohren <span class="blank"></span> weh. <span class="vn-word">(Tôi đau tai.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Ich habe Hals<span class="blank"></span>. <span class="vn-word">(Tôi đau họng.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> <span class="blank"></span> Hand tut weh. <span class="vn-word">(Tôi đau tay.) — die Hand</span></div>
+    <div class="fill-line"><span class="num">5.</span> Ich habe Kopf<span class="blank"></span>, ich muss mich ausruhen. <span class="vn-word">(Tôi đau đầu, tôi phải nghỉ ngơi.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Meine Beine <span class="blank"></span> weh, ich bin zu lange gelaufen. <span class="vn-word">(Chân tôi đau, vì tôi đã đi bộ quá lâu.)</span></div>
+  </div>
+
+  <!-- Übung 1b -->
+  <div class="ubung-header">Übung 1b — Bilde ganze Sätze: Muster ① oder ② / Đặt câu hoàn chỉnh: mẫu câu ① hoặc ②</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bilde für jeden Körperteil einen vollständigen Satz — benutze abwechselnd Muster ① (mein/meine + tut/tun weh) und Muster ② (Ich habe + -schmerzen).</div>
+    <div class="instr-vn">Đặt một câu hoàn chỉnh cho mỗi bộ phận cơ thể — luân phiên dùng mẫu câu ① (mein/meine + tut/tun weh) và mẫu câu ② (Ich habe + -schmerzen).</div>
+    <div class="fill-line"><span class="num">1.</span> der Rücken (①) <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">2.</span> der Bauch (②) <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">3.</span> die Augen (①) <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">4.</span> der Kopf (②) <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">5.</span> die Füße (①) <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">6.</span> der Hals (②) <span class="blank-xl"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 18</span>
+    <span>Seite 2 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Kulturinfo 1 + Grammatik 2: Imperativ-Wiederholung + Häufige Fehler + Übung 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 18</h1>
+      <h2>Ratschläge beim Arzt: Imperativ-Wiederholung / Lời khuyên của bác sĩ: ôn tập thể mệnh lệnh</h2>
+    </div>
+    <div class="badge">A1 · Lektion 18</div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Das deutsche Gesundheitssystem / Kiến thức văn hóa 1: hệ thống y tế ở Đức</div>
+    <div class="kb-de">In Deutschland geht man bei den meisten Beschwerden zuerst zum Hausarzt (Allgemeinmediziner) — er kennt die Patienten oft seit Jahren. Bei speziellen Problemen überweist er zu einem Facharzt (z. B. HNO-Arzt für Ohren/Nase/Hals, Orthopäde für Knochen). Fast alle Menschen haben eine Krankenversicherung, die die meisten Kosten übernimmt. Außerhalb der Praxiszeiten hilft die bundesweite Nummer 116117 (ärztlicher Bereitschaftsdienst) weiter — bei einem echten Notfall wählt man aber die 112.</div>
+    <div class="kb-vn">Ở Đức, khi gặp hầu hết các vấn đề sức khỏe, người ta thường đến khám bác sĩ gia đình (bác sĩ đa khoa) trước — vị bác sĩ này thường đã biết bệnh nhân từ nhiều năm. Nếu gặp vấn đề chuyên khoa, bác sĩ gia đình sẽ giới thiệu đến bác sĩ chuyên khoa (ví dụ bác sĩ tai-mũi-họng, bác sĩ chỉnh hình). Hầu như ai cũng có bảo hiểm y tế, chi trả phần lớn chi phí khám chữa bệnh. Ngoài giờ làm việc của phòng khám, có thể gọi số điện thoại trực y tế toàn quốc 116117; nếu là cấp cứu thực sự thì gọi số 112. Điều này khá khác với Việt Nam, nơi người dân thường có thể đến thẳng bệnh viện hoặc phòng khám chuyên khoa mà không cần qua bác sĩ gia đình trước, vì hệ thống bác sĩ gia đình vẫn chưa phổ biến rộng rãi như ở Đức.</div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Imperativ-Wiederholung: Ratschläge beim Arzt / Ngữ pháp 2: ôn tập thể mệnh lệnh — lời khuyên của bác sĩ</div>
+  <div class="tip-box">
+    <div class="tip-de">🔁 Erinnerst du dich an Lektion 16 (Wegbeschreibung)? Dort hast du den Imperativ (du/ihr/Sie) schon gelernt. Heute wenden wir ihn im neuen Kontext an: Ratschläge und Anweisungen beim Arzt.</div>
+    <div class="tip-vn">🔁 Bạn còn nhớ Bài 16 (chỉ đường) không? Ở đó bạn đã học thể mệnh lệnh (du/ihr/Sie) rồi. Hôm nay chúng ta dùng nó trong ngữ cảnh mới: lời khuyên và chỉ dẫn của bác sĩ.</div>
+  </div>
+  <table class="konj">
+    <colgroup><col style="width:100px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Form</th><th>Beispiel (Imperativ)</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">du</td><td><strong>Trink</strong> viel Wasser!</td><td class="vn-word">Uống nhiều nước!</td></tr>
+      <tr><td class="pronomen">du</td><td><strong>Ruh</strong> dich aus!</td><td class="vn-word">Nghỉ ngơi đi!</td></tr>
+      <tr><td class="pronomen">du</td><td><strong>Nimm</strong> die Tabletten dreimal täglich!</td><td class="vn-word">Uống thuốc 3 lần một ngày!</td></tr>
+      <tr><td class="pronomen">ihr</td><td><strong>Bleibt</strong> heute zu Hause!</td><td class="vn-word">Các bạn ở nhà hôm nay đi!</td></tr>
+      <tr><td class="pronomen">Sie</td><td><strong>Öffnen Sie</strong> den Mund, bitte!</td><td class="vn-word">Xin hãy há miệng ra!</td></tr>
+      <tr><td class="pronomen">Sie</td><td><strong>Atmen Sie</strong> tief ein!</td><td class="vn-word">Xin hãy hít thở sâu!</td></tr>
+    </tbody>
+  </table>
+  <div class="gram-box">
+    <h4>🔁 Kurz-Wiederholung der Regeln / Ôn nhanh lại các quy tắc</h4>
+    <div class="rule-de">du-Form: Verbstamm ohne „-st"-Endung, kein Pronomen (Trink!). &nbsp;|&nbsp; ihr-Form: normale ihr-Form, kein Pronomen (Bleibt!). &nbsp;|&nbsp; Sie-Form: Verb + „Sie", Pronomen bleibt Pflicht (Öffnen Sie!).</div>
+    <div class="rule-vn">Dạng du: gốc động từ, không thêm đuôi „-st", không dùng đại từ (Trink!); dạng ihr: chia động từ ihr bình thường, không dùng đại từ (Bleibt!); dạng Sie: động từ + „Sie", đại từ là bắt buộc (Öffnen Sie!).</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Öffnen den Mund!"</span> → <span class="wb-ok">✅ „Öffnen Sie den Mund!"</span> — bei der Sie-Form ist das Pronomen „Sie" Pflicht!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Öffnen den Mund!"</span> → <span class="wb-ok">✅ „Öffnen Sie den Mund!"</span> — dạng Sie bắt buộc phải có đại từ „Sie"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Trinkst viel Wasser!"</span> → <span class="wb-ok">✅ „Trink viel Wasser!"</span> — bei der du-Form fällt die „-st"-Endung weg!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Trinkst viel Wasser!"</span> → <span class="wb-ok">✅ „Trink viel Wasser!"</span> — dạng du phải bỏ đuôi „-st"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Du ruh dich aus!"</span> → <span class="wb-ok">✅ „Ruh dich aus!"</span> — bei der du-Form steht kein Pronomen vor dem Verb!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Du ruh dich aus!"</span> → <span class="wb-ok">✅ „Ruh dich aus!"</span> — dạng du không đặt đại từ trước động từ!</div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — Der Arzt gibt Ratschläge: Bilde den Imperativ / Bác sĩ đưa ra lời khuyên: viết thể mệnh lệnh</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bilde den Imperativ in der angegebenen Form (du/ihr/Sie).</div>
+    <div class="instr-vn">Chia thể mệnh lệnh theo dạng đã cho (du/ihr/Sie).</div>
+    <div class="fill-line"><span class="num">1.</span> <span class="blank-long"></span> (Sie / den Mund öffnen) <span class="vn-word">(Xin hãy há miệng ra!)</span></div>
+    <div class="fill-line"><span class="num">2.</span> <span class="blank-long"></span> (du / viel Wasser trinken) <span class="vn-word">(Uống nhiều nước!)</span></div>
+    <div class="fill-line"><span class="num">3.</span> <span class="blank-long"></span> (du / dich ausruhen) <span class="vn-word">(Nghỉ ngơi đi!)</span></div>
+    <div class="fill-line"><span class="num">4.</span> <span class="blank-long"></span> (ihr / zu Hause bleiben) <span class="vn-word">(Các bạn ở nhà đi!)</span></div>
+    <div class="fill-line"><span class="num">5.</span> <span class="blank-long"></span> (Sie / tief einatmen) <span class="vn-word">(Xin hãy hít thở sâu!)</span></div>
+    <div class="fill-line"><span class="num">6.</span> <span class="blank-long"></span> (du / die Tabletten nehmen) <span class="vn-word">(Uống thuốc đi!)</span></div>
+  </div>
+
+  <!-- Übung 2b -->
+  <div class="ubung-header">Übung 2b — Dein Freund ist krank: Gib 4 Ratschläge im Imperativ (du-Form) / Bạn của bạn bị ốm: đưa ra 4 lời khuyên bằng thể mệnh lệnh (dạng du)</div>
+  <div class="ubung-body">
+    <div class="instr-de">Dein Freund Tim hat Kopfschmerzen, Husten und Fieber. Schreibe ihm 4 Ratschläge im Imperativ — benutze die vorgegebenen Verben.</div>
+    <div class="instr-vn">Bạn của bạn tên Tim bị đau đầu, ho và sốt. Hãy viết cho cậu ấy 4 lời khuyên bằng thể mệnh lệnh — dùng các động từ đã cho.</div>
+    <div class="fill-line"><span class="num">1.</span> (Wasser trinken) <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">2.</span> (sich ausruhen) <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">3.</span> (zum Arzt gehen) <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">4.</span> (die Tabletten nehmen) <span class="blank-xl"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 18</span>
+    <span>Seite 3 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Dialog + Lesetext + MC) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 18</h1>
+      <h2>Dialog &amp; Lesetext / Hội thoại &amp; Bài đọc hiểu</h2>
+    </div>
+    <div class="badge">A1 · Lektion 18</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Ärztin:</span>Guten Tag! Was fehlt Ihnen denn?</div>
+    <div class="dialog-line"><span class="speaker">Herr Weber:</span>Guten Tag, Frau Doktor. Mein Hals tut weh, und ich habe seit gestern Husten.</div>
+    <div class="dialog-line"><span class="speaker">Ärztin:</span>Haben Sie auch Fieber?</div>
+    <div class="dialog-line"><span class="speaker">Herr Weber:</span>Ja, heute Morgen hatte ich 38,5 Grad.</div>
+    <div class="dialog-line"><span class="speaker">Ärztin:</span>Öffnen Sie bitte den Mund und sagen Sie „Aaah"... Das sieht nach einer Erkältung aus. Nichts Schlimmes.</div>
+    <div class="dialog-line"><span class="speaker">Herr Weber:</span>Was soll ich tun?</div>
+    <div class="dialog-line"><span class="speaker">Ärztin:</span>Trinken Sie viel Wasser und Tee, ruhen Sie sich zu Hause aus, und nehmen Sie diese Tabletten dreimal täglich.</div>
+    <div class="dialog-line"><span class="speaker">Herr Weber:</span>Muss ich noch einmal kommen?</div>
+    <div class="dialog-line"><span class="speaker">Ärztin:</span>Nur wenn es nach fünf Tagen nicht besser wird. Ich schreibe Sie für drei Tage krank.</div>
+    <div class="dialog-line"><span class="speaker">Herr Weber:</span>Vielen Dank, Frau Doktor. Auf Wiedersehen!</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Lena wacht am Montagmorgen auf und fühlt sich nicht gut. Ihr Kopf tut weh, ihr Hals tut weh, und sie hat ein bisschen Fieber. Sie misst ihre Temperatur: 38 Grad. „Das ist nicht gut", denkt sie, „ich kann heute nicht zur Arbeit gehen." Zuerst ruft sie im Büro an und sagt ihrem Chef, dass sie krank ist. Dann ruft sie in der Arztpraxis an und vereinbart einen Termin für 11 Uhr. In der Praxis wartet sie nicht lange. Die Ärztin hört ihre Lunge ab, schaut in ihren Hals und misst noch einmal das Fieber. „Sie haben eine leichte Grippe", sagt die Ärztin. „Das ist nicht gefährlich, aber Sie müssen sich ausruhen." Sie gibt Lena ein Rezept für Tabletten und schreibt sie für vier Tage krank. „Trinken Sie viel Tee, schlafen Sie viel, und kommen Sie wieder, wenn es nach vier Tagen nicht besser wird", sagt die Ärztin zum Abschied. Lena kauft die Tabletten in der Apotheke und geht direkt nach Hause ins Bett. Am Donnerstag fühlt sie sich schon viel besser, und am Freitag geht sie wieder zur Arbeit — zum Glück ohne Fieber und ohne Kopfschmerzen.
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Wie fühlt sich Lena am Montagmorgen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sehr gut und fit</span>
+      <span><span class="mc-kreis"></span> b) nicht gut, mit Kopf- und Halsschmerzen</span>
+      <span><span class="mc-kreis"></span> c) müde, aber ohne Schmerzen</span>
+    </div>
+    <div class="mc-frage">2. Was macht Lena zuerst?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie geht sofort zur Arbeit</span>
+      <span><span class="mc-kreis"></span> b) sie ruft im Büro an</span>
+      <span><span class="mc-kreis"></span> c) sie kauft Tabletten in der Apotheke</span>
+    </div>
+    <div class="mc-frage">3. Um wie viel Uhr ist Lenas Termin bei der Ärztin?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) um 9 Uhr</span>
+      <span><span class="mc-kreis"></span> b) um 11 Uhr</span>
+      <span><span class="mc-kreis"></span> c) um 14 Uhr</span>
+    </div>
+    <div class="mc-frage">4. Was sagt die Ärztin über die Krankheit?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) es ist eine leichte Grippe, nicht gefährlich</span>
+      <span><span class="mc-kreis"></span> b) es ist eine sehr ernste Krankheit</span>
+      <span><span class="mc-kreis"></span> c) Lena ist gar nicht krank</span>
+    </div>
+    <div class="mc-frage">5. Für wie viele Tage schreibt die Ärztin Lena krank?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) für zwei Tage</span>
+      <span><span class="mc-kreis"></span> b) für vier Tage</span>
+      <span><span class="mc-kreis"></span> c) für eine Woche</span>
+    </div>
+    <div class="mc-frage">6. Wie geht es Lena am Freitag?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie ist immer noch krank</span>
+      <span><span class="mc-kreis"></span> b) sie fühlt sich viel besser und geht wieder zur Arbeit</span>
+      <span><span class="mc-kreis"></span> c) sie muss noch einmal zur Ärztin</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Was machst du, wenn du krank bist? Gehst du sofort zum Arzt oder wartest du erst ab?</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Khi bị ốm, bạn thường làm gì? Bạn đi khám bác sĩ ngay hay chờ xem thế nào trước?</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 18</span>
+    <span>Seite 4 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 5 (Kulturinfo 2 + Schreib-Meilenstein: Formelle E-Mail – Arzttermin verschieben) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 18</h1>
+      <h2>Schreib-Meilenstein: Formelle E-Mail an die Arztpraxis / Cột mốc viết: email trang trọng gửi phòng khám</h2>
+    </div>
+    <div class="badge">A1 · Lektion 18</div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Hausmittel bei Erkältung / Kiến thức văn hóa 2: mẹo dân gian khi bị cảm</div>
+    <div class="kb-de">Bei einer leichten Erkältung greifen viele Deutsche zuerst zu Hausmitteln, bevor sie zum Arzt gehen: heißer Kamillentee oder Tee mit Honig und Zitrone, ein Wadenwickel gegen Fieber (nasse, kühle Tücher um die Waden) oder ein warmes Erkältungsbad mit ätherischen Ölen. Solche Ratschläge kommen oft von der Oma — „Omas Hausmittel" sind in Deutschland fast schon ein eigenes kleines Kulturgut!</div>
+    <div class="kb-vn">Khi bị cảm nhẹ, nhiều người Đức thường thử các mẹo dân gian trước khi đi khám bác sĩ: trà hoa cúc nóng hoặc trà mật ong chanh, quấn khăn lạnh quanh bắp chân để hạ sốt, hoặc tắm nước ấm pha tinh dầu trị cảm. Những lời khuyên này thường đến từ các bà — „mẹo của bà" gần như đã trở thành một nét văn hóa nhỏ riêng ở Đức! Ở Việt Nam cũng có nhiều mẹo dân gian tương tự khi bị cảm: uống nước gừng mật ong, xông hơi lá sả/lá bưởi, hoặc cạo gió — một phương pháp rất phổ biến ở Việt Nam nhưng lại khá xa lạ với người Đức.</div>
+  </div>
+
+  <div class="section-title">✍️ SCHREIB-FORMAT — Formelle E-Mail: Arzttermin verschieben / Định dạng viết: email trang trọng — dời lịch hẹn bác sĩ</div>
+  <div class="gram-box">
+    <h4>🔁 Erinnerung: Formell vs. Informell (aus Lektion 15) / Nhắc lại: trang trọng và thân mật (từ Bài 15)</h4>
+    <div class="rule-de">Informell (an Freunde): „Liebe Mai," / „Viele Grüße" / du-Form. &nbsp;|&nbsp; <strong>Formell (an Praxis/Firma):</strong> „Sehr geehrte Frau Doktor [Name]," / „Mit freundlichen Grüßen" / <strong>Sie</strong>-Form!</div>
+    <div class="rule-vn">Thân mật (viết cho bạn bè): „Liebe Mai," / „Viele Grüße" / dùng „du". &nbsp;|&nbsp; <strong>Trang trọng (viết cho phòng khám/công ty):</strong> „Sehr geehrte Frau Doktor [Name]," / „Mit freundlichen Grüßen" / dùng <strong>„Sie"</strong>!</div>
+  </div>
+
+  <div class="gram-box">
+    <h4>📋 Die Aufgabe / Nhiệm vụ</h4>
+    <div class="rule-de">Du bist krank und kannst deinen Arzttermin nicht wahrnehmen. Schreibe eine formelle E-Mail an die Praxis und beantworte genau diese 3 Punkte:</div>
+    <div class="rule-vn">Bạn bị ốm và không thể đến buổi hẹn khám bác sĩ. Hãy viết một email trang trọng gửi phòng khám và trả lời đúng 3 điểm sau:</div>
+    <div class="rule-de" style="margin-top:3px;">1. Warum kannst du nicht kommen? &nbsp; 2. Bitte um einen neuen Termin (Tag/Uhrzeit) &nbsp; 3. Bitte um eine kurze Bestätigung.</div>
+    <div class="rule-vn">1. Vì sao bạn không thể đến được? &nbsp; 2. Xin một lịch hẹn mới (ngày/giờ) &nbsp; 3. Xin một xác nhận ngắn gọn.</div>
+  </div>
+
+  <!-- Baukasten -->
+  <div class="baukasten-box">
+    <div class="baukasten-title">🧱 Der Phrasen-Baukasten — kopiere einfach, was passt! / Kho câu mẫu — cứ sao chép câu phù hợp!</div>
+    <div class="baukasten-grid">
+      <div>
+        <div class="baukasten-kategorie-label">Anrede &amp; Grund / Lời chào &amp; lý do</div>
+        <div class="baukasten-phrase">Sehr geehrte Frau Doktor [Name], / Sehr geehrter Herr Doktor [Name],<span class="bp-vn">Kính gửi bác sĩ [Tên],</span></div>
+        <div class="baukasten-phrase">ich bin krank und muss zu Hause bleiben.<span class="bp-vn">Tôi bị ốm và phải ở nhà.</span></div>
+      </div>
+      <div>
+        <div class="baukasten-kategorie-label">Wunsch &amp; neuer Termin / Yêu cầu &amp; lịch hẹn mới</div>
+        <div class="baukasten-phrase">Deshalb kann ich meinen Termin am [Datum] leider nicht wahrnehmen.<span class="bp-vn">Vì vậy tôi rất tiếc không thể đến buổi hẹn vào ngày [Ngày].</span></div>
+        <div class="baukasten-phrase">Kann ich den Termin am [Wochentag] um [Uhrzeit] haben?<span class="bp-vn">Tôi có thể đổi lịch hẹn sang [Thứ] lúc [Giờ] được không?</span></div>
+      </div>
+      <div>
+        <div class="baukasten-kategorie-label">Schluss / Kết thư</div>
+        <div class="baukasten-phrase">Ich bitte um eine kurze Rückmeldung.<span class="bp-vn">Mong bác sĩ phản hồi ngắn gọn giúp tôi.</span></div>
+        <div class="baukasten-phrase">Mit freundlichen Grüßen<br>[Ihr Name]<span class="bp-vn">Trân trọng, ...</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ha-box">
+    <h4>✏️ Jetzt bist du dran! / Bây giờ đến lượt bạn!</h4>
+    <div class="ha-item">Schreibe deine eigene E-Mail zur Terminverschiebung in die Karte unten. Benutze mindestens 1× die Sie-Form und beantworte alle 3 Punkte aus der Aufgabe.
+      <div class="ha-vn">Viết email dời lịch hẹn của riêng bạn vào khung bên dưới. Dùng dạng „Sie" ít nhất 1 lần và trả lời đủ 3 ý trong đề bài.</div>
+    </div>
+  </div>
+
+  <div class="brief-karte">
+    <div class="bk-header"><span>📧 Deine Terminverschiebung</span><span>Hausaufgabe</span></div>
+    <div class="brief-lines" style="min-width:60%;"></div>
+    <div class="brief-lines"></div>
+    <div class="brief-lines"></div>
+    <div class="brief-lines"></div>
+    <div class="brief-lines"></div>
+    <div class="brief-lines" style="min-width:50%;"></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 18</span>
+    <span>Seite 5 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 6 (Freies Sprechen + Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 18</h1>
+      <h2>Freies Sprechen, Hausaufgaben &amp; Antworten / Nói tự do, bài tập về nhà &amp; đáp án</h2>
+    </div>
+    <div class="badge">A1 · Lektion 18</div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">weh tun</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was tut dir manchmal weh?</div>
+      <div class="anweisung-vn">Thỉnh thoảng bạn hay đau ở đâu?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">krank sein</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was machst du, wenn du krank bist?</div>
+      <div class="anweisung-vn">Bạn làm gì khi bị ốm?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">Imperativ</div>
+      <div class="prompt-row"><span class="prompt-tag satz">Satz</span></div>
+      <div class="anweisung-de">Gib einem kranken Freund einen Ratschlag im Imperativ (du-Form).</div>
+      <div class="anweisung-vn">Đưa cho một người bạn bị ốm một lời khuyên bằng thể mệnh lệnh (dạng du).</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">zum Arzt gehen</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Wann warst du das letzte Mal beim Arzt? Was hattest du?</div>
+      <div class="anweisung-vn">Lần gần nhất bạn đi khám bác sĩ là khi nào? Lúc đó bạn bị làm sao?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Körper-Vokabeln lernen / Học từ vựng về cơ thể:</strong> Schreibe alle Körperteile und Krankheitswörter mit ihren Artikeln auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết ra giấy tất cả các bộ phận cơ thể và từ chỉ bệnh tật kèm mạo từ (der/die/das) — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">✉️ <strong>Formelle E-Mail schreiben / Viết email trang trọng:</strong> Schreibe die vollständige E-Mail zur Terminverschiebung auf der Schreib-Meilenstein-Seite fertig (Seite 5) — benutze mindestens 1× die Sie-Form.
+      <div class="ha-vn">Hoàn thành email dời lịch hẹn ở trang cột mốc viết (trang 5) — dùng dạng „Sie" ít nhất 1 lần.</div>
+    </div>
+    <div class="ha-item">🗣️ <strong>Rollenspiel üben / Luyện tập đóng vai:</strong> Übe den Beispieldialog „Beim Arzt" laut mit einem Partner (oder allein, beide Rollen) — wechsle danach die Krankheit (z. B. Bauchschmerzen statt Husten).
+      <div class="ha-vn">Luyện đọc to đoạn hội thoại mẫu „Đi khám bác sĩ" cùng bạn học (hoặc tự đóng cả hai vai) — sau đó đổi sang một bệnh khác (ví dụ đau bụng thay vì ho).</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 17):</strong> 1. schneit &nbsp; 2. Falsch — richtig ist „Es ist heute sonnig." (kein -es!) &nbsp; 3. Heute ist es kalt.</p>
+    <p><strong>Übung 1 (mein/meine, tut/tun, Schmerzen):</strong> 1. Mein &nbsp; 2. tun &nbsp; 3. schmerzen &nbsp; 4. Meine &nbsp; 5. schmerzen &nbsp; 6. tun</p>
+    <p><strong>Übung 1b (ganze Sätze):</strong> 1. Mein Rücken tut weh. &nbsp; 2. Ich habe Bauchschmerzen. &nbsp; 3. Meine Augen tun weh. &nbsp; 4. Ich habe Kopfschmerzen. &nbsp; 5. Meine Füße tun weh. &nbsp; 6. Ich habe Halsschmerzen.</p>
+    <p><strong>Übung 2 (Imperativ):</strong> 1. Öffnen Sie den Mund! &nbsp; 2. Trink viel Wasser! &nbsp; 3. Ruh dich aus! &nbsp; 4. Bleibt zu Hause! &nbsp; 5. Atmen Sie tief ein! &nbsp; 6. Nimm die Tabletten!</p>
+    <p><strong>Übung 2b (Ratschläge für Tim, Beispiele):</strong> 1. Trink viel Wasser! &nbsp; 2. Ruh dich aus! &nbsp; 3. Geh zum Arzt! &nbsp; 4. Nimm die Tabletten! <span style="font-style:italic;">(individuelle Wortstellung möglich, von der Lehrkraft zu prüfen)</span></p>
+    <p><strong>Leseverständnis:</strong> 1. b) nicht gut, mit Kopf- und Halsschmerzen &nbsp; 2. b) sie ruft im Büro an &nbsp; 3. b) um 11 Uhr &nbsp; 4. a) es ist eine leichte Grippe, nicht gefährlich &nbsp; 5. b) für vier Tage &nbsp; 6. b) sie fühlt sich viel besser und geht wieder zur Arbeit</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Manchmal tut mir der Kopf weh, wenn ich zu lange am Computer arbeite. &nbsp; Karte 2: Wenn ich krank bin, ruhe ich mich aus und trinke viel Tee. &nbsp; Karte 3: Trink viel Wasser und ruh dich aus! &nbsp; Karte 4: Ich war letzten Monat beim Arzt, ich hatte eine Erkältung.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 18 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 6 / 6</span>
+  </div>
+</div>
+
+</body>
+</html>

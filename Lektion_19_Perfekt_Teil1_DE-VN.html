@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 19</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 8mm 13mm 4mm 13mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.2; font-size: 11px; }
+.compact .doc-header { padding-bottom: 3px; margin-bottom: 5px; }
+.compact .section-title { margin: 5px 0 3px 0; }
+.compact table { margin-bottom: 3px; }
+.compact table.vocab th, .compact table.vocab td { padding: 2px 5px; }
+.compact .gram-box { padding: 4px 8px; margin-bottom: 3px; }
+.compact .tip-box { padding: 3px 7px; margin: 2px 0; }
+.compact .warn-box { padding: 3px 7px; margin: 2px 0 5px 0; }
+.compact .ubung-header { padding: 2px 8px; }
+.compact .ubung-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .fill-line { margin-bottom: 1px; }
+.compact .footer { margin-top: 3px; padding-top: 2px; }
+.compact .phon-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .kultur-box { padding: 4px 9px; margin: 3px 0 5px 0; }
+.compact .dialog-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .lese-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .mc-block { margin-bottom: 3px; }
+.compact .mc-optionen { margin-bottom: 4px; }
+.compact .ha-box { padding: 4px 9px; }
+.compact .antworten { padding: 4px 9px; }
+.compact .wiederholung-box { padding: 4px 9px; margin-bottom: 5px; }
+.compact .karten-grid { margin-top: 3px; gap: 6px; }
+.compact .sprech-karte { padding: 5px 7px; }
+.compact .sprech-karte .karte-num { padding: 1px 7px; margin-bottom: 3px; }
+.compact .sprech-karte .wort-pill { font-size: 11.5px; padding: 2px 5px; margin-bottom: 3px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 3px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 3px; }
+.compact .game-header { padding: 2px 8px; }
+.compact .game-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .wuerfel-grid { margin: 3px 0 4px 0; gap: 6px; }
+.compact .wuerfel-spalte { padding: 4px 6px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .prompt-tag.satz { background: #fef3c7; color: #92400e; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .game-header / .game-body: Spielelement (wiederverwendet aus L12/L13/L15/L17) ===== */
+.game-header { background: #ea580c; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.game-body { border: 0.5px solid #fdba74; border-top: none; border-radius: 0 0 5px 5px; padding: 6px 8px; margin-bottom: 4px; background: #fff7ed; }
+.game-body .instr-de { font-size: 10px; color: #7c2d12; font-style: italic; }
+.game-body .instr-vn { font-size: 9.5px; color: #c2410c; font-style: italic; margin-bottom: 4px; }
+
+/* ===== .wuerfel-box: Würfel-Legende (wiederverwendet aus L12/L13/L15/L17), hier 3 Spalten ===== */
+.wuerfel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 4px 0 6px 0; }
+.wuerfel-grid.drei-spalten { grid-template-columns: 1fr 1fr 1fr; }
+.wuerfel-spalte { background: white; border: 1px solid #fdba74; border-radius: 8px; padding: 6px 8px; }
+.wuerfel-spalte .ws-title { font-size: 9.5px; font-weight: 700; color: #9a3412; text-align: center; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.3px; }
+.wuerfel-zeile { display: flex; align-items: center; gap: 5px; font-size: 10px; margin-bottom: 2px; }
+.wuerfel-zahl { display: inline-flex; align-items: center; justify-content: center; width: 15px; height: 15px; background: #ea580c; color: white; font-weight: 700; font-size: 9px; border-radius: 4px; flex-shrink: 0; }
+.wuerfel-kombi { display: flex; align-items: center; gap: 6px; font-size: 10.5px; margin-bottom: 3px; flex-wrap: wrap; }
+.wuerfel-kombi .wk-num { font-weight: 700; color: #64748b; min-width: 14px; }
+.wuerfel-kombi .wk-set { display: inline-flex; gap: 3px; }
+.wortsalat-arrow { color: #94a3b8; font-weight: 700; }
+
+/* ===== .punkte-box: Punktesystem-Anzeige (neu in L19) ===== */
+.punkte-box { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 6px 0; }
+.punkte-item { background: #fef9c3; border: 1px solid #fde047; border-radius: 6px; padding: 4px 9px; font-size: 10px; color: #713f12; display: flex; align-items: center; gap: 4px; }
+.punkte-item .pk-zahl { font-weight: 800; color: #92400e; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Aussprache + Lernziele + Wortschatz Aktivitäten + Wortschatz Zeitangaben) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 19</h1>
+      <h2>Das Perfekt – Teil 1</h2>
+      <h2>Thì hoàn thành (Perfekt) — Phần 1</h2>
+    </div>
+    <div class="badge">A1 · Lektion 19</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 18 / Ôn tập Bài 18</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: „weh tun" / „-schmerzen" &amp; Imperativ / Khởi động ngữ pháp: „weh tun" / „-schmerzen" &amp; thể mệnh lệnh</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">Mein/Meine?</div>
+        <div class="wh-mund">Ergänze: ___ Hand tut weh. (die Hand)</div>
+        <div class="wh-beispiel">Điền mạo từ sở hữu phù hợp</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">-schmerzen</div>
+        <div class="wh-mund">Ich habe Kopf___. — welches Wort fehlt?</div>
+        <div class="wh-beispiel">Từ nào còn thiếu?</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Imperativ (Sie)</div>
+        <div class="wh-mund">Bilde die Sie-Form: ___ Sie den Mund! (öffnen)</div>
+        <div class="wh-beispiel">Chia thể mệnh lệnh dạng Sie</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aussprache-Minute -->
+  <div class="section-title">🔊 AUSSPRACHE-MINUTE / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Der Wortakzent beim Partizip: „ge-" trägt nie den Akzent / Trọng âm của phân từ: „ge-" không bao giờ được nhấn</div>
+    <div class="phon-de">Beim Partizip Perfekt liegt der Wortakzent immer auf dem Verbstamm, NIE auf der Vorsilbe „ge-": ge<strong>KOCHT</strong>, ge<strong>LERNT</strong>, ge<strong>SPIELT</strong>. Bei Verben auf „-ieren" gibt es sogar kein „ge-" und der Akzent liegt auf „-iert": telefon<strong>IERT</strong>, stud<strong>IERT</strong>.</div>
+    <div class="phon-vn">Trong phân từ quá khứ (Partizip Perfekt), trọng âm luôn rơi vào gốc động từ, KHÔNG BAO GIỜ rơi vào tiền tố „ge-": geKOCHT, geLERNT, geSPIELT. Với động từ tận cùng „-ieren" thậm chí không có „ge-" và trọng âm rơi vào „-iert": telefonIERT, studIERT.<br>⚠️ Mẹo cho người Việt: đừng nhấn giọng vào „ge-" ở đầu từ — hãy nhấn mạnh vào phần sau, và luôn nhớ phát âm rõ chữ „t" ở cuối, đừng nuốt mất!</div>
+    <div class="phon-beispiele">geKOCH<strong>T</strong> (gơ-KÔKHT) · geLERN<strong>T</strong> (gơ-LÉNT) · geSPIEL<strong>T</strong> (gơ-SHPILT) · telefonIER<strong>T</strong> (tê-lê-fô-NIA-t)</div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Das Perfekt mit „haben" bilden (regelmäßige Verben) <span class="vn">— Cấu tạo thì hoàn thành (Perfekt) với „haben" (động từ có quy tắc)</span></p>
+    <p class="de">✔ Das Partizip Perfekt korrekt bilden (ge-...-t) <span class="vn">— Cấu tạo đúng phân từ quá khứ (ge-...-t)</span></p>
+    <p class="de">✔ Über gestern und die letzte Woche sprechen <span class="vn">— Nói về hôm qua và tuần trước</span></p>
+    <p class="de">✔ Eine kurze Alltagsgeschichte in der Vergangenheit erzählen <span class="vn">— Kể một câu chuyện đời thường ngắn ở thì quá khứ</span></p>
+  </div>
+
+  <!-- Wortschatz Aktivitäten -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Alltagsaktivitäten / Bảng từ vựng: Hoạt động thường ngày</div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:20%"><col style="width:33%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🍳 kochen</td><td class="phonetik">KÔ-khơn</td><td>Ich habe gestern gekoch<strong>t</strong>. <span class="vn-word">Tôi đã nấu ăn hôm qua.</span></td><td class="vn-word">nấu ăn</td></tr>
+      <tr><td>💼 arbeiten</td><td class="phonetik">AR-bai-tơn</td><td>Er hat den ganzen Tag gearbeite<strong>t</strong>. <span class="vn-word">Anh ấy đã làm việc cả ngày.</span></td><td class="vn-word">làm việc</td></tr>
+      <tr><td>📖 lernen</td><td class="phonetik">LE-nơn</td><td>Wir haben Deutsch gelern<strong>t</strong>. <span class="vn-word">Chúng tôi đã học tiếng Đức.</span></td><td class="vn-word">học</td></tr>
+      <tr><td>⚽ spielen</td><td class="phonetik">SHPI-lơn</td><td>Ihr habt Fußball gespiel<strong>t</strong>. <span class="vn-word">Các bạn đã đá bóng.</span></td><td class="vn-word">chơi, đá bóng</td></tr>
+      <tr><td>🛒 kaufen</td><td class="phonetik">KAU-phơn</td><td>Sie hat eine Pizza gekauf<strong>t</strong>. <span class="vn-word">Cô ấy đã mua một chiếc pizza.</span></td><td class="vn-word">mua</td></tr>
+      <tr><td>🧹 putzen</td><td class="phonetik">PÚT-sơn</td><td>Ich habe die Wohnung geputz<strong>t</strong>. <span class="vn-word">Tôi đã dọn dẹp căn hộ.</span></td><td class="vn-word">dọn dẹp</td></tr>
+      <tr><td>📞 telefonieren</td><td class="phonetik">tê-lê-fô-NI-rơn</td><td>Du hast lange telefonier<strong>t</strong>. <span class="vn-word">Bạn đã gọi điện rất lâu.</span></td><td class="vn-word">gọi điện thoại</td></tr>
+      <tr><td>🎧 hören</td><td class="phonetik">HƠ-rơn</td><td>Wir haben Musik gehör<strong>t</strong>. <span class="vn-word">Chúng tôi đã nghe nhạc.</span></td><td class="vn-word">nghe</td></tr>
+      <tr><td>💃 tanzen</td><td class="phonetik">TAN-sơn</td><td>Sie haben die ganze Nacht getanz<strong>t</strong>. <span class="vn-word">Họ đã nhảy múa suốt đêm.</span></td><td class="vn-word">nhảy múa</td></tr>
+      <tr><td>😄 lachen</td><td class="phonetik">LA-khơn</td><td>Wir haben viel gelach<strong>t</strong>. <span class="vn-word">Chúng tôi đã cười rất nhiều.</span></td><td class="vn-word">cười</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Wortschatz Zeitangaben -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Zeitangaben (Vergangenheit) / Bảng từ vựng: Trạng từ chỉ thời gian (quá khứ)</div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:20%"><col style="width:33%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>📅 gestern</td><td class="phonetik">GÉ-stơn</td><td>Gestern habe ich gearbeite<strong>t</strong>. <span class="vn-word">Hôm qua tôi đã làm việc.</span></td><td class="vn-word">hôm qua</td></tr>
+      <tr><td>📅 gestern Abend</td><td class="phonetik">GÉ-stơn A-bờn-t</td><td>Gestern Abend haben wir gekoch<strong>t</strong>. <span class="vn-word">Tối hôm qua chúng tôi đã nấu ăn.</span></td><td class="vn-word">tối hôm qua</td></tr>
+      <tr><td>📅 vorgestern</td><td class="phonetik">FO-ghé-stơn</td><td>Vorgestern habe ich telefonier<strong>t</strong>. <span class="vn-word">Hôm kia tôi đã gọi điện thoại.</span></td><td class="vn-word">hôm kia</td></tr>
+      <tr><td>📅 letzte Woche</td><td class="phonetik">LÉT-stơ VÔ-khơ</td><td>Letzte Woche habe ich viel gelern<strong>t</strong>. <span class="vn-word">Tuần trước tôi đã học rất nhiều.</span></td><td class="vn-word">tuần trước</td></tr>
+      <tr><td>📅 letztes Wochenende</td><td class="phonetik">LÉT-stơs VÔ-khơn-en-đơ</td><td>Letztes Wochenende haben wir getanz<strong>t</strong>. <span class="vn-word">Cuối tuần trước chúng tôi đã nhảy múa.</span></td><td class="vn-word">cuối tuần trước</td></tr>
+      <tr><td>📅 am Montag</td><td class="phonetik">am MON-tak</td><td>Am Montag hat sie gearbeite<strong>t</strong>. <span class="vn-word">Hôm thứ Hai đó cô ấy đã làm việc.</span></td><td class="vn-word">vào thứ Hai (hôm đó)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 19</span>
+    <span>Seite 1 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Verben/Partizip-Tabelle + Grammatik 1: Perfekt-Klammer + Häufige Fehler + Übung 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 19</h1>
+      <h2>Die Perfekt-Klammer: „haben" + Partizip / Khung câu Perfekt: „haben" + phân từ</h2>
+    </div>
+    <div class="badge">A1 · Lektion 19</div>
+  </div>
+
+  <!-- Verben/Partizip-Tabelle -->
+  <div class="section-title">🔧 Verben-Tabelle: Infinitiv → Partizip Perfekt / Bảng động từ: nguyên mẫu → phân từ quá khứ</div>
+  <table class="konj">
+    <colgroup><col style="width:110px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Infinitiv</th><th>Partizip Perfekt</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">kochen</td><td><strong>gekocht</strong> (gơ-KÔKHT)</td><td class="vn-word">nấu ăn</td></tr>
+      <tr><td class="pronomen">arbeiten</td><td><strong>gearbeitet</strong> (gơ-AR-bai-tợt)</td><td class="vn-word">làm việc</td></tr>
+      <tr><td class="pronomen">lernen</td><td><strong>gelernt</strong> (gơ-LÉNT)</td><td class="vn-word">học</td></tr>
+      <tr><td class="pronomen">spielen</td><td><strong>gespielt</strong> (gơ-SHPILT)</td><td class="vn-word">chơi, đá bóng</td></tr>
+      <tr><td class="pronomen">kaufen</td><td><strong>gekauft</strong> (gơ-KAUFT)</td><td class="vn-word">mua</td></tr>
+      <tr><td class="pronomen">putzen</td><td><strong>geputzt</strong> (gơ-PÚTST)</td><td class="vn-word">dọn dẹp</td></tr>
+      <tr><td class="pronomen">telefonieren</td><td><strong>telefoniert</strong> (tê-lê-fô-NIA-t)</td><td class="vn-word">gọi điện thoại</td></tr>
+      <tr><td class="pronomen">hören</td><td><strong>gehört</strong> (gơ-HƠT)</td><td class="vn-word">nghe</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — Das Perfekt-Sandwich: „haben" + Partizip / Ngữ pháp 1: cấu trúc "bánh kẹp" của Perfekt: „haben" + phân từ</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Genau wie beim Modalverb-Sandwich aus Lektion 12: „haben" (konjugiert) ist die eine Brotscheibe auf <strong>Position 2</strong>, das <strong>Partizip Perfekt</strong> ist die andere Brotscheibe ganz am <strong>Satzende</strong>. Beispiel: „<strong style="color:#1e40af;">Ich habe</strong> [ 🥬 gestern 🥬 ] <strong style="color:#b45309;">gekocht</strong>."</div>
+    <div class="tip-vn">💡 Giống hệt cấu trúc bánh kẹp với động từ khiếm khuyết ở Bài 12: „haben" (đã chia) là lát bánh mì ở <strong>vị trí số 2</strong>, <strong>phân từ quá khứ</strong> là lát bánh mì còn lại nằm ở tận <strong>cuối câu</strong>. Ví dụ: „Ich habe [ gestern ] gekocht."</div>
+  </div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Pronomen</th><th>haben (Vị trí 2)</th><th>Partizip (cuối câu)</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td><strong>habe</strong></td><td>gekoch<strong>t</strong></td></tr>
+      <tr><td class="pronomen">du</td><td><strong>hast</strong></td><td>gelern<strong>t</strong></td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td><strong>hat</strong></td><td>gespiel<strong>t</strong></td></tr>
+      <tr><td class="pronomen">wir</td><td><strong>haben</strong></td><td>gekauf<strong>t</strong></td></tr>
+      <tr><td class="pronomen">ihr</td><td><strong>habt</strong></td><td>geputz<strong>t</strong></td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td><strong>haben</strong></td><td>telefonier<strong>t</strong></td></tr>
+    </tbody>
+  </table>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich habe gekocht gestern."</span> → <span class="wb-ok">✅ „Ich habe gestern gekocht."</span> — das Partizip MUSS ganz am Satzende stehen!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich habe gekocht gestern."</span> → <span class="wb-ok">✅ „Ich habe gestern gekocht."</span> — phân từ BẮT BUỘC phải đứng ở cuối câu!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich gekocht habe gestern."</span> → <span class="wb-ok">✅ „Ich habe gestern gekocht."</span> — „haben" MUSS auf Position 2 stehen!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich gekocht habe gestern."</span> → <span class="wb-ok">✅ „Ich habe gestern gekocht."</span> — „haben" BẮT BUỘC phải ở vị trí số 2!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Du hast gestern spielt Fußball."</span> → <span class="wb-ok">✅ „Du hast gestern Fußball gespielt."</span> — nach „haben" brauchst du das Partizip (gespielt), nicht die Präsensform!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Du hast gestern spielt Fußball."</span> → <span class="wb-ok">✅ „Du hast gestern Fußball gespielt."</span> — sau „haben" cần dùng phân từ (gespielt), không dùng dạng hiện tại!</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — Ergänze „haben" in der richtigen Form / Điền đúng dạng của „haben"</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die richtige Form von „haben".</div>
+    <div class="instr-vn">Điền đúng dạng của „haben".</div>
+    <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> gestern gekocht. <span class="vn-word">(Tôi đã nấu ăn hôm qua.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Du <span class="blank"></span> viel gelernt. <span class="vn-word">(Bạn đã học được nhiều.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Er <span class="blank"></span> Fußball gespielt. <span class="vn-word">(Anh ấy đã đá bóng.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Wir <span class="blank"></span> die Wohnung geputzt. <span class="vn-word">(Chúng tôi đã dọn dẹp căn hộ.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Ihr <span class="blank"></span> lange telefoniert. <span class="vn-word">(Các bạn đã gọi điện rất lâu.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Sie (Pl.) <span class="blank"></span> Musik gehört. <span class="vn-word">(Họ đã nghe nhạc.)</span></div>
+  </div>
+
+  <!-- Übung 1b -->
+  <div class="ubung-header">Übung 1b — Bilde ganze Perfekt-Sätze / Đặt câu hoàn chỉnh ở thì Perfekt</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bilde aus den Satzteilen einen vollständigen Perfekt-Satz — achte auf die Satzklammer (haben Position 2, Partizip am Ende)!</div>
+    <div class="instr-vn">Dùng các thành phần câu để đặt một câu Perfekt hoàn chỉnh — chú ý cấu trúc khung câu (haben ở vị trí 2, phân từ ở cuối câu)!</div>
+    <div class="fill-line"><span class="num">1.</span> ich / letztes Wochenende / tanzen <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">2.</span> er / gestern Morgen / arbeiten <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">3.</span> wir / vorgestern / lachen <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">4.</span> ihr / am Montag / eine Pizza kaufen <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">5.</span> du / gestern Abend / Musik hören <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">6.</span> Sie / letzte Woche / die Wohnung putzen <span class="blank-xl"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 19</span>
+    <span>Seite 2 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Kulturinfo 1 + Grammatik 2: Partizip-Bildung + Häufige Fehler + Übung 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 19</h1>
+      <h2>Wie bildet man das Partizip Perfekt? / Làm sao để cấu tạo phân từ quá khứ?</h2>
+    </div>
+    <div class="badge">A1 · Lektion 19</div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Perfekt statt Präteritum: die gesprochene Vergangenheit / Kiến thức văn hóa 1: dùng Perfekt thay cho Präteritum trong khẩu ngữ</div>
+    <div class="kb-de">Im Deutschen gibt es zwei Vergangenheitsformen: das Perfekt und das Präteritum. Im gesprochenen Alltag — am Telefon, beim Kaffee, in der Familie — benutzen die Deutschen (besonders im Süden) fast immer das <strong>Perfekt</strong>: „Ich habe gestern gekocht." Das Präteritum liest man dagegen vor allem in Zeitungen, Büchern und Nachrichten. Als A1-Lernende/r reicht das Perfekt für fast jede Alltagssituation völlig aus!</div>
+    <div class="kb-vn">Trong tiếng Đức có hai thì quá khứ: Perfekt (thì hoàn thành) và Präteritum (thì quá khứ đơn). Trong khẩu ngữ hằng ngày — khi gọi điện, uống cà phê, trò chuyện trong gia đình — người Đức (đặc biệt ở miền Nam) hầu như luôn dùng <strong>Perfekt</strong>: „Ich habe gestern gekocht." (Tôi đã nấu ăn hôm qua.) Trong khi đó, Präteritum chủ yếu xuất hiện trên báo chí, sách vở và tin tức. Là người học trình độ A1, dùng Perfekt là đủ cho hầu hết mọi tình huống hằng ngày! Một điểm thú vị: tiếng Việt không chia động từ theo thì như tiếng Đức, mà thường thêm từ „đã" trước động từ để diễn đạt việc đã xảy ra — vì vậy khái niệm phải „chia" động từ theo chủ ngữ và thời gian có thể là điều khá mới mẻ với người học Việt Nam.</div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Partizip-Bildung: regelmäßige Verben (ge-...-t) &amp; Sonderfall „-ieren" / Ngữ pháp 2: cấu tạo phân từ — động từ có quy tắc (ge-...-t) &amp; trường hợp đặc biệt „-ieren"</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Regelmäßige (schwache) Verben bilden das Partizip Perfekt ganz nach einem festen Muster: <strong>ge- + Verbstamm + -t</strong>.</div>
+    <div class="tip-vn">💡 Động từ có quy tắc (động từ yếu) cấu tạo phân từ quá khứ theo một khuôn mẫu cố định: <strong>ge- + gốc động từ + -t</strong>.</div>
+  </div>
+  <table class="vocab">
+    <colgroup><col style="width:25%"><col style="width:15%"><col style="width:20%"><col style="width:40%"></colgroup>
+    <thead><tr><th>Infinitiv</th><th>Stamm</th><th>Partizip</th><th>Muster</th></tr></thead>
+    <tbody>
+      <tr><td>kochen</td><td>koch-</td><td><strong>ge</strong>koch<strong>t</strong></td><td>ge- + koch + -t</td></tr>
+      <tr><td>lernen</td><td>lern-</td><td><strong>ge</strong>lern<strong>t</strong></td><td>ge- + lern + -t</td></tr>
+      <tr><td>arbeiten</td><td>arbeit-</td><td><strong>ge</strong>arbeit<strong>e</strong>t</td><td>ge- + arbeit + -et (Stamm endet auf -t!)</td></tr>
+    </tbody>
+  </table>
+  <div class="gram-box">
+    <h4>⭐ Sonderfall: Verben auf „-ieren" bekommen KEIN „ge-"! / Trường hợp đặc biệt: động từ tận cùng „-ieren" KHÔNG có „ge-"!</h4>
+    <div class="rule-de">telefonieren → <strong>telefoniert</strong> (nicht „getelefoniert"!) &nbsp;|&nbsp; studieren → <strong>studiert</strong> &nbsp;|&nbsp; reparieren → <strong>repariert</strong>. Diese Verben bilden das Partizip nur mit „-t" am Ende, ganz ohne „ge-"!</div>
+    <div class="rule-vn">telefonieren → telefoniert (không phải „getelefoniert"!); studieren → studiert; reparieren → repariert. Những động từ này chỉ thêm „-t" ở cuối để tạo phân từ, hoàn toàn không có „ge-"!</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich habe getelefoniert."</span> → <span class="wb-ok">✅ „Ich habe telefoniert."</span> — Verben auf „-ieren" bekommen kein „ge-"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich habe getelefoniert."</span> → <span class="wb-ok">✅ „Ich habe telefoniert."</span> — động từ tận cùng „-ieren" không có „ge-"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich habe gekaufen."</span> → <span class="wb-ok">✅ „Ich habe gekauft."</span> — das Partizip endet auf „-t", nicht auf „-en"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich habe gekaufen."</span> → <span class="wb-ok">✅ „Ich habe gekauft."</span> — phân từ kết thúc bằng „-t", không phải „-en"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Wir haben gearbeitt."</span> → <span class="wb-ok">✅ „Wir haben gearbeitet."</span> — wenn der Stamm auf „-t" endet, brauchst du ein zusätzliches „-e-" vor der Endung!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Wir haben gearbeitt."</span> → <span class="wb-ok">✅ „Wir haben gearbeitet."</span> — nếu gốc động từ kết thúc bằng „-t", cần thêm một „-e-" trước đuôi từ!</div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — Bilde das Partizip Perfekt / Cấu tạo phân từ quá khứ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bilde das passende Partizip Perfekt zum gegebenen Infinitiv.</div>
+    <div class="instr-vn">Cấu tạo phân từ quá khứ đúng cho nguyên mẫu đã cho.</div>
+    <div class="fill-line"><span class="num">1.</span> spielen → <span class="blank"></span> <span class="vn-word">(chơi, đá bóng)</span></div>
+    <div class="fill-line"><span class="num">2.</span> putzen → <span class="blank"></span> <span class="vn-word">(dọn dẹp)</span></div>
+    <div class="fill-line"><span class="num">3.</span> studieren → <span class="blank"></span> <span class="vn-word">(học đại học)</span></div>
+    <div class="fill-line"><span class="num">4.</span> hören → <span class="blank"></span> <span class="vn-word">(nghe)</span></div>
+    <div class="fill-line"><span class="num">5.</span> arbeiten → <span class="blank"></span> <span class="vn-word">(làm việc)</span></div>
+    <div class="fill-line"><span class="num">6.</span> tanzen → <span class="blank"></span> <span class="vn-word">(nhảy múa)</span></div>
+  </div>
+
+  <!-- Übung 2b -->
+  <div class="ubung-header">Übung 2b — Finde den Fehler und korrigiere ihn / Tìm lỗi sai và sửa lại</div>
+  <div class="ubung-body">
+    <div class="instr-de">Jeder Satz enthält einen Fehler beim Partizip Perfekt. Finde ihn und schreibe den korrekten Satz.</div>
+    <div class="instr-vn">Mỗi câu đều có một lỗi sai ở phân từ quá khứ. Hãy tìm ra và viết lại câu đúng.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich habe gestern getelefoniert. <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Du hast eine Pizza gekaufen. <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Wir haben lange gestudiert. <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Er hat den ganzen Tag gearbeitt. <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">5.</span> Wir haben die Wohnung geputzen. <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">6.</span> Ihr habt am Wochenende viel gelachen. <span class="blank-xl"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 19</span>
+    <span>Seite 3 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (GAME: Perfekt-Casino + Kulturinfo 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 19</h1>
+      <h2>Spiel: Das Perfekt-Casino / Trò chơi: Sòng bạc thì Perfekt</h2>
+    </div>
+    <div class="badge">A1 · Lektion 19</div>
+  </div>
+
+  <!-- Game: Perfekt-Casino -->
+  <div class="game-header">🎲 GAME: Das Perfekt-Casino / Trò chơi: Sòng bạc thì Perfekt</div>
+  <div class="game-body">
+    <div class="instr-de">Würfle dreimal (oder wähle dreimal eine Zahl von 1–6) — einmal für jede Spalte. Bilde dann blitzschnell den korrekten Perfekt-Satz aus Subjekt + Zeitangabe + Aktivität!</div>
+    <div class="instr-vn">Gieo xúc xắc ba lần (hoặc chọn ba số từ 1–6) — mỗi cột một lần. Sau đó nhanh chóng ghép thành câu Perfekt đúng gồm Chủ ngữ + Trạng từ thời gian + Hoạt động!</div>
+    <div class="wuerfel-grid drei-spalten">
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel 1: Subjekt</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> ich</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> du</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> er/sie</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> wir</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> ihr</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> Sie</div>
+      </div>
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel 2: Zeitangabe</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> gestern</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> am Wochenende</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> letzte Woche</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> gestern Morgen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> vorgestern</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> am Montag</div>
+      </div>
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel 3: Aktivität</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> kochen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> Fußball spielen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> Deutsch lernen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> Pizza kaufen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> die Wohnung putzen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> telefonieren</div>
+      </div>
+    </div>
+
+    <div class="punkte-box">
+      <div class="punkte-item">⭐ <span class="pk-zahl">1 Punkt</span> pro korrektem Perfekt-Satz</div>
+      <div class="punkte-item">🎁 <span class="pk-zahl">+5 Bonus-Punkte</span> bei fehlerfreiem „-ieren"-Verb (telefonieren!)</div>
+    </div>
+
+    <div class="instr-de" style="margin-bottom:3px;">Vorgegebene Würfe — bilde den Perfekt-Satz: <span class="vn-word" style="font-style:normal;">Điền theo các số đã cho, đặt thành câu Perfekt:</span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">1.</span><span class="wk-set"><span class="wuerfel-zahl">2</span><span class="wuerfel-zahl">5</span><span class="wuerfel-zahl">3</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">2.</span><span class="wk-set"><span class="wuerfel-zahl">1</span><span class="wuerfel-zahl">1</span><span class="wuerfel-zahl">6</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">3.</span><span class="wk-set"><span class="wuerfel-zahl">4</span><span class="wuerfel-zahl">3</span><span class="wuerfel-zahl">5</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">4.</span><span class="wk-set" style="color:#9a3412; font-weight:700; font-size:9.5px;">🎲 Freie Runde — würfle selbst!</span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="instr-de" style="margin-top:4px;">🪞 Selbsteinschätzung (kein Partner nötig!): <span class="vn-word" style="font-style:normal;">Tự đánh giá (không cần bạn cùng chơi!):</span></div>
+    <div class="fill-line">Wie viele Punkte hast du erreicht? <span class="blank"></span> / Wie viele Bonus-Punkte? <span class="blank"></span></div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Der deutsche Sonntag / Kiến thức văn hóa 2: ngày Chủ nhật ở Đức</div>
+    <div class="kb-de">In Deutschland sind die meisten Geschäfte am Sonntag geschlossen — das regelt das sogenannte Ladenschlussgesetz. Der Sonntag gilt traditionell als Ruhetag: Man besucht die Familie, macht einen Spaziergang, kocht gemeinsam einen „Sonntagsbraten" oder trifft Freunde zum Kaffee. Deshalb ist die Frage „Was hast du am Wochenende gemacht?" am Montag im Büro oder in der Schule fast schon ein Ritual!</div>
+    <div class="kb-vn">Ở Đức, hầu hết các cửa hàng đều đóng cửa vào Chủ nhật — điều này được quy định bởi Luật đóng cửa hàng (Ladenschlussgesetz). Chủ nhật theo truyền thống được xem là ngày nghỉ ngơi: người ta đến thăm gia đình, đi dạo, cùng nấu món „thịt nướng Chủ nhật" (Sonntagsbraten), hoặc gặp bạn bè uống cà phê. Vì vậy câu hỏi „Was hast du am Wochenende gemacht?" (Cuối tuần bạn đã làm gì?) vào sáng thứ Hai ở văn phòng hay trường học gần như đã trở thành một nghi thức chào hỏi quen thuộc! Điều này khá khác với Việt Nam, nơi nhiều cửa hàng, chợ và quán ăn vẫn mở cửa bình thường vào Chủ nhật, và ngày này thường được dùng để đi chơi, mua sắm hoặc tụ họp gia đình ở ngoài hàng quán hơn là nghỉ ngơi ở nhà.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 19</span>
+    <span>Seite 4 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 5 (Dialog + Lesetext + MC) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 19</h1>
+      <h2>Dialog &amp; Lesetext / Hội thoại &amp; Bài đọc hiểu</h2>
+    </div>
+    <div class="badge">A1 · Lektion 19</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Mia:</span>Hallo Paul! Was hast du gestern gemacht?</div>
+    <div class="dialog-line"><span class="speaker">Paul:</span>Hallo Mia! Ich habe den ganzen Tag gearbeitet, und am Abend habe ich gekocht.</div>
+    <div class="dialog-line"><span class="speaker">Mia:</span>Was hast du gekocht?</div>
+    <div class="dialog-line"><span class="speaker">Paul:</span>Nur Nudeln mit Tomatensoße, ganz einfach. Und du, was hast du gemacht?</div>
+    <div class="dialog-line"><span class="speaker">Mia:</span>Ich habe Deutsch gelernt und dann mit meiner Schwester telefoniert.</div>
+    <div class="dialog-line"><span class="speaker">Paul:</span>Wie lange habt ihr telefoniert?</div>
+    <div class="dialog-line"><span class="speaker">Mia:</span>Fast eine Stunde! Wir haben viel gelacht.</div>
+    <div class="dialog-line"><span class="speaker">Paul:</span>Das klingt schön. Und am Wochenende, hast du auch etwas geplant?</div>
+    <div class="dialog-line"><span class="speaker">Mia:</span>Ja, am Samstag putze ich die Wohnung, und am Sonntag spiele ich Fußball mit Freunden.</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Julia hat am Samstag einen aufregenden Tag gehabt. Am Morgen hat sie zuerst die Wohnung geputzt, denn zur Mittagszeit hat sie Besuch erwartet. Danach hat sie eingekauft: Sie hat Gemüse, Nudeln und einen Kuchen gekauft. Um 11 Uhr hat sie ein großes Mittagessen für ihre Familie gekocht. Um 11:30 Uhr haben ihre Eltern mit Julia telefoniert und gesagt, dass sie eine halbe Stunde später kommen. Julia hat die Zeit genutzt, noch schnell Musik gehört und ein bisschen getanzt. Um 12 Uhr hat es endlich an der Tür geklingelt. Alle haben zusammen das Mittagessen probiert und Julias Kochkünste gelobt. Am Nachmittag hat die Familie noch den Kuchen probiert und stundenlang zusammen gelacht. Am Abend hat Julia noch kurz mit der Oma telefoniert und ihr von dem schönen Tag erzählt. Danach hat sie noch etwas für die Deutschprüfung gelernt. „Was für ein perfekter Samstag", hat sie zu sich selbst gesagt.
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Was hat Julia zuerst am Morgen gemacht?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie hat gekocht</span>
+      <span><span class="mc-kreis"></span> b) sie hat die Wohnung geputzt</span>
+      <span><span class="mc-kreis"></span> c) sie hat telefoniert</span>
+    </div>
+    <div class="mc-frage">2. Was hat Julia eingekauft?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Gemüse, Nudeln und einen Kuchen</span>
+      <span><span class="mc-kreis"></span> b) nur Getränke</span>
+      <span><span class="mc-kreis"></span> c) Blumen für die Oma</span>
+    </div>
+    <div class="mc-frage">3. Um wie viel Uhr hat Julia das Mittagessen gekocht?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) um 10 Uhr</span>
+      <span><span class="mc-kreis"></span> b) um 11 Uhr</span>
+      <span><span class="mc-kreis"></span> c) um 13 Uhr</span>
+    </div>
+    <div class="mc-frage">4. Warum haben Julias Eltern mit ihr telefoniert?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie kommen später</span>
+      <span><span class="mc-kreis"></span> b) sie kommen gar nicht</span>
+      <span><span class="mc-kreis"></span> c) sie haben das Essen vergessen</span>
+    </div>
+    <div class="mc-frage">5. Was hat Julia gemacht, während sie gewartet hat?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie hat die Wohnung noch einmal geputzt</span>
+      <span><span class="mc-kreis"></span> b) sie hat Musik gehört und getanzt</span>
+      <span><span class="mc-kreis"></span> c) sie hat gearbeitet</span>
+    </div>
+    <div class="mc-frage">6. Mit wem hat Julia am Abend telefoniert?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) mit dem Nachbarn</span>
+      <span><span class="mc-kreis"></span> b) mit der Oma</span>
+      <span><span class="mc-kreis"></span> c) mit Julias Chef</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Was hast du letztes Wochenende gemacht? Erzähle mindestens 3 Aktivitäten im Perfekt.</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Cuối tuần trước bạn đã làm gì? Hãy kể ít nhất 3 hoạt động ở thì Perfekt.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 19</span>
+    <span>Seite 5 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 6 (Freies Sprechen + Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 19</h1>
+      <h2>Freies Sprechen, Hausaufgaben &amp; Antworten / Nói tự do, bài tập về nhà &amp; đáp án</h2>
+    </div>
+    <div class="badge">A1 · Lektion 19</div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">gestern</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was hast du gestern gemacht?</div>
+      <div class="anweisung-vn">Hôm qua bạn đã làm gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">letztes Wochenende</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was hast du letztes Wochenende gekocht oder gekauft?</div>
+      <div class="anweisung-vn">Cuối tuần trước bạn đã nấu món gì hoặc mua gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">-ieren-Verb</div>
+      <div class="prompt-row"><span class="prompt-tag satz">Satz</span></div>
+      <div class="anweisung-de">Bilde einen Perfekt-Satz mit „telefonieren" oder „studieren".</div>
+      <div class="anweisung-vn">Đặt một câu Perfekt với „telefonieren" hoặc „studieren".</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">letzte Woche</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was hast du letzte Woche gelernt?</div>
+      <div class="anweisung-vn">Tuần trước bạn đã học gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Partizip-Liste lernen / Học danh sách phân từ:</strong> Schreibe alle Verben aus dieser Lektion mit ihrem Partizip Perfekt auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết ra giấy tất cả động từ trong bài này cùng phân từ quá khứ của chúng — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">✏️ <strong>Meine Woche im Perfekt / Viết về tuần của tôi ở thì Perfekt:</strong> Schreibe 5–6 Sätze im Perfekt über deinen letzten Tag oder dein letztes Wochenende — benutze mindestens 5 verschiedene Verben und mindestens 1× ein „-ieren"-Verb.
+      <div class="ha-vn">Viết 5–6 câu ở thì Perfekt kể về ngày gần đây nhất hoặc cuối tuần trước của bạn — dùng ít nhất 5 động từ khác nhau và ít nhất 1 lần một động từ „-ieren".</div>
+    </div>
+    <div class="ha-item">🎲 <strong>Perfekt-Casino zu Hause / Chơi Sòng bạc Perfekt ở nhà:</strong> Spiele das Würfelspiel von Seite 4 noch dreimal mit neuen Kombinationen und zähle deine Punkte.
+      <div class="ha-vn">Chơi trò xúc xắc ở trang 4 thêm ba lần nữa với các tổ hợp mới và tính điểm của bạn.</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 18):</strong> 1. Meine &nbsp; 2. schmerzen &nbsp; 3. Öffnen Sie den Mund!</p>
+    <p><strong>Übung 1 (haben-Form):</strong> 1. habe &nbsp; 2. hast &nbsp; 3. hat &nbsp; 4. haben &nbsp; 5. habt &nbsp; 6. haben</p>
+    <p><strong>Übung 1b (ganze Perfekt-Sätze):</strong> 1. Ich habe letztes Wochenende getanzt. &nbsp; 2. Er hat gestern Morgen gearbeitet. &nbsp; 3. Wir haben vorgestern gelacht. &nbsp; 4. Ihr habt am Montag eine Pizza gekauft. &nbsp; 5. Du hast gestern Abend Musik gehört. &nbsp; 6. Sie haben letzte Woche die Wohnung geputzt.</p>
+    <p><strong>Übung 2 (Partizip bilden):</strong> 1. gespielt &nbsp; 2. geputzt &nbsp; 3. studiert &nbsp; 4. gehört &nbsp; 5. gearbeitet &nbsp; 6. getanzt</p>
+    <p><strong>Übung 2b (Fehler korrigieren):</strong> 1. Ich habe gestern telefoniert. (kein „ge-" bei -ieren-Verben) &nbsp; 2. Du hast eine Pizza gekauft. (Partizip endet auf -t, nicht -en) &nbsp; 3. Wir haben lange studiert. (kein „ge-" bei -ieren-Verben) &nbsp; 4. Er hat den ganzen Tag gearbeitet. (Stamm endet auf -t → zusätzliches -e- nötig) &nbsp; 5. Wir haben die Wohnung geputzt. (Partizip endet auf -t, nicht -en) &nbsp; 6. Ihr habt am Wochenende viel gelacht. (Partizip endet auf -t, nicht -en)</p>
+    <p><strong>Perfekt-Casino, Beispiele:</strong> 1. (2,5,3) Ihr habt vorgestern Deutsch gelernt. &nbsp; 2. (1,1,6) Ich habe gestern telefoniert. &nbsp; 3. (4,3,5) Wir haben letzte Woche die Wohnung geputzt.</p>
+    <p><strong>Leseverständnis:</strong> 1. b) sie hat die Wohnung geputzt &nbsp; 2. a) Gemüse, Nudeln und einen Kuchen &nbsp; 3. b) um 11 Uhr &nbsp; 4. a) sie kommen später &nbsp; 5. b) sie hat Musik gehört und getanzt &nbsp; 6. b) mit der Oma</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Gestern habe ich gearbeitet und dann gekocht. &nbsp; Karte 2: Letztes Wochenende habe ich Pizza gekauft. &nbsp; Karte 3: Ich habe gestern mit meiner Mutter telefoniert. &nbsp; Karte 4: Letzte Woche habe ich viele neue Wörter gelernt.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 19 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 6 / 6</span>
+  </div>
+</div>
+
+</body>
+</html>

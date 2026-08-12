@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 13</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 7mm 12mm 3mm 12mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.14; font-size: 10.7px; }
+.compact .doc-header { padding-bottom: 2px; margin-bottom: 4px; }
+.compact .section-title { margin: 4px 0 2px 0; }
+.compact table { margin-bottom: 2px; }
+.compact table.vocab th, .compact table.vocab td { padding: 1.5px 5px; }
+.compact .gram-box { padding: 3px 7px; margin-bottom: 2px; }
+.compact .tip-box { padding: 2px 6px; margin: 1px 0; }
+.compact .warn-box { padding: 2px 6px; margin: 1px 0 3px 0; }
+.compact .ubung-header { padding: 1px 7px; }
+.compact .ubung-body { padding: 3px 7px; margin-bottom: 2px; }
+.compact .fill-line { margin-bottom: 0px; }
+.compact .footer { margin-top: 2px; padding-top: 1px; }
+.compact .phon-box { padding: 2px 7px; margin-bottom: 2px; }
+.compact .kultur-box { padding: 3px 8px; margin: 2px 0 3px 0; }
+.compact .dialog-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .lese-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .mc-block { margin-bottom: 2px; }
+.compact .mc-optionen { margin-bottom: 3px; }
+.compact .ha-box { padding: 3px 8px; }
+.compact .antworten { padding: 3px 8px; }
+.compact .wiederholung-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .karten-grid { margin-top: 2px; gap: 5px; }
+.compact .sprech-karte { padding: 4px 6px; }
+.compact .sprech-karte .karte-num { padding: 1px 6px; margin-bottom: 2px; }
+.compact .sprech-karte .wort-pill { font-size: 11px; padding: 2px 4px; margin-bottom: 2px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 2px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 2px; }
+.compact .wortsalat-item { margin-bottom: 3px; }
+.compact .baukasten-box { padding: 4px 9px; margin-bottom: 3px; }
+.compact .brief-karte { padding: 5px 8px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .game-header: Spielelement ===== */
+.game-header { background: #ea580c; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.game-body { border: 0.5px solid #fdba74; border-top: none; border-radius: 0 0 5px 5px; padding: 6px 8px; margin-bottom: 4px; background: #fff7ed; }
+.game-body .instr-de { font-size: 10px; color: #7c2d12; font-style: italic; }
+.game-body .instr-vn { font-size: 9.5px; color: #c2410c; font-style: italic; margin-bottom: 4px; }
+
+/* ===== .wuerfel-box: Würfel-Legende (wiederverwendet aus L12) ===== */
+.wuerfel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 4px 0 6px 0; }
+.wuerfel-spalte { background: white; border: 1px solid #fdba74; border-radius: 8px; padding: 6px 8px; }
+.wuerfel-spalte .ws-title { font-size: 9.5px; font-weight: 700; color: #9a3412; text-align: center; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.3px; }
+.wuerfel-zeile { display: flex; align-items: center; gap: 5px; font-size: 10px; margin-bottom: 2px; }
+.wuerfel-zahl { display: inline-flex; align-items: center; justify-content: center; width: 15px; height: 15px; background: #ea580c; color: white; font-weight: 700; font-size: 9px; border-radius: 4px; flex-shrink: 0; }
+.wuerfel-kombi { display: flex; align-items: center; gap: 6px; font-size: 10.5px; margin-bottom: 3px; flex-wrap: wrap; }
+.wuerfel-kombi .wk-num { font-weight: 700; color: #64748b; min-width: 14px; }
+.wuerfel-kombi .wk-set { display: inline-flex; gap: 3px; }
+.wortsalat-arrow { color: #94a3b8; font-weight: 700; }
+
+/* ===== .baukasten-box & .brief-karte: Schreib-Format (wiederverwendet aus L6/L12) ===== */
+.baukasten-box { border: 1px solid #fde68a; border-radius: 8px; padding: 7px 12px; background: #fffbeb; margin-bottom: 6px; }
+.baukasten-title { font-size: 10.5px; font-weight: 700; color: #92400e; margin-bottom: 4px; }
+.baukasten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px 10px; }
+.baukasten-kategorie-label { font-size: 9px; font-weight: 700; text-transform: uppercase; color: #b45309; margin-bottom: 3px; border-bottom: 1px solid #fde68a; padding-bottom: 2px; }
+.baukasten-phrase { font-size: 10px; color: #1a1a1a; margin-bottom: 4px; background: white; border: 1px solid #fde68a; border-radius: 5px; padding: 3px 6px; }
+.baukasten-phrase .bp-vn { display: block; color: #b45309; font-style: italic; font-size: 9px; margin-top: 1px; }
+.brief-karte { border: 1.5px dashed #94a3b8; border-radius: 8px; padding: 8px 12px; background: #fafafa; min-height: 145px; }
+.brief-karte .bk-header { font-size: 10px; font-weight: 700; color: #475569; margin-bottom: 6px; display: flex; justify-content: space-between; }
+.brief-lines { border-bottom: 1px solid #cbd5e1; height: 16px; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Phonetik + Lernziele + Wortschatz Freizeit + Sport) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 13</h1>
+      <h2>Freizeit &amp; Fähigkeiten</h2>
+      <h2>Thời gian rảnh &amp; Khả năng</h2>
+    </div>
+    <div class="badge">A1 · Lektion 13</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 12 / Ôn tập Bài 12</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: Das Modalverb-Sandwich mit „müssen" / Khởi động ngữ pháp: bánh sandwich với „müssen"</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">Sandwich</div>
+        <div class="wh-mund">Ergänze: Ich ___ am Montag früh ___. (aufstehen, müssen)</div>
+        <div class="wh-beispiel">Điền cấu trúc sandwich với „müssen"</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Position?</div>
+        <div class="wh-mund">Wo steht das Vollverb im Modalverb-Sandwich?</div>
+        <div class="wh-beispiel">Động từ chính đứng ở đâu trong cấu trúc sandwich?</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Richtig?</div>
+        <div class="wh-mund">„Ich muss aufstehe um 6 Uhr." — ist das richtig?</div>
+        <div class="wh-beispiel">Câu này đúng không? Nếu sai, sửa thế nào?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Über Freizeitaktivitäten und Sport sprechen <span class="vn">— nói về hoạt động giải trí và thể thao</span></p>
+    <p class="de">✔ Das Modalverb „können" konjugieren und im Modalverb-Sandwich verwenden, um Fähigkeiten auszudrücken <span class="vn">— chia „können" và dùng trong cấu trúc sandwich để diễn đạt khả năng</span></p>
+    <p class="de">✔ „mögen" korrekt verwenden, um Vorlieben auszudrücken — mit Akkusativ-Objekt, NICHT mit Infinitiv! <span class="vn">— dùng đúng „mögen" để diễn đạt sở thích — với tân ngữ Akkusativ, KHÔNG phải động từ nguyên mẫu!</span></p>
+    <p class="de">✔ Deinen ersten eigenen Brief schreiben: eine informelle Party-Einladung! <span class="vn">— viết lá thư đầu tiên của riêng bạn: một thiệp mời tiệc thân mật!</span></p>
+  </div>
+
+  <!-- Legende -->
+  <div class="section-title">🎨 Farbkodierung / Mã màu quán từ</div>
+  <div class="legend">
+    <div class="legend-item"><span class="der">der</span> maskulin / giống đực</div>
+    <div class="legend-item"><span class="die">die</span> feminin / giống cái</div>
+    <div class="legend-item"><span class="das">das</span> neutral / giống trung</div>
+    <div class="legend-item"><span class="warn">⚠️</span> unregelmäßig / bất quy tắc</div>
+  </div>
+
+  <!-- Phonetik -->
+  <div class="section-title">🔊 Aussprache-Minute / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Der Umlaut „ö": kurz vs. lang — „können" vs. „mögen" / Nguyên âm biến dạng „ö": ngắn và dài</div>
+    <div class="phon-de">Unsere beiden neuen Modalverben enthalten den Umlaut „ö" — aber in unterschiedlicher Länge! „können" hat ein kurzes, geschlossenes „ö", „mögen" dagegen ein langes, gedehntes „ö". Runde die Lippen wie bei „o", aber sage gleichzeitig „e"!</div>
+    <div class="phon-vn">Hai động từ khiếm khuyết mới của chúng ta đều chứa nguyên âm biến dạng „ö" — nhưng độ dài khác nhau! „können" có „ö" ngắn, gọn; „mögen" thì có „ö" dài, kéo hơi. Mím môi tròn như phát âm „o", nhưng đồng thời lưỡi phát âm „ê"!<br>⚠️ Mẹo cho người Việt: tiếng Việt không có âm „ö" — gần nhất là âm „ơ", nhưng phải mím môi tròn hơn nhiều so với khi nói "ơ" bình thường.</div>
+    <div class="phon-beispiele">Beispiele: k<strong>ö</strong>nnen (đọc: "KƠN-nờn", ngắn) · m<strong>ö</strong>gen (đọc: "MƠƠ-gờn", dài) · k<strong>ö</strong>nn<strong>t</strong> (đọc: "kơnt") · m<strong>ö</strong>ch<strong>t</strong>e (đọc: "MƠCH-tơ")</div>
+  </div>
+
+  <!-- Wortschatz Freizeitaktivitäten -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Freizeitaktivitäten / Bảng từ vựng: Hoạt động giải trí</div>
+  <table class="vocab">
+    <colgroup><col style="width:20%"><col style="width:20%"><col style="width:35%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Aktivität</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🎵 Musik hören</td><td class="phonetik">MU-zik HƠ-rơn</td><td>Ich höre gerne Musik. <span class="vn-word">Tôi thích nghe nhạc.</span></td><td class="vn-word">nghe nhạc</td></tr>
+      <tr><td>📖 lesen</td><td class="phonetik">LÊ-zơn</td><td>Er lies<strong>t</strong> gerne Bücher. <span class="vn-word">Anh ấy thích đọc sách.</span></td><td class="vn-word">đọc sách</td></tr>
+      <tr><td>🍳 kochen</td><td class="phonetik">KO-khờn</td><td>Wir kochen gerne zusammen. <span class="vn-word">Chúng tôi thích nấu ăn cùng nhau.</span></td><td class="vn-word">nấu ăn</td></tr>
+      <tr><td>🎨 malen</td><td class="phonetik">MA-lờn</td><td>Sie mal<strong>t</strong> gerne Bilder. <span class="vn-word">Cô ấy thích vẽ tranh.</span></td><td class="vn-word">vẽ tranh</td></tr>
+      <tr><td>💃 tanzen</td><td class="phonetik">TAN-tsờn</td><td>Ich tanze sehr gerne. <span class="vn-word">Tôi rất thích nhảy múa.</span></td><td class="vn-word">nhảy múa</td></tr>
+      <tr><td>📷 fotografieren</td><td class="phonetik">phô-tô-gra-PHI-rờn</td><td>Er fotografiert gerne die Natur. <span class="vn-word">Anh ấy thích chụp ảnh thiên nhiên.</span></td><td class="vn-word">chụp ảnh</td></tr>
+      <tr><td>🎬 ins Kino gehen</td><td class="phonetik">ins KI-nô GHÊ-ơn</td><td>Wir gehen gerne ins Kino. <span class="vn-word">Chúng tôi thích đi xem phim.</span></td><td class="vn-word">đi xem phim</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Wortschatz Sport -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Sport / Bảng từ vựng: Thể thao</div>
+  <table class="vocab">
+    <colgroup><col style="width:20%"><col style="width:20%"><col style="width:35%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Sportart</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>⚽ <span class="der">der</span>Fußball</td><td class="phonetik">PHUX-ban</td><td>Er spiel<strong>t</strong> gerne Fußball. <span class="vn-word">Anh ấy thích chơi bóng đá.</span></td><td class="vn-word">bóng đá</td></tr>
+      <tr><td>🎾 <span class="das">das</span>Tenni<strong>s</strong></td><td class="phonetik">TE-nis</td><td>Sie spiel<strong>t</strong> gerne Tennis. <span class="vn-word">Cô ấy thích chơi quần vợt.</span></td><td class="vn-word">quần vợt</td></tr>
+      <tr><td>🏊 <span class="das">das</span>Schwimmen</td><td class="phonetik">SVIM-mờn</td><td>Ich gehe gerne schwimmen. <span class="vn-word">Tôi thích đi bơi.</span></td><td class="vn-word">bơi lội</td></tr>
+      <tr><td>🧘 <span class="das">das</span>Yoga</td><td class="phonetik">IÔ-ga</td><td>Sie mach<strong>t</strong> jeden Tag Yoga. <span class="vn-word">Cô ấy tập yoga mỗi ngày.</span></td><td class="vn-word">yoga</td></tr>
+      <tr><td>🏃 joggen</td><td class="phonetik">DJO-gờn</td><td>Wir joggen gerne im Park. <span class="vn-word">Chúng tôi thích chạy bộ trong công viên.</span></td><td class="vn-word">chạy bộ</td></tr>
+      <tr><td>🏀 <span class="der">der</span>Basketball</td><td class="phonetik">BAS-kợt-ban</td><td>Er spiel<strong>t</strong> gerne Basketball. <span class="vn-word">Anh ấy thích chơi bóng rổ.</span></td><td class="vn-word">bóng rổ</td></tr>
+      <tr><td>🚴 Ra<strong>d</strong> fahren</td><td class="phonetik">rat FA-rờn</td><td>Ich fahre sehr gerne Rad. <span class="vn-word">Tôi rất thích đi xe đạp.</span></td><td class="vn-word">đi xe đạp</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 13</span>
+    <span>Seite 1 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Verben-Tabelle können + Grammatik 1 + Häufige Fehler + Übung 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 13</h1>
+      <h2>Das Modalverb „können" — Fähigkeiten ausdrücken / Động từ khiếm khuyết „können" — diễn đạt khả năng</h2>
+    </div>
+    <div class="badge">A1 · Lektion 13</div>
+  </div>
+
+  <!-- Verben-Tabelle -->
+  <div class="section-title">🔧 Verben-Tabelle: Modalverb „können" ⚠️ — vollständig konjugiert / Bảng động từ: „können" ⚠️ — chia đầy đủ</div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Pronomen</th><th>können</th><th>Beispiel / Câu ví dụ</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td><strong>kann</strong></td><td class="beispiel" style="text-align:left;">Ich kann gut kochen. <span class="vn-word">Tôi nấu ăn giỏi.</span></td></tr>
+      <tr><td class="pronomen">du</td><td><strong>kannst</strong></td><td class="beispiel" style="text-align:left;">Du kannst gut tanzen. <span class="vn-word">Bạn nhảy giỏi.</span></td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td><strong>kann</strong></td><td class="beispiel" style="text-align:left;">Er kann Tennis spielen. <span class="vn-word">Anh ấy biết chơi quần vợt.</span></td></tr>
+      <tr><td class="pronomen">wir</td><td><strong>können</strong></td><td class="beispiel" style="text-align:left;">Wir können zusammen joggen. <span class="vn-word">Chúng tôi có thể chạy bộ cùng nhau.</span></td></tr>
+      <tr><td class="pronomen">ihr</td><td><strong>könnt</strong></td><td class="beispiel" style="text-align:left;">Ihr könnt gerne kommen. <span class="vn-word">Các bạn có thể đến.</span></td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td><strong>können</strong></td><td class="beispiel" style="text-align:left;">Sie können gut schwimmen. <span class="vn-word">Họ / Ông bà bơi giỏi.</span></td></tr>
+    </tbody>
+  </table>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — „können" im Modalverb-Sandwich / Ngữ pháp 1: „können" trong cấu trúc sandwich</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 „können" drückt eine <strong>Fähigkeit</strong> aus (= etwas tun können). Genau wie „müssen" aus Lektion 12 funktioniert es im <strong>Modalverb-Sandwich</strong>: „können" konjugiert auf <strong>Position 2</strong>, das Vollverb im <strong>Infinitiv</strong> ganz am <strong>Satzende</strong>. Beispiel: „<strong style="color:#1e40af;">Ich kann</strong> [ 🥬 sehr gut 🥬 ] <strong style="color:#b45309;">Tennis spielen</strong>."</div>
+    <div class="tip-vn">💡 „können" diễn đạt <strong>khả năng</strong> (= có thể làm gì đó). Giống như „müssen" ở Bài 12, nó cũng theo cấu trúc <strong>sandwich động từ khiếm khuyết</strong>: „können" đã chia đứng ở <strong>vị trí 2</strong>, động từ chính ở dạng <strong>nguyên mẫu</strong> nằm hẳn ở <strong>cuối câu</strong>.</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich könne gut kochen."</span> → <span class="wb-ok">✅ „Ich kann gut kochen."</span> — „können" ist unregelmäßig: ich kann, nicht „könne"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich könne gut kochen."</span> → <span class="wb-ok">✅ „Ich kann gut kochen."</span> — „können" là động từ bất quy tắc: ich kann, không phải „könne"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich kann tanze gut."</span> → <span class="wb-ok">✅ „Ich kann gut tanzen."</span> — das Vollverb bleibt im Infinitiv und steht ganz am Satzende!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich kann tanze gut."</span> → <span class="wb-ok">✅ „Ich kann gut tanzen."</span> — động từ chính giữ nguyên dạng nguyên mẫu và đứng hẳn ở cuối câu!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich kann fernsehe gerne."</span> → <span class="wb-ok">✅ „Ich kann gerne fernsehen."</span> — trennbare Verben bleiben mit Modalverb ZUSAMMEN (aus Lektion 12)!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich kann fernsehe gerne."</span> → <span class="wb-ok">✅ „Ich kann gerne fernsehen."</span> — động từ tách được khi đi cùng động từ khiếm khuyết vẫn giữ nguyên vẹn (đã học ở Bài 12)!</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — Sandwich-Check: Richtig oder falsch? / Kiểm tra sandwich: đúng hay sai?</div>
+  <div class="ubung-body">
+    <div class="instr-de">Prüfe jeden Satz: Ist das Modalverb-Sandwich korrekt gebaut? Wenn nicht, korrigiere den Satz komplett.</div>
+    <div class="instr-vn">Kiểm tra từng câu: cấu trúc sandwich đã đúng chưa? Nếu sai, hãy sửa lại toàn bộ câu.</div>
+    <div class="fill-line"><span class="num">1.</span> „Ich kann gut schwimmen." <span class="vn-word">(Tôi bơi giỏi.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">2.</span> „Du kannst spielst Tennis." <span class="vn-word">(Bạn biết chơi quần vợt.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">3.</span> „Er können gut kochen." <span class="vn-word">(Anh ấy nấu ăn giỏi.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">4.</span> „Wir könnt zusammen joggen." <span class="vn-word">(Chúng tôi có thể chạy bộ cùng nhau.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">5.</span> „Ihr könnt tanze gerne." <span class="vn-word">(Các bạn có thể thoải mái nhảy múa.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">6.</span> „Er kann fernsehe gerne." <span class="vn-word">(Anh ấy có thể thoải mái xem ti vi.)</span> → <span class="blank-xl"></span></div>
+    <div class="tip-box">
+      <div class="tip-de">💡 Tipp: Nur EIN Satz ist schon ein perfekt gebautes Sandwich — die anderen fünf brauchen deine Korrektur!</div>
+      <div class="tip-vn">💡 Mẹo nhỏ: chỉ có MỘT câu đã là sandwich hoàn chỉnh — năm câu còn lại cần bạn sửa!</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 13</span>
+    <span>Seite 2 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Verben-Tabelle mögen + Grammatik 2 + Häufige Fehler + GAME + Kulturinfo 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 13</h1>
+      <h2>Das Verb „mögen" — Vorlieben ausdrücken / Động từ „mögen" — diễn đạt sở thích</h2>
+    </div>
+    <div class="badge">A1 · Lektion 13</div>
+  </div>
+
+  <!-- Verben-Tabelle -->
+  <div class="section-title">🔧 Verben-Tabelle: „mögen" ⚠️ — vollständig konjugiert / Bảng động từ: „mögen" ⚠️ — chia đầy đủ</div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Pronomen</th><th>mögen</th><th>Beispiel / Câu ví dụ</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td><strong>mag</strong></td><td class="beispiel" style="text-align:left;">Ich mag Musik. <span class="vn-word">Tôi thích âm nhạc.</span></td></tr>
+      <tr><td class="pronomen">du</td><td><strong>magst</strong></td><td class="beispiel" style="text-align:left;">Du magst Sport. <span class="vn-word">Bạn thích thể thao.</span></td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td><strong>mag</strong></td><td class="beispiel" style="text-align:left;">Er mag Fußball. <span class="vn-word">Anh ấy thích bóng đá.</span></td></tr>
+      <tr><td class="pronomen">wir</td><td><strong>mögen</strong></td><td class="beispiel" style="text-align:left;">Wir mögen das Kino. <span class="vn-word">Chúng tôi thích rạp chiếu phim.</span></td></tr>
+      <tr><td class="pronomen">ihr</td><td><strong>mögt</strong></td><td class="beispiel" style="text-align:left;">Ihr mögt Pizza. <span class="vn-word">Các bạn thích pizza.</span></td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td><strong>mögen</strong></td><td class="beispiel" style="text-align:left;">Sie mögen Yoga. <span class="vn-word">Họ / Ông bà thích yoga.</span></td></tr>
+    </tbody>
+  </table>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — „mögen" + Akkusativ (KEIN Infinitiv!) / Ngữ pháp 2: „mögen" + Akkusativ (KHÔNG có nguyên mẫu!)</div>
+  <div class="tip-box">
+    <div class="tip-de">⚠️ Wichtiger Unterschied zu „können"! „mögen" steht meistens mit einem <strong>Nomen im Akkusativ</strong>, NICHT mit einem Infinitiv: „Ich mag Musik." (nicht „Ich mag Musik hören"!) Möchtest du ein Verb ausdrücken, benutze stattdessen „gerne" + Verb: „Ich höre gerne Musik."</div>
+    <div class="tip-vn">⚠️ Khác biệt quan trọng so với „können"! „mögen" thường đi với <strong>danh từ ở Akkusativ</strong>, KHÔNG đi với động từ nguyên mẫu: „Ich mag Musik." (không phải „Ich mag Musik hören"!). Nếu muốn diễn đạt một hành động, hãy dùng „gerne" + động từ thay thế: „Ich höre gerne Musik."</div>
+  </div>
+  <div class="gram-box">
+    <h4>🔁 Rückblick: „mögen" vs. „möchten" (Lektion 9) / Ôn lại: „mögen" và „möchten" (Bài 9)</h4>
+    <div class="rule-de">„mögen" = allgemeine Vorliebe: „Ich mag Kaffee." &nbsp;|&nbsp; „möchten" = konkreter, höflicher Wunsch (Konjunktiv von mögen!): „Ich möchte einen Kaffee."</div>
+    <div class="rule-vn">„mögen" = sở thích chung chung: „Ich mag Kaffee." (Tôi thích cà phê) &nbsp;|&nbsp; „möchten" = mong muốn cụ thể, lịch sự (dạng Konjunktiv của mögen!): „Ich möchte einen Kaffee." (Tôi muốn một ly cà phê)</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich möge Musik."</span> → <span class="wb-ok">✅ „Ich mag Musik."</span> — „mögen" ist unregelmäßig: ich mag, nicht „möge"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich möge Musik."</span> → <span class="wb-ok">✅ „Ich mag Musik."</span> — „mögen" là động từ bất quy tắc: ich mag, không phải „möge"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Er mag der Fußball."</span> → <span class="wb-ok">✅ „Er mag den Fußball."</span> — „mögen" braucht Akkusativ: „der" → „den"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Er mag der Fußball."</span> → <span class="wb-ok">✅ „Er mag den Fußball."</span> — „mögen" cần Akkusativ: „der" → „den"!</div>
+  </div>
+
+  <!-- GAME -->
+  <div class="game-header">🎲 GAME — Der Kann-ich...?-Würfel (solo spielbar!) / Xúc xắc „Tôi có thể...?" (chơi một mình cũng được!)</div>
+  <div class="game-body">
+    <div class="instr-de">Spielregel: Würfle zweimal (oder wähle zwei Zahlen 1–6) und kombiniere Pronomen + Aktivität zu einem Satz mit „können". Danach: Schreib für dich selbst, wie sehr du diese Aktivität magst!</div>
+    <div class="instr-vn">Luật chơi: Gieo xúc xắc hai lần (hoặc chọn hai số từ 1–6) rồi kết hợp đại từ + hoạt động thành một câu với „können". Sau đó: tự viết xem bạn thích hoạt động đó đến mức nào!</div>
+    <div class="wuerfel-grid">
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel A: Pronomen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> ich</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> du</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> er/sie</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> wir</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> ihr</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> sie/Sie</div>
+      </div>
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel B: Aktivität</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> Tennis spielen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> schwimmen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> joggen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> kochen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> tanzen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> Rad fahren</div>
+      </div>
+    </div>
+    <div class="instr-de" style="margin-bottom:3px;">Vorgegebene Würfe — bilde den Satz: <span class="vn-word" style="font-style:normal;">Ghép câu theo các số dưới đây:</span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">1.</span><span class="wk-set"><span class="wuerfel-zahl">2</span><span class="wuerfel-zahl">4</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">2.</span><span class="wk-set"><span class="wuerfel-zahl">3</span><span class="wuerfel-zahl">1</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">3.</span><span class="wk-set"><span class="wuerfel-zahl">4</span><span class="wuerfel-zahl">6</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">4.</span><span class="wk-set"><span class="wuerfel-zahl">1</span><span class="wuerfel-zahl">5</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">5.</span><span class="wk-set" style="color:#9a3412; font-weight:700; font-size:9.5px;">🎲 Freie Runde — würfle selbst!</span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="instr-de" style="margin-top:4px;">🪞 Selbsteinschätzung mit „mögen" (kein Partner nötig!): <span class="vn-word" style="font-style:normal;">Tự đánh giá với „mögen" (không cần bạn cùng chơi!):</span></div>
+    <div class="fill-line">Ich mag <span class="blank-long"></span> (sehr / nicht so sehr / gar nicht).</div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Ehrenamt: Freiwillige Arbeit in der Freizeit / Công tác thiện nguyện</div>
+    <div class="kb-de">Viele Deutsche engagieren sich in ihrer Freizeit <b>ehrenamtlich</b> — z. B. bei der Feuerwehr, im Sportverein oder bei Tierheimen. Man bekommt kein Geld dafür, aber es ist gesellschaftlich sehr angesehen.</div>
+    <div class="kb-vn">Nhiều người Đức dành thời gian rảnh để làm <b>công tác thiện nguyện</b> — ví dụ ở đội cứu hỏa, câu lạc bộ thể thao hay trại động vật. Không được trả tiền, nhưng rất được xã hội coi trọng — khác với Việt Nam, nơi thiện nguyện thường gắn với các dịp riêng lẻ hơn là một hoạt động đều đặn, lâu dài.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 13</span>
+    <span>Seite 3 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Übung 2 + Kulturinfo 2 + Dialog + Lesetext + MC) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 13</h1>
+      <h2>Übung, Kultur, Dialog &amp; Lesetext / Bài tập, văn hóa, hội thoại &amp; bài đọc</h2>
+    </div>
+    <div class="badge">A1 · Lektion 13</div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — Akkusativ-Check: Ergänze „mögen" + den richtigen Artikel / Điền „mögen" + quán từ Akkusativ đúng</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die richtige Form von „mögen" UND den richtigen Akkusativ-Artikel. Der Nominativ-Artikel steht in Klammern — Achtung, nicht alle Artikel ändern sich!</div>
+    <div class="instr-vn">Điền dạng đúng của „mögen" VÀ quán từ Akkusativ đúng. Quán từ Nominativ ở trong ngoặc — chú ý, không phải quán từ nào cũng đổi!</div>
+    <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> <span class="blank"></span> Fußball. (der) <span class="vn-word">(Tôi thích bóng đá.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Du <span class="blank"></span> <span class="blank"></span> Musik. (die) <span class="vn-word">(Bạn thích âm nhạc.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Er <span class="blank"></span> <span class="blank"></span> Kino. (das) <span class="vn-word">(Anh ấy thích rạp chiếu phim.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Wir <span class="blank"></span> <span class="blank"></span> Sport. (der) <span class="vn-word">(Chúng tôi thích thể thao.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Ihr <span class="blank"></span> <span class="blank"></span> Pizza. (die) <span class="vn-word">(Các bạn thích pizza.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Sie <span class="blank"></span> <span class="blank"></span> Yoga. (das) <span class="vn-word">(Họ / Ông bà thích yoga.)</span></div>
+    <div class="tip-box">
+      <div class="tip-de">💡 Tipp: Nur der maskuline Artikel „der" ändert sich im Akkusativ zu „den" — „die" und „das" bleiben gleich!</div>
+      <div class="tip-vn">💡 Mẹo nhỏ: chỉ có quán từ giống đực „der" đổi thành „den" ở Akkusativ — „die" và „das" giữ nguyên!</div>
+    </div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Deutschland, das Fahrradland / Đức — đất nước của xe đạp</div>
+    <div class="kb-de">Deutschland hat eines der besten <b>Fahrradwege-Netze</b> der Welt. Millionen Deutsche fahren täglich mit dem Rad zur Arbeit oder zur Schule. Viele Städte fördern das Radfahren aktiv.</div>
+    <div class="kb-vn">Đức có một trong những <b>mạng lưới đường dành cho xe đạp</b> tốt nhất thế giới. Hàng triệu người Đức đi xe đạp đến chỗ làm hoặc trường học mỗi ngày. Khác với Việt Nam, nơi xe máy chiếm ưu thế trong giao thông hằng ngày, ở Đức xe đạp là phương tiện di chuyển chính được nhà nước khuyến khích rất mạnh.</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Lena:</span>Hast du am Samstag Zeit? Ich mache eine kleine Party!</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Cool! Was können wir denn machen?</div>
+    <div class="dialog-line"><span class="speaker">Lena:</span>Wir können Musik hören und zusammen kochen. Mags<strong>t</strong> du eigentlich Pizza?</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Ich mag Pizza sehr! Und ich kann auch gut kochen, ich helfe gerne.</div>
+    <div class="dialog-line"><span class="speaker">Lena:</span>Perfekt! Kannst du auch deine Gitarre mitbringen? Du kannst doch so gut spielen.</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Klar, kein Problem! Können wir auch draußen tanzen?</div>
+    <div class="dialog-line"><span class="speaker">Lena:</span>Ja, natürlich! Ich schreibe dir noch eine Einladung mit allen Details.</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Super, ich freue mich schon!</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Sophie is<strong>t</strong> 24 Jahre alt und hat viele Hobbys. Sie mag Sport sehr — besonders Yoga und Schwimmen. Jeden Morgen mach<strong>t</strong> sie eine halbe Stunde Yoga, bevor sie zur Arbeit geht. Am Wochenende kann sie oft schwimmen gehen, weil das Schwimmbad in ihrer Nähe ist. Sophie kann auch sehr gut kochen — sie mag italienisches Essen am liebsten, vor allem Pasta und Pizza. In ihrer Freizeit trifft sie sich gerne mit Freunden: Sie können zusammen Musik hören, tanzen oder einfach reden. Sophie mag auch Fotografie. Sie kann mit ihrer Kamera wunderschöne Bilder von der Natur machen. Manchmal fähr<strong>t</strong> sie mit dem Rad in den Wald, um Tiere und Pflanzen zu fotografieren. Am Sonntag engagiert sich Sophie ehrenamtlich in einem Tierheim — sie mag Tiere sehr und kann dort gut helfen. „Meine Freizeit is<strong>t</strong> mir sehr wichtig", sag<strong>t</strong> Sophie. „Ich kann mich dabei entspannen, und ich mag es, viele verschiedene Dinge auszuprobieren." Nächsten Monat plant Sophie eine kleine Geburtstagsparty für ihre beste Freundin — sie kann es kaum erwarten!
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Was mag Sophie besonders im Sport?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Fußball und Basketball</span>
+      <span><span class="mc-kreis"></span> b) Yoga und Schwimmen</span>
+      <span><span class="mc-kreis"></span> c) Tennis und Joggen</span>
+    </div>
+    <div class="mc-frage">2. Was macht Sophie jeden Morgen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie kocht</span>
+      <span><span class="mc-kreis"></span> b) sie macht Yoga</span>
+      <span><span class="mc-kreis"></span> c) sie fotografiert</span>
+    </div>
+    <div class="mc-frage">3. Welches Essen mag Sophie am liebsten?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) italienisches Essen</span>
+      <span><span class="mc-kreis"></span> b) chinesisches Essen</span>
+      <span><span class="mc-kreis"></span> c) deutsches Essen</span>
+    </div>
+    <div class="mc-frage">4. Was kann Sophie mit ihrer Kamera machen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Filme drehen</span>
+      <span><span class="mc-kreis"></span> b) wunderschöne Bilder von der Natur machen</span>
+      <span><span class="mc-kreis"></span> c) nichts Besonderes</span>
+    </div>
+    <div class="mc-frage">5. Was macht Sophie am Sonntag?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie arbeitet ehrenamtlich im Tierheim</span>
+      <span><span class="mc-kreis"></span> b) sie spielt Fußball</span>
+      <span><span class="mc-kreis"></span> c) sie geht schwimmen</span>
+    </div>
+    <div class="mc-frage">6. Was plant Sophie nächsten Monat?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) einen Umzug</span>
+      <span><span class="mc-kreis"></span> b) eine Geburtstagsparty für ihre Freundin</span>
+      <span><span class="mc-kreis"></span> c) eine Reise nach Italien</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Was kannst du gut? Und was magst du in deiner Freizeit?</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Bạn giỏi làm gì? Và bạn thích làm gì trong thời gian rảnh?</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 13</span>
+    <span>Seite 4 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 5 (SCHREIB-FORMAT: Informeller Brief – Party-Einladung) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 13</h1>
+      <h2>Schreib-Meilenstein: Dein erster Brief! / Cột mốc viết: Lá thư đầu tiên của bạn!</h2>
+    </div>
+    <div class="badge">A1 · Lektion 13</div>
+  </div>
+
+  <div class="section-title">✍️ SCHREIB-FORMAT — Informeller Brief: Party-Einladung / Dạng bài viết: Thư thân mật — thiệp mời tiệc</div>
+  <div class="tip-box">
+    <div class="tip-de">🔥 Nimm deinen Brief-Spickzettel aus Lektion 12 zur Hand! Denk an die 5 Grundregeln: Komma nach der Anrede + klein weiterschreiben, genau 3 Punkte beantworten, kurze Sätze, und kein Satzzeichen nach der Grußformel.</div>
+    <div class="tip-vn">🔥 Lấy sổ tay mẹo viết thư từ Bài 12 ra! Nhớ 5 quy tắc cốt lõi: dấu phẩy sau lời chào + viết thường tiếp theo, trả lời đúng 3 ý, câu ngắn, và không có dấu câu sau lời chào cuối thư.</div>
+  </div>
+
+  <div class="gram-box">
+    <h4>📋 Die Aufgabe / Nhiệm vụ</h4>
+    <div class="rule-de">Du machst eine Party und lädst eine Freundin / einen Freund ein. Schreibe einen informellen Brief und beantworte genau diese 3 Punkte:</div>
+    <div class="rule-vn">Bạn tổ chức một bữa tiệc và mời một người bạn. Viết một lá thư thân mật và trả lời đúng 3 ý sau:</div>
+    <div class="rule-de" style="margin-top:3px;">1. Wann und wo ist die Party? &nbsp; 2. Was könnt ihr auf der Party machen? (mit „können") &nbsp; 3. Frage: Kann dein Freund/deine Freundin kommen?</div>
+    <div class="rule-vn">1. Tiệc diễn ra khi nào và ở đâu? 2. Các bạn có thể làm gì trong tiệc? (dùng „können") 3. Câu hỏi: Bạn của bạn có thể đến không?</div>
+  </div>
+
+  <!-- Baukasten -->
+  <div class="baukasten-box">
+    <div class="baukasten-title">🧱 Der Phrasen-Baukasten — kopiere einfach, was passt! / Kho câu mẫu — cứ sao chép câu phù hợp!</div>
+    <div class="baukasten-grid">
+      <div>
+        <div class="baukasten-kategorie-label">Anrede &amp; Einleitung / Lời chào &amp; mở đầu</div>
+        <div class="baukasten-phrase">Liebe Mai, / Lieber Tom,<span class="bp-vn">Bạn thân mến...,</span></div>
+        <div class="baukasten-phrase">ich mache am Samstag eine Party bei mir zu Hause.<span class="bp-vn">Thứ Bảy này mình tổ chức một bữa tiệc tại nhà.</span></div>
+      </div>
+      <div>
+        <div class="baukasten-kategorie-label">Aktivitäten (können) / Hoạt động (können)</div>
+        <div class="baukasten-phrase">Wir können zusammen kochen und Musik hören.<span class="bp-vn">Chúng ta có thể cùng nấu ăn và nghe nhạc.</span></div>
+        <div class="baukasten-phrase">Wir können tanzen und draußen sitzen.<span class="bp-vn">Chúng ta có thể nhảy múa và ngồi ngoài trời.</span></div>
+      </div>
+      <div>
+        <div class="baukasten-kategorie-label">Frage &amp; Schluss / Câu hỏi &amp; kết thư</div>
+        <div class="baukasten-phrase">Kannst du kommen?<span class="bp-vn">Cậu có thể đến không?</span></div>
+        <div class="baukasten-phrase">Schreib mir bald!<br>Viele Grüße<br>[Name]<span class="bp-vn">Viết thư cho mình sớm nhé! Thân mến, ...</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ha-box">
+    <h4>✏️ Jetzt bist du dran! / Bây giờ đến lượt bạn!</h4>
+    <div class="ha-item">Schreibe deinen eigenen Brief in die Karte unten. Benutze mindestens 2-mal „können" im Modalverb-Sandwich.
+      <div class="ha-vn">Viết lá thư của riêng bạn vào khung bên dưới. Dùng „können" trong cấu trúc sandwich ít nhất 2 lần.</div>
+    </div>
+  </div>
+
+  <div class="brief-karte">
+    <div class="bk-header"><span>📝 Deine Party-Einladung</span><span>Hausaufgabe</span></div>
+    <div class="brief-lines"></div>
+    <div class="brief-lines"></div>
+    <div class="brief-lines"></div>
+    <div class="brief-lines"></div>
+    <div class="brief-lines"></div>
+    <div class="brief-lines" style="min-width:50%;"></div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title" style="margin-top:16px;">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">können</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was kannst du besonders gut?</div>
+      <div class="anweisung-vn">Bạn giỏi điều gì đặc biệt?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">mögen</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was magst du in deiner Freizeit?</div>
+      <div class="anweisung-vn">Bạn thích làm gì trong thời gian rảnh?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">Sport</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Treibst du Sport? Welchen?</div>
+      <div class="anweisung-vn">Bạn có chơi thể thao không? Môn gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">können + mögen</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Satz</span></div>
+      <div class="anweisung-de">Bilde je einen Satz mit „können" und „mögen".</div>
+      <div class="anweisung-vn">Đặt mỗi loại một câu với „können" và „mögen".</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 13</span>
+    <span>Seite 5 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 6 (Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 13</h1>
+      <h2>Hausaufgaben &amp; Antworten / Bài tập về nhà &amp; Đáp án</h2>
+    </div>
+    <div class="badge">A1 · Lektion 13</div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Verben konjugieren / Chia động từ:</strong> Schreibe die vollständige Konjugation von „können" und „mögen" für alle 6 Personen auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết ra giấy đầy đủ 6 ngôi chia của „können" và „mögen" — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">✏️ <strong>Brief fertigstellen / Hoàn thiện lá thư:</strong> Schreibe deine Party-Einladung von Seite 5 sauber ins Heft — achte auf alle 5 Grundregeln aus dem Brief-Spickzettel!
+      <div class="ha-vn">Chép lại sạch sẽ thiệp mời tiệc ở trang 5 vào vở — chú ý đầy đủ 5 quy tắc cốt lõi trong sổ tay mẹo viết thư!</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 12):</strong> 1. muss ... aufstehen &nbsp; 2. Am Satzende / ở cuối câu &nbsp; 3. Falsch — richtig ist „Ich muss um 6 Uhr aufstehen."</p>
+    <p><strong>Übung 1 (Sandwich-Check, können):</strong> 1. ✅ richtig &nbsp; 2. falsch → „Du kannst Tennis spielen." &nbsp; 3. falsch → „Er kann gut kochen." &nbsp; 4. falsch → „Wir können zusammen joggen." &nbsp; 5. falsch → „Ihr könnt gerne tanzen." &nbsp; 6. falsch → „Er kann gerne fernsehen."</p>
+    <p><strong>Game (Kann-ich-Würfel), Beispiele:</strong> 1. (2,4) Du kannst kochen. &nbsp; 2. (3,1) Er/Sie kann Tennis spielen. &nbsp; 3. (4,6) Wir können Rad fahren. &nbsp; 4. (1,5) Ich kann tanzen.</p>
+    <p><strong>Übung 2 (mögen + Akkusativ):</strong> 1. mag / den &nbsp; 2. magst / die &nbsp; 3. mag / das &nbsp; 4. mögen / den &nbsp; 5. mögt / die &nbsp; 6. mögen / das</p>
+    <p><strong>Leseverständnis:</strong> 1. b) Yoga und Schwimmen &nbsp; 2. b) sie macht Yoga &nbsp; 3. a) italienisches Essen &nbsp; 4. b) wunderschöne Bilder von der Natur machen &nbsp; 5. a) sie arbeitet ehrenamtlich im Tierheim &nbsp; 6. b) eine Geburtstagsparty für ihre Freundin</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ich kann gut kochen. &nbsp; Karte 2: Ich mag Musik. &nbsp; Karte 3: Ja, ich spiele Tennis. &nbsp; Karte 4: Ich kann schwimmen. Ich mag Sport.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 13 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 6 / 6</span>
+  </div>
+</div>
+
+</body>
+</html>

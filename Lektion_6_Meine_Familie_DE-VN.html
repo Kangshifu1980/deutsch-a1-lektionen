@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 6</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 8mm 13mm 4mm 13mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.2; font-size: 11px; }
+.compact .doc-header { padding-bottom: 3px; margin-bottom: 5px; }
+.compact .section-title { margin: 5px 0 3px 0; }
+.compact table { margin-bottom: 3px; }
+.compact table.vocab th, .compact table.vocab td { padding: 2px 5px; }
+.compact .gram-box { padding: 4px 8px; margin-bottom: 3px; }
+.compact .tip-box { padding: 3px 7px; margin: 2px 0; }
+.compact .warn-box { padding: 3px 7px; margin: 2px 0 5px 0; }
+.compact .ubung-header { padding: 2px 8px; }
+.compact .ubung-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .fill-line { margin-bottom: 1px; }
+.compact .footer { margin-top: 3px; padding-top: 2px; }
+.compact .phon-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .kultur-box { padding: 4px 9px; margin: 3px 0 5px 0; }
+.compact .dialog-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .lese-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .mc-block { margin-bottom: 3px; }
+.compact .mc-optionen { margin-bottom: 4px; }
+.compact .ha-box { padding: 4px 9px; }
+.compact .antworten { padding: 4px 9px; }
+.compact .wiederholung-box { padding: 4px 9px; margin-bottom: 5px; }
+.compact .karten-grid { margin-top: 3px; gap: 6px; }
+.compact .sprech-karte { padding: 5px 7px; }
+.compact .sprech-karte .karte-num { padding: 1px 7px; margin-bottom: 3px; }
+.compact .sprech-karte .wort-pill { font-size: 11.5px; padding: 2px 5px; margin-bottom: 3px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 3px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 3px; }
+.compact .game-box { padding: 4px 9px; margin-bottom: 3px; }
+.compact .stammbaum-box { padding: 5px 10px; margin-bottom: 4px; }
+.compact .postkarte-body { padding: 6px 10px; }
+.compact .baukasten-box { padding: 4px 9px; margin-bottom: 4px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .game-box: Gamification ===== */
+.game-box { background: linear-gradient(135deg, #fdf4ff 0%, #eff6ff 100%); border: 1.5px dashed #a78bfa; border-radius: 8px; padding: 6px 11px; margin-bottom: 4px; }
+.game-box .game-title { font-size: 10.5px; font-weight: 700; color: #6d28d9; margin-bottom: 2px; }
+.game-box .game-de { font-size: 10px; color: #1a1a1a; margin-bottom: 2px; }
+.game-box .game-vn { font-size: 9.5px; color: #7c3aed; font-style: italic; margin-bottom: 3px; }
+.raetsel-item { font-size: 10.5px; margin-bottom: 3px; color: #4c1d95; }
+.raetsel-item .rt-num { font-weight: 700; color: #6d28d9; margin-right: 3px; }
+
+/* ===== .stammbaum-box: Visueller Familienstammbaum (Übung 1) ===== */
+.stammbaum-box { border: 1px solid #cbd5e1; border-radius: 8px; padding: 7px 12px; background: #fafafa; margin-bottom: 5px; }
+.stammbaum-reihe { margin-bottom: 6px; }
+.stammbaum-reihe:last-child { margin-bottom: 0; }
+.stammbaum-reihe-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.4px; color: #94a3b8; font-weight: 700; margin-bottom: 3px; text-align: center; }
+.stammbaum-personen { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.person-card { background: white; border: 1.5px solid #93c5fd; border-radius: 8px; padding: 3px 10px; text-align: center; min-width: 68px; }
+.person-card .person-name { font-weight: 700; color: #1e3a8a; font-size: 10.5px; }
+.person-card .person-tag { font-size: 8.5px; color: #64748b; }
+.person-card.ich { border-color: #f9a8d4; background: #fdf2f8; }
+.person-card.ich .person-name { color: #9d174d; }
+
+/* ===== .postkarte-card: Schreib-Format "Urlaubspostkarte" ===== */
+.postkarte-card { border: 1.5px solid #0891b2; border-radius: 10px; overflow: hidden; }
+
+/* ===== .baukasten-box: Fertige Phrasen zum Copy-Paste für die Postkarte ===== */
+.baukasten-box { border: 1px solid #93c5fd; border-radius: 8px; padding: 6px 11px; background: #eff6ff; margin-bottom: 6px; }
+.baukasten-title { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 4px; }
+.baukasten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.baukasten-kategorie-label { font-size: 9px; font-weight: 700; color: #1e40af; text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 2px; border-bottom: 0.5px solid #bfdbfe; padding-bottom: 1px; }
+.baukasten-phrase { font-size: 9.5px; color: #1a1a1a; margin-bottom: 2px; line-height: 1.3; }
+.baukasten-phrase .bp-vn { color: #0f766e; font-size: 8.5px; display: block; }
+.postkarte-header { background: linear-gradient(135deg,#0891b2,#06b6d4); color: white; padding: 4px 10px; font-size: 10px; font-weight: 700; display: flex; justify-content: space-between; align-items: center; }
+.postkarte-body { padding: 8px 12px; background: #f0fdff; font-size: 10.5px; line-height: 1.55; min-height: 90px; }
+.postkarte-body .pk-anrede { color: #0e7490; font-weight: 700; margin-bottom: 3px; }
+.postkarte-body .pk-gruss { color: #0e7490; font-weight: 700; margin-top: 4px; }
+.postkarte-lines { border-bottom: 1px solid #94a3b8; height: 13px; margin-bottom: 5px; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Phonetik + Lernziele + Wortschatz Familie) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 6</h1>
+      <h2>Meine Familie</h2>
+      <h2>Gia đình của tôi</h2>
+    </div>
+    <div class="badge">A1 · Lektion 6</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 5 / Ôn tập bài 5</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: Nullartikel &amp; kein / Khởi động ngữ pháp: mạo từ-zero &amp; kein</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">Nullartikel</div>
+        <div class="wh-mund">Ergänze (falls nötig): Ich bin ___ Programmiererin.</div>
+        <div class="wh-beispiel">Tôi là lập trình viên. (Gợi ý: có cần mạo từ không?)</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">kein</div>
+        <div class="wh-mund">Ergänze: Das ist ___ Computer.</div>
+        <div class="wh-beispiel">Đây không phải là một cái máy tính.</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Beruf-Frage</div>
+        <div class="wh-mund">Wie fragt man auf Deutsch nach dem Beruf?</div>
+        <div class="wh-beispiel">Tiếng Đức hỏi về nghề nghiệp như thế nào?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu học tập</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Familienmitglieder benennen — im Singular und Plural <span class="vn">— gọi tên các thành viên trong gia đình — cả số ít lẫn số nhiều</span></p>
+    <p class="de">✔ Besitz ausdrücken mit „mein" und „dein" <span class="vn">— diễn đạt sự sở hữu bằng „mein" và „dein"</span></p>
+    <p class="de">✔ Pluralformen deutscher Nomen richtig bilden <span class="vn">— tạo đúng dạng số nhiều của danh từ tiếng Đức</span></p>
+    <p class="de">✔ Eine kurze Postkarte an die Familie schreiben <span class="vn">— viết một tấm bưu thiếp ngắn gửi cho gia đình</span></p>
+  </div>
+
+  <!-- Legende -->
+  <div class="section-title">🎨 Farbkodierung / Mã màu mạo từ</div>
+  <div class="legend">
+    <div class="legend-item"><span class="der">der</span> maskulin / giống đực</div>
+    <div class="legend-item"><span class="die">die</span> feminin / giống cái</div>
+    <div class="legend-item"><span class="das">das</span> neutral / giống trung</div>
+    <div class="legend-item"><span class="warn">⚠️</span> unregelmäßig / bất quy tắc</div>
+  </div>
+
+  <!-- Phonetik -->
+  <div class="section-title">🔊 Aussprache-Minute / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">„ei" (đọc như „ai") — Wiederholung / Song âm „ei" — ôn lại</div>
+    <div class="phon-de">Erinnerung an den EI-Diphthong aus Lektion 1/2 — und er steckt genau in unseren zwei wichtigsten neuen Wörtern dieser Lektion: <strong>mein</strong> und <strong>dein</strong>!</div>
+    <div class="phon-vn">Ôn lại song âm „ei" đã học ở bài 1/2 — âm này đọc gần giống „ai" trong tiếng Việt, và nó xuất hiện ngay trong hai từ mới quan trọng nhất của bài này: <strong>mein</strong> (của tôi) và <strong>dein</strong> (của bạn)!</div>
+    <div class="phon-beispiele">Beispiele: m<strong>ei</strong>n · d<strong>ei</strong>n</div>
+  </div>
+  <div class="phon-box">
+    <div class="phon-title">NEU: Plural-Umlaute / Kiến thức mới: Biến âm ở dạng số nhiều</div>
+    <div class="phon-de">Viele Familienwörter bekommen im Plural einen <strong>Umlaut</strong>: a→ä, o→ö, u→ü. Höre und sprich den Unterschied deutlich!</div>
+    <div class="phon-vn">Nhiều từ chỉ người thân sẽ có <strong>biến âm (Umlaut)</strong> ở dạng số nhiều: a→ä, o→ö, u→ü. Hãy nghe và phát âm rõ sự khác biệt này!</div>
+    <div class="phon-beispiele">der Vater → die V<strong>ä</strong>ter &nbsp;|&nbsp; die Mutter → die M<strong>ü</strong>tter &nbsp;|&nbsp; der Bruder → die Br<strong>ü</strong>der &nbsp;|&nbsp; die Tochter → die T<strong>ö</strong>chter</div>
+  </div>
+
+  <!-- Wortschatz -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Familienmitglieder (mit Plural) / Bảng từ vựng: Thành viên gia đình (kèm số nhiều)</div>
+  <table class="vocab">
+    <colgroup><col style="width:26%"><col style="width:26%"><col style="width:26%"><col style="width:22%"></colgroup>
+    <thead><tr><th>Singular</th><th>Plural</th><th>Aussprache</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td><span class="die">die</span>Mutter</td><td>die Mütter <span class="warn">⚠️</span></td><td class="phonetik">mút-tơ / muýt-tơ</td><td class="vn-word">mẹ</td></tr>
+      <tr><td><span class="der">der</span>Vater</td><td>die Väter <span class="warn">⚠️</span></td><td class="phonetik">fa-tơ / fe-tơ</td><td class="vn-word">cha/bố</td></tr>
+      <tr><td colspan="2"><span class="die">die</span>Eltern <span style="color:#94a3b8;font-size:9px;">(nur Plural)</span></td><td class="phonetik">en-tờn</td><td class="vn-word">cha mẹ / phụ huynh</td></tr>
+      <tr><td><span class="der">der</span>Bruder</td><td>die Brüder <span class="warn">⚠️</span></td><td class="phonetik">bru-đơ / bruy-đơ</td><td class="vn-word">anh/em trai</td></tr>
+      <tr><td><span class="die">die</span>Schwester</td><td>die Schwestern</td><td class="phonetik">svés-tơ / svés-tơn</td><td class="vn-word">chị/em gái</td></tr>
+      <tr><td colspan="2"><span class="die">die</span>Geschwister <span style="color:#94a3b8;font-size:9px;">(nur Plural)</span></td><td class="phonetik">gơ-svís-tơ</td><td class="vn-word">anh chị em (ruột)</td></tr>
+      <tr><td><span class="der">der</span>Sohn</td><td>die Söhne <span class="warn">⚠️</span></td><td class="phonetik">zôn / zơ-nơ <span style="color:#94a3b8;">(đọc liền mạch, không ngắt "z-ơ-n-ơ"; "z" đọc như z tiếng Anh)</span></td><td class="vn-word">con trai</td></tr>
+      <tr><td><span class="die">die</span>Tochter</td><td>die Töchter <span class="warn">⚠️</span></td><td class="phonetik">tôkh-tơ (ach-Laut, "kh" cứng) / tơ-hờ-tơ <span style="color:#94a3b8;">(ich-Laut: xì hơi nhẹ, mềm hơn nhiều so với "kh" của Tochter)</span></td><td class="vn-word">con gái</td></tr>
+      <tr><td><span class="der">der</span>Opa</td><td>die Opa<strong>s</strong></td><td class="phonetik">ô-pa / ô-pa<strong>s</strong></td><td class="vn-word">ông (nội/ngoại)</td></tr>
+      <tr><td><span class="die">die</span>Oma</td><td>die Oma<strong>s</strong></td><td class="phonetik">ô-ma / ô-ma<strong>s</strong></td><td class="vn-word">bà (nội/ngoại)</td></tr>
+      <tr><td><span class="der">der</span>Onkel</td><td>die Onkel <span style="color:#94a3b8;font-size:9px;">(unverändert!)</span></td><td class="phonetik">ôn-ken</td><td class="vn-word">chú/bác/cậu</td></tr>
+      <tr><td><span class="die">die</span>Tante</td><td>die Tanten</td><td class="phonetik">tan-tơ / tan-tơn</td><td class="vn-word">cô/dì/bác gái</td></tr>
+      <tr><td><span class="der">der</span>Cousin</td><td>die Cousin<strong>s</strong></td><td class="phonetik">cu-zăng / cu-zăng<strong>s</strong> <span style="color:#94a3b8;">(âm mũi, kiểu Pháp)</span></td><td class="vn-word">anh/em họ (nam)</td></tr>
+      <tr><td><span class="die">die</span>Cousine</td><td>die Cousinen</td><td class="phonetik">cu-di-nơ / cu-di-nơn</td><td class="vn-word">chị/em họ (nữ)</td></tr>
+      <tr><td><span class="die">die</span>Generation</td><td>die Generationen</td><td class="phonetik">ghê-nê-ra-tsi-ôn / ghê-nê-ra-tsi-ô-nơn</td><td class="vn-word">thế hệ</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 „Cousin"/„Cousine" sind Lehnwörter aus dem <strong>Französischen</strong> und werden auch französisch ausgesprochen — ganz anders als typisch deutsche Wörter!</div>
+    <div class="tip-vn">💡 „Cousin"/„Cousine" là từ mượn từ tiếng <strong>Pháp</strong>, và cách phát âm cũng giữ nguyên đặc trưng tiếng Pháp (âm mũi) — hoàn toàn khác với các từ tiếng Đức điển hình!</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 6</span>
+    <span>Seite 1 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Grammatik 1: Possessivartikel + Stammbaum-Übung + Kulturinfo 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 6</h1>
+      <h2>Besitzanzeige &amp; Pluralformen / Sở hữu &amp; các dạng số nhiều</h2>
+    </div>
+    <div class="badge">A1 · Lektion 6</div>
+  </div>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — Possessivartikel „mein" &amp; „dein" / Ngữ pháp 1: Đại từ sở hữu „mein" &amp; „dein"</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 „mein" und „dein" ändern ihre Form wie „ein": <strong>der → mein Vater · die → meine Mutter · Plural → meine Eltern</strong>.</div>
+    <div class="tip-vn">💡 „mein" và „dein" thay đổi giống „ein": <strong>der → mein Vater · die → meine Mutter · số nhiều → meine Eltern</strong>.</div>
+  </div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Genus</th><th>ein (L5)</th><th>mein</th><th>dein</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen"><span class="der">der</span>(m)</td><td>ein Vater</td><td>mein Vater</td><td>dein Vater</td></tr>
+      <tr><td class="pronomen"><span class="die">die</span>(f)</td><td>eine Mutter</td><td>meine Mutter</td><td>deine Mutter</td></tr>
+      <tr><td class="pronomen"><span class="das">das</span>(n)</td><td>ein Kin<strong>d</strong></td><td>mein Kin<strong>d</strong></td><td>dein Kin<strong>d</strong></td></tr>
+      <tr><td class="pronomen">Plural</td><td>— <span style="color:#94a3b8;font-size:9px;">(kein ein-Plural)</span></td><td>meine Eltern</td><td>deine Eltern</td></tr>
+    </tbody>
+  </table>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Mein Mutter ist nett."</span> → <span class="wb-ok">✅ „Meine Mutter ist nett."</span> — bei femininen Nomen (die-Wörter) fehlt sonst das Endungs-„e"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Mein Mutter ist nett."</span> → <span class="wb-ok">✅ „Meine Mutter ist nett."</span> — với danh từ giống cái (từ đi với „die"), nếu thiếu đuôi „-e" là sai!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Meine Vater arbeitet viel."</span> → <span class="wb-ok">✅ „Mein Vater arbeitet viel."</span> — bei maskulinen Nomen (der-Wörter) steht KEIN „-e"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Meine Vater arbeitet viel."</span> → <span class="wb-ok">✅ „Mein Vater arbeitet viel."</span> — với danh từ giống đực (từ đi với „der"), <strong>KHÔNG</strong> thêm „-e"!</div>
+  </div>
+
+  <!-- Übung 1: Stammbaum -->
+  <div class="ubung-header">Übung 1 — Der Stammbaum: Sätze mit „mein" bilden / Cây phả hệ: đặt câu với „mein"</div>
+  <div class="ubung-body">
+    <div class="instr-de">Schau dir den Stammbaum an. Bilde für jede Person einen Satz mit „mein"/"meine" (aus der Perspektive von „Ich" = Max).</div>
+    <div class="instr-vn">Hãy nhìn cây phả hệ này. Từ góc nhìn của „Tôi" (Max), đặt một câu với „mein"/„meine" cho mỗi người.</div>
+    <div class="stammbaum-box">
+      <div class="stammbaum-reihe">
+        <div class="stammbaum-reihe-label">Großeltern-Generation</div>
+        <div class="stammbaum-personen">
+          <div class="person-card"><div class="person-name">Herbert</div><div class="person-tag">Opa</div></div>
+          <div class="person-card"><div class="person-name">Erika</div><div class="person-tag">Oma</div></div>
+        </div>
+      </div>
+      <div class="stammbaum-reihe">
+        <div class="stammbaum-reihe-label">Eltern-Generation</div>
+        <div class="stammbaum-personen">
+          <div class="person-card"><div class="person-name">Klaus</div><div class="person-tag">Vater</div></div>
+          <div class="person-card"><div class="person-name">Sabine</div><div class="person-tag">Mutter</div></div>
+          <div class="person-card"><div class="person-name">Peter</div><div class="person-tag">Onkel</div></div>
+          <div class="person-card"><div class="person-name">Julia</div><div class="person-tag">Tante</div></div>
+        </div>
+      </div>
+      <div class="stammbaum-reihe">
+        <div class="stammbaum-reihe-label">Meine Generation (Ich = Max)</div>
+        <div class="stammbaum-personen">
+          <div class="person-card ich"><div class="person-name">Max</div><div class="person-tag">Ich</div></div>
+          <div class="person-card"><div class="person-name">Tom</div><div class="person-tag">Bruder</div></div>
+          <div class="person-card"><div class="person-name">Lena</div><div class="person-tag">Schwester</div></div>
+          <div class="person-card"><div class="person-name">Felix</div><div class="person-tag">Cousin</div></div>
+          <div class="person-card"><div class="person-name">Mia</div><div class="person-tag">Cousine</div></div>
+        </div>
+        <div style="text-align:center; font-size:9px; color:#94a3b8; font-style:italic; margin-top:3px;">💡 Tom + Lena = meine Geschwister</div>
+      </div>
+    </div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Klaus → <span class="blank-xl"></span></div>
+        <div class="fill-line"><span class="num">2.</span> Sabine → <span class="blank-xl"></span></div>
+        <div class="fill-line"><span class="num">3.</span> Tom → <span class="blank-xl"></span></div>
+        <div class="fill-line"><span class="num">4.</span> Lena → <span class="blank-xl"></span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">5.</span> Tom + Lena (zusammen) → <span class="blank-xl"></span></div>
+        <div class="fill-line"><span class="num">6.</span> Peter → <span class="blank-xl"></span></div>
+        <div class="fill-line"><span class="num">7.</span> Julia → <span class="blank-xl"></span></div>
+        <div class="fill-line"><span class="num">8.</span> Felix → <span class="blank-xl"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Deutsche Familienstrukturen / Góc văn hóa 1: Cấu trúc gia đình ở Đức</div>
+    <div class="kb-de">Deutsche Familien sind oft <b>kleiner</b> als in vielen anderen Kulturen — meist nur Eltern und Kinder unter einem Dach, ohne Großeltern. Junge Erwachsene ziehen oft schon mit <b>18 Jahren</b> aus, um zu studieren oder zu arbeiten. Auch <b>Patchwork-Familien</b> (Familien mit Kindern aus früheren Beziehungen) sind weit verbreitet und gesellschaftlich völlig normal.</div>
+    <div class="kb-vn">Gia đình Đức thường <b>nhỏ hơn</b> so với nhiều nền văn hóa khác — thường chỉ có cha mẹ và con cái sống chung dưới một mái nhà, không có ông bà. Người trẻ thường dọn ra ở riêng ngay từ <b>18 tuổi</b> để đi học đại học hoặc đi làm. <b>Gia đình ghép</b> (gia đình có con riêng từ mối quan hệ trước) cũng rất phổ biến và hoàn toàn bình thường trong xã hội. Điều này khá khác với Việt Nam, nơi nhiều thế hệ thường sống chung một nhà và mối quan hệ gia đình mở rộng (họ hàng) đóng vai trò rất quan trọng.</div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Die 5 Plural-Muster / Ngữ pháp 2: 5 kiểu tạo số nhiều</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Der Plural hat verschiedene Muster. Diese lernst du Schritt für Schritt. Lerne die Pluralform am besten immer zusammen mit dem Nomen.</div>
+    <div class="tip-vn">💡 Số nhiều có nhiều kiểu khác nhau. Bạn sẽ học từng bước. Tốt nhất hãy luôn học dạng số nhiều cùng với danh từ.</div>
+  </div>
+  <table class="vocab">
+    <colgroup><col style="width:34%"><col style="width:33%"><col style="width:33%"></colgroup>
+    <thead><tr><th>Muster</th><th>Beispiel</th><th>Tipp</th></tr></thead>
+    <tbody>
+      <tr><td><strong>-e</strong> (oft + Umlaut)</td><td>der Sohn → die Söhne</td><td class="small">häufig bei maskulinen Wörtern</td></tr>
+      <tr><td><strong>-er</strong> (oft + Umlaut)</td><td>das Kin<strong>d</strong> → die Kinder</td><td class="small">häufig bei neutralen Wörtern</td></tr>
+      <tr><td><strong>-(e)n</strong> (kein Umlaut)</td><td>die Schwester → die Schwestern</td><td class="small">fast immer bei femininen Wörtern</td></tr>
+      <tr><td><strong>-s</strong></td><td>der Cousin → die Cousin<strong>s</strong></td><td class="small">typisch bei Fremdwörtern</td></tr>
+      <tr><td><strong>Nullplural</strong> (nur Umlaut oder gar nichts)</td><td>der Vater → die Väter &nbsp;|&nbsp; der Onkel → die Onkel</td><td class="small">häufig bei -er/-el-Wörtern</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — Singular → Plural: Umformung / Chuyển đổi số ít → số nhiều</div>
+  <div class="ubung-body">
+    <div class="instr-de">Setze das Nomen in den Plural. Die letzten beiden Sätze übersetzt du direkt ins Deutsche.</div>
+    <div class="instr-vn">Chuyển danh từ sang dạng số nhiều. Hai câu cuối hãy dịch trực tiếp sang tiếng Đức.</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> ein Sohn → zwei <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">2.</span> eine Tochter → drei <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">3.</span> ein Bruder → vier <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">4.</span> eine Schwester → zwei <span class="blank"></span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">5.</span> ein Kind → viele <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">6.</span> ein Onkel → zwei <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">7.</span> Tôi có hai anh em họ (nam).→ <span class="blank-xl"></span></div>
+        <div class="fill-line"><span class="num">8.</span> Cô ấy có ba người cô/dì.→ <span class="blank-xl"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 6</span>
+    <span>Seite 2 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Grammatik 2: Pluralformen + Übung 2 + Gamification + Kulturinfo 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 6</h1>
+      <h2>Spiel, Kultur &amp; Lesetext / Trò chơi, văn hóa &amp; bài đọc</h2>
+    </div>
+    <div class="badge">A1 · Lektion 6</div>
+  </div>
+
+  <!-- Gamification -->
+  <div class="section-title">🎮 Spiel / Trò chơi</div>
+  <div class="game-box">
+    <div class="game-title">🧩 Wer ist wer? / Ai là ai</div>
+    <div class="game-de">Lies das Rätsel und finde die passende Familienbezeichnung — perfekt für den Online-Chat!</div>
+    <div class="game-vn">Đọc câu đố và tìm ra danh xưng gia đình phù hợp — rất hợp để hỏi đáp trong lớp học online!</div>
+    <div class="raetsel-item"><span class="rt-num">1.</span> Der Bruder von meinem Vater ist mein ___. <span class="blank"></span></div>
+    <div class="raetsel-item"><span class="rt-num">2.</span> Die Schwester von meiner Mutter ist meine ___. <span class="blank"></span></div>
+    <div class="raetsel-item"><span class="rt-num">3.</span> Die Tochter von meinem Onkel ist meine ___. <span class="blank"></span></div>
+    <div class="raetsel-item"><span class="rt-num">4.</span> Der Sohn von meinen Eltern (nicht ich) ist mein ___. <span class="blank"></span></div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Die heilige deutsche Urlaubskultur / Góc văn hóa 2: Văn hóa nghỉ phép "thiêng liêng" của Đức</div>
+    <div class="kb-de">In Deutschland stehen jedem Arbeitnehmer gesetzlich <b>mindestens 20 bezahlte Urlaubstage</b> pro Jahr zu (meist sogar 25–30). Urlaub wird sehr ernst genommen — er dient der echten Erholung, nicht nur der Pflicht. Das Wort <b>„Fernweh"</b> (Sehnsucht nach der Ferne) beschreibt diese tiefe deutsche Reiselust perfekt. Kein Wunder, dass die Postkarte an die Familie im Urlaub eine liebe Tradition ist!</div>
+    <div class="kb-vn">Ở Đức, theo luật mỗi người lao động được hưởng <b>ít nhất 20 ngày nghỉ phép có lương</b> mỗi năm (thường thực tế là 25–30 ngày). Kỳ nghỉ được xem trọng nghiêm túc — nó dùng để nghỉ ngơi thực sự, không chỉ là nghĩa vụ. Từ <b>„Fernweh"</b> (nỗi khao khát phương xa) mô tả hoàn hảo niềm đam mê du lịch sâu sắc của người Đức. Không có gì lạ khi việc gửi bưu thiếp cho gia đình lúc đi nghỉ là một truyền thống đáng yêu! Điều này khá khác với Việt Nam, nơi số ngày nghỉ phép theo luật thường ít hơn và việc thực sự sử dụng hết ngày phép cũng chưa phổ biến bằng.</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Đoạn hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Anna:</span>Ist das deine Familie auf dem Foto?</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Ja! Das ist mein Vater, und das ist meine Mutter.</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Und wer sind die zwei Kinder?</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Das sind meine Geschwister — mein Bruder Tom und meine Schwester Lena.</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Hast du auch Cousin<strong>s</strong> oder Cousinen?</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Ja, ich habe einen Cousin und eine Cousine. Sie sind die Kinder von meinem Onkel und meiner Tante.</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Familie Meier macht Urlaub am Meer. Der Vater, Klaus, und die Mutter, Sabine, liegen am Stran<strong>d</strong>. Die Kinder, Tom und Lena, schwimmen im Meer. Die Großeltern, Opa Herber<strong>t</strong> und Oma Erika, sitzen im Café und trinken Kaffee. Am Aben<strong>d</strong> schreibt Lena eine Postkarte an ihre Cousine Mia: „Liebe Mia, wir sind am Meer! Das Wetter ist super, und wir haben viel Spa<strong>ß</strong>. Ich vermisse di<strong>ch</strong>! Bis bal<strong>d</strong>, deine Lena."
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Wo macht Familie Meier Urlaub?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) in den Bergen</span>
+      <span><span class="mc-kreis"></span> b) am Meer</span>
+      <span><span class="mc-kreis"></span> c) in der Stadt</span>
+    </div>
+    <div class="mc-frage">2. Was machen die Kinder?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie schwimmen</span>
+      <span><span class="mc-kreis"></span> b) sie lesen</span>
+      <span><span class="mc-kreis"></span> c) sie kochen</span>
+    </div>
+    <div class="mc-frage">3. Wo sind die Großeltern?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) am Strand</span>
+      <span><span class="mc-kreis"></span> b) im Café</span>
+      <span><span class="mc-kreis"></span> c) im Hotel</span>
+    </div>
+    <div class="mc-frage">4. An wen schreibt Lena eine Postkarte?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) an ihren Bruder</span>
+      <span><span class="mc-kreis"></span> b) an ihre Cousine Mia</span>
+      <span><span class="mc-kreis"></span> c) an ihre Mutter</span>
+    </div>
+    <div class="mc-frage">5. Wie ist das Wetter laut der Postkarte?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) schlecht</span>
+      <span><span class="mc-kreis"></span> b) super</span>
+      <span><span class="mc-kreis"></span> c) kalt</span>
+    </div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">Geschwister</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Hast du Geschwister?</div>
+      <div class="anweisung-vn">Bạn có anh chị em ruột không?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">Familie</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Wie viele Personen sind in deiner Familie?</div>
+      <div class="anweisung-vn">Gia đình bạn có bao nhiêu người?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">mein/e</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Satz</span></div>
+      <div class="anweisung-de">Beschreibe ein Familienmitglied mit „mein"/"meine"!</div>
+      <div class="anweisung-vn">Hãy miêu tả một thành viên gia đình bằng „mein"/„meine"!</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 6</span>
+    <span>Seite 3 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Schreib-Format Postkarte + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 6</h1>
+      <h2>Schreiben &amp; Finale / Viết &amp; tổng kết bài học</h2>
+    </div>
+    <div class="badge">A1 · Lektion 6</div>
+  </div>
+
+  <!-- Schreib-Format: Urlaubspostkarte -->
+  <div class="section-title">✍️ SCHREIB-FORMAT — Die Urlaubspostkarte (Schreib-Stufe 2) / Dạng bài viết: Bưu thiếp kỳ nghỉ</div>
+
+  <!-- Baukasten: fertige Phrasen zum Copy-Paste -->
+  <div class="baukasten-box">
+    <div class="baukasten-title">🧱 Der Phrasen-Baukasten — kopiere einfach, was passt! / Hộp cụm từ có sẵn — chỉ cần chọn cụm phù hợp!</div>
+    <div class="baukasten-grid">
+      <div>
+        <div class="baukasten-kategorie-label">Der Ort / Địa điểm</div>
+        <div class="baukasten-phrase">Ich bin in Berlin.<span class="bp-vn">Tôi đang ở Berlin.</span></div>
+        <div class="baukasten-phrase">Ich bin in Pari<strong>s</strong>.<span class="bp-vn">Tôi đang ở Paris.</span></div>
+        <div class="baukasten-phrase">Ich bin am Stran<strong>d</strong>.<span class="bp-vn">Tôi đang ở bãi biển.</span></div>
+      </div>
+      <div>
+        <div class="baukasten-kategorie-label">Das Wetter / Thời tiết</div>
+        <div class="baukasten-phrase">Das Wetter ist super!<span class="bp-vn">Thời tiết tuyệt vời!</span></div>
+        <div class="baukasten-phrase">Es ist sehr warm und sonnig.<span class="bp-vn">Trời rất ấm và nắng đẹp.</span></div>
+      </div>
+      <div>
+        <div class="baukasten-kategorie-label">Die Aktivität / Hoạt động</div>
+        <div class="baukasten-phrase">Ich lerne Deut<strong>sch</strong>.<span class="bp-vn">Tôi đang học tiếng Đức.</span></div>
+        <div class="baukasten-phrase">Ich koche und trinke Wein.<span class="bp-vn">Tôi đang nấu ăn và uống rượu vang.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ha-box">
+    <h4>🏠 Hausaufgabe / Bài tập về nhà</h4>
+    <div class="ha-item">✍️ <strong>Schreiben / Viết:</strong> Fülle die leere Postkarte unten aus — nutze einfach 4–5 Phrasen aus dem Baukasten (oder eigene Sätze)! Anrede und Grußformel wie im Muster.
+      <div class="ha-vn">Hãy viết vào tấm bưu thiếp trống bên dưới — chỉ cần dùng 4–5 cụm từ trong "hộp cụm từ" (hoặc tự đặt câu)! Lời chào đầu và lời chào cuối tham khảo theo mẫu bên trái.</div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="postkarte-card">
+      <div class="postkarte-header"><span>📮 Muster</span><span>Beispiel</span></div>
+      <div class="postkarte-body">
+        <div class="pk-anrede">Liebe Familie,</div>
+        ich bin in Berlin.<br>Das Wetter ist super!<br>Die Stad<strong>t</strong> ist sehr schön.
+        <div class="pk-gruss">Viele Grüße<br>Dein/Deine [Name]</div>
+      </div>
+    </div>
+    <div class="postkarte-card">
+      <div class="postkarte-header"><span>📝 Deine Postkarte</span><span>Hausaufgabe</span></div>
+      <div class="postkarte-body">
+        <div class="postkarte-lines"></div>
+        <div class="postkarte-lines"></div>
+        <div class="postkarte-lines"></div>
+        <div class="postkarte-lines"></div>
+        <div class="postkarte-lines" style="min-width:60%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 5):</strong> 1. (kein Artikel / leer) &nbsp; 2. kein &nbsp; 3. Was bist du von Beruf?</p>
+    <p><strong>Übung 1 (Stammbaum):</strong> 1. Das ist mein Vater. &nbsp; 2. Das ist meine Mutter. &nbsp; 3. Das ist mein Bruder. &nbsp; 4. Das ist meine Schwester. &nbsp; 5. Das sind meine Geschwister. &nbsp; 6. Das ist mein Onkel. &nbsp; 7. Das ist meine Tante. &nbsp; 8. Das ist mein Cousin.</p>
+    <p><strong>Übung 2 (Plural):</strong> 1. Söhne &nbsp; 2. Töchter &nbsp; 3. Brüder &nbsp; 4. Schwestern &nbsp; 5. Kinder &nbsp; 6. Onkel &nbsp; 7. Ich habe zwei Cousins. &nbsp; 8. Sie hat drei Tanten.</p>
+    <p><strong>Spiel „Wer ist wer?":</strong> 1. Onkel &nbsp; 2. Tante &nbsp; 3. Cousine &nbsp; 4. Bruder</p>
+    <p><strong>Leseverständnis:</strong> 1. b) am Meer &nbsp; 2. a) sie schwimmen &nbsp; 3. b) im Café &nbsp; 4. b) an ihre Cousine Mia &nbsp; 5. b) super</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ja, ich habe einen Bruder. / Nein, ich habe keine Geschwister. &nbsp; Karte 2: In meiner Familie sind vier Personen. &nbsp; Karte 3: Mein Vater ist Lehrer.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 6 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 4 / 4</span>
+  </div>
+</div>
+
+</body>
+</html>

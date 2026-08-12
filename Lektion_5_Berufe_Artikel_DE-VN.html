@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 5</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 7mm 12mm 3mm 12mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+table.vocab tr:hover td { background: #eff6ff; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 4px 8px; margin-bottom: 3px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 2px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 2px 0 5px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 4px 8px; margin-bottom: 3px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 2px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 1px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 6px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 6px 10px; margin-top: 6px; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+/* ===== .compact: extra-tight spacing for this dense 4-Seiten-Version ===== */
+.compact { line-height: 1.16; font-size: 10.7px; }
+.compact .doc-header { padding-bottom: 2px; margin-bottom: 4px; }
+.compact .section-title { margin: 4px 0 2px 0; }
+.compact table { margin-bottom: 2px; }
+.compact table.vocab th, .compact table.vocab td { padding: 1.5px 5px; }
+.compact .gram-box { padding: 3px 7px; margin-bottom: 2px; }
+.compact .tip-box { padding: 2px 6px; margin: 1px 0; }
+.compact .warn-box { padding: 2px 6px; margin: 1px 0 4px 0; }
+.compact .ubung-header { padding: 1.5px 7px; }
+.compact .ubung-body { padding: 3px 7px; margin-bottom: 2px; }
+.compact .ubung-body .instr-vn { margin-bottom: 1px; }
+.compact .fill-line { margin-bottom: 0; }
+.compact .footer { margin-top: 2px; padding-top: 2px; }
+.compact .phon-box { padding: 2px 7px; margin-bottom: 2px; }
+.compact .kultur-box { padding: 3px 8px; margin: 2px 0 4px 0; }
+.compact .dialog-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .lese-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .mc-block { margin-bottom: 3px; }
+.compact .mc-optionen { margin-bottom: 4px; }
+.compact .freie-frage { padding: 3px 8px; margin-top: 3px; }
+.compact .ha-box { padding: 4px 9px; margin-top: 4px; }
+.compact .antworten { padding: 4px 9px; margin-top: 4px; }
+.compact .wiederholung-box { padding: 3px 8px; margin-bottom: 4px; }
+.compact .karten-grid { margin-top: 3px; gap: 6px; }
+.compact .sprech-karte { padding: 5px 7px; }
+.compact .sprech-karte .karte-num { padding: 1px 7px; margin-bottom: 3px; }
+.compact .sprech-karte .wort-pill { font-size: 11.5px; padding: 2px 5px; margin-bottom: 3px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 3px; }
+.compact .sprech-karte .anweisung-de { margin-bottom: 0; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 3px; }
+.compact .sprech-karte .timer-badge { padding: 2px 8px; }
+.compact .wortsalat-item { margin-bottom: 3px; }
+.compact .fehlersuche-item { margin-bottom: 3px; }
+.compact .game-box { padding: 4px 9px; margin-bottom: 3px; }
+.compact .game-bingo-grid { gap: 4px; margin-top: 3px; }
+.compact .game-bingo-cell { padding: 3px 5px; }
+
+/* ===== .phon-box ===== */
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+/* ===== .wiederholung-box ===== */
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+/* ===== Spontansprech-Karten ===== */
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 8px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; flex-wrap: wrap; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+/* ===== .kultur-box ===== */
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+/* ===== .mc-block ===== */
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== Übung: Satzbau ===== */
+.wortsalat-item { margin-bottom: 5px; }
+.wortsalat-num { color: #64748b; font-weight: 700; font-size: 10px; margin-right: 3px; }
+.wortsalat-woerter { display: flex; flex-wrap: wrap; gap: 4px; margin: 1px 0 2px 0; }
+.wort-chip { display: inline-block; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 5px; padding: 1.5px 8px; font-size: 10px; font-weight: 600; color: #1e3a8a; }
+.wortsalat-answer-row { display: flex; align-items: center; gap: 6px; font-size: 10.5px; }
+.wortsalat-arrow { color: #94a3b8; font-weight: 700; }
+
+/* ===== Übung: Fehlersuche & Umformung ===== */
+.fehlersuche-item { margin-bottom: 4px; font-size: 10.5px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.fehlersuche-num { color: #64748b; font-weight: 700; min-width: 16px; }
+.fs-falsch { color: #b91c1c; }
+.fs-pfeil { color: #94a3b8; font-weight: 700; }
+.fs-antwort { border-bottom: 1px solid #94a3b8; min-width: 190px; display: inline-block; }
+
+/* ===== .game-box: Gamification ===== */
+.game-box { background: linear-gradient(135deg, #fdf4ff 0%, #eff6ff 100%); border: 1.5px dashed #a78bfa; border-radius: 8px; padding: 6px 11px; margin-bottom: 4px; }
+.game-box .game-title { font-size: 10.5px; font-weight: 700; color: #6d28d9; margin-bottom: 2px; }
+.game-box .game-de { font-size: 10px; color: #1a1a1a; margin-bottom: 2px; }
+.game-box .game-vn { font-size: 9.5px; color: #7c3aed; font-style: italic; margin-bottom: 3px; }
+.game-bingo-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 5px; margin-top: 3px; }
+.game-bingo-cell { background: white; border: 1px solid #ddd6fe; border-radius: 5px; padding: 4px 4px; text-align: center; font-size: 9.5px; font-weight: 600; color: #4c1d95; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Phonetik + Lernziele + Wortschatz 1, 2 & 3) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 5</h1>
+      <h2>Berufe &amp; Artikel</h2>
+      <h2>Nghề nghiệp &amp; Mạo từ</h2>
+    </div>
+    <div class="badge">A1 · Lektion 5</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 4 / Ôn tập bài 4</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: wohnen, Zahlen &amp; antworten / Khởi động ngữ pháp: wohnen, số đếm &amp; antworten</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">wohnen</div>
+        <div class="wh-mund">Ergänze: Ich ___ in Berlin.</div>
+        <div class="wh-beispiel">Tôi sống ở Berlin.</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Zahlen 21–100</div>
+        <div class="wh-mund">Schreibe die Ziffer: fünfundsechzig</div>
+        <div class="wh-beispiel">Viết ra chữ số Ả Rập tương ứng</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">antworten</div>
+        <div class="wh-mund">Ergänze: Er ___ sofort.</div>
+        <div class="wh-beispiel">Anh ấy trả lời ngay lập tức.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu học tập</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Berufe nennen und danach fragen: „Was bist du von Beruf?" <span class="vn">— nói tên nghề nghiệp và hỏi: „Bạn làm nghề gì?"</span></p>
+    <p class="de">✔ Den bestimmten und unbestimmten Artikel richtig einsetzen — und wissen, wann gar kein Artikel nötig ist <span class="vn">— dùng đúng mạo từ xác định và không xác định — và biết khi nào hoàn toàn không cần mạo từ</span></p>
+    <p class="de">✔ Berufe und Dinge mit „kein" verneinen <span class="vn">— dùng „kein" để phủ định nghề nghiệp và sự vật</span></p>
+    <p class="de">✔ Über Arbeitsplätze und Arbeitsgeräte sprechen <span class="vn">— nói về nơi làm việc và dụng cụ làm việc</span></p>
+  </div>
+
+  <!-- Legende -->
+  <div class="section-title">🎨 Farbkodierung / Mã màu mạo từ</div>
+  <div class="legend">
+    <div class="legend-item"><span class="der">der</span> maskulin / giống đực</div>
+    <div class="legend-item"><span class="die">die</span> feminin / giống cái</div>
+    <div class="legend-item"><span class="das">das</span> neutral / giống trung</div>
+    <div class="legend-item"><span class="warn">⚠️</span> unregelmäßig / bất quy tắc</div>
+  </div>
+
+  <!-- Phonetik -->
+  <div class="section-title">🔊 Aussprache-Minute / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Unbetontes „-er" am Wortende (đọc gần giống „ơ") — NEU! / Đuôi „-er" không nhấn cuối từ — âm mới!</div>
+    <div class="phon-de">Am Ende vieler Berufsbezeichnungen steht „-er" — und das wird NICHT als gerolltes „r" gesprochen, sondern als weicher, kurzer Vokal-Laut, ähnlich einem schwachen „a". Die Zunge bleibt entspannt unten!</div>
+    <div class="phon-vn">Hầu như mọi tên nghề nghiệp đều kết thúc bằng „-er" — âm này <b>không</b> đọc rung lưỡi như chữ „r", mà đọc thành một nguyên âm ngắn, nhẹ, gần giống âm „ơ" trong tiếng Việt. Lưỡi thả lỏng, để thấp, không cong lên!</div>
+    <div class="phon-beispiele">Beispiele: Lehr<strong>er</strong> · Verkäuf<strong>er</strong> · Bäck<strong>er</strong> · Programmier<strong>er</strong></div>
+  </div>
+  <div class="phon-box">
+    <div class="phon-title">„ä" (đọc như „e" mở miệng) — Wiederholung / Nguyên âm biến âm „ä" — ôn lại</div>
+    <div class="phon-de">Erinnerung an den Umlaut aus Lektion 0: „ä" klingt wie ein offenes „e". Er taucht oft in den femininen Berufsformen auf!</div>
+    <div class="phon-vn">Ôn lại nguyên âm biến âm (Umlaut) đã học ở bài 0: „ä" phát âm giống âm „e" nhưng miệng mở rộng hơn. Âm này xuất hiện rất nhiều trong dạng giống cái của tên nghề nghiệp!</div>
+    <div class="phon-beispiele">Beispiele: Ärztin · Bäckerin · (der Koch → die K<strong>ö</strong>chin, ebenfalls Umlaut!)</div>
+  </div>
+
+  <!-- Wortschatz: Berufe -->
+  <div class="section-title">📚 Wortschatz-Tabelle 1: Berufe / Bảng từ vựng 1: Nghề nghiệp</div>
+  <table class="vocab">
+    <colgroup><col style="width:20%"><col style="width:22%"><col style="width:16%"><col style="width:24%"><col style="width:18%"></colgroup>
+    <thead><tr><th>Maskulin</th><th>Feminin</th><th>Aussprache (m)</th><th>Aussprache (f)</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td><span class="der">der</span>Lehrer</td><td><span class="die">die</span>Lehrerin</td><td class="phonetik">lê-rơ</td><td class="phonetik">lê-rơ-rin</td><td class="vn-word">giáo viên</td></tr>
+      <tr><td><span class="der">der</span>Arz<strong>t</strong> <span class="warn">⚠️</span></td><td><span class="die">die</span>Ärztin <span class="warn">⚠️</span></td><td class="phonetik">aats-<strong>t</strong> (âm "ts" rõ như chữ Z, giữ rõ "t" cuối)</td><td class="phonetik">éc-tsin (âm "ts" ở giữa, không phải "c" đơn)</td><td class="vn-word">bác sĩ</td></tr>
+      <tr><td><span class="der">der</span>Verkäufer</td><td><span class="die">die</span>Verkäuferin</td><td class="phonetik">fe-khoi-phơ</td><td class="phonetik">fe-khoi-phơ-rin</td><td class="vn-word">nhân viên bán hàng</td></tr>
+      <tr><td><span class="der">der</span>Ko<strong>ch</strong> <span class="warn">⚠️</span></td><td><span class="die">die</span>Köchin <span class="warn">⚠️</span></td><td class="phonetik">khokh (âm "kh" sâu trong cổ họng, giống "kh" trong "không" nhưng ở cuối từ — ach-Laut)</td><td class="phonetik">khơ-sin (âm "ch" mềm — ich-Laut)</td><td class="vn-word">đầu bếp</td></tr>
+      <tr><td><span class="der">der</span>Programmierer</td><td><span class="die">die</span>Programmiererin</td><td class="phonetik">pro-gra-mi-rơ</td><td class="phonetik">pro-gra-mi-rơ-rin</td><td class="vn-word">lập trình viên</td></tr>
+      <tr><td><span class="der">der</span>Studen<strong>t</strong></td><td><span class="die">die</span>Studentin</td><td class="phonetik">stu-đén<strong>t</strong> (giữ rõ "t" cuối)</td><td class="phonetik">stu-đen-tin</td><td class="vn-word">sinh viên</td></tr>
+      <tr><td><span class="der">der</span>Krankenpfleger</td><td><span class="die">die</span>Krankenpflegerin</td><td class="phonetik">kran-ken-pfle-gơ</td><td class="phonetik">kran-ken-pfle-gơ-rin</td><td class="vn-word">y tá / điều dưỡng</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 Sehr nützliches Wort: <strong>selbstständig</strong> (đọc: "den-xtén-đích") — bedeutet „unabhängig arbeitend, mit eigener Firma", oft zusammen mit dem Beruf genannt: „Ich bin Programmiererin und selbstständig."</div>
+    <div class="tip-vn">💡 Từ rất hữu ích: <strong>selbstständig</strong> (tự làm chủ / tự kinh doanh độc lập) — thường dùng cùng với nghề nghiệp: „Ich bin Programmiererin und selbstständig." (Tôi là lập trình viên, và tôi tự làm chủ.)</div>
+  </div>
+
+  <!-- Wortschatz: Arbeitsplätze & Arbeitsgeräte -->
+  <div class="section-title">📚 Wortschatz-Tabelle 2 &amp; 3: Arbeitsplätze &amp; Arbeitsgeräte / Bảng từ vựng 2&3: Nơi làm việc &amp; Dụng cụ làm việc</div>
+  <div class="two-col">
+    <table class="vocab">
+      <colgroup><col style="width:44%"><col style="width:28%"><col style="width:28%"></colgroup>
+      <thead><tr><th>Arbeitsplätze</th><th>Aussprache</th><th>Tiếng Việt</th></tr></thead>
+      <tbody>
+        <tr><td><span class="die">die</span>Schule</td><td class="phonetik">su-lơ</td><td class="vn-word">trường học</td></tr>
+        <tr><td><span class="das">das</span>Krankenhau<strong>s</strong></td><td class="phonetik">kran-ken-hau<strong>s</strong> (giữ rõ "s" cuối)</td><td class="vn-word">bệnh viện</td></tr>
+        <tr><td><span class="das">das</span>Büro</td><td class="phonetik">buy-rô</td><td class="vn-word">văn phòng</td></tr>
+        <tr><td><span class="das">das</span>Geschäf<strong>t</strong></td><td class="phonetik">gơ-séf<strong>t</strong> (giữ rõ "t" cuối)</td><td class="vn-word">cửa hàng</td></tr>
+        <tr><td><span class="die">die</span>Küche</td><td class="phonetik">kuy-sơ</td><td class="vn-word">nhà bếp</td></tr>
+      </tbody>
+    </table>
+    <table class="vocab">
+      <colgroup><col style="width:44%"><col style="width:28%"><col style="width:28%"></colgroup>
+      <thead><tr><th>Arbeitsgeräte</th><th>Aussprache</th><th>Tiếng Việt</th></tr></thead>
+      <tbody>
+        <tr><td><span class="der">der</span>Computer</td><td class="phonetik">kom-piu-tơ</td><td class="vn-word">máy tính</td></tr>
+        <tr><td><span class="das">das</span>Werkzeug</td><td class="phonetik">véc-tsoik</td><td class="vn-word">dụng cụ / công cụ</td></tr>
+        <tr><td><span class="die">die</span>Kasse</td><td class="phonetik">ka-sơ</td><td class="vn-word">quầy thu ngân</td></tr>
+        <tr><td><span class="das">das</span>Bu<strong>ch</strong></td><td class="phonetik">bu<strong>kh</strong> (âm "ch" cứng — ach-Laut)</td><td class="vn-word">sách</td></tr>
+        <tr><td><span class="der">der</span>Kochlöffel</td><td class="phonetik">khokh-lơ-phâu</td><td class="vn-word">thìa gỗ nấu ăn</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 5</span>
+    <span>Seite 1 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Grammatik 1 + Grammatik 2 + beide Übungen + beide Kulturinfos + Gamification) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 5</h1>
+      <h2>Artikel, Negation &amp; Spiel / Mạo từ, phủ định &amp; trò chơi</h2>
+    </div>
+    <div class="badge">A1 · Lektion 5</div>
+  </div>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — Artikel-System &amp; Nullartikel bei Berufen / Ngữ pháp 1: Hệ thống mạo từ &amp; hiện tượng không mạo từ khi nói nghề nghiệp</div>
+  <div class="gram-box">
+    <h4>Bestimmter vs. unbestimmter Artikel (Nominativ) / Mạo từ xác định và không xác định (Cách 1 - Nominativ)</h4>
+    <div class="rule-de"><strong>der/die/das</strong> (bestimmt) — Das ist <strong>der</strong> Computer (von meinem Chef). &nbsp;|&nbsp; <strong>ein/eine/ein</strong> (unbestimmt) — Das ist <strong>ein</strong> Computer (irgendein Computer).</div>
+    <div class="rule-vn"><strong>der/die/das</strong> (mạo từ xác định — chỉ vật cụ thể) &nbsp;|&nbsp; <strong>ein/eine/ein</strong> (mạo từ không xác định — chỉ chung chung)</div>
+    <div class="rule-de" style="margin-top:2px;">Nach „sein" steht der reine Beruf meist <strong>ohne Artikel</strong>: „Ich bin Arzt." Mit <strong>Adjektiv</strong> braucht es den unbestimmten Artikel: „Sie ist <strong>eine</strong> nette Ärztin."</div>
+    <div class="rule-vn">Sau động từ „sein", khi chỉ nói tên nghề nghiệp đơn thuần thì thường <strong>không cần mạo từ</strong>: „Ich bin Arzt." Nhưng khi có thêm <strong>tính từ</strong> thì cần mạo từ không xác định: „Sie ist <strong>eine</strong> nette Ärztin."</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich bin ein Lehrer."</span> → <span class="wb-ok">✅ „Ich bin Lehrer."</span> — anders als im Englischen steht bei reinen Berufsangaben KEIN Artikel!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich bin ein Lehrer."</span> → <span class="wb-ok">✅ „Ich bin Lehrer."</span> — khác với tiếng Anh, tiếng Đức khi nói nghề nghiệp đơn thuần thì <strong>KHÔNG</strong> dùng mạo từ!</div>
+  </div>
+
+  <!-- Übung 1: Satzbau -->
+  <div class="ubung-header">Übung 1 — Satzbau: Artikel oder kein Artikel? / Sắp xếp thành câu: có cần mạo từ hay không?</div>
+  <div class="ubung-body">
+    <div class="instr-de">Sortiere die Wörter zu einem korrekten Satz. Entscheide: Braucht es hier einen Artikel — oder nicht?</div>
+    <div class="instr-vn">Sắp xếp các từ bị xáo trộn thành câu đúng, và xác định xem có cần mạo từ hay không.</div>
+    <div class="two-col">
+      <div>
+        <div class="wortsalat-item">
+          <span class="wortsalat-num">1.</span>
+          <div class="wortsalat-woerter"><span class="wort-chip">Arzt</span><span class="wort-chip">bin</span><span class="wort-chip">Ich</span></div>
+          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+        </div>
+        <div class="wortsalat-item">
+          <span class="wortsalat-num">2.</span>
+          <div class="wortsalat-woerter"><span class="wort-chip">eine</span><span class="wort-chip">ist</span><span class="wort-chip">Sie</span><span class="wort-chip">nette</span><span class="wort-chip">Ärztin</span></div>
+          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+        </div>
+        <div class="wortsalat-item">
+          <span class="wortsalat-num">3.</span>
+          <div class="wortsalat-woerter"><span class="wort-chip">ist</span><span class="wort-chip">Lehrer</span><span class="wort-chip">Er</span></div>
+          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+        </div>
+        <div class="wortsalat-item">
+          <span class="wortsalat-num">4.</span>
+          <div class="wortsalat-woerter"><span class="wort-chip">ist</span><span class="wort-chip">der</span><span class="wort-chip">Computer</span><span class="wort-chip">Das</span></div>
+          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+        </div>
+      </div>
+      <div>
+        <div class="wortsalat-item">
+          <span class="wortsalat-num">5.</span>
+          <div class="wortsalat-woerter"><span class="wort-chip">ein</span><span class="wort-chip">ist</span><span class="wort-chip">Computer</span><span class="wort-chip">Das</span></div>
+          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+        </div>
+        <div class="wortsalat-item">
+          <span class="wortsalat-num">6.</span>
+          <div class="wortsalat-woerter"><span class="wort-chip">bin</span><span class="wort-chip">selbstständig</span><span class="wort-chip">Ich</span><span class="wort-chip">und</span><span class="wort-chip">Programmiererin</span></div>
+          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+        </div>
+        <div class="wortsalat-item">
+          <span class="wortsalat-num">7.</span>
+          <div class="wortsalat-woerter"><span class="wort-chip">ein</span><span class="wort-chip">ist</span><span class="wort-chip">freundlicher</span><span class="wort-chip">Verkäufer</span><span class="wort-chip">Er</span></div>
+          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+        </div>
+        <div class="wortsalat-item">
+          <span class="wortsalat-num">8.</span>
+          <div class="wortsalat-woerter"><span class="wort-chip">sind</span><span class="wort-chip">wir</span><span class="wort-chip">Studenten</span></div>
+          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Das duale Ausbildungssystem / Góc văn hóa 1: Hệ thống đào tạo nghề song hành</div>
+    <div class="kb-de">In Deutschland führt der Weg zum Beruf nicht immer über ein Studium. Sehr verbreitet ist die <b>duale Ausbildung</b>: Man arbeitet mehrere Tage pro Woche praktisch in einem Betrieb und geht an den restlichen Tagen zur <b>Berufsschule</b> — Theorie und Praxis parallel, meist 2–3,5 Jahre. Berufe wie Koch, Verkäufer oder Handwerker werden fast immer so gelernt, nicht an der Universität!</div>
+    <div class="kb-vn">Ở Đức, để làm một nghề nào đó không nhất thiết phải học đại học. Rất phổ biến là hình thức <b>đào tạo nghề song hành</b> (duale Ausbildung): học viên làm việc thực tế tại doanh nghiệp vài ngày mỗi tuần, những ngày còn lại đến <b>trường nghề</b> (Berufsschule) học lý thuyết — lý thuyết và thực hành song song, thường kéo dài 2–3,5 năm. Các nghề như đầu bếp, nhân viên bán hàng hay thợ thủ công hầu như đều được học theo cách này, chứ không phải qua đại học! Điều này khá khác với Việt Nam, nơi con đường đại học vẫn thường được ưu tiên hơn.</div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Negation mit „kein" / Ngữ pháp 2: Phủ định với „kein"</div>
+  <div class="gram-box">
+    <h4>kein/keine (Nominativ) / kein/keine (Cách 1 - Nominativ)</h4>
+    <div class="rule-de"><strong>kein</strong> negiert <strong>Nomen</strong> — es ersetzt „ein/eine" im Negativ. <strong>nicht</strong> negiert dagegen Verben, Adjektive oder ganze Sätze.</div>
+    <div class="rule-vn"><strong>kein</strong> dùng để phủ định <strong>danh từ</strong> — tương đương dạng phủ định của „ein/eine" (số ít) hoặc của mạo từ-zero ở số nhiều (vd. Bücher → keine Bücher). Còn <strong>nicht</strong> thì phủ định động từ, tính từ hoặc cả câu.</div>
+    <div class="rule-de" style="margin-top:2px;">maskulin/neutral: <strong>kein</strong> Arzt, <strong>kein</strong> Buch &nbsp;|&nbsp; feminin/Plural: <strong>keine</strong> Ärztin, <strong>keine</strong> Bücher</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Das ist nicht ein Computer."</span> → <span class="wb-ok">✅ „Das ist kein Computer."</span> — vor einem Nomen steht „kein", NICHT „nicht ein"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Das ist nicht ein Computer."</span> → <span class="wb-ok">✅ „Das ist kein Computer."</span> — trước danh từ dùng „kein", KHÔNG dùng „nicht ein"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich bin nicht Arzt."</span> → <span class="wb-ok">✅ „Ich bin kein Arzt."</span> — auch ohne Artikel gilt: verneint wird mit „kein"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich bin nicht Arzt."</span> → <span class="wb-ok">✅ „Ich bin kein Arzt."</span> — dù không có mạo từ, khi phủ định vẫn dùng „kein"!</div>
+  </div>
+
+  <!-- Übung 2: Fehlersuche & Umformung -->
+  <div class="ubung-header">Übung 2 — Fehlersuche &amp; Umformung: „nicht" → „kein" / Sửa lỗi &amp; chuyển đổi câu</div>
+  <div class="ubung-body">
+    <div class="instr-de">Korrigiere die Fehler-Sätze mit „kein"/"keine". Die letzten beiden Sätze übersetzt du direkt.</div>
+    <div class="instr-vn">Dùng „kein"/„keine" để sửa các câu sai. Hai câu cuối hãy dịch trực tiếp sang tiếng Đức.</div>
+    <div class="fehlersuche-item"><span class="fehlersuche-num">1.</span><span class="fs-falsch">Das ist nicht ein Computer.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+    <div class="fehlersuche-item"><span class="fehlersuche-num">2.</span><span class="fs-falsch">Ich bin nicht Arzt.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+    <div class="fehlersuche-item"><span class="fehlersuche-num">3.</span><span class="fs-falsch">Er ist nicht ein Lehrer.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+    <div class="fehlersuche-item"><span class="fehlersuche-num">4.</span><span class="fs-falsch">Das ist nicht eine gute Idee.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+    <div class="fehlersuche-item"><span class="fehlersuche-num">5.</span><span class="fs-falsch">Sie ist nicht eine Studentin.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+    <div class="fehlersuche-item"><span class="fehlersuche-num">6.</span><span class="fs-falsch">Wir haben nicht Zeit.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+    <div class="fehlersuche-item"><span class="fehlersuche-num">7.</span>Tôi không có dụng cụ.<span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+    <div class="fehlersuche-item"><span class="fehlersuche-num">8.</span>Họ không phải là lập trình viên.<span style="color:#94a3b8; font-size:9px; font-style:italic;">(sie = Plural)</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Die Feierabend-Kultur / Góc văn hóa 2: Văn hóa „Feierabend" (giờ nghỉ sau giờ làm)</div>
+    <div class="kb-de">Deutsche trennen Arbeitszeit und Freizeit sehr strikt — dieses Konzept heißt <b>Feierabend</b>. Nach Dienstschluss werden Kollegen meist NICHT mehr angerufen, außer es ist ein echter Notfall. Diese Grenze gilt als Respekt vor der Privatsphäre — ähnlich wie die Pünktlichkeit aus Lektion 1 ist auch das Feierabend-Prinzip ein zentraler deutscher Wert im Arbeitsleben.</div>
+    <div class="kb-vn">Người Đức phân định rất rạch ròi giữa thời gian làm việc và thời gian riêng tư — khái niệm này gọi là <b>Feierabend</b> (thời gian nghỉ ngơi sau giờ làm). Sau giờ làm, đồng nghiệp thường <b>sẽ không</b> gọi điện cho nhau nữa, trừ khi có việc thực sự khẩn cấp. Ranh giới này được xem là sự tôn trọng đời tư — cũng giống như văn hóa "đúng giờ" đã học ở bài 1, nguyên tắc "Feierabend" cũng là một giá trị cốt lõi trong môi trường làm việc ở Đức. Điều này khá khác với thói quen ở Việt Nam, nơi việc nhắn tin hay gọi điện công việc ngoài giờ vẫn còn khá phổ biến.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 5</span>
+    <span>Seite 2 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Dialog + Lesetext + MC + Freies Sprechen) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 5</h1>
+      <h2>Dialog, Lesen &amp; Sprechen / Hội thoại, đọc hiểu &amp; nói</h2>
+    </div>
+    <div class="badge">A1 · Lektion 5</div>
+  </div>
+
+  <!-- Gamification -->
+  <div class="section-title">🎮 Spiel / Trò chơi</div>
+  <div class="game-box">
+    <div class="game-title">🎭 Berufe-Pantomime / Đoán nghề nghiệp qua kịch câm</div>
+    <div class="game-de">Ein Schüler mimt (ohne zu sprechen!) einen Beruf. Die anderen raten mit Ja/Nein-Fragen: „Bist du Arzt?" Antwort: „Nein, ich bin kein Arzt." oder „Ja, genau, ich bin Arzt!" Wer richtig rät, ist als Nächstes dran.</div>
+    <div class="game-vn">Một học sinh diễn kịch câm (không nói!) để thể hiện một nghề nghiệp. Những người khác đoán bằng câu hỏi có/không: „Bist du Arzt?" Trả lời: „Nein, ich bin kein Arzt." hoặc „Ja, genau, ich bin Arzt!" Ai đoán đúng sẽ là người diễn tiếp theo.</div>
+    <div class="game-bingo-grid">
+      <div class="game-bingo-cell">Lehrer</div>
+      <div class="game-bingo-cell">Ärztin</div>
+      <div class="game-bingo-cell">Koch</div>
+      <div class="game-bingo-cell">Verkäufer</div>
+      <div class="game-bingo-cell">Programmierer</div>
+      <div class="game-bingo-cell">Krankenpfleger</div>
+    </div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog: Über den Job sprechen / Đoạn hội thoại mẫu: Nói về công việc</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Anna:</span>Was bist du von Beruf?</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Ich bin Programmierer. Und du?</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Ich bin Ärztin, aber ich bin keine Chirurgin — ich arbeite in einer kleinen Praxi<strong>s</strong>.</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Interessant! Arbeitest du im Krankenhau<strong>s</strong>?</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Nein, ich arbeite nicht im Krankenhau<strong>s</strong>. Mein Arbeitsplatz ist eine Praxi<strong>s</strong> in der Stad<strong>t</strong>.</div>
+    <div class="dialog-line"><span class="speaker">Tom:</span>Ich bin übrigens selbstständig — ich habe kein feste<strong>s</strong> Büro, ich arbeite meistens zu Hause.</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Lisa ist Verkäuferin. Sie arbeitet in einem großen Geschäf<strong>t</strong> in Berlin. Ihr Bruder Paul ist kein Verkäufer — er ist Programmierer und arbeitet selbstständig von zu Hause aus. Paul hat kein feste<strong>s</strong> Büro, nur einen Computer und eine gute Internetverbindung. Lisas Freundin Mia ist Ärztin, aber sie ist keine Chirurgin. Mia arbeitet in einer kleinen Praxi<strong>s</strong>, nicht im großen Krankenhau<strong>s</strong>. Alle drei Freunde treffen sich am Wochenende und sprechen gerne über ihre Job<strong>s</strong>.
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Was ist Lisa von Beruf?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Ärztin</span>
+      <span><span class="mc-kreis"></span> b) Verkäuferin</span>
+      <span><span class="mc-kreis"></span> c) Programmiererin</span>
+    </div>
+    <div class="mc-frage">2. Wo arbeitet Lisa?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) im Krankenhaus</span>
+      <span><span class="mc-kreis"></span> b) in einem Geschäft</span>
+      <span><span class="mc-kreis"></span> c) zu Hause</span>
+    </div>
+    <div class="mc-frage">3. Was ist Paul von Beruf?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Verkäufer</span>
+      <span><span class="mc-kreis"></span> b) Arzt</span>
+      <span><span class="mc-kreis"></span> c) Programmierer</span>
+    </div>
+    <div class="mc-frage">4. Wo arbeitet Paul?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) im Büro</span>
+      <span><span class="mc-kreis"></span> b) von zu Hause</span>
+      <span><span class="mc-kreis"></span> c) im Geschäft</span>
+    </div>
+    <div class="mc-frage">5. Ist Mia Chirurgin?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Ja</span>
+      <span><span class="mc-kreis"></span> b) Nein</span>
+      <span><span class="mc-kreis"></span> c) Das steht nicht im Text</span>
+    </div>
+    <div class="mc-frage">6. Wo arbeitet Mia?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) im großen Krankenhaus</span>
+      <span><span class="mc-kreis"></span> b) in einer kleinen Praxis</span>
+      <span><span class="mc-kreis"></span> c) in einem Geschäft</span>
+    </div>
+  </div>
+  <div class="freie-frage">
+    <div class="ff-de">✏️ Freie Zusatzfrage: Und du? Was bist du von Beruf, oder was möchtest du gerne werden?</div>
+    <div class="ff-vn">Câu hỏi mở rộng: Còn bạn thì sao? Bạn làm nghề gì, hoặc bạn muốn trở thành nghề gì?</div>
+  </div>
+
+  <!-- Freies Sprechen (hochgezogen von Seite 5) -->
+  <div class="section-title">🃏 Freies Sprechen: Berufe im Online-Kurs / Nói tự do: Nói về nghề nghiệp trong lớp học online</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">Beruf</div>
+      <div class="prompt-row">
+        <span class="prompt-tag frage">Frage</span>
+      </div>
+      <div class="anweisung-de">Was bist du von Beruf?</div>
+      <div class="anweisung-vn">Bạn làm nghề gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">selbstständig</div>
+      <div class="prompt-row">
+        <span class="prompt-tag frage">Frage</span>
+      </div>
+      <div class="anweisung-de">Bist du selbstständig?</div>
+      <div class="anweisung-vn">Bạn có tự làm chủ / tự kinh doanh không?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">Computer</div>
+      <div class="prompt-row">
+        <span class="prompt-tag frage">kein</span>
+      </div>
+      <div class="anweisung-de">Bilde einen Satz mit „kein"!</div>
+      <div class="anweisung-vn">Đặt một câu với „kein"!</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">Arbeitsplatz</div>
+      <div class="prompt-row">
+        <span class="prompt-tag frage">Frage</span>
+      </div>
+      <div class="anweisung-de">Wo arbeitest du?</div>
+      <div class="anweisung-vn">Bạn làm việc ở đâu?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 5</span>
+    <span>Seite 3 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 5</h1>
+      <h2>Hausaufgaben &amp; Antworten / Bài tập về nhà &amp; Đáp án</h2>
+    </div>
+    <div class="badge">A1 · Lektion 5</div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">✏️ <strong>Schreiben / Viết:</strong> Schreib 5 Sätze über deinen (Wunsch-)Beruf. Benutze mindestens einmal „kein".
+      <div class="ha-vn">Viết 5 câu về nghề nghiệp (mơ ước) của bạn. Dùng „kein" ít nhất một lần.</div>
+    </div>
+    <div class="ha-item">🔊 <strong>Üben / Luyện tập:</strong> Sprich alle Berufspaare (maskulin/feminin) laut — mindestens 3×! Achte auf „-er" (âm „ơ" nhẹ) und „ä" (âm „e" mở).
+      <div class="ha-vn">Đọc to tất cả các cặp nghề nghiệp (giống đực/giống cái) — ít nhất 3 lần! Chú ý cách phát âm „-er" (âm „ơ" nhẹ) và „ä" (âm „e" mở miệng).</div>
+    </div>
+    <div class="ha-item">📚 <strong>Vokabeln / Từ vựng:</strong> Lerne alle Berufe, Arbeitsplätze, Arbeitsgeräte und die kein-Deklination (kein/keine) auswendig.
+      <div class="ha-vn">Học thuộc lòng tất cả các nghề nghiệp, nơi làm việc, dụng cụ làm việc, và các dạng biến cách của „kein" (kein/keine).</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 4):</strong> 1. wohne &nbsp; 2. 65 &nbsp; 3. antwortet</p>
+    <p><strong>Übung 1 (Satzbau):</strong> 1. Ich bin Arzt. &nbsp; 2. Sie ist eine nette Ärztin. &nbsp; 3. Er ist Lehrer. &nbsp; 4. Das ist der Computer. &nbsp; 5. Das ist ein Computer. &nbsp; 6. Ich bin Programmiererin und selbstständig. &nbsp; 7. Er ist ein freundlicher Verkäufer. &nbsp; 8. Wir sind Studenten.</p>
+    <p><strong>Übung 2 (Fehlersuche/Umformung):</strong> 1. Das ist kein Computer. &nbsp; 2. Ich bin kein Arzt. &nbsp; 3. Er ist kein Lehrer. &nbsp; 4. Das ist keine gute Idee. &nbsp; 5. Sie ist keine Studentin. &nbsp; 6. Wir haben keine Zeit. &nbsp; 7. Ich habe kein Werkzeug. &nbsp; 8. Sie sind keine Programmierer. <span style="color:#64748b;">(sie = Plural „sie", nicht das Höflichkeits-Sie)</span></p>
+    <p><strong>Leseverständnis:</strong> 1. b) Verkäuferin &nbsp; 2. b) in einem Geschäft &nbsp; 3. c) Programmierer &nbsp; 4. b) von zu Hause &nbsp; 5. b) Nein &nbsp; 6. b) in einer kleinen Praxis</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ich bin … von Beruf. &nbsp; Karte 2: Ja, ich bin selbstständig. / Nein, ich bin nicht selbstständig. &nbsp; Karte 3: Das ist kein Computer. &nbsp; Karte 4: Ich arbeite in/im …</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 5 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 4 / 4</span>
+  </div>
+</div>
+
+</body>
+</html>

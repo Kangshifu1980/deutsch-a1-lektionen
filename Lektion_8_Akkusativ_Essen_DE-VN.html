@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 8</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 8mm 13mm 4mm 13mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); display: flex; flex-direction: column; }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: auto; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.2; font-size: 11px; }
+.compact .doc-header { padding-bottom: 3px; margin-bottom: 5px; }
+.compact .section-title { margin: 5px 0 3px 0; }
+.compact table { margin-bottom: 3px; }
+.compact table.vocab th, .compact table.vocab td { padding: 2px 5px; }
+.compact .gram-box { padding: 4px 8px; margin-bottom: 3px; }
+.compact .tip-box { padding: 3px 7px; margin: 2px 0; }
+.compact .warn-box { padding: 3px 7px; margin: 2px 0 5px 0; }
+.compact .ubung-header { padding: 2px 8px; }
+.compact .ubung-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .fill-line { margin-bottom: 1px; }
+.compact .footer { margin-top: auto; padding-top: 2px; }
+.compact .phon-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .kultur-box { padding: 4px 9px; margin: 3px 0 5px 0; }
+.compact .dialog-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .lese-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .mc-block { margin-bottom: 3px; }
+.compact .mc-optionen { margin-bottom: 4px; }
+.compact .ha-box { padding: 4px 9px; }
+.compact .antworten { padding: 4px 9px; }
+.compact .wiederholung-box { padding: 4px 9px; margin-bottom: 5px; }
+.compact .karten-grid { margin-top: 3px; gap: 6px; }
+.compact .sprech-karte { padding: 5px 7px; }
+.compact .sprech-karte .karte-num { padding: 1px 7px; margin-bottom: 3px; }
+.compact .sprech-karte .wort-pill { font-size: 11.5px; padding: 2px 5px; margin-bottom: 3px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 3px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 3px; }
+.compact .game-box { padding: 4px 9px; margin-bottom: 3px; }
+.compact .gegenteile-box { padding: 5px 10px; margin-bottom: 4px; }
+.compact .wortsalat-item { margin-bottom: 4px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .game-box: Gamification ===== */
+.game-box { background: linear-gradient(135deg, #fdf4ff 0%, #eff6ff 100%); border: 1.5px dashed #a78bfa; border-radius: 8px; padding: 6px 11px; margin-bottom: 4px; }
+.game-box .game-title { font-size: 10.5px; font-weight: 700; color: #6d28d9; margin-bottom: 2px; }
+.game-box .game-de { font-size: 10px; color: #1a1a1a; margin-bottom: 2px; }
+.game-box .game-vn { font-size: 9.5px; color: #7c3aed; font-style: italic; margin-bottom: 3px; }
+.raetsel-item { font-size: 10.5px; margin-bottom: 3px; color: #4c1d95; }
+.raetsel-item .rt-num { font-weight: 700; color: #6d28d9; margin-right: 3px; }
+
+/* ===== .warenkorb-box: Akkusativ-Sortierspiel (Übung 1) ===== */
+.warenkorb-box { border: 1px solid #cbd5e1; border-radius: 8px; padding: 7px 12px; background: #fafafa; margin-bottom: 5px; }
+.warenkorb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 18px; }
+.warenkorb-spalte-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.4px; color: #94a3b8; font-weight: 700; margin-bottom: 3px; }
+.wk-item { display: flex; align-items: center; gap: 6px; font-size: 10.5px; margin-bottom: 3px; }
+.wk-chip { display: inline-block; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-weight: 700; font-size: 10px; padding: 2px 8px; border-radius: 6px; min-width: 18px; text-align: center; }
+.wk-blank { border-bottom: 1px solid #94a3b8; min-width: 110px; display: inline-block; text-align: center; }
+
+/* ===== .wortsalat: Situations-Satzbau-Scramble (Übung 2) ===== */
+.wortsalat-item { margin-bottom: 6px; }
+.wortsalat-num { font-weight: 700; color: #64748b; margin-right: 4px; font-size: 10.5px; }
+.wortsalat-situation { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 2px; margin-left: 20px; }
+.wortsalat-woerter { display: inline-flex; gap: 4px; flex-wrap: wrap; vertical-align: middle; }
+.wort-chip { display: inline-block; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 6px; }
+.wortsalat-answer-row { display: flex; align-items: center; gap: 6px; margin-top: 2px; margin-left: 20px; }
+.wortsalat-arrow { color: #94a3b8; font-weight: 700; }
+
+.postkarte-body { padding: 8px 12px; background: #f0fdff; font-size: 10.5px; line-height: 1.55; min-height: 90px; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Phonetik + Lernziele + Wortschatz) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 8</h1>
+      <h2>Der Akkusativ (Essen &amp; Trinken)</h2>
+      <h2>Cách 4 - Akkusativ (Ăn &amp; Uống)</h2>
+    </div>
+    <div class="badge">A1 · Lektion 8</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 7 / Ôn tập bài 7</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: haben, sein &amp; Adjektive / Khởi động ngữ pháp: haben, sein &amp; tính từ</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">sein</div>
+        <div class="wh-mund">Ergänze: Ich ___ müde. (sein)</div>
+        <div class="wh-beispiel">Điền dạng chia đúng của „sein"</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">haben</div>
+        <div class="wh-mund">Ergänze: Er ___ Hunger. (haben)</div>
+        <div class="wh-beispiel">Điền dạng chia đúng của „haben"</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Adjektiv-Endung</div>
+        <div class="wh-mund">Richtig oder falsch? „Die Autos sind kleine."</div>
+        <div class="wh-beispiel">Câu này đúng hay sai? Tính từ vị ngữ có chia đuôi không?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu học tập</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Grundlegende Lebensmittel und Getränke benennen <span class="vn">— gọi tên các loại thực phẩm và đồ uống cơ bản</span></p>
+    <p class="de">✔ Den Akkusativ nach den Verben „essen", „trinken" und „kaufen" richtig bilden <span class="vn">— dùng đúng Cách 4 (Akkusativ) sau các động từ „essen", „trinken" và „kaufen"</span></p>
+    <p class="de">✔ Das entscheidende Akkusativ-Signal „den"/„einen" (nur maskulin!) sicher anwenden <span class="vn">— sử dụng chắc chắn tín hiệu Akkusativ quan trọng „den"/„einen" (chỉ giống đực thay đổi!)</span></p>
+    <p class="de">✔ Eine einfache Einkaufsliste schreiben <span class="vn">— viết một danh sách mua sắm đơn giản</span></p>
+  </div>
+
+  <!-- Legende -->
+  <div class="section-title">🎨 Farbkodierung / Mã màu mạo từ</div>
+  <div class="legend">
+    <div class="legend-item"><span class="der">der</span> maskulin / giống đực</div>
+    <div class="legend-item"><span class="die">die</span> feminin / giống cái</div>
+    <div class="legend-item"><span class="das">das</span> neutral / giống trung</div>
+    <div class="legend-item"><span class="warn">⚠️</span> unregelmäßig / bất quy tắc</div>
+  </div>
+
+  <!-- Phonetik -->
+  <div class="section-title">🔊 Aussprache-Minute / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Đuôi „-en" không nhấn — đuôi của Akkusativ</div>
+    <div class="phon-de">Unser wichtigstes neues Signalwort „einen" endet auf ein leises, unbetontes „-en" — die Zunge entspannt sich, der Ton wird ganz kurz und schwach. Genau dieselbe Endung hörst du auch bei „essen", „trinken" (wir/sie-Form) und „haben" (wir/sie-Form). Übe den Unterschied zwischen betontem und unbetontem „e"!</div>
+    <div class="phon-vn">Từ tín hiệu quan trọng nhất của bài này, „einen", kết thúc bằng đuôi „-en" nhẹ, không nhấn — lưỡi thả lỏng, âm phát ra ngắn và yếu. Bạn cũng nghe thấy đúng đuôi này ở „essen", „trinken" (ngôi wir/sie) và „haben" (ngôi wir/sie). Hãy luyện tập sự khác biệt giữa „e" nhấn và „e" không nhấn!</div>
+    <div class="phon-beispiele">Beispiele: ein<strong>en</strong> (ai-nơn) · ess<strong>en</strong> (é-sơn) · trink<strong>en</strong> (trin-kơn) · hab<strong>en</strong> (ha-bơn)</div>
+  </div>
+
+  <!-- Wortschatz -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Essen &amp; Trinken / Bảng từ vựng: Ăn &amp; Uống</div>
+  <table class="vocab">
+    <colgroup><col style="width:12%"><col style="width:12%"><col style="width:22%"><col style="width:38%"><col style="width:16%"></colgroup>
+    <thead><tr><th>Nomen</th><th>Plural</th><th>Aussprache</th><th>Beispielsatz (Akkusativ)</th><th>Tiếng Việt (Nomen)</th></tr></thead>
+    <tbody>
+      <tr><td><span class="der">der</span>Apfel</td><td>die Äpfel <span class="warn">⚠️</span></td><td class="phonetik">áp-phồn <span style="color:#94a3b8;">("l" cuối đọc nhẹ, hơi giống "n")</span></td><td>Du isst <span class="der">den</span>Apfel. <span class="vn-word">Bạn ăn quả táo này.</span></td><td class="vn-word">quả táo</td></tr>
+      <tr><td><span class="die">die</span>Banane</td><td>die Bananen</td><td class="phonetik">ba-na-nơ</td><td>Sie isst die Banane. <span class="vn-word">Cô ấy ăn quả chuối này.</span></td><td class="vn-word">quả chuối</td></tr>
+      <tr><td><span class="das">das</span>Bro<strong>t</strong></td><td>die Brote</td><td class="phonetik">brô<strong>t</strong></td><td>Wir essen das Brot. <span class="vn-word">Chúng tôi ăn ổ bánh mì này.</span></td><td class="vn-word">bánh mì</td></tr>
+      <tr><td><span class="der">der</span>Käse</td><td><span style="color:#94a3b8;font-size:9px;">(meist kein Plural)</span></td><td class="phonetik">khe-zơ</td><td>Er isst <span class="der">den</span>Käse. <span class="vn-word">Anh ấy ăn phô mai này.</span></td><td class="vn-word">phô mai</td></tr>
+      <tr><td><span class="die">die</span>Wur<strong>st</strong></td><td>die Würste <span class="warn">⚠️</span></td><td class="phonetik">vua-<strong>st</strong></td><td>Ihr esst die Wurst. <span class="vn-word">Các bạn ăn xúc xích này.</span></td><td class="vn-word">xúc xích</td></tr>
+      <tr><td><span class="der">der</span>Rei<strong>s</strong></td><td><span style="color:#94a3b8;font-size:9px;">(kein Plural)</span></td><td class="phonetik">rai<strong>s</strong></td><td>Sie essen <span class="der">den</span>Reis. <span class="vn-word">Họ ăn cơm.</span></td><td class="vn-word">cơm/gạo</td></tr>
+      <tr><td><span class="das">das</span>Ei</td><td>die Eier <span class="warn">⚠️</span></td><td class="phonetik">ai</td><td>Ich esse das Ei. <span class="vn-word">Tôi ăn quả trứng này.</span></td><td class="vn-word">trứng</td></tr>
+      <tr><td><span class="der">der</span>Fi<strong>sch</strong></td><td>die Fische</td><td class="phonetik">fi<strong>sh</strong></td><td>Du isst <span class="der">den</span>Fisch. <span class="vn-word">Bạn ăn cá.</span></td><td class="vn-word">cá</td></tr>
+      <tr><td><span class="das">das</span>Gemüse</td><td><span style="color:#94a3b8;font-size:9px;">(kein Plural, đã là danh từ tập hợp)</span></td><td class="phonetik">gơ-muy-zơ</td><td>Wir essen das Gemüse. <span class="vn-word">Chúng tôi ăn rau.</span></td><td class="vn-word">rau</td></tr>
+      <tr><td><span class="der">der</span>Sala<strong>t</strong></td><td>die Salate</td><td class="phonetik">za-la<strong>t</strong></td><td>Sie isst <span class="der">den</span>Salat. <span class="vn-word">Cô ấy ăn xa-lát.</span></td><td class="vn-word">xa-lát/rau trộn</td></tr>
+      <tr><td><span class="das">das</span>Wasser</td><td><span style="color:#94a3b8;font-size:9px;">(kein Plural)</span></td><td class="phonetik">va-sơ</td><td>Ich trinke das Wasser. <span class="vn-word">Tôi uống nước.</span></td><td class="vn-word">nước</td></tr>
+      <tr><td><span class="der">der</span>Kaffee</td><td><span style="color:#94a3b8;font-size:9px;">(meist kein Plural)</span></td><td class="phonetik">ka-phê</td><td>Er trinkt <span class="der">den</span>Kaffee. <span class="vn-word">Anh ấy uống cà phê.</span></td><td class="vn-word">cà phê</td></tr>
+      <tr><td><span class="der">der</span>Tee</td><td><span style="color:#94a3b8;font-size:9px;">(meist kein Plural)</span></td><td class="phonetik">tê</td><td>Ihr trinkt <span class="der">den</span>Tee. <span class="vn-word">Các bạn uống trà.</span></td><td class="vn-word">trà</td></tr>
+      <tr><td><span class="die">die</span>Mil<strong>ch</strong></td><td><span style="color:#94a3b8;font-size:9px;">(kein Plural)</span></td><td class="phonetik">mil-ch <span style="color:#94a3b8;">(ich-Laut mềm, môi phẳng)</span></td><td>Sie trinkt die Milch. <span class="vn-word">Cô ấy uống sữa.</span></td><td class="vn-word">sữa</td></tr>
+      <tr><td><span class="der">der</span>Saf<strong>t</strong></td><td>die Säfte <span class="warn">⚠️</span></td><td class="phonetik">za-f<strong>t</strong></td><td>Wir trinken <span class="der">den</span>Saft. <span class="vn-word">Chúng tôi uống nước ép.</span></td><td class="vn-word">nước ép</td></tr>
+      <tr><td><span class="der">der</span>Wein</td><td>die Weine</td><td class="phonetik">vain</td><td>Sie trinken <span class="der">den</span>Wein. <span class="vn-word">Họ uống rượu vang.</span></td><td class="vn-word">rượu vang</td></tr>
+      <tr><td><span class="das">das</span>Bier</td><td>die Biere</td><td class="phonetik">bia <span style="color:#94a3b8;">(trùng hợp thú vị: gần giống "bia" trong tiếng Việt!)</span></td><td>Er trinkt das Bier. <span class="vn-word">Anh ấy uống bia.</span></td><td class="vn-word">bia</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 Viele Lebensmittel- und Getränkenamen sind <strong>Massennomen</strong> (nicht zählbar) und haben deshalb im Alltag meist keinen Plural — z. B. „Käse", „Reis", „Wasser", „Milch". Sagt man „zwei Kaffee, bitte!", meint man eigentlich „zwei Tassen Kaffee" (Mengenangabe statt echtem Plural).</div>
+    <div class="tip-vn">💡 Nhiều tên thực phẩm và đồ uống là <strong>danh từ không đếm được</strong> (Massennomen), nên trong đời sống hằng ngày thường không có dạng số nhiều — ví dụ „Käse", „Reis", „Wasser", „Milch". Khi nói „zwei Kaffee, bitte!" (hai cà phê, xin cảm ơn!), thực ra ý là „hai tách cà phê" (đơn vị đo lường chứ không phải số nhiều thật sự).</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 8</span>
+    <span>Seite 1 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Grammatik 1: Der Akkusativ + Häufige Fehler + Übung 1 + Kulturinfo 1 + Kulturinfo 2 + Verben-Tabelle) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 8</h1>
+      <h2>Das Akkusativ-Signal: den / einen / Tín hiệu Akkusativ: den／einen</h2>
+    </div>
+    <div class="badge">A1 · Lektion 8</div>
+  </div>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — Der Akkusativ: Nur maskulin ändert sich! / Ngữ pháp 1: Akkusativ — chỉ giống đực thay đổi!</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Große Erleichterung: Im Akkusativ ändert sich <strong>nur der maskuline Artikel</strong> (der → den, ein → einen). Feminin, neutral und Plural bleiben <strong>genau gleich</strong> wie im Nominativ!</div>
+    <div class="tip-vn">💡 Tin vui: Trong Akkusativ, <strong>chỉ mạo từ giống đực</strong> thay đổi (der → den, ein → einen). Giống cái, giống trung và số nhiều vẫn <strong>giữ nguyên hoàn toàn</strong> như ở Nominativ!</div>
+  </div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Genus</th><th>Nominativ</th><th>Akkusativ</th><th>Ändert sich?</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen"><span class="der">der</span>(m)</td><td>der Apfel / ein Apfel</td><td><span class="der">den</span>Apfel / <span class="der">einen</span>Apfel</td><td class="small" style="color:#b45309;font-weight:700;">⚠️ có!</td></tr>
+      <tr><td class="pronomen"><span class="die">die</span>(f)</td><td>die Banane / eine Banane</td><td>die Banane / eine Banane</td><td class="small" style="color:#15803d;">không</td></tr>
+      <tr><td class="pronomen"><span class="das">das</span>(n)</td><td>das Brot / ein Brot</td><td>das Brot / ein Brot</td><td class="small" style="color:#15803d;">không</td></tr>
+      <tr><td class="pronomen">Plural</td><td>die Äpfel</td><td>die Äpfel</td><td class="small" style="color:#15803d;">không</td></tr>
+    </tbody>
+  </table>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich esse der Apfel."</span> → <span class="wb-ok">✅ „Ich esse den Apfel."</span> — der Apfel ist hier das Akkusativobjekt (maskulin) → „der" wird zu „den"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich esse der Apfel."</span> → <span class="wb-ok">✅ „Ich esse den Apfel."</span> — „der Apfel" ở đây là tân ngữ trực tiếp (giống đực) → „der" biến thành „den"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich trinke ein Kaffee."</span> → <span class="wb-ok">✅ „Ich trinke einen Kaffee."</span> — der Kaffee ist maskulin → „ein" wird zu „einen"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich trinke ein Kaffee."</span> → <span class="wb-ok">✅ „Ich trinke einen Kaffee."</span> — „der Kaffee" là danh từ giống đực → „ein" biến thành „einen"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich esse die Brot."</span> → <span class="wb-ok">✅ „Ich esse das Brot."</span> — „das Brot" ist neutral und ändert sich im Akkusativ NICHT — es bleibt „das", nicht „die"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich esse die Brot."</span> → <span class="wb-ok">✅ „Ich esse das Brot."</span> — „das Brot" là danh từ giống trung, <strong>KHÔNG</strong> đổi trong Akkusativ — vẫn là „das", không phải „die"!</div>
+  </div>
+
+  <!-- Übung 1: Warenkorb-Sortierspiel -->
+  <div class="ubung-header">Übung 1 — Der Warenkorb: Akkusativ-Sortierspiel / Giỏ hàng: Trò chơi phân loại Akkusativ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Schreibe zu jedem Lebensmittel den korrekten Akkusativ-Artikel + Nomen (z. B. „den Apfel" oder „die Wurst").</div>
+    <div class="instr-vn">Viết mạo từ Akkusativ đúng + danh từ cho mỗi loại thực phẩm (ví dụ „den Apfel" hoặc „die Wurst").</div>
+    <div class="warenkorb-box">
+      <div class="warenkorb-grid">
+        <div>
+          <div class="warenkorb-spalte-label">Lebensmittel</div>
+          <div class="wk-item"><span class="wk-chip">1</span> Apfel (der) → <span class="wk-blank"></span></div>
+          <div class="wk-item"><span class="wk-chip">2</span> Wurst (die) → <span class="wk-blank"></span></div>
+          <div class="wk-item"><span class="wk-chip">3</span> Ei (das) → <span class="wk-blank"></span></div>
+          <div class="wk-item"><span class="wk-chip">4</span> Kaffee (der) → <span class="wk-blank"></span></div>
+          <div class="wk-item"><span class="wk-chip">5</span> Milch (die) → <span class="wk-blank"></span></div>
+          <div class="wk-item"><span class="wk-chip">6</span> Brot (das) → <span class="wk-blank"></span></div>
+        </div>
+        <div>
+          <div class="warenkorb-spalte-label">Lebensmittel</div>
+          <div class="wk-item"><span class="wk-chip">7</span> Fisch (der) → <span class="wk-blank"></span></div>
+          <div class="wk-item"><span class="wk-chip">8</span> Banane (die) → <span class="wk-blank"></span></div>
+          <div class="wk-item"><span class="wk-chip">9</span> Gemüse (das) → <span class="wk-blank"></span></div>
+          <div class="wk-item"><span class="wk-chip">10</span> Saft (der) → <span class="wk-blank"></span></div>
+          <div class="wk-item"><span class="wk-chip">11</span> Salat (der) → <span class="wk-blank"></span></div>
+          <div class="wk-item"><span class="wk-chip">12</span> Wasser (das) → <span class="wk-blank"></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="tip-box">
+      <div class="tip-de">✏️ Bonus: Markiere alle Lösungen, bei denen sich der Artikel geändert hat, mit einem ⚠️ am Rand.</div>
+      <div class="tip-vn">✏️ Điểm thưởng: Đánh dấu ⚠️ bên cạnh tất cả các đáp án mà mạo từ đã thay đổi.</div>
+    </div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Die deutsche Brotkultur / Góc văn hóa 1: Văn hóa bánh mì Đức</div>
+    <div class="kb-de">Deutschland hat über <b>3.000 verschiedene Brotsorten</b> — von Vollkornbrot über Roggenbrot bis Sauerteigbrot. Die deutsche Brotkultur ist sogar als <b>immaterielles UNESCO-Kulturerbe</b> anerkannt! Das klassische deutsche <b>Abendbrot</b> besteht traditionell aus Brot mit Käse, Wurst und Gemüse — im Gegensatz zum warmen Abendessen in vielen anderen Kulturen ist es meist eine kalte, einfache Mahlzeit.</div>
+    <div class="kb-vn">Nước Đức có hơn <b>3.000 loại bánh mì khác nhau</b> — từ bánh mì nguyên cám, bánh mì lúa mạch đen cho đến bánh mì men chua. Văn hóa bánh mì Đức thậm chí còn được công nhận là <b>Di sản văn hóa phi vật thể UNESCO</b>! Bữa <b>„Abendbrot"</b> (bữa tối kiểu bánh mì) truyền thống của Đức thường gồm bánh mì ăn kèm phô mai, xúc xích và rau — khác với bữa tối nóng ở nhiều nền văn hóa khác, đây thường là một bữa ăn nguội, đơn giản. Điều này khá khác với Việt Nam, nơi bữa tối gần như luôn là cơm nóng cùng nhiều món ăn kèm.</div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Das Reinheitsgebot / Góc văn hóa 2: Luật Tinh khiết Bia (Reinheitsgebot)</div>
+    <div class="kb-de">Deutschland ist weltberühmt für sein Bier — kein Wunder, denn hier gilt seit <b>1516</b> das <b>Reinheitsgebot</b>, eines der ältesten noch gültigen Lebensmittelgesetze der Welt! Es erlaubt für die Bierherstellung ursprünglich nur <b>vier Zutaten</b>: Wasser, Hopfen, Malz und Hefe. Mit über <b>1.500 Brauereien</b> hat Deutschland mehr Biersorten als fast jedes andere Land, und das <b>Oktoberfest</b> in München ist das größte Volksfest der Welt. Bier gilt hier fast als Grundnahrungsmittel — man trinkt es traditionell zum Mittagessen oder gemütlich am Abend, oft in geselliger Runde.</div>
+    <div class="kb-vn">Nước Đức nổi tiếng thế giới về bia — điều này không có gì lạ, vì từ năm <b>1516</b>, Đức đã áp dụng <b>Luật Tinh khiết Bia (Reinheitsgebot)</b>, một trong những đạo luật thực phẩm cổ xưa nhất thế giới vẫn còn hiệu lực! Ban đầu luật này chỉ cho phép <b>bốn nguyên liệu</b> để sản xuất bia: nước, hoa bia, mạch nha và men. Với hơn <b>1.500 nhà máy bia</b>, Đức có nhiều loại bia hơn hầu hết các quốc gia khác, và lễ hội <b>Oktoberfest</b> ở München là lễ hội dân gian lớn nhất thế giới. Ở đây, bia gần như được xem là một loại thực phẩm cơ bản — người ta thường uống bia vào bữa trưa hoặc thư giãn vào buổi tối, thường là cùng bạn bè. Điều này khá khác với Việt Nam, nơi bia thường gắn liền với các bữa nhậu buổi tối hơn là bữa trưa.</div>
+  </div>
+
+  <!-- Verben-Tabelle -->
+  <div class="section-title">🔧 Verben-Tabelle: „essen" (neu, unregelmäßig) &amp; „trinken" (neu, regelmäßig) / Bảng động từ: „essen" (mới, bất quy tắc) &amp; „trinken" (mới, quy tắc)</div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Person</th><th>essen</th><th>trinken</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td>esse (é-sơ)</td><td>trinke (trin-kơ)</td></tr>
+      <tr><td class="pronomen">du</td><td><strong>isst</strong> (íst) <span class="warn">⚠️</span></td><td>trink<strong>st</strong> (trin-ks<strong>t</strong>)</td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td><strong>isst</strong> (íst) <span class="warn">⚠️</span></td><td>trink<strong>t</strong> (trin<strong>kt</strong>)</td></tr>
+      <tr><td class="pronomen">wir</td><td>essen (é-sơn)</td><td>trinken (trin-kơn)</td></tr>
+      <tr><td class="pronomen">ihr</td><td>ess<strong>t</strong> (és<strong>t</strong>)</td><td>trink<strong>t</strong> (trin<strong>kt</strong>)</td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td>essen (é-sơn)</td><td>trinken (trin-kơn)</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 Erinnerst du dich an „sprechen" aus Lektion 3? „essen" folgt genau demselben Muster: e→i bei du/er/sie/es! (ich esse → du isst → er isst)</div>
+    <div class="tip-vn">💡 Bạn còn nhớ „sprechen" ở bài 3 không? „essen" tuân theo đúng quy luật đó: e→i ở ngôi du/er/sie/es! (ich esse → du isst → er isst)</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 8</span>
+    <span>Seite 2 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Grammatik 2: Akkusativ nach Verben + Häufige Fehler + Übung 2 + Kulturinfo 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 8</h1>
+      <h2>Akkusativ-Verben &amp; Satzbau / Động từ đi với Akkusativ &amp; cấu trúc câu</h2>
+    </div>
+    <div class="badge">A1 · Lektion 8</div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Verben mit Akkusativobjekt / Ngữ pháp 2: Động từ đi kèm tân ngữ Akkusativ</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Manche Verben brauchen immer ein direktes Objekt im Akkusativ: „essen", „trinken", „kaufen", „nehmen", „mögen". Die Frage dazu lautet immer: <strong>Wen oder was?</strong></div>
+    <div class="tip-vn">💡 Một số động từ luôn cần một tân ngữ trực tiếp ở Akkusativ: „essen", „trinken", „kaufen", „nehmen", „mögen". Câu hỏi tương ứng luôn là: <strong>Ai hoặc cái gì?</strong></div>
+  </div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:44%"><col style="width:34%"></colgroup>
+    <thead><tr><th>Verb</th><th>Beispiel (Frage: Wen/was?)</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>essen</td><td>Ich esse den Fisch.</td><td class="vn-word">Tôi ăn con cá này.</td></tr>
+      <tr><td>trinken</td><td>Du trinkst den Tee.</td><td class="vn-word">Bạn uống trà này.</td></tr>
+      <tr><td>kaufen</td><td>Sie kauft die Milch.</td><td class="vn-word">Cô ấy mua sữa này.</td></tr>
+      <tr><td>nehmen ⚠️</td><td>Er nimmt den Salat.</td><td class="vn-word">Anh ấy lấy món xa-lát này.</td></tr>
+      <tr><td>mögen ⚠️</td><td>Ich mag den Kaffee.</td><td class="vn-word">Tôi thích cà phê này.</td></tr>
+    </tbody>
+  </table>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Er esst den Fisch."</span> → <span class="wb-ok">✅ „Er isst den Fisch."</span> — bei er/sie/es heißt es „isst" (e→i), nicht „esst"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Er esst den Fisch."</span> → <span class="wb-ok">✅ „Er isst den Fisch."</span> — ở ngôi er/sie/es phải là „isst" (e→i), không phải „esst"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich kaufe einen Milch."</span> → <span class="wb-ok">✅ „Ich kaufe die Milch."</span> — „die Milch" ist feminin, daher bleibt „die" im Akkusativ unverändert — kein „einen"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich kaufe einen Milch."</span> → <span class="wb-ok">✅ „Ich kaufe die Milch."</span> — „die Milch" là danh từ giống cái, nên „die" giữ nguyên trong Akkusativ — không dùng „einen"!</div>
+  </div>
+
+  <!-- Übung 2: Situations-Satzbau-Scramble -->
+  <div class="ubung-header">Übung 2 — Einkaufs-Check: Situations-Satzbau-Scramble / Kiểm tra mua sắm: Sắp xếp câu theo tình huống</div>
+  <div class="ubung-body">
+    <div class="instr-de">Lies die Situation und bringe die Wörter in die richtige Reihenfolge — achte besonders auf den Akkusativ-Artikel!</div>
+    <div class="instr-vn">Đọc tình huống và sắp xếp các từ theo đúng thứ tự — chú ý đặc biệt đến mạo từ Akkusativ!</div>
+
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">1.</span>
+      <div class="wortsalat-situation">Situation: Frühstückstisch 🍳</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">ich</span><span class="wort-chip">das</span><span class="wort-chip">esse</span><span class="wort-chip">Ei</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">2.</span>
+      <div class="wortsalat-situation">Situation: Café am Morgen ☕</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">Kaffee</span><span class="wort-chip">ich</span><span class="wort-chip">einen</span><span class="wort-chip">trinke</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">3.</span>
+      <div class="wortsalat-situation">Situation: Mittagessen im Restaurant 🍽️</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">den</span><span class="wort-chip">er</span><span class="wort-chip">Fisch</span><span class="wort-chip">isst</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">4.</span>
+      <div class="wortsalat-situation">Situation: vegetarisches Essen 🥗</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">Salat</span><span class="wort-chip">wir</span><span class="wort-chip">den</span><span class="wort-chip">essen</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">5.</span>
+      <div class="wortsalat-situation">Situation: Supermarkt-Regal 🛒</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">die</span><span class="wort-chip">kauft</span><span class="wort-chip">Wurst</span><span class="wort-chip">sie</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">6.</span>
+      <div class="wortsalat-situation">Situation: gemütlicher Abend 🍷</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">Wein</span><span class="wort-chip">trinkt</span><span class="wort-chip">ihr</span><span class="wort-chip">den</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+  </div>
+
+  <!-- Kulturinfo 3 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #3 — Das Flaschenpfand-System / Góc văn hóa 3: Hệ thống đặt cọc vỏ chai (Pfand)</div>
+    <div class="kb-de">Wenn du in Deutschland eine Flasche Wasser, Saft oder Bier kaufst, zahlst du oft zusätzlich <b>Pfand</b> (meist 0,08–0,25 €) — eine Art Kaution für die Flasche. Bringst du die leere Flasche zurück zu einem <b>Pfandautomaten</b> im Supermarkt, bekommst du dein Geld zurück! Dieses System fördert Recycling und ist für viele internationale Besucher zunächst ungewohnt, aber sehr umweltfreundlich.</div>
+    <div class="kb-vn">Khi bạn mua một chai nước, nước ép hoặc bia ở Đức, bạn thường phải trả thêm <b>tiền đặt cọc vỏ chai (Pfand)</b> (thường 0,08–0,25 €) — giống như một khoản cọc cho vỏ chai. Nếu bạn mang vỏ chai rỗng trả lại <b>máy thu hồi vỏ chai (Pfandautomat)</b> trong siêu thị, bạn sẽ được hoàn lại tiền! Hệ thống này thúc đẩy tái chế và ban đầu khá lạ lẫm với nhiều du khách quốc tế, nhưng rất thân thiện với môi trường. Đây là điều khá mới lạ so với Việt Nam, nơi việc mua ve chai vỏ lon vẫn tồn tại nhưng không được tích hợp trực tiếp vào giá bán tại siêu thị như ở Đức.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 8</span>
+    <span>Seite 3 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Dialog + Lesetext + MC + Freies Sprechen + Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 8</h1>
+      <h2>Dialog, Lesetext &amp; Finale / Hội thoại, bài đọc &amp; tổng kết</h2>
+    </div>
+    <div class="badge">A1 · Lektion 8</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Đoạn hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Anna:</span>Hast du Hunger? Was isst du gern?</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Ich esse den Käse und das Brot. Und du?</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Ich esse die Wurst und einen Apfel.</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Und was trinkst du dazu?</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Ich trinke gern den Tee. Und du?</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Ich trinke lieber einen Kaffee.</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Gut, dann kaufen wir das zusammen im Supermarkt!</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Heute gehe ich einkaufen. Ich brauche viele Lebensmittel für die Woche. Zuerst kaufe ich das Bro<strong>t</strong> und den Käse. Dann nehme ich die Wur<strong>st</strong> und den Fi<strong>sch</strong> für das Abendessen. Ich esse gern Obst, deshalb kaufe ich auch einen Apfel und eine Banane. Meine Familie mag Gemüse, also kaufe ich den Salat und das Gemüse. Zum Trinken kaufe ich einen Saf<strong>t</strong> und eine Flasche Wasser. An der Kasse bezahle ich 25 Euro. Zu Hause koche ich das Abendessen für meine Familie. Wir essen den Fi<strong>sch</strong> mit Rei<strong>s</strong> und trinken den Saf<strong>t</strong> dazu. Es schmeckt sehr gut!
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Was kauft die Person zuerst?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) den Fisch</span>
+      <span><span class="mc-kreis"></span> b) das Brot und den Käse</span>
+      <span><span class="mc-kreis"></span> c) den Saft</span>
+    </div>
+    <div class="mc-frage">2. Warum kauft sie einen Apfel und eine Banane?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie isst gern Obst</span>
+      <span><span class="mc-kreis"></span> b) sie mag keine Wurst</span>
+      <span><span class="mc-kreis"></span> c) sie hat Durst</span>
+    </div>
+    <div class="mc-frage">3. Was mag die Familie?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Fleisch</span>
+      <span><span class="mc-kreis"></span> b) Gemüse</span>
+      <span><span class="mc-kreis"></span> c) Kaffee</span>
+    </div>
+    <div class="mc-frage">4. Wie viel bezahlt sie an der Kasse?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) 15 Euro</span>
+      <span><span class="mc-kreis"></span> b) 20 Euro</span>
+      <span><span class="mc-kreis"></span> c) 25 Euro</span>
+    </div>
+    <div class="mc-frage">5. Was isst die Familie zum Abendessen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) den Fisch mit Reis</span>
+      <span><span class="mc-kreis"></span> b) die Wurst mit Brot</span>
+      <span><span class="mc-kreis"></span> c) den Salat mit Käse</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Was kaufst du gern im Supermarkt? Was isst und trinkst du gern?</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Bạn thích mua gì ở siêu thị? Bạn thích ăn gì, uống gì?</div>
+    </div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">Frühstück</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was isst du gern zum Frühstück?</div>
+      <div class="anweisung-vn">Bạn thích ăn gì vào bữa sáng?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">Kaffee / Tee</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Trinkst du lieber Kaffee oder Tee?</div>
+      <div class="anweisung-vn">Bạn thích uống cà phê hay trà hơn?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">Supermarkt</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was kaufst du diese Woche im Supermarkt?</div>
+      <div class="anweisung-vn">Tuần này bạn mua gì ở siêu thị?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">den/die/das</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Satz</span></div>
+      <div class="anweisung-de">Bilde einen Satz: „Ich esse/trinke ___!"</div>
+      <div class="anweisung-vn">Đặt một câu: „Ich esse/trinke ___!"</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Verben konjugieren / Chia động từ:</strong> Schreibe die vollständige Konjugation von „essen" für alle 6 Personen auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết đầy đủ cách chia động từ „essen" cho cả 6 ngôi vào một tờ giấy — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">🛒 <strong>Einkaufsliste schreiben / Viết danh sách mua sắm:</strong> Schreibe eine Einkaufsliste mit 5 Lebensmitteln — jeweils mit dem korrekten Akkusativ-Artikel (z. B. „den Apfel", „die Milch", „das Brot").
+      <div class="ha-vn">Viết một danh sách mua sắm với 5 loại thực phẩm — mỗi loại kèm mạo từ Akkusativ đúng (ví dụ „den Apfel", „die Milch", „das Brot").</div>
+    </div>
+    <div class="ha-item">🔍 <strong>Fehlerjagd / Săn lỗi:</strong> Suche in einem beliebigen deutschen Text oder Lied 2 Sätze mit einem Akkusativobjekt und prüfe, ob der Artikel zu unseren Regeln passt.
+      <div class="ha-vn">Tìm trong một đoạn văn hoặc bài hát tiếng Đức bất kỳ 2 câu có tân ngữ Akkusativ, rồi kiểm tra xem mạo từ có phù hợp với các quy tắc đã học hôm nay không.</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 7):</strong> 1. bin &nbsp; 2. hat &nbsp; 3. Falsch — richtig ist „Die Autos sind klein." (keine Endung beim prädikativen Adjektiv)</p>
+    <p><strong>Übung 1 (Warenkorb):</strong> 1. den Apfel ⚠️ &nbsp; 2. die Wurst &nbsp; 3. das Ei &nbsp; 4. den Kaffee ⚠️ &nbsp; 5. die Milch &nbsp; 6. das Brot &nbsp; 7. den Fisch ⚠️ &nbsp; 8. die Banane &nbsp; 9. das Gemüse &nbsp; 10. den Saft ⚠️ &nbsp; 11. den Salat ⚠️ &nbsp; 12. das Wasser</p>
+    <p><strong>Übung 2 (Satzbau-Scramble):</strong> 1. Ich esse das Ei. &nbsp; 2. Ich trinke einen Kaffee. &nbsp; 3. Er isst den Fisch. &nbsp; 4. Wir essen den Salat. &nbsp; 5. Sie kauft die Wurst. &nbsp; 6. Ihr trinkt den Wein.</p>
+    <p><strong>Leseverständnis:</strong> 1. b) das Brot und den Käse &nbsp; 2. a) sie isst gern Obst &nbsp; 3. b) Gemüse &nbsp; 4. c) 25 Euro &nbsp; 5. a) den Fisch mit Reis</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ich esse gern Brot mit Käse. &nbsp; Karte 2: Ich trinke lieber Kaffee. &nbsp; Karte 3: Ich kaufe Milch, Brot und Äpfel. &nbsp; Karte 4: Ich trinke den Tee.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 8 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 4 / 4</span>
+  </div>
+</div>
+
+</body>
+</html>

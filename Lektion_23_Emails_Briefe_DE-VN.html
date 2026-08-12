@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 23</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 8mm 13mm 4mm 13mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+table.konj td.beispiel { text-align: left; font-size: 10px; color: #374151; }
+table.konj td.beispiel span { color: #0f766e; font-size: 9.5px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.2; font-size: 11px; }
+.compact .doc-header { padding-bottom: 3px; margin-bottom: 5px; }
+.compact .section-title { margin: 5px 0 3px 0; }
+.compact table { margin-bottom: 3px; }
+.compact table.vocab th, .compact table.vocab td { padding: 2px 5px; }
+.compact .gram-box { padding: 4px 8px; margin-bottom: 3px; }
+.compact .tip-box { padding: 3px 7px; margin: 2px 0; }
+.compact .warn-box { padding: 3px 7px; margin: 2px 0 5px 0; }
+.compact .ubung-header { padding: 2px 8px; }
+.compact .ubung-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .fill-line { margin-bottom: 1px; }
+.compact .footer { margin-top: 3px; padding-top: 2px; }
+.compact .phon-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .kultur-box { padding: 4px 9px; margin: 3px 0 5px 0; }
+.compact .dialog-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .lese-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .mc-block { margin-bottom: 3px; }
+.compact .mc-optionen { margin-bottom: 4px; }
+.compact .ha-box { padding: 4px 9px; }
+.compact .antworten { padding: 4px 9px; }
+.compact .wiederholung-box { padding: 4px 9px; margin-bottom: 5px; }
+.compact .karten-grid { margin-top: 3px; gap: 6px; }
+.compact .sprech-karte { padding: 5px 7px; }
+.compact .sprech-karte .karte-num { padding: 1px 7px; margin-bottom: 3px; }
+.compact .sprech-karte .wort-pill { font-size: 11.5px; padding: 2px 5px; margin-bottom: 3px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 3px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 3px; }
+.compact .merk-box { padding: 5px 10px; margin: 4px 0 6px 0; }
+.compact .pruefung-box { padding: 6px 10px; margin: 4px 0 6px 0; }
+.compact .schreibfeld { padding: 6px 9px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .prompt-tag.satz { background: #fef3c7; color: #92400e; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .merk-box: wiederverwendet, zwei Varianten in L23 (Verbstellung denn/weil) ===== */
+.merk-box { background: #fff1f2; border: 1.5px solid #fda4af; border-radius: 8px; padding: 7px 12px; margin: 6px 0 8px 0; }
+.merk-box .mb-title { font-size: 11px; font-weight: 700; color: #9f1239; margin-bottom: 4px; }
+.merk-box .mb-step { font-size: 10.5px; color: #1a1a1a; margin-bottom: 2px; }
+.merk-box .mb-step strong { color: #9f1239; }
+.merk-box .mb-step .mb-vn { color: #be123c; font-size: 10px; font-style: italic; }
+.merk-box .mb-beispiel { display: inline-block; background: white; border: 0.5px solid #fecdd3; border-radius: 4px; padding: 1px 6px; font-size: 10px; color: #881337; margin-left: 3px; }
+.merk-box.verbstellung { text-align: center; }
+.merk-box .vs-zeile { font-size: 12px; font-weight: 700; color: #1e3a8a; margin: 3px 0; }
+.merk-box .vs-zeile .vs-dass { color: #9f1239; }
+.merk-box .vs-zeile .vs-verb { color: #ea580c; text-decoration: underline; }
+.merk-box .vs-pfeil { color: #94a3b8; font-size: 13px; }
+.merk-box .vs-regel { font-size: 10px; color: #7e22ce; font-style: italic; margin-top: 3px; }
+
+/* ===== Konjunktionen-Referenztabelle (neu in L23) ===== */
+table.konjtab th.col-verb2 { background: #dbeafe; color: #1e3a8a; }
+table.konjtab td.col-verb2 { background: #eff6ff; font-weight: 600; }
+table.konjtab th.col-verbend { background: #fde68a; color: #92400e; }
+table.konjtab td.col-verbend { background: #fffbeb; font-weight: 700; }
+
+/* ===== NEU in L23: Prüfungssimulations-Box, Schreibfeld & Checkliste ===== */
+.pruefung-box { background: #eef2ff; border: 1.5px solid #a5b4fc; border-radius: 8px; padding: 8px 12px; margin: 6px 0 8px 0; }
+.pruefung-box .pb-title { font-size: 11.5px; font-weight: 700; color: #3730a3; margin-bottom: 4px; }
+.pruefung-box .pb-de { font-size: 10.5px; color: #1e1b4b; margin-bottom: 1px; }
+.pruefung-box .pb-vn { font-size: 10px; color: #4338ca; font-style: italic; margin-bottom: 3px; }
+.pruefung-box .pb-punkt { font-size: 10.5px; color: #1e1b4b; margin: 2px 0 2px 12px; }
+.pruefung-box .pb-punkt-vn { font-size: 9.5px; color: #4338ca; font-style: italic; margin: 0 0 2px 12px; }
+.pruefung-timer { display: inline-flex; align-items: center; gap: 5px; background: #ea580c; color: white; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin: 4px 0; }
+.schreibfeld { border: 1.5px dashed #94a3b8; border-radius: 8px; background: repeating-linear-gradient(white, white 17px, #e2e8f0 18px); padding: 8px 10px; min-height: 145px; margin: 6px 0; }
+.schreibfeld .sf-label { font-size: 9px; color: #94a3b8; font-style: italic; margin-bottom: 2px; }
+.checkliste { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.checkliste h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 3px; }
+.check-item { font-size: 10px; color: #166534; margin-bottom: 2px; display: flex; align-items: baseline; gap: 5px; }
+.check-item .cb { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #16a34a; border-radius: 2px; flex-shrink: 0; }
+.check-item .ci-vn { color: #15803d; font-size: 9px; font-style: italic; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Aussprache + Lernziele + Wortschatz) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 23</h1>
+      <h2>E-Mails &amp; Briefe</h2>
+      <h2>Email &amp; Thư từ</h2>
+    </div>
+    <div class="badge">A1 · Lektion 23</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 22 / Ôn tập Bài 22</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: Komparativ, Superlativ &amp; dass-Satz selbst bilden / Khởi động ngữ pháp: tự chia thể so sánh hơn, so sánh nhất &amp; câu dass</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">groß</div>
+        <div class="wh-mund">Berlin ist ___ als Leipzig. (Komparativ bilden!)</div>
+        <div class="wh-beispiel">Tự chia thể so sánh hơn!</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">gut</div>
+        <div class="wh-mund">Das ist das ___ Restaurant. (Superlativ bilden — unregelmäßig!)</div>
+        <div class="wh-beispiel">Tự chia thể so sánh nhất — bất quy tắc!</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Ich finde, ...</div>
+        <div class="wh-mund">Ich finde, ___ Berlin schön ___. (dass-Satz, Verb ans Ende!)</div>
+        <div class="wh-beispiel">Tự đặt câu dass, động từ ở cuối câu!</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aussprache-Minute -->
+  <div class="section-title">🔊 AUSSPRACHE-MINUTE / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Fokuslaut: Die Satzmelodie bei weil- und denn-Sätzen / Trọng tâm: ngữ điệu trong câu weil và câu denn</div>
+    <div class="phon-de">Bei „weil" fällt die Stimme erst ganz am <strong>Satzende</strong> (weil das Verb dort steht), bei „denn" fällt sie schon früher, direkt nach dem Verb — genau wie in einem normalen Hauptsatz. Sprich beide Sätze laut und höre den Unterschied in der Melodie!</div>
+    <div class="phon-vn">Trong câu „weil", giọng chỉ xuống ở tận <strong>cuối câu</strong> (nơi động từ đứng), còn trong câu „denn", giọng đã xuống sớm hơn, ngay sau động từ — giống hệt trong một câu chính bình thường. Hãy đọc to cả hai câu và lắng nghe sự khác biệt trong ngữ điệu!</div>
+    <div class="phon-beispiele">Ich komme nicht, weil ich krank <strong>bin</strong>. ↘ &nbsp;|&nbsp; Ich komme nicht, denn ich <strong>bin</strong> krank. ↘</div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 LERNZIELE / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">✅ Ich kann zwei Sätze mit „und" und „aber" korrekt verbinden (normale Wortstellung, Komma vor „aber").</p>
+    <p class="vn">✅ Tôi có thể nối đúng hai câu bằng „und" và „aber" (trật tự từ bình thường, có dấu phẩy trước „aber").</p>
+    <p class="de">✅ Ich kann Gründe mit „weil" (Verb am Ende) und „denn" (Verb Position 2) ausdrücken und die beiden nicht verwechseln.</p>
+    <p class="vn">✅ Tôi có thể diễn đạt lý do bằng „weil" (động từ ở cuối) và „denn" (động từ ở vị trí 2), và không nhầm lẫn giữa hai từ này.</p>
+    <p class="de">✅ Ich kann eine informelle E-Mail und einen formellen Brief mit passender Anrede und Grußformel schreiben.</p>
+    <p class="vn">✅ Tôi có thể viết một email thân mật và một lá thư trang trọng với lời chào đầu thư và câu chào kết thư phù hợp.</p>
+    <p class="de">✅ Ich kann in 15 Minuten einen vollständigen Prüfungstext (Schreiben Teil 2) zu allen geforderten Punkten verfassen.</p>
+    <p class="vn">✅ Tôi có thể viết hoàn chỉnh một bài thi (phần Viết 2) trong 15 phút, đề cập đầy đủ các yêu cầu.</p>
+  </div>
+
+  <!-- Wortschatz Korrespondenz -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Korrespondenz / Bảng từ vựng: Thư từ, liên lạc</div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:20%"><col style="width:33%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td><span class="die">die</span> E-Mail</td><td class="phonetik">đi I-mêu</td><td>Ich schreibe dir eine E-Mail. <span class="vn-word">Tôi viết cho bạn một email.</span></td><td class="vn-word">email, thư điện tử</td></tr>
+      <tr><td><span class="der">der</span> Brief</td><td class="phonetik">đơ brip</td><td>Ich habe einen Brief bekommen. <span class="vn-word">Tôi đã nhận được một lá thư.</span></td><td class="vn-word">thư, lá thư</td></tr>
+      <tr><td><span class="der">der</span> Betreff</td><td class="phonetik">đơ bơ-TRÉP</td><td>Der Betreff is<strong>t</strong> „Einladung". <span class="vn-word">Tiêu đề là „Lời mời".</span></td><td class="vn-word">tiêu đề (thư/mail)</td></tr>
+      <tr><td><span class="die">die</span> Anrede</td><td class="phonetik">đi AN-rê-đơ</td><td>Die Anrede is<strong>t</strong> sehr wichtig. <span class="vn-word">Lời chào đầu thư rất quan trọng.</span></td><td class="vn-word">lời chào (đầu thư)</td></tr>
+      <tr><td><span class="die">die</span> Grußformel</td><td class="phonetik">đi GRUS-phoóc-mồ</td><td>Am Ende steh<strong>t</strong> eine Grußformel. <span class="vn-word">Cuối thư có một câu chào kết thư.</span></td><td class="vn-word">câu chào kết thư</td></tr>
+      <tr><td>✉️ einladen</td><td class="phonetik">AIN-la-đờn</td><td>Ich lade dich zur Party ein. <span class="vn-word">Tôi mời bạn đến bữa tiệc.</span></td><td class="vn-word">mời</td></tr>
+      <tr><td>🚫 absagen</td><td class="phonetik">ÁP-da-gờn</td><td>Ich mu<strong>ss</strong> den Termin absagen. <span class="vn-word">Tôi phải hủy cuộc hẹn.</span></td><td class="vn-word">hủy, từ chối</td></tr>
+      <tr><td>😊 sich freuen über</td><td class="phonetik">dzích FROI-ơn UY-bơ</td><td>Ich freue mich über deine E-Mail. <span class="vn-word">Tôi rất vui vì nhận được email của bạn.</span></td><td class="vn-word">vui về việc gì</td></tr>
+      <tr><td>✍️ antworten</td><td class="phonetik">ANT-voọc-tờn</td><td>Bitte antworte mir bal<strong>d</strong>. <span class="vn-word">Làm ơn trả lời tôi sớm nhé.</span></td><td class="vn-word">trả lời</td></tr>
+      <tr><td>✍️ schreiben</td><td class="phonetik">SHRAI-bờn</td><td>Ich schreibe einen formellen Brief. <span class="vn-word">Tôi đang viết một lá thư trang trọng.</span></td><td class="vn-word">viết</td></tr>
+      <tr><td><span class="der">der</span> Empfänger</td><td class="phonetik">đơ em-PHENG-ơ</td><td>Der Empfänger heiß<strong>t</strong> Herr Müller. <span class="vn-word">Người nhận tên là ông Müller.</span></td><td class="vn-word">người nhận</td></tr>
+      <tr><td><span class="der">der</span> Absender</td><td class="phonetik">đơ ÁP-den-đơ</td><td>Der Absender is<strong>t</strong> unbekann<strong>t</strong>. <span class="vn-word">Người gửi không rõ danh tính.</span></td><td class="vn-word">người gửi</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Wortschatz Anrede/Schluss -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Anrede &amp; Grußformeln / Bảng từ vựng: Lời chào &amp; câu kết thư</div>
+  <table class="vocab">
+    <colgroup><col style="width:24%"><col style="width:16%"><col style="width:35%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Ausdruck</th><th>Register</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>💬 Liebe/r ...</td><td class="vn-word">🟢 thân mật</td><td>Liebe Anna, wie geht es dir? <span class="vn-word">Anna thân mến, bạn khỏe không?</span></td><td class="vn-word">... thân mến (người quen)</td></tr>
+      <tr><td>💬 Hallo ...</td><td class="vn-word">🟢 thân mật</td><td>Hallo Tom, ich habe eine Frage. <span class="vn-word">Chào Tom, tôi có một câu hỏi.</span></td><td class="vn-word">chào...</td></tr>
+      <tr><td>💬 Sehr geehrte/r ...</td><td class="vn-word">🔵 trang trọng</td><td>Sehr geehrter Herr Schmidt, ... <span class="vn-word">Kính gửi ông Schmidt, ...</span></td><td class="vn-word">kính gửi...</td></tr>
+      <tr><td>💬 Sehr geehrte Damen und Herren</td><td class="vn-word">🔵 trang trọng</td><td>Sehr geehrte Damen und Herren, ich schreibe Ihnen wegen ... <span class="vn-word">Kính gửi quý ông/bà, tôi viết thư này vì ...</span></td><td class="vn-word">kính gửi quý ông/bà (khi không biết tên)</td></tr>
+      <tr><td>💬 Viele Grüße</td><td class="vn-word">🟢 thân mật</td><td>Viele Grüße, deine Lisa <span class="vn-word">Thân ái, Lisa của bạn</span></td><td class="vn-word">thân ái (kết thư không trang trọng)</td></tr>
+      <tr><td>💬 Mit freundlichen Grüßen</td><td class="vn-word">🔵 trang trọng</td><td>Mit freundlichen Grüßen, Herr Müller <span class="vn-word">Trân trọng, ông Müller</span></td><td class="vn-word">trân trọng (kết thư trang trọng)</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 🟢 = informell, für Freunde und Familie (du). &nbsp; 🔵 = formell, für Ämter, Firmen und fremde Personen (Sie). Mische diese beiden Register niemals in einem Text!</div>
+    <div class="tip-vn">💡 🟢 = thân mật, dùng cho bạn bè và gia đình (du). 🔵 = trang trọng, dùng cho cơ quan, công ty và người lạ (Sie). Không bao giờ được trộn lẫn hai văn phong này trong cùng một văn bản!</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 23</span>
+    <span>Seite 1 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Konjunktionen-Referenztabelle + Grammatik 1: und/aber + Häufige Fehler + Übung 1 + Grammatik 2: weil + Häufige Fehler + Übung 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 23</h1>
+      <h2>und, aber &amp; weil / und, aber &amp; weil</h2>
+    </div>
+    <div class="badge">A1 · Lektion 23</div>
+  </div>
+
+  <!-- Referenztabelle -->
+  <div class="section-title">🔧 Referenztabelle: Die vier Konjunktionen im Überblick ⚠️ / Bảng tham chiếu: tổng quan bốn liên từ ⚠️</div>
+  <table class="konj konjtab">
+    <colgroup><col style="width:16%"><col style="width:28%"><col style="width:*"></colgroup>
+    <thead><tr><th>Konjunktion</th><th class="col-verb2">Wortstellung</th><th>Beispiel</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">und</td><td class="col-verb2">normal (Verb Pos. 2)</td><td class="beispiel">Ich schreibe eine E-Mail, <strong>und</strong> ich lade dich ein.</td></tr>
+      <tr><td class="pronomen">aber</td><td class="col-verb2">normal (Verb Pos. 2)</td><td class="beispiel">Ich möchte kommen, <strong>aber</strong> ich habe keine Zeit.</td></tr>
+      <tr><td class="pronomen">denn</td><td class="col-verb2">normal (Verb Pos. 2)</td><td class="beispiel">Ich komme nicht, <strong>denn</strong> ich bin krank.</td></tr>
+      <tr><td class="pronomen">weil ⚠️</td><td class="col-verbend">Verb ganz am Ende!</td><td class="beispiel">Ich komme nicht, <strong>weil</strong> ich krank bin.</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 Nur „weil" verändert die Wortstellung! „Und", „aber" und „denn" verbinden zwei ganz normale Hauptsätze — das Verb bleibt an Position 2.</div>
+    <div class="tip-vn">💡 Chỉ có „weil" làm thay đổi trật tự từ! „Und", „aber" và „denn" nối hai câu chính hoàn toàn bình thường — động từ vẫn ở vị trí số 2.</div>
+  </div>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — und, aber / Ngữ pháp 1: und, aber</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 „und" (und) verbindet zwei Ideen; „aber" (aber) zeigt einen Gegensatz. Beide verbinden zwei Hauptsätze — die Wortstellung ändert sich <strong>nicht</strong>. Formel: Hauptsatz + und/aber + Hauptsatz.</div>
+    <div class="tip-vn">💡 „und" nối hai ý; „aber" thể hiện sự đối lập. Cả hai đều nối hai câu chính — trật tự từ <strong>không</strong> thay đổi. Công thức: câu chính + und/aber + câu chính.</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich schreibe, und lade ich dich ein."</span> → <span class="wb-ok">✅ „Ich schreibe, und ich lade dich ein."</span> — nach „und"/„aber" bleibt die normale Reihenfolge Subjekt vor Verb!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich schreibe, und lade ich dich ein."</span> → <span class="wb-ok">✅ „Ich schreibe, und ich lade dich ein."</span> — sau „und"/„aber", chủ ngữ vẫn đứng trước động từ như bình thường!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich komme aber ich habe wenig Zeit."</span> → <span class="wb-ok">✅ „Ich komme, aber ich habe wenig Zeit."</span> — vor „aber" steht immer ein Komma!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich komme aber ich habe wenig Zeit."</span> → <span class="wb-ok">✅ „Ich komme, aber ich habe wenig Zeit."</span> — trước „aber" luôn có dấu phẩy!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich mag Kaffee, und ich mag keinen Tee."</span> → <span class="wb-ok">✅ „Ich mag Kaffee, aber ich mag keinen Tee."</span> — bei einem Gegensatz brauchst du „aber", nicht „und"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich mag Kaffee, und ich mag keinen Tee."</span> → <span class="wb-ok">✅ „Ich mag Kaffee, aber ich mag keinen Tee."</span> — khi có sự đối lập, cần dùng „aber", không dùng „und"!</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — und oder aber? / und hay aber?</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze „und" oder „aber". Achte auf das Komma!</div>
+    <div class="instr-vn">Điền „und" hoặc „aber". Chú ý dấu phẩy!</div>
+    <div class="fill-line"><span class="num">1.</span> Ich schreibe eine E-Mail, <span class="blank"></span> ich lade meine Freundin ein. <span class="vn-word">(Tôi viết một email, đồng thời mời bạn tôi.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Ich möchte zur Party kommen, <span class="blank"></span> ich habe leider keine Zeit. <span class="vn-word">(Tôi muốn đến bữa tiệc, nhưng tiếc là tôi không có thời gian.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Anna schreibt einen Brief, <span class="blank"></span> Tom antwortet sofort. <span class="vn-word">(Anna viết một lá thư, và Tom trả lời ngay lập tức.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Der Betreff ist klar, <span class="blank"></span> die Anrede fehlt noch. <span class="vn-word">(Tiêu đề rất rõ ràng, nhưng lời chào đầu thư vẫn còn thiếu.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Ich freue mich über deine Einladung, <span class="blank"></span> ich sage gerne zu. <span class="vn-word">(Tôi rất vui về lời mời của bạn, và tôi vui vẻ nhận lời.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Er möchte absagen, <span class="blank"></span> er findet keine passenden Worte. <span class="vn-word">(Anh ấy muốn từ chối, nhưng không tìm được lời nào phù hợp.)</span></div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — weil / Ngữ pháp 2: weil</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 „weil" (weil) gibt einen Grund an und leitet einen <strong>Nebensatz</strong> ein — das konjugierte Verb wandert an das <strong>Satzende</strong>! Formel: Hauptsatz, weil + Subjekt + ... + Verb.</div>
+    <div class="tip-vn">💡 „weil" nêu lý do và dẫn dắt một <strong>mệnh đề phụ</strong> — động từ đã chia phải chuyển ra <strong>cuối câu</strong>! Công thức: câu chính, weil + chủ ngữ + ... + động từ.</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich kann nicht kommen, weil ich bin krank."</span> → <span class="wb-ok">✅ „..., weil ich krank bin."</span> — das Verb muss ganz ans Ende!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich kann nicht kommen, weil ich bin krank."</span> → <span class="wb-ok">✅ „..., weil ich krank bin."</span> — động từ phải chuyển hẳn ra cuối câu!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich komme nicht weil ich bin krank."</span> (kein Komma) → <span class="wb-ok">✅ „Ich komme nicht, weil ich krank bin."</span> — vor „weil" steht immer ein Komma!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich komme nicht weil ich bin krank."</span> (không có dấu phẩy) → <span class="wb-ok">✅ „Ich komme nicht, weil ich krank bin."</span> — trước „weil" luôn có dấu phẩy!</div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — weil-Sätze bilden: Achte auf die Verbstellung! / Đặt câu weil: chú ý trật tự động từ!</div>
+  <div class="ubung-body">
+    <div class="instr-de">Verbinde die zwei Satzteile mit „weil" zu einem korrekten Satz.</div>
+    <div class="instr-vn">Dùng „weil" nối hai phần câu thành một câu đúng.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich kann nicht kommen / ich bin krank → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Sie schreibt eine E-Mail / sie hat eine Frage → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Wir sagen die Party ab / das Wetter ist schlecht → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Er antwortet nicht / er hat wenig Zeit → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">5.</span> Ich freue mich / du kommst zu meinem Geburtstag → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">6.</span> Anna lädt Tom ein / er ist ihr bester Freund → <span class="blank-xl"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 23</span>
+    <span>Seite 2 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Grammatik 3: denn vs. weil mit Verbstellungs-Merkkasten + Häufige Fehler + Übung 3 + Übung 4 + Kulturinfo 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 23</h1>
+      <h2>Grammatik 3 – denn vs. weil: derselbe Grund, andere Wortstellung / Ngữ pháp 3 – denn và weil: cùng lý do, khác trật tự từ</h2>
+    </div>
+    <div class="badge">A1 · Lektion 23</div>
+  </div>
+
+  <div class="tip-box">
+    <div class="tip-de">💡 „denn" und „weil" bedeuten beide „weil" — aber sie verändern die Wortstellung völlig unterschiedlich! Das ist der <strong>klassische A1-Stolperstein</strong> und genau das, was in der Prüfung am häufigsten falsch gemacht wird.</div>
+    <div class="tip-vn">💡 „denn" và „weil" đều mang nghĩa nguyên nhân (vì, bởi vì) — nhưng chúng ảnh hưởng đến trật tự từ hoàn toàn khác nhau! Đây là <strong>điểm khó kinh điển ở trình độ A1</strong> và cũng là lỗi phổ biến nhất trong bài thi.</div>
+  </div>
+
+  <!-- Merkkasten Verbstellung -->
+  <div class="merk-box verbstellung">
+    <div class="mb-title">🧠 Verbstellungs-Merkkasten — denn = Hauptsatz, weil = Nebensatz! / Hộp ghi nhớ trật tự từ — denn = câu chính, weil = mệnh đề phụ!</div>
+    <div class="vs-zeile">Ich komme nicht,</div>
+    <div class="vs-pfeil">↓</div>
+    <div class="vs-zeile"><span class="vs-dass">denn</span> ich <span class="vs-verb">bin</span> krank. <span style="font-size:10px; color:#7e22ce;">(Verb Position 2, wie im Hauptsatz!)</span></div>
+    <div class="vs-pfeil">↓ vergleiche ↓</div>
+    <div class="vs-zeile"><span class="vs-dass">weil</span> ich krank <span class="vs-verb">bin</span>. <span style="font-size:10px; color:#7e22ce;">(Verb ganz am Ende!)</span></div>
+    <div class="vs-regel">Merksatz: „denn" verhält sich wie „und"/„aber" (normale Wortstellung). „weil" verhält sich wie „dass" (Verb ans Ende)!</div>
+  </div>
+
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich komme nicht, denn bin ich krank."</span> → <span class="wb-ok">✅ „Ich komme nicht, denn ich bin krank."</span> — nach „denn" bleibt die normale Wortstellung, das Verb springt nicht nach vorne!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich komme nicht, denn bin ich krank."</span> → <span class="wb-ok">✅ „Ich komme nicht, denn ich bin krank."</span> — sau „denn", trật tự từ vẫn bình thường, động từ không nhảy lên trước!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich komme nicht, denn ich krank bin."</span> → <span class="wb-ok">✅ „Ich komme nicht, denn ich bin krank."</span> — das Verb-am-Ende gilt nur bei „weil", nicht bei „denn"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich komme nicht, denn ich krank bin."</span> → <span class="wb-ok">✅ „Ich komme nicht, denn ich bin krank."</span> — quy tắc động từ ở cuối chỉ áp dụng cho „weil", không áp dụng cho „denn"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich komme nicht, weil ich bin krank."</span> → <span class="wb-ok">✅ „Ich komme nicht, weil ich krank bin."</span> — hier gilt umgekehrt: das Verb MUSS ans Ende!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich komme nicht, weil ich bin krank."</span> → <span class="wb-ok">✅ „Ich komme nicht, weil ich krank bin."</span> — ở đây thì ngược lại: động từ BẮT BUỘC phải ở cuối câu!</div>
+  </div>
+
+  <!-- Übung 3 -->
+  <div class="ubung-header">Übung 3 — denn oder weil? Wortstellung entscheidet! / denn hay weil? Trật tự từ quyết định!</div>
+  <div class="ubung-body">
+    <div class="instr-de">Wähle „denn" oder „weil" passend zur vorgegebenen Wortstellung im Satz.</div>
+    <div class="instr-vn">Chọn „denn" hoặc „weil" phù hợp với trật tự từ đã cho sẵn trong câu.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich schreibe dir, <span class="blank"></span> ich habe eine wichtige Frage. <span class="vn-word">(Tôi viết cho bạn, vì tôi có một câu hỏi quan trọng. — động từ vị trí 2)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Wir sagen ab, <span class="blank"></span> das Wetter schlecht ist. <span class="vn-word">(Chúng tôi hủy, vì thời tiết xấu. — động từ cuối câu)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Sie kommt später, <span class="blank"></span> sie muss noch arbeiten. <span class="vn-word">(Cô ấy đến muộn hơn, vì cô ấy còn phải làm việc. — động từ vị trí 2)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Er antwortet nicht, <span class="blank"></span> er keine Zeit hat. <span class="vn-word">(Anh ấy không trả lời, vì anh ấy không có thời gian. — động từ cuối câu)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Ich freue mich, <span class="blank"></span> du kommst zu meiner Party. <span class="vn-word">(Tôi rất vui, vì bạn sẽ đến dự tiệc của tôi. — động từ vị trí 2)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Anna lädt dich ein, <span class="blank"></span> sie dich sehr mag. <span class="vn-word">(Anna mời bạn, vì cô ấy rất quý bạn. — động từ cuối câu)</span></div>
+  </div>
+
+  <!-- Übung 4 -->
+  <div class="ubung-header">Übung 4 — Der große Konjunktionen-Mix: und, aber, weil, denn kombiniert! / Trộn liên từ: kết hợp und, aber, weil, denn!</div>
+  <div class="ubung-body">
+    <div class="instr-de">Wähle die passende Konjunktion und achte genau auf die Wortstellung im vorgegebenen Satz.</div>
+    <div class="instr-vn">Chọn liên từ phù hợp và chú ý kỹ trật tự từ đã cho sẵn trong câu.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich schreibe eine E-Mail, <span class="blank"></span> ich lade dich zur Party ein. <span class="vn-word">(Tôi viết một email, đồng thời mời bạn đến bữa tiệc.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Ich möchte kommen, <span class="blank"></span> ich habe leider keine Zeit. <span class="vn-word">(Tôi muốn đến, nhưng tiếc là tôi không có thời gian.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Ich kann nicht kommen, <span class="blank"></span> ich krank bin. <span class="vn-word">(Tôi không thể đến, vì tôi bị ốm. — động từ cuối câu)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Ich kann nicht kommen, <span class="blank"></span> ich bin krank. <span class="vn-word">(Tôi không thể đến, vì tôi bị ốm. — động từ vị trí 2)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Der Brief ist fertig, <span class="blank"></span> der Umschlag fehlt noch. <span class="vn-word">(Lá thư đã xong, nhưng vẫn còn thiếu phong bì.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Ich antworte sofort, <span class="blank"></span> die Frage wichtig ist. <span class="vn-word">(Tôi trả lời ngay, vì câu hỏi này quan trọng. — động từ cuối câu)</span></div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — „Sie" oder „du" in der Korrespondenz? / Kiến thức văn hóa 1: dùng „Sie" hay „du" trong thư từ?</div>
+    <div class="kb-de">In Deutschland entscheidet die Beziehung zwischen Absender und Empfänger, welches Register man wählt. An Ämter, Firmen, Vermieter oder fremde Personen schreibt man immer mit „Sie" und formeller Anrede („Sehr geehrte Damen und Herren"). An Freunde, Familie oder gute Bekannte schreibt man mit „du" und informeller Anrede („Liebe/r ..."). Ein Fehler, den viele Lernende machen: mitten im Brief von „Sie" zu „du" zu wechseln — das wirkt sehr unhöflich! Bleib beim gewählten Register vom ersten bis zum letzten Satz.</div>
+    <div class="kb-vn">Ở Đức, mối quan hệ giữa người gửi và người nhận quyết định nên dùng văn phong nào. Khi viết cho cơ quan, công ty, chủ nhà hay người lạ, luôn dùng „Sie" và lời chào trang trọng („Sehr geehrte Damen und Herren"). Khi viết cho bạn bè, gia đình hay người quen thân, dùng „du" và lời chào thân mật („Liebe/r ..."). Một lỗi nhiều người học hay mắc phải: đang viết thư lại chuyển từ „Sie" sang „du" giữa chừng — điều này bị coi là rất thiếu lịch sự! Hãy giữ nguyên văn phong đã chọn từ câu đầu đến câu cuối. Ở Việt Nam, việc chọn đại từ xưng hô (anh/chị, ông/bà, bạn...) khi viết thư cũng rất quan trọng và cũng cần nhất quán suốt bức thư — điều này khá tương đồng với quy tắc „Sie"/„du" của tiếng Đức, dù hệ thống xưng hô tiếng Việt phong phú và phức tạp hơn nhiều.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 23</span>
+    <span>Seite 3 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Beispieltext + Kulturinfo 2 + Lesetext + MC-Fragen) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 23</h1>
+      <h2>Beispieltext, Lesetext &amp; Kulturinfo / Văn bản mẫu, bài đọc hiểu &amp; kiến thức văn hóa</h2>
+    </div>
+    <div class="badge">A1 · Lektion 23</div>
+  </div>
+
+  <!-- Beispieltext -->
+  <div class="section-title">💬 BEISPIELTEXT — Informelle Einladungsmail / Văn bản mẫu — email mời thân mật</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><strong>Betreff: Einladung zu meiner Geburtstagsparty</strong></div>
+    <div class="dialog-line">Liebe Anna,</div>
+    <div class="dialog-line">ich habe am Samstag Geburtstag, <strong>und</strong> ich möchte feiern! Ich lade dich herzlich zu meiner Party ein, <strong>denn</strong> du bist eine gute Freundin. Die Party beginnt um 18 Uhr, <strong>aber</strong> du kannst auch später kommen. Ich koche etwas Leckeres, <strong>weil</strong> ich gern für meine Gäste koche. Schreib mir bitte, ob du Zeit hast!</div>
+    <div class="dialog-line">Viele Grüße,<br>deine Lisa</div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Der Aufbau eines deutschen Briefes/einer E-Mail / Kiến thức văn hóa 2: cấu trúc một lá thư/email tiếng Đức</div>
+    <div class="kb-de">Ein formeller Brief beginnt oben mit Ort und Datum (z. B. „Berlin, 12. März 2026"), gefolgt von der Anrede mit Komma. Nach der Anrede schreibt man klein weiter (außer bei Nomen), z. B. „Sehr geehrte Frau Meier, <em>ich</em> schreibe Ihnen ...". Eine E-Mail braucht zusätzlich eine klare Betreffzeile, damit der Empfänger sofort weiß, worum es geht. Am Ende steht immer die Grußformel, danach eine neue Zeile mit dem Namen. Diese klare Struktur hilft nicht nur beim Schreiben, sondern auch beim schnellen Verstehen fremder Briefe!</div>
+    <div class="kb-vn">Một lá thư trang trọng bắt đầu bằng địa điểm và ngày tháng ở trên cùng (ví dụ „Berlin, 12. März 2026"), tiếp theo là lời chào có dấu phẩy. Sau lời chào, câu tiếp tục viết chữ thường (trừ danh từ), ví dụ „Sehr geehrte Frau Meier, ich schreibe Ihnen ...". Một email còn cần thêm dòng tiêu đề rõ ràng, để người nhận biết ngay nội dung là gì. Cuối thư luôn có câu chào kết thư, sau đó xuống dòng mới viết tên. Cấu trúc rõ ràng này không chỉ giúp việc viết dễ dàng hơn, mà còn giúp hiểu nhanh các lá thư của người khác!</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext — Formeller Brief / Bài đọc hiểu — thư trang trọng</div>
+  <div class="lese-box">
+    Sehr geehrte Frau Dr. Meier, ich schreibe Ihnen, weil ich meinen Termin am Montag leider nicht wahrnehmen kann. Ich bin krank und muss zu Hause bleiben, aber ich möchte den Termin nicht einfach ausfallen lassen. Deshalb bitte ich Sie um einen neuen Termin. Ich kann diese Woche nicht kommen, denn der Arzt hat mir Bettruhe verordnet. Nächste Woche habe ich wieder Zeit, und ich freue mich auf einen neuen Termin. Am liebsten käme ich am Donnerstag, aber auch der Freitag würde für mich passen. Bitte teilen Sie mir mit, wann es Ihnen passt. Mit freundlichen Grüßen, Herr Schmidt
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Warum kann Herr Schmidt nicht zum Termin kommen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) er hat keine Zeit</span>
+      <span><span class="mc-kreis"></span> b) er ist krank</span>
+      <span><span class="mc-kreis"></span> c) er ist im Urlaub</span>
+    </div>
+    <div class="mc-frage">2. Was möchte Herr Schmidt?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) den Termin ganz absagen</span>
+      <span><span class="mc-kreis"></span> b) einen neuen Termin bekommen</span>
+      <span><span class="mc-kreis"></span> c) mit jemand anderem sprechen</span>
+    </div>
+    <div class="mc-frage">3. Warum kann er diese Woche nicht kommen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) er hat Bettruhe verordnet bekommen</span>
+      <span><span class="mc-kreis"></span> b) er ist verreist</span>
+      <span><span class="mc-kreis"></span> c) er arbeitet zu viel</span>
+    </div>
+    <div class="mc-frage">4. Welchen Tag bevorzugt Herr Schmidt?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Montag</span>
+      <span><span class="mc-kreis"></span> b) Donnerstag</span>
+      <span><span class="mc-kreis"></span> c) Samstag</span>
+    </div>
+    <div class="mc-frage">5. Wie endet der Brief?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Viele Grüße</span>
+      <span><span class="mc-kreis"></span> b) Mit freundlichen Grüßen</span>
+      <span><span class="mc-kreis"></span> c) Bis bald</span>
+    </div>
+    <div class="mc-frage">6. Welches Register verwendet der Brief?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) informell (du)</span>
+      <span><span class="mc-kreis"></span> b) formell (Sie)</span>
+      <span><span class="mc-kreis"></span> c) gemischt</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Schreib 2–3 Sätze, warum du selbst einmal einen Termin absagen musstest — nutze dabei weil oder denn.</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Viết 2–3 câu về lần bạn từng phải hủy một cuộc hẹn — hãy dùng weil hoặc denn.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 23</span>
+    <span>Seite 4 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 5 (Prüfungssimulation Schreiben Teil 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 23</h1>
+      <h2>Prüfungssimulation — Schreiben Teil 2 / Mô phỏng bài thi — Viết phần 2</h2>
+    </div>
+    <div class="badge">A1 · Lektion 23</div>
+  </div>
+
+  <div class="section-title">📝 PRÜFUNGSSIMULATION: SCHREIBEN TEIL 2 / MÔ PHỎNG BÀI THI: VIẾT PHẦN 2</div>
+
+  <div class="tip-box">
+    <div class="tip-de">💡 So läuft die echte Goethe-A1-Prüfung ab: Lies die Aufgabe genau und gehe auf <strong>alle 3 Punkte</strong> ein. Du hast <strong>15 Minuten</strong> Zeit. Kein Wörterbuch, keine Vorlagen — schreib direkt ins Schreibfeld, genau wie in der echten Prüfung!</div>
+    <div class="tip-vn">💡 Bài thi Goethe-A1 thật diễn ra như sau: đọc kỹ đề bài và đề cập đến <strong>cả 3 điểm</strong>. Bạn có <strong>15 phút</strong>. Không dùng từ điển, không xem bài mẫu — viết trực tiếp vào khung viết, giống hệt như trong kỳ thi thật!</div>
+  </div>
+
+  <div class="pruefung-box">
+    <div class="pb-title">✉️ Aufgabe / Nhiệm vụ</div>
+    <div class="pb-de">Deine Freundin Anna hat bald Geburtstag. Schreib ihr eine E-Mail (ca. 30–40 Wörter).</div>
+    <div class="pb-vn">Bạn của bạn tên Anna sắp đến sinh nhật. Viết cho cô ấy một email (khoảng 30–40 từ).</div>
+    <div class="pb-punkt">① Gratuliere ihr.</div>
+    <div class="pb-punkt-vn">① Chúc mừng sinh nhật cô ấy.</div>
+    <div class="pb-punkt">② Sag, warum du an ihrem Geburtstag nicht kommen kannst (weil ...).</div>
+    <div class="pb-punkt-vn">② Giải thích vì sao bạn không thể đến dự sinh nhật của cô ấy (dùng weil...).</div>
+    <div class="pb-punkt">③ Mach einen Vorschlag, wann ihr euch stattdessen trefft.</div>
+    <div class="pb-punkt-vn">③ Đề xuất một thời điểm khác để hai người gặp nhau.</div>
+    <div class="pruefung-timer">⏱️ 15 Minuten / 15 phút</div>
+  </div>
+
+  <div class="schreibfeld">
+    <div class="sf-label">Schreib hier deine E-Mail / Viết email của bạn vào đây:</div>
+  </div>
+
+  <div class="checkliste">
+    <h4>✅ Selbstkontroll-Checkliste — erst NACH dem Schreiben ausfüllen! / Danh sách tự kiểm tra — chỉ điền SAU KHI viết xong!</h4>
+    <div class="check-item"><span class="cb"></span> Anrede vorhanden? (Liebe Anna, / Hallo Anna,) <span class="ci-vn">Đã có lời chào đầu thư chưa?</span></div>
+    <div class="check-item"><span class="cb"></span> Alle 3 Punkte behandelt? <span class="ci-vn">Đã đề cập đủ cả 3 điểm chưa?</span></div>
+    <div class="check-item"><span class="cb"></span> Mindestens 1× weil oder denn verwendet? <span class="ci-vn">Đã dùng ít nhất 1 lần weil hoặc denn chưa?</span></div>
+    <div class="check-item"><span class="cb"></span> Wortstellung bei weil/denn korrekt? <span class="ci-vn">Trật tự từ ở weil/denn đã đúng chưa?</span></div>
+    <div class="check-item"><span class="cb"></span> Grußformel am Ende? (Liebe Grüße, / Bis bald,) <span class="ci-vn">Cuối thư đã có câu chào kết thúc chưa?</span></div>
+  </div>
+
+  <div class="tip-box">
+    <div class="tip-de">💡 Nach den 15 Minuten: Vergleiche deinen Text mit der Musterlösung auf Seite 6 — nicht um abzuschreiben, sondern um Struktur und Wortschatz zu überprüfen.</div>
+    <div class="tip-vn">💡 Sau 15 phút: hãy so sánh bài viết của bạn với bài mẫu ở trang 6 — không phải để chép lại, mà để kiểm tra cấu trúc và từ vựng.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 23</span>
+    <span>Seite 5 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 6 (Freies Sprechen + Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 23</h1>
+      <h2>Freies Sprechen, Hausaufgaben &amp; Antworten / Nói tự do, bài tập về nhà &amp; đáp án</h2>
+    </div>
+    <div class="badge">A1 · Lektion 23</div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">weil</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Warum lernst du Deutsch? Antworte mit „weil".</div>
+      <div class="anweisung-vn">Vì sao bạn học tiếng Đức? Trả lời bằng „weil".</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">denn</div>
+      <div class="prompt-row"><span class="prompt-tag satz">Satz</span></div>
+      <div class="anweisung-de">Bilde einen Satz mit „denn" über deinen Tag.</div>
+      <div class="anweisung-vn">Đặt một câu với „denn" về ngày hôm nay của bạn.</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">Einladung</div>
+      <div class="prompt-row"><span class="prompt-tag satz">Satz</span></div>
+      <div class="anweisung-de">Lade eine Person mündlich zu deiner Party ein.</div>
+      <div class="anweisung-vn">Mời miệng một người đến bữa tiệc của bạn.</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">Kombiniert</div>
+      <div class="prompt-row"><span class="prompt-tag satz">Satz</span></div>
+      <div class="anweisung-de">Sag eine Absage mit „aber" und einem Grund mit „weil".</div>
+      <div class="anweisung-vn">Từ chối bằng „aber" và nêu lý do bằng „weil".</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Konjunktionen-Liste lernen / Học danh sách liên từ:</strong> Schreibe alle 4 Konjunktionen (und, aber, weil, denn) mit je einem eigenen Beispielsatz auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết ra giấy cả 4 liên từ (und, aber, weil, denn), mỗi từ kèm một câu ví dụ riêng — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">✏️ <strong>Formellen Brief schreiben / Viết thư trang trọng:</strong> Schreib einen formellen Brief an deine Vermieterin, in dem du einen Termin verschiebst (6–8 Sätze). Pflicht: 1× weil, 1× denn, 1× aber, formelle Anrede und Grußformel.
+      <div class="ha-vn">Viết một lá thư trang trọng gửi chủ nhà của bạn, trong đó bạn dời một lịch hẹn (6–8 câu). Yêu cầu: 1 lần weil, 1 lần denn, 1 lần aber, lời chào và câu chào kết thư trang trọng.</div>
+    </div>
+    <div class="ha-item">📅 <strong>E-Mail-Antwort schreiben / Viết email trả lời:</strong> Stell dir vor, ein Freund lädt dich ein. Schreib eine kurze Antwort-Mail und sag ab — nutze weil oder denn für den Grund.
+      <div class="ha-vn">Hãy tưởng tượng một người bạn mời bạn. Viết một email trả lời ngắn và từ chối — dùng weil hoặc denn để nêu lý do.</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 22):</strong> 1. größer &nbsp; 2. beste &nbsp; 3. dass ... ist</p>
+    <p><strong>Übung 1 (und/aber):</strong> 1. und &nbsp; 2. aber &nbsp; 3. und &nbsp; 4. aber &nbsp; 5. und &nbsp; 6. aber</p>
+    <p><strong>Übung 2 (weil-Sätze, Beispiele):</strong> 1. Ich kann nicht kommen, weil ich krank bin. &nbsp; 2. Sie schreibt eine E-Mail, weil sie eine Frage hat. &nbsp; 3. Wir sagen die Party ab, weil das Wetter schlecht ist. &nbsp; 4. Er antwortet nicht, weil er wenig Zeit hat. &nbsp; 5. Ich freue mich, weil du zu meinem Geburtstag kommst. &nbsp; 6. Anna lädt Tom ein, weil er ihr bester Freund ist.</p>
+    <p><strong>Übung 3 (denn/weil):</strong> 1. denn &nbsp; 2. weil &nbsp; 3. denn &nbsp; 4. weil &nbsp; 5. denn &nbsp; 6. weil</p>
+    <p><strong>Übung 4 (Konjunktionen-Mix):</strong> 1. und &nbsp; 2. aber &nbsp; 3. weil &nbsp; 4. denn &nbsp; 5. aber &nbsp; 6. weil</p>
+    <p><strong>Leseverständnis:</strong> 1. b) er ist krank &nbsp; 2. b) einen neuen Termin bekommen &nbsp; 3. a) er hat Bettruhe verordnet bekommen &nbsp; 4. b) Donnerstag &nbsp; 5. b) Mit freundlichen Grüßen &nbsp; 6. b) formell (Sie)</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ich lerne Deutsch, weil ich in Deutschland studieren möchte. &nbsp; Karte 2: Ich bin müde, denn ich habe heute viel gearbeitet. &nbsp; Karte 3: Möchtest du am Samstag zu meiner Party kommen? &nbsp; Karte 4: Ich möchte kommen, aber ich kann nicht, weil ich arbeiten muss.</p>
+    <p><strong>Musterlösung Prüfungssimulation (Schreiben Teil 2):</strong> „Liebe Anna, herzlichen Glückwunsch zum Geburtstag! Ich kann leider nicht zu deiner Party kommen, weil ich an dem Tag arbeiten muss. Lass uns doch am Sonntag zusammen Kaffee trinken und feiern! Viele Grüße, Lisa" (36 Wörter — alle 3 Punkte behandelt, Anrede und Grußformel vorhanden, weil korrekt verwendet.)</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 23 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 6 / 6</span>
+  </div>
+</div>
+
+</body>
+</html>

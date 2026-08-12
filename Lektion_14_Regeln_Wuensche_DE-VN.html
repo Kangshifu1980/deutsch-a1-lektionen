@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 14</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 7mm 12mm 3mm 12mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.14; font-size: 10.7px; }
+.compact .doc-header { padding-bottom: 2px; margin-bottom: 4px; }
+.compact .section-title { margin: 4px 0 2px 0; }
+.compact table { margin-bottom: 2px; }
+.compact table.vocab th, .compact table.vocab td { padding: 1.5px 5px; }
+.compact .gram-box { padding: 3px 7px; margin-bottom: 2px; }
+.compact .tip-box { padding: 2px 6px; margin: 1px 0; }
+.compact .warn-box { padding: 2px 6px; margin: 1px 0 3px 0; }
+.compact .ubung-header { padding: 1px 7px; }
+.compact .ubung-body { padding: 3px 7px; margin-bottom: 2px; }
+.compact .fill-line { margin-bottom: 0px; }
+.compact .footer { margin-top: 2px; padding-top: 1px; }
+.compact .phon-box { padding: 2px 7px; margin-bottom: 2px; }
+.compact .kultur-box { padding: 3px 8px; margin: 2px 0 3px 0; }
+.compact .dialog-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .lese-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .mc-block { margin-bottom: 2px; }
+.compact .mc-optionen { margin-bottom: 3px; }
+.compact .ha-box { padding: 3px 8px; }
+.compact .antworten { padding: 3px 8px; }
+.compact .wiederholung-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .karten-grid { margin-top: 2px; gap: 5px; }
+.compact .sprech-karte { padding: 4px 6px; }
+.compact .sprech-karte .karte-num { padding: 1px 6px; margin-bottom: 2px; }
+.compact .sprech-karte .wort-pill { font-size: 11px; padding: 2px 4px; margin-bottom: 2px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 2px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 2px; }
+.compact .wortsalat-item { margin-bottom: 3px; }
+.compact .baukasten-box { padding: 4px 9px; margin-bottom: 3px; }
+.compact .brief-karte { padding: 5px 8px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .prompt-tag.satz { background: #fef3c7; color: #92400e; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .game-header: Spielelement ===== */
+.game-header { background: #ea580c; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.game-body { border: 0.5px solid #fdba74; border-top: none; border-radius: 0 0 5px 5px; padding: 6px 8px; margin-bottom: 4px; background: #fff7ed; }
+.game-body .instr-de { font-size: 10px; color: #7c2d12; font-style: italic; }
+.game-body .instr-vn { font-size: 9.5px; color: #c2410c; font-style: italic; margin-bottom: 4px; }
+.schild-zeile { display: flex; align-items: center; gap: 8px; font-size: 10.5px; margin-bottom: 5px; flex-wrap: wrap; background: white; border: 1px solid #fdba74; border-radius: 6px; padding: 5px 8px; }
+.schild-icon { font-size: 16px; min-width: 26px; text-align: center; }
+.schild-label { font-size: 9.5px; color: #7c2d12; font-style: italic; min-width: 150px; }
+
+/* ===== .baukasten-box & .brief-karte: Schreib-Format (wiederverwendet aus L6/L12/L13) ===== */
+.baukasten-box { border: 1px solid #fde68a; border-radius: 8px; padding: 7px 12px; background: #fffbeb; margin-bottom: 6px; }
+.baukasten-title { font-size: 10.5px; font-weight: 700; color: #92400e; margin-bottom: 4px; }
+.baukasten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px 10px; }
+.baukasten-kategorie-label { font-size: 9px; font-weight: 700; text-transform: uppercase; color: #b45309; margin-bottom: 3px; border-bottom: 1px solid #fde68a; padding-bottom: 2px; }
+.baukasten-phrase { font-size: 10px; color: #1a1a1a; margin-bottom: 4px; background: white; border: 1px solid #fde68a; border-radius: 5px; padding: 3px 6px; }
+.baukasten-phrase .bp-vn { display: block; color: #b45309; font-style: italic; font-size: 9px; margin-top: 1px; }
+.brief-karte { border: 1.5px dashed #94a3b8; border-radius: 8px; padding: 8px 12px; background: #fafafa; min-height: 145px; }
+.brief-karte .bk-header { font-size: 10px; font-weight: 700; color: #475569; margin-bottom: 6px; display: flex; justify-content: space-between; }
+.brief-lines { border-bottom: 1px solid #cbd5e1; height: 16px; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Aussprache + Lernziele + Wortschatz Regeln + Wortschatz Wünsche) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 14</h1>
+      <h2>Regeln &amp; Wünsche</h2>
+      <h2>Quy tắc &amp; Mong muốn</h2>
+    </div>
+    <div class="badge">A1 · Lektion 14</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 13 / Ôn tập Bài 13</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: „können" und „mögen" im Satz / Khởi động ngữ pháp: „können" và „mögen" trong câu</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">Sandwich</div>
+        <div class="wh-mund">Ergänze: Ich ___ gut ___. (schwimmen, können)</div>
+        <div class="wh-beispiel">Điền cấu trúc sandwich với „können"</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Richtig?</div>
+        <div class="wh-mund">„Ich mag Musik hören." — ist das richtig?</div>
+        <div class="wh-beispiel">Câu này đúng không? Nếu sai, sửa thế nào?</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Erinnerung</div>
+        <div class="wh-mund">Was steht im Modalverb-Sandwich immer ganz am Satzende?</div>
+        <div class="wh-beispiel">Trong cấu trúc sandwich, cái gì luôn đứng ở cuối câu?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aussprache-Minute -->
+  <div class="section-title">🔊 AUSSPRACHE-MINUTE / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Das vokalische „r" am Silbenende / Âm „r" hóa nguyên âm ở cuối âm tiết</div>
+    <div class="phon-de">Am Ende einer Silbe wird das deutsche „r" meistens nicht gerollt, sondern wie ein kurzes, schwaches „a" gesprochen. Das hörst du in dieser Lektion sehr oft — zum Beispiel in „darf" und „für".</div>
+    <div class="phon-vn">Ở cuối âm tiết, âm „r" trong tiếng Đức thường không rung lưỡi, mà phát ra giống một âm „a" ngắn, nhẹ. Bạn sẽ nghe âm này rất nhiều trong bài này — ví dụ trong „darf" và „für".<br>⚠️ Mẹo cho người Việt: đừng cố rung lưỡi hay uốn lưỡi như âm "r" tiếng Việt — chỉ cần buông lỏng, để âm "a" nhẹ thoát ra sau nguyên âm chính.</div>
+    <div class="phon-beispiele">darf (đọc: "đaf", r→a nhẹ) · für (đọc: "phuy-a") · wir (đọc: "vi-a") · der (đọc: "đe-a") · Fehler (đọc: "PHÊ-lơ")</div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Regeln, Verbote und Erlaubnisse ausdrücken (dürfen) <span class="vn">— diễn đạt quy tắc, cấm đoán và cho phép (dürfen)</span></p>
+    <p class="de">✔ Absichten und feste Pläne formulieren (wollen) <span class="vn">— diễn đạt ý định và kế hoạch chắc chắn (wollen)</span></p>
+    <p class="de">✔ Empfehlungen und den Willen anderer Personen wiedergeben (sollen) <span class="vn">— truyền đạt lời khuyên và ý muốn của người khác (sollen)</span></p>
+    <p class="de">✔ „nicht dürfen" (Verbot) von „nicht müssen" (keine Pflicht) unterscheiden <span class="vn">— phân biệt „nicht dürfen" (cấm) với „nicht müssen" (không bắt buộc)</span></p>
+  </div>
+
+  <!-- Wortschatz Regeln & Verbote -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Regeln &amp; Verbote / Bảng từ vựng: Quy tắc &amp; Cấm đoán</div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:20%"><col style="width:33%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🚭 <span class="das">das</span>Rauchverbot</td><td class="phonetik">RAUKH-fe-bôt</td><td>Hier gil<strong>t</strong> Rauchverbot. <span class="vn-word">Ở đây cấm hút thuốc.</span></td><td class="vn-word">lệnh cấm hút thuốc</td></tr>
+      <tr><td>🅿️ Parken verboten</td><td class="phonetik">PAR-kờn fe-BÔ-tờn</td><td>Parken is<strong>t</strong> hier verboten. <span class="vn-word">Ở đây cấm đỗ xe.</span></td><td class="vn-word">cấm đỗ xe</td></tr>
+      <tr><td>🔇 <span class="die">die</span>Ruhezeit</td><td class="phonetik">RU-ơ-tsait</td><td>Nach 22 Uhr is<strong>t</strong> Ruhezeit. <span class="vn-word">Sau 22 giờ là giờ yên tĩnh.</span></td><td class="vn-word">giờ yên tĩnh</td></tr>
+      <tr><td>🗑️ <span class="die">die</span>Mülltrennung</td><td class="phonetik">MUYN-tren-nung</td><td>Die Mülltrennung is<strong>t</strong> in Deutschland sehr wichtig. <span class="vn-word">Phân loại rác ở Đức rất quan trọng.</span></td><td class="vn-word">phân loại rác</td></tr>
+      <tr><td>📵 <span class="das">das</span>Handyverbot</td><td class="phonetik">HEN-đi-fe-bôt</td><td>In der Schule gib<strong>t</strong> es Handyverbot. <span class="vn-word">Trong trường cấm dùng điện thoại.</span></td><td class="vn-word">cấm dùng điện thoại</td></tr>
+      <tr><td>🐕 Hunde verboten</td><td class="phonetik">HUN-đơ fe-BÔ-tờn</td><td>Hunde sind in diesem Park verboten. <span class="vn-word">Công viên này cấm mang theo chó.</span></td><td class="vn-word">cấm mang theo chó</td></tr>
+      <tr><td>📜 <span class="die">die</span>Hausordnung</td><td class="phonetik">HAUS-ọt-nung</td><td>Lies bitte die Hausordnung genau! <span class="vn-word">Hãy đọc kỹ nội quy nhà!</span></td><td class="vn-word">nội quy nhà</td></tr>
+      <tr><td>✅ <span class="die">die</span>Erlaubnis</td><td class="phonetik">e-LAUP-nis</td><td>Ich brauche eine Erlaubnis von meinen Eltern. <span class="vn-word">Tôi cần sự cho phép của bố mẹ.</span></td><td class="vn-word">sự cho phép</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Wortschatz Wünsche & Pläne -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Wünsche &amp; Pläne / Bảng từ vựng: Mong muốn &amp; Kế hoạch</div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:20%"><col style="width:33%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🌠 <span class="der">der</span>Wunsch</td><td class="phonetik">vunsch</td><td>Mein größter Wunsch is<strong>t</strong> eine Weltreise. <span class="vn-word">Mong muốn lớn nhất của tôi là đi vòng quanh thế giới.</span></td><td class="vn-word">mong muốn</td></tr>
+      <tr><td>🗓️ <span class="der">der</span>Plan</td><td class="phonetik">plan</td><td>Ich habe schon einen Plan für das Wochenende. <span class="vn-word">Tôi đã có kế hoạch cho cuối tuần rồi.</span></td><td class="vn-word">kế hoạch</td></tr>
+      <tr><td>🎯 vorhaben</td><td class="phonetik">FO-ha-bờn</td><td>Was has<strong>t</strong> du heute Abend vor? <span class="vn-word">Tối nay bạn định làm gì?</span></td><td class="vn-word">dự định</td></tr>
+      <tr><td>🏁 <span class="das">das</span>Ziel</td><td class="phonetik">tsin</td><td>Mein Ziel ist, gut Deutsch zu sprechen. <span class="vn-word">Mục tiêu của tôi là nói tiếng Đức giỏi.</span></td><td class="vn-word">mục tiêu</td></tr>
+      <tr><td>💭 träumen von</td><td class="phonetik">TROI-mờn phôn</td><td>Ich träume von einem eigenen Haus. <span class="vn-word">Tôi mơ ước có một ngôi nhà riêng.</span></td><td class="vn-word">mơ ước về</td></tr>
+      <tr><td>📏 <span class="die">die</span>Regel</td><td class="phonetik">RÊ-gồ</td><td>In jedem Spiel gib<strong>t</strong> es Regeln. <span class="vn-word">Trò chơi nào cũng có quy tắc.</span></td><td class="vn-word">quy tắc</td></tr>
+      <tr><td>🚫 <span class="das">das</span>Verbot</td><td class="phonetik">fe-BÔT</td><td>Das Verbot gil<strong>t</strong> für alle Gäste. <span class="vn-word">Lệnh cấm này áp dụng cho tất cả khách.</span></td><td class="vn-word">lệnh cấm</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 14</span>
+    <span>Seite 1 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Verben-Tabelle wollen + Grammatik 1 + Häufige Fehler + Übung 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 14</h1>
+      <h2>Das Modalverb „wollen" — Absichten &amp; Pläne / Động từ khiếm khuyết „wollen" — ý định &amp; kế hoạch</h2>
+    </div>
+    <div class="badge">A1 · Lektion 14</div>
+  </div>
+
+  <!-- Verben-Tabelle -->
+  <div class="section-title">🔧 Verben-Tabelle: Modalverb „wollen" ⚠️ — vollständig konjugiert / Bảng động từ: „wollen" ⚠️ — chia đầy đủ</div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Pronomen</th><th>wollen</th><th>Beispiel / Câu ví dụ</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td><strong>will</strong></td><td class="beispiel" style="text-align:left;">Ich will heute ins Kino gehen. <span class="vn-word">Hôm nay tôi muốn đi xem phim.</span></td></tr>
+      <tr><td class="pronomen">du</td><td><strong>willst</strong></td><td class="beispiel" style="text-align:left;">Willst du mitkommen? <span class="vn-word">Bạn có muốn đi cùng không?</span></td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td><strong>will</strong></td><td class="beispiel" style="text-align:left;">Sie will Ärztin werden. <span class="vn-word">Cô ấy muốn trở thành bác sĩ.</span></td></tr>
+      <tr><td class="pronomen">wir</td><td><strong>wollen</strong></td><td class="beispiel" style="text-align:left;">Wir wollen nächstes Jahr nach Berlin reisen. <span class="vn-word">Năm sau chúng tôi muốn đi du lịch Berlin.</span></td></tr>
+      <tr><td class="pronomen">ihr</td><td><strong>wollt</strong></td><td class="beispiel" style="text-align:left;">Wollt ihr auch kommen? <span class="vn-word">Các bạn cũng muốn đến chứ?</span></td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td><strong>wollen</strong></td><td class="beispiel" style="text-align:left;">Sie wollen ein neues Auto kaufen. <span class="vn-word">Họ / Ông bà muốn mua một chiếc xe mới.</span></td></tr>
+    </tbody>
+  </table>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — „wollen" im Modalverb-Sandwich / Ngữ pháp 1: „wollen" trong cấu trúc sandwich</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 „wollen" drückt einen <strong>starken Willen</strong> oder eine <strong>feste Absicht</strong> aus (= etwas fest vorhaben). Wie alle Modalverben aus L12/L13 funktioniert es im <strong>Modalverb-Sandwich</strong>: „wollen" konjugiert auf <strong>Position 2</strong>, das Vollverb im <strong>Infinitiv</strong> ganz am <strong>Satzende</strong>. Beispiel: „<strong style="color:#1e40af;">Ich will</strong> [ 🥬 nächstes Jahr 🥬 ] <strong style="color:#b45309;">nach Berlin reisen</strong>."</div>
+    <div class="tip-vn">💡 „wollen" diễn đạt <strong>ý chí mạnh mẽ</strong> hoặc <strong>ý định chắc chắn</strong> (= đã quyết tâm làm gì đó). Giống như tất cả động từ khiếm khuyết ở Bài 12/13, nó theo cấu trúc <strong>sandwich</strong>: „wollen" đã chia đứng ở <strong>vị trí 2</strong>, động từ chính ở dạng <strong>nguyên mẫu</strong> nằm hẳn ở <strong>cuối câu</strong>.</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich wolle ins Kino gehen."</span> → <span class="wb-ok">✅ „Ich will ins Kino gehen."</span> — „wollen" ist unregelmäßig: ich will, nicht „wolle"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich wolle ins Kino gehen."</span> → <span class="wb-ok">✅ „Ich will ins Kino gehen."</span> — „wollen" là động từ bất quy tắc: ich will, không phải „wolle"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Er will gehen ins Kino."</span> → <span class="wb-ok">✅ „Er will ins Kino gehen."</span> — das Vollverb steht im Infinitiv ganz am Satzende!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Er will gehen ins Kino."</span> → <span class="wb-ok">✅ „Er will ins Kino gehen."</span> — động từ chính ở dạng nguyên mẫu đứng hẳn ở cuối câu!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Wir wollen nach Hause fahren gerne."</span> → <span class="wb-ok">✅ „Wir wollen gerne nach Hause fahren."</span> — „gerne" steht VOR dem Vollverb, nicht danach!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Wir wollen nach Hause fahren gerne."</span> → <span class="wb-ok">✅ „Wir wollen gerne nach Hause fahren."</span> — „gerne" đứng TRƯỚC động từ chính, không phải sau!</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — Sandwich-Check: Richtig oder falsch? / Kiểm tra sandwich: đúng hay sai?</div>
+  <div class="ubung-body">
+    <div class="instr-de">Prüfe jeden Satz: Ist das Modalverb-Sandwich mit „wollen" korrekt gebaut? Wenn nicht, korrigiere den Satz komplett.</div>
+    <div class="instr-vn">Kiểm tra từng câu: cấu trúc sandwich với „wollen" đã đúng chưa? Nếu sai, hãy sửa lại toàn bộ câu.</div>
+    <div class="fill-line"><span class="num">1.</span> „Ich will Deutsch lernen." <span class="vn-word">(Tôi muốn học tiếng Đức.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">2.</span> „Du willst spielst Fußball." <span class="vn-word">(Bạn muốn chơi bóng đá.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">3.</span> „Er wollen ein Eis essen." <span class="vn-word">(Anh ấy muốn ăn kem.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">4.</span> „Wir wollt zusammen kochen." <span class="vn-word">(Chúng tôi muốn nấu ăn cùng nhau.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">5.</span> „Ihr wollt tanzen gerne." <span class="vn-word">(Các bạn muốn thoải mái nhảy múa.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">6.</span> „Sie will fernsehe schauen." <span class="vn-word">(Cô ấy muốn xem ti vi.)</span> → <span class="blank-xl"></span></div>
+    <div class="tip-box">
+      <div class="tip-de">💡 Tipp: Nur EIN Satz ist schon ein perfekt gebautes Sandwich — die anderen fünf brauchen deine Korrektur!</div>
+      <div class="tip-vn">💡 Mẹo nhỏ: chỉ có MỘT câu đã là sandwich hoàn chỉnh — năm câu còn lại cần bạn sửa!</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 14</span>
+    <span>Seite 2 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Verben-Tabelle dürfen + Grammatik 2 + Häufige Fehler + Kulturinfo 1 + Übung 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 14</h1>
+      <h2>Das Modalverb „dürfen" — Erlaubnis &amp; Verbot / Động từ khiếm khuyết „dürfen" — cho phép &amp; cấm đoán</h2>
+    </div>
+    <div class="badge">A1 · Lektion 14</div>
+  </div>
+
+  <!-- Verben-Tabelle -->
+  <div class="section-title">🔧 Verben-Tabelle: Modalverb „dürfen" ⚠️ — vollständig konjugiert / Bảng động từ: „dürfen" ⚠️ — chia đầy đủ</div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Pronomen</th><th>dürfen</th><th>Beispiel / Câu ví dụ</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td><strong>darf</strong></td><td class="beispiel" style="text-align:left;">Ich darf heute länger aufbleiben. <span class="vn-word">Hôm nay tôi được phép thức khuya hơn.</span></td></tr>
+      <tr><td class="pronomen">du</td><td><strong>darfst</strong></td><td class="beispiel" style="text-align:left;">Darfst du am Wochenende ausgehen? <span class="vn-word">Cuối tuần bạn có được phép ra ngoài không?</span></td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td><strong>darf</strong></td><td class="beispiel" style="text-align:left;">Er darf hier nicht rauchen. <span class="vn-word">Anh ấy không được hút thuốc ở đây.</span></td></tr>
+      <tr><td class="pronomen">wir</td><td><strong>dürfen</strong></td><td class="beispiel" style="text-align:left;">Wir dürfen im Park Fußball spielen. <span class="vn-word">Chúng tôi được phép chơi bóng đá trong công viên.</span></td></tr>
+      <tr><td class="pronomen">ihr</td><td><strong>dürft</strong></td><td class="beispiel" style="text-align:left;">Ihr dürft die Musik lauter machen. <span class="vn-word">Các bạn được phép vặn nhạc to hơn.</span></td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td><strong>dürfen</strong></td><td class="beispiel" style="text-align:left;">Sie dürfen hier parken. <span class="vn-word">Họ / Ông bà được phép đỗ xe ở đây.</span></td></tr>
+    </tbody>
+  </table>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — „dürfen" = Erlaubnis, „nicht dürfen" = Verbot! / Ngữ pháp 2: „dürfen" = cho phép, „nicht dürfen" = cấm!</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 „dürfen" drückt eine <strong>Erlaubnis</strong> aus (= etwas tun dürfen, weil es erlaubt ist). ACHTUNG: In der verneinten Form „nicht dürfen" bedeutet es ein <strong>VERBOT</strong> — nicht das Fehlen einer Pflicht!</div>
+    <div class="tip-vn">💡 „dürfen" diễn đạt <strong>sự cho phép</strong> (= được làm gì đó vì điều đó được phép). CHÚ Ý: ở dạng phủ định „nicht dürfen" nghĩa là <strong>CẤM</strong> — không phải là không bắt buộc!</div>
+  </div>
+  <div class="gram-box">
+    <h4>🔁 Wichtiger Vergleich: „nicht dürfen" vs. „nicht müssen" / So sánh quan trọng: „nicht dürfen" và „nicht müssen"</h4>
+    <div class="rule-de">„nicht dürfen" = <strong>VERBOT</strong> (etwas ist nicht erlaubt): „Du darfst hier nicht rauchen." &nbsp;|&nbsp; „nicht müssen" = <strong>KEINE PFLICHT</strong> (etwas ist nicht nötig, aber erlaubt): „Du musst hier nicht rauchen, aber du darfst."</div>
+    <div class="rule-vn">„nicht dürfen" = <strong>CẤM</strong> (không được phép làm gì đó) &nbsp;|&nbsp; „nicht müssen" = <strong>KHÔNG BẮT BUỘC</strong> (không cần thiết, nhưng vẫn được phép nếu muốn)</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Du dürfst hier parken."</span> → <span class="wb-ok">✅ „Du darfst hier parken."</span> — bei „du" heißt es „darfst", nicht „dürfst"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Du dürfst hier parken."</span> → <span class="wb-ok">✅ „Du darfst hier parken."</span> — với „du" phải chia „darfst", không phải „dürfst"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Er darf spielen Fußball."</span> → <span class="wb-ok">✅ „Er darf Fußball spielen."</span> — das Vollverb steht im Infinitiv ganz am Satzende!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Er darf spielen Fußball."</span> → <span class="wb-ok">✅ „Er darf Fußball spielen."</span> — động từ chính ở dạng nguyên mẫu đứng hẳn ở cuối câu!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich muss hier nicht rauchen." (gemeint: Verbot)</span> → <span class="wb-ok">✅ „Ich darf hier nicht rauchen."</span> — für ein VERBOT immer „nicht dürfen" benutzen, nicht „nicht müssen"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich muss hier nicht rauchen." (muốn diễn đạt cấm)</span> → <span class="wb-ok">✅ „Ich darf hier nicht rauchen."</span> — để diễn đạt CẤM luôn dùng „nicht dürfen", không dùng „nicht müssen"!</div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Verbotsschilder &amp; Ordnungsliebe / Biển cấm &amp; tinh thần kỷ luật</div>
+    <div class="kb-de">In Deutschland gibt es sehr viele offizielle Schilder und Regeln — von „Rauchen verboten" bis „Betreten verboten". Wer sich nicht daran hält, kann mit Bußgeldern rechnen — z. B. beim Falschparken oder bei zu lauter Musik nach 22 Uhr!</div>
+    <div class="kb-vn">Ở Đức có rất nhiều biển báo và quy định chính thức — từ „cấm hút thuốc" đến „cấm vào". Ai không tuân thủ có thể bị phạt tiền — ví dụ đỗ xe sai quy định hoặc mở nhạc quá to sau 22 giờ. Khác với sự linh hoạt thường thấy ở Việt Nam, quy tắc ở Đức thường được thực thi rất nghiêm và ít có ngoại lệ.</div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — Erlaubnis oder Verbot? Ergänze „dürfen" / Cho phép hay cấm? Điền „dürfen"</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die richtige Form von „dürfen". Achte darauf, ob eine Erlaubnis oder (mit „nicht") ein Verbot gemeint ist!</div>
+    <div class="instr-vn">Điền dạng đúng của „dürfen". Chú ý xem là cho phép hay (với „nicht") cấm!</div>
+    <div class="fill-line"><span class="num">1.</span> In der Bibliothek <span class="blank"></span> man nicht laut sprechen. <span class="vn-word">(Trong thư viện không được nói to.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> <span class="blank"></span> ich dein Handy benutzen? <span class="vn-word">(Tôi có thể dùng điện thoại của bạn không?)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Kinder <span class="blank"></span> hier nicht allein schwimmen. <span class="vn-word">(Trẻ em không được bơi một mình ở đây.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Du <span class="blank"></span> gerne bei uns übernachten. <span class="vn-word">(Bạn có thể ngủ lại nhà chúng tôi.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Wir <span class="blank"></span> im Büro nicht rauchen. <span class="vn-word">(Chúng tôi không được hút thuốc ở văn phòng.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> <span class="blank"></span> ihr am Wochenende lange schlafen? <span class="vn-word">(Cuối tuần các bạn có được ngủ nướng không?)</span></div>
+  </div>
+
+  <!-- Verben-Tabelle sollen (vorgezogen) -->
+  <div class="section-title">🔧 Verben-Tabelle: Modalverb „sollen" ⚠️ — vollständig konjugiert / Bảng động từ: „sollen" ⚠️ — chia đầy đủ</div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Pronomen</th><th>sollen</th><th>Beispiel / Câu ví dụ</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td><strong>soll</strong></td><td class="beispiel" style="text-align:left;">Ich soll heute Abend anrufen. <span class="vn-word">Tối nay tôi nên gọi điện.</span></td></tr>
+      <tr><td class="pronomen">du</td><td><strong>sollst</strong></td><td class="beispiel" style="text-align:left;">Du sollst mehr Wasser trinken. <span class="vn-word">Bạn nên uống nhiều nước hơn.</span></td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td><strong>soll</strong></td><td class="beispiel" style="text-align:left;">Er soll pünktlich sein. <span class="vn-word">Anh ấy nên đúng giờ.</span></td></tr>
+      <tr><td class="pronomen">wir</td><td><strong>sollen</strong></td><td class="beispiel" style="text-align:left;">Wir sollen die Hausaufgaben machen. <span class="vn-word">Chúng tôi nên làm bài tập.</span></td></tr>
+      <tr><td class="pronomen">ihr</td><td><strong>sollt</strong></td><td class="beispiel" style="text-align:left;">Ihr sollt leiser sein. <span class="vn-word">Các bạn nên nói nhỏ hơn.</span></td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td><strong>sollen</strong></td><td class="beispiel" style="text-align:left;">Sie sollen den Arzt fragen. <span class="vn-word">Họ / Ông bà nên hỏi bác sĩ.</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 14</span>
+    <span>Seite 3 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Grammatik 3 + Häufige Fehler + Übung 3 (nur sollen) + Übung 4 (Mix) + GAME) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 14</h1>
+      <h2>Das Modalverb „sollen" — Empfehlung &amp; fremder Wille / Động từ khiếm khuyết „sollen" — lời khuyên &amp; ý muốn người khác</h2>
+    </div>
+    <div class="badge">A1 · Lektion 14</div>
+  </div>
+
+  <!-- Grammatik 3 -->
+  <div class="section-title">📖 Grammatik 3 — „sollen": Empfehlung oder Auftrag von außen / Ngữ pháp 3: „sollen" — lời khuyên hay nhiệm vụ từ bên ngoài</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 „sollen" drückt eine <strong>Empfehlung</strong>, einen <strong>Auftrag</strong> oder den <strong>Willen einer anderen Person</strong> aus (z. B. eines Arztes, Chefs oder Lehrers) — anders als „müssen", das die eigene, objektive Notwendigkeit ausdrückt.</div>
+    <div class="tip-vn">💡 „sollen" diễn đạt <strong>lời khuyên</strong>, <strong>nhiệm vụ được giao</strong> hoặc <strong>ý muốn của người khác</strong> (ví dụ bác sĩ, sếp hay giáo viên) — khác với „müssen" diễn đạt sự cần thiết khách quan của bản thân.</div>
+  </div>
+  <div class="gram-box">
+    <h4>🔁 Vergleich: „sollen" vs. „müssen" / So sánh: „sollen" và „müssen"</h4>
+    <div class="rule-de">„müssen" = eigene, oft objektive Notwendigkeit (kein Ausweg): „Ich muss atmen." &nbsp;|&nbsp; „sollen" = Erwartung/Wunsch von außen, oft noch verhandelbar: „Der Arzt sagt, ich soll mehr schlafen."</div>
+    <div class="rule-vn">„müssen" = sự cần thiết khách quan của bản thân (không thể tránh được): „Ich muss atmen." (Tôi phải thở) &nbsp;|&nbsp; „sollen" = kỳ vọng/mong muốn từ bên ngoài, thường vẫn có thể thương lượng: „Der Arzt sagt, ich soll mehr schlafen." (Bác sĩ nói tôi nên ngủ nhiều hơn)</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich sollst mehr schlafen."</span> → <span class="wb-ok">✅ „Ich soll mehr schlafen."</span> — „ich soll", nicht „ich sollst" — die Personalendung von „du" nicht verwechseln!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich sollst mehr schlafen."</span> → <span class="wb-ok">✅ „Ich soll mehr schlafen."</span> — là „ich soll", không phải „ich sollst" — đừng nhầm với đuôi chia của „du"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Du sollen pünktlich kommen."</span> → <span class="wb-ok">✅ „Du sollst pünktlich kommen."</span> — die richtige Personalform für „du" ist „sollst"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Du sollen pünktlich kommen."</span> → <span class="wb-ok">✅ „Du sollst pünktlich kommen."</span> — dạng chia đúng cho „du" là „sollst"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Er soll trinken mehr Wasser."</span> → <span class="wb-ok">✅ „Er soll mehr Wasser trinken."</span> — das Vollverb steht im Infinitiv ganz am Satzende!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Er soll trinken mehr Wasser."</span> → <span class="wb-ok">✅ „Er soll mehr Wasser trinken."</span> — động từ chính ở dạng nguyên mẫu đứng hẳn ở cuối câu!</div>
+  </div>
+
+  <!-- Übung 3 -->
+  <div class="ubung-header">Übung 3 — Nur „sollen": Ergänze die richtige Form / Chỉ „sollen": điền dạng đúng</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die richtige Form von „sollen".</div>
+    <div class="instr-vn">Điền dạng đúng của „sollen".</div>
+    <div class="fill-line"><span class="num">1.</span> Der Arzt sagt, ich <span class="blank"></span> mehr schlafen. <span class="vn-word">(Bác sĩ nói tôi nên ngủ nhiều hơn.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Du <span class="blank"></span> deine Hausaufgaben machen. <span class="vn-word">(Bạn nên làm bài tập.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Wir <span class="blank"></span> pünktlich sein. <span class="vn-word">(Chúng tôi nên đúng giờ.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> <span class="blank"></span> ich das Fenster schließen? <span class="vn-word">(Tôi có nên đóng cửa sổ không?)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Ihr <span class="blank"></span> die Musik leiser machen. <span class="vn-word">(Các bạn nên vặn nhạc nhỏ lại.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Meine Chefin sagt, wir <span class="blank"></span> mehr Pausen machen. <span class="vn-word">(Sếp của tôi nói chúng tôi nên nghỉ giải lao nhiều hơn.)</span></div>
+  </div>
+
+  <!-- Übung 4 -->
+  <div class="ubung-header">Übung 4 — Wollen, dürfen oder sollen? Wiederholung aller drei / Ôn tập cả ba: wollen, dürfen hay sollen?</div>
+  <div class="ubung-body">
+    <div class="instr-de">Welches Modalverb passt am besten: wollen, dürfen oder sollen? Ergänze die richtige Form.</div>
+    <div class="instr-vn">Động từ khiếm khuyết nào phù hợp nhất: wollen, dürfen hay sollen? Điền dạng đúng.</div>
+    <div class="fill-line"><span class="num">1.</span> Der Arzt sagt, ich <span class="blank"></span> weniger Kaffee trinken. <span class="vn-word">(Bác sĩ nói tôi nên uống ít cà phê hơn.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Ich <span class="blank"></span> nächstes Jahr nach Japan reisen. <span class="vn-word">(Năm sau tôi muốn đi du lịch Nhật Bản.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Hier <span class="blank"></span> man nicht rauchen. <span class="vn-word">(Ở đây không được hút thuốc.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> <span class="blank"></span> du auch Medizin studieren? <span class="vn-word">(Bạn cũng muốn học y không?)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Meine Mutter sagt, ich <span class="blank"></span> mein Zimmer aufräumen. <span class="vn-word">(Mẹ tôi nói tôi nên dọn phòng.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> <span class="blank"></span> wir hier fotografieren? <span class="vn-word">(Chúng tôi có được chụp ảnh ở đây không?)</span></div>
+  </div>
+
+  <!-- GAME -->
+  <div class="game-header">🎲 GAME — Der Schilder-Detektiv (solo spielbar!) / Thám tử biển báo (chơi một mình cũng được!)</div>
+  <div class="game-body">
+    <div class="instr-de">Schau dir jedes Schild an und schreibe einen vollständigen Satz mit „dürfen" — positiv oder negativ, je nachdem, was das Schild bedeutet!</div>
+    <div class="instr-vn">Nhìn từng biển báo và viết một câu hoàn chỉnh với „dürfen" — khẳng định hay phủ định tùy theo ý nghĩa của biển báo!</div>
+    <div class="schild-zeile"><span class="schild-icon">🚭</span><span class="schild-label">Rauchverbot / cấm hút thuốc</span><span class="blank-xl"></span></div>
+    <div class="schild-zeile"><span class="schild-icon">🅿️✅</span><span class="schild-label">Parken erlaubt / được phép đỗ xe</span><span class="blank-xl"></span></div>
+    <div class="schild-zeile"><span class="schild-icon">🐕🚫</span><span class="schild-label">Hunde verboten / cấm mang theo chó</span><span class="blank-xl"></span></div>
+    <div class="schild-zeile"><span class="schild-icon">📷✅</span><span class="schild-label">Fotografieren erlaubt / được phép chụp ảnh</span><span class="blank-xl"></span></div>
+    <div class="schild-zeile"><span class="schild-icon">🔇 22:00</span><span class="schild-label">Ruhezeit ab 22 Uhr / giờ yên tĩnh từ 22 giờ</span><span class="blank-xl"></span></div>
+    <div class="schild-zeile"><span class="schild-icon">🚪✅</span><span class="schild-label">Eintritt frei / vào cửa miễn phí</span><span class="blank-xl"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 14</span>
+    <span>Seite 4 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 5 (Dialog + Lesetext + MC) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 14</h1>
+      <h2>Dialog &amp; Lesetext / Hội thoại &amp; bài đọc</h2>
+    </div>
+    <div class="badge">A1 · Lektion 14</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Anna:</span>Jonas, ich will heute Abend eine kleine Party machen. Is<strong>t</strong> das okay?</div>
+    <div class="dialog-line"><span class="speaker">Jonas:</span>Klar! Aber wir sollen ab 22 Uhr leise sein — das steh<strong>t</strong> in der Hausordnung.</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Stimmt, das habe ich vergessen. Dürfen wir wenigstens draußen auf dem Balkon feiern?</div>
+    <div class="dialog-line"><span class="speaker">Jonas:</span>Ja, das dürfen wir. Aber wir sollen die Nachbarn vorher informieren, das is<strong>t</strong> höflich.</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Gute Idee! Und was machen wir mit dem Müll danach?</div>
+    <div class="dialog-line"><span class="speaker">Jonas:</span>Wir müssen die Mülltrennung beachten — das is<strong>t</strong> Pflicht im Haus.</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Klar, das mache ich morgen früh. Willst du auch kommen?</div>
+    <div class="dialog-line"><span class="speaker">Jonas:</span>Na klar, ich will auf jeden Fall dabei sein!</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Mai wohnt seit drei Monaten in einer WG in Hamburg. In ihrer WG gib<strong>t</strong> es klare Regeln: Man darf nach 22 Uhr keine laute Musik hören, weil dann Ruhezeit ist. Man soll außerdem jede Woche die Küche putzen — das steht auf einem Plan an der Wand. Mai findet die Regeln wichtig, weil sie ein gutes Zusammenleben ermöglichen. Sie will bald ihre Freunde aus Vietnam einladen, aber zuerst muss sie ihre Mitbewohner fragen, ob das okay ist. In Deutschland darf man nämlich nicht einfach Gäste einladen, ohne die anderen zu informieren — das gehört zur Höflichkeit in einer WG. Nächste Woche will Mai außerdem ein Praktikum bei einer Firma beginnen. Ihr Professor sagt, sie soll sich gut vorbereiten und pünktlich sein. Mai is<strong>t</strong> ein bisschen nervös, aber auch sehr motiviert. „Ich will unbedingt zeigen, dass ich fleißig bin", sag<strong>t</strong> sie. Am Wochenende darf sie zur Entspannung mit Freunden ins Kino gehen — das freut sie schon sehr.
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Wo wohnt Mai?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) in einem Hotel</span>
+      <span><span class="mc-kreis"></span> b) in einer WG in Hamburg</span>
+      <span><span class="mc-kreis"></span> c) bei ihren Eltern</span>
+    </div>
+    <div class="mc-frage">2. Was darf man in der WG nach 22 Uhr nicht?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) schlafen</span>
+      <span><span class="mc-kreis"></span> b) laute Musik hören</span>
+      <span><span class="mc-kreis"></span> c) kochen</span>
+    </div>
+    <div class="mc-frage">3. Was soll man laut Plan jede Woche machen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) die Küche putzen</span>
+      <span><span class="mc-kreis"></span> b) einkaufen gehen</span>
+      <span><span class="mc-kreis"></span> c) die Miete bezahlen</span>
+    </div>
+    <div class="mc-frage">4. Wen will Mai bald einladen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) ihre Kollegen</span>
+      <span><span class="mc-kreis"></span> b) ihre Freunde aus Vietnam</span>
+      <span><span class="mc-kreis"></span> c) ihre Familie</span>
+    </div>
+    <div class="mc-frage">5. Was muss Mai zuerst tun, bevor sie Gäste einlädt?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) die Wohnung putzen</span>
+      <span><span class="mc-kreis"></span> b) ihre Mitbewohner fragen</span>
+      <span><span class="mc-kreis"></span> c) einkaufen gehen</span>
+    </div>
+    <div class="mc-frage">6. Was beginnt Mai nächste Woche?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) einen Deutschkurs</span>
+      <span><span class="mc-kreis"></span> b) ein Praktikum</span>
+      <span><span class="mc-kreis"></span> c) einen Urlaub</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Und du? Was darfst, musst oder sollst du zu Hause oder in der Schule/Arbeit tun?</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Còn bạn? Bạn được phép, phải hoặc nên làm gì ở nhà hay ở trường/công việc?</div>
+    </div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Das Jugendschutzgesetz / Luật bảo vệ thanh thiếu niên</div>
+    <div class="kb-de">In Deutschland regelt das <b>Jugendschutzgesetz</b> genau, was Jugendliche dürfen und was nicht. Zum Beispiel: Ab 16 Jahren darf man Bier und Wein kaufen, aber erst ab 18 Jahren harte alkoholische Getränke. Ab 16 dürfen Jugendliche bis 24 Uhr in die Disko, unter 16 nur bis 22 Uhr.</div>
+    <div class="kb-vn"><b>Luật bảo vệ thanh thiếu niên</b> ở Đức quy định rất rõ những gì thanh thiếu niên được phép và không được phép làm. Ví dụ: từ 16 tuổi được mua bia và rượu vang, nhưng phải đủ 18 tuổi mới được mua rượu mạnh. Từ 16 tuổi được ở vũ trường đến 24 giờ, dưới 16 tuổi chỉ đến 22 giờ. Những quy định pháp luật cụ thể và chi tiết như vậy khác hẳn với cách quản lý chủ yếu dựa vào gia đình ở Việt Nam.</div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">wollen</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was willst du in deinem Leben unbedingt noch machen?</div>
+      <div class="anweisung-vn">Trong đời bạn nhất định còn muốn làm điều gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">dürfen</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was darfst du zu Hause nicht machen?</div>
+      <div class="anweisung-vn">Ở nhà bạn không được phép làm gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">sollen</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was sagt deine Familie oder dein Arzt, was du tun sollst?</div>
+      <div class="anweisung-vn">Gia đình hoặc bác sĩ của bạn nói bạn nên làm gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">Regel</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Welche Regel in Deutschland findest du interessant oder ungewöhnlich?</div>
+      <div class="anweisung-vn">Quy tắc nào ở Đức bạn thấy thú vị hoặc khác thường?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 5</div>
+      <div class="wort-pill">wollen + dürfen + sollen</div>
+      <div class="prompt-row"><span class="prompt-tag satz">Satz</span></div>
+      <div class="anweisung-de">Bilde je einen Satz mit „wollen", „dürfen" und „sollen".</div>
+      <div class="anweisung-vn">Đặt mỗi loại một câu với „wollen", „dürfen" và „sollen".</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 14</span>
+    <span>Seite 5 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 6 (Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 14</h1>
+      <h2>Hausaufgaben &amp; Antworten / Bài tập về nhà &amp; Đáp án</h2>
+    </div>
+    <div class="badge">A1 · Lektion 14</div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Verben konjugieren / Chia động từ:</strong> Schreibe die vollständige Konjugation von „wollen", „dürfen" und „sollen" für alle 6 Personen auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết ra giấy đầy đủ 6 ngôi chia của „wollen", „dürfen" và „sollen" — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">🔍 <strong>Schilder-Suche / Tìm biển báo:</strong> Finde in deiner Stadt oder im Internet 3 echte Verbots- oder Regelschilder und schreibe für jedes einen Satz mit „dürfen".
+      <div class="ha-vn">Tìm trong thành phố của bạn hoặc trên mạng 3 biển cấm hoặc quy định thật, viết một câu với „dürfen" cho mỗi biển.</div>
+    </div>
+    <div class="ha-item">✏️ <strong>Kurztext / Đoạn văn ngắn:</strong> Schreibe 5 Sätze über deine eigenen Regeln und Pläne — benutze mindestens einmal „wollen", einmal „dürfen" und einmal „sollen".
+      <div class="ha-vn">Viết 5 câu về quy tắc và kế hoạch của riêng bạn — dùng mỗi từ „wollen", „dürfen" và „sollen" ít nhất một lần.</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 13):</strong> 1. kann ... schwimmen &nbsp; 2. Falsch — richtig ist „Ich höre gerne Musik." &nbsp; 3. Das Vollverb im Infinitiv / động từ chính ở dạng nguyên mẫu</p>
+    <p><strong>Übung 1 (Sandwich-Check, wollen):</strong> 1. ✅ richtig &nbsp; 2. falsch → „Du willst Fußball spielen." &nbsp; 3. falsch → „Er will ein Eis essen." &nbsp; 4. falsch → „Wir wollen zusammen kochen." &nbsp; 5. falsch → „Ihr wollt gerne tanzen." &nbsp; 6. falsch → „Sie will fernsehen."</p>
+    <p><strong>Übung 2 (dürfen — Erlaubnis/Verbot):</strong> 1. darf &nbsp; 2. Darf &nbsp; 3. dürfen &nbsp; 4. darfst &nbsp; 5. dürfen &nbsp; 6. Dürft</p>
+    <p><strong>Übung 3 (nur sollen):</strong> 1. soll &nbsp; 2. sollst &nbsp; 3. sollen &nbsp; 4. Soll &nbsp; 5. sollt &nbsp; 6. sollen</p>
+    <p><strong>Übung 4 (wollen/dürfen/sollen gemischt):</strong> 1. soll &nbsp; 2. will &nbsp; 3. darf &nbsp; 4. Willst &nbsp; 5. soll &nbsp; 6. Dürfen</p>
+    <p><strong>Game (Schilder-Detektiv), Beispiele:</strong> 1. Man darf hier nicht rauchen. &nbsp; 2. Man darf hier parken. &nbsp; 3. Man darf hier keine Hunde mitbringen. &nbsp; 4. Man darf hier fotografieren. &nbsp; 5. Man darf ab 22 Uhr nicht laut sein. &nbsp; 6. Man darf hier kostenlos eintreten.</p>
+    <p><strong>Leseverständnis:</strong> 1. b) in einer WG in Hamburg &nbsp; 2. b) laute Musik hören &nbsp; 3. a) die Küche putzen &nbsp; 4. b) ihre Freunde aus Vietnam &nbsp; 5. b) ihre Mitbewohner fragen &nbsp; 6. b) ein Praktikum</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ich will unbedingt einmal nach Deutschland reisen. &nbsp; Karte 2: Ich darf zu Hause nicht spät aufbleiben. &nbsp; Karte 3: Meine Mutter sagt, ich soll mehr Sport machen. &nbsp; Karte 4: Ich finde die Ruhezeit ab 22 Uhr interessant. &nbsp; Karte 5: Ich will Deutsch lernen. Ich darf jetzt eine Pause machen. Ich soll mehr üben.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 14 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 6 / 6</span>
+  </div>
+</div>
+
+</body>
+</html>

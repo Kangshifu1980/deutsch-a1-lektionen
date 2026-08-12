@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 15</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 7mm 12mm 3mm 12mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.14; font-size: 10.7px; }
+.compact .doc-header { padding-bottom: 2px; margin-bottom: 4px; }
+.compact .section-title { margin: 4px 0 2px 0; }
+.compact table { margin-bottom: 2px; }
+.compact table.vocab th, .compact table.vocab td { padding: 1.5px 5px; }
+.compact .gram-box { padding: 3px 7px; margin-bottom: 2px; }
+.compact .tip-box { padding: 2px 6px; margin: 1px 0; }
+.compact .warn-box { padding: 2px 6px; margin: 1px 0 3px 0; }
+.compact .ubung-header { padding: 1px 7px; }
+.compact .ubung-body { padding: 3px 7px; margin-bottom: 2px; }
+.compact .fill-line { margin-bottom: 0px; }
+.compact .footer { margin-top: 2px; padding-top: 1px; }
+.compact .phon-box { padding: 2px 7px; margin-bottom: 2px; }
+.compact .kultur-box { padding: 3px 8px; margin: 2px 0 3px 0; }
+.compact .dialog-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .lese-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .mc-block { margin-bottom: 2px; }
+.compact .mc-optionen { margin-bottom: 3px; }
+.compact .ha-box { padding: 3px 8px; }
+.compact .antworten { padding: 3px 8px; }
+.compact .wiederholung-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .karten-grid { margin-top: 2px; gap: 5px; }
+.compact .sprech-karte { padding: 4px 6px; }
+.compact .sprech-karte .karte-num { padding: 1px 6px; margin-bottom: 2px; }
+.compact .sprech-karte .wort-pill { font-size: 11px; padding: 2px 4px; margin-bottom: 2px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 2px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 2px; }
+.compact .wortsalat-item { margin-bottom: 3px; }
+.compact .baukasten-box { padding: 4px 9px; margin-bottom: 3px; }
+.compact .brief-karte { padding: 5px 8px; }
+.compact .game-header { padding: 1px 7px; }
+.compact .game-body { padding: 3px 7px; margin-bottom: 2px; }
+.compact .wuerfel-grid { margin: 2px 0 3px 0; gap: 5px; }
+.compact .wuerfel-spalte { padding: 3px 5px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .prompt-tag.satz { background: #fef3c7; color: #92400e; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .game-header: Spielelement (wiederverwendet aus L13/L14) ===== */
+.game-header { background: #ea580c; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.game-body { border: 0.5px solid #fdba74; border-top: none; border-radius: 0 0 5px 5px; padding: 6px 8px; margin-bottom: 4px; background: #fff7ed; }
+.game-body .instr-de { font-size: 10px; color: #7c2d12; font-style: italic; }
+.game-body .instr-vn { font-size: 9.5px; color: #c2410c; font-style: italic; margin-bottom: 4px; }
+
+/* ===== .wuerfel-box: Würfel-Legende (wiederverwendet aus L12/L13) ===== */
+.wortsalat-woerter { display: flex; flex-wrap: wrap; gap: 4px; margin: 2px 0 3px 0; }
+.wort-chip { display: inline-block; background: #eef2ff; border: 1px solid #c7d2fe; border-radius: 5px; padding: 2px 8px; font-size: 10.5px; color: #3730a3; font-weight: 600; }
+.wortsalat-answer-row { display: flex; align-items: center; gap: 6px; margin-bottom: 2px; }
+.wortsalat-num { font-weight: 700; color: #64748b; min-width: 16px; }
+.wortsalat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 14px; }
+.wortsalat-grid .blank-xl { min-width: 140px; }
+.wuerfel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 4px 0 6px 0; }
+.wuerfel-spalte { background: white; border: 1px solid #fdba74; border-radius: 8px; padding: 6px 8px; }
+.wuerfel-spalte .ws-title { font-size: 9.5px; font-weight: 700; color: #9a3412; text-align: center; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.3px; }
+.wuerfel-zeile { display: flex; align-items: center; gap: 5px; font-size: 10px; margin-bottom: 2px; }
+.wuerfel-zahl { display: inline-flex; align-items: center; justify-content: center; width: 15px; height: 15px; background: #ea580c; color: white; font-weight: 700; font-size: 9px; border-radius: 4px; flex-shrink: 0; }
+.wuerfel-kombi { display: flex; align-items: center; gap: 6px; font-size: 10.5px; margin-bottom: 3px; flex-wrap: wrap; }
+.wuerfel-kombi .wk-num { font-weight: 700; color: #64748b; min-width: 14px; }
+.wuerfel-kombi .wk-set { display: inline-flex; gap: 3px; }
+.wortsalat-arrow { color: #94a3b8; font-weight: 700; }
+
+/* ===== .baukasten-box & .brief-karte: Schreib-Format (wiederverwendet aus L6/L12/L13) ===== */
+.baukasten-box { border: 1px solid #fde68a; border-radius: 8px; padding: 7px 12px; background: #fffbeb; margin-bottom: 6px; }
+.baukasten-title { font-size: 10.5px; font-weight: 700; color: #92400e; margin-bottom: 4px; }
+.baukasten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px 10px; }
+.baukasten-kategorie-label { font-size: 9px; font-weight: 700; text-transform: uppercase; color: #b45309; margin-bottom: 3px; border-bottom: 1px solid #fde68a; padding-bottom: 2px; }
+.baukasten-phrase { font-size: 10px; color: #1a1a1a; margin-bottom: 4px; background: white; border: 1px solid #fde68a; border-radius: 5px; padding: 3px 6px; }
+.baukasten-phrase .bp-vn { display: block; color: #b45309; font-style: italic; font-size: 9px; margin-top: 1px; }
+.brief-karte { border: 1.5px dashed #94a3b8; border-radius: 8px; padding: 8px 12px; background: #fafafa; min-height: 145px; }
+.brief-karte .bk-header { font-size: 10px; font-weight: 700; color: #475569; margin-bottom: 6px; display: flex; justify-content: space-between; }
+.brief-lines { border-bottom: 1px solid #cbd5e1; height: 16px; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Aussprache + Lernziele + Wortschatz Restaurant + Wortschatz Getränke/Geschmack) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 15</h1>
+      <h2>Im Restaurant</h2>
+      <h2>Ở nhà hàng</h2>
+    </div>
+    <div class="badge">A1 · Lektion 15</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 14 / Ôn tập Bài 14</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: Die Modalverben „wollen", „dürfen", „sollen" / Khởi động ngữ pháp: các động từ khiếm khuyết „wollen", „dürfen", „sollen"</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">wollen</div>
+        <div class="wh-mund">Ergänze: Ich ___ heute Abend ins Kino ___. (gehen, wollen)</div>
+        <div class="wh-beispiel">Điền cấu trúc sandwich với „wollen"</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">dürfen</div>
+        <div class="wh-mund">„Ich darf hier nicht rauchen." — Erlaubnis oder Verbot?</div>
+        <div class="wh-beispiel">Câu này là cho phép hay cấm?</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">sollen</div>
+        <div class="wh-mund">Was ist der Unterschied zwischen „sollen" und „müssen"?</div>
+        <div class="wh-beispiel">„sollen" và „müssen" khác nhau ở điểm nào?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aussprache-Minute -->
+  <div class="section-title">🔊 AUSSPRACHE-MINUTE / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Der Konsonant „sch" / Phụ âm „sch"</div>
+    <div class="phon-de">Die Buchstabenkombination „sch" wird im Deutschen immer als EIN einziger Laut gesprochen — ähnlich wie das englische „sh" in „shoe". Diese Lektion ist voll davon!</div>
+    <div class="phon-vn">Tổ hợp chữ „sch" trong tiếng Đức luôn phát thành MỘT âm duy nhất — gần giống âm „s" uốn lưỡi ở miền Nam Việt Nam, hoặc âm „sh" trong tiếng Anh „shoe". Bài này xuất hiện rất nhiều âm này!</div>
+    <div class="phon-beispiele"><strong>sch</strong>mecken (đọc: "sme-kừn") · Fi<strong>sch</strong> (đọc: "fisờ") · Ti<strong>sch</strong> (đọc: "tisờ") · <strong>Sp</strong>eisekarte (đọc: "sphai-zơ-kac-tơ", sp→sch+p)</div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Über Essen und Geschmack sprechen mit „schmecken" + Dativ <span class="vn">— nói về đồ ăn và mùi vị bằng „schmecken" + Dativ</span></p>
+    <p class="de">✔ Vorlieben ausdrücken mit „gefallen" + Dativ <span class="vn">— diễn đạt sở thích bằng „gefallen" + Dativ</span></p>
+    <p class="de">✔ Die Dativpronomen (mir, dir, ihm ...) korrekt verwenden <span class="vn">— dùng đúng đại từ Dativ (mir, dir, ihm...)</span></p>
+    <p class="de">✔ Eine formelle E-Mail zur Tischreservierung schreiben <span class="vn">— viết email trang trọng để đặt bàn nhà hàng</span></p>
+  </div>
+
+  <!-- Wortschatz Im Restaurant -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Im Restaurant / Bảng từ vựng: Ở nhà hàng</div>
+  <table class="vocab">
+    <colgroup><col style="width:24%"><col style="width:20%"><col style="width:31%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>📋 <span class="die">die</span>Speisekarte</td><td class="phonetik">SHPAI-zơ-cac-tơ</td><td>Können wir die Speisekarte haben? <span class="vn-word">Cho chúng tôi xin thực đơn được không?</span></td><td class="vn-word">thực đơn</td></tr>
+      <tr><td>🧑‍🍳 <span class="der">der</span>Kellner / <span class="die">die</span>Kellnerin</td><td class="phonetik">KEN-nơ</td><td>Der Kellner bringt das Essen. <span class="vn-word">Người phục vụ mang đồ ăn ra.</span></td><td class="vn-word">nhân viên phục vụ (nam/nữ)</td></tr>
+      <tr><td>✍️ bestellen</td><td class="phonetik">bơ-SHTEN-lờn</td><td>Ich möchte den Fisch bestellen. <span class="vn-word">Tôi muốn gọi món cá.</span></td><td class="vn-word">gọi món</td></tr>
+      <tr><td>🥗 <span class="die">die</span>Vorspeise</td><td class="phonetik">FO-shpai-zơ</td><td>Als Vorspeise nehme ich Suppe. <span class="vn-word">Món khai vị tôi chọn súp.</span></td><td class="vn-word">món khai vị</td></tr>
+      <tr><td>🍽️ <span class="die">die</span>Hauptspeise</td><td class="phonetik">HAUPT-shpai-zơ</td><td>Die Hauptspeise war sehr lecker. <span class="vn-word">Món chính rất ngon.</span></td><td class="vn-word">món chính</td></tr>
+      <tr><td>🍰 <span class="die">die</span>Nachspeise</td><td class="phonetik">NAKH-shpai-zơ</td><td>Möchtest du eine Nachspeise? <span class="vn-word">Bạn có muốn dùng món tráng miệng không?</span></td><td class="vn-word">món tráng miệng</td></tr>
+      <tr><td>🧾 <span class="die">die</span>Rechnung</td><td class="phonetik">REÇ-nung</td><td>Die Rechnung, bitte! <span class="vn-word">Cho tôi xin hóa đơn!</span></td><td class="vn-word">hóa đơn</td></tr>
+      <tr><td>📅 reservieren</td><td class="phonetik">rê-zeʁ-VI-rờn</td><td>Ich möchte einen Tisch reservieren. <span class="vn-word">Tôi muốn đặt một bàn.</span></td><td class="vn-word">đặt trước</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Wortschatz Getränke & Geschmack -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Getränke &amp; Geschmack / Bảng từ vựng: Đồ uống &amp; Mùi vị</div>
+  <table class="vocab">
+    <colgroup><col style="width:24%"><col style="width:20%"><col style="width:31%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>💧 <span class="das">das</span>Mineralwasser</td><td class="phonetik">mi-nê-RAN-va-sơ</td><td>Ich trinke gerne Mineralwasser. <span class="vn-word">Tôi thích uống nước khoáng.</span></td><td class="vn-word">nước khoáng</td></tr>
+      <tr><td>🍷 <span class="der">der</span>Rotwein</td><td class="phonetik">RÔT-vain</td><td>Der Rotwein schmeck<strong>t</strong> sehr gut. <span class="vn-word">Rượu vang đỏ này rất ngon.</span></td><td class="vn-word">rượu vang đỏ</td></tr>
+      <tr><td>🥂 <span class="der">der</span>Weißwein</td><td class="phonetik">VAIS-vain</td><td>Sie mag lieber Weißwein. <span class="vn-word">Cô ấy thích rượu vang trắng hơn.</span></td><td class="vn-word">rượu vang trắng</td></tr>
+      <tr><td>😋 lecker</td><td class="phonetik">LE-cơ</td><td>Das Essen hier is<strong>t</strong> lecker! <span class="vn-word">Đồ ăn ở đây ngon quá!</span></td><td class="vn-word">ngon</td></tr>
+      <tr><td>🧂 salzig</td><td class="phonetik">ZAN-tsich</td><td>Die Suppe is<strong>t</strong> mir zu salzig. <span class="vn-word">Món súp này với tôi hơi mặn.</span></td><td class="vn-word">mặn</td></tr>
+      <tr><td>🍬 sü<strong>ß</strong></td><td class="phonetik">zuys</td><td>Der Kuchen is<strong>t</strong> sehr süß. <span class="vn-word">Bánh này rất ngọt.</span></td><td class="vn-word">ngọt</td></tr>
+      <tr><td>🌶️ scharf</td><td class="phonetik">SHAF</td><td>Das Curry is<strong>t</strong> mir zu scharf. <span class="vn-word">Món cà ri này với tôi hơi cay.</span></td><td class="vn-word">cay</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Wortschatz Weitere Gerichte -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Weitere Gerichte / Bảng từ vựng: Các món ăn khác</div>
+  <table class="vocab">
+    <colgroup><col style="width:24%"><col style="width:20%"><col style="width:31%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🍲 <span class="die">die</span>Suppe</td><td class="phonetik">ZUP-pơ</td><td>Die Suppe schmeck<strong>t</strong> mir gut. <span class="vn-word">Tôi thấy món súp này ngon.</span></td><td class="vn-word">súp</td></tr>
+      <tr><td>🍰 <span class="der">der</span>Kuchen</td><td class="phonetik">KU-khờn</td><td>Der Kuchen schmeck<strong>t</strong> ihr sehr gut. <span class="vn-word">Cô ấy thấy bánh này rất ngon.</span></td><td class="vn-word">bánh ngọt</td></tr>
+      <tr><td>🥩 <span class="das">das</span>Steak</td><td class="phonetik">STÊK</td><td>Das Steak schmeck<strong>t</strong> ihm ausgezeichnet. <span class="vn-word">Anh ấy thấy món bít tết này cực ngon.</span></td><td class="vn-word">bít tết</td></tr>
+      <tr><td>🍨 <span class="das">das</span>Eis</td><td class="phonetik">AIS</td><td>Das Eis schmeck<strong>t</strong> uns immer gut. <span class="vn-word">Chúng tôi lúc nào cũng thấy kem ngon.</span></td><td class="vn-word">kem</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 15</span>
+    <span>Seite 1 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Dativpronomen-Tabelle + Grammatik 1: schmecken + Häufige Fehler + Übung 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 15</h1>
+      <h2>Neu: Das Dativpronomen &amp; „schmecken" / Điểm ngữ pháp mới: đại từ Dativ &amp; „schmecken"</h2>
+    </div>
+    <div class="badge">A1 · Lektion 15</div>
+  </div>
+
+  <!-- Dativpronomen-Tabelle -->
+  <div class="section-title">🔧 Neue Tabelle: Die Dativpronomen ⚠️ — zum ersten Mal! / Bảng mới: đại từ Dativ ⚠️ — lần đầu học!</div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Nominativ</th><th>Dativ</th><th>Beispiel / Câu ví dụ</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td><strong>mir</strong></td><td class="beispiel" style="text-align:left;">Das Essen schmeck<strong>t</strong> mir. <span class="vn-word">Tôi thấy món này ngon.</span></td></tr>
+      <tr><td class="pronomen">du</td><td><strong>dir</strong></td><td class="beispiel" style="text-align:left;">Schmeck<strong>t</strong> dir der Kaffee? <span class="vn-word">Bạn thấy cà phê này ngon không?</span></td></tr>
+      <tr><td class="pronomen">er/es</td><td><strong>ihm</strong></td><td class="beispiel" style="text-align:left;">Der Kuchen schmeck<strong>t</strong> ihm sehr gut. <span class="vn-word">Anh ấy thấy bánh này rất ngon.</span></td></tr>
+      <tr><td class="pronomen">sie</td><td><strong>ihr</strong></td><td class="beispiel" style="text-align:left;">Die Suppe schmeck<strong>t</strong> ihr nicht. <span class="vn-word">Cô ấy không thích món súp này.</span></td></tr>
+      <tr><td class="pronomen">wir</td><td><strong>uns</strong></td><td class="beispiel" style="text-align:left;">Das Essen schmeck<strong>t</strong> uns gut. <span class="vn-word">Chúng tôi thấy món này ngon.</span></td></tr>
+      <tr><td class="pronomen">ihr</td><td><strong>euch</strong></td><td class="beispiel" style="text-align:left;">Schmeck<strong>t</strong> euch das Restaurant? <span class="vn-word">Các bạn thấy đồ ăn ở nhà hàng này ngon không?</span></td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td><strong>ihnen/Ihnen</strong></td><td class="beispiel" style="text-align:left;">Die Pizza schmeck<strong>t</strong> ihnen. <span class="vn-word">Họ thấy pizza này ngon.</span></td></tr>
+    </tbody>
+  </table>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — „schmecken" + Dativ: Das Essen ist das Subjekt! / Ngữ pháp 1: „schmecken" + Dativ — đồ ăn mới là chủ ngữ!</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Ganz neue Satzlogik: Bei „schmecken" ist NICHT die Person das Subjekt, sondern das <strong>Essen/Getränk</strong>! Die Person, die schmeckt, steht im <strong>Dativ</strong>. Struktur: [Essen] + schmeckt/schmecken + [Person im Dativ]. Beispiel: „<strong style="color:#b45309;">Die Suppe</strong> <strong style="color:#1e40af;">schmeckt</strong> <strong style="color:#9d174d;">mir</strong>." (wörtlich: Die Suppe schmeckt zu mir gut.)</div>
+    <div class="tip-vn">💡 Logic câu hoàn toàn mới: với „schmecken", chủ ngữ KHÔNG phải là người, mà là <strong>đồ ăn/thức uống</strong>! Người thưởng thức đứng ở <strong>Dativ</strong>. Cấu trúc: [đồ ăn] + schmeckt/schmecken + [người ở Dativ]. Ví dụ: „Die Suppe schmeckt mir." (nghĩa đen: Món súp ngon đối với tôi.)</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich schmecke die Suppe gut."</span> → <span class="wb-ok">✅ „Die Suppe schmeckt mir gut."</span> — das Essen ist immer das Subjekt, nicht die Person!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich schmecke die Suppe gut."</span> → <span class="wb-ok">✅ „Die Suppe schmeckt mir gut."</span> — đồ ăn luôn là chủ ngữ, không phải người!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Die Suppe schmeckt ich gut."</span> → <span class="wb-ok">✅ „Die Suppe schmeckt mir gut."</span> — die Person steht im Dativ (mir), nicht im Nominativ (ich)!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Die Suppe schmeckt ich gut."</span> → <span class="wb-ok">✅ „Die Suppe schmeckt mir gut."</span> — người đứng ở Dativ (mir), không phải Nominativ (ich)!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Der Kuchen schmecken ihm."</span> → <span class="wb-ok">✅ „Der Kuchen schmeckt ihm."</span> — Singular-Subjekt (der Kuchen) braucht Singular-Verb (schmeckt), nicht „schmecken"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Der Kuchen schmecken ihm."</span> → <span class="wb-ok">✅ „Der Kuchen schmeckt ihm."</span> — chủ ngữ số ít (der Kuchen) cần động từ số ít (schmeckt), không phải „schmecken"!</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — Schmeckt's? Ergänze Verb oder Dativpronomen / Ngon không? Điền động từ hoặc đại từ Dativ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze je nach Lücke entweder die richtige Form von „schmecken" ODER das richtige Dativpronomen. Die Person in Klammern zeigt dir, welches Pronomen du brauchst.</div>
+    <div class="instr-vn">Điền dạng đúng của „schmecken" HOẶC đại từ Dativ đúng tùy theo chỗ trống. Người trong ngoặc cho biết bạn cần đại từ nào.</div>
+    <div class="fill-line"><span class="num">1.</span> Das Essen <span class="blank"></span> mir sehr gut. <span class="vn-word">(Tôi thấy món này rất ngon.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> <span class="blank"></span> euch der Kaffee? <span class="vn-word">(Các bạn thấy cà phê này ngon không?)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Die Pizza schmeckt <span class="blank"></span> sehr gut. (er) <span class="vn-word">(Anh ấy thấy pizza này rất ngon.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Der Fisch schmeckt <span class="blank"></span> nicht so gut. (wir) <span class="vn-word">(Chúng tôi không thích lắm món cá này.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Schmeckt <span class="blank"></span> die Suppe? (du) <span class="vn-word">(Bạn thấy món súp này ngon không?)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Die Torte schmeckt <span class="blank"></span> sehr gut. (sie, Plural) <span class="vn-word">(Họ thấy bánh này rất ngon.)</span></div>
+    <div class="tip-box">
+      <div class="tip-de">💡 Tipp: Achte genau darauf, ob das Subjekt (das Essen) Singular oder Plural ist — das entscheidet über „schmeckt" oder „schmecken"!</div>
+      <div class="tip-vn">💡 Mẹo nhỏ: hãy để ý xem chủ ngữ (đồ ăn) là số ít hay số nhiều — điều này quyết định dùng „schmeckt" hay „schmecken"!</div>
+    </div>
+  </div>
+
+  <!-- Übung 1b -->
+  <div class="ubung-header">Übung 1b — Satzmix: Bringe die Wörter in die richtige Reihenfolge / Sắp xếp câu: đưa các từ vào đúng thứ tự</div>
+  <div class="ubung-body">
+    <div class="instr-de">Die Wörter sind durcheinander. Bilde einen korrekten Satz nach dem Muster [Essen] + schmeckt/schmecken + [Person im Dativ].</div>
+    <div class="instr-vn">Các từ đã bị xáo trộn. Hãy ghép thành câu đúng theo mẫu [đồ ăn] + schmeckt/schmecken + [người ở Dativ].</div>
+    <div class="wortsalat-grid">
+      <div class="wortsalat-item">
+        <span class="wortsalat-num">1.</span>
+        <div class="wortsalat-woerter"><span class="wort-chip">schmeckt</span><span class="wort-chip">Die Suppe</span><span class="wort-chip">gut</span><span class="wort-chip">mir</span></div>
+        <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+      </div>
+      <div class="wortsalat-item">
+        <span class="wortsalat-num">2.</span>
+        <div class="wortsalat-woerter"><span class="wort-chip">ihm</span><span class="wort-chip">der Kuchen</span><span class="wort-chip">schmeckt</span><span class="wort-chip">sehr gut</span></div>
+        <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+      </div>
+      <div class="wortsalat-item">
+        <span class="wortsalat-num">3.</span>
+        <div class="wortsalat-woerter"><span class="wort-chip">schmeckt</span><span class="wort-chip">das Steak</span><span class="wort-chip">ihr</span><span class="wort-chip">lecker</span></div>
+        <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+      </div>
+      <div class="wortsalat-item">
+        <span class="wortsalat-num">4.</span>
+        <div class="wortsalat-woerter"><span class="wort-chip">das Eis</span><span class="wort-chip">schmeckt</span><span class="wort-chip">euch</span><span class="wort-chip">gut</span></div>
+        <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+      </div>
+      <div class="wortsalat-item">
+        <span class="wortsalat-num">5.</span>
+        <div class="wortsalat-woerter"><span class="wort-chip">schmeckt</span><span class="wort-chip">Der Fisch</span><span class="wort-chip">gut</span><span class="wort-chip">ihnen</span></div>
+        <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+      </div>
+      <div class="wortsalat-item">
+        <span class="wortsalat-num">6.</span>
+        <div class="wortsalat-woerter"><span class="wort-chip">dir</span><span class="wort-chip">die Pizza</span><span class="wort-chip">schmeckt</span><span class="wort-chip">bestimmt</span></div>
+        <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+      </div>
+      <div class="wortsalat-item">
+        <span class="wortsalat-num">7.</span>
+        <div class="wortsalat-woerter"><span class="wort-chip">schmeckt</span><span class="wort-chip">der Kaffee</span><span class="wort-chip">uns</span><span class="wort-chip">immer</span></div>
+        <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+      </div>
+      <div class="wortsalat-item">
+        <span class="wortsalat-num">8.</span>
+        <div class="wortsalat-woerter"><span class="wort-chip">der Salat</span><span class="wort-chip">schmeckt</span><span class="wort-chip">ihm</span><span class="wort-chip">nicht</span></div>
+        <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 15</span>
+    <span>Seite 2 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Verben-Tabelle gefallen + Grammatik 2 + Häufige Fehler + Kulturinfo 1 + Übung 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 15</h1>
+      <h2>Das Verb „gefallen" + Dativ / Động từ „gefallen" + Dativ</h2>
+    </div>
+    <div class="badge">A1 · Lektion 15</div>
+  </div>
+
+  <!-- Verben-Tabelle -->
+  <div class="section-title">🔧 Verben-Tabelle: „gefallen" ⚠️ — Singular &amp; Plural / Bảng động từ: „gefallen" ⚠️ — số ít &amp; số nhiều</div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Subjekt</th><th>gefallen</th><th>Beispiel / Câu ví dụ</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">das Restaurant</td><td><strong>gefällt</strong></td><td class="beispiel" style="text-align:left;">Das Restaurant gefäll<strong>t</strong> mir. <span class="vn-word">Tôi thích nhà hàng này.</span></td></tr>
+      <tr><td class="pronomen">die Musik</td><td><strong>gefällt</strong></td><td class="beispiel" style="text-align:left;">Gefäll<strong>t</strong> dir die Musik hier? <span class="vn-word">Bạn thích âm nhạc ở đây không?</span></td></tr>
+      <tr><td class="pronomen">das Ambiente</td><td><strong>gefällt</strong></td><td class="beispiel" style="text-align:left;">Das Ambiente gefäll<strong>t</strong> ihr sehr. <span class="vn-word">Cô ấy rất thích không gian ở đây.</span></td></tr>
+      <tr><td class="pronomen">die Deko</td><td><strong>gefällt</strong></td><td class="beispiel" style="text-align:left;">Die Deko gefäll<strong>t</strong> uns. <span class="vn-word">Chúng tôi thích cách trang trí này.</span></td></tr>
+      <tr><td class="pronomen">die Preise (Pl.)</td><td><strong>gefallen</strong></td><td class="beispiel" style="text-align:left;">Gefallen euch die Preise? <span class="vn-word">Các bạn thấy giá cả thế nào?</span></td></tr>
+      <tr><td class="pronomen">die Stühle (Pl.)</td><td><strong>gefallen</strong></td><td class="beispiel" style="text-align:left;">Die neuen Stühle gefallen ihnen. <span class="vn-word">Họ thích những cái ghế mới này.</span></td></tr>
+    </tbody>
+  </table>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — „gefallen": Allgemeines Gefallen, nicht nur Geschmack / Ngữ pháp 2: „gefallen" — thích nói chung, không chỉ mùi vị</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 „gefallen" funktioniert genau wie „schmecken" (Sache = Subjekt, Person = Dativ), aber es drückt ein <strong>allgemeines Gefallen</strong> aus — nicht nur Geschmack, sondern z. B. Restaurants, Musik, Deko oder Preise.</div>
+    <div class="tip-vn">💡 „gefallen" hoạt động giống hệt „schmecken" (sự vật = chủ ngữ, người = Dativ), nhưng nó diễn đạt <strong>sự thích thú nói chung</strong> — không chỉ mùi vị, mà còn nhà hàng, âm nhạc, trang trí hay giá cả.</div>
+  </div>
+  <div class="gram-box">
+    <h4>🔁 Achtung: Singular vs. Plural / Chú ý: số ít và số nhiều</h4>
+    <div class="rule-de">Singular-Subjekt → <strong>gefällt</strong>: „Das Restaurant gefällt mir." &nbsp;|&nbsp; Plural-Subjekt → <strong>gefallen</strong>: „Die Stühle gefallen mir."</div>
+    <div class="rule-vn">Chủ ngữ số ít → <strong>gefällt</strong>: „Das Restaurant gefällt mir." &nbsp;|&nbsp; Chủ ngữ số nhiều → <strong>gefallen</strong>: „Die Stühle gefallen mir."</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich gefalle das Restaurant."</span> → <span class="wb-ok">✅ „Das Restaurant gefällt mir."</span> — der Gegenstand ist das Subjekt, die Person steht im Dativ!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich gefalle das Restaurant."</span> → <span class="wb-ok">✅ „Das Restaurant gefällt mir."</span> — sự vật là chủ ngữ, người đứng ở Dativ!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Die Stühle gefällt ihnen."</span> → <span class="wb-ok">✅ „Die Stühle gefallen ihnen."</span> — Plural-Subjekt braucht Plural-Verb: gefallen, nicht gefällt!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Die Stühle gefällt ihnen."</span> → <span class="wb-ok">✅ „Die Stühle gefallen ihnen."</span> — chủ ngữ số nhiều cần động từ số nhiều: gefallen, không phải gefällt!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Das Ambiente gefällt zu mir."</span> → <span class="wb-ok">✅ „Das Ambiente gefällt mir."</span> — kein „zu" vor dem Dativpronomen!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Das Ambiente gefällt zu mir."</span> → <span class="wb-ok">✅ „Das Ambiente gefällt mir."</span> — không thêm „zu" trước đại từ Dativ!</div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — schmecken oder gefallen? Ergänze die richtige Form / „schmecken" hay „gefallen"? Điền dạng đúng</div>
+  <div class="ubung-body">
+    <div class="instr-de">Welches Verb passt: „schmecken" oder „gefallen"? Ergänze die richtige Form UND das richtige Dativpronomen, wo nötig.</div>
+    <div class="instr-vn">Động từ nào phù hợp: „schmecken" hay „gefallen"? Điền dạng đúng VÀ đại từ Dativ đúng khi cần.</div>
+    <div class="fill-line"><span class="num">1.</span> Das Restaurant <span class="blank"></span> mir sehr gut. <span class="vn-word">(Tôi rất thích nhà hàng này.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Die Suppe <span class="blank"></span> ihr nicht. <span class="vn-word">(Cô ấy không thích món súp này.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> <span class="blank"></span> euch die neuen Stühle? <span class="vn-word">(Các bạn thích những cái ghế mới này không?)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Der Kuchen <span class="blank"></span> ihm ausgezeichnet. <span class="vn-word">(Anh ấy thấy bánh này rất ngon.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Die Musik hier <span class="blank"></span> uns sehr. <span class="vn-word">(Chúng tôi rất thích âm nhạc ở đây.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> <span class="blank"></span> dir das Eis? <span class="vn-word">(Bạn thấy kem này ngon không?)</span></div>
+  </div>
+
+  <!-- GAME -->
+  <div class="game-header">🎲 GAME — Der Speisen-Würfel: Schmeckt's dir? (solo spielbar!) / Xúc xắc món ăn: Ngon không? (chơi một mình cũng được!)</div>
+  <div class="game-body">
+    <div class="instr-de">Spielregel: Würfle zweimal (oder wähle zwei Zahlen 1–6) und kombiniere Speise/Getränk + Person zu einem Satz mit „schmecken". Nutze dafür Vokabeln aus dieser UND aus früheren Lektionen (L8, L9)!</div>
+    <div class="instr-vn">Luật chơi: Gieo xúc xắc hai lần (hoặc chọn hai số từ 1–6) rồi kết hợp món ăn/đồ uống + người thành một câu với „schmecken". Dùng từ vựng của bài này VÀ các bài trước (Bài 8, 9)!</div>
+    <div class="wuerfel-grid">
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel A: Speise/Getränk</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> der Kaffee <span class="vn-word">(B8)</span></div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> die Suppe <span class="vn-word">(B15)</span></div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> der Fisch <span class="vn-word">(B8)</span></div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> der Kuchen <span class="vn-word">(B15)</span></div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> der Salat <span class="vn-word">(B8)</span></div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> der Rotwein <span class="vn-word">(B15)</span></div>
+      </div>
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel B: Person (Dativ)</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> mir</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> dir</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> ihm</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> ihr</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> uns</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> ihnen</div>
+      </div>
+    </div>
+    <div class="instr-de" style="margin-bottom:3px;">Vorgegebene Würfe — bilde den Satz: <span class="vn-word" style="font-style:normal;">Ghép câu theo các số dưới đây:</span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">1.</span><span class="wk-set"><span class="wuerfel-zahl">2</span><span class="wuerfel-zahl">4</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">2.</span><span class="wk-set"><span class="wuerfel-zahl">3</span><span class="wuerfel-zahl">1</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">3.</span><span class="wk-set"><span class="wuerfel-zahl">5</span><span class="wuerfel-zahl">6</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">4.</span><span class="wk-set"><span class="wuerfel-zahl">1</span><span class="wuerfel-zahl">2</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">5.</span><span class="wk-set" style="color:#9a3412; font-weight:700; font-size:9.5px;">🎲 Freie Runde — würfle selbst!</span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="instr-de" style="margin-top:4px;">🪞 Selbsteinschätzung mit „gefallen" (kein Partner nötig!): <span class="vn-word" style="font-style:normal;">Tự đánh giá với „gefallen" (không cần bạn cùng chơi!):</span></div>
+    <div class="fill-line">Am besten gefällt mir <span class="blank-long"></span>, weil es dort besonders gut schmeckt.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 15</span>
+    <span>Seite 3 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Dialog + Lesetext + MC + Kulturinfo 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 15</h1>
+      <h2>Dialog &amp; Lesetext / Hội thoại &amp; bài đọc</h2>
+    </div>
+    <div class="badge">A1 · Lektion 15</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Kellner:</span>Guten Abend! Haben Sie schon eine Reservierung?</div>
+    <div class="dialog-line"><span class="speaker">Lisa:</span>Ja, auf den Namen Wagner, für zwei Personen um 19 Uhr.</div>
+    <div class="dialog-line"><span class="speaker">Kellner:</span>Perfekt, hier is<strong>t</strong> Ihr Tisch. Die Speisekarte, bitte.</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Danke! Was schmeckt dir hier besonders gut, Lisa?</div>
+    <div class="dialog-line"><span class="speaker">Lisa:</span>Der Fisch soll sehr lecker sein. Und dir gefällt bestimmt das Steak.</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Stimmt, ich nehme das Steak. Und als Getränk einen Rotwein.</div>
+    <div class="dialog-line"><span class="speaker">Kellner:</span>Sehr gerne. Und für Sie?</div>
+    <div class="dialog-line"><span class="speaker">Lisa:</span>Mir schmeckt Weißwein immer gut, den nehme ich.</div>
+    <div class="dialog-line"><span class="speaker">Kellner:</span>(später) Hat es Ihnen geschmeckt?</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Ja, das Essen hat uns sehr gut geschmeckt, danke!</div>
+    <div class="dialog-line"><span class="speaker">Lisa:</span>Die Rechnung, bitte!</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Herr Fischer feiert heute seinen Geburtstag und hat für den Abend einen Tisch in einem italienischen Restaurant reserviert. Das Restaurant gefäll<strong>t</strong> ihm sehr, weil die Atmosphäre gemütlich is<strong>t</strong> und die Kellner sehr freundlich sind. Als Vorspeise bestellt er eine Tomatensuppe — sie schmeckt ihm ausgezeichnet. Als Hauptspeise nimmt er eine Pizza Margherita, denn italienisches Essen mag er besonders gern. Seine Frau bestellt Fisch mit Gemüse; der Fisch schmeckt ihr auch sehr gut, aber das Gemüse findet sie etwas zu salzig. Zum Nachtisch teilen sie sich ein Tiramisu — das gefäll<strong>t</strong> beiden am meisten! Der Kellner bringt am Ende die Rechnung, und Herr Fischer gib<strong>t</strong>, wie in Deutschland üblich, ein kleines Trinkgeld. „Das Restaurant gefäll<strong>t</strong> uns so gut, dass wir sicher bald wiederkommen", sagt er zufrieden.
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Warum ist Herr Fischer heute im Restaurant?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Hochzeitstag</span>
+      <span><span class="mc-kreis"></span> b) Geburtstag</span>
+      <span><span class="mc-kreis"></span> c) Weihnachten</span>
+    </div>
+    <div class="mc-frage">2. Warum gefällt ihm das Restaurant?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) es ist günstig</span>
+      <span><span class="mc-kreis"></span> b) die Atmosphäre ist gemütlich und die Kellner sind freundlich</span>
+      <span><span class="mc-kreis"></span> c) es liegt in der Nähe</span>
+    </div>
+    <div class="mc-frage">3. Was bestellt Herr Fischer als Vorspeise?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Salat</span>
+      <span><span class="mc-kreis"></span> b) Tomatensuppe</span>
+      <span><span class="mc-kreis"></span> c) Brot</span>
+    </div>
+    <div class="mc-frage">4. Was denkt seine Frau über das Gemüse?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) es ist zu süß</span>
+      <span><span class="mc-kreis"></span> b) es ist zu salzig</span>
+      <span><span class="mc-kreis"></span> c) es ist perfekt</span>
+    </div>
+    <div class="mc-frage">5. Was essen sie zusammen zum Nachtisch?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Eis</span>
+      <span><span class="mc-kreis"></span> b) Kuchen</span>
+      <span><span class="mc-kreis"></span> c) Tiramisu</span>
+    </div>
+    <div class="mc-frage">6. Was macht Herr Fischer am Ende, wie in Deutschland üblich?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) er beschwert sich</span>
+      <span><span class="mc-kreis"></span> b) er gibt Trinkgeld</span>
+      <span><span class="mc-kreis"></span> c) er bestellt noch etwas</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Was schmeckt dir am besten? Welches Restaurant gefällt dir?</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Bạn thấy món gì ngon nhất? Bạn thích nhà hàng nào?</div>
+    </div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Trinkgeld in Deutschland / Tiền tip ở Đức</div>
+    <div class="kb-de">In Deutschland gibt man in Restaurants normalerweise <b>5–10% Trinkgeld</b> — direkt beim Bezahlen. Man rundet oft einfach auf: „Macht 18,50 Euro? Dann 20, bitte." Trinkgeld ist keine Pflicht, aber üblich.</div>
+    <div class="kb-vn">Ở Đức, người ta thường cho <b>5–10% tiền tip</b> ở nhà hàng — đưa trực tiếp khi thanh toán, khác với việc để tiền lẻ trên bàn như ở một số nước. Người ta hay làm tròn: „Hết 18,50 Euro à? Vậy cho 20 Euro." Tiền tip không bắt buộc nhưng rất phổ biến — khác với Việt Nam, nơi tiền tip thường không cố định theo tỷ lệ phần trăm.</div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Restaurantkultur: Reservieren &amp; Guten Appetit / Văn hóa nhà hàng: đặt bàn &amp; chúc ngon miệng</div>
+    <div class="kb-de">In Deutschland reserviert man in beliebten Restaurants oft im Voraus. Vor dem Essen wünscht man sich „Guten Appetit!" Anders als anderswo bringt der Kellner die Rechnung erst, wenn man ausdrücklich danach fragt.</div>
+    <div class="kb-vn">Ở Đức, người ta thường đặt bàn trước ở các nhà hàng đông khách. Trước khi ăn, mọi người chúc nhau „Guten Appetit!" (chúc ngon miệng!). Khác với một số nơi, nhân viên phục vụ chỉ mang hóa đơn ra khi khách chủ động yêu cầu — không bao giờ có chuyện thúc giục khách rời đi.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 15</span>
+    <span>Seite 4 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 5 (SCHREIB-FORMAT: Formelle E-Mail – Tischreservierung) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 15</h1>
+      <h2>Schreib-Meilenstein: Deine erste formelle E-Mail! / Cột mốc viết: Email trang trọng đầu tiên của bạn!</h2>
+    </div>
+    <div class="badge">A1 · Lektion 15</div>
+  </div>
+
+  <div class="section-title">✍️ SCHREIB-FORMAT — Formelle E-Mail: Tischreservierung / Dạng bài viết: Email trang trọng — đặt bàn</div>
+  <div class="gram-box">
+    <h4>🔁 Neu: Formell vs. Informell (Vergleich zum Brief aus Lektion 13) / Mới: trang trọng và thân mật (so sánh với thư ở Bài 13)</h4>
+    <div class="rule-de">Informell (an Freunde): „Liebe Mai," / „Viele Grüße" / du-Form. &nbsp;|&nbsp; <strong>Formell (an Firmen/Restaurants):</strong> „Sehr geehrte Damen und Herren," / „Mit freundlichen Grüßen" / <strong>Sie</strong>-Form!</div>
+    <div class="rule-vn">Thân mật (viết cho bạn bè): „Liebe Mai," / „Viele Grüße" / dùng „du". &nbsp;|&nbsp; <strong>Trang trọng (viết cho công ty/nhà hàng):</strong> „Sehr geehrte Damen und Herren," / „Mit freundlichen Grüßen" / dùng <strong>„Sie"</strong>!</div>
+  </div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Wichtig: Nach der formellen Anrede „Sehr geehrte Damen und Herren," beginnt der nächste Satz — genau wie bei der informellen Anrede — mit einem <strong>Komma und klein</strong>!</div>
+    <div class="tip-vn">💡 Quan trọng: sau lời chào trang trọng „Sehr geehrte Damen und Herren," — cũng như lời chào thân mật — câu tiếp theo bắt đầu bằng <strong>dấu phẩy và chữ thường</strong>!</div>
+  </div>
+
+  <div class="gram-box">
+    <h4>📋 Die Aufgabe / Nhiệm vụ</h4>
+    <div class="rule-de">Du möchtest einen Tisch in einem Restaurant reservieren. Schreibe eine formelle E-Mail und beantworte genau diese 3 Punkte:</div>
+    <div class="rule-vn">Bạn muốn đặt một bàn ở nhà hàng. Viết một email trang trọng và trả lời đúng 3 ý sau:</div>
+    <div class="rule-de" style="margin-top:3px;">1. Für wie viele Personen und wann (Datum/Uhrzeit)? &nbsp; 2. Gibt es einen besonderen Wunsch? (z. B. Fensterplatz) &nbsp; 3. Bitte um eine kurze Bestätigung.</div>
+    <div class="rule-vn">1. Bao nhiêu người và khi nào (ngày/giờ)? 2. Có yêu cầu đặc biệt gì không? (VD: chỗ ngồi cạnh cửa sổ) 3. Xin xác nhận ngắn gọn.</div>
+  </div>
+
+  <!-- Baukasten -->
+  <div class="baukasten-box">
+    <div class="baukasten-title">🧱 Der Phrasen-Baukasten — kopiere einfach, was passt! / Kho câu mẫu — cứ sao chép câu phù hợp!</div>
+    <div class="baukasten-grid">
+      <div>
+        <div class="baukasten-kategorie-label">Anrede &amp; Einleitung / Lời chào &amp; mở đầu</div>
+        <div class="baukasten-phrase">Sehr geehrte Damen und Herren,<span class="bp-vn">Kính gửi quý ông/bà,</span></div>
+        <div class="baukasten-phrase">ich möchte gerne einen Tisch in Ihrem Restaurant reservieren.<span class="bp-vn">Tôi muốn đặt một bàn tại nhà hàng của quý vị.</span></div>
+      </div>
+      <div>
+        <div class="baukasten-kategorie-label">Details &amp; Wünsche / Chi tiết &amp; yêu cầu</div>
+        <div class="baukasten-phrase">Wir sind vier Personen und kommen am Samstag, den 14. März, um 19 Uhr.<span class="bp-vn">Chúng tôi có bốn người và sẽ đến vào thứ Bảy, ngày 14 tháng 3, lúc 19 giờ.</span></div>
+        <div class="baukasten-phrase">Haben Sie noch einen Tisch am Fenster frei?<span class="bp-vn">Quý vị còn bàn cạnh cửa sổ trống không?</span></div>
+      </div>
+      <div>
+        <div class="baukasten-kategorie-label">Schluss / Kết thư</div>
+        <div class="baukasten-phrase">Ich bitte um eine kurze Bestätigung.<span class="bp-vn">Mong quý vị xác nhận ngắn gọn giúp tôi.</span></div>
+        <div class="baukasten-phrase">Mit freundlichen Grüßen<br>[Ihr Name]<span class="bp-vn">Trân trọng, ...</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ha-box">
+    <h4>✏️ Jetzt bist du dran! / Bây giờ đến lượt bạn!</h4>
+    <div class="ha-item">Schreibe deine eigene Reservierungs-E-Mail in die Karte unten. Benutze mindestens 1× die Sie-Form und beantworte alle 3 Punkte aus der Aufgabe.
+      <div class="ha-vn">Viết email đặt bàn của riêng bạn vào khung bên dưới. Dùng dạng „Sie" ít nhất 1 lần và trả lời đủ 3 ý trong đề bài.</div>
+    </div>
+  </div>
+
+  <div class="brief-karte">
+    <div class="bk-header"><span>📧 Deine Tischreservierung</span><span>Hausaufgabe</span></div>
+    <div class="brief-lines" style="min-width:60%;"></div>
+    <div class="brief-lines"></div>
+    <div class="brief-lines"></div>
+    <div class="brief-lines"></div>
+    <div class="brief-lines"></div>
+    <div class="brief-lines" style="min-width:50%;"></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 15</span>
+    <span>Seite 5 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 6 (Freies Sprechen + Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 15</h1>
+      <h2>Freies Sprechen, Hausaufgaben &amp; Antworten / Nói tự do, bài tập về nhà &amp; đáp án</h2>
+    </div>
+    <div class="badge">A1 · Lektion 15</div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">schmecken</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was schmeckt dir am besten?</div>
+      <div class="anweisung-vn">Bạn thấy món gì ngon nhất?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">gefallen</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Welches Restaurant gefällt dir und warum?</div>
+      <div class="anweisung-vn">Bạn thích nhà hàng nào và tại sao?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">bestellen</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was bestellst du normalerweise im Restaurant?</div>
+      <div class="anweisung-vn">Bạn thường gọi món gì ở nhà hàng?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">schmecken + gefallen</div>
+      <div class="prompt-row"><span class="prompt-tag satz">Satz</span></div>
+      <div class="anweisung-de">Bilde je einen Satz mit „schmecken" und „gefallen".</div>
+      <div class="anweisung-vn">Đặt mỗi loại một câu với „schmecken" và „gefallen".</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Dativpronomen auswendig lernen / Học thuộc đại từ Dativ:</strong> Schreibe alle 7 Dativpronomen (mir, dir, ihm, ihr, uns, euch, ihnen) mit je einem eigenen Beispielsatz auf ein Blatt Papier.
+      <div class="ha-vn">Viết ra giấy đủ 7 đại từ Dativ (mir, dir, ihm, ihr, uns, euch, ihnen), mỗi từ kèm một câu ví dụ của riêng bạn.</div>
+    </div>
+    <div class="ha-item">📝 <strong>Restaurant-Rezension / Bài đánh giá nhà hàng:</strong> Schreibe 5 Sätze über einen echten oder erfundenen Restaurantbesuch — benutze mindestens 2× „schmecken" und 1× „gefallen".
+      <div class="ha-vn">Viết 5 câu về một lần đi nhà hàng có thật hoặc tưởng tượng — dùng „schmecken" ít nhất 2 lần và „gefallen" ít nhất 1 lần.</div>
+    </div>
+    <div class="ha-item">✏️ <strong>E-Mail fertigstellen / Hoàn thiện email:</strong> Schreibe deine Tischreservierung von Seite 5 sauber ins Heft — achte auf die formelle Anrede, die Sie-Form und den formellen Schluss!
+      <div class="ha-vn">Chép lại sạch sẽ email đặt bàn ở trang 5 vào vở — chú ý lời chào trang trọng, dạng „Sie" và lời kết trang trọng!</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 14):</strong> 1. will ... gehen &nbsp; 2. Verbot / cấm &nbsp; 3. „müssen" = sự cần thiết khách quan của bản thân; „sollen" = kỳ vọng/mong muốn từ bên ngoài</p>
+    <p><strong>Übung 1 (schmecken):</strong> 1. schmeckt &nbsp; 2. Schmeckt &nbsp; 3. ihm &nbsp; 4. uns &nbsp; 5. dir &nbsp; 6. ihnen</p>
+    <p><strong>Übung 1b (Satzmix):</strong> 1. Die Suppe schmeckt mir gut. &nbsp; 2. Der Kuchen schmeckt ihm sehr gut. &nbsp; 3. Das Steak schmeckt ihr lecker. &nbsp; 4. Das Eis schmeckt euch gut. &nbsp; 5. Der Fisch schmeckt ihnen gut. &nbsp; 6. Die Pizza schmeckt dir bestimmt. &nbsp; 7. Der Kaffee schmeckt uns immer. &nbsp; 8. Der Salat schmeckt ihm nicht.</p>
+    <p><strong>Übung 2 (schmecken oder gefallen):</strong> 1. gefällt &nbsp; 2. schmeckt &nbsp; 3. Gefallen &nbsp; 4. schmeckt &nbsp; 5. gefällt &nbsp; 6. Schmeckt</p>
+    <p><strong>Game (Speisen-Würfel), Beispiele:</strong> 1. (2,4) Die Suppe schmeckt ihr. &nbsp; 2. (3,1) Der Fisch schmeckt mir. &nbsp; 3. (5,6) Der Salat schmeckt ihnen. &nbsp; 4. (1,2) Der Kaffee schmeckt dir.</p>
+    <p><strong>Leseverständnis:</strong> 1. b) Geburtstag &nbsp; 2. b) die Atmosphäre ist gemütlich und die Kellner sind freundlich &nbsp; 3. b) Tomatensuppe &nbsp; 4. b) es ist zu salzig &nbsp; 5. c) Tiramisu &nbsp; 6. b) er gibt Trinkgeld</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Pizza schmeckt mir am besten. &nbsp; Karte 2: Mir gefällt das italienische Restaurant in meiner Stadt, weil das Essen so lecker ist. &nbsp; Karte 3: Ich bestelle normalerweise Fisch mit Gemüse. &nbsp; Karte 4: Die Suppe schmeckt mir gut. Das Restaurant gefällt mir sehr.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 15 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 6 / 6</span>
+  </div>
+</div>
+
+</body>
+</html>

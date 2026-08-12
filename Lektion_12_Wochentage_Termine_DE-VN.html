@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 12</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 7mm 12mm 3mm 12mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.14; font-size: 10.7px; }
+.compact .doc-header { padding-bottom: 2px; margin-bottom: 4px; }
+.compact .section-title { margin: 4px 0 2px 0; }
+.compact table { margin-bottom: 2px; }
+.compact table.vocab th, .compact table.vocab td { padding: 1.5px 5px; }
+.compact .gram-box { padding: 3px 7px; margin-bottom: 2px; }
+.compact .tip-box { padding: 2px 6px; margin: 1px 0; }
+.compact .warn-box { padding: 2px 6px; margin: 1px 0 3px 0; }
+.compact .ubung-header { padding: 1px 7px; }
+.compact .ubung-body { padding: 3px 7px; margin-bottom: 2px; }
+.compact .fill-line { margin-bottom: 0px; }
+.compact .footer { margin-top: 2px; padding-top: 1px; }
+.compact .phon-box { padding: 2px 7px; margin-bottom: 2px; }
+.compact .kultur-box { padding: 3px 8px; margin: 2px 0 3px 0; }
+.compact .dialog-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .lese-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .mc-block { margin-bottom: 2px; }
+.compact .mc-optionen { margin-bottom: 3px; }
+.compact .ha-box { padding: 3px 8px; }
+.compact .antworten { padding: 3px 8px; }
+.compact .wiederholung-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .karten-grid { margin-top: 2px; gap: 5px; }
+.compact .sprech-karte { padding: 4px 6px; }
+.compact .sprech-karte .karte-num { padding: 1px 6px; margin-bottom: 2px; }
+.compact .sprech-karte .wort-pill { font-size: 11px; padding: 2px 4px; margin-bottom: 2px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 2px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 2px; }
+.compact .gegenteile-box { padding: 4px 9px; margin-bottom: 3px; }
+.compact .wortsalat-item { margin-bottom: 3px; }
+.compact .meilenstein-box { padding: 5px 9px; margin: 3px 0; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .wortsalat: Satzbau-Scramble (auch für Spiele genutzt) ===== */
+.wortsalat-item { margin-bottom: 6px; }
+.wortsalat-num { font-weight: 700; color: #64748b; margin-right: 4px; font-size: 10.5px; }
+.wortsalat-situation { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 2px; margin-left: 20px; }
+.wortsalat-woerter { display: inline-flex; gap: 4px; flex-wrap: wrap; vertical-align: middle; }
+.wort-chip { display: inline-block; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 6px; }
+.wortsalat-answer-row { display: flex; align-items: center; gap: 6px; margin-top: 2px; margin-left: 20px; }
+.wortsalat-arrow { color: #94a3b8; font-weight: 700; }
+
+/* ===== .game-header: Spielelement (aktive Auflockerung) ===== */
+.game-header { background: #ea580c; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.game-body { border: 0.5px solid #fdba74; border-top: none; border-radius: 0 0 5px 5px; padding: 6px 8px; margin-bottom: 4px; background: #fff7ed; }
+.game-body .instr-de { font-size: 10px; color: #7c2d12; font-style: italic; }
+.game-body .instr-vn { font-size: 9.5px; color: #c2410c; font-style: italic; margin-bottom: 4px; }
+
+/* ===== .wuerfel-box: Termin-Würfel-Legende ===== */
+.wuerfel-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin: 4px 0 6px 0; }
+.wuerfel-spalte { background: white; border: 1px solid #fdba74; border-radius: 8px; padding: 6px 8px; }
+.wuerfel-spalte .ws-title { font-size: 9.5px; font-weight: 700; color: #9a3412; text-align: center; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.3px; }
+.wuerfel-zeile { display: flex; align-items: center; gap: 5px; font-size: 10px; margin-bottom: 2px; }
+.wuerfel-zahl { display: inline-flex; align-items: center; justify-content: center; width: 15px; height: 15px; background: #ea580c; color: white; font-weight: 700; font-size: 9px; border-radius: 4px; flex-shrink: 0; }
+.wuerfel-kombi { display: flex; align-items: center; gap: 6px; font-size: 10.5px; margin-bottom: 3px; flex-wrap: wrap; }
+.wuerfel-kombi .wk-num { font-weight: 700; color: #64748b; min-width: 14px; }
+.wuerfel-kombi .wk-set { display: inline-flex; gap: 3px; }
+
+/* ===== .meilenstein-box: Brief-Spickzettel (Belohnungs-Design) ===== */
+.meilenstein-box { background: linear-gradient(180deg, #fffbeb 0%, #ffffff 70%); border: 1.5px solid #fbbf24; border-radius: 10px; padding: 8px 12px; margin: 6px 0; }
+.meilenstein-box .ms-title { font-size: 12px; font-weight: 800; color: #92400e; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
+.brief-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 14px; margin-top: 4px; }
+.brief-spalte-label { font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; color: #b45309; margin-bottom: 3px; border-bottom: 1px solid #fde68a; padding-bottom: 2px; }
+.brief-item { font-size: 10px; margin-bottom: 3px; color: #1a1a1a; }
+.brief-item .bi-vn { color: #b45309; font-style: italic; font-size: 9px; }
+
+/* ===== .regel-item: 5 Grundregeln Liste ===== */
+.regel-liste { margin-top: 4px; }
+.regel-item { display: flex; gap: 8px; margin-bottom: 5px; align-items: flex-start; }
+.regel-num { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; background: #b45309; color: white; font-weight: 700; font-size: 10px; border-radius: 50%; flex-shrink: 0; }
+.regel-text { font-size: 10px; }
+.regel-text .rt-de { color: #1a1a1a; font-weight: 600; }
+.regel-text .rt-vn { color: #92400e; font-style: italic; font-size: 9px; }
+.regel-text .rt-beispiel { color: #713f12; font-size: 9.5px; margin-top: 1px; }
+
+/* ===== .brief-beispiel-box: Musterbrief ===== */
+.brief-beispiel-box { border: 1px solid #fde68a; border-radius: 8px; padding: 6px 10px; margin: 5px 0; background: #fffef7; }
+.brief-beispiel-box.formell { border-color: #bfdbfe; background: #f8fbff; }
+.be-header { font-size: 10px; font-weight: 700; color: #92400e; margin-bottom: 2px; }
+.brief-beispiel-box.formell .be-header { color: #1e40af; }
+.be-aufgabe { font-size: 9.5px; color: #57534e; font-style: italic; margin-bottom: 3px; }
+.be-punkte { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; }
+.be-punkt { background: #fef3c7; color: #92400e; font-size: 9px; font-weight: 600; padding: 2px 7px; border-radius: 5px; }
+.brief-beispiel-box.formell .be-punkt { background: #dbeafe; color: #1e40af; }
+.be-text { font-size: 10px; line-height: 1.5; }
+.be-text .be-de { color: #1a1a1a; }
+.be-text .be-vn { color: #78716c; font-size: 9px; font-style: italic; display: block; margin-bottom: 3px; }
+.be-schluss { font-size: 10px; margin-top: 2px; color: #1a1a1a; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Phonetik + Lernziele + Wortschatz Wochentage + Monate) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 12</h1>
+      <h2>Wochentage &amp; Termine</h2>
+      <h2>Các ngày trong tuần &amp; Lịch hẹn</h2>
+    </div>
+    <div class="badge">A1 · Lektion 12</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 11 / Ôn tập Bài 11</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: Trennbare Verben &amp; die Verbklammer / Khởi động ngữ pháp: Động từ tách được &amp; khung câu</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">aufstehen</div>
+        <div class="wh-mund">Ergänze: Ich ___ um 7 Uhr ___. (aufstehen)</div>
+        <div class="wh-beispiel">Điền cấu trúc khung câu của „aufstehen"</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Position?</div>
+        <div class="wh-mund">Wo steht das Präfix bei trennbaren Verben im Hauptsatz?</div>
+        <div class="wh-beispiel">Tiền tố của động từ tách được đứng ở đâu trong câu chính?</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Richtig?</div>
+        <div class="wh-mund">„Ich stehe auf um 7 Uhr." — ist das richtig?</div>
+        <div class="wh-beispiel">Câu này đúng không? Nếu sai, sửa thế nào?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Wochentage und Monate benennen <span class="vn">— gọi tên các ngày trong tuần và các tháng</span></p>
+    <p class="de">✔ Mit „am" korrekt über Wochentage sprechen <span class="vn">— dùng „am" đúng khi nói về ngày trong tuần</span></p>
+    <p class="de">✔ Das Modalverb „müssen" konjugieren und in der Satzklammer verwenden — auch zusammen mit trennbaren Verben! <span class="vn">— chia động từ khiếm khuyết „müssen" và dùng đúng trong cấu trúc khung câu — kể cả khi kết hợp với động từ tách được!</span></p>
+    <p class="de">✔ Termine vereinbaren und über die eigene Wochenplanung sprechen <span class="vn">— đặt lịch hẹn và nói về kế hoạch trong tuần của mình</span></p>
+  </div>
+
+  <!-- Legende -->
+  <div class="section-title">🎨 Farbkodierung / Mã màu quán từ</div>
+  <div class="legend">
+    <div class="legend-item"><span class="der">der</span> maskulin / giống đực</div>
+    <div class="legend-item"><span class="die">die</span> feminin / giống cái</div>
+    <div class="legend-item"><span class="das">das</span> neutral / giống trung</div>
+    <div class="legend-item"><span class="warn">⚠️</span> unregelmäßig / bất quy tắc</div>
+  </div>
+
+  <!-- Phonetik -->
+  <div class="section-title">🔊 Aussprache-Minute / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Wortakzent bei Komposita: Wochentage / Trọng âm trong từ ghép: các ngày trong tuần</div>
+    <div class="phon-de">Deutsche Wochentage sind Komposita (Zusammensetzungen) — und bei Komposita liegt die Betonung fast immer auf der <strong>ersten Silbe</strong>, nicht auf „-tag"! Man sagt <strong>MON</strong>tag, nicht mon<strong>TAG</strong>.</div>
+    <div class="phon-vn">Tên các ngày trong tuần tiếng Đức đều là từ ghép — và trong từ ghép, trọng âm hầu như luôn rơi vào <strong>âm tiết đầu tiên</strong>, không phải vào „-tag"! Phải nói <strong>MON</strong>tag (nhấn mạnh "MON"), không phải mon<strong>TAG</strong>.<br>⚠️ Mẹo cho người Việt: tiếng Việt không có trọng âm từ như tiếng Đức, nên hãy tập nhấn rõ và kéo dài âm tiết đầu, rồi lướt nhẹ phần "-tag" phía sau.</div>
+    <div class="phon-beispiele">Beispiele: <strong>MON</strong>tag (đọc: "MÔN-tak") · <strong>DIENS</strong>tag (đọc: "ĐIN-xtak") · <strong>MITT</strong>woch (đọc: "MIT-vokh") · <strong>DON</strong>nerstag (đọc: "ĐÔN-nơ-xtak")</div>
+  </div>
+
+  <!-- Wortschatz Wochentage -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Die Wochentage / Bảng từ vựng: Các ngày trong tuần</div>
+  <table class="vocab">
+    <colgroup><col style="width:20%"><col style="width:20%"><col style="width:35%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wochentag</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td><span class="der">der</span>Montag</td><td class="phonetik">MÔN-tak</td><td>Am Montag habe ich Deutschkurs. <span class="vn-word">Thứ Hai tôi có lớp tiếng Đức.</span></td><td class="vn-word">thứ Hai</td></tr>
+      <tr><td><span class="der">der</span>Dienstag</td><td class="phonetik">ĐIN-xtak</td><td>Am Dienstag arbeite ich lange. <span class="vn-word">Thứ Ba tôi làm việc đến muộn.</span></td><td class="vn-word">thứ Ba</td></tr>
+      <tr><td><span class="der">der</span>Mittwo<strong>ch</strong></td><td class="phonetik">MIT-vokh</td><td>Am Mittwoch kaufe ich ein. <span class="vn-word">Thứ Tư tôi mua sắm.</span></td><td class="vn-word">thứ Tư</td></tr>
+      <tr><td><span class="der">der</span>Donnerstag</td><td class="phonetik">ĐÔN-nơ-xtak</td><td>Am Donnerstag rufe ich meine Mutter an. <span class="vn-word">Thứ Năm tôi gọi điện cho mẹ.</span></td><td class="vn-word">thứ Năm</td></tr>
+      <tr><td><span class="der">der</span>Freitag</td><td class="phonetik">PHRAI-tak</td><td>Am Freitag höre ich früh auf. <span class="vn-word">Thứ Sáu tôi nghỉ làm sớm.</span></td><td class="vn-word">thứ Sáu</td></tr>
+      <tr><td><span class="der">der</span>Samstag</td><td class="phonetik">DZAM-xtak</td><td>Am Samstag sehe ich fern. <span class="vn-word">Thứ Bảy tôi xem ti vi.</span></td><td class="vn-word">thứ Bảy</td></tr>
+      <tr><td><span class="der">der</span>Sonntag</td><td class="phonetik">DZON-tak</td><td>Am Sonntag ruhe ich mich aus. <span class="vn-word">Chủ nhật tôi nghỉ ngơi.</span></td><td class="vn-word">Chủ nhật</td></tr>
+      <tr><td><span class="das">das</span>Wochenende</td><td class="phonetik">VO-khờn-en-đờ</td><td>Am Wochenende fahren wir weg. <span class="vn-word">Cuối tuần chúng tôi đi chơi xa.</span></td><td class="vn-word">cuối tuần</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 Zusatz: „heute" (hôm nay), „morgen" (ngày mai), „gestern" (hôm qua).</div>
+    <div class="tip-vn">💡 Từ bổ sung — xem giải thích tiếng Đức phía trên.</div>
+  </div>
+
+  <!-- Wortschatz Monate -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Die Monate / Bảng từ vựng: Các tháng</div>
+  <table class="vocab">
+    <colgroup><col style="width:16%"><col style="width:18%"><col style="width:41%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Monat</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td><span class="der">der</span>Januar</td><td class="phonetik">DIA-nu-a</td><td>Im Januar ist es sehr kalt. <span class="vn-word">Tháng Một trời rất lạnh.</span></td><td class="vn-word">tháng Một</td></tr>
+      <tr><td><span class="der">der</span>Februar</td><td class="phonetik">PHÊ-bru-a</td><td>Mein Bruder hat im Februar Geburtstag. <span class="vn-word">Sinh nhật anh trai tôi vào tháng Hai.</span></td><td class="vn-word">tháng Hai</td></tr>
+      <tr><td><span class="der">der</span>März</td><td class="phonetik">MẸC-ts</td><td>Im März beginnt der Frühling. <span class="vn-word">Mùa xuân bắt đầu vào tháng Ba.</span></td><td class="vn-word">tháng Ba</td></tr>
+      <tr><td><span class="der">der</span>April</td><td class="phonetik">A-pril</td><td>Im April regnet es oft. <span class="vn-word">Tháng Tư thường hay mưa.</span></td><td class="vn-word">tháng Tư</td></tr>
+      <tr><td><span class="der">der</span>Mai</td><td class="phonetik">mai</td><td>Mein Geburtstag ist im Mai. <span class="vn-word">Sinh nhật tôi vào tháng Năm.</span></td><td class="vn-word">tháng Năm</td></tr>
+      <tr><td><span class="der">der</span>Juni</td><td class="phonetik">DIU-ni</td><td>Im Juni fängt der Sommer an. <span class="vn-word">Mùa hè bắt đầu vào tháng Sáu.</span></td><td class="vn-word">tháng Sáu</td></tr>
+      <tr><td><span class="der">der</span>Juli</td><td class="phonetik">DIU-li</td><td>Im Juli fahren wir in Urlaub. <span class="vn-word">Tháng Bảy chúng tôi đi nghỉ mát.</span></td><td class="vn-word">tháng Bảy</td></tr>
+      <tr><td><span class="der">der</span>Augus<strong>t</strong></td><td class="phonetik">au-GUX-t</td><td>Im August ist es sehr heiß. <span class="vn-word">Tháng Tám trời rất nóng.</span></td><td class="vn-word">tháng Tám</td></tr>
+      <tr><td><span class="der">der</span>September</td><td class="phonetik">dep-TEM-bơ</td><td>Im September beginnt die Schule wieder. <span class="vn-word">Trường học khai giảng lại vào tháng Chín.</span></td><td class="vn-word">tháng Chín</td></tr>
+      <tr><td><span class="der">der</span>Oktober</td><td class="phonetik">ốc-TÔ-bơ</td><td>Im Oktober werden die Tage kürzer. <span class="vn-word">Ngày ngắn dần vào tháng Mười.</span></td><td class="vn-word">tháng Mười</td></tr>
+      <tr><td><span class="der">der</span>November</td><td class="phonetik">nô-VEM-bơ</td><td>Im November ist das Wetter oft grau. <span class="vn-word">Tháng Mười Một thời tiết thường âm u.</span></td><td class="vn-word">tháng Mười Một</td></tr>
+      <tr><td><span class="der">der</span>Dezember</td><td class="phonetik">đê-TSEM-bơ</td><td>Im Dezember feiern wir Weihnachten. <span class="vn-word">Tháng Mười Hai chúng tôi đón Giáng sinh.</span></td><td class="vn-word">tháng Mười Hai</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 Merke: Bei Monaten benutzt man „im" (in + dem), bei Wochentagen dagegen „am"!</div>
+    <div class="tip-vn">💡 Ghi nhớ: trước tên tháng dùng „im" (in + dem), còn trước ngày trong tuần thì dùng „am"!</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 12</span>
+    <span>Seite 1 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Verben-Tabelle müssen + Grammatik 1: „am" + Häufige Fehler + Übung 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 12</h1>
+      <h2>„am" bei Wochentagen / Giới từ „am" với các ngày trong tuần</h2>
+    </div>
+    <div class="badge">A1 · Lektion 12</div>
+  </div>
+
+  <!-- Verben-Tabelle -->
+  <div class="section-title">🔧 Verben-Tabelle: Modalverb „müssen" ⚠️ — vollständig konjugiert / Bảng động từ: „müssen" ⚠️ — chia đầy đủ</div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Pronomen</th><th>müssen</th><th>Beispiel / Câu ví dụ</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td><strong>muss</strong></td><td class="beispiel" style="text-align:left;">Ich muss am Montag arbeiten. <span class="vn-word">Thứ Hai tôi phải làm việc.</span></td></tr>
+      <tr><td class="pronomen">du</td><td><strong>musst</strong></td><td class="beispiel" style="text-align:left;">Du musst früh aufstehen. <span class="vn-word">Bạn phải dậy sớm.</span></td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td><strong>muss</strong></td><td class="beispiel" style="text-align:left;">Er muss einkaufen. <span class="vn-word">Anh ấy phải đi mua sắm.</span></td></tr>
+      <tr><td class="pronomen">wir</td><td><strong>müssen</strong></td><td class="beispiel" style="text-align:left;">Wir müssen pünktlich sein. <span class="vn-word">Chúng tôi phải đúng giờ.</span></td></tr>
+      <tr><td class="pronomen">ihr</td><td><strong>müsst</strong></td><td class="beispiel" style="text-align:left;">Ihr müsst anrufen. <span class="vn-word">Các bạn phải gọi điện.</span></td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td><strong>müssen</strong></td><td class="beispiel" style="text-align:left;">Sie müssen um 17 Uhr aufhören. <span class="vn-word">Họ / Ông bà phải kết thúc lúc 17 giờ.</span></td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 „müssen" ist unregelmäßig: Singular (ich/du/er) hat einen Vokalwechsel „ü" → „u"! Mehr zur Satzklammer mit „müssen" gleich auf Seite 3.</div>
+    <div class="tip-vn">💡 „müssen" là động từ bất quy tắc: ở số ít (ich/du/er) nguyên âm „ü" đổi thành „u"! Về cấu trúc khung câu với „müssen", chúng ta sẽ học kỹ hơn ở trang 3.</div>
+  </div>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — „am" bei Wochentagen (Frage: Wann?) / Ngữ pháp 1: „am" với ngày trong tuần (câu hỏi: Wann? — khi nào?)</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 „am" = an + dem (Kontraktion, wie du sie aus Lektion 10 kennst). Bei Wochentagen und beim Wochenende steht immer „am": <strong>am</strong> Montag, <strong>am</strong> Wochenende. Es gibt auch die Adverb-Form mit „-s": <strong>montags</strong> = jeden Montag (wiederkehrend), während „am Montag" einen bestimmten Tag meint.</div>
+    <div class="tip-vn">💡 „am" = an + dem (dạng rút gọn mà bạn đã học ở Bài 10). Trước ngày trong tuần và „Wochenende" (cuối tuần) luôn dùng „am": <strong>am</strong> Montag, <strong>am</strong> Wochenende. Còn có dạng trạng từ với „-s": <strong>montags</strong> = mỗi thứ Hai (lặp lại), trong khi „am Montag" chỉ một ngày thứ Hai cụ thể.</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich arbeite in Montag."</span> → <span class="wb-ok">✅ „Ich arbeite am Montag."</span> — bei Wochentagen steht immer „am", nicht „in"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich arbeite in Montag."</span> → <span class="wb-ok">✅ „Ich arbeite am Montag."</span> — trước ngày trong tuần luôn dùng „am", không dùng „in"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich habe am montags Deutschkurs."</span> → <span class="wb-ok">✅ „Ich habe montags Deutschkurs." / „Ich habe am Montag Deutschkurs."</span> — „am" und die „-s"-Form nie mischen!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich habe am montags Deutschkurs."</span> → <span class="wb-ok">✅ „Ich habe montags Deutschkurs." / „Ich habe am Montag Deutschkurs."</span> — không bao giờ trộn „am" với dạng „-s"!</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — Lückentext: „am" oder „im"? / Điền từ: „am" hay „im"?</div>
+  <div class="ubung-body">
+    <div class="instr-de">Wochentag oder Monat? Entscheide dich und ergänze „am" oder „im" an der passenden Stelle.</div>
+    <div class="instr-vn">Ngày trong tuần hay tháng? Hãy chọn và điền „am" hoặc „im" vào chỗ thích hợp.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich habe <span class="blank"></span> Montag Deutschkurs. <span class="vn-word">(Thứ Hai tôi có lớp tiếng Đức.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Mein Geburtstag ist <span class="blank"></span> Mai. <span class="vn-word">(Sinh nhật tôi vào tháng Năm.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Wir treffen uns <span class="blank"></span> Samstag im Café. <span class="vn-word">(Thứ Bảy chúng tôi gặp nhau ở quán cà phê.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> <span class="blank"></span> Dezember feiern wir Weihnachten. <span class="vn-word">(Tháng Mười Hai chúng tôi đón Giáng sinh.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> <span class="blank"></span> Sonntag ruhe ich mich aus. <span class="vn-word">(Chủ nhật tôi nghỉ ngơi.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Er arbeitet <span class="blank"></span> Freitag bis 18 Uhr. <span class="vn-word">(Thứ Sáu anh ấy làm việc đến 18 giờ.)</span></div>
+    <div class="fill-line"><span class="num">7.</span> <span class="blank"></span> August ist es sehr heiß. <span class="vn-word">(Tháng Tám trời rất nóng.)</span></div>
+    <div class="fill-line"><span class="num">8.</span> Hast du <span class="blank"></span> Mittwoch Zeit? <span class="vn-word">(Thứ Tư bạn có rảnh không?)</span></div>
+  </div>
+
+  <!-- Übung 1b -->
+  <div class="ubung-header">Übung 1b — Wortsalat: Baue Sätze mit „am" / Sắp xếp câu với „am"</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bringe die Wörter in die richtige Reihenfolge. Achtung: Position 2 = Verb!</div>
+    <div class="instr-vn">Sắp xếp các từ theo đúng thứ tự. Chú ý: vị trí 2 luôn là động từ!</div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">1.</span>
+      <div class="wortsalat-woerter"><span class="wort-chip">Montag</span><span class="wort-chip">Deutschkurs</span><span class="wort-chip">ich</span><span class="wort-chip">habe</span><span class="wort-chip">am</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">2.</span>
+      <div class="wortsalat-woerter"><span class="wort-chip">wir</span><span class="wort-chip">Samstag</span><span class="wort-chip">im Café</span><span class="wort-chip">treffen</span><span class="wort-chip">uns</span><span class="wort-chip">am</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">3.</span>
+      <div class="wortsalat-woerter"><span class="wort-chip">Freitag</span><span class="wort-chip">bis 18 Uhr</span><span class="wort-chip">er</span><span class="wort-chip">arbeitet</span><span class="wort-chip">am</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">4.</span>
+      <div class="wortsalat-woerter"><span class="wort-chip">Wochenende</span><span class="wort-chip">nach Hamburg</span><span class="wort-chip">wir</span><span class="wort-chip">fahren</span><span class="wort-chip">am</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 12</span>
+    <span>Seite 2 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Grammatik 2: müssen + Satzklammer + Häufige Fehler + GAME + Übung 2 + Kulturinfo 1+2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 12</h1>
+      <h2>Das Modalverb „müssen" &amp; die Satzklammer / Động từ khiếm khuyết „müssen" &amp; khung câu</h2>
+    </div>
+    <div class="badge">A1 · Lektion 12</div>
+  </div>
+
+  <div class="tip-box">
+    <div class="tip-de">🔁 Kurze Wiederholung: Bei einer genauen Uhrzeit steht „um" (Ich stehe <strong>um</strong> 7 Uhr auf) — aus Lektion 11!</div>
+    <div class="tip-vn">🔁 Ôn nhanh: với giờ chính xác dùng „um" (Ich stehe <strong>um</strong> 7 Uhr auf) — đã học ở Bài 11!</div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Das Modalverb-Sandwich: „müssen" + Infinitiv / Ngữ pháp 2: Cấu trúc "bánh sandwich" động từ khiếm khuyết</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Diese Struktur nennen wir das <strong>„Modalverb-Sandwich"</strong>: „müssen" (konjugiert) ist die eine Brotscheibe auf <strong>Position 2</strong>, das <strong>Vollverb im Infinitiv</strong> ist die andere Brotscheibe ganz am <strong>Satzende</strong> — dazwischen liegt der Belag (Zeit, Ort, Objekt). Beispiel: „<strong style="color:#1e40af;">Ich muss</strong> [ 🥬 am Montag früh 🥬 ] <strong style="color:#b45309;">aufstehen</strong>."</div>
+    <div class="tip-vn">💡 Chúng ta gọi cấu trúc này là <strong>„bánh sandwich động từ khiếm khuyết"</strong>: „müssen" (đã chia) là lát bánh mì ở <strong>vị trí 2</strong>, <strong>động từ chính ở dạng nguyên mẫu</strong> là lát bánh mì kia nằm hẳn ở <strong>cuối câu</strong> — ở giữa là phần nhân (thời gian, địa điểm, tân ngữ).</div>
+  </div>
+
+  <!-- Modalverb-Sandwich Tabelle, 4 farbige Blöcke -->
+  <table class="vocab">
+    <colgroup><col style="width:14%"><col style="width:20%"><col style="width:33%"><col style="width:33%"></colgroup>
+    <thead>
+      <tr>
+        <th style="background:#e2e8f0; color:#374151;">Subjekt (S)</th>
+        <th style="background:#dbeafe; color:#1e40af;">🍞 Modalverb — Position 2</th>
+        <th style="background:#fef9c3; color:#854d0e;">🥬 Belag (Zeit / Ort / Objekt)</th>
+        <th style="background:#ffedd5; color:#9a3412;">🍞 Verb im Infinitiv — Satzende</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="font-weight:700; text-align:center;">Ich</td>
+        <td style="background:#eff6ff; color:#1e3a8a; font-weight:700;">muss</td>
+        <td style="background:#fefce8; color:#713f12;">am Montag früh</td>
+        <td style="background:#fff7ed; color:#7c2d12; font-weight:700;">aufstehen</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; text-align:center;">Du</td>
+        <td style="background:#eff6ff; color:#1e3a8a; font-weight:700;">musst</td>
+        <td style="background:#fefce8; color:#713f12;">am Samstag</td>
+        <td style="background:#fff7ed; color:#7c2d12; font-weight:700;">einkaufen</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; text-align:center;">Er</td>
+        <td style="background:#eff6ff; color:#1e3a8a; font-weight:700;">muss</td>
+        <td style="background:#fefce8; color:#713f12;">pünktlich</td>
+        <td style="background:#fff7ed; color:#7c2d12; font-weight:700;">anfangen</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; text-align:center;">Wir</td>
+        <td style="background:#eff6ff; color:#1e3a8a; font-weight:700;">müssen</td>
+        <td style="background:#fefce8; color:#713f12;">am Freitag</td>
+        <td style="background:#fff7ed; color:#7c2d12; font-weight:700;">fernsehen</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; text-align:center;">Ihr</td>
+        <td style="background:#eff6ff; color:#1e3a8a; font-weight:700;">müsst</td>
+        <td style="background:#fefce8; color:#713f12;">um 17 Uhr</td>
+        <td style="background:#fff7ed; color:#7c2d12; font-weight:700;">anrufen</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; text-align:center;">Sie/Sie</td>
+        <td style="background:#eff6ff; color:#1e3a8a; font-weight:700;">müssen</td>
+        <td style="background:#fefce8; color:#713f12;">am Dienstag</td>
+        <td style="background:#fff7ed; color:#7c2d12; font-weight:700;">arbeiten</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 <span style="color:#1e40af; font-weight:700;">Blau</span> = Modalverb (immer Position 2) · <span style="color:#854d0e; font-weight:700;">Gelb</span> = Belag, die „Füllung" in der Mitte (Zeit, Ort, Objekt — beliebig austauschbar) · <span style="color:#9a3412; font-weight:700;">Orange</span> = Infinitiv (immer ganz am Ende, egal wie lang der Belag ist!)</div>
+    <div class="tip-vn">💡 <span style="color:#1e40af; font-weight:700;">Xanh dương</span> = động từ khiếm khuyết (luôn ở vị trí 2) · <span style="color:#854d0e; font-weight:700;">Vàng</span> = phần „nhân" ở giữa (thời gian, địa điểm, tân ngữ — có thể thay đổi tùy ý) · <span style="color:#9a3412; font-weight:700;">Cam</span> = động từ nguyên mẫu (luôn ở cuối cùng, dù phần nhân dài hay ngắn!)</div>
+  </div>
+
+  <div class="gram-box">
+    <h4>⭐ Wichtiger Unterschied zu Lektion 11 / Điểm khác biệt quan trọng so với Bài 11</h4>
+    <div class="rule-de">Trennbares Verb ALLEIN: „Ich <strong style="color:#1e40af;">stehe</strong> um 6 Uhr <strong style="color:#b45309;">auf</strong>." (Präfix trennt sich ab!) &nbsp;|&nbsp; MIT Modalverb: „Ich <strong style="color:#1e40af;">muss</strong> um 6 Uhr <strong style="color:#b45309;">aufstehen</strong>." (bleibt EIN Wort!)</div>
+    <div class="rule-vn">Khi động từ tách được đứng một mình, tiền tố sẽ tách ra; nhưng khi đi cùng động từ khiếm khuyết, động từ tách được giữ nguyên dạng nguyên mẫu và đứng ở cuối câu!</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich muss aufstehe um 6 Uhr."</span> → <span class="wb-ok">✅ „Ich muss um 6 Uhr aufstehen."</span> — das Vollverb bleibt im Infinitiv (nicht konjugiert) und steht ganz am Ende!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich muss aufstehe um 6 Uhr."</span> → <span class="wb-ok">✅ „Ich muss um 6 Uhr aufstehen."</span> — động từ chính giữ nguyên dạng nguyên mẫu (không chia) và đứng hẳn ở cuối!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich muss auf um 6 Uhr stehen."</span> → <span class="wb-ok">✅ „Ich muss um 6 Uhr aufstehen."</span> — mit Modalverb TRENNT sich das Präfix NICHT ab, „aufstehen" bleibt ein Wort!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich muss auf um 6 Uhr stehen."</span> → <span class="wb-ok">✅ „Ich muss um 6 Uhr aufstehen."</span> — khi đi cùng động từ khiếm khuyết, tiền tố <strong>KHÔNG</strong> tách ra, „aufstehen" vẫn là một từ nguyên vẹn!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich müsse am Montag arbeiten."</span> → <span class="wb-ok">✅ „Ich muss am Montag arbeiten."</span> — „müssen" ist unregelmäßig: ich muss, nicht „müsse"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich müsse am Montag arbeiten."</span> → <span class="wb-ok">✅ „Ich muss am Montag arbeiten."</span> — „müssen" là động từ bất quy tắc: ich muss, không phải „müsse"!</div>
+  </div>
+
+  <!-- GAME -->
+  <div class="game-header">🎲 GAME — Der Termin-Würfel: Wer, wann, was muss man tun? / Xúc xắc lịch hẹn: ai, khi nào, phải làm gì?</div>
+  <div class="game-body">
+    <div class="instr-de">Spielregel: Würfle dreimal (oder wähle drei Zahlen 1–6) und kombiniere Pronomen + Wochentag + trennbares Verb zu einem korrekten Satz mit „müssen". Achtung: Das trennbare Verb bleibt im Infinitiv ZUSAMMEN!</div>
+    <div class="instr-vn">Luật chơi: Gieo xúc xắc ba lần (hoặc chọn ba số từ 1–6) rồi kết hợp đại từ + ngày trong tuần + động từ tách được thành một câu đúng với „müssen". Chú ý: động từ tách được vẫn giữ nguyên dạng nguyên mẫu, KHÔNG tách!</div>
+    <div class="wuerfel-grid">
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel A: Pronomen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> ich</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> du</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> er</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> wir</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> ihr</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> sie/Sie</div>
+      </div>
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel B: Wochentag</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> Montag</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> Dienstag</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> Mittwoch</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> Donnerstag</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> Freitag</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> Samstag</div>
+      </div>
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel C: Verb (Infinitiv)</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> aufstehen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> anfangen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> aufhören</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> einkaufen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> anrufen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> fernsehen</div>
+      </div>
+    </div>
+    <div class="instr-de" style="margin-bottom:3px;">Vorgegebene Würfe — bilde den Satz: <span class="vn-word" style="font-style:normal;">Ghép câu theo các số dưới đây:</span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">1.</span><span class="wk-set"><span class="wuerfel-zahl">2</span><span class="wuerfel-zahl">3</span><span class="wuerfel-zahl">4</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">2.</span><span class="wk-set"><span class="wuerfel-zahl">1</span><span class="wuerfel-zahl">1</span><span class="wuerfel-zahl">1</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">3.</span><span class="wk-set"><span class="wuerfel-zahl">4</span><span class="wuerfel-zahl">5</span><span class="wuerfel-zahl">6</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">4.</span><span class="wk-set"><span class="wuerfel-zahl">3</span><span class="wuerfel-zahl">6</span><span class="wuerfel-zahl">2</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">5.</span><span class="wk-set"><span class="wuerfel-zahl">5</span><span class="wuerfel-zahl">2</span><span class="wuerfel-zahl">5</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">6.</span><span class="wk-set" style="color:#9a3412; font-weight:700; font-size:9.5px;">🎲 Freie Runde — würfle selbst!</span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — Sandwich-Check: Richtig oder falsch? / Kiểm tra sandwich: đúng hay sai?</div>
+  <div class="ubung-body">
+    <div class="instr-de">Prüfe jeden Satz: Ist das Modalverb-Sandwich korrekt gebaut? Wenn nicht, korrigiere den Satz komplett.</div>
+    <div class="instr-vn">Kiểm tra từng câu: cấu trúc sandwich động từ khiếm khuyết đã đúng chưa? Nếu sai, hãy sửa lại toàn bộ câu.</div>
+    <div class="fill-line"><span class="num">1.</span> „Ich muss am Montag arbeiten." <span class="vn-word">(Thứ Hai tôi phải làm việc.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">2.</span> „Du musst aufstehe um 6 Uhr." <span class="vn-word">(Bạn phải dậy lúc 6 giờ.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">3.</span> „Er muss am Samstag ein kaufen." <span class="vn-word">(Thứ Bảy anh ấy phải đi mua sắm.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">4.</span> „Wir müssen pünktlich anfangen." <span class="vn-word">(Chúng tôi phải bắt đầu đúng giờ.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">5.</span> „Ihr müsst um 17 Uhr ruft an." <span class="vn-word">(Các bạn phải gọi điện lúc 17 giờ.)</span> → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">6.</span> „Sie müssen am Freitag fernsehen." <span class="vn-word">(Thứ Sáu họ phải xem ti vi.)</span> → <span class="blank-xl"></span></div>
+    <div class="tip-box">
+      <div class="tip-de">💡 Tipp: Drei Sätze sind schon perfekt gebaute Sandwiches — die brauchst du nur mit „✅ richtig" markieren!</div>
+      <div class="tip-vn">💡 Mẹo nhỏ: có ba câu đã là sandwich hoàn chỉnh rồi — bạn chỉ cần đánh dấu „✅ richtig"!</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 12</span>
+    <span>Seite 3 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Dialog + Lesetext + MC + MEILENSTEIN: Brief-Spickzettel) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 12</h1>
+      <h2>Dialog, Lesetext &amp; Meilenstein / Hội thoại, bài đọc &amp; cột mốc</h2>
+    </div>
+    <div class="badge">A1 · Lektion 12</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Empfang:</span>Zahnarztpraxis Dr. Berger, guten Tag!</div>
+    <div class="dialog-line"><span class="speaker">Herr Klein:</span>Guten Tag, hier is<strong>t</strong> Klein. Ich muss leider meinen Termin am Mittwoch verschieben.</div>
+    <div class="dialog-line"><span class="speaker">Empfang:</span>Kein Problem. Wann haben Sie denn Zeit?</div>
+    <div class="dialog-line"><span class="speaker">Herr Klein:</span>Ich muss am Montag arbeiten, aber am Donnerstag habe ich Zeit.</div>
+    <div class="dialog-line"><span class="speaker">Empfang:</span>Gut, passt Ihnen Donnerstag um 10 Uhr?</div>
+    <div class="dialog-line"><span class="speaker">Herr Klein:</span>Ja, das passt sehr gut. Muss ich sonst noch etwas mitbringen?</div>
+    <div class="dialog-line"><span class="speaker">Empfang:</span>Nein, nur Ihre Versichertenkarte. Bitte rufen Sie an, wenn Sie doch nicht kommen können.</div>
+    <div class="dialog-line"><span class="speaker">Herr Klein:</span>Alles klar, vielen Dank! Bis Donnerstag!</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Anna hat eine volle Woche vor sich. Am Montag muss sie früh aufstehen, denn ihr Deutschkurs fäng<strong>t</strong> schon um 8 Uhr an. Am Dienstag muss sie arbeiten, und danach muss sie noch einkaufen, weil der Kühlschrank leer is<strong>t</strong>. Am Mittwoch hat Anna einen Termin beim Arzt — sie muss um 15 Uhr dort sein und darf nicht zu spät kommen. Am Donnerstag muss sie ihre Eltern anrufen, denn sie hat schon lange nicht mehr mit ihnen gesprochen. Am Freitag hör<strong>t</strong> Anna schon um 16 Uhr mit der Arbeit auf, weil sie sich mit Freunden trifft. Am Samstag muss sie die Wohnung aufräumen, bevor am Abend Besuch kommt. Der Sonntag is<strong>t</strong> zum Glück frei — da muss Anna gar nichts tun! Sie steht spät auf, sieht in Ruhe fern und plant schon die nächste Woche. Anna mag ihre Wochenstruktur, auch wenn sie manchmal stressig ist: Jeder Tag hat sein eigenes Programm, und am Wochenende kann sie sich endlich entspannen. „Ohne einen Terminkalender", sagt Anna, „würde ich total durcheinanderkommen!"
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Um wie viel Uhr fängt Annas Deutschkurs am Montag an?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) um 7 Uhr</span>
+      <span><span class="mc-kreis"></span> b) um 8 Uhr</span>
+      <span><span class="mc-kreis"></span> c) um 15 Uhr</span>
+    </div>
+    <div class="mc-frage">2. Warum muss Anna am Dienstag noch einkaufen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie hat Geburtstag</span>
+      <span><span class="mc-kreis"></span> b) der Kühlschrank ist leer</span>
+      <span><span class="mc-kreis"></span> c) sie bekommt Besuch</span>
+    </div>
+    <div class="mc-frage">3. Wann hat Anna einen Arzttermin?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) am Mittwoch um 15 Uhr</span>
+      <span><span class="mc-kreis"></span> b) am Donnerstag um 10 Uhr</span>
+      <span><span class="mc-kreis"></span> c) am Freitag um 16 Uhr</span>
+    </div>
+    <div class="mc-frage">4. Was macht Anna am Freitag?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie ruft ihre Eltern an</span>
+      <span><span class="mc-kreis"></span> b) sie räumt die Wohnung auf</span>
+      <span><span class="mc-kreis"></span> c) sie trifft sich mit Freunden</span>
+    </div>
+    <div class="mc-frage">5. Warum muss Anna am Samstag die Wohnung aufräumen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) weil Besuch kommt</span>
+      <span><span class="mc-kreis"></span> b) weil sie einen Arzttermin hat</span>
+      <span><span class="mc-kreis"></span> c) weil sie umzieht</span>
+    </div>
+    <div class="mc-frage">6. Wie ist Annas Sonntag?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) genauso voll wie die anderen Tage</span>
+      <span><span class="mc-kreis"></span> b) frei — sie muss nichts tun</span>
+      <span><span class="mc-kreis"></span> c) sie muss arbeiten</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Wie sieht deine typische Woche aus? Was musst du an welchem Tag machen?</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Một tuần điển hình của bạn thường như thế nào? Ngày nào bạn phải làm gì?</div>
+    </div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Die Woche beginnt am Montag / Tuần bắt đầu từ thứ Hai</div>
+    <div class="kb-de">In Deutschland beginnt die Woche mit <b>Montag</b>, nicht mit Sonntag — das entspricht dem ISO-Standard. Deutsche Kalender zeigen oft die <b>Kalenderwoche</b> (KW), z. B. „KW 12".</div>
+    <div class="kb-vn">Ở Đức, tuần bắt đầu từ <b>thứ Hai</b>, không phải Chủ nhật như ở Việt Nam — điều này theo chuẩn ISO quốc tế. Lịch Đức thường ghi <b>số tuần trong năm</b> (KW), ví dụ „KW 12", rất phổ biến trong công việc.</div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Terminkultur: Ohne Termin geht fast nichts / Văn hóa đặt lịch hẹn</div>
+    <div class="kb-de">In Deutschland braucht man für vieles einen <b>Termin</b> — beim Arzt, beim Amt, sogar beim Friseur. Man ruft an oder bucht online, und man sollte pünktlich erscheinen!</div>
+    <div class="kb-vn">Ở Đức, rất nhiều việc cần <b>đặt lịch hẹn</b> trước — đi khám bác sĩ, đến cơ quan hành chính, thậm chí cắt tóc. Khác với Việt Nam nơi có thể đến trực tiếp, ở Đức cứ tự ý đến thường không được tiếp — phải gọi điện hoặc đặt online trước, và đến đúng giờ hẹn.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 12</span>
+    <span>Seite 4 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 5 (MEILENSTEIN: Brief-Spickzettel, ausführlich) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 12</h1>
+      <h2>Meilenstein: Der Brief-Spickzettel / Cột mốc: Sổ tay mẹo viết thư</h2>
+    </div>
+    <div class="badge">A1 · Lektion 12</div>
+  </div>
+
+  <div class="meilenstein-box">
+    <div class="ms-title">🔥 MEILENSTEIN — Dein Brief-Spickzettel / Cột mốc — Sổ tay mẹo viết thư của bạn</div>
+    <div class="tip-box" style="margin-bottom:4px;">
+      <div class="tip-de">Ab Lektion 13 schreibst du deinen ersten echten Brief! Hebe diese Referenzseite gut auf — sie enthält alle Bausteine, Regeln und Musterbriefe, die du für die Prüfung brauchst.</div>
+      <div class="tip-vn">Từ Bài 13, bạn sẽ viết lá thư thật đầu tiên của mình! Hãy giữ kỹ trang tham khảo này — nó chứa tất cả các mẫu câu, quy tắc và thư mẫu bạn cần cho kỳ thi.</div>
+    </div>
+
+    <div class="brief-spalte-label" style="margin-top:2px;">🏗 Die Struktur-Basis: Jeder Brief hat genau 4 Teile / Cấu trúc cơ bản: mỗi lá thư có đúng 4 phần</div>
+    <div class="brief-grid">
+      <div>
+        <div class="brief-spalte-label">👥 Informell (Freunde/Familie) / Thân mật (bạn bè/gia đình)</div>
+        <div class="brief-item"><strong>1. Anrede:</strong> Liebe Mai, (weiblich) / Lieber Peter, (männlich)<div class="bi-vn">Lời chào: „Liebe/Lieber..." (thân mến...)</div></div>
+        <div class="brief-item"><strong>2. Haupttext:</strong> Beantworte die 3 Punkte der Aufgabe — 1 Satz pro Punkt<div class="bi-vn">Nội dung chính: trả lời 3 ý trong đề bài, mỗi ý một câu</div></div>
+        <div class="brief-item"><strong>3. Schluss-Satz:</strong> Schreib mir bald!<div class="bi-vn">Câu kết: „Viết thư cho tôi sớm nhé!"</div></div>
+        <div class="brief-item"><strong>4. Gruß &amp; Name:</strong> Viele Grüße + nur Vorname<div class="bi-vn">Lời chào cuối và tên: chỉ ghi tên gọi</div></div>
+      </div>
+      <div>
+        <div class="brief-spalte-label">🏢 Formell (Amt, Chef, Praxis) / Trang trọng (cơ quan, sếp, phòng khám)</div>
+        <div class="brief-item"><strong>1. Anrede:</strong> Sehr geehrte Frau Müller, / Sehr geehrter Herr Schmidt, / Sehr geehrte Damen und Herren, (Name unbekannt)<div class="bi-vn">Lời chào: dùng „Sehr geehrte Damen und Herren" khi không biết tên người nhận</div></div>
+        <div class="brief-item"><strong>2. Haupttext:</strong> Beantworte die 3 Punkte der Aufgabe — 1 Satz pro Punkt<div class="bi-vn">Nội dung chính: trả lời 3 ý trong đề bài, mỗi ý một câu</div></div>
+        <div class="brief-item"><strong>3. Schluss-Satz:</strong> Ich warte auf Ihre Antwort.<div class="bi-vn">Câu kết: „Tôi mong nhận được phản hồi của quý vị."</div></div>
+        <div class="brief-item"><strong>4. Gruß &amp; Name:</strong> Mit freundlichen Grüßen + voller Name<div class="bi-vn">Lời chào cuối và tên: ghi đầy đủ họ tên</div></div>
+      </div>
+    </div>
+
+    <div class="brief-spalte-label" style="margin-top:6px;">📋 Die 5 Grundregeln für die Prüfung / 5 quy tắc cốt lõi cho kỳ thi</div>
+    <div class="regel-liste">
+      <div class="regel-item">
+        <span class="regel-num">1</span>
+        <div class="regel-text"><span class="rt-de">Das Komma-Gesetz:</span> Nach der Anrede kommt ein Komma — danach schreibt man klein weiter! „Liebe Mai, ich möchte..."<div class="rt-vn">Sau lời chào luôn có dấu phẩy, và từ tiếp theo viết thường</div></div>
+      </div>
+      <div class="regel-item">
+        <span class="regel-num">2</span>
+        <div class="regel-text"><span class="rt-de">Die magische 3:</span> Die Aufgabe hat immer 3 Punkte. Schreibe zu jedem Punkt genau einen Satz — fehlt ein Punkt, gibt es viele Minuspunkte!<div class="rt-vn">Đề bài luôn có 3 ý, mỗi ý viết đúng một câu. Thiếu một ý = mất rất nhiều điểm!</div></div>
+      </div>
+      <div class="regel-item">
+        <span class="regel-num">3</span>
+        <div class="regel-text"><span class="rt-de">Das große „Sie":</span> In formellen Briefen müssen Sie, Ihr und Ihnen immer großgeschrieben werden.<div class="rt-vn">Trong thư trang trọng, các từ Sie / Ihr / Ihnen luôn phải viết hoa</div></div>
+      </div>
+      <div class="regel-item">
+        <span class="regel-num">4</span>
+        <div class="regel-text"><span class="rt-de">Kein Satzzeichen am Ende:</span> Nach „Viele Grüße" oder „Mit freundlichen Grüßen" kommt kein Komma und kein Punkt!<div class="rt-vn">Không có dấu chấm hay dấu phẩy sau lời chào cuối thư!</div></div>
+      </div>
+      <div class="regel-item">
+        <span class="regel-num">5</span>
+        <div class="regel-text"><span class="rt-de">Kurze Sätze:</span> Keine komplizierten Sätze. Nur: Subjekt + Verb + Objekt. Z. B. „Ich kann nicht kommen. Mein Sohn ist krank."<div class="rt-vn">Không viết câu phức tạp. Chỉ cần: Chủ ngữ + Động từ + Tân ngữ</div></div>
+      </div>
+    </div>
+
+    <div class="brief-spalte-label" style="margin-top:6px;">🏆 Prüfungs-Beispiele / Ví dụ mẫu cho kỳ thi</div>
+
+    <div class="brief-beispiel-box">
+      <div class="be-header">Beispiel 1: Geburtstag — Informell / Giữa bạn bè</div>
+      <div class="be-aufgabe">Michael lädt dich zum Geburtstag ein. <span class="vn-word">Michael mời bạn đến dự sinh nhật của cậu ấy.</span></div>
+      <div class="be-punkte"><span class="be-punkt">1. Bedanken cảm ơn</span><span class="be-punkt">2. Zusagen xác nhận tham dự</span><span class="be-punkt">3. Nach Hilfe fragen hỏi có cần giúp gì không</span></div>
+      <div class="be-text">
+        Lieber Michael,<br>
+        <span class="be-de">danke für die Einladung zu deiner Party.</span><span class="be-vn">Cảm ơn cậu đã mời mình đến bữa tiệc.</span>
+        <span class="be-de">Ich komme am Samstag sehr gerne.</span><span class="be-vn">Mình rất vui được đến vào thứ Bảy.</span>
+        <span class="be-de">Brauchst du Hilfe bei der Party?</span><span class="be-vn">Cậu có cần giúp gì cho bữa tiệc không?</span>
+        <div class="be-schluss">Schreib mir bald!<br>Viele Grüße<br>Linh</div>
+      </div>
+    </div>
+
+    <div class="brief-beispiel-box formell">
+      <div class="be-header">Beispiel 2: Termin absagen — Formell / Trang trọng</div>
+      <div class="be-aufgabe">Termin bei Lehrerin Frau Berg absagen. <span class="vn-word">Hủy lịch hẹn với cô giáo Berg.</span></div>
+      <div class="be-punkte"><span class="be-punkt">1. Warum schreibst du? lý do viết thư</span><span class="be-punkt">2. Grund: Arbeit lý do: công việc</span><span class="be-punkt">3. Neuer Termin lịch hẹn mới</span></div>
+      <div class="be-text">
+        Sehr geehrte Frau Berg,<br>
+        <span class="be-de">ich schreibe Ihnen wegen unseres Termins am Mittwoch.</span><span class="be-vn">Tôi viết thư này liên quan đến lịch hẹn của chúng ta vào thứ Tư.</span>
+        <span class="be-de">Ich kann leider nicht kommen, weil ich arbeiten muss.</span><span class="be-vn">Rất tiếc tôi không thể đến vì phải làm việc.</span>
+        <span class="be-de">Können wir uns am Freitag um 14:00 Uhr treffen?</span><span class="be-vn">Chúng ta có thể gặp nhau vào thứ Sáu lúc 14 giờ được không?</span>
+        <div class="be-schluss">Ich warte auf Ihre Antwort.<br>Mit freundlichen Grüßen<br>Linh Nguyen</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 12</span>
+    <span>Seite 5 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 6 (Freies Sprechen + Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 12</h1>
+      <h2>Freies Sprechen &amp; Finale / Nói tự do &amp; tổng kết</h2>
+    </div>
+    <div class="badge">A1 · Lektion 12</div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">müssen</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was musst du diese Woche noch machen?</div>
+      <div class="anweisung-vn">Tuần này bạn còn phải làm gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">Lieblingstag</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was ist dein Lieblings-Wochentag? Warum?</div>
+      <div class="anweisung-vn">Ngày yêu thích trong tuần của bạn là ngày nào? Tại sao?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">Termin</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Hast du diese Woche einen Termin? Wann?</div>
+      <div class="anweisung-vn">Tuần này bạn có lịch hẹn không? Khi nào?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">am + müssen</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Satz</span></div>
+      <div class="anweisung-de">Bilde einen Satz mit „am" und „müssen".</div>
+      <div class="anweisung-vn">Đặt một câu với „am" và „müssen".</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Verben konjugieren / Chia động từ:</strong> Schreibe die vollständige Konjugation von „müssen" für alle 6 Personen auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết ra giấy đầy đủ 6 ngôi chia của „müssen" — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">📝 <strong>Meinen Wochenplan beschreiben / Miêu tả kế hoạch tuần của tôi:</strong> Schreibe 6–8 Sätze über deine Woche. Benutze mindestens 3-mal „müssen" (auch mit einem trennbaren Verb!) und mindestens 3 verschiedene Wochentage mit „am".
+      <div class="ha-vn">Viết 6–8 câu về tuần của bạn. Dùng „müssen" ít nhất 3 lần (kể cả kết hợp với động từ tách được!) và nhắc đến ít nhất 3 ngày khác nhau trong tuần với „am".</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 11):</strong> 1. stehe ... auf &nbsp; 2. Am Satzende / ở cuối câu &nbsp; 3. Falsch — richtig ist „Ich stehe um 7 Uhr auf." (das Präfix muss ans Satzende)</p>
+    <p><strong>Übung 1 (am/im):</strong> 1. am &nbsp; 2. im &nbsp; 3. am &nbsp; 4. Im &nbsp; 5. Am &nbsp; 6. am &nbsp; 7. Im &nbsp; 8. am</p>
+    <p><strong>Übung 1b (Wortsalat):</strong> 1. Ich habe am Montag Deutschkurs. &nbsp; 2. Wir treffen uns am Samstag im Café. &nbsp; 3. Er arbeitet am Freitag bis 18 Uhr. &nbsp; 4. Wir fahren am Wochenende nach Hamburg.</p>
+    <p><strong>Game (Termin-Würfel), Beispiele:</strong> 1. (2,3,4) Du musst am Mittwoch einkaufen. &nbsp; 2. (1,1,1) Ich muss am Montag aufstehen. &nbsp; 3. (4,5,6) Wir müssen am Freitag fernsehen. &nbsp; 4. (3,6,2) Er muss am Samstag anfangen. &nbsp; 5. (5,2,5) Ihr müsst am Dienstag anrufen.</p>
+    <p><strong>Übung 2 (Sandwich-Check):</strong> 1. ✅ richtig &nbsp; 2. falsch → „Du musst um 6 Uhr aufstehen." &nbsp; 3. falsch → „Er muss am Samstag einkaufen." &nbsp; 4. ✅ richtig &nbsp; 5. falsch → „Ihr müsst um 17 Uhr anrufen." &nbsp; 6. ✅ richtig</p>
+    <p><strong>Leseverständnis:</strong> 1. b) um 8 Uhr &nbsp; 2. b) der Kühlschrank ist leer &nbsp; 3. a) am Mittwoch um 15 Uhr &nbsp; 4. c) sie trifft sich mit Freunden &nbsp; 5. a) weil Besuch kommt &nbsp; 6. b) frei — sie muss nichts tun</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ich muss noch einkaufen. &nbsp; Karte 2: Mein Lieblingstag ist Freitag. &nbsp; Karte 3: Ja, ich habe am Donnerstag einen Termin. &nbsp; Karte 4: Ich muss am Montag früh aufstehen.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 12 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 6 / 6</span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 20</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 8mm 13mm 4mm 13mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.2; font-size: 11px; }
+.compact .doc-header { padding-bottom: 3px; margin-bottom: 5px; }
+.compact .section-title { margin: 5px 0 3px 0; }
+.compact table { margin-bottom: 3px; }
+.compact table.vocab th, .compact table.vocab td { padding: 2px 5px; }
+.compact .gram-box { padding: 4px 8px; margin-bottom: 3px; }
+.compact .tip-box { padding: 3px 7px; margin: 2px 0; }
+.compact .warn-box { padding: 3px 7px; margin: 2px 0 5px 0; }
+.compact .ubung-header { padding: 2px 8px; }
+.compact .ubung-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .fill-line { margin-bottom: 1px; }
+.compact .footer { margin-top: 3px; padding-top: 2px; }
+.compact .phon-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .kultur-box { padding: 4px 9px; margin: 3px 0 5px 0; }
+.compact .dialog-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .lese-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .mc-block { margin-bottom: 3px; }
+.compact .mc-optionen { margin-bottom: 4px; }
+.compact .ha-box { padding: 4px 9px; }
+.compact .antworten { padding: 4px 9px; }
+.compact .wiederholung-box { padding: 4px 9px; margin-bottom: 5px; }
+.compact .karten-grid { margin-top: 3px; gap: 6px; }
+.compact .sprech-karte { padding: 5px 7px; }
+.compact .sprech-karte .karte-num { padding: 1px 7px; margin-bottom: 3px; }
+.compact .sprech-karte .wort-pill { font-size: 11.5px; padding: 2px 5px; margin-bottom: 3px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 3px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 3px; }
+.compact .game-header { padding: 2px 8px; }
+.compact .game-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .wuerfel-grid { margin: 3px 0 4px 0; gap: 6px; }
+.compact .wuerfel-spalte { padding: 4px 6px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .prompt-tag.satz { background: #fef3c7; color: #92400e; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .game-header / .game-body: Spielelement (wiederverwendet aus L12/L13/L15/L17/L19) ===== */
+.game-header { background: #ea580c; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.game-body { border: 0.5px solid #fdba74; border-top: none; border-radius: 0 0 5px 5px; padding: 6px 8px; margin-bottom: 4px; background: #fff7ed; }
+.game-body .instr-de { font-size: 10px; color: #7c2d12; font-style: italic; }
+.game-body .instr-vn { font-size: 9.5px; color: #c2410c; font-style: italic; margin-bottom: 4px; }
+
+/* ===== .wuerfel-box: Würfel-Legende (wiederverwendet aus L12/L13/L15/L17/L19), hier 3 Spalten ===== */
+.wuerfel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 4px 0 6px 0; }
+.wuerfel-grid.drei-spalten { grid-template-columns: 1fr 1fr 1fr; }
+.wuerfel-spalte { background: white; border: 1px solid #fdba74; border-radius: 8px; padding: 6px 8px; }
+.wuerfel-spalte .ws-title { font-size: 9.5px; font-weight: 700; color: #9a3412; text-align: center; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.3px; }
+.wuerfel-zeile { display: flex; align-items: center; gap: 5px; font-size: 10px; margin-bottom: 2px; }
+.wuerfel-zahl { display: inline-flex; align-items: center; justify-content: center; width: 15px; height: 15px; background: #ea580c; color: white; font-weight: 700; font-size: 9px; border-radius: 4px; flex-shrink: 0; }
+.wuerfel-kombi { display: flex; align-items: center; gap: 6px; font-size: 10.5px; margin-bottom: 3px; flex-wrap: wrap; }
+.wuerfel-kombi .wk-num { font-weight: 700; color: #64748b; min-width: 14px; }
+.wuerfel-kombi .wk-set { display: inline-flex; gap: 3px; }
+.wortsalat-arrow { color: #94a3b8; font-weight: 700; }
+
+/* ===== .punkte-box: Punktesystem-Anzeige (wiederverwendet aus L19) ===== */
+.punkte-box { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 6px 0; }
+.punkte-item { background: #fef9c3; border: 1px solid #fde047; border-radius: 6px; padding: 4px 9px; font-size: 10px; color: #713f12; display: flex; align-items: center; gap: 4px; }
+.punkte-item .pk-zahl { font-weight: 800; color: #92400e; }
+.punkte-item.falle { background: #fee2e2; border-color: #fca5a5; color: #7f1d1d; }
+.punkte-item.falle .pk-zahl { color: #b91c1c; }
+
+/* ===== .bewegung-vergleich: sein vs. haben Kontrast-Tabelle (neu in L20) ===== */
+table.bewegung-vergleich th, table.bewegung-vergleich td { font-size: 11px; padding: 5px 8px; line-height: 1.5; }
+table.bewegung-vergleich th.col-sein { background: #bbf7d0; color: #14532d; }
+table.bewegung-vergleich td.col-sein { background: #f0fdf4; }
+table.bewegung-vergleich th.col-haben { background: #bfdbfe; color: #1e3a8a; }
+table.bewegung-vergleich td.col-haben { background: #eff6ff; }
+.compact table.bewegung-vergleich th, .compact table.bewegung-vergleich td { padding: 4px 7px; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Aussprache + Lernziele + Wortschatz Verkehrsmittel + Wortschatz Reisen) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 20</h1>
+      <h2>Das Perfekt – Teil 2</h2>
+      <h2>Thì hoàn thành (Perfekt) — Phần 2</h2>
+    </div>
+    <div class="badge">A1 · Lektion 20</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 19 / Ôn tập Bài 19</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: Perfekt mit „haben" &amp; Partizip-Bildung / Khởi động ngữ pháp: thì Perfekt với „haben" &amp; cấu tạo phân từ</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">haben + Partizip</div>
+        <div class="wh-mund">Ergänze: Ich ___ gestern gekocht. (haben)</div>
+        <div class="wh-beispiel">Điền đúng dạng của haben</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">-ieren-Regel</div>
+        <div class="wh-mund">telefonieren → ___ (kein „ge-"!)</div>
+        <div class="wh-beispiel">Viết ra phân từ đúng</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Satzklammer</div>
+        <div class="wh-mund">Ordne: gestern / habe / gelernt / ich</div>
+        <div class="wh-beispiel">Sắp xếp thành câu đúng</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aussprache-Minute -->
+  <div class="section-title">🔊 AUSSPRACHE-MINUTE / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">Der Diphthong „au" / Âm đôi „au"</div>
+    <div class="phon-de">Der Diphthong „au" wird im Deutschen immer gleich gesprochen — wie das englische „ou" in „house". Der Reisewortschatz dieser Lektion ist voll davon!</div>
+    <div class="phon-vn">Âm đôi „au" trong tiếng Đức luôn được phát âm giống nhau — gần giống âm „au" trong tiếng Việt (như trong từ „au" hay „sau"). Từ vựng về du lịch trong bài này có rất nhiều âm này!<br>⚠️ Mẹo cho người Việt: đây là một âm khá quen thuộc với người Việt, chỉ cần chú ý phát âm liền mạch và luôn phát âm rõ phụ âm cuối của từ (nếu có)!</div>
+    <div class="phon-beispiele">das Auto (AU-tô) · der Ausflug (AUS-fluk) · der Urlaub (U-laup) · kaufen (KAU-phơn)</div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Das Perfekt mit „sein" bilden (Bewegungsverben) <span class="vn">— Cấu tạo thì Perfekt với „sein" (động từ chỉ chuyển động)</span></p>
+    <p class="de">✔ Erkennen, welche Verben „sein" statt „haben" nehmen <span class="vn">— Nhận biết động từ nào dùng „sein" thay vì „haben"</span></p>
+    <p class="de">✔ Über Verkehrsmittel und Reisen sprechen <span class="vn">— Nói về phương tiện giao thông và du lịch</span></p>
+    <p class="de">✔ Von einem vergangenen Ausflug oder Urlaub erzählen <span class="vn">— Kể về một chuyến dã ngoại hoặc kỳ nghỉ đã qua</span></p>
+  </div>
+
+  <!-- Wortschatz Verkehrsmittel -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Verkehrsmittel / Bảng từ vựng: Phương tiện giao thông</div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:20%"><col style="width:33%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🚗 <span class="das">das</span>Auto</td><td class="phonetik">AU-tô</td><td>Ich bin mit dem Auto gefahren. <span class="vn-word">Tôi đã đi bằng ô tô.</span></td><td class="vn-word">ô tô, xe hơi</td></tr>
+      <tr><td>🚌 <span class="der">der</span>Bu<strong>s</strong></td><td class="phonetik">bu<strong>x</strong></td><td>Wir sind mit dem Bus gefahren. <span class="vn-word">Chúng tôi đã đi bằng xe buýt.</span></td><td class="vn-word">xe buýt</td></tr>
+      <tr><td>🚆 <span class="der">der</span>Zug</td><td class="phonetik">tsuk</td><td>Sie is<strong>t</strong> mit dem Zug gefahren. <span class="vn-word">Cô ấy đã đi bằng tàu hỏa.</span></td><td class="vn-word">tàu hỏa</td></tr>
+      <tr><td>🚲 <span class="das">das</span>Fahrra<strong>d</strong></td><td class="phonetik">FA-ra<strong>t</strong></td><td>Er is<strong>t</strong> mit dem Fahrrad gekommen. <span class="vn-word">Anh ấy đã đến bằng xe đạp.</span></td><td class="vn-word">xe đạp</td></tr>
+      <tr><td>✈️ <span class="das">das</span>Flugzeug</td><td class="phonetik">FLUK-tsoik</td><td>Ich bin mit dem Flugzeug geflogen. <span class="vn-word">Tôi đã bay bằng máy bay.</span></td><td class="vn-word">máy bay</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 Weitere Verkehrsmittel für später: die U-Bahn, das Schiff — heute konzentrieren wir uns erst einmal auf die 5 wichtigsten!</div>
+    <div class="tip-vn">💡 Các phương tiện giao thông khác sẽ học sau: die U-Bahn (tàu điện ngầm), das Schiff (tàu thủy) — hôm nay chúng ta tập trung vào 5 phương tiện quan trọng nhất trước đã!</div>
+  </div>
+
+  <!-- Wortschatz Reisen -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Reisen &amp; Ausflüge / Bảng từ vựng: Du lịch &amp; dã ngoại</div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:20%"><col style="width:33%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Wort</th><th>Aussprache (Quốc Ngữ)</th><th>Beispielsatz</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td>🏖️ <span class="der">der</span>Urlaub</td><td class="phonetik">U-laup</td><td>Wir machen zwei Wochen Urlaub. <span class="vn-word">Chúng tôi nghỉ phép hai tuần.</span></td><td class="vn-word">kỳ nghỉ</td></tr>
+      <tr><td>🧳 <span class="die">die</span>Reise</td><td class="phonetik">RAI-dzơ</td><td>Die Reise war lang. <span class="vn-word">Chuyến đi rất dài.</span></td><td class="vn-word">chuyến đi</td></tr>
+      <tr><td>🥾 <span class="der">der</span>Ausflug</td><td class="phonetik">AUS-fluk</td><td>Wir machen einen Ausflug in die Berge. <span class="vn-word">Chúng tôi đi dã ngoại lên núi.</span></td><td class="vn-word">chuyến dã ngoại</td></tr>
+      <tr><td>🎯 <span class="das">das</span>Ziel</td><td class="phonetik">tsin</td><td>Unser Ziel is<strong>t</strong> Hamburg. <span class="vn-word">Đích đến của chúng tôi là Hamburg.</span></td><td class="vn-word">đích đến</td></tr>
+      <tr><td>🧳 <span class="der">der</span>Koffer</td><td class="phonetik">KÔ-phơ</td><td>Ich packe meinen Koffer. <span class="vn-word">Tôi đang xếp đồ vào vali.</span></td><td class="vn-word">vali</td></tr>
+      <tr><td>🏨 <span class="das">das</span>Hotel</td><td class="phonetik">hô-TEN</td><td>Das Hotel liegt am Meer. <span class="vn-word">Khách sạn nằm cạnh biển.</span></td><td class="vn-word">khách sạn</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 20</span>
+    <span>Seite 1 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Verben/Partizip-Tabelle + Grammatik 1: sein-Regel + Häufige Fehler + Übung 1 + Übung 1b + Übung 1c) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 20</h1>
+      <h2>Wann benutzt man „sein"? Bewegung oder Zustandsänderung / Khi nào dùng „sein"? Chuyển động hoặc thay đổi trạng thái</h2>
+    </div>
+    <div class="badge">A1 · Lektion 20</div>
+  </div>
+
+  <!-- Verben/Partizip-Tabelle -->
+  <div class="section-title">🔧 Verben-Tabelle: Infinitiv → Perfekt mit „sein" / Bảng động từ: nguyên mẫu → thì Perfekt với „sein"</div>
+  <table class="konj">
+    <colgroup><col style="width:110px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Infinitiv</th><th>Perfekt (er/sie/es)</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">gehen</td><td><strong>ist gegangen</strong> (gơ-GAN-gờn)</td><td class="vn-word">đi (bộ)</td></tr>
+      <tr><td class="pronomen">fahren</td><td><strong>ist gefahren</strong> (gơ-FA-rờn)</td><td class="vn-word">đi (bằng xe)</td></tr>
+      <tr><td class="pronomen">fliegen</td><td><strong>ist geflogen</strong> (gơ-FLÔ-gờn)</td><td class="vn-word">bay</td></tr>
+      <tr><td class="pronomen">kommen</td><td><strong>ist gekommen</strong> (gơ-KÔ-mờn)</td><td class="vn-word">đến</td></tr>
+      <tr><td class="pronomen">bleiben</td><td><strong>ist geblieben</strong> (gơ-BLI-bờn)</td><td class="vn-word">ở lại</td></tr>
+      <tr><td class="pronomen">reisen</td><td><strong>ist gereist</strong> (gơ-RAI-st)</td><td class="vn-word">đi du lịch</td></tr>
+      <tr><td class="pronomen">wandern</td><td><strong>ist gewandert</strong> (gơ-VAN-đợt)</td><td class="vn-word">đi bộ đường dài</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — Die sein-Regel: Bewegung von A nach B / Ngữ pháp 1: quy tắc sein — chuyển động từ A đến B</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Neu: Nicht alle Verben bilden das Perfekt mit „haben"! Eine kleine, aber sehr wichtige Gruppe von Verben benutzt stattdessen „sein" — nämlich Verben, die eine <strong>Bewegung von einem Ort zum anderen</strong> oder eine <strong>Zustandsänderung</strong> beschreiben.</div>
+    <div class="tip-vn">💡 Kiến thức mới: không phải tất cả động từ đều dùng „haben" để tạo thì Perfekt! Có một nhóm nhỏ nhưng rất quan trọng các động từ dùng „sein" thay vào đó — đó là những động từ diễn tả <strong>sự chuyển động từ nơi này đến nơi khác</strong> hoặc <strong>sự thay đổi trạng thái</strong>.</div>
+  </div>
+  <table class="vocab bewegung-vergleich">
+    <colgroup><col style="width:50%"><col style="width:50%"></colgroup>
+    <thead><tr><th class="col-sein">✅ „sein" — Bewegung/Zustandsänderung</th><th class="col-haben">✅ „haben" — alles andere (Tätigkeit)</th></tr></thead>
+    <tbody>
+      <tr><td class="col-sein">gehen, fahren, fliegen, kommen, reisen, wandern <span class="vn-word">đi bộ / đi xe / bay / đến / đi du lịch / đi bộ đường dài</span></td><td class="col-haben">kochen, arbeiten, lernen, spielen, telefonieren <span class="vn-word">nấu ăn / làm việc / học / chơi / gọi điện</span></td></tr>
+      <tr><td class="col-sein">Ausnahme: <strong>bleiben</strong> (keine Bewegung, aber trotzdem „sein"!) <span class="vn-word">Ngoại lệ: bleiben (không có chuyển động, nhưng vẫn dùng sein!)</span></td><td class="col-haben">putzen, kaufen, hören, tanzen, lachen <span class="vn-word">dọn dẹp / mua / nghe / nhảy múa / cười</span></td></tr>
+    </tbody>
+  </table>
+  <div class="gram-box">
+    <h4>🔁 Das Perfekt-Sandwich funktioniert genauso — nur mit „sein" / Cấu trúc bánh kẹp của Perfekt vẫn hoạt động y hệt — chỉ khác là dùng „sein"</h4>
+    <div class="rule-de">„<strong style="color:#1e40af;">Ich bin</strong> [ 🥬 gestern nach Berlin 🥬 ] <strong style="color:#b45309;">gefahren</strong>." — „sein" auf Position 2, Partizip am Satzende, genau wie bei „haben" in Lektion 19!</div>
+    <div class="rule-vn">„sein" ở vị trí số 2, phân từ ở cuối câu — giống hệt cấu trúc với „haben" ở Bài 19!</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich habe nach Berlin gefahren."</span> → <span class="wb-ok">✅ „Ich bin nach Berlin gefahren."</span> — Bewegungsverben wie „fahren" nehmen „sein", nicht „haben"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich habe nach Berlin gefahren."</span> → <span class="wb-ok">✅ „Ich bin nach Berlin gefahren."</span> — động từ chỉ chuyển động như „fahren" dùng „sein", không dùng „haben"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Wir sind lange gearbeitet."</span> → <span class="wb-ok">✅ „Wir haben lange gearbeitet."</span> — „arbeiten" ist keine Bewegung, also bleibt es bei „haben"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Wir sind lange gearbeitet."</span> → <span class="wb-ok">✅ „Wir haben lange gearbeitet."</span> — „arbeiten" không phải chuyển động, nên vẫn dùng „haben"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Er ist gestern telefoniert."</span> → <span class="wb-ok">✅ „Er hat gestern telefoniert."</span> — „telefonieren" beschreibt keine Bewegung von A nach B — „haben"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Er ist gestern telefoniert."</span> → <span class="wb-ok">✅ „Er hat gestern telefoniert."</span> — „telefonieren" không diễn tả chuyển động từ A đến B — dùng „haben"!</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — Nur Perfekt mit „sein": Ergänze die richtige Form / Chỉ luyện Perfekt với „sein": điền đúng dạng</div>
+  <div class="ubung-body">
+    <div class="instr-de">Alle Sätze hier brauchen „sein" — ergänze nur die richtige Form (bin/bist/ist/sind/seid).</div>
+    <div class="instr-vn">Tất cả các câu ở đây đều cần „sein" — chỉ cần điền đúng dạng (bin/bist/ist/sind/seid).</div>
+    <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> gestern nach Berlin gefahren. <span class="vn-word">(Tôi đã lái xe đi Berlin hôm qua.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Du <span class="blank"></span> letzte Woche nach Rom geflogen. <span class="vn-word">(Tuần trước bạn đã bay đến Roma.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Er <span class="blank"></span> ins Hotel gegangen. <span class="vn-word">(Anh ấy đã đến khách sạn.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Wir <span class="blank"></span> am Wochenende gewandert. <span class="vn-word">(Chúng tôi đã đi bộ đường dài vào cuối tuần.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Ihr <span class="blank"></span> spät gekommen. <span class="vn-word">(Các bạn đã đến muộn.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Sie (Pl.) <span class="blank"></span> im Hotel geblieben. <span class="vn-word">(Họ đã ở lại khách sạn.)</span></div>
+  </div>
+
+  <!-- Übung 1b -->
+  <div class="ubung-header">Übung 1b — Ergänze „sein" oder „haben" in der richtigen Form / Điền đúng dạng của „sein" hoặc „haben"</div>
+  <div class="ubung-body">
+    <div class="instr-de">Entscheide: Bewegung/Zustandsänderung → sein. Alles andere → haben.</div>
+    <div class="instr-vn">Hãy phán đoán: chuyển động/thay đổi trạng thái → sein; mọi trường hợp khác → haben.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> gestern nach Hause gefahren. <span class="vn-word">(Tôi đã lái xe về nhà hôm qua.)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Wir <span class="blank"></span> gestern gearbeitet. <span class="vn-word">(Chúng tôi đã làm việc hôm qua.)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Du <span class="blank"></span> letzte Woche nach Berlin geflogen. <span class="vn-word">(Tuần trước bạn đã bay đến Berlin.)</span></div>
+    <div class="fill-line"><span class="num">4.</span> Er <span class="blank"></span> lange telefoniert. <span class="vn-word">(Anh ấy đã gọi điện rất lâu.)</span></div>
+    <div class="fill-line"><span class="num">5.</span> Ihr <span class="blank"></span> am Wochenende gewandert. <span class="vn-word">(Các bạn đã đi bộ đường dài vào cuối tuần.)</span></div>
+    <div class="fill-line"><span class="num">6.</span> Sie (Pl.) <span class="blank"></span> gestern Abend gekommen. <span class="vn-word">(Họ đã đến vào tối hôm qua.)</span></div>
+  </div>
+
+  <!-- Übung 1c -->
+  <div class="ubung-header">Übung 1c — Bilde ganze Perfekt-Sätze (sein oder haben?) / Đặt câu Perfekt hoàn chỉnh (sein hay haben?)</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bilde aus den Satzteilen einen vollständigen Perfekt-Satz — entscheide selbst, ob „sein" oder „haben" richtig ist!</div>
+    <div class="instr-vn">Dùng các thành phần câu để đặt một câu Perfekt hoàn chỉnh — tự phán đoán nên dùng „sein" hay „haben"!</div>
+    <div class="fill-line"><span class="num">1.</span> ich / letztes Jahr / nach Spanien / fliegen <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">2.</span> wir / gestern / die Wohnung / putzen <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">3.</span> du / am Sonntag / ins Gebirge / wandern <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">4.</span> sie (Sg.) / gestern Abend / lange / telefonieren <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">5.</span> ihr / letzten Sommer / mit dem Zug / fahren <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">6.</span> Sie / vorgestern / spät / kommen <span class="blank-xl"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 20</span>
+    <span>Seite 2 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Kulturinfo 1 + Grammatik 2: Partizipformen-Merktabelle + Häufige Fehler + Übung 2 + Übung 2b) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 20</h1>
+      <h2>Partizipformen: regelmäßig oder unregelmäßig? / Các dạng phân từ: có quy tắc hay bất quy tắc?</h2>
+    </div>
+    <div class="badge">A1 · Lektion 20</div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Die Deutsche Bahn &amp; beliebte Reiseziele / Kiến thức văn hóa 1: đường sắt Đức &amp; các điểm du lịch nổi tiếng</div>
+    <div class="kb-de">Die Deutsche Bahn (DB) ist das größte Zugunternehmen Deutschlands und verbindet fast jede Stadt im Land. Viele Deutsche nutzen den Zug gern für Städtereisen oder Wochenendausflüge, weil man so bequem und ohne Stau reisen kann. Beliebte Reiseziele sind die Nord- und Ostsee im Norden, die Alpen im Süden (zum Wandern und Skifahren) sowie Städte wie Hamburg, München oder Dresden. Auch Auslandsreisen nach Italien, Spanien oder Österreich sind bei den Deutschen sehr beliebt.</div>
+    <div class="kb-vn">Đường sắt Đức (Deutsche Bahn, viết tắt DB) là công ty tàu hỏa lớn nhất nước Đức, kết nối gần như mọi thành phố trong nước. Nhiều người Đức thích đi tàu để du lịch thành phố hay đi dã ngoại cuối tuần, vì cách này vừa thoải mái vừa không phải lo tắc đường. Những điểm đến nổi tiếng gồm biển Bắc và biển Baltic ở miền Bắc, dãy Alps ở miền Nam (để leo núi và trượt tuyết), cùng các thành phố như Hamburg, München hay Dresden. Du lịch nước ngoài đến Ý, Tây Ban Nha hay Áo cũng rất được người Đức ưa chuộng. Điều này khá khác với Việt Nam, nơi tàu hỏa chưa phải là phương tiện du lịch phổ biến nhất — xe khách, máy bay giá rẻ và xe máy thường được ưa chuộng hơn cho các chuyến đi trong nước.</div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Partizipformen der sein-Verben: regelmäßig vs. unregelmäßig / Ngữ pháp 2: dạng phân từ của động từ sein — có quy tắc và bất quy tắc</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Achtung: Ob ein Verb „sein" oder „haben" nimmt, hat NICHTS damit zu tun, ob sein Partizip regelmäßig oder unregelmäßig gebildet wird! Das sind zwei völlig unabhängige Fragen.</div>
+    <div class="tip-vn">💡 Chú ý: việc một động từ dùng „sein" hay „haben" HOÀN TOÀN không liên quan đến việc phân từ của nó có quy tắc hay bất quy tắc! Đây là hai vấn đề hoàn toàn độc lập với nhau.</div>
+  </div>
+  <table class="vocab">
+    <colgroup><col style="width:22%"><col style="width:28%"><col style="width:50%"></colgroup>
+    <thead><tr><th>Infinitiv</th><th>Partizip</th><th>Muster</th></tr></thead>
+    <tbody>
+      <tr><td>gehen</td><td><strong>gegangen</strong></td><td class="vn-word">bất quy tắc (đổi nguyên âm + ge-...-en)</td></tr>
+      <tr><td>fahren</td><td><strong>gefahren</strong></td><td class="vn-word">bất quy tắc (đổi nguyên âm + ge-...-en)</td></tr>
+      <tr><td>fliegen</td><td><strong>geflogen</strong></td><td class="vn-word">bất quy tắc (đổi nguyên âm + ge-...-en)</td></tr>
+      <tr><td>kommen</td><td><strong>gekommen</strong></td><td class="vn-word">bất quy tắc (ge-...-en)</td></tr>
+      <tr><td>reisen</td><td><strong>gereist</strong></td><td class="vn-word">✅ có quy tắc! (ge-...-t)</td></tr>
+      <tr><td>wandern</td><td><strong>gewandert</strong></td><td class="vn-word">✅ có quy tắc! (ge-...-t)</td></tr>
+    </tbody>
+  </table>
+  <div class="gram-box">
+    <h4>⭐ Der Aha-Effekt: „reisen" &amp; „wandern" sind regelmäßig — trotzdem „sein"! / Khoảnh khắc vỡ lẽ: „reisen" và „wandern" là động từ có quy tắc — nhưng vẫn dùng „sein"!</h4>
+    <div class="rule-de">Viele Lernende denken: „regelmäßig gebildet = automatisch haben". Das stimmt NICHT! Ob „sein" oder „haben" verwendet wird, hängt allein von der <strong>Bedeutung</strong> des Verbs ab (Bewegung? Zustandsänderung?) — nicht von der Partizip-Form.</div>
+    <div class="rule-vn">Rất nhiều người học nghĩ rằng: „cấu tạo có quy tắc = tự động dùng haben". Điều này SAI! Việc dùng „sein" hay „haben" chỉ phụ thuộc vào <strong>ý nghĩa</strong> của động từ (có phải chuyển động/thay đổi trạng thái không?) — không liên quan gì đến cách cấu tạo phân từ.</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich bin gefliegt."</span> → <span class="wb-ok">✅ „Ich bin geflogen."</span> — unregelmäßiges Partizip, nicht „gefliegt"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich bin gefliegt."</span> → <span class="wb-ok">✅ „Ich bin geflogen."</span> — phân từ bất quy tắc, không phải „gefliegt"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Du bist gegehen."</span> → <span class="wb-ok">✅ „Du bist gegangen."</span> — auch hier: unregelmäßiges Partizip!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Du bist gegehen."</span> → <span class="wb-ok">✅ „Du bist gegangen."</span> — ở đây cũng vậy: phân từ bất quy tắc!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Sie ist gewandern."</span> → <span class="wb-ok">✅ „Sie ist gewandert."</span> — regelmäßiges Partizip endet auf „-t", nicht auf „-n"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Sie ist gewandern."</span> → <span class="wb-ok">✅ „Sie ist gewandert."</span> — phân từ có quy tắc kết thúc bằng „-t", không phải „-n"!</div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — Bilde das Partizip mit „ist" / Cấu tạo phân từ với „ist"</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bilde die Perfekt-Form mit „ist" zum gegebenen Infinitiv.</div>
+    <div class="instr-vn">Cấu tạo dạng Perfekt với „ist" cho nguyên mẫu đã cho.</div>
+    <div class="fill-line"><span class="num">1.</span> gehen → ist <span class="blank"></span> <span class="vn-word">(đi bộ)</span></div>
+    <div class="fill-line"><span class="num">2.</span> fahren → ist <span class="blank"></span> <span class="vn-word">(đi bằng xe)</span></div>
+    <div class="fill-line"><span class="num">3.</span> fliegen → ist <span class="blank"></span> <span class="vn-word">(bay)</span></div>
+    <div class="fill-line"><span class="num">4.</span> kommen → ist <span class="blank"></span> <span class="vn-word">(đến)</span></div>
+    <div class="fill-line"><span class="num">5.</span> reisen → ist <span class="blank"></span> <span class="vn-word">(đi du lịch)</span></div>
+    <div class="fill-line"><span class="num">6.</span> wandern → ist <span class="blank"></span> <span class="vn-word">(đi bộ đường dài)</span></div>
+  </div>
+
+  <!-- Übung 2b -->
+  <div class="ubung-header">Übung 2b — Finde den Fehler und korrigiere ihn / Tìm lỗi sai và sửa lại</div>
+  <div class="ubung-body">
+    <div class="instr-de">Jeder Satz enthält einen Fehler beim Partizip. Finde ihn und schreibe den korrekten Satz.</div>
+    <div class="instr-vn">Mỗi câu đều có một lỗi sai ở phân từ. Hãy tìm ra và viết lại câu đúng.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich bin gefliegt. <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Du bist gegehen. <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Wir sind gefahrt. <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Sie ist gewandern. <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">5.</span> Er ist gekommt. <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">6.</span> Ihr seid gereisen. <span class="blank-xl"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 20</span>
+    <span>Seite 3 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (GAME: Der Perfekt-Express + Kulturinfo 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 20</h1>
+      <h2>Spiel: Der Perfekt-Express / Trò chơi: Chuyến tàu tốc hành Perfekt</h2>
+    </div>
+    <div class="badge">A1 · Lektion 20</div>
+  </div>
+
+  <!-- Game: Der Perfekt-Express -->
+  <div class="game-header">🚂 GAME: Der Perfekt-Express / Trò chơi: Chuyến tàu tốc hành Perfekt</div>
+  <div class="game-body">
+    <div class="instr-de">Würfle dreimal (oder wähle dreimal eine Zahl von 1–6). Entscheide zuerst: sein oder haben? Bilde dann blitzschnell den korrekten Perfekt-Satz!</div>
+    <div class="instr-vn">Gieo xúc xắc ba lần (hoặc chọn ba số từ 1–6). Trước tiên hãy phán đoán: sein hay haben? Sau đó nhanh chóng tạo thành câu Perfekt đúng!</div>
+    <div class="wuerfel-grid drei-spalten">
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel 1: Subjekt</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> ich</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> du</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> er/sie</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> wir</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> ihr</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> Sie</div>
+      </div>
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel 2: Ziel/Zeit</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> gestern nach Berlin</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> letztes Jahr nach Italien</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> am Wochenende ans Meer</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> gestern Abend nach Hause</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> letzten Sommer in die Berge</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> vorgestern</div>
+      </div>
+      <div class="wuerfel-spalte">
+        <div class="ws-title">Würfel 3: Aktivität</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> fahren</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> fliegen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> gehen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> bleiben</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> wandern</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> telefonieren 🪤</div>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-de">🪤 Die Falle: Würfelst du bei Würfel 3 eine „6" (telefonieren), benutze nur die <strong>Zeitangabe</strong> aus Würfel 2 (ohne das Ziel) — man „telefoniert" schließlich nicht „nach Italien"!</div>
+      <div class="tip-vn">🪤 Cái bẫy: Nếu bạn đổ xúc xắc 3 ra „6" (telefonieren), chỉ dùng <strong>trạng từ thời gian</strong> ở xúc xắc 2 (không dùng điểm đến) — vì rốt cuộc không ai „gọi điện đến Ý" cả!</div>
+    </div>
+
+    <div class="punkte-box">
+      <div class="punkte-item">⭐ <span class="pk-zahl">1 Punkt</span> für die richtige Hilfsverb-Wahl (sein/haben)</div>
+      <div class="punkte-item">⭐ <span class="pk-zahl">1 Punkt</span> für das korrekte Partizip</div>
+      <div class="punkte-item falle">🪤 <span class="pk-zahl">+5 Bonus-Punkte</span> bei korrektem „haben" für telefonieren!</div>
+    </div>
+
+    <div class="instr-de" style="margin-bottom:3px;">Vorgegebene Würfe — bilde den Perfekt-Satz: <span class="vn-word" style="font-style:normal;">Điền theo các số đã cho, đặt thành câu Perfekt:</span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">1.</span><span class="wk-set"><span class="wuerfel-zahl">3</span><span class="wuerfel-zahl">2</span><span class="wuerfel-zahl">1</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">2.</span><span class="wk-set"><span class="wuerfel-zahl">1</span><span class="wuerfel-zahl">4</span><span class="wuerfel-zahl">6</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">3.</span><span class="wk-set"><span class="wuerfel-zahl">5</span><span class="wuerfel-zahl">5</span><span class="wuerfel-zahl">5</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="wuerfel-kombi"><span class="wk-num">4.</span><span class="wk-set" style="color:#9a3412; font-weight:700; font-size:9.5px;">🎲 Freie Runde — würfle selbst!</span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="instr-de" style="margin-top:4px;">🪞 Selbsteinschätzung (kein Partner nötig!): <span class="vn-word" style="font-style:normal;">Tự đánh giá (không cần bạn cùng chơi!):</span></div>
+    <div class="fill-line">Wie viele Punkte hast du erreicht? <span class="blank"></span> / In die Falle getappt? <span class="blank"></span></div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — „Fernweh": die Sehnsucht nach der Ferne / Kiến thức văn hóa 2: „Fernweh" — nỗi khát khao phương xa</div>
+    <div class="kb-de">Das deutsche Wort „Fernweh" bedeutet wörtlich „Schmerz nach der Ferne" — die starke Sehnsucht, neue, weit entfernte Orte zu entdecken. Es ist das Gegenteil von „Heimweh" (Sehnsucht nach zu Hause). Viele Sprachen haben kein einziges Wort dafür! Das zeigt, wie wichtig Reisen und Entdecken in der deutschen Kultur sind — kein Wunder, dass die Deutschen zu den reisefreudigsten Nationen Europas gehören.</div>
+    <div class="kb-vn">Từ „Fernweh" trong tiếng Đức nghĩa đen là „nỗi đau nhớ phương xa" — chỉ khát khao mãnh liệt muốn khám phá những nơi mới, xa xôi. Đây là từ trái nghĩa với „Heimweh" (nỗi nhớ nhà). Rất nhiều ngôn ngữ không có một từ nào tương đương! Điều này cho thấy việc đi du lịch và khám phá quan trọng như thế nào trong văn hóa Đức — không có gì lạ khi người Đức là một trong những dân tộc yêu thích du lịch nhất châu Âu. Trong tiếng Việt, cảm giác này có phần gần với „máu đi", dù không hẳn có một từ đơn lẻ nào diễn tả chính xác khái niệm này như „Fernweh" trong tiếng Đức.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 20</span>
+    <span>Seite 4 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 5 (Dialog + Lesetext + MC) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 20</h1>
+      <h2>Dialog &amp; Lesetext / Hội thoại &amp; Bài đọc hiểu</h2>
+    </div>
+    <div class="badge">A1 · Lektion 20</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Anna:</span>Wohin bist du in den Urlaub gefahren?</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Ich bin nach Italien geflogen! Und du, wohin bist du gereist?</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Ich bin mit dem Auto ans Meer gefahren, mit meiner Familie.</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Was habt ihr dort gemacht?</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Wir sind jeden Tag gewandert und haben viele Fotos gemacht.</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Und ich bin in Rom viel zu Fuß gegangen und habe die Stadt fotografiert.</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Bist du auch mit dem Zug gefahren?</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Ja, einmal! Ich bin mit dem Zug nach Florenz gefahren.</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Das klingt toll! Ich möchte nächstes Jahr auch mit dem Zug reisen.</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Gute Idee!</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Lisa und Tom sind letztes Wochenende in die Berge gefahren. Am Freitagabend haben sie die Koffer gepackt und sind dann früh ins Bett gegangen. Am Samstagmorgen sind sie mit dem Zug in die Berge gefahren — die Fahrt hat drei Stunden gedauert. Im Hotel haben sie schnell eingecheckt. Am Nachmittag sind sie gewandert und haben die schöne Landschaft fotografiert. Am Abend sind sie müde, aber glücklich ins Hotel zurückgekommen. Dort haben sie zusammen gelacht und Musik gehört. Am Sonntag sind sie noch einmal gewandert, bevor sie am Abend wieder mit dem Zug nach Hause gefahren sind. „Ein perfektes Wochenende!", haben Lisa und Tom am Ende gesagt.
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Wohin sind Lisa und Tom gefahren?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) ans Meer</span>
+      <span><span class="mc-kreis"></span> b) in die Berge</span>
+      <span><span class="mc-kreis"></span> c) in die Stadt</span>
+    </div>
+    <div class="mc-frage">2. Was haben sie am Freitagabend gemacht?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie haben die Koffer gepackt</span>
+      <span><span class="mc-kreis"></span> b) sie sind sofort gefahren</span>
+      <span><span class="mc-kreis"></span> c) sie haben telefoniert</span>
+    </div>
+    <div class="mc-frage">3. Wie lange hat die Zugfahrt gedauert?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) eine Stunde</span>
+      <span><span class="mc-kreis"></span> b) drei Stunden</span>
+      <span><span class="mc-kreis"></span> c) einen ganzen Tag</span>
+    </div>
+    <div class="mc-frage">4. Was haben sie am Nachmittag gemacht?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie sind gewandert und haben fotografiert</span>
+      <span><span class="mc-kreis"></span> b) sie sind sofort nach Hause gefahren</span>
+      <span><span class="mc-kreis"></span> c) sie haben nur telefoniert</span>
+    </div>
+    <div class="mc-frage">5. Wie sind sie am Abend ins Hotel zurückgekommen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) mit dem Auto</span>
+      <span><span class="mc-kreis"></span> b) müde, aber glücklich</span>
+      <span><span class="mc-kreis"></span> c) mit dem Flugzeug</span>
+    </div>
+    <div class="mc-frage">6. Wann sind sie wieder nach Hause gefahren?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) am Samstagabend</span>
+      <span><span class="mc-kreis"></span> b) am Sonntagabend</span>
+      <span><span class="mc-kreis"></span> c) am Montagmorgen</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Bist du schon einmal gewandert oder verreist? Wohin bist du gefahren oder geflogen?</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Bạn đã từng đi bộ đường dài hay đi du lịch xa chưa? Bạn đã đi đâu (bằng xe hay máy bay)?</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 20</span>
+    <span>Seite 5 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 6 (Freies Sprechen + Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 20</h1>
+      <h2>Freies Sprechen, Hausaufgaben &amp; Antworten / Nói tự do, bài tập về nhà &amp; đáp án</h2>
+    </div>
+    <div class="badge">A1 · Lektion 20</div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">reisen</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Wohin bist du letztes Jahr gereist?</div>
+      <div class="anweisung-vn">Năm ngoái bạn đã đi du lịch ở đâu?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">Verkehrsmittel</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Wie bist du gestern nach Hause gekommen?</div>
+      <div class="anweisung-vn">Hôm qua bạn đã về nhà bằng cách nào?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">wandern</div>
+      <div class="prompt-row"><span class="prompt-tag satz">Satz</span></div>
+      <div class="anweisung-de">Bilde einen Perfekt-Satz mit „wandern" oder „reisen".</div>
+      <div class="anweisung-vn">Đặt một câu Perfekt với „wandern" hoặc „reisen".</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">fliegen</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Bist du schon einmal geflogen? Wohin?</div>
+      <div class="anweisung-vn">Bạn đã từng đi máy bay chưa? Đi đâu?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>sein-Verben-Liste lernen / Học danh sách động từ sein:</strong> Schreibe alle Verben aus dieser Lektion mit „ist"/„hat" + Partizip auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết ra giấy tất cả động từ trong bài này cùng „ist"/„hat" + phân từ — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">✏️ <strong>Meine letzte Reise / Chuyến đi gần nhất của tôi:</strong> Schreibe 5–6 Sätze im Perfekt über deinen letzten Ausflug oder Urlaub — benutze mindestens 3 sein-Verben und mindestens 2 haben-Verben.
+      <div class="ha-vn">Viết 5–6 câu ở thì Perfekt kể về chuyến dã ngoại hoặc kỳ nghỉ gần nhất của bạn — dùng ít nhất 3 động từ sein và 2 động từ haben.</div>
+    </div>
+    <div class="ha-item">🚂 <strong>Perfekt-Express zu Hause / Chơi Chuyến tàu tốc hành Perfekt ở nhà:</strong> Spiele das Würfelspiel von Seite 4 noch dreimal mit neuen Kombinationen und zähle deine Punkte.
+      <div class="ha-vn">Chơi trò xúc xắc ở trang 4 thêm ba lần nữa với các tổ hợp mới và tính điểm của bạn.</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 19):</strong> 1. habe &nbsp; 2. telefoniert &nbsp; 3. Ich habe gestern gelernt.</p>
+    <p><strong>Übung 1 (nur sein):</strong> 1. bin &nbsp; 2. bist &nbsp; 3. ist &nbsp; 4. sind &nbsp; 5. seid &nbsp; 6. sind</p>
+    <p><strong>Übung 1b (sein/haben-Form):</strong> 1. bin &nbsp; 2. haben &nbsp; 3. bist &nbsp; 4. hat &nbsp; 5. seid &nbsp; 6. sind</p>
+    <p><strong>Übung 1c (ganze Perfekt-Sätze):</strong> 1. Ich bin letztes Jahr nach Spanien geflogen. &nbsp; 2. Wir haben gestern die Wohnung geputzt. &nbsp; 3. Du bist am Sonntag ins Gebirge gewandert. &nbsp; 4. Sie hat gestern Abend lange telefoniert. &nbsp; 5. Ihr seid letzten Sommer mit dem Zug gefahren. &nbsp; 6. Sie sind vorgestern spät gekommen.</p>
+    <p><strong>Übung 2 (Partizip mit ist):</strong> 1. gegangen &nbsp; 2. gefahren &nbsp; 3. geflogen &nbsp; 4. gekommen &nbsp; 5. gereist &nbsp; 6. gewandert</p>
+    <p><strong>Übung 2b (Fehler korrigieren):</strong> 1. Ich bin geflogen. &nbsp; 2. Du bist gegangen. &nbsp; 3. Wir sind gefahren. &nbsp; 4. Sie ist gewandert. &nbsp; 5. Er ist gekommen. &nbsp; 6. Ihr seid gereist.</p>
+    <p><strong>Perfekt-Express, Beispiele:</strong> 1. (3,2,1) Er ist letztes Jahr nach Italien gefahren. &nbsp; 2. (1,4,6) Ich habe gestern Abend telefoniert. (+5 Bonus, da nur die Zeitangabe verwendet wurde!) &nbsp; 3. (5,5,5) Ihr seid letzten Sommer in die Berge gewandert.</p>
+    <p><strong>Leseverständnis:</strong> 1. b) in die Berge &nbsp; 2. a) sie haben die Koffer gepackt &nbsp; 3. b) drei Stunden &nbsp; 4. a) sie sind gewandert und haben fotografiert &nbsp; 5. b) müde, aber glücklich &nbsp; 6. b) am Sonntagabend</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Letztes Jahr bin ich nach Portugal gereist. &nbsp; Karte 2: Ich bin gestern mit dem Bus nach Hause gekommen. &nbsp; Karte 3: Wir sind am Wochenende gewandert. &nbsp; Karte 4: Ja, ich bin schon nach England geflogen.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 20 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 6 / 6</span>
+  </div>
+</div>
+
+</body>
+</html>

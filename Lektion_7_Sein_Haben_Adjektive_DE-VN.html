@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 7</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 8mm 13mm 4mm 13mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.2; font-size: 11px; }
+.compact .doc-header { padding-bottom: 3px; margin-bottom: 5px; }
+.compact .section-title { margin: 5px 0 3px 0; }
+.compact table { margin-bottom: 3px; }
+.compact table.vocab th, .compact table.vocab td { padding: 2px 5px; }
+.compact .gram-box { padding: 4px 8px; margin-bottom: 3px; }
+.compact .tip-box { padding: 3px 7px; margin: 2px 0; }
+.compact .warn-box { padding: 3px 7px; margin: 2px 0 5px 0; }
+.compact .ubung-header { padding: 2px 8px; }
+.compact .ubung-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .fill-line { margin-bottom: 1px; }
+.compact .footer { margin-top: 3px; padding-top: 2px; }
+.compact .phon-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .kultur-box { padding: 4px 9px; margin: 3px 0 5px 0; }
+.compact .dialog-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .lese-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .mc-block { margin-bottom: 3px; }
+.compact .mc-optionen { margin-bottom: 4px; }
+.compact .ha-box { padding: 4px 9px; }
+.compact .antworten { padding: 4px 9px; }
+.compact .wiederholung-box { padding: 4px 9px; margin-bottom: 5px; }
+.compact .karten-grid { margin-top: 3px; gap: 6px; }
+.compact .sprech-karte { padding: 5px 7px; }
+.compact .sprech-karte .karte-num { padding: 1px 7px; margin-bottom: 3px; }
+.compact .sprech-karte .wort-pill { font-size: 11.5px; padding: 2px 5px; margin-bottom: 3px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 3px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 3px; }
+.compact .game-box { padding: 4px 9px; margin-bottom: 3px; }
+.compact .gegenteile-box { padding: 5px 10px; margin-bottom: 4px; }
+.compact .wortsalat-item { margin-bottom: 4px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .game-box: Gamification ===== */
+.game-box { background: linear-gradient(135deg, #fdf4ff 0%, #eff6ff 100%); border: 1.5px dashed #a78bfa; border-radius: 8px; padding: 6px 11px; margin-bottom: 4px; }
+.game-box .game-title { font-size: 10.5px; font-weight: 700; color: #6d28d9; margin-bottom: 2px; }
+.game-box .game-de { font-size: 10px; color: #1a1a1a; margin-bottom: 2px; }
+.game-box .game-vn { font-size: 9.5px; color: #7c3aed; font-style: italic; margin-bottom: 3px; }
+.raetsel-item { font-size: 10.5px; margin-bottom: 3px; color: #4c1d95; }
+.raetsel-item .rt-num { font-weight: 700; color: #6d28d9; margin-right: 3px; }
+
+/* ===== .gegenteile-box: Antonyme-Zuordnungsspiel (Übung 1) ===== */
+.gegenteile-box { border: 1px solid #cbd5e1; border-radius: 8px; padding: 7px 12px; background: #fafafa; margin-bottom: 5px; }
+.gegenteile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 18px; }
+.gegenteile-spalte-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.4px; color: #94a3b8; font-weight: 700; margin-bottom: 3px; }
+.gt-item { display: flex; align-items: center; gap: 6px; font-size: 10.5px; margin-bottom: 3px; }
+.gt-chip { display: inline-block; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-weight: 700; font-size: 10px; padding: 2px 8px; border-radius: 6px; min-width: 18px; text-align: center; }
+.gt-letter { display: inline-block; background: #fce7f3; border: 1px solid #f9a8d4; color: #9d174d; font-weight: 700; font-size: 10px; padding: 2px 8px; border-radius: 6px; min-width: 18px; text-align: center; }
+.gt-blank { border-bottom: 1px solid #94a3b8; min-width: 26px; display: inline-block; text-align: center; }
+
+/* ===== .wortsalat: Situations-Satzbau-Scramble (Übung 2) ===== */
+.wortsalat-item { margin-bottom: 6px; }
+.wortsalat-num { font-weight: 700; color: #64748b; margin-right: 4px; font-size: 10.5px; }
+.wortsalat-situation { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 2px; margin-left: 20px; }
+.wortsalat-woerter { display: inline-flex; gap: 4px; flex-wrap: wrap; vertical-align: middle; }
+.wort-chip { display: inline-block; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 6px; }
+.wortsalat-answer-row { display: flex; align-items: center; gap: 6px; margin-top: 2px; margin-left: 20px; }
+.wortsalat-arrow { color: #94a3b8; font-weight: 700; }
+
+.postkarte-body { padding: 8px 12px; background: #f0fdff; font-size: 10.5px; line-height: 1.55; min-height: 90px; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Phonetik + Lernziele + Wortschatz + Verben-Tabelle) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 7</h1>
+      <h2>Sein &amp; Haben im Detail</h2>
+      <h2>„Sein" &amp; „Haben" chi tiết</h2>
+    </div>
+    <div class="badge">A1 · Lektion 7</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 6 / Ôn tập bài 6</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: Possessivartikel &amp; Plural / Khởi động ngữ pháp: đại từ sở hữu &amp; số nhiều</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">mein / meine</div>
+        <div class="wh-mund">Ergänze: ___ Mutter ist nett. (die Mutter)</div>
+        <div class="wh-beispiel">Điền mạo từ sở hữu — danh từ giống cái cần đuôi gì?</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Plural</div>
+        <div class="wh-mund">Wie heißt der Plural von „das Kind"?</div>
+        <div class="wh-beispiel">Dạng số nhiều của „das Kind" là gì?</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">dein</div>
+        <div class="wh-mund">Ergänze: Ist das ___ Bruder? (der Bruder)</div>
+        <div class="wh-beispiel">Đại từ sở hữu trước danh từ giống đực có cần đuôi „-e" không?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu học tập</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ „haben" vollständig konjugieren und sicher von „sein" unterscheiden <span class="vn">— chia đầy đủ động từ „haben" và phân biệt chắc chắn với „sein"</span></p>
+    <p class="de">✔ Zustände mit „sein" + Adjektiv beschreiben (ohne Endung!) <span class="vn">— mô tả trạng thái bằng „sein" + tính từ (không chia đuôi!)</span></p>
+    <p class="de">✔ Besitz und Gefühle als Nomen mit „haben" ausdrücken <span class="vn">— diễn đạt sự sở hữu và cảm xúc dưới dạng danh từ bằng „haben"</span></p>
+    <p class="de">✔ Die klassische „haben-vs.-sein"-Falle sicher vermeiden <span class="vn">— tránh chắc chắn cái bẫy kinh điển „haben" và „sein"</span></p>
+  </div>
+
+  <!-- Legende -->
+  <div class="section-title">🎨 Farbkodierung / Mã màu mạo từ</div>
+  <div class="legend">
+    <div class="legend-item"><span class="der">der</span> maskulin / giống đực</div>
+    <div class="legend-item"><span class="die">die</span> feminin / giống cái</div>
+    <div class="legend-item"><span class="das">das</span> neutral / giống trung</div>
+    <div class="legend-item"><span class="warn">⚠️</span> unregelmäßig / bất quy tắc</div>
+  </div>
+
+  <!-- Phonetik -->
+  <div class="section-title">🔊 Aussprache-Minute / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">„ich" (Ich-Laut) vs. „ach" (Ach-Laut) — hai âm "ch" khác nhau, KHÔNG phải "sch"!</div>
+    <div class="phon-de">Beim Ich-Laut bleiben die Lippen flach. Der Laut klingt <strong>nicht</strong> wie „sch“. Beim Ach-Laut kommt der Laut weiter hinten aus dem Hals. Übe den Unterschied mit: <strong>ich habe</strong> ↔ <strong>ach</strong>.</div>
+    <div class="phon-vn">Âm „ich": giữ môi phẳng, không phát âm như „sch". Âm „ach" được tạo ở phía sau cổ họng. Hãy luyện sự khác biệt với: „<strong>ich</strong> habe" ↔ „<strong>ach</strong>".
+Beispiele: <strong>ich</strong> (ich-Laut) · m<strong>i</strong>ch (ich-Laut) · <strong>ach</strong> (ach-Laut) · Bu<strong>ch</strong> (ach-Laut) · glü<strong>ckl</strong>i<strong>ch</strong> (ich-Laut)</div>
+  </div>
+
+  <!-- Wortschatz -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Gefühle &amp; Eigenschaften / Bảng từ vựng: Cảm xúc &amp; đặc điểm</div>
+  <table class="vocab">
+    <colgroup><col style="width:14%"><col style="width:15%"><col style="width:46%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Adjektiv</th><th>Aussprache</th><th>Beispielsatz</th><th>Tiếng Việt (Adjektiv)</th></tr></thead>
+    <tbody>
+      <tr><td>müde</td><td class="phonetik">muy-đơ</td><td>Ich bin müde. <span class="vn-word">Tôi mệt.</span></td><td class="vn-word">mệt</td></tr>
+      <tr><td>glückli<strong>ch</strong></td><td class="phonetik">glúc-lích <span style="color:#94a3b8;">(Ich-Laut: môi phẳng, không tròn môi như "sch")</span></td><td>Sie ist glücklich. <span class="vn-word">Cô ấy hạnh phúc.</span></td><td class="vn-word">hạnh phúc/vui</td></tr>
+      <tr><td>traurig</td><td class="phonetik">trao-rích <span style="color:#94a3b8;">(đuôi "-ig" đọc như "-ich")</span></td><td>Er ist traurig. <span class="vn-word">Anh ấy buồn.</span></td><td class="vn-word">buồn</td></tr>
+      <tr><td>hungrig</td><td class="phonetik">hung-rích</td><td>Wir sind hungrig. <span class="vn-word">Chúng tôi đói.</span></td><td class="vn-word">đói</td></tr>
+      <tr><td>durstig</td><td class="phonetik">đua-stích</td><td>Ich bin durstig. <span class="vn-word">Tôi khát.</span></td><td class="vn-word">khát</td></tr>
+      <tr><td>nervö<strong>s</strong></td><td class="phonetik">ne-vơ<strong>s</strong></td><td>Max ist nervös. <span class="vn-word">Max đang lo lắng.</span></td><td class="vn-word">lo lắng/hồi hộp</td></tr>
+      <tr><td>gestre<strong>sst</strong></td><td class="phonetik">gơ-stré<strong>t</strong></td><td>Die Chefin ist gestresst. <span class="vn-word">Sếp nữ đang căng thẳng.</span></td><td class="vn-word">căng thẳng/áp lực</td></tr>
+      <tr><td>entspann<strong>t</strong></td><td class="phonetik">ent-span<strong>t</strong></td><td>Im Urlaub bin ich entspannt. <span class="vn-word">Trong kỳ nghỉ, tôi thấy thư giãn.</span></td><td class="vn-word">thư giãn</td></tr>
+      <tr><td>krank</td><td class="phonetik">kran-k</td><td>Mein Vater ist krank. <span class="vn-word">Bố tôi bị ốm.</span></td><td class="vn-word">ốm/bệnh</td></tr>
+      <tr><td>gesun<strong>d</strong></td><td class="phonetik">gơ-zun<strong>t</strong> <span style="color:#94a3b8;">(chữ "d" cuối nhưng đọc nhẹ thành "t")</span></td><td>Die Kinder sind gesund. <span class="vn-word">Bọn trẻ khỏe mạnh.</span></td><td class="vn-word">khỏe mạnh</td></tr>
+      <tr><td>fi<strong>t</strong></td><td class="phonetik">fít</td><td>Ihr seid fit! <span class="vn-word">Các bạn rất khỏe/sung sức!</span></td><td class="vn-word">khỏe/sung sức</td></tr>
+      <tr><td>sa<strong>tt</strong></td><td class="phonetik">zát</td><td>Danke, ich bin satt. <span class="vn-word">Cảm ơn, tôi no rồi.</span></td><td class="vn-word">no (bụng)</td></tr>
+      <tr><td>gro<strong>ß</strong></td><td class="phonetik">grô<strong>s</strong></td><td>Das Auto ist groß. <span class="vn-word">Chiếc xe này to.</span></td><td class="vn-word">to/lớn/cao</td></tr>
+      <tr><td>klein</td><td class="phonetik">klain</td><td>Die Autos sind klein. <span class="vn-word">Những chiếc xe này nhỏ.</span></td><td class="vn-word">nhỏ/thấp</td></tr>
+      <tr><td>ne<strong>tt</strong></td><td class="phonetik">nét</td><td>Du bist sehr nett. <span class="vn-word">Bạn rất tốt bụng.</span></td><td class="vn-word">tốt bụng/dễ mến</td></tr>
+      <tr><td>freundli<strong>ch</strong></td><td class="phonetik">froin-lích <span style="color:#94a3b8;">(Ich-Laut: môi phẳng, không tròn môi như "sch")</span></td><td>Die Verkäuferin ist freundlich. <span class="vn-word">Nhân viên bán hàng nữ đó rất thân thiện.</span></td><td class="vn-word">thân thiện</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Verben-Tabelle: haben & sein -->
+  <div class="section-title">🔧 Verben-Tabelle: „haben" (neu) &amp; „sein" (Wiederholung) / Bảng động từ: „haben" (mới) &amp; „sein" (ôn tập)</div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Person</th><th>haben</th><th>sein</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td><strong>habe</strong> (ha-bơ)</td><td>bin (bin)</td></tr>
+      <tr><td class="pronomen">du</td><td><strong>hast</strong> (hát) <span class="warn">⚠️</span></td><td>bis<strong>t</strong> (bít)</td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td><strong>hat</strong> (hát) <span class="warn">⚠️</span></td><td>is<strong>t</strong> (ít)</td></tr>
+      <tr><td class="pronomen">wir</td><td><strong>haben</strong> (ha-bơn)</td><td>sin<strong>d</strong> (zin<strong>t</strong>)</td></tr>
+      <tr><td class="pronomen">ihr</td><td><strong>habt</strong> (háp<strong>t</strong>)</td><td>sei<strong>d</strong> (zai<strong>t</strong>)</td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td><strong>haben</strong> (ha-bơn)</td><td>sin<strong>d</strong> (zin<strong>t</strong>)</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 „haben" ist nur bei du/er/sie/es unregelmäßig — das „b" verschwindet (du ha<u>b</u>st → du ha<strong>st</strong>, er ha<strong>t</strong>). Merke dir nur: <strong>du → hast</strong>, <strong>er/sie/es → hat</strong>. Alle anderen Formen sind regelmäßig.<!-- ersetzt Merksatz -->
+„ihr habt" dagegen ist ganz regelmäßig (Stamm + „-t"). Merke dir also nur die beiden Ausnahmen!</div>
+    <div class="tip-vn">💡 „haben" chỉ bất quy tắc ở ngôi du/er/sie/es — chữ „b" biến mất (du ha<u>b</u>st → du ha<strong>st</strong>, er ha<strong>t</strong>). Còn „ihr habt" thực ra biến đổi hoàn toàn theo quy tắc (thân từ + „-t"). Vậy bạn chỉ cần nhớ hai trường hợp ngoại lệ này!</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 7</span>
+    <span>Seite 1 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Grammatik 1: haben im Detail + Häufige Fehler + Übung 1 + Kulturinfo 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 7</h1>
+      <h2>Die „haben-vs.-sein"-Falle / Cái bẫy „haben" và „sein"</h2>
+    </div>
+    <div class="badge">A1 · Lektion 7</div>
+  </div>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — „haben" im Detail: Besitz &amp; Gefühl-als-Nomen / Ngữ pháp 1: „haben" chi tiết — sở hữu &amp; cảm xúc dưới dạng danh từ</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Merke: „haben" + <strong>Nomen</strong> (ein Auto, Hunger, Angst, Zeit) — „sein" + <strong>Adjektiv</strong> (müde, hungrig, nervös). Das Nomen nach „haben" braucht oft KEINEN Artikel, wenn es ein Gefühl beschreibt!</div>
+    <div class="tip-vn">💡 Ghi nhớ: „haben" + <strong>danh từ</strong> (một chiếc xe, đói, sợ hãi, thời gian) — „sein" + <strong>tính từ</strong> (mệt, đói, lo lắng). Danh từ sau „haben" thường <strong>KHÔNG cần mạo từ</strong> khi nó diễn tả một cảm xúc!</div>
+  </div>
+  <table class="vocab">
+    <colgroup><col style="width:34%"><col style="width:32%"><col style="width:34%"></colgroup>
+    <thead><tr><th>Ausdruck mit haben</th><th>Beispiel</th><th>Tiếng Việt (Beispielsatz)</th></tr></thead>
+    <tbody>
+      <tr><td>Hunger haben</td><td>Ich habe Hunger.</td><td class="vn-word">Tôi đói.</td></tr>
+      <tr><td>Durst haben</td><td>Er hat Durst.</td><td class="vn-word">Anh ấy khát.</td></tr>
+      <tr><td>Angst haben</td><td>Wir haben Angst.</td><td class="vn-word">Chúng tôi sợ.</td></tr>
+      <tr><td>Zeit haben</td><td>Hast du Zeit?</td><td class="vn-word">Bạn có thời gian không?</td></tr>
+      <tr><td>Glück haben</td><td>Ihr habt Glück!</td><td class="vn-word">Các bạn thật may mắn!</td></tr>
+      <tr><td><span class="der">der</span>Bruder / <span class="das">das</span>Auto haben</td><td>Sie hat einen Bruder. / Ich habe ein Auto.</td><td class="vn-word">Cô ấy có một người anh/em trai. / Tôi có một chiếc xe.</td></tr>
+    </tbody>
+  </table>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich habe müde."</span> → <span class="wb-ok">✅ „Ich bin müde."</span> — „müde" ist ein Adjektiv (Zustand), es braucht „sein", nicht „haben"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich habe müde."</span> → <span class="wb-ok">✅ „Ich bin müde."</span> — „müde" là tính từ (chỉ trạng thái), cần dùng „sein", không dùng „haben"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich bin Hunger."</span> → <span class="wb-ok">✅ „Ich habe Hunger." / „Ich bin hungrig."</span> — „Hunger" ist ein Nomen → „haben". „hungrig" ist ein Adjektiv → „sein". Beide Sätze sind richtig, aber nicht gemischt!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich bin Hunger."</span> → <span class="wb-ok">✅ „Ich habe Hunger." / „Ich bin hungrig."</span> — „Hunger" là danh từ → dùng „haben"; „hungrig" là tính từ → dùng „sein". Cả hai câu đều đúng, nhưng không được trộn lẫn cách dùng!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich habe 30 Jahre."</span> → <span class="wb-ok">✅ „Ich bin 30 Jahre alt."</span> — das Alter beschreibt einen Zustand mit „sein" + Adjektiv „alt", nicht „haben"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich habe 30 Jahre."</span> → <span class="wb-ok">✅ „Ich bin 30 Jahre alt."</span> — tuổi tác trong tiếng Đức diễn đạt bằng „sein" + tính từ „alt" để chỉ trạng thái, <strong>KHÔNG</strong> dùng „haben"!</div>
+  </div>
+
+  <!-- Übung 1: Gegenteile-Zuordnungsspiel -->
+  <div class="ubung-header">Übung 1 — Gegenteile-Zuordnungsspiel: Antonyme finden &amp; Sätze bilden / Trò chơi ghép đối lập: tìm từ trái nghĩa &amp; đặt câu</div>
+  <div class="ubung-body">
+    <div class="instr-de">Teil A: Ordne jedem Adjektiv links den passenden Buchstaben des Gegenteils rechts zu. Teil B: Bilde damit vollständige Sätze nach dem Muster.</div>
+    <div class="instr-vn">Phần A: Nối mỗi tính từ bên trái với chữ cái của từ trái nghĩa tương ứng bên phải. Phần B: Dùng các cặp đó để đặt câu hoàn chỉnh theo mẫu.</div>
+    <div class="gegenteile-box">
+      <div class="gegenteile-grid">
+        <div>
+          <div class="gegenteile-spalte-label">Adjektiv</div>
+          <div class="gt-item"><span class="gt-chip">1</span> traurig <span class="gt-blank"></span></div>
+          <div class="gt-item"><span class="gt-chip">2</span> müde <span class="gt-blank"></span></div>
+          <div class="gt-item"><span class="gt-chip">3</span> krank <span class="gt-blank"></span></div>
+          <div class="gt-item"><span class="gt-chip">4</span> hungrig <span class="gt-blank"></span></div>
+          <div class="gt-item"><span class="gt-chip">5</span> groß <span class="gt-blank"></span></div>
+          <div class="gt-item"><span class="gt-chip">6</span> gestresst <span class="gt-blank"></span></div>
+        </div>
+        <div>
+          <div class="gegenteile-spalte-label">Gegenteil</div>
+          <div class="gt-item"><span class="gt-letter">A</span> satt</div>
+          <div class="gt-item"><span class="gt-letter">B</span> entspannt</div>
+          <div class="gt-item"><span class="gt-letter">C</span> glücklich</div>
+          <div class="gt-item"><span class="gt-letter">D</span> gesund</div>
+          <div class="gt-item"><span class="gt-letter">E</span> klein</div>
+          <div class="gt-item"><span class="gt-letter">F</span> fit</div>
+        </div>
+      </div>
+    </div>
+    <div class="tip-box">
+      <div class="tip-de">✏️ Muster: „Ich bin nicht traurig, ich bin glücklich!" — Schreibe jetzt 6 eigene Sätze nach diesem Muster mit allen Paaren aus der Liste.</div>
+      <div class="tip-vn">✏️ Ví dụ mẫu: „Ich bin nicht traurig, ich bin glücklich!" (Tôi không buồn, tôi vui!) — Bây giờ hãy tự viết 6 câu theo mẫu này, dùng tất cả các cặp từ trong danh sách.</div>
+    </div>
+    <div class="fill-line"><span class="num">1.</span> Ich bin nicht <span class="blank"></span>, ich bin <span class="blank"></span>!</div>
+    <div class="fill-line"><span class="num">2.</span> Ich bin nicht <span class="blank"></span>, ich bin <span class="blank"></span>!</div>
+    <div class="fill-line"><span class="num">3.</span> Ich bin nicht <span class="blank"></span>, ich bin <span class="blank"></span>!</div>
+    <div class="fill-line"><span class="num">4.</span> Ich bin nicht <span class="blank"></span>, ich bin <span class="blank"></span>!</div>
+    <div class="fill-line"><span class="num">5.</span> Ich bin nicht <span class="blank"></span>, ich bin <span class="blank"></span>!</div>
+    <div class="fill-line"><span class="num">6.</span> Ich bin nicht <span class="blank"></span>, ich bin <span class="blank"></span>!</div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Direktheit bei Gefühlen / Góc văn hóa 1: Sự thẳng thắn khi nói về cảm xúc</div>
+    <div class="kb-de">Deutsche sprechen über ihre Gefühle oft sehr <b>direkt und ungefiltert</b>. Auf die Frage „Wie geht's?" hört man nicht immer nur ein höfliches „Gut, danke!" — genauso normal sind ehrliche Antworten wie „Ich bin gestresst" oder „Mir ist langweilig". Ein höfliches Lächeln, das negative Gefühle verbirgt, ist in Deutschland weniger üblich als in vielen asiatischen Kulturen. Diese Offenheit ist keine Unhöflichkeit — sie gilt als ehrlich und authentisch!</div>
+    <div class="kb-vn">Người Đức thường nói về cảm xúc của mình rất <b>thẳng thắn, không che giấu</b>. Khi được hỏi „Wie geht's?" (Bạn khỏe không?), câu trả lời không phải lúc nào cũng là „Gut, danke!" (Tốt, cảm ơn!) lịch sự — những câu trả lời thật lòng như „Ich bin gestresst" (Tôi đang căng thẳng) hay „Mir ist langweilig" (Tôi thấy chán) cũng hoàn toàn bình thường. Nụ cười lịch sự che giấu cảm xúc tiêu cực ít phổ biến ở Đức hơn nhiều so với nhiều nền văn hóa châu Á. Sự thẳng thắn này không phải là bất lịch sự — nó được xem là chân thật và đáng tin cậy! Điều này khá khác với Việt Nam, nơi việc giữ thể diện và tránh làm mất lòng người khác thường được ưu tiên hơn khi trả lời những câu hỏi xã giao.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 7</span>
+    <span>Seite 2 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Grammatik 2: Adjektiv-Prädikativ + Häufige Fehler + Übung 2 + Kulturinfo 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 7</h1>
+      <h2>Adjektive ohne Endung &amp; Satzbau / Tính từ không đuôi &amp; cấu trúc câu</h2>
+    </div>
+    <div class="badge">A1 · Lektion 7</div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Das prädikative Adjektiv: Keine Endung! / Ngữ pháp 2: Tính từ vị ngữ — không chia đuôi!</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Große Erleichterung: Steht das Adjektiv nach „sein" (am Satzende), bleibt es <strong>IMMER unverändert</strong> — egal ob der/die/das oder Singular/Plural! Das nennt man das <strong>prädikative Adjektiv</strong>.</div>
+    <div class="tip-vn">💡 Tin vui: Khi tính từ đứng sau „sein" (ở cuối câu), nó <strong>LUÔN LUÔN giữ nguyên</strong> — bất kể der/die/das hay số ít/số nhiều! Đây gọi là <strong>tính từ vị ngữ</strong>.</div>
+  </div>
+  <table class="konj">
+    <colgroup><col style="width:80px"><col style="width:*"><col style="width:26%"><col style="width:26%"></colgroup>
+    <thead><tr><th class="pronomen-col">Genus/Numerus</th><th>Beispiel</th><th>Adjektiv-Form</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen"><span class="der">der</span>(m)</td><td>Der Mann ist müde.</td><td><strong>müde</strong> (unverändert)</td><td class="small">Người đàn ông này mệt.</td></tr>
+      <tr><td class="pronomen"><span class="die">die</span>(f)</td><td>Die Frau ist glücklich.</td><td><strong>glücklich</strong> (unverändert)</td><td class="small">Người phụ nữ này hạnh phúc.</td></tr>
+      <tr><td class="pronomen"><span class="das">das</span>(n)</td><td>Das Kin<strong>d</strong> ist krank.</td><td><strong>krank</strong> (unverändert)</td><td class="small">Đứa trẻ này bị ốm.</td></tr>
+      <tr><td class="pronomen">Plural</td><td>Die Autos sind klein.</td><td><strong>klein</strong> (unverändert)</td><td class="small">Những chiếc xe này nhỏ.</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">🔮 Kleiner Ausblick: Steht das Adjektiv später einmal <strong>vor</strong> dem Nomen (z. B. „ein müder Mann"), bekommt es plötzlich eine Endung — das lernst du in einer späteren Lektion (Adjektivdeklination). Heute gilt: nach „sein" → immer ohne Endung!</div>
+    <div class="tip-vn">🔮 Bật mí nhỏ: Sau này, khi tính từ đứng <strong>trước</strong> danh từ (ví dụ „ein müder Mann"), nó sẽ bất ngờ cần thêm đuôi — nội dung này bạn sẽ học ở bài sau (biến cách tính từ). Hôm nay ghi nhớ: đứng sau „sein" → luôn luôn không chia đuôi!</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich bin müdes."</span> → <span class="wb-ok">✅ „Ich bin müde."</span> — nach „sein" bekommt das Adjektiv NIEMALS eine Endung!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich bin müdes."</span> → <span class="wb-ok">✅ „Ich bin müde."</span> — khi tính từ đứng sau „sein", <strong>KHÔNG BAO GIỜ</strong> thêm đuôi!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Die Autos sind kleine."</span> → <span class="wb-ok">✅ „Die Autos sind klein."</span> — auch im Plural bleibt das prädikative Adjektiv unverändert!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Die Autos sind kleine."</span> → <span class="wb-ok">✅ „Die Autos sind klein."</span> — ngay cả ở số nhiều, tính từ vị ngữ vẫn giữ nguyên không đổi!</div>
+  </div>
+
+  <!-- Übung 2: Situations-Satzbau-Scramble -->
+  <div class="ubung-header">Übung 2 — Emotions-Check: Situations-Satzbau-Scramble / Kiểm tra cảm xúc: Sắp xếp câu theo tình huống</div>
+  <div class="ubung-body">
+    <div class="instr-de">Lies die Situation und bringe die Wörter in die richtige Reihenfolge — achte auf Verbposition und Adjektiv-Endung (keine!).</div>
+    <div class="instr-vn">Đọc tình huống và sắp xếp các từ theo đúng thứ tự — chú ý vị trí động từ và đuôi tính từ (không chia đuôi)!</div>
+
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">1.</span>
+      <div class="wortsalat-situation">Situation: Prüfung morgen 📝</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">Max</span><span class="wort-chip">nervös</span><span class="wort-chip">ist</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">2.</span>
+      <div class="wortsalat-situation">Situation: 22 Uhr, langer Arbeitstag 🌙</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">sehr</span><span class="wort-chip">wir</span><span class="wort-chip">müde</span><span class="wort-chip">sind</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">3.</span>
+      <div class="wortsalat-situation">Situation: leerer Kühlschrank, 14 Uhr 🍽️</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">Hunger</span><span class="wort-chip">ich</span><span class="wort-chip">habe</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">4.</span>
+      <div class="wortsalat-situation">Situation: neues Fahrrad geschenkt bekommen 🚲</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">glücklich</span><span class="wort-chip">Lena</span><span class="wort-chip">sehr</span><span class="wort-chip">ist</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">5.</span>
+      <div class="wortsalat-situation">Situation: Grippe, Bett, Tee 🤒</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">krank</span><span class="wort-chip">bin</span><span class="wort-chip">ich</span><span class="wort-chip">leider</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">6.</span>
+      <div class="wortsalat-situation">Situation: Deadline heute, viele E-Mails 💻</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">die</span><span class="wort-chip">gestresst</span><span class="wort-chip">Chefin</span><span class="wort-chip">ist</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Das Auto als Statussymbol? / Góc văn hóa 2: Ô tô — biểu tượng địa vị?</div>
+    <div class="kb-de">Traditionell hatte das Auto in Deutschland einen besonderen Stellenwert: die berühmte <b>Autobahn</b> ohne generelles Tempolimit auf vielen Abschnitten, deutsche Marken wie BMW, Mercedes und Volkswagen als Exportstolz — „Ich habe ein Auto" war lange auch ein kleines Statussymbol. Doch der Trend ändert sich: Immer mehr junge Menschen in Großstädten wie Berlin oder München sagen heute stolz „Ich habe <b>kein</b> Auto" und nutzen stattdessen <b>Carsharing</b>, Fahrrad oder öffentliche Verkehrsmittel — aus Umweltbewusstsein und weil ein eigenes Auto in der Stadt oft unpraktisch ist.</div>
+    <div class="kb-vn">Theo truyền thống, ô tô có vị trí đặc biệt ở Đức: <b>đường cao tốc Autobahn</b> nổi tiếng không giới hạn tốc độ chung trên nhiều đoạn đường, các thương hiệu Đức như BMW, Mercedes và Volkswagen là niềm tự hào xuất khẩu — „Ich habe ein Auto" (Tôi có xe hơi) từng là một biểu tượng địa vị nho nhỏ trong thời gian dài. Nhưng xu hướng đang thay đổi: ngày càng nhiều người trẻ ở các thành phố lớn như Berlin hay München tự hào nói „Ich habe <b>kein</b> Auto" (Tôi không có xe hơi) và thay vào đó sử dụng <b>xe chung (Carsharing)</b>, xe đạp hoặc phương tiện công cộng — vì ý thức bảo vệ môi trường và vì có xe riêng trong thành phố thường không tiện lợi. Ở Việt Nam, xe máy vẫn là phương tiện chủ đạo và việc sở hữu ô tô riêng vẫn thường được xem là một dấu hiệu thành đạt rõ rệt hơn.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 7</span>
+    <span>Seite 3 / 4</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Dialog + Lesetext + MC + Freies Sprechen + Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 7</h1>
+      <h2>Dialog, Lesetext &amp; Finale / Hội thoại, bài đọc &amp; tổng kết</h2>
+    </div>
+    <div class="badge">A1 · Lektion 7</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Đoạn hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Anna:</span>Hallo Ben! Wie geht's dir?</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Ehrlich gesagt, ich bin sehr gestre<strong>sst</strong>. Ich habe morgen eine Prüfung.</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Oh nein! Bist du auch nervö<strong>s</strong>?</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Ja, ein bisschen. Aber ich habe zum Glück viel Zeit zum Lernen.</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Hast du schon Hunger? Wir können zusammen essen.</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Ja, ich habe Hunger! Und danach bin ich bestimmt entspannter.</div>
+    <div class="dialog-line"><span class="speaker">Anna:</span>Übrigens: Hast du ein Auto? Dann können wir schnell zum Supermarkt fahren.</div>
+    <div class="dialog-line"><span class="speaker">Ben:</span>Nein, ich habe kein Auto — ich fahre meistens mit dem Bus. Das ist praktisch und günstig.</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Mein Name ist Sofia. Heute bin ich sehr müde, denn ich schlafe schlecht. Ich habe auch ein bisschen Kopfschmerzen, aber ich bin nicht krank — nur müde. Um 8 Uhr habe ich Hunger und esse ein Brötchen. Danach bin ich viel besser gelaunt! Meine Schwester Mia ist heute super glücklich: Sie hat ein neues Fahrrad. Wir haben beide kein Auto, denn wir wohnen mitten in der Stadt und finden Carsharing praktischer. Am Nachmittag habe ich eine wichtige Prüfung. Ich bin ein bisschen nervö<strong>s</strong>, aber ich lerne viel, also bin ich auch zuversichtlich. Nach der Prüfung sind Mia und ich sicher beide sehr entspannt!
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Warum ist Sofia heute müde?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie ist krank</span>
+      <span><span class="mc-kreis"></span> b) sie schläft schlecht</span>
+      <span><span class="mc-kreis"></span> c) sie hat eine Prüfung</span>
+    </div>
+    <div class="mc-frage">2. Was hat Sofia um 8 Uhr?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) Durst</span>
+      <span><span class="mc-kreis"></span> b) Angst</span>
+      <span><span class="mc-kreis"></span> c) Hunger</span>
+    </div>
+    <div class="mc-frage">3. Warum ist Mia heute glücklich?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie hat ein neues Fahrrad</span>
+      <span><span class="mc-kreis"></span> b) sie hat ein neues Auto</span>
+      <span><span class="mc-kreis"></span> c) sie ist nicht mehr müde</span>
+    </div>
+    <div class="mc-frage">4. Haben Sofia und Mia ein Auto?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) ja, ein großes</span>
+      <span><span class="mc-kreis"></span> b) ja, ein kleines</span>
+      <span><span class="mc-kreis"></span> c) nein, sie nutzen Carsharing</span>
+    </div>
+    <div class="mc-frage">5. Wie fühlt sich Sofia vor der Prüfung?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) nervös, aber zuversichtlich</span>
+      <span><span class="mc-kreis"></span> b) sehr traurig</span>
+      <span><span class="mc-kreis"></span> c) hungrig und durstig</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Und wie geht es dir heute? Bist du müde, glücklich oder gestresst? Warum?</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Còn hôm nay bạn thế nào? Bạn mệt, vui hay căng thẳng? Tại sao?</div>
+    </div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">müde / fit</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Wie fühlst du dich gerade?</div>
+      <div class="anweisung-vn">Bây giờ bạn cảm thấy thế nào?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">haben</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Hast du heute Hunger oder Durst?</div>
+      <div class="anweisung-vn">Hôm nay bạn đói hay khát?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">Auto / Handy</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Hast du ein Auto? Und ein Handy?</div>
+      <div class="anweisung-vn">Bạn có xe hơi không? Còn điện thoại?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">nervös</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Satz</span></div>
+      <div class="anweisung-de">Beschreibe eine Situation, in der du nervös bist!</div>
+      <div class="anweisung-vn">Hãy mô tả một tình huống khiến bạn lo lắng!</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">📊 <strong>Verben konjugieren / Chia động từ:</strong> Schreibe die vollständige Konjugation von „haben" für alle 6 Personen auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết đầy đủ cách chia động từ „haben" cho cả 6 ngôi vào một tờ giấy — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">✏️ <strong>Fünf Sätze schreiben / Viết năm câu:</strong> Schreibe 3 Sätze mit „sein" + Adjektiv und 2 Sätze mit „haben" + Nomen über dich selbst (z. B. „Ich bin …", „Ich habe …").
+      <div class="ha-vn">Viết 3 câu về bản thân bằng „sein" + tính từ, và 2 câu bằng „haben" + danh từ (ví dụ: „Ich bin …", „Ich habe …").</div>
+    </div>
+    <div class="ha-item">🔍 <strong>Fehlerjagd / Săn lỗi:</strong> Suche in einem beliebigen deutschen Text oder Lied 2 Sätze mit „sein" oder „haben" und prüfe, ob sie zu unseren Regeln passen.
+      <div class="ha-vn">Tìm trong một đoạn văn hoặc bài hát tiếng Đức bất kỳ 2 câu có „sein" hoặc „haben", rồi kiểm tra xem chúng có phù hợp với các quy tắc đã học hôm nay không.</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 6):</strong> 1. Meine Mutter ist nett. &nbsp; 2. die Kinder &nbsp; 3. Nein, bei maskulinen Nomen (der-Wörter) steht kein „-e": „dein Bruder".</p>
+    <p><strong>Übung 1 (Gegenteile):</strong> 1–C (traurig ↔ glücklich) &nbsp; 2–F (müde ↔ fit) &nbsp; 3–D (krank ↔ gesund) &nbsp; 4–A (hungrig ↔ satt) &nbsp; 5–E (groß ↔ klein) &nbsp; 6–B (gestresst ↔ entspannt). Beispielsätze: „Ich bin nicht traurig, ich bin glücklich!" / „Ich bin nicht müde, ich bin fit!" / „Ich bin nicht krank, ich bin gesund!" / „Ich bin nicht hungrig, ich bin satt!" / „Ich bin nicht groß, ich bin klein!" / „Ich bin nicht gestresst, ich bin entspannt!"</p>
+    <p><strong>Übung 2 (Satzbau-Scramble):</strong> 1. Max ist nervös. &nbsp; 2. Wir sind sehr müde. &nbsp; 3. Ich habe Hunger. &nbsp; 4. Lena ist sehr glücklich. &nbsp; 5. Ich bin leider krank. &nbsp; 6. Die Chefin ist gestresst.</p>
+    <p><strong>Leseverständnis:</strong> 1. b) sie schläft schlecht &nbsp; 2. c) Hunger &nbsp; 3. a) sie hat ein neues Fahrrad &nbsp; 4. c) nein, sie nutzen Carsharing &nbsp; 5. a) nervös, aber zuversichtlich</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ich bin gerade fit und motiviert. &nbsp; Karte 2: Ja, ich habe Hunger, aber keinen Durst. &nbsp; Karte 3: Nein, ich habe kein Auto, aber ich habe ein Handy. &nbsp; Karte 4: Ich bin nervös vor einer Prüfung.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 7 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 4 / 4</span>
+  </div>
+</div>
+
+</body>
+</html>

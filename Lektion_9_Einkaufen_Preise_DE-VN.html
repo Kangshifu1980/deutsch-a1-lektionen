@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 9</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 8mm 13mm 4mm 13mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; line-height: 1.35; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 17px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 9px 0 4px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 5px 10px; margin-bottom: 3px; }
+.lernziele p { font-size: 10.5px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 10px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size:10px; padding:1px 5px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 11px; font-weight: 700; }
+.legend { display: flex; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3px; font-size: 10px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 9.5px; }
+.vn-word { color: #0f766e; font-size: 10px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 3px 5px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 2.5px 5px; border: 0.5px solid #e2e8f0; font-size: 10.5px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 10px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 5px 9px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 10.5px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0; font-size: 10px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3px 7px; margin: 3px 0 6px 0; font-size: 10px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 6px 10px; margin-bottom: 5px; }
+.dialog-line { font-size: 10.5px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 6px 10px; margin-top: 5px; }
+.antworten h4 { font-size: 10.5px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 9.5px; color: #166534; margin-bottom: 1px; line-height: 1.3; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 5px 9px; margin: 4px 0; }
+.ha-box h4 { font-size: 10.5px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 10px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 9.5px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 9px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.small { font-size: 10.5px; }
+
+.compact { line-height: 1.2; font-size: 11px; }
+.compact .doc-header { padding-bottom: 3px; margin-bottom: 5px; }
+.compact .section-title { margin: 5px 0 3px 0; }
+.compact table { margin-bottom: 3px; }
+.compact table.vocab th, .compact table.vocab td { padding: 2px 5px; }
+.compact .gram-box { padding: 4px 8px; margin-bottom: 3px; }
+.compact .tip-box { padding: 3px 7px; margin: 2px 0; }
+.compact .warn-box { padding: 3px 7px; margin: 2px 0 5px 0; }
+.compact .ubung-header { padding: 2px 8px; }
+.compact .ubung-body { padding: 4px 8px; margin-bottom: 3px; }
+.compact .fill-line { margin-bottom: 1px; }
+.compact .footer { margin-top: 3px; padding-top: 2px; }
+.compact .phon-box { padding: 3px 8px; margin-bottom: 3px; }
+.compact .kultur-box { padding: 4px 9px; margin: 3px 0 5px 0; }
+.compact .dialog-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .lese-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .mc-block { margin-bottom: 3px; }
+.compact .mc-optionen { margin-bottom: 4px; }
+.compact .ha-box { padding: 4px 9px; }
+.compact .antworten { padding: 4px 9px; }
+.compact .wiederholung-box { padding: 4px 9px; margin-bottom: 5px; }
+.compact .karten-grid { margin-top: 3px; gap: 6px; }
+.compact .sprech-karte { padding: 5px 7px; }
+.compact .sprech-karte .karte-num { padding: 1px 7px; margin-bottom: 3px; }
+.compact .sprech-karte .wort-pill { font-size: 11.5px; padding: 2px 5px; margin-bottom: 3px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 3px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 3px; }
+.compact .game-box { padding: 4px 9px; margin-bottom: 3px; }
+.compact .gegenteile-box { padding: 5px 10px; margin-bottom: 4px; }
+.compact .warenkorb-box { padding: 5px 10px; margin-bottom: 4px; }
+.compact .wortsalat-item { margin-bottom: 4px; }
+.compact .baukasten-box { padding: 4px 9px; margin-bottom: 4px; }
+.compact .postkarte-body { padding: 6px 10px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4px 8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 10.5px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 9.5px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 9px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 9.5px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 6px 10px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 10.5px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4px 7px; }
+.wh-item .wh-laut { font-size: 11px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 9.5px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 9.5px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 9px 11px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 9.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 13.5px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4px 7px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 5px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .anweisung-de { font-size: 9px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 8.5px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 7px 12px; margin: 6px 0 10px 0; }
+.kultur-box .kb-title { font-size: 10.5px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 10.5px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 10px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 14px; flex-wrap: wrap; font-size: 10.5px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 5px 9px; margin-top: 4px; font-size: 10.5px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 10px; }
+
+/* ===== .warenkorb-box: Singular/Plural-Sortierspiel ===== */
+.warenkorb-box { border: 1px solid #cbd5e1; border-radius: 8px; padding: 7px 12px; background: #fafafa; margin-bottom: 5px; }
+.warenkorb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 18px; }
+.warenkorb-spalte-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.4px; color: #94a3b8; font-weight: 700; margin-bottom: 3px; }
+.wk-item { display: flex; align-items: center; gap: 6px; font-size: 10.5px; margin-bottom: 3px; }
+.wk-chip { display: inline-block; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-weight: 700; font-size: 10px; padding: 2px 8px; border-radius: 6px; min-width: 18px; text-align: center; }
+.wk-blank { border-bottom: 1px solid #94a3b8; min-width: 110px; display: inline-block; text-align: center; }
+
+/* ===== .gegenteile-box: Zuordnungsspiel (wiederverwendet für Frage-Antwort-Paare) ===== */
+.gegenteile-box { border: 1px solid #cbd5e1; border-radius: 8px; padding: 7px 12px; background: #fafafa; margin-bottom: 5px; }
+.gegenteile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 18px; }
+.gegenteile-spalte-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.4px; color: #94a3b8; font-weight: 700; margin-bottom: 3px; }
+.gt-item { display: flex; align-items: center; gap: 6px; font-size: 10.5px; margin-bottom: 3px; }
+.gt-chip { display: inline-block; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-weight: 700; font-size: 10px; padding: 2px 8px; border-radius: 6px; min-width: 18px; text-align: center; }
+.gt-letter { display: inline-block; background: #fce7f3; border: 1px solid #f9a8d4; color: #9d174d; font-weight: 700; font-size: 10px; padding: 2px 8px; border-radius: 6px; min-width: 18px; text-align: center; }
+.gt-blank { border-bottom: 1px solid #94a3b8; min-width: 26px; display: inline-block; text-align: center; }
+
+/* ===== .wortsalat: Satzbau-Scramble ===== */
+.wortsalat-item { margin-bottom: 6px; }
+.wortsalat-num { font-weight: 700; color: #64748b; margin-right: 4px; font-size: 10.5px; }
+.wortsalat-situation { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 2px; margin-left: 20px; }
+.wortsalat-woerter { display: inline-flex; gap: 4px; flex-wrap: wrap; vertical-align: middle; }
+.wort-chip { display: inline-block; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 6px; }
+.wortsalat-answer-row { display: flex; align-items: center; gap: 6px; margin-top: 2px; margin-left: 20px; }
+.wortsalat-arrow { color: #94a3b8; font-weight: 700; }
+
+/* ===== .baukasten-box: Fertige Phrasen zum Copy-Paste für die Einkaufs-Notiz ===== */
+.baukasten-box { border: 1px solid #93c5fd; border-radius: 8px; padding: 6px 11px; background: #eff6ff; margin-bottom: 6px; }
+.baukasten-title { font-size: 10.5px; font-weight: 700; color: #1e3a8a; margin-bottom: 4px; }
+.baukasten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.baukasten-kategorie-label { font-size: 9px; font-weight: 700; color: #1e40af; text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 2px; border-bottom: 0.5px solid #bfdbfe; padding-bottom: 1px; }
+.baukasten-phrase { font-size: 9.5px; color: #1a1a1a; margin-bottom: 2px; line-height: 1.3; }
+.baukasten-phrase .bp-vn { color: #0f766e; font-size: 8.5px; display: block; }
+
+/* ===== .postkarte-card: Schreib-Format „Einkaufs-Notiz" ===== */
+.postkarte-card { border: 1.5px solid #0891b2; border-radius: 10px; overflow: hidden; }
+.postkarte-header { background: linear-gradient(135deg,#0891b2,#06b6d4); color: white; padding: 4px 10px; font-size: 10px; font-weight: 700; display: flex; justify-content: space-between; align-items: center; }
+.postkarte-body { padding: 8px 12px; background: #f0fdff; font-size: 10.5px; line-height: 1.55; min-height: 90px; }
+.postkarte-body .pk-anrede { color: #0e7490; font-weight: 700; margin-bottom: 3px; }
+.postkarte-body .pk-gruss { color: #0e7490; font-weight: 700; margin-top: 4px; }
+.postkarte-lines { border-bottom: 1px solid #94a3b8; height: 13px; margin-bottom: 5px; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Phonetik + Lernziele + Wortschatz + Verben-Tabelle) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 9</h1>
+      <h2>Einkaufen &amp; Preise</h2>
+      <h2>Mua sắm &amp; Giá cả</h2>
+    </div>
+    <div class="badge">A1 · Lektion 9</div>
+  </div>
+
+  <!-- Wiederholung -->
+  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 8 / Ôn tập bài 8</div>
+  <div class="wiederholung-box">
+    <div class="wh-title">Grammatik-Warm-up: Der Akkusativ (maskulin) / Khởi động ngữ pháp: Akkusativ (giống đực)</div>
+    <div class="wiederholung-grid">
+      <div class="wh-item">
+        <div class="wh-laut">den</div>
+        <div class="wh-mund">Ergänze: Ich esse ___ Apfel. (der Apfel)</div>
+        <div class="wh-beispiel">Điền đúng mạo từ Akkusativ</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">einen</div>
+        <div class="wh-mund">Ergänze: Er trinkt ___ Kaffee. (der Kaffee)</div>
+        <div class="wh-beispiel">Điền đúng mạo từ không xác định ở Akkusativ</div>
+      </div>
+      <div class="wh-item">
+        <div class="wh-laut">Richtig?</div>
+        <div class="wh-mund">Richtig oder falsch: „Ich esse die Brot."</div>
+        <div class="wh-beispiel">Câu này đúng hay sai? (das Brot là giống trung)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 Lernziele / Mục tiêu học tập</div>
+  <div class="lernziele">
+    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+    <p class="de">✔ Kleidungsstücke und Farben benennen <span class="vn">— gọi tên các loại trang phục và màu sắc</span></p>
+    <p class="de">✔ Mit „möchten" + Akkusativ höflich Wünsche äußern <span class="vn">— dùng „möchten" + Akkusativ để lịch sự bày tỏ mong muốn</span></p>
+    <p class="de">✔ Nach dem Preis fragen und Singular/Plural bei „kosten" korrekt unterscheiden <span class="vn">— hỏi giá và phân biệt đúng số ít/số nhiều khi dùng „kosten"</span></p>
+    <p class="de">✔ Eine kurze Einkaufs-Notiz an Freunde schreiben <span class="vn">— viết một mảnh giấy nhắn ngắn về việc mua sắm gửi bạn bè</span></p>
+  </div>
+
+  <!-- Legende -->
+  <div class="section-title">🎨 Farbkodierung / Mã màu mạo từ</div>
+  <div class="legend">
+    <div class="legend-item"><span class="der">der</span> maskulin / giống đực</div>
+    <div class="legend-item"><span class="die">die</span> feminin / giống cái</div>
+    <div class="legend-item"><span class="das">das</span> neutral / giống trung</div>
+    <div class="legend-item"><span class="plural">Pl.</span> nur Plural / chỉ có số nhiều (tín hiệu cho „kosten"!)</div>
+    <div class="legend-item"><span class="warn">⚠️</span> unregelmäßig / bất quy tắc</div>
+  </div>
+
+  <!-- Phonetik -->
+  <div class="section-title">🔊 Aussprache-Minute / Phút phát âm</div>
+  <div class="phon-box">
+    <div class="phon-title">„ö" ngắn — âm trong từ „möchte"</div>
+    <div class="phon-de">Runde die Lippen wie bei „o", aber forme mit der Zunge ein „e" — so entsteht dieser Laut. Du kennst ihn schon aus „zwölf" (L3) und „Töchter" (L6) — und jetzt auch aus unserem neuen Wort „möchte"!</div>
+    <div class="phon-vn">Tròn môi giống như khi phát âm „o", nhưng đặt lưỡi ở vị trí phát âm „e" — âm này được tạo ra như vậy. Bạn đã học âm này ở „zwölf" (bài 3) và „Töchter" (bài 6) — và giờ nó xuất hiện lại trong từ mới „möchte"!</div>
+    <div class="phon-beispiele">Beispiele: zw<strong>ö</strong>lf (tsvơlf) · T<strong>ö</strong>chter (tơch-tơ) · m<strong>ö</strong>chte (mơch-tơ)</div>
+  </div>
+
+  <!-- Wortschatz Kleidung -->
+  <div class="section-title">📚 Wortschatz-Tabelle: Kleidung / Bảng từ vựng: Trang phục</div>
+  <table class="vocab">
+    <colgroup><col style="width:14%"><col style="width:13%"><col style="width:48%"><col style="width:25%"></colgroup>
+    <thead><tr><th>Nomen</th><th>Aussprache</th><th>Beispielsatz (möchten + Farbe)</th><th>Tiếng Việt (Nomen)</th></tr></thead>
+    <tbody>
+      <tr><td><span class="der">der</span>Pullover</td><td class="phonetik">pu-lô-vơ</td><td>Ich möchte <span class="der">den</span>Pullover. Er ist blau. <span class="vn-word">Tôi muốn cái áo len. Nó màu xanh dương.</span></td><td class="vn-word">áo len</td></tr>
+      <tr><td><span class="die">die</span>Hose</td><td class="phonetik">hô-zơ</td><td>Du möchtest die Hose. Sie ist schwarz. <span class="vn-word">Bạn muốn cái quần. Nó màu đen.</span></td><td class="vn-word">quần dài</td></tr>
+      <tr><td><span class="das">das</span>Hem<strong>d</strong></td><td class="phonetik">hem<strong>t</strong></td><td>Er möchte das Hemd. Es ist weiß. <span class="vn-word">Anh ấy muốn cái áo sơ mi. Nó màu trắng.</span></td><td class="vn-word">áo sơ mi</td></tr>
+      <tr><td><span class="die">die</span>Jacke</td><td class="phonetik">y-a-kơ <span style="color:#94a3b8;">(j="y")</span></td><td>Wir möchten die Jacke. Sie ist rot. <span class="vn-word">Chúng tôi muốn cái áo khoác. Nó màu đỏ.</span></td><td class="vn-word">áo khoác</td></tr>
+      <tr><td><span class="das">das</span>Klei<strong>d</strong></td><td class="phonetik">klai<strong>t</strong></td><td>Sie möchte das Kleid. Es ist grün. <span class="vn-word">Cô ấy muốn cái váy đầm. Nó màu xanh lá.</span></td><td class="vn-word">váy đầm</td></tr>
+      <tr><td><span class="der">der</span>Rock</td><td class="phonetik">rôk</td><td>Ihr möchtet <span class="der">den</span>Rock. Er ist gelb. <span class="vn-word">Các bạn muốn cái chân váy. Nó màu vàng.</span></td><td class="vn-word">chân váy</td></tr>
+      <tr><td><span class="plural">Pl.</span>die Schuhe</td><td class="phonetik">shu-ơ</td><td>Sie möchten die Schuhe. Sie sind schwarz. <span class="vn-word">Họ muốn đôi giày. Chúng màu đen.</span></td><td class="vn-word">giày</td></tr>
+      <tr><td><span class="plural">Pl.</span>die Socken</td><td class="phonetik">zô-ken</td><td>Ich möchte die Socken. Sie sind weiß. <span class="vn-word">Tôi muốn đôi tất. Chúng màu trắng.</span></td><td class="vn-word">tất/vớ</td></tr>
+      <tr><td><span class="die">die</span>Mütze</td><td class="phonetik">muýt-sơ</td><td>Du möchtest die Mütze. Sie ist blau. <span class="vn-word">Bạn muốn cái mũ len. Nó màu xanh dương.</span></td><td class="vn-word">mũ len</td></tr>
+      <tr><td><span class="der">der</span>Schal</td><td class="phonetik">shal</td><td>Er möchte <span class="der">den</span>Schal. Er ist braun. <span class="vn-word">Anh ấy muốn cái khăn quàng. Nó màu nâu.</span></td><td class="vn-word">khăn quàng cổ</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Wortschatz Farben -->
+  <div class="section-title">🎨 Wortschatz-Tabelle: Farben (prädikativ, ohne Endung!) / Bảng từ vựng: Màu sắc (dùng vị ngữ, không chia đuôi!)</div>
+  <table class="vocab">
+    <colgroup><col style="width:20%"><col style="width:25%"><col style="width:55%"></colgroup>
+    <thead><tr><th>Farbe</th><th>Aussprache</th><th>Tiếng Việt</th></tr></thead>
+    <tbody>
+      <tr><td style="background:#dc2626; color:#ffffff; font-weight:700;">ro<strong>t</strong></td><td class="phonetik">rô<strong>t</strong></td><td class="vn-word">màu đỏ</td></tr>
+      <tr><td style="background:#2563eb; color:#ffffff; font-weight:700;">blau</td><td class="phonetik">blao</td><td class="vn-word">màu xanh dương</td></tr>
+      <tr><td style="background:#16a34a; color:#ffffff; font-weight:700;">grün</td><td class="phonetik">gruyn</td><td class="vn-word">màu xanh lá</td></tr>
+      <tr><td style="background:#facc15; color:#1a1a1a; font-weight:700;">gelb</td><td class="phonetik">ghelp</td><td class="vn-word">màu vàng</td></tr>
+      <tr><td style="background:#111827; color:#ffffff; font-weight:700;">schwar<strong>z</strong></td><td class="phonetik">shvarts</td><td class="vn-word">màu đen</td></tr>
+      <tr><td style="background:#ffffff; color:#1a1a1a; font-weight:700; border:1.5px solid #94a3b8;">wei<strong>ß</strong></td><td class="phonetik">vai<strong>s</strong></td><td class="vn-word">màu trắng</td></tr>
+      <tr><td style="background:#92400e; color:#ffffff; font-weight:700;">braun</td><td class="phonetik">brao-n</td><td class="vn-word">màu nâu</td></tr>
+      <tr><td style="background:#6b7280; color:#ffffff; font-weight:700;">grau</td><td class="phonetik">grao</td><td class="vn-word">màu xám</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 9</span>
+    <span>Seite 1 / 5</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Grammatik 1: möchten + Akkusativ + Häufige Fehler + Übung 1 + Kulturinfo 1) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 9</h1>
+      <h2>„möchten" + Akkusativ + Farbe / „möchten" + Akkusativ + màu sắc</h2>
+    </div>
+    <div class="badge">A1 · Lektion 9</div>
+  </div>
+
+  <!-- Grammatik 1 -->
+  <div class="section-title">📖 Grammatik 1 — „möchten" + Akkusativ-Nomen / Ngữ pháp 1: „möchten" + danh từ ở Akkusativ</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Nach „möchten" steht direkt ein Akkusativ-Nomen — genau wie bei „essen" und „trinken" aus Lektion 8. Die Regel bleibt gleich: nur maskulin ändert sich (der → den, ein → einen)!</div>
+    <div class="tip-vn">💡 Sau „möchten" là danh từ ở Akkusativ ngay — giống hệt như „essen" và „trinken" đã học ở bài 8. Quy tắc vẫn không đổi: chỉ giống đực thay đổi (der → den, ein → einen)!</div>
+  </div>
+  <div class="gram-box">
+    <h4>✅ Richtig / Cách dùng đúng</h4>
+    <div class="rule-de">„Ich möchte den Pullover. Er ist rot." — <strong>zwei kurze Sätze</strong>, das Adjektiv „rot" steht nach „sein" und bekommt <strong>keine Endung</strong> (wie in Lektion 7 gelernt).</div>
+    <div class="rule-vn">„Ich möchte den Pullover. Er ist rot." — <strong>hai câu ngắn</strong>, tính từ „rot" đứng sau „sein" và <strong>không chia đuôi</strong> (như đã học ở bài 7).</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Unbedingt vermeiden / Tuyệt đối tránh</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich möchte den roten Pullover."</span> — das Adjektiv steht hier VOR dem Nomen und bräuchte eine Deklinationsendung (-en). Das ist Adjektivdeklination — viel zu schwer für diese Lektion! Wir bleiben bei zwei einfachen Sätzen.</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich möchte den roten Pullover."</span> — tính từ ở đây đứng TRƯỚC danh từ và cần đuôi biến cách (-en). Đây là biến cách tính từ — quá khó cho bài này! Chúng ta vẫn dùng hai câu đơn giản.</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich möchte der Pullover."</span> → <span class="wb-ok">✅ „Ich möchte den Pullover."</span> — Akkusativobjekt (maskulin) braucht „den"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich möchte der Pullover."</span> → <span class="wb-ok">✅ „Ich möchte den Pullover."</span> — tân ngữ Akkusativ (giống đực) cần „den"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich möchte ein Rock."</span> → <span class="wb-ok">✅ „Ich möchte einen Rock."</span> — „der Rock" ist maskulin → „ein" wird zu „einen"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich möchte ein Rock."</span> → <span class="wb-ok">✅ „Ich möchte einen Rock."</span> — „der Rock" là danh từ giống đực → „ein" biến thành „einen"!</div>
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ubung-header">Übung 1 — Der richtige Kleiderschrank: Satzbau &amp; Fehlersuche / Tủ đồ đúng cách: Sắp xếp câu &amp; sửa lỗi</div>
+  <div class="ubung-body">
+    <div class="instr-de">Teil A: Bringe die Wörter in die richtige Reihenfolge. Teil B: Finde den Fehler in jedem Satz und schreibe ihn richtig.</div>
+    <div class="instr-vn">Phần A: Sắp xếp các từ theo đúng thứ tự. Phần B: Tìm lỗi trong mỗi câu và viết lại cho đúng.</div>
+
+    <div class="small" style="font-weight:700; color:#1e3a8a; margin:4px 0 2px 0;">Teil A — Satzbau / Sắp xếp câu</div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">1.</span>
+      <div class="wortsalat-situation">Situation: Wintershopping 🧥</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">ich</span><span class="wort-chip">einen</span><span class="wort-chip">Pullover</span><span class="wort-chip">möchte</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">2.</span>
+      <div class="wortsalat-situation">Situation: Kleiderladen 👗</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">du</span><span class="wort-chip">die</span><span class="wort-chip">Hose</span><span class="wort-chip">möchtest</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">3.</span>
+      <div class="wortsalat-situation">Situation: neues Hemd 👔</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">er</span><span class="wort-chip">das</span><span class="wort-chip">Hemd</span><span class="wort-chip">möchte</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+    <div class="wortsalat-item">
+      <span class="wortsalat-num">4.</span>
+      <div class="wortsalat-situation">Situation: Schuhgeschäft 👟</div>
+      <div class="wortsalat-woerter"><span class="wort-chip">wir</span><span class="wort-chip">die</span><span class="wort-chip">Schuhe</span><span class="wort-chip">möchten</span></div>
+      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    </div>
+
+    <div class="small" style="font-weight:700; color:#1e3a8a; margin:6px 0 2px 0;">Teil B — Fehlersuche / Sửa lỗi</div>
+    <div class="fill-line"><span class="num">5.</span> „Ich möchte ein Rock." (der Rock) → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">6.</span> „Ich möchte der Pullover." (der Pullover) → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">7.</span> „Ich möchte die rote Jacke." (die Jacke, rot) → <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">8.</span> „Er möchte das Hemd. Es ist weißes." → <span class="blank-xl"></span></div>
+  </div>
+
+  <!-- Kulturinfo 1 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #1 — Ladenöffnungszeiten in Deutschland / Góc văn hóa 1: Giờ mở cửa hàng ở Đức</div>
+    <div class="kb-de">In Deutschland regelt das <b>Ladenschlussgesetz</b>, wann Geschäfte öffnen dürfen. Die meisten Läden schließen an Werktagen um 20 Uhr, und an <b>Sonntagen bleiben fast alle Geschäfte geschlossen</b> — nur Bäckereien, Tankstellen und Geschäfte an Bahnhöfen haben oft geöffnet. Das überrascht viele internationale Besucher, die 24-Stunden- oder Sonntags-Shopping gewohnt sind. Der Sonntag gilt traditionell als Ruhetag für die Familie.</div>
+    <div class="kb-vn">Ở Đức, <b>Luật giờ đóng cửa hàng (Ladenschlussgesetz)</b> quy định thời gian các cửa hàng được phép mở cửa. Hầu hết các cửa hàng đóng cửa lúc 20 giờ vào các ngày trong tuần, và <b>vào Chủ nhật hầu như tất cả cửa hàng đều đóng cửa</b> — thường chỉ có tiệm bánh, trạm xăng và cửa hàng ở ga tàu là mở. Điều này khiến nhiều du khách quốc tế quen với việc mua sắm 24/24 hoặc vào Chủ nhật cảm thấy ngạc nhiên. Chủ nhật theo truyền thống được xem là ngày nghỉ ngơi dành cho gia đình.</div>
+  </div>
+
+  <!-- Verben-Tabelle -->
+  <div class="section-title">🔧 Verben-Tabelle: „möchten" (neu) / Bảng động từ: „möchten" (mới)</div>
+  <table class="konj">
+    <colgroup><col style="width:75px"><col style="width:165px"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Person</th><th>möchten</th><th>Beispielsatz (mit Wortschatz aus L8)</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen">ich</td><td>möchte (mơch-tơ)</td><td style="text-align:left;">Ich möchte den Apfel. <span class="vn-word">Tôi muốn quả táo.</span></td></tr>
+      <tr><td class="pronomen">du</td><td>möchte<strong>st</strong> (mơch-tơst)</td><td style="text-align:left;">Du möchtest die Wurst. <span class="vn-word">Bạn muốn xúc xích.</span></td></tr>
+      <tr><td class="pronomen">er/sie/es</td><td>möchte (mơch-tơ)</td><td style="text-align:left;">Er möchte das Brot. <span class="vn-word">Anh ấy muốn bánh mì.</span></td></tr>
+      <tr><td class="pronomen">wir</td><td>möchten (mơch-tơn)</td><td style="text-align:left;">Wir möchten den Kaffee. <span class="vn-word">Chúng tôi muốn cà phê.</span></td></tr>
+      <tr><td class="pronomen">ihr</td><td>möchte<strong>t</strong> (mơch-tơt)</td><td style="text-align:left;">Ihr möchtet die Milch. <span class="vn-word">Các bạn muốn sữa.</span></td></tr>
+      <tr><td class="pronomen">sie/Sie</td><td>möchten (mơch-tơn)</td><td style="text-align:left;">Sie möchten den Fisch. <span class="vn-word">Họ muốn cá.</span></td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">🔮 Kleiner Ausblick: Bei „möchten" sind ich- und er/sie/es-Form identisch (beide „möchte")! Das ist kein Zufall — später lernst du weitere Verben (können, wollen, dürfen), die genau demselben Muster folgen.</div>
+    <div class="tip-vn">🔮 Bật mí nhỏ: Ở „möchten", dạng ich và er/sie/es hoàn toàn giống nhau (đều là „möchte")! Đây không phải ngẫu nhiên — sau này bạn sẽ học thêm các động từ khác (können, wollen, dürfen) cũng tuân theo đúng quy luật này.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 9</span>
+    <span>Seite 2 / 5</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Grammatik 2: kosten Sg./Pl. + Häufige Fehler + Übung 2 + Kulturinfo 2) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 9</h1>
+      <h2>Die „kosten"-Falle: Singular vs. Plural / Cái bẫy „kosten": số ít và số nhiều</h2>
+    </div>
+    <div class="badge">A1 · Lektion 9</div>
+  </div>
+
+  <!-- Grammatik 2 -->
+  <div class="section-title">📖 Grammatik 2 — Preisfragen: „kostet" (Singular) vs. „kosten" (Plural) / Ngữ pháp 2: Hỏi giá — „kostet" (số ít) và „kosten" (số nhiều)</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Die Verbform hängt davon ab, ob EIN oder MEHRERE Dinge den Preis haben. Das Signal dafür ist genau die gelbe <span class="plural">Pl.</span>-Markierung aus unserer Wortschatz-Tabelle!</div>
+    <div class="tip-vn">💡 Dạng động từ phụ thuộc vào việc có MỘT hay NHIỀU món đồ mang mức giá đó. Tín hiệu chính là dấu <span class="plural">Pl.</span> màu vàng trong bảng từ vựng của chúng ta!</div>
+  </div>
+  <table class="konj">
+    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"></colgroup>
+    <thead><tr><th class="pronomen-col">Anzahl</th><th>Beispiel</th><th>Verbform</th></tr></thead>
+    <tbody>
+      <tr><td class="pronomen"><span class="der">der</span>/<span class="die">die</span>/<span class="das">das</span> (Sg.)</td><td>Der Pullover kostet 30 Euro.</td><td><strong>kostet</strong> (Singular)</td></tr>
+      <tr><td class="pronomen"><span class="plural">Pl.</span></td><td>Die Schuhe kosten 50 Euro.</td><td><strong>kosten</strong> (Plural)</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box">
+    <div class="tip-de">💡 Kombiniere Preisfrage + Farbe in zwei einfachen Sätzen: „Wie viel kostet der Pullover?" — „Er ist blau und kostet 40 Euro." (Farbe bleibt ohne Endung, direkt nach „ist"/„und")</div>
+    <div class="tip-vn">💡 Kết hợp câu hỏi giá + màu sắc trong hai câu đơn giản: „Wie viel kostet der Pullover?" — „Er ist blau und kostet 40 Euro." (màu sắc không chia đuôi, đứng ngay sau „ist"/„und")</div>
+  </div>
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+    <div class="wb-de"><span class="wb-err">❌ „Die Schuhe kostet 50 Euro."</span> → <span class="wb-ok">✅ „Die Schuhe kosten 50 Euro."</span> — „die Schuhe" ist Plural, das Verb braucht die Plural-Endung „-en"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Die Schuhe kostet 50 Euro."</span> → <span class="wb-ok">✅ „Die Schuhe kosten 50 Euro."</span> — „die Schuhe" là số nhiều, động từ cần đuôi số nhiều „-en"! Vì tiếng Việt không chia động từ theo số, đây là lỗi mà người Việt rất dễ bỏ qua — hãy đặc biệt chú ý!</div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ubung-header">Übung 2 — Der Preis-Check im Modegeschäft / Kiểm tra giá trong cửa hàng thời trang</div>
+  <div class="ubung-body">
+    <div class="instr-de">Teil A: Sortiere die Kleidungsstücke nach Singular („kostet") oder Plural („kosten"). Teil B: Verbinde die Preisfrage mit der passenden Antwort.</div>
+    <div class="instr-vn">Phần A: Phân loại các món trang phục theo số ít („kostet") hay số nhiều („kosten"). Phần B: Nối câu hỏi giá với câu trả lời phù hợp.</div>
+
+    <div class="small" style="font-weight:700; color:#1e3a8a; margin:4px 0 2px 0;">Teil A — Singular oder Plural? / Số ít hay số nhiều?</div>
+    <div class="warenkorb-box">
+      <div class="small" style="margin-bottom:3px; color:#64748b;">Wörter: die Hose · die Schuhe · das Hemd · der Pullover · die Socken</div>
+      <div class="warenkorb-grid">
+        <div>
+          <div class="warenkorb-spalte-label">___ kostet... (Singular)</div>
+          <div class="wk-item"><span class="wk-chip">1</span> <span class="wk-blank"></span></div>
+          <div class="wk-item"><span class="wk-chip">2</span> <span class="wk-blank"></span></div>
+          <div class="wk-item"><span class="wk-chip">3</span> <span class="wk-blank"></span></div>
+        </div>
+        <div>
+          <div class="warenkorb-spalte-label">___ kosten... (Plural)</div>
+          <div class="wk-item"><span class="wk-chip">1</span> <span class="wk-blank"></span></div>
+          <div class="wk-item"><span class="wk-chip">2</span> <span class="wk-blank"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="small" style="font-weight:700; color:#1e3a8a; margin:6px 0 2px 0;">Teil B — Logische Dialog-Paare finden / Nối các cặp hội thoại hợp lý</div>
+    <div class="gegenteile-box">
+      <div class="gegenteile-grid">
+        <div>
+          <div class="gegenteile-spalte-label">Frage</div>
+          <div class="gt-item"><span class="gt-chip">1</span> Wie viel kosten die Schuhe? <span class="gt-blank"></span></div>
+          <div class="gt-item"><span class="gt-chip">2</span> Wie viel kostet der Pullover? <span class="gt-blank"></span></div>
+        </div>
+        <div>
+          <div class="gegenteile-spalte-label">Antwort</div>
+          <div class="gt-item"><span class="gt-letter">A</span> Er ist blau und kostet 40 Euro.</div>
+          <div class="gt-item"><span class="gt-letter">B</span> Sie sind schwarz und kosten 80 Euro.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kulturinfo 2 -->
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO #2 — Bargeld-Kultur in Deutschland / Góc văn hóa 2: Văn hóa dùng tiền mặt ở Đức</div>
+    <div class="kb-de">Deutsche zahlen traditionell gern <b>bar</b> — viele kleine Geschäfte, Bäckereien und sogar manche Restaurants akzeptieren keine Kartenzahlung oder bevorzugen Bargeld. Das überrascht Besucher aus Ländern, in denen Kartenzahlung längst Standard ist. Der Grund liegt oft im deutschen Wunsch nach <b>Datenschutz</b> und <b>Ausgabenkontrolle</b> — mit Bargeld behält man den Überblick über sein Geld. Ein guter Tipp: Immer etwas Bargeld dabeihaben!</div>
+    <div class="kb-vn">Người Đức theo truyền thống thích trả bằng <b>tiền mặt</b> — nhiều cửa hàng nhỏ, tiệm bánh và thậm chí một số nhà hàng không nhận thanh toán bằng thẻ hoặc ưu tiên tiền mặt. Điều này khiến du khách đến từ những nước mà thanh toán bằng thẻ đã là chuyện bình thường cảm thấy ngạc nhiên. Lý do thường nằm ở mong muốn của người Đức về <b>bảo mật thông tin</b> và <b>kiểm soát chi tiêu</b> — dùng tiền mặt giúp người ta nắm rõ hơn số tiền mình đang chi. Một mẹo hữu ích: luôn mang theo một ít tiền mặt bên người!</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 9</span>
+    <span>Seite 3 / 5</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Dialog + Lesetext + MC + Freies Sprechen) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 9</h1>
+      <h2>Dialog &amp; Lesetext / Hội thoại &amp; bài đọc</h2>
+    </div>
+    <div class="badge">A1 · Lektion 9</div>
+  </div>
+
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Đoạn hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Verkäuferin:</span>Guten Tag! Was möchten Sie?</div>
+    <div class="dialog-line"><span class="speaker">Kunde:</span>Ich möchte einen Pullover. Haben Sie ihn in Blau?</div>
+    <div class="dialog-line"><span class="speaker">Verkäuferin:</span>Ja, hier ist er. Er kostet 35 Euro.</div>
+    <div class="dialog-line"><span class="speaker">Kunde:</span>Und die Schuhe dort? Wie viel kosten sie?</div>
+    <div class="dialog-line"><span class="speaker">Verkäuferin:</span>Sie kosten 60 Euro. Sie sind sehr bequem!</div>
+    <div class="dialog-line"><span class="speaker">Kunde:</span>Gut, ich nehme den Pullover und die Schuhe.</div>
+    <div class="dialog-line"><span class="speaker">Verkäuferin:</span>Perfekt! Das macht zusammen 95 Euro.</div>
+  </div>
+
+  <!-- Lesetext -->
+  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+  <div class="lese-box">
+    Heute gehe ich einkaufen. Ich brauche neue Kleidung für den Winter. Zuerst finde ich einen Pullover. Er ist ro<strong>t</strong> und kostet 30 Euro. Dann sehe ich eine Jacke. Sie ist schwarz und kostet 55 Euro. Ich möchte auch neue Schuhe. Sie sind braun und kosten 70 Euro. An der Kasse zahle ich zusammen 155 Euro. Ich bezahle bar — das ist in Deutschland sehr üblich. Zu Hause probiere ich alles an. Der Pullover ist warm und die Schuhe sind bequem. Ich bin sehr glücklich mit meinem Einkauf!
+  </div>
+  <div class="mc-block">
+    <div class="mc-frage">1. Warum geht die Person einkaufen?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) sie hat Geburtstag</span>
+      <span><span class="mc-kreis"></span> b) sie braucht neue Kleidung für den Winter</span>
+      <span><span class="mc-kreis"></span> c) sie hat kein Geld</span>
+    </div>
+    <div class="mc-frage">2. Was findet sie zuerst?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) eine Jacke</span>
+      <span><span class="mc-kreis"></span> b) einen Pullover</span>
+      <span><span class="mc-kreis"></span> c) Schuhe</span>
+    </div>
+    <div class="mc-frage">3. Wie viel kostet die Jacke?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) 30 Euro</span>
+      <span><span class="mc-kreis"></span> b) 55 Euro</span>
+      <span><span class="mc-kreis"></span> c) 70 Euro</span>
+    </div>
+    <div class="mc-frage">4. Wie bezahlt die Person?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) mit Karte</span>
+      <span><span class="mc-kreis"></span> b) bar</span>
+      <span><span class="mc-kreis"></span> c) online</span>
+    </div>
+    <div class="mc-frage">5. Wie sind die Schuhe?</div>
+    <div class="mc-optionen">
+      <span><span class="mc-kreis"></span> a) klein und rot</span>
+      <span><span class="mc-kreis"></span> b) braun und bequem</span>
+      <span><span class="mc-kreis"></span> c) schwarz und teuer</span>
+    </div>
+    <div class="freie-frage">
+      <div class="ff-de">➕ Freie Zusatzfrage: Was möchtest du heute kaufen? Was ist deine Lieblingsfarbe?</div>
+      <div class="ff-vn">➕ Câu hỏi mở rộng: Hôm nay bạn muốn mua gì? Màu yêu thích của bạn là màu gì?</div>
+    </div>
+  </div>
+
+  <!-- Freies Sprechen -->
+  <div class="section-title">🃏 Freies Sprechen / Nói tự do</div>
+  <div class="tip-box">
+    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+  </div>
+  <div class="karten-grid">
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 1</div>
+      <div class="wort-pill">möchten</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was möchtest du heute kaufen?</div>
+      <div class="anweisung-vn">Hôm nay bạn muốn mua gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 2</div>
+      <div class="wort-pill">Farben</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Was ist deine Lieblingsfarbe?</div>
+      <div class="anweisung-vn">Màu yêu thích của bạn là màu gì?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 3</div>
+      <div class="wort-pill">kosten</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Frage</span></div>
+      <div class="anweisung-de">Wie viel kostet dein Pullover ungefähr?</div>
+      <div class="anweisung-vn">Chiếc áo len của bạn giá khoảng bao nhiêu?</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+    <div class="sprech-karte">
+      <div class="karte-num">Karte 4</div>
+      <div class="wort-pill">Satz</div>
+      <div class="prompt-row"><span class="prompt-tag frage">Satz</span></div>
+      <div class="anweisung-de">Bilde: „Ich möchte ... Er/Sie/Es ist ..."</div>
+      <div class="anweisung-vn">Đặt câu: „Ich möchte ... Er/Sie/Es ist ..."</div>
+      <div class="timer-badge">⏱️ 30 Sek.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 9</span>
+    <span>Seite 4 / 5</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 5 (Schreib-Format Einkaufs-Notiz + Hausaufgaben + Antworten) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 9</h1>
+      <h2>Schreiben &amp; Finale / Viết &amp; tổng kết bài học</h2>
+    </div>
+    <div class="badge">A1 · Lektion 9</div>
+  </div>
+
+  <!-- Schreib-Format: Einkaufs-Notiz -->
+  <div class="section-title">✍️ SCHREIB-FORMAT — Die Einkaufs-Notiz (Schreib-Stufe 3) / Dạng bài viết: Mảnh giấy nhắn về mua sắm</div>
+
+  <div class="baukasten-box">
+    <div class="baukasten-title">🧱 Der Phrasen-Baukasten — kopiere einfach, was passt! / Hộp cụm từ có sẵn — chỉ cần chọn cụm phù hợp!</div>
+    <div class="baukasten-grid">
+      <div>
+        <div class="baukasten-kategorie-label">Kleidungsstück / Trang phục</div>
+        <div class="baukasten-phrase">Ich möchte den Pullover.<span class="bp-vn">Tôi muốn cái áo len.</span></div>
+        <div class="baukasten-phrase">Ich möchte die Jacke.<span class="bp-vn">Tôi muốn cái áo khoác.</span></div>
+        <div class="baukasten-phrase">Ich möchte die Schuhe.<span class="bp-vn">Tôi muốn đôi giày.</span></div>
+      </div>
+      <div>
+        <div class="baukasten-kategorie-label">Farbe / Màu sắc</div>
+        <div class="baukasten-phrase">Er ist blau.<span class="bp-vn">Nó màu xanh dương.</span></div>
+        <div class="baukasten-phrase">Sie ist schwarz.<span class="bp-vn">Nó màu đen.</span></div>
+        <div class="baukasten-phrase">Sie sind braun.<span class="bp-vn">Chúng màu nâu.</span></div>
+      </div>
+      <div>
+        <div class="baukasten-kategorie-label">Preis / Giá</div>
+        <div class="baukasten-phrase">Er kostet 30 Euro.<span class="bp-vn">Nó giá 30 euro.</span></div>
+        <div class="baukasten-phrase">Sie kostet 25 Euro.<span class="bp-vn">Nó giá 25 euro.</span></div>
+        <div class="baukasten-phrase">Sie kosten 60 Euro.<span class="bp-vn">Chúng giá 60 euro.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ha-box">
+    <h4>🏠 Hausaufgabe / Bài tập về nhà</h4>
+    <div class="ha-item">✍️ <strong>Schreiben / Viết:</strong> Fülle die leere Einkaufs-Notiz unten aus — nutze 4–5 Phrasen aus dem Baukasten (oder eigene Sätze)! Anrede und Grußformel wie im Muster.
+      <div class="ha-vn">Hãy viết vào mảnh giấy nhắn trống bên dưới — dùng 4–5 cụm từ trong "hộp cụm từ" (hoặc tự đặt câu)! Lời chào đầu và lời chào cuối tham khảo theo mẫu.</div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="postkarte-card">
+      <div class="postkarte-header"><span>🛍️ Muster</span><span>Beispiel</span></div>
+      <div class="postkarte-body">
+        <div class="pk-anrede">Liebe Mia,</div>
+        ich gehe heute einkaufen! Ich möchte den Pullover. Er ist blau und kostet 30 Euro. Die Schuhe sind auch schön — sie sind braun und kosten 60 Euro.
+        <div class="pk-gruss">Viele Grüße<br>Deine/Dein [Name]</div>
+      </div>
+    </div>
+    <div class="postkarte-card">
+      <div class="postkarte-header"><span>📝 Deine Notiz</span><span>Hausaufgabe</span></div>
+      <div class="postkarte-body">
+        <div class="postkarte-lines"></div>
+        <div class="postkarte-lines"></div>
+        <div class="postkarte-lines"></div>
+        <div class="postkarte-lines"></div>
+        <div class="postkarte-lines" style="min-width:60%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ha-box">
+    <div class="ha-item">📊 <strong>Verben konjugieren / Chia động từ:</strong> Schreibe die vollständige Konjugation von „möchten" für alle 6 Personen auf ein Blatt Papier — ohne in dieses Dokument zu schauen!
+      <div class="ha-vn">Viết đầy đủ cách chia động từ „möchten" cho cả 6 ngôi vào một tờ giấy — không nhìn vào tài liệu này!</div>
+    </div>
+    <div class="ha-item">🔍 <strong>Fehlerjagd / Săn lỗi:</strong> Suche online (Kleidungs-Werbung oder Onlineshop) 2 Sätze mit „kostet"/„kosten" und prüfe, ob Singular/Plural richtig verwendet wurde.
+      <div class="ha-vn">Tìm trên mạng (quảng cáo thời trang hoặc trang bán hàng online) 2 câu có „kostet"/„kosten", rồi kiểm tra xem số ít/số nhiều đã dùng đúng chưa.</div>
+    </div>
+  </div>
+
+  <!-- Antworten -->
+  <div class="antworten">
+    <h4>✅ Antworten / Đáp án</h4>
+    <p><strong>Wiederholung (Lektion 8):</strong> 1. den &nbsp; 2. einen &nbsp; 3. Falsch — richtig ist „Ich esse das Brot." (das Brot ist neutral, ändert sich im Akkusativ nicht)</p>
+    <p><strong>Übung 1, Teil A (Satzbau):</strong> 1. Ich möchte einen Pullover. &nbsp; 2. Du möchtest die Hose. &nbsp; 3. Er möchte das Hemd. &nbsp; 4. Wir möchten die Schuhe.</p>
+    <p><strong>Übung 1, Teil B (Fehlersuche):</strong> 5. Ich möchte einen Rock. &nbsp; 6. Ich möchte den Pullover. &nbsp; 7. Ich möchte die Jacke. Sie ist rot. &nbsp; 8. Er möchte das Hemd. Es ist weiß.</p>
+    <p><strong>Übung 2, Teil A (Singular/Plural):</strong> kostet (Singular): die Hose, das Hemd, der Pullover &nbsp;|&nbsp; kosten (Plural): die Schuhe, die Socken</p>
+    <p><strong>Übung 2, Teil B (Zuordnung):</strong> 1 → B (Schuhe = Plural = „kosten"/„sie sind") &nbsp; 2 → A (Pullover = Singular = „kostet"/„er ist")</p>
+    <p><strong>Leseverständnis:</strong> 1. b) sie braucht neue Kleidung für den Winter &nbsp; 2. b) einen Pullover &nbsp; 3. b) 55 Euro &nbsp; 4. b) bar &nbsp; 5. b) braun und bequem</p>
+    <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
+    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ich möchte eine neue Jacke. &nbsp; Karte 2: Meine Lieblingsfarbe ist blau. &nbsp; Karte 3: Er kostet ungefähr 40 Euro. &nbsp; Karte 4: Ich möchte den Rock. Er ist gelb.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 9 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 5 / 5</span>
+  </div>
+</div>
+
+</body>
+</html>

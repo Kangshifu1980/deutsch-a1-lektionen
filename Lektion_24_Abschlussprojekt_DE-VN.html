@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 24</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page.compact { padding: 8mm 13mm 4mm 13mm !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13.0px; line-height: 1.43; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 14.6px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 5px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 19.2px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 12.4px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 11.3px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3.7px 12.2px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 12.4px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #64748b; margin: 11.0px 0 4.9px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 2px; }
+.lernziele { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 6px 6px 0; padding: 6.1px 12.2px; margin-bottom: 3px; }
+.lernziele p { font-size: 11.9px; margin-bottom: 1px; }
+.lernziele .de { color: #1e3a8a; font-weight: 600; }
+.lernziele .vn { color: #3b82f6; font-size: 11.3px; }
+.der { display:inline-block; background:#dbeafe; color:#1e40af; font-weight:700; font-size: 11.3px; padding: 1.2px 6.1px; border-radius:4px; margin-right:2px; }
+.die { display:inline-block; background:#fce7f3; color:#9d174d; font-weight:700; font-size: 11.3px; padding: 1.2px 6.1px; border-radius:4px; margin-right:2px; }
+.das { display:inline-block; background:#dcfce7; color:#14532d; font-weight:700; font-size: 11.3px; padding: 1.2px 6.1px; border-radius:4px; margin-right:2px; }
+.plural { display:inline-block; background:#fef9c3; color:#854d0e; font-weight:700; font-size: 11.3px; padding: 1.2px 6.1px; border-radius:4px; margin-right:2px; }
+.warn { color: #b45309; font-size: 12.4px; font-weight: 700; }
+.legend { display: flex; gap: 9.6px; margin-bottom: 6px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 3.6px; font-size: 11.3px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 5px; }
+table.vocab { table-layout: fixed; }
+table.vocab th { background: #f1f5f9; color: #374151; font-size: 10.7px; font-weight: 700; padding: 3.7px 7.3px; text-align: left; border: 0.5px solid #cbd5e1; white-space: nowrap; }
+table.vocab td { padding: 3.0px 7.3px; border: 0.5px solid #e2e8f0; font-size: 11.9px; vertical-align: top; word-break: break-word; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.phonetik { color: #64748b; font-size: 10.7px; }
+.vn-word { color: #0f766e; font-size: 11.3px; }
+table.konj { table-layout: fixed; margin-bottom: 4px; }
+table.konj th { background: #1e3a8a; color: white; font-size: 11.3px; font-weight: 700; padding: 3.7px 6.1px; text-align: center; border: 0.5px solid #1e40af; }
+table.konj th.pronomen-col { background: #374151; text-align: left; width: 90px; }
+table.konj td { padding: 3.0px 6.1px; border: 0.5px solid #e2e8f0; font-size: 11.9px; text-align: center; }
+table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; text-align: left; font-size: 11.3px; }
+table.konj td.beispiel { text-align: left; font-size: 11.3px; color: #374151; }
+table.konj td.beispiel span { color: #0f766e; font-size: 10.7px; }
+.gram-box { border: 0.5px solid #e2e8f0; border-radius: 6px; padding: 6.1px 11.0px; margin-bottom: 4px; background: #fafafa; }
+.gram-box h4 { font-size: 11.9px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.gram-box .rule-de { font-size: 11.9px; color: #1a1a1a; margin-bottom: 1px; }
+.gram-box .rule-vn { font-size: 11.3px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.tip-box { background: #fefce8; border-left: 3px solid #ca8a04; border-radius: 0 6px 6px 0; padding: 3.7px 8.5px; margin: 3.7px 0; font-size: 11.3px; }
+.tip-box .tip-de { color: #713f12; font-weight: 600; }
+.tip-box .tip-vn { color: #854d0e; }
+.warn-box { background: #fff7ed; border-left: 3px solid #ea580c; border-radius: 0 6px 6px 0; padding: 3.7px 8.5px; margin: 3.7px 0 7.3px 0; font-size: 11.3px; }
+.warn-box .wb-title { color: #9a3412; font-weight: 700; margin-bottom: 1px; }
+.warn-box .wb-de { color: #7c2d12; }
+.warn-box .wb-vn { color: #c2410c; font-style: italic; }
+.warn-box .wb-err { color: #b91c1c; }
+.warn-box .wb-ok { color: #15803d; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 7.3px 12.2px; margin-bottom: 5px; }
+.dialog-line { font-size: 11.9px; margin-bottom: 2px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 7.3px 12.2px; margin-bottom: 5px; font-size: 11.9px; line-height: 1.54; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 11.9px; font-weight: 700; padding: 2.4px 9.8px; border-radius: 5px 5px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 6.1px 9.8px; margin-bottom: 4px; }
+.ubung-body .instr-de { font-size: 11.3px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 10.7px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 6.0px; font-size: 11.9px; margin-bottom: 2px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
+.blank-xl { border-bottom: 1px solid #94a3b8; min-width: 220px; display: inline-block; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 7.3px 12.2px; margin-top: 5px; }
+.antworten h4 { font-size: 11.9px; font-weight: 700; color: #14532d; margin-bottom: 2px; }
+.antworten p { font-size: 10.7px; color: #166534; margin-bottom: 1px; line-height: 1.38; }
+.ha-box { background: #fdf4ff; border: 0.5px solid #d8b4fe; border-radius: 6px; padding: 6.1px 11.0px; margin: 4.9px 0; }
+.ha-box h4 { font-size: 11.9px; font-weight: 700; color: #581c87; margin-bottom: 3px; }
+.ha-item { font-size: 11.3px; margin-bottom: 2px; color: #3b0764; }
+.ha-item .ha-vn { color: #7e22ce; font-size: 10.7px; }
+.footer { margin-top: 6px; padding-top: 3px; border-top: 0.5px solid #e2e8f0; font-size: 10.2px; color: #94a3b8; display: flex; justify-content: space-between; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 9.6px; }
+.small { font-size: 11.9px; }
+
+.compact { line-height: 1.27; font-size: 12.4px; }
+.compact .doc-header { padding-bottom: 3px; margin-bottom: 5px; }
+.compact .section-title { margin: 6.1px 0 3.7px 0; }
+.compact table { margin-bottom: 3px; }
+.compact table.vocab th, .compact table.vocab td { padding: 2.4px 6.1px; }
+.compact .gram-box { padding: 4.9px 9.8px; margin-bottom: 3px; }
+.compact .tip-box { padding: 3.7px 8.5px; margin: 2.4px 0; }
+.compact .warn-box { padding: 3.7px 8.5px; margin: 2.4px 0 6.1px 0; }
+.compact .ubung-header { padding: 2.4px 9.8px; }
+.compact .ubung-body { padding: 4.9px 9.8px; margin-bottom: 3px; }
+.compact .fill-line { margin-bottom: 1px; }
+.compact .footer { margin-top: 3px; padding-top: 2px; }
+.compact .phon-box { padding: 3.7px 9.8px; margin-bottom: 3px; }
+.compact .kultur-box { padding: 4.9px 11.0px; margin: 3.7px 0 6.1px 0; }
+.compact .dialog-box { padding: 4.9px 11.0px; margin-bottom: 4px; }
+.compact .lese-box { padding: 4.9px 11.0px; margin-bottom: 4px; }
+.compact .mc-block { margin-bottom: 3px; }
+.compact .mc-optionen { margin-bottom: 4px; }
+.compact .ha-box { padding: 4.9px 11.0px; }
+.compact .antworten { padding: 4.9px 11.0px; }
+.compact .wiederholung-box { padding: 4.9px 11.0px; margin-bottom: 5px; }
+.compact .karten-grid { margin-top: 3px; gap: 7.2px; }
+.compact .sprech-karte { padding: 6.1px 8.5px; }
+.compact .sprech-karte .karte-num { padding: 1.2px 8.5px; margin-bottom: 3px; }
+.compact .sprech-karte .wort-pill { font-size: 13.0px; padding: 2.4px 6.1px; margin-bottom: 3px; }
+.compact .sprech-karte .prompt-row { margin-bottom: 3px; }
+.compact .sprech-karte .anweisung-vn { margin-bottom: 3px; }
+.compact .merk-box { padding: 6.1px 12.2px; margin: 4.9px 0 7.3px 0; }
+.compact .pruefung-box { padding: 7.3px 12.2px; margin: 4.9px 0 7.3px 0; }
+.compact .schreibfeld { padding: 7.3px 11.0px; }
+.compact .kurs-map { margin-bottom: 4px; gap: 7.2px; }
+.compact .zertifikat-box { padding: 12.2px 17.1px; }
+
+.phon-box { background: #f5f3ff; border: 0.5px solid #ddd6fe; border-radius: 6px; padding: 4.9px 9.8px; margin-bottom: 4px; }
+.phon-box .phon-title { font-size: 11.9px; font-weight: 700; color: #5b21b6; margin-bottom: 1px; }
+.phon-box .phon-de { font-size: 10.7px; color: #1a1a1a; margin-bottom: 1px; }
+.phon-box .phon-vn { font-size: 10.2px; color: #6d28d9; font-style: italic; margin-bottom: 1px; }
+.phon-box .phon-beispiele { font-size: 10.7px; color: #4c1d95; }
+
+.wiederholung-box { background: #ecfeff; border-left: 3px solid #0891b2; border-radius: 0 6px 6px 0; padding: 7.3px 12.2px; margin-bottom: 8px; }
+.wiederholung-box .wh-title { font-size: 11.9px; font-weight: 700; color: #164e63; margin-bottom: 4px; }
+.wiederholung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 7.2px; }
+.wh-item { background: white; border: 0.5px solid #a5f3fc; border-radius: 5px; padding: 4.9px 8.5px; }
+.wh-item .wh-laut { font-size: 12.4px; font-weight: 700; color: #0e7490; margin-bottom: 1px; }
+.wh-item .wh-mund { font-size: 10.7px; color: #374151; margin-bottom: 1px; }
+.wh-item .wh-beispiel { font-size: 10.7px; color: #0f766e; }
+
+.karten-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12.0px; margin-top: 6px; }
+.sprech-karte { border: 1.5px solid #f9a8d4; border-radius: 10px; background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 65%); padding: 11.0px 13.4px; text-align: center; }
+.sprech-karte .karte-num { display: inline-block; background: #9d174d; color: white; font-size: 10.7px; font-weight: 700; padding: 2.4px 11.0px; border-radius: 20px; margin-bottom: 6px; }
+.sprech-karte .wort-pill { display: block; font-size: 15.3px; font-weight: 800; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 4.9px 8.5px; margin-bottom: 6px; }
+.sprech-karte .prompt-row { display: flex; justify-content: center; gap: 6.0px; margin-bottom: 5px; }
+.sprech-karte .prompt-tag { font-size: 10.7px; font-weight: 700; padding: 2.4px 8.5px; border-radius: 5px; }
+.sprech-karte .prompt-tag.frage { background: #dbeafe; color: #1e40af; }
+.sprech-karte .prompt-tag.satz { background: #fef3c7; color: #92400e; }
+.sprech-karte .anweisung-de { font-size: 10.2px; color: #374151; font-style: italic; margin-bottom: 1px; }
+.sprech-karte .anweisung-vn { font-size: 9.6px; color: #9d174d; font-style: italic; margin-bottom: 6px; }
+.sprech-karte .timer-badge { display: inline-block; background: #ea580c; color: white; font-size: 10.7px; font-weight: 700; padding: 3.7px 12.2px; border-radius: 20px; }
+
+.kultur-box { background: #ecfeff; border: 0.5px solid #a5f3fc; border-radius: 8px; padding: 8.5px 14.6px; margin: 7.3px 0 12.2px 0; }
+.kultur-box .kb-title { font-size: 11.9px; font-weight: 700; color: #0e7490; margin-bottom: 3px; }
+.kultur-box .kb-de { font-size: 11.9px; color: #164e63; margin-bottom: 2px; }
+.kultur-box .kb-vn { font-size: 11.3px; color: #0891b2; font-style: italic; }
+
+.mc-block { margin-bottom: 4px; }
+.mc-frage { font-size: 11.9px; font-weight: 700; color: #1e3a8a; margin-bottom: 2px; }
+.mc-optionen { display: flex; gap: 16.8px; flex-wrap: wrap; font-size: 11.9px; color: #1a1a1a; margin-bottom: 6px; }
+.mc-optionen span { display: inline-flex; align-items: center; gap: 3.6px; }
+.mc-kreis { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #64748b; border-radius: 50%; }
+.freie-frage { background: #eff6ff; border: 0.5px dashed #93c5fd; border-radius: 6px; padding: 6.1px 11.0px; margin-top: 4px; font-size: 11.9px; }
+.freie-frage .ff-de { color: #1e3a8a; font-weight: 600; }
+.freie-frage .ff-vn { color: #3b82f6; font-size: 11.3px; }
+
+.merk-box { background: #fff1f2; border: 1.5px solid #fda4af; border-radius: 8px; padding: 8.5px 14.6px; margin: 7.3px 0 9.8px 0; }
+.merk-box .mb-title { font-size: 12.4px; font-weight: 700; color: #9f1239; margin-bottom: 4px; }
+.merk-box .mb-step { font-size: 11.9px; color: #1a1a1a; margin-bottom: 2px; }
+.merk-box .mb-step strong { color: #9f1239; }
+.merk-box .mb-step .mb-vn { color: #be123c; font-size: 11.3px; font-style: italic; }
+.merk-box .mb-beispiel { display: inline-block; background: white; border: 0.5px solid #fecdd3; border-radius: 4px; padding: 1.2px 7.3px; font-size: 11.3px; color: #881337; margin-left: 3px; }
+
+.pruefung-box { background: #eef2ff; border: 1.5px solid #a5b4fc; border-radius: 8px; padding: 9.8px 14.6px; margin: 7.3px 0 9.8px 0; }
+.pruefung-box .pb-title { font-size: 13.0px; font-weight: 700; color: #3730a3; margin-bottom: 4px; }
+.pruefung-box .pb-de { font-size: 11.9px; color: #1e1b4b; margin-bottom: 1px; }
+.pruefung-box .pb-vn { font-size: 11.3px; color: #4338ca; font-style: italic; margin-bottom: 3px; }
+.pruefung-box .pb-punkt { font-size: 11.9px; color: #1e1b4b; margin: 2.4px 0 2.4px 14.6px; }
+.pruefung-box .pb-punkt-vn { font-size: 10.7px; color: #4338ca; font-style: italic; margin: 0 0 2.4px 14.6px; }
+.pruefung-timer { display: inline-flex; align-items: center; gap: 6.0px; background: #ea580c; color: white; font-size: 12.4px; font-weight: 700; padding: 4.9px 14.6px; border-radius: 20px; margin: 4.9px 0; }
+.schreibfeld { border: 1.5px dashed #94a3b8; border-radius: 8px; background: repeating-linear-gradient(white, white 17px, #e2e8f0 18px); padding: 9.8px 12.2px; min-height: 167px; margin: 7.3px 0; }
+.schreibfeld .sf-label { font-size: 10.2px; color: #94a3b8; font-style: italic; margin-bottom: 2px; }
+.checkliste { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 7.3px 12.2px; margin-top: 5px; }
+.checkliste h4 { font-size: 11.9px; font-weight: 700; color: #14532d; margin-bottom: 3px; }
+.check-item { font-size: 11.3px; color: #166534; margin-bottom: 2px; display: flex; align-items: baseline; gap: 6.0px; }
+.check-item .cb { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #16a34a; border-radius: 2px; flex-shrink: 0; }
+.check-item .ci-vn { color: #15803d; font-size: 10.2px; font-style: italic; }
+
+/* ═══════════════════════ NEU IN L24 — FESTLICHES FINALE-DESIGN ═══════════════════════ */
+.doc-header.finale { border-bottom: 3px solid transparent; border-image: linear-gradient(90deg, #f59e0b, #ec4899, #8b5cf6, #3b82f6, #10b981) 1; padding-bottom: 6px; }
+.doc-header .badge.finale-badge { background: linear-gradient(90deg, #f59e0b, #ec4899); color: white; font-weight: 700; }
+.footer.finale { border-top: 1.5px solid transparent; border-image: linear-gradient(90deg, #f59e0b, #ec4899, #8b5cf6, #3b82f6, #10b981) 1; }
+
+.kurs-map { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8.4px; margin-bottom: 6px; }
+.kurs-gruppe { border-radius: 8px; padding: 7.3px 9.8px; border: 1px solid; }
+.kurs-gruppe.g1 { background: #eff6ff; border-color: #93c5fd; }
+.kurs-gruppe.g2 { background: #f0fdf4; border-color: #86efac; }
+.kurs-gruppe.g3 { background: #fefce8; border-color: #fde047; }
+.kurs-gruppe.g4 { background: #fdf2f8; border-color: #f9a8d4; }
+.kurs-gruppe.g5 { background: #faf5ff; border-color: #d8b4fe; }
+.kurs-gruppe .kg-title { font-size: 10.7px; font-weight: 700; margin-bottom: 3px; color: #1a1a1a; }
+.kurs-gruppe .kg-item { font-size: 9.4px; margin-bottom: 1.5px; color: #374151; line-height: 1.33; }
+.kurs-gruppe .kg-item strong { color: #1e3a8a; }
+
+.werkzeug-cat { display: inline-block; font-size: 10.2px; font-weight: 700; padding: 1.2px 7.3px; border-radius: 4px; margin-right: 3px; color: white; }
+.werkzeug-cat.c1 { background: #3b82f6; }
+.werkzeug-cat.c2 { background: #10b981; }
+.werkzeug-cat.c3 { background: #f59e0b; }
+.werkzeug-cat.c4 { background: #ec4899; }
+.werkzeug-cat.c5 { background: #8b5cf6; }
+
+.bewertung-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 9.6px; margin-top: 6px; }
+.bewertung-item { background: white; border: 1px solid #cbd5e1; border-radius: 8px; padding: 7.3px 9.8px; text-align: center; }
+.bewertung-item .bw-title { font-size: 10.7px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.bewertung-item .bw-de { font-size: 9.6px; color: #475569; margin-bottom: 3px; }
+.bewertung-item .bw-sterne { font-size: 16.9px; color: #f59e0b; letter-spacing: 2px; }
+
+.zertifikat-box { background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 55%, #fde68a 100%); border: 2px solid #f59e0b; border-radius: 12px; padding: 19.5px 24.4px; text-align: center; margin-top: 10px; }
+.zertifikat-box .zb-icon { font-size: 29.4px; margin-bottom: 4px; }
+.zertifikat-box .zb-title { font-size: 18.1px; font-weight: 800; color: #92400e; margin-bottom: 5px; letter-spacing: 0.3px; }
+.zertifikat-box .zb-de { font-size: 12.4px; color: #78350f; margin-bottom: 3px; line-height: 1.48; }
+.zertifikat-box .zb-vn { font-size: 11.3px; color: #b45309; font-style: italic; line-height: 1.48; }
+.zertifikat-box .zb-sterne { font-size: 18.1px; color: #f59e0b; margin: 6.1px 0; letter-spacing: 4px; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SEITE 1 (Kursübersicht + Lernziele) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header finale">
+    <div>
+      <h1>🎓 Deutsch A1 — Lektion 24</h1>
+      <h2>Abschlussprojekt</h2>
+      <h2>Dự án tổng kết</h2>
+    </div>
+    <div class="badge finale-badge">🎉 Kursabschluss · A1</div>
+  </div>
+
+  <!-- Kursübersicht statt klassischer Wiederholung -->
+  <div class="section-title">🗺️ DEIN WEG DURCH DEN A1-KURS / Hành trình của bạn qua khóa học A1</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Du hast 23 Lektionen geschafft! Bevor du deine Abschlusspräsentation vorbereitest, schau dir noch einmal an, was du alles gelernt hast — jede Farbe steht für einen Themenblock.</div>
+    <div class="tip-vn">💡 Bạn đã hoàn thành 23 bài học! Trước khi chuẩn bị bài thuyết trình kết thúc khóa học, hãy cùng nhìn lại tất cả những gì bạn đã học được — mỗi màu sắc đại diện cho một nhóm chủ đề.</div>
+  </div>
+  <div class="kurs-map">
+    <div class="kurs-gruppe g1">
+      <div class="kg-title">🔵 Grundlagen (L0–4)</div>
+      <div class="kg-item"><strong>L0</strong> Phonetik &amp; Alphabet</div>
+      <div class="kg-item"><strong>L1</strong> Begrüßung, sein/heißen</div>
+      <div class="kg-item"><strong>L2</strong> Herkunft, kommen</div>
+      <div class="kg-item"><strong>L3</strong> Zahlen, Hobbys</div>
+      <div class="kg-item"><strong>L4</strong> Kontaktdaten, wohnen</div>
+    </div>
+    <div class="kurs-gruppe g2">
+      <div class="kg-title">🟢 Alltag &amp; Kasus (L5–10)</div>
+      <div class="kg-item"><strong>L5</strong> Berufe, Artikel, kein</div>
+      <div class="kg-item"><strong>L6</strong> Familie, Possessivartikel</div>
+      <div class="kg-item"><strong>L7</strong> haben komplett</div>
+      <div class="kg-item"><strong>L8–9</strong> Akkusativ, Einkaufen</div>
+      <div class="kg-item"><strong>L10</strong> Dativ, Wohnung</div>
+    </div>
+    <div class="kurs-gruppe g3">
+      <div class="kg-title">🟡 Zeit &amp; Aktivität (L11–17)</div>
+      <div class="kg-item"><strong>L11</strong> Trennbare Verben, Uhrzeit</div>
+      <div class="kg-item"><strong>L12</strong> müssen, Termine</div>
+      <div class="kg-item"><strong>L13–14</strong> können/mögen, wollen/dürfen/sollen</div>
+      <div class="kg-item"><strong>L15–17</strong> Dativobjekt, Imperativ, es</div>
+    </div>
+    <div class="kurs-gruppe g4">
+      <div class="kg-title">🌸 Perfekt (L18–21)</div>
+      <div class="kg-item"><strong>L18</strong> Possessiv im Akkusativ</div>
+      <div class="kg-item"><strong>L19</strong> Perfekt mit haben (regelmäßig)</div>
+      <div class="kg-item"><strong>L20</strong> Perfekt mit sein</div>
+      <div class="kg-item"><strong>L21</strong> Perfekt (unregelmäßig, trennbar)</div>
+    </div>
+    <div class="kurs-gruppe g5">
+      <div class="kg-title">🟣 Meinung &amp; Korrespondenz (L22–23)</div>
+      <div class="kg-item"><strong>L22</strong> Komparativ/Superlativ, dass</div>
+      <div class="kg-item"><strong>L23</strong> und/aber/weil/denn</div>
+      <div class="kg-item"><strong>L24</strong> <em>← du bist hier!</em></div>
+    </div>
+  </div>
+
+  <!-- Lernziele -->
+  <div class="section-title">🎯 LERNZIELE / Mục tiêu bài học</div>
+  <div class="lernziele">
+    <p class="de">✅ Ich kann eine zusammenhängende, ca. 2-minütige Präsentation über mich selbst halten.</p>
+    <p class="vn">✅ Tôi có thể trình bày một bài thuyết trình mạch lạc, khoảng 2 phút, về bản thân mình.</p>
+    <p class="de">✅ Ich kann dabei mindestens 8–10 verschiedene A1-Grammatikstrukturen aus dem ganzen Kurs aktiv einsetzen.</p>
+    <p class="vn">✅ Tôi có thể chủ động sử dụng ít nhất 8–10 cấu trúc ngữ pháp A1 khác nhau từ toàn bộ khóa học.</p>
+    <p class="de">✅ Ich kann meinen eigenen Lernfortschritt einschätzen und weiß, worauf ich beim weiteren Lernen (A2) achten sollte.</p>
+    <p class="vn">✅ Tôi có thể tự đánh giá tiến độ học tập của mình và biết cần chú ý điều gì khi học tiếp lên trình độ A2.</p>
+  </div>
+
+  <div class="footer finale">
+    <span>Deutsch A1 · Lektion 24 · Abschlussprojekt</span>
+    <span>Seite 1 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 2 (Grammatik-Recycling: Werkzeugkiste + häufigste Fehler des Kurses) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header finale">
+    <div>
+      <h1>🎓 Deutsch A1 — Lektion 24</h1>
+      <h2>Meine Grammatik-Werkzeugkiste / Hộp công cụ ngữ pháp của tôi</h2>
+    </div>
+    <div class="badge finale-badge">🎉 Kursabschluss · A1</div>
+  </div>
+
+  <div class="section-title">🔧 REFERENZTABELLE: ALLE A1-STRUKTUREN AUF EINEN BLICK / Bảng tham chiếu: toàn bộ cấu trúc A1 trong một cái nhìn</div>
+  <table class="vocab">
+    <colgroup><col style="width:20%"><col style="width:38%"><col style="width:32%"><col style="width:10%"></colgroup>
+    <thead><tr><th>Struktur</th><th>Kurzformel</th><th>Beispielsatz</th><th>Lektion</th></tr></thead>
+    <tbody>
+      <tr><td><span class="werkzeug-cat c1">Präsens</span> sein/heißen</td><td>ich bin / ich heiße + Name</td><td>Ich bin Lisa. Ich heiße Lisa.</td><td>L1</td></tr>
+      <tr><td><span class="werkzeug-cat c1">Präsens</span> W-Fragen</td><td>W-Wort + Verb + Subjekt?</td><td>Woher kommst du?</td><td>L2</td></tr>
+      <tr><td><span class="werkzeug-cat c2">Artikel</span> der/die/das + kein</td><td>kein/keine + Nomen</td><td>Ich habe kein Auto.</td><td>L5</td></tr>
+      <tr><td><span class="werkzeug-cat c2">Possessiv</span></td><td>mein/dein/sein/ihr + Nomen</td><td>Das ist meine Familie.</td><td>L6</td></tr>
+      <tr><td><span class="werkzeug-cat c2">Akkusativ</span></td><td>den/einen (nur maskulin ändert sich!)</td><td>Ich möchte einen Kaffee.</td><td>L8–9</td></tr>
+      <tr><td><span class="werkzeug-cat c2">Dativ</span> (lokal)</td><td>in/an/auf + dem/der</td><td>Der Tisch steht im Wohnzimmer.</td><td>L10</td></tr>
+      <tr><td><span class="werkzeug-cat c3">Trennbare Verben</span></td><td>Verb...Präfix (Präfix ans Ende!)</td><td>Ich stehe um 7 Uhr auf.</td><td>L11</td></tr>
+      <tr><td><span class="werkzeug-cat c3">Modalverben</span></td><td>können/müssen/wollen/dürfen/sollen/mögen + Infinitiv am Ende</td><td>Ich kann gut schwimmen.</td><td>L12–14</td></tr>
+      <tr><td><span class="werkzeug-cat c3">Imperativ</span></td><td>Verbstamm(+en) + !</td><td>Geh geradeaus!</td><td>L16</td></tr>
+      <tr><td><span class="werkzeug-cat c4">Perfekt mit haben</span></td><td>haben + ...ge...t/en</td><td>Ich habe gestern gekocht.</td><td>L19, L21</td></tr>
+      <tr><td><span class="werkzeug-cat c4">Perfekt mit sein</span></td><td>sein + ...ge...en (Bewegung)</td><td>Ich bin nach Berlin gefahren.</td><td>L20</td></tr>
+      <tr><td><span class="werkzeug-cat c5">Komparativ/Superlativ</span></td><td>-er/als &nbsp;|&nbsp; am -sten / der/die/das -ste</td><td>Berlin ist größer als Leipzig.</td><td>L22</td></tr>
+      <tr><td><span class="werkzeug-cat c5">dass-Satz</span></td><td>..., dass + Subjekt + ... + Verb</td><td>Ich finde, dass Deutsch schön ist.</td><td>L22</td></tr>
+      <tr><td><span class="werkzeug-cat c5">und/aber/denn</span></td><td>Hauptsatz + Konjunktion + Hauptsatz (Verb Pos. 2)</td><td>Ich komme nicht, denn ich bin krank.</td><td>L23</td></tr>
+      <tr><td><span class="werkzeug-cat c5">weil</span></td><td>..., weil + Subjekt + ... + Verb (Ende!)</td><td>Ich komme nicht, weil ich krank bin.</td><td>L23</td></tr>
+    </tbody>
+  </table>
+
+  <div class="warn-box">
+    <div class="wb-title">⚠️ Die 5 häufigsten Fehler des ganzen Kurses — noch einmal zur Erinnerung! / 5 lỗi phổ biến nhất trong cả khóa học — nhắc lại một lần nữa!</div>
+    <div class="wb-de"><span class="wb-err">❌ „Ich habe einen Bruder und eine Schwester, und ich habe keinen Auto."</span> → <span class="wb-ok">✅ „... und ich habe kein Auto."</span> — Akkusativ ändert sich nur bei maskulinen Nomen (der → einen/keinen), bei neutralen Nomen (das Auto) bleibt es „ein"/„kein"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „keinen Auto"</span> → <span class="wb-ok">✅ „kein Auto"</span> — chỉ danh từ giống đực mới biến đổi ở cách 4 (der→einen/keinen), danh từ giống trung (das Auto) vẫn giữ nguyên „ein"/„kein"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich bin gestern gekocht."</span> → <span class="wb-ok">✅ „Ich habe gestern gekocht."</span> — die meisten Verben bilden das Perfekt mit „haben", nur Bewegungs-/Zustandsverben mit „sein"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich bin gestern gekocht."</span> → <span class="wb-ok">✅ „Ich habe gestern gekocht."</span> — hầu hết động từ dùng „haben" để tạo thì Perfekt, chỉ động từ chỉ chuyển động/thay đổi trạng thái mới dùng „sein"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Der Zug ist mehr schnell als das Auto."</span> → <span class="wb-ok">✅ „Der Zug ist schneller als das Auto."</span> — im Deutschen hängt man „-er" an, kein „mehr"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Der Zug ist mehr schnell als das Auto."</span> → <span class="wb-ok">✅ „Der Zug ist schneller als das Auto."</span> — trong tiếng Đức chỉ cần thêm „-er", không dùng „mehr"!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich finde, dass ist Berlin schön."</span> → <span class="wb-ok">✅ „Ich finde, dass Berlin schön ist."</span> — im Nebensatz (dass/weil) steht das Verb ganz am Ende!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich finde, dass ist Berlin schön."</span> → <span class="wb-ok">✅ „Ich finde, dass Berlin schön ist."</span> — trong mệnh đề phụ (dass/weil), động từ phải đứng ở cuối câu!</div>
+    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich mag Kaffee, aber ich mag Tee auch."</span> → <span class="wb-ok">✅ „Ich mag Kaffee, und ich mag Tee auch."</span> — „aber" nur bei einem echten Gegensatz, sonst „und"!</div>
+    <div class="wb-vn"><span class="wb-err">❌ „Ich mag Kaffee, aber ich mag Tee auch."</span> → <span class="wb-ok">✅ „Ich mag Kaffee, und ich mag Tee auch."</span> — „aber" chỉ dùng khi có sự đối lập thật sự, còn lại dùng „und"!</div>
+  </div>
+
+  <div class="footer finale">
+    <span>Deutsch A1 · Lektion 24 · Abschlussprojekt</span>
+    <span>Seite 2 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 3 (Wortschatz-Recycling nach Themen + Kulturinfo-Rückblick) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header finale">
+    <div>
+      <h1>🎓 Deutsch A1 — Lektion 24</h1>
+      <h2>Mein Gesamtwortschatz / Toàn bộ từ vựng của tôi</h2>
+    </div>
+    <div class="badge finale-badge">🎉 Kursabschluss · A1</div>
+  </div>
+
+  <div class="section-title">📚 WORTSCHATZ-RECYCLING NACH THEMEN / Ôn lại từ vựng theo chủ đề</div>
+  <table class="vocab">
+    <colgroup><col style="width:18%"><col style="width:82%"></colgroup>
+    <thead><tr><th>Thema</th><th>Kernwortschatz</th></tr></thead>
+    <tbody>
+      <tr><td>👋 Begrüßung &amp; Herkunft</td><td>heißen, kommen aus, sprechen, das Land, die Sprache <span class="vn-word">(Chào hỏi &amp; xuất xứ: tên là, đến từ, nói, đất nước, ngôn ngữ)</span></td></tr>
+      <tr><td>👨‍👩‍👧 Familie &amp; Berufe</td><td>die Familie, der Bruder, die Schwester, der Beruf, arbeiten als <span class="vn-word">(Gia đình &amp; nghề nghiệp: gia đình, anh/em trai, chị/em gái, nghề nghiệp, làm nghề...)</span></td></tr>
+      <tr><td>🍎 Essen &amp; Einkaufen</td><td>das Brot, der Apfel, kaufen, möchten, der Preis, kosten <span class="vn-word">(Ăn uống &amp; mua sắm: bánh mì, táo, mua, muốn, giá cả, có giá)</span></td></tr>
+      <tr><td>🏠 Wohnung &amp; Möbel</td><td>das Zimmer, der Tisch, das Bett, wohnen, die Küche <span class="vn-word">(Căn hộ &amp; đồ nội thất: phòng, bàn, giường, sống/ở, nhà bếp)</span></td></tr>
+      <tr><td>⏰ Tagesablauf &amp; Termine</td><td>aufstehen, frühstücken, der Termin, die Uhrzeit, um ... Uhr <span class="vn-word">(Sinh hoạt hằng ngày &amp; lịch hẹn: thức dậy, ăn sáng, cuộc hẹn, giờ giấc, lúc ... giờ)</span></td></tr>
+      <tr><td>🎾 Freizeit &amp; Fähigkeiten</td><td>können, mögen, das Hobby, Sport machen, gern <span class="vn-word">(Thời gian rảnh &amp; khả năng: có thể, thích, sở thích, chơi thể thao, một cách vui vẻ)</span></td></tr>
+      <tr><td>🍽️ Restaurant &amp; Wegbeschreibung</td><td>bestellen, schmecken, geradeaus, links, rechts <span class="vn-word">(Nhà hàng &amp; chỉ đường: gọi món, có vị ngon, đi thẳng, trái, phải)</span></td></tr>
+      <tr><td>☀️ Wetter &amp; Körper</td><td>es regnet, die Sonne, der Kopf, der Arzt, wehtun <span class="vn-word">(Thời tiết &amp; cơ thể: trời mưa, mặt trời, đầu, bác sĩ, đau)</span></td></tr>
+      <tr><td>🕰️ Vergangenheit (Perfekt)</td><td>gemacht, gegangen, gefahren, gekauft, angerufen <span class="vn-word">(Quá khứ (Perfekt): đã làm, đã đi, đã đi (xe), đã mua, đã gọi điện)</span></td></tr>
+      <tr><td>⚖️ Vergleiche &amp; Meinungen</td><td>größer, am besten, ich finde, dass ..., meiner Meinung nach <span class="vn-word">(So sánh &amp; ý kiến: lớn hơn, tốt nhất, tôi thấy rằng..., theo ý kiến của tôi)</span></td></tr>
+      <tr><td>✉️ Korrespondenz</td><td>die E-Mail, der Brief, einladen, absagen, mit freundlichen Grüßen <span class="vn-word">(Thư từ: email, thư, mời, hủy/từ chối, trân trọng)</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="kultur-box">
+    <div class="kb-title">🌍 KULTURINFO — Rückblick: Was habe ich über deutschsprachige Kultur gelernt? / Kiến thức văn hóa — nhìn lại: tôi đã học được gì về văn hóa các nước nói tiếng Đức?</div>
+    <div class="kb-de">Über den ganzen Kurs hinweg hast du viele kleine Einblicke bekommen: die Bedeutung von Pünktlichkeit, das Sie/du-System, typische Feiertage, den Unterschied zwischen Nord- und Süddeutschland, Höflichkeitsregeln beim Einkaufen und in Restaurants, sowie die klare Struktur formeller Briefe und E-Mails. All dieses Wissen hilft dir nicht nur beim Sprechen, sondern auch dabei, dich in einer deutschsprachigen Umgebung sicherer zu bewegen.</div>
+    <div class="kb-vn">Trong suốt khóa học, bạn đã có được rất nhiều hiểu biết nhỏ: tầm quan trọng của sự đúng giờ, hệ thống xưng hô Sie/du, các ngày lễ tiêu biểu, sự khác biệt giữa miền Bắc và miền Nam nước Đức, quy tắc lịch sự khi mua sắm và ở nhà hàng, cũng như cấu trúc rõ ràng của thư và email trang trọng. Tất cả những kiến thức này không chỉ giúp ích cho việc nói, mà còn giúp bạn tự tin hơn khi sống trong môi trường nói tiếng Đức.</div>
+  </div>
+
+  <div class="footer finale">
+    <span>Deutsch A1 · Lektion 24 · Abschlussprojekt</span>
+    <span>Seite 3 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 4 (Präsentations-Gerüst + Muster-Präsentationsskript) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header finale">
+    <div>
+      <h1>🎓 Deutsch A1 — Lektion 24</h1>
+      <h2>Bausteine für deine Präsentation / Các mảnh ghép cho bài thuyết trình của bạn</h2>
+    </div>
+    <div class="badge finale-badge">🎉 Kursabschluss · A1</div>
+  </div>
+
+  <div class="section-title">🧩 FRAGENKATALOG — DAS GERÜST DEINER PRÄSENTATION / Danh mục câu hỏi — khung sườn cho bài thuyết trình của bạn</div>
+  <div class="gram-box">
+    <h4>Beantworte diese Fragen der Reihe nach — so entsteht automatisch eine zusammenhängende Präsentation! / Trả lời lần lượt những câu hỏi này — bài thuyết trình mạch lạc sẽ tự nhiên hình thành!</h4>
+    <div class="rule-de">1️⃣ Wer bist du? Wie heißt du? (L1) &nbsp; 2️⃣ Woher kommst du? Welche Sprachen sprichst du? (L2–3) &nbsp; 3️⃣ Was ist dein Beruf? Erzähl von deiner Familie. (L5–6) &nbsp; 4️⃣ Wie sieht dein Tagesablauf aus? (L11) &nbsp; 5️⃣ Was sind deine Hobbys? Was kannst du gut? (L13) &nbsp; 6️⃣ Was hast du letztes Wochenende gemacht? (Perfekt, L19–21) &nbsp; 7️⃣ Vergleiche zwei Dinge, die du magst. (Komparativ, L22) &nbsp; 8️⃣ Warum lernst du Deutsch? (weil/denn, L23)</div>
+    <div class="rule-vn">1️⃣ Bạn là ai? Bạn tên gì? 2️⃣ Bạn đến từ đâu? Bạn nói được những ngôn ngữ nào? 3️⃣ Nghề nghiệp của bạn là gì? Hãy kể về gia đình bạn. 4️⃣ Sinh hoạt hằng ngày của bạn như thế nào? 5️⃣ Sở thích của bạn là gì? Bạn giỏi việc gì? 6️⃣ Cuối tuần trước bạn đã làm gì? (thì Perfekt) 7️⃣ So sánh hai thứ mà bạn thích (thể so sánh hơn). 8️⃣ Vì sao bạn học tiếng Đức? (weil/denn)</div>
+  </div>
+
+  <div class="section-title">💬 MUSTER-PRÄSENTATIONSSKRIPT (ca. 2 Minuten) / Bài thuyết trình mẫu (khoảng 2 phút)</div>
+  <div class="dialog-box">
+    <div class="dialog-line">Hallo, ich heiße Lisa und ich komme aus Hamburg. Ich spreche Deutsch und ein bisschen Englisch. Von Beruf bin ich Lehrerin, und ich habe eine kleine Familie: meinen Mann und einen Sohn.</div>
+    <div class="dialog-line">An einem normalen Tag stehe ich um 7 Uhr auf, und ich fahre mit dem Fahrrad zur Arbeit. Nachmittags habe ich meistens Zeit für meine Hobbys. Ich kann gut kochen, und ich spiele auch gern Tennis.</div>
+    <div class="dialog-line">Letztes Wochenende bin ich nach Berlin gefahren und ich habe viele Freunde besucht. Wir haben zusammen gegessen und wir haben viel gelacht.</div>
+    <div class="dialog-line">Ich finde, dass Hamburg schöner ist als Berlin, denn Hamburg hat das Wasser und ist ruhiger. Ich lerne Deutsch, weil ich gerne mit meinen Nachbarn sprechen möchte, und weil ich diese Sprache sehr interessant finde.</div>
+    <div class="dialog-line">Das war meine Präsentation — vielen Dank fürs Zuhören!</div>
+  </div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Zähl selbst: Wie viele verschiedene Grammatikstrukturen aus dem ganzen Kurs kannst du in diesem Skript finden? (Lösung: mindestens 10!)</div>
+    <div class="tip-vn">💡 Tự đếm xem: bạn tìm được bao nhiêu cấu trúc ngữ pháp khác nhau từ cả khóa học trong bài mẫu này? (Đáp án: ít nhất 10 cấu trúc!)</div>
+  </div>
+
+  <div class="footer finale">
+    <span>Deutsch A1 · Lektion 24 · Abschlussprojekt</span>
+    <span>Seite 4 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 5 (Prüfungssimulation Sprechen: 2-Minuten-Präsentation) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header finale">
+    <div>
+      <h1>🎓 Deutsch A1 — Lektion 24</h1>
+      <h2>Prüfungssimulation — Sprechen / Mô phỏng bài thi — Nói</h2>
+    </div>
+    <div class="badge finale-badge">🎉 Kursabschluss · A1</div>
+  </div>
+
+  <div class="section-title">🎤 PRÜFUNGSSIMULATION: DEINE 2-MINUTEN-PRÄSENTATION / MÔ PHỎNG BÀI THI: BÀI THUYẾT TRÌNH 2 PHÚT CỦA BẠN</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 So läuft die echte mündliche Goethe-A1-Prüfung ab: Du bereitest dich kurz mit Stichpunkten vor (Seite 6), dann sprichst du frei — ohne ganze Sätze abzulesen!</div>
+    <div class="tip-vn">💡 Bài thi nói Goethe-A1 thật diễn ra như sau: bạn chuẩn bị ngắn gọn bằng các từ khóa (trang 6), sau đó nói tự do — không đọc theo câu hoàn chỉnh!</div>
+  </div>
+
+  <div class="pruefung-box">
+    <div class="pb-title">🎤 Aufgabe / Nhiệm vụ</div>
+    <div class="pb-de">Halte eine zusammenhängende Präsentation über dich selbst (ca. 2 Minuten).</div>
+    <div class="pb-vn">Hãy trình bày một bài thuyết trình mạch lạc về chính bạn (khoảng 2 phút).</div>
+    <div class="pb-punkt">① Stell dich vor: Name, Herkunft, Sprachen, Beruf, Familie.</div>
+    <div class="pb-punkt-vn">① Giới thiệu bản thân: tên, xuất xứ, ngôn ngữ, nghề nghiệp, gia đình.</div>
+    <div class="pb-punkt">② Beschreibe deinen Tagesablauf und deine Hobbys.</div>
+    <div class="pb-punkt-vn">② Mô tả sinh hoạt hằng ngày và sở thích của bạn.</div>
+    <div class="pb-punkt">③ Erzähl von einem Erlebnis in der Vergangenheit (Perfekt).</div>
+    <div class="pb-punkt-vn">③ Kể về một trải nghiệm trong quá khứ (thì Perfekt).</div>
+    <div class="pb-punkt">④ Vergleiche zwei Dinge und begründe deine Meinung (weil/denn/dass).</div>
+    <div class="pb-punkt-vn">④ So sánh hai điều và giải thích ý kiến của bạn (weil/denn/dass).</div>
+    <div class="pruefung-timer">⏱️ 2 Minuten Vortrag / 2 phút thuyết trình</div>
+  </div>
+
+  <div class="checkliste">
+    <h4>✅ Vorbereitungs-Checkliste — vor dem Sprechen abhaken! / Danh sách chuẩn bị — đánh dấu trước khi nói!</h4>
+    <div class="check-item"><span class="cb"></span> Alle 4 Punkte in meinen Stichpunkten enthalten? <span class="ci-vn">Đã có đủ 4 điểm trong các từ khóa của tôi chưa?</span></div>
+    <div class="check-item"><span class="cb"></span> Mindestens 1× Perfekt verwendet? <span class="ci-vn">Đã dùng ít nhất 1 lần thì Perfekt chưa?</span></div>
+    <div class="check-item"><span class="cb"></span> Mindestens 1× Komparativ/Superlativ verwendet? <span class="ci-vn">Đã dùng ít nhất 1 lần thể so sánh hơn/nhất chưa?</span></div>
+    <div class="check-item"><span class="cb"></span> Mindestens 1× weil/denn/dass verwendet? <span class="ci-vn">Đã dùng ít nhất 1 lần weil/denn/dass chưa?</span></div>
+    <div class="check-item"><span class="cb"></span> Eine klare Einleitung und ein klarer Schluss? <span class="ci-vn">Đã có phần mở đầu và kết thúc rõ ràng chưa?</span></div>
+  </div>
+
+  <div class="section-title">⭐ SELBSTBEWERTUNG NACH DEM SPRECHEN / Tự đánh giá sau khi nói</div>
+  <div class="bewertung-grid">
+    <div class="bewertung-item">
+      <div class="bw-title">Inhalt vollständig?</div>
+      <div class="bw-de">Nội dung đã đầy đủ chưa?</div>
+      <div class="bw-sterne">☆☆☆</div>
+    </div>
+    <div class="bewertung-item">
+      <div class="bw-title">Grammatik variiert?</div>
+      <div class="bw-de">Ngữ pháp đã đa dạng chưa?</div>
+      <div class="bw-sterne">☆☆☆</div>
+    </div>
+    <div class="bewertung-item">
+      <div class="bw-title">Flüssig gesprochen?</div>
+      <div class="bw-de">Nói đã trôi chảy chưa?</div>
+      <div class="bw-sterne">☆☆☆</div>
+    </div>
+  </div>
+
+  <div class="footer finale">
+    <span>Deutsch A1 · Lektion 24 · Abschlussprojekt</span>
+    <span>Seite 5 / 6</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SEITE 6 (Stichpunkte-Feld + Hausaufgabe + Abschluss-Zertifikat) ═══════════════════════════════ -->
+<div class="page compact">
+
+  <div class="doc-header finale">
+    <div>
+      <h1>🎓 Deutsch A1 — Lektion 24</h1>
+      <h2>Deine Präsentation &amp; dein Abschluss / Bài thuyết trình &amp; lễ tốt nghiệp của bạn</h2>
+    </div>
+    <div class="badge finale-badge">🎉 Kursabschluss · A1</div>
+  </div>
+
+  <div class="section-title">📝 STICHPUNKTE FÜR DEINE PRÄSENTATION / Từ khóa cho bài thuyết trình của bạn</div>
+  <div class="tip-box">
+    <div class="tip-de">💡 Notiere hier nur kurze Stichpunkte, keine ganzen Sätze — das trainiert freies Sprechen statt Ablesen!</div>
+    <div class="tip-vn">💡 Ở đây chỉ ghi những từ khóa ngắn gọn, không viết câu hoàn chỉnh — điều này giúp luyện nói tự do thay vì đọc theo!</div>
+  </div>
+  <div class="schreibfeld">
+    <div class="sf-label">Meine Stichpunkte / Từ khóa của tôi:</div>
+  </div>
+
+  <!-- Hausaufgaben -->
+  <div class="ha-box">
+    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+    <div class="ha-item">🎙️ <strong>Präsentation üben und aufnehmen / Luyện tập và ghi âm bài thuyết trình:</strong> Übe deine 2-Minuten-Präsentation laut zu Hause und nimm sie mit dem Handy auf. Hör sie dir danach selbst an — was klingt schon gut, was möchtest du noch verbessern?
+      <div class="ha-vn">Luyện tập bài thuyết trình 2 phút của bạn thật to ở nhà và ghi âm lại bằng điện thoại. Sau đó tự nghe lại — chỗ nào đã nói tốt, chỗ nào bạn muốn cải thiện thêm?</div>
+    </div>
+    <div class="ha-item">📖 <strong>Werkzeugkiste durchsehen / Xem lại hộp công cụ:</strong> Schau dir noch einmal die Grammatik-Referenztabelle auf Seite 2 an und markiere die 3 Strukturen, bei denen du dich noch am unsichersten fühlst.
+      <div class="ha-vn">Xem lại một lần nữa bảng tham chiếu ngữ pháp ở trang 2 và đánh dấu 3 cấu trúc mà bạn còn cảm thấy chưa chắc chắn nhất.</div>
+    </div>
+    <div class="ha-item">🚀 <strong>Ausblick A2 / Hướng tới A2:</strong> Überlege dir, welche 3 Themen dich in einem A2-Kurs am meisten interessieren würden (z. B. mehr Vergangenheit, Wünsche mit „würde", Nebensätze).
+      <div class="ha-vn">Hãy suy nghĩ xem 3 chủ đề nào bạn quan tâm nhất trong khóa học A2 (ví dụ: nhiều thì quá khứ hơn, diễn đạt mong muốn với „würde", mệnh đề phụ).</div>
+    </div>
+  </div>
+
+  <!-- Abschluss-Zertifikat -->
+  <div class="zertifikat-box">
+    <div class="zb-icon">🎓🎉</div>
+    <div class="zb-title">Herzlichen Glückwunsch! Du hast Niveau A1 abgeschlossen!</div>
+    <div class="zb-sterne">★ ★ ★ ★ ★</div>
+    <div class="zb-de">Du hast 24 Lektionen gemeistert — von deinem ersten „Hallo" bis zu deiner eigenen 2-Minuten-Präsentation. Das ist eine großartige Leistung! Bleib motiviert, sprich weiter Deutsch, und viel Erfolg beim nächsten Schritt: dem Goethe-Zertifikat A1 und dem Sprung nach A2.</div>
+    <div class="zb-vn">Bạn đã hoàn thành 24 bài học — từ lời „Hallo" đầu tiên cho đến bài thuyết trình 2 phút của chính mình. Đây là một thành tựu tuyệt vời! Hãy giữ vững động lực, tiếp tục nói tiếng Đức, và chúc bạn thật nhiều may mắn ở bước tiếp theo: kỳ thi chứng chỉ Goethe A1 và hành trình tiến lên trình độ A2.</div>
+  </div>
+
+  <div class="footer finale">
+    <span>Deutsch A1 · Lektion 24 · Viel Erfolg! / Chúc bạn tương lai tươi sáng! 🎉</span>
+    <span>Seite 6 / 6</span>
+  </div>
+</div>
+
+</body>
+</html>
