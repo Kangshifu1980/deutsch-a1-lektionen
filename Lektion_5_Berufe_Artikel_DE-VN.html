@@ -1,12 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Deutsch A1 — Lektion 5</title>
 <style>
+@page { size: A4; margin: 0; }
 @media print {
-  body { margin: 0; }
+  html, body { width: 210mm; margin: 0 !important; padding: 0 !important; }
+
   .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
   .page.compact { padding: 7mm 12mm 3mm 12mm !important; }
   .page:last-child { page-break-after: avoid !important; }
@@ -225,317 +228,340 @@ table.vocab tr:hover td { background: #eff6ff; }
   background: #f8fbff;
 }
 
+
+/* Zusatzvokabeln: reine Verständnishilfe, bewusst kompakt */
+.passiv-vocab { width:100%; border-collapse:collapse; margin:2px 0 4px 0; table-layout:fixed; }
+.passiv-vocab td { font-size:9.3px; padding:1px 5px; border:0.5px solid #e2e8f0; }
+.passiv-vocab td:last-child { color:#0f766e; }
+.passiv-label { font-size:8.8px; font-weight:700; color:#64748b; margin:1px 0 1px; }
+/* Seite 2 enger, damit die beiden Kulturinfos ohne Seitenumbruch auf derselben Seite bleiben */
+.page.page2-tight { padding-top:5mm !important; padding-bottom:2mm !important; line-height:1.08; font-size:10.5px; }
+.page.page2-tight .doc-header { margin-bottom:3px; padding-bottom:2px; }
+.page.page2-tight .section-title { margin:3px 0 2px; }
+.page.page2-tight .gram-box { padding:3px 7px; margin-bottom:2px; }
+.page.page2-tight .tip-box { padding:2px 6px; margin:1px 0; }
+.page.page2-tight .warn-box { padding:2px 6px; margin:1px 0 3px; }
+.page.page2-tight .kultur-box { padding:3px 8px; margin:2px 0 3px; }
+.page.page2-tight .ubung-header { padding:1.5px 7px; }
+.page.page2-tight .ubung-body { padding:3px 7px; margin-bottom:2px; }
+.page.page2-tight .fill-line { margin-bottom:0; }
+.page.page2-tight .footer { margin-top:2px; padding-top:2px; }
+
+/* Seite 3 gezielt verdichtet: Dialog + Lesehilfe + Sprechkarten bleiben auf einer Druckseite */
+.page.page3-tight { padding-top:5mm !important; padding-bottom:2mm !important; line-height:1.12; font-size:10.5px; }
+.page.page3-tight .doc-header { margin-bottom:2px; padding-bottom:1px; }
+.page.page3-tight .section-title { margin:2px 0 1px; padding-bottom:1px; }
+.page.page3-tight .match-game { padding:3px 7px; margin-bottom:2px; }
+.page.page3-tight .match-game .game-vn { margin-bottom:2px; }
+.page.page3-tight .match-row { gap:4px; margin-top:2px; }
+.page.page3-tight .match-label { margin-top:1px; }
+.page.page3-tight .match-card { padding:3px 2px; }
+.page.page3-tight .dialog-box { padding:2px 7px; margin-bottom:1px; }
+.page.page3-tight .dialog-line { margin-bottom:0.5px; }
+.page.page3-tight .lese-box { padding:2px 7px; margin-bottom:1px; line-height:1.28; }
+.page.page3-tight .passiv-label { margin:0.5px 0; font-size:8.5px; }
+.page.page3-tight .passiv-vocab { margin:0 0 2px; }
+.page.page3-tight .passiv-vocab td { font-size:8.8px; padding:0.5px 4px; }
+.page.page3-tight .freie-frage { padding:4px 8px; margin-top:3px; }
+.page.page3-tight .karten-grid { margin-top:3px; gap:6px; }
+.page.page3-tight .sprech-karte { padding:3px 6px; border-radius:7px; }
+.page.page3-tight .sprech-karte .karte-num { padding:0.5px 6px; margin-bottom:1px; font-size:9px; }
+.page.page3-tight .sprech-karte .wort-pill { font-size:10.5px; padding:1px 4px; margin-bottom:1px; }
+.page.page3-tight .sprech-karte .prompt-row { margin-bottom:1px; }
+.page.page3-tight .sprech-karte .prompt-tag { padding:1px 5px; font-size:8.8px; }
+.page.page3-tight .sprech-karte .anweisung-de { font-size:8.3px; margin-bottom:0; }
+.page.page3-tight .sprech-karte .anweisung-vn { font-size:8px; margin-bottom:1px; }
+.page.page3-tight .sprech-karte .timer-badge { padding:1px 7px; font-size:9px; }
+.page.page3-tight .footer { margin-top:1px; padding-top:1px; }
+
+/* Lesetext-Fragen: klar und gut lesbar, ohne unnötige Verdichtung */
+.page.page3-tight .reading-q:last-child { border-bottom:none; }
 </style>
 </head>
 <body>
-
 <!-- ═══════════════════════════════ SEITE 1 (Wiederholung + Phonetik + Lernziele + Wortschatz 1, 2 & 3) ═══════════════════════════════ -->
 <div class="page compact">
-
-  <div class="doc-header">
-    <div>
-      <h1>🇩🇪 Deutsch A1 — Lektion 5</h1>
-      <h2>Berufe &amp; Artikel</h2>
-      <h2>Nghề nghiệp &amp; Mạo từ</h2>
-    </div>
-    <div class="badge">A1 · Lektion 5</div>
-  </div>
-
-  <!-- Wiederholung -->
-  <div class="section-title">⏱️ WIEDERHOLUNG LEKTION 4 / Ôn tập bài 4</div>
-  <div class="wiederholung-box">
-    <div class="wh-title">Grammatik-Warm-up: wohnen, Zahlen &amp; antworten / Khởi động ngữ pháp: wohnen, số đếm &amp; antworten</div>
-    <div class="wiederholung-grid">
-      <div class="wh-item">
-        <div class="wh-laut">wohnen</div>
-        <div class="wh-mund">Ergänze: Ich ___ in Berlin.</div>
-        <div class="wh-beispiel">Tôi sống ở Berlin.</div>
-      </div>
-      <div class="wh-item">
-        <div class="wh-laut">Zahlen 21–100</div>
-        <div class="wh-mund">Schreibe die Ziffer: fünfundsechzig</div>
-        <div class="wh-beispiel">Viết ra chữ số Ả Rập tương ứng</div>
-      </div>
-      <div class="wh-item">
-        <div class="wh-laut">antworten</div>
-        <div class="wh-mund">Ergänze: Er ___ sofort.</div>
-        <div class="wh-beispiel">Anh ấy trả lời ngay lập tức.</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Lernziele -->
-  <div class="section-title">🎯 Lernziele / Mục tiêu học tập</div>
-  <div class="lernziele">
-    <p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
-    <p class="de">✔ Berufe nennen und danach fragen: „Was bist du von Beruf?" <span class="vn">— nói tên nghề nghiệp và hỏi: „Bạn làm nghề gì?"</span></p>
-    <p class="de">✔ Den bestimmten und unbestimmten Artikel richtig einsetzen — und wissen, wann gar kein Artikel nötig ist <span class="vn">— dùng đúng mạo từ xác định và không xác định — và biết khi nào hoàn toàn không cần mạo từ</span></p>
-    <p class="de">✔ Berufe und Dinge mit „kein" verneinen <span class="vn">— dùng „kein" để phủ định nghề nghiệp và sự vật</span></p>
-    <p class="de">✔ Über Arbeitsplätze und Arbeitsgeräte sprechen <span class="vn">— nói về nơi làm việc và dụng cụ làm việc</span></p>
-  </div>
-
-  <!-- Legende -->
-  <div class="section-title">🎨 Farbkodierung / Mã màu mạo từ</div>
-  <div class="legend">
-    <div class="legend-item"><span class="der">der</span> maskulin / giống đực</div>
-    <div class="legend-item"><span class="die">die</span> feminin / giống cái</div>
-    <div class="legend-item"><span class="das">das</span> neutral / giống trung</div>
-    <div class="legend-item"><span class="warn">⚠️</span> unregelmäßig / bất quy tắc</div>
-  </div>
-
-  <!-- Phonetik -->
-  <div class="section-title">🔊 Aussprache-Minute / Phút phát âm</div>
-  <div class="phon-box">
-    <div class="phon-title">Unbetontes „-er" am Wortende (đọc gần giống „ơ") — NEU! / Đuôi „-er" không nhấn cuối từ — âm mới!</div>
-    <div class="phon-de">Am Ende vieler Berufsbezeichnungen steht „-er" — und das wird NICHT als gerolltes „r" gesprochen, sondern als weicher, kurzer Vokal-Laut, ähnlich einem schwachen „a". Die Zunge bleibt entspannt unten!</div>
-    <div class="phon-vn">Hầu như mọi tên nghề nghiệp đều kết thúc bằng „-er" — âm này <b>không</b> đọc rung lưỡi như chữ „r", mà đọc thành một nguyên âm ngắn, nhẹ, gần giống âm „ơ" trong tiếng Việt. Lưỡi thả lỏng, để thấp, không cong lên!</div>
-    <div class="phon-beispiele">Beispiele: Lehr<strong>er</strong> · Verkäuf<strong>er</strong> · Bäck<strong>er</strong> · Programmier<strong>er</strong></div>
-  </div>
-  <div class="phon-box">
-    <div class="phon-title">„ä" (đọc như „e" mở miệng) — Wiederholung / Nguyên âm biến âm „ä" — ôn lại</div>
-    <div class="phon-de">Erinnerung an den Umlaut aus Lektion 0: „ä" klingt wie ein offenes „e". Er taucht oft in den femininen Berufsformen auf!</div>
-    <div class="phon-vn">Ôn lại nguyên âm biến âm (Umlaut) đã học ở bài 0: „ä" phát âm giống âm „e" nhưng miệng mở rộng hơn. Âm này xuất hiện rất nhiều trong dạng giống cái của tên nghề nghiệp!</div>
-    <div class="phon-beispiele">Beispiele: Ärztin · Bäckerin · (der Koch → die K<strong>ö</strong>chin, ebenfalls Umlaut!)</div>
-  </div>
-
-  <!-- Wortschatz: Berufe -->
-  <div class="section-title">📚 Wortschatz-Tabelle 1: Berufe / Bảng từ vựng 1: Nghề nghiệp</div>
-  <table class="vocab">
-    <colgroup><col style="width:20%"><col style="width:22%"><col style="width:16%"><col style="width:24%"><col style="width:18%"></colgroup>
-    <thead><tr><th>Maskulin</th><th>Feminin</th><th>Aussprache (m)</th><th>Aussprache (f)</th><th>Tiếng Việt</th></tr></thead>
-    <tbody>
-      <tr><td><span class="der">der</span>Lehrer</td><td><span class="die">die</span>Lehrerin</td><td class="phonetik">lê-rơ</td><td class="phonetik">lê-rơ-rin</td><td class="vn-word">giáo viên</td></tr>
-      <tr><td><span class="der">der</span>Arz<strong>t</strong> <span class="warn">⚠️</span></td><td><span class="die">die</span>Ärztin <span class="warn">⚠️</span></td><td class="phonetik">aats-<strong>t</strong> (âm "ts" rõ như chữ Z, giữ rõ "t" cuối)</td><td class="phonetik">éc-tsin (âm "ts" ở giữa, không phải "c" đơn)</td><td class="vn-word">bác sĩ</td></tr>
-      <tr><td><span class="der">der</span>Verkäufer</td><td><span class="die">die</span>Verkäuferin</td><td class="phonetik">fe-khoi-phơ</td><td class="phonetik">fe-khoi-phơ-rin</td><td class="vn-word">nhân viên bán hàng</td></tr>
-      <tr><td><span class="der">der</span>Ko<strong>ch</strong> <span class="warn">⚠️</span></td><td><span class="die">die</span>Köchin <span class="warn">⚠️</span></td><td class="phonetik">khokh (âm "kh" sâu trong cổ họng, giống "kh" trong "không" nhưng ở cuối từ — ach-Laut)</td><td class="phonetik">khơ-sin (âm "ch" mềm — ich-Laut)</td><td class="vn-word">đầu bếp</td></tr>
-      <tr><td><span class="der">der</span>Programmierer</td><td><span class="die">die</span>Programmiererin</td><td class="phonetik">pro-gra-mi-rơ</td><td class="phonetik">pro-gra-mi-rơ-rin</td><td class="vn-word">lập trình viên</td></tr>
-      <tr><td><span class="der">der</span>Studen<strong>t</strong></td><td><span class="die">die</span>Studentin</td><td class="phonetik">stu-đén<strong>t</strong> (giữ rõ "t" cuối)</td><td class="phonetik">stu-đen-tin</td><td class="vn-word">sinh viên</td></tr>
-      <tr><td><span class="der">der</span>Krankenpfleger</td><td><span class="die">die</span>Krankenpflegerin</td><td class="phonetik">kran-ken-pfle-gơ</td><td class="phonetik">kran-ken-pfle-gơ-rin</td><td class="vn-word">y tá / điều dưỡng</td></tr>
-    </tbody>
-  </table>
-  <div class="tip-box">
-    <div class="tip-de">💡 Sehr nützliches Wort: <strong>selbstständig</strong> (đọc: "den-xtén-đích") — bedeutet „unabhängig arbeitend, mit eigener Firma", oft zusammen mit dem Beruf genannt: „Ich bin Programmiererin und selbstständig."</div>
-    <div class="tip-vn">💡 Từ rất hữu ích: <strong>selbstständig</strong> (tự làm chủ / tự kinh doanh độc lập) — thường dùng cùng với nghề nghiệp: „Ich bin Programmiererin und selbstständig." (Tôi là lập trình viên, và tôi tự làm chủ.)</div>
-  </div>
-
-  <!-- Wortschatz: Arbeitsplätze & Arbeitsgeräte -->
-  <div class="section-title">📚 Wortschatz-Tabelle 2 &amp; 3: Arbeitsplätze &amp; Arbeitsgeräte / Bảng từ vựng 2&3: Nơi làm việc &amp; Dụng cụ làm việc</div>
-  <div class="two-col">
-    <table class="vocab">
-      <colgroup><col style="width:44%"><col style="width:28%"><col style="width:28%"></colgroup>
-      <thead><tr><th>Arbeitsplätze</th><th>Aussprache</th><th>Tiếng Việt</th></tr></thead>
-      <tbody>
-        <tr><td><span class="die">die</span>Schule</td><td class="phonetik">su-lơ</td><td class="vn-word">trường học</td></tr>
-        <tr><td><span class="das">das</span>Krankenhau<strong>s</strong></td><td class="phonetik">kran-ken-hau<strong>s</strong> (giữ rõ "s" cuối)</td><td class="vn-word">bệnh viện</td></tr>
-        <tr><td><span class="das">das</span>Büro</td><td class="phonetik">buy-rô</td><td class="vn-word">văn phòng</td></tr>
-        <tr><td><span class="das">das</span>Geschäf<strong>t</strong></td><td class="phonetik">gơ-séf<strong>t</strong> (giữ rõ "t" cuối)</td><td class="vn-word">cửa hàng</td></tr>
-        <tr><td><span class="die">die</span>Küche</td><td class="phonetik">kuy-sơ</td><td class="vn-word">nhà bếp</td></tr>
-      </tbody>
-    </table>
-    <table class="vocab">
-      <colgroup><col style="width:44%"><col style="width:28%"><col style="width:28%"></colgroup>
-      <thead><tr><th>Arbeitsgeräte</th><th>Aussprache</th><th>Tiếng Việt</th></tr></thead>
-      <tbody>
-        <tr><td><span class="der">der</span>Computer</td><td class="phonetik">kom-piu-tơ</td><td class="vn-word">máy tính</td></tr>
-        <tr><td><span class="das">das</span>Werkzeug</td><td class="phonetik">véc-tsoik</td><td class="vn-word">dụng cụ / công cụ</td></tr>
-        <tr><td><span class="die">die</span>Kasse</td><td class="phonetik">ka-sơ</td><td class="vn-word">quầy thu ngân</td></tr>
-        <tr><td><span class="das">das</span>Bu<strong>ch</strong></td><td class="phonetik">bu<strong>kh</strong> (âm "ch" cứng — ach-Laut)</td><td class="vn-word">sách</td></tr>
-        <tr><td><span class="der">der</span>Kochlöffel</td><td class="phonetik">khokh-lơ-phâu</td><td class="vn-word">thìa gỗ nấu ăn</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="footer">
-    <span>Deutsch A1 · Lektion 5</span>
-    <span>Seite 1 / 4</span>
-  </div>
+<div class="doc-header">
+<div>
+<h1>🇩🇪 Deutsch A1 — Lektion 5</h1>
+<h2>Berufe &amp; Artikel</h2>
+<h2>Nghề nghiệp &amp; Mạo từ</h2>
 </div>
-
+<div class="badge">A1 · Lektion 5</div>
+</div>
+<!-- Wiederholung -->
+<div class="section-title">⏱️ WIEDERHOLUNG LEKTION 4 / Ôn tập bài 4</div>
+<div class="wiederholung-box">
+<div class="wh-title">Grammatik-Warm-up: wohnen, Zahlen &amp; antworten / Khởi động ngữ pháp: wohnen, số đếm &amp; antworten</div>
+<div class="wiederholung-grid">
+<div class="wh-item">
+<div class="wh-laut">wohnen</div>
+<div class="wh-mund">Ergänze: Ich ___ in Berlin.</div>
+<div class="wh-beispiel">Tôi sống ở Berlin.</div>
+</div>
+<div class="wh-item">
+<div class="wh-laut">Zahlen 21–100</div>
+<div class="wh-mund">Schreibe die Ziffer: fünfundsechzig</div>
+<div class="wh-beispiel">Viết ra chữ số Ả Rập tương ứng</div>
+</div>
+<div class="wh-item">
+<div class="wh-laut">antworten</div>
+<div class="wh-mund">Ergänze: Er ___ sofort.</div>
+<div class="wh-beispiel">Anh ấy trả lời ngay lập tức.</div>
+</div>
+</div>
+</div>
+<!-- Lernziele -->
+<div class="section-title">🎯 Lernziele / Mục tiêu học tập</div>
+<div class="lernziele">
+<p class="de">Nach dieser Stunde kannst du: / <span style="font-weight:400; color:#3b82f6;">Sau bài học này, bạn có thể:</span></p>
+<p class="de">✔ Berufe nennen und danach fragen: „Was bist du von Beruf?" <span class="vn">— nói tên nghề nghiệp và hỏi: „Bạn làm nghề gì?"</span></p>
+<p class="de">✔ Den bestimmten und unbestimmten Artikel richtig einsetzen — und wissen, wann gar kein Artikel nötig ist <span class="vn">— dùng đúng mạo từ xác định và không xác định — và biết khi nào hoàn toàn không cần mạo từ</span></p>
+<p class="de">✔ Berufe und Dinge mit „kein" verneinen <span class="vn">— dùng „kein" để phủ định nghề nghiệp và sự vật</span></p>
+<p class="de">✔ Über Arbeitsplätze und Arbeitsgeräte sprechen <span class="vn">— nói về nơi làm việc và dụng cụ làm việc</span></p>
+</div>
+<!-- Legende -->
+<div class="section-title">🎨 Farbkodierung / Mã màu mạo từ</div>
+<div class="legend">
+<div class="legend-item"><span class="der">der</span> maskulin / giống đực</div>
+<div class="legend-item"><span class="die">die</span> feminin / giống cái</div>
+<div class="legend-item"><span class="das">das</span> neutral / giống trung</div>
+<div class="legend-item"><span class="warn">⚠️</span> unregelmäßig / bất quy tắc</div>
+</div>
+<!-- Phonetik -->
+<div class="section-title">🔊 Aussprache-Minute / Phút phát âm</div>
+<div class="phon-box">
+<div class="phon-title">Unbetontes „-er" am Wortende (đọc gần giống „ơ") — NEU! / Đuôi „-er" không nhấn cuối từ — âm mới!</div>
+<div class="phon-de">Am Ende vieler Berufsbezeichnungen steht „-er" — und das wird NICHT als gerolltes „r" gesprochen, sondern als weicher, kurzer Vokal-Laut, ähnlich einem schwachen „a". Die Zunge bleibt entspannt unten!</div>
+<div class="phon-vn">Hầu như mọi tên nghề nghiệp đều kết thúc bằng „-er" — âm này <b>không</b> đọc rung lưỡi như chữ „r", mà đọc thành một nguyên âm ngắn, nhẹ, gần giống âm „ơ" trong tiếng Việt. Lưỡi thả lỏng, để thấp, không cong lên!</div>
+<div class="phon-beispiele">Beispiele: Lehr<strong>er</strong> · Verkäuf<strong>er</strong> · Bäck<strong>er</strong> · Programmier<strong>er</strong></div>
+</div>
+<div class="phon-box">
+<div class="phon-title">„ä" (đọc như „e" mở miệng) — Wiederholung / Nguyên âm biến âm „ä" — ôn lại</div>
+<div class="phon-de">Erinnerung an den Umlaut aus Lektion 0: „ä" klingt wie ein offenes „e". Er taucht oft in den femininen Berufsformen auf!</div>
+<div class="phon-vn">Ôn lại nguyên âm biến âm (Umlaut) đã học ở bài 0: „ä" phát âm giống âm „e" nhưng miệng mở rộng hơn. Âm này xuất hiện rất nhiều trong dạng giống cái của tên nghề nghiệp!</div>
+<div class="phon-beispiele">Beispiele: Ärztin · Bäckerin · (der Koch → die K<strong>ö</strong>chin, ebenfalls Umlaut!)</div>
+</div>
+<!-- Wortschatz: Berufe -->
+<div class="section-title">📚 Wortschatz-Tabelle 1: Berufe / Bảng từ vựng 1: Nghề nghiệp</div>
+<table class="vocab">
+<colgroup><col style="width:20%"/><col style="width:22%"/><col style="width:16%"/><col style="width:24%"/><col style="width:18%"/></colgroup>
+<thead><tr><th>Maskulin</th><th>Feminin</th><th>Aussprache (m)</th><th>Aussprache (f)</th><th>Tiếng Việt</th></tr></thead>
+<tbody>
+<tr><td><span class="der">der</span>Lehrer</td><td><span class="die">die</span>Lehrerin</td><td class="phonetik">lê-rơ</td><td class="phonetik">lê-rơ-rin</td><td class="vn-word">giáo viên</td></tr>
+<tr><td><span class="der">der</span>Arz<strong>t</strong> <span class="warn">⚠️</span></td><td><span class="die">die</span>Ärztin <span class="warn">⚠️</span></td><td class="phonetik">aats-<strong>t</strong> (âm "ts" rõ như chữ Z, giữ rõ "t" cuối)</td><td class="phonetik">éc-tsin (âm "ts" ở giữa, không phải "c" đơn)</td><td class="vn-word">bác sĩ</td></tr>
+<tr><td><span class="der">der</span>Verkäufer</td><td><span class="die">die</span>Verkäuferin</td><td class="phonetik">fe-khoi-phơ</td><td class="phonetik">fe-khoi-phơ-rin</td><td class="vn-word">nhân viên bán hàng</td></tr>
+<tr><td><span class="der">der</span>Ko<strong>ch</strong> <span class="warn">⚠️</span></td><td><span class="die">die</span>Köchin <span class="warn">⚠️</span></td><td class="phonetik">khokh (âm "kh" sâu trong cổ họng, giống "kh" trong "không" nhưng ở cuối từ — ach-Laut)</td><td class="phonetik">khơ-sin (âm "ch" mềm — ich-Laut)</td><td class="vn-word">đầu bếp</td></tr>
+<tr><td><span class="der">der</span>Programmierer</td><td><span class="die">die</span>Programmiererin</td><td class="phonetik">pro-gra-mi-rơ</td><td class="phonetik">pro-gra-mi-rơ-rin</td><td class="vn-word">lập trình viên</td></tr>
+<tr><td><span class="der">der</span>Studen<strong>t</strong></td><td><span class="die">die</span>Studentin</td><td class="phonetik">stu-đén<strong>t</strong> (giữ rõ "t" cuối)</td><td class="phonetik">stu-đen-tin</td><td class="vn-word">sinh viên</td></tr>
+<tr><td><span class="der">der</span>Krankenpfleger</td><td><span class="die">die</span>Krankenpflegerin</td><td class="phonetik">kran-ken-pfle-gơ</td><td class="phonetik">kran-ken-pfle-gơ-rin</td><td class="vn-word">y tá / điều dưỡng</td></tr>
+</tbody>
+</table>
+<div class="tip-box">
+<div class="tip-de">💡 Sehr nützliches Wort: <strong>selbstständig</strong> (đọc: "den-xtén-đích") — bedeutet „unabhängig arbeitend, mit eigener Firma", oft zusammen mit dem Beruf genannt: „Ich bin Programmiererin und selbstständig."</div>
+<div class="tip-vn">💡 Từ rất hữu ích: <strong>selbstständig</strong> (tự làm chủ / tự kinh doanh độc lập) — thường dùng cùng với nghề nghiệp: „Ich bin Programmiererin und selbstständig." (Tôi là lập trình viên, và tôi tự làm chủ.)</div>
+</div>
+<!-- Wortschatz: Arbeitsplätze & Arbeitsgeräte -->
+<div class="section-title">📚 Wortschatz-Tabelle 2 &amp; 3: Arbeitsplätze &amp; Arbeitsgeräte / Bảng từ vựng 2&amp;3: Nơi làm việc &amp; Dụng cụ làm việc</div>
+<div class="two-col">
+<table class="vocab">
+<colgroup><col style="width:44%"/><col style="width:28%"/><col style="width:28%"/></colgroup>
+<thead><tr><th>Arbeitsplätze</th><th>Aussprache</th><th>Tiếng Việt</th></tr></thead>
+<tbody>
+<tr><td><span class="die">die</span>Schule</td><td class="phonetik">su-lơ</td><td class="vn-word">trường học</td></tr>
+<tr><td><span class="das">das</span>Krankenhau<strong>s</strong></td><td class="phonetik">kran-ken-hau<strong>s</strong> (giữ rõ "s" cuối)</td><td class="vn-word">bệnh viện</td></tr>
+<tr><td><span class="das">das</span>Büro</td><td class="phonetik">buy-rô</td><td class="vn-word">văn phòng</td></tr>
+<tr><td><span class="das">das</span>Geschäf<strong>t</strong></td><td class="phonetik">gơ-séf<strong>t</strong> (giữ rõ "t" cuối)</td><td class="vn-word">cửa hàng</td></tr>
+<tr><td><span class="die">die</span>Küche</td><td class="phonetik">kuy-sơ</td><td class="vn-word">nhà bếp</td></tr>
+</tbody>
+</table>
+<table class="vocab">
+<colgroup><col style="width:44%"/><col style="width:28%"/><col style="width:28%"/></colgroup>
+<thead><tr><th>Arbeitsgeräte</th><th>Aussprache</th><th>Tiếng Việt</th></tr></thead>
+<tbody>
+<tr><td><span class="der">der</span>Computer</td><td class="phonetik">kom-piu-tơ</td><td class="vn-word">máy tính</td></tr>
+<tr><td><span class="das">das</span>Werkzeug</td><td class="phonetik">véc-tsoik</td><td class="vn-word">dụng cụ / công cụ</td></tr>
+<tr><td><span class="die">die</span>Kasse</td><td class="phonetik">ka-sơ</td><td class="vn-word">quầy thu ngân</td></tr>
+<tr><td><span class="das">das</span>Bu<strong>ch</strong></td><td class="phonetik">bu<strong>kh</strong> (âm "ch" cứng — ach-Laut)</td><td class="vn-word">sách</td></tr>
+<tr><td><span class="der">der</span>Kochlöffel</td><td class="phonetik">khokh-lơ-phâu</td><td class="vn-word">thìa gỗ nấu ăn</td></tr>
+</tbody>
+</table>
+</div>
+<div class="footer">
+<span>Deutsch A1 · Lektion 5</span>
+<span>Seite 1 / 4</span>
+</div>
+</div>
 <!-- ═══════════════════════════════ SEITE 2 (Grammatik 1 + Grammatik 2 + beide Übungen + beide Kulturinfos + Gamification) ═══════════════════════════════ -->
-<div class="page compact">
-
-  <div class="doc-header">
-    <div>
-      <h1>🇩🇪 Deutsch A1 — Lektion 5</h1>
-      <h2>Artikel, Negation &amp; Spiel / Mạo từ, phủ định &amp; trò chơi</h2>
-    </div>
-    <div class="badge">A1 · Lektion 5</div>
-  </div>
-
-  <!-- Grammatik 1 -->
-  <div class="section-title">📖 Grammatik 1 — Artikel-System &amp; Nullartikel bei Berufen / Ngữ pháp 1: Hệ thống mạo từ &amp; hiện tượng không mạo từ khi nói nghề nghiệp</div>
-  <div class="gram-box">
-    <h4>Bestimmter vs. unbestimmter Artikel (Nominativ) / Mạo từ xác định và không xác định (Cách 1 - Nominativ)</h4>
-    <div class="rule-de"><strong>der/die/das</strong> (bestimmt) — Das ist <strong>der</strong> Computer (von meinem Chef). &nbsp;|&nbsp; <strong>ein/eine/ein</strong> (unbestimmt) — Das ist <strong>ein</strong> Computer (irgendein Computer).</div>
-    <div class="rule-vn"><strong>der/die/das</strong> (mạo từ xác định — chỉ vật cụ thể) &nbsp;|&nbsp; <strong>ein/eine/ein</strong> (mạo từ không xác định — chỉ chung chung)</div>
-    <div class="rule-de" style="margin-top:2px;">Nach „sein" steht der reine Beruf meist <strong>ohne Artikel</strong>: „Ich bin Arzt." Mit <strong>Adjektiv</strong> braucht es den unbestimmten Artikel: „Sie ist <strong>eine</strong> nette Ärztin."</div>
-    <div class="rule-vn">Sau động từ „sein", khi chỉ nói tên nghề nghiệp đơn thuần thì thường <strong>không cần mạo từ</strong>: „Ich bin Arzt." Nhưng khi có thêm <strong>tính từ</strong> thì cần mạo từ không xác định: „Sie ist <strong>eine</strong> nette Ärztin."</div>
-  </div>
-  <div class="warn-box">
-    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
-    <div class="wb-de"><span class="wb-err">❌ „Ich bin ein Lehrer."</span> → <span class="wb-ok">✅ „Ich bin Lehrer."</span> — anders als im Englischen steht bei reinen Berufsangaben KEIN Artikel!</div>
-    <div class="wb-vn"><span class="wb-err">❌ „Ich bin ein Lehrer."</span> → <span class="wb-ok">✅ „Ich bin Lehrer."</span> — khác với tiếng Anh, tiếng Đức khi nói nghề nghiệp đơn thuần thì <strong>KHÔNG</strong> dùng mạo từ!</div>
-  </div>
-
-  <!-- Übung 1: Satzbau -->
-  <div class="ubung-header">Übung 1 — Satzbau: Artikel oder kein Artikel? / Sắp xếp thành câu: có cần mạo từ hay không?</div>
-  <div class="ubung-body">
-    <div class="instr-de">Sortiere die Wörter zu einem korrekten Satz. Entscheide: Braucht es hier einen Artikel — oder nicht?</div>
-    <div class="instr-vn">Sắp xếp các từ bị xáo trộn thành câu đúng, và xác định xem có cần mạo từ hay không.</div>
-    <div class="two-col">
-      <div>
-        <div class="wortsalat-item">
-          <span class="wortsalat-num">1.</span>
-          <div class="wortsalat-woerter"><span class="wort-chip">Arzt</span><span class="wort-chip">bin</span><span class="wort-chip">Ich</span></div>
-          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-        </div>
-        <div class="wortsalat-item">
-          <span class="wortsalat-num">2.</span>
-          <div class="wortsalat-woerter"><span class="wort-chip">eine</span><span class="wort-chip">ist</span><span class="wort-chip">Sie</span><span class="wort-chip">nette</span><span class="wort-chip">Ärztin</span></div>
-          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-        </div>
-        <div class="wortsalat-item">
-          <span class="wortsalat-num">3.</span>
-          <div class="wortsalat-woerter"><span class="wort-chip">ist</span><span class="wort-chip">Lehrer</span><span class="wort-chip">Er</span></div>
-          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-        </div>
-        <div class="wortsalat-item">
-          <span class="wortsalat-num">4.</span>
-          <div class="wortsalat-woerter"><span class="wort-chip">ist</span><span class="wort-chip">der</span><span class="wort-chip">Computer</span><span class="wort-chip">Das</span></div>
-          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-        </div>
-      </div>
-      <div>
-        <div class="wortsalat-item">
-          <span class="wortsalat-num">5.</span>
-          <div class="wortsalat-woerter"><span class="wort-chip">ein</span><span class="wort-chip">ist</span><span class="wort-chip">Computer</span><span class="wort-chip">Das</span></div>
-          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-        </div>
-        <div class="wortsalat-item">
-          <span class="wortsalat-num">6.</span>
-          <div class="wortsalat-woerter"><span class="wort-chip">bin</span><span class="wort-chip">selbstständig</span><span class="wort-chip">Ich</span><span class="wort-chip">und</span><span class="wort-chip">Programmiererin</span></div>
-          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-        </div>
-        <div class="wortsalat-item">
-          <span class="wortsalat-num">7.</span>
-          <div class="wortsalat-woerter"><span class="wort-chip">ein</span><span class="wort-chip">ist</span><span class="wort-chip">freundlicher</span><span class="wort-chip">Verkäufer</span><span class="wort-chip">Er</span></div>
-          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-        </div>
-        <div class="wortsalat-item">
-          <span class="wortsalat-num">8.</span>
-          <div class="wortsalat-woerter"><span class="wort-chip">sind</span><span class="wort-chip">wir</span><span class="wort-chip">Studenten</span></div>
-          <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Kulturinfo 1 -->
-  <div class="kultur-box">
-    <div class="kb-title">🌍 KULTURINFO #1 — Das duale Ausbildungssystem / Góc văn hóa 1: Hệ thống đào tạo nghề song hành</div>
-    <div class="kb-de">In Deutschland führt der Weg zum Beruf nicht immer über ein Studium. Sehr verbreitet ist die <b>duale Ausbildung</b>: Man arbeitet mehrere Tage pro Woche praktisch in einem Betrieb und geht an den restlichen Tagen zur <b>Berufsschule</b> — Theorie und Praxis parallel, meist 2–3,5 Jahre. Berufe wie Koch, Verkäufer oder Handwerker werden fast immer so gelernt, nicht an der Universität!</div>
-    <div class="kb-vn">Ở Đức, để làm một nghề nào đó không nhất thiết phải học đại học. Rất phổ biến là hình thức <b>đào tạo nghề song hành</b> (duale Ausbildung): học viên làm việc thực tế tại doanh nghiệp vài ngày mỗi tuần, những ngày còn lại đến <b>trường nghề</b> (Berufsschule) học lý thuyết — lý thuyết và thực hành song song, thường kéo dài 2–3,5 năm. Các nghề như đầu bếp, nhân viên bán hàng hay thợ thủ công hầu như đều được học theo cách này, chứ không phải qua đại học! Điều này khá khác với Việt Nam, nơi con đường đại học vẫn thường được ưu tiên hơn.</div>
-  </div>
-
-  <!-- Grammatik 2 -->
-  <div class="section-title">📖 Grammatik 2 — Negation mit „kein" / Ngữ pháp 2: Phủ định với „kein"</div>
-  <div class="gram-box">
-    <h4>kein/keine (Nominativ) / kein/keine (Cách 1 - Nominativ)</h4>
-    <div class="rule-de"><strong>kein</strong> negiert <strong>Nomen</strong> — es ersetzt „ein/eine" im Negativ. <strong>nicht</strong> negiert dagegen Verben, Adjektive oder ganze Sätze.</div>
-    <div class="rule-vn"><strong>kein</strong> dùng để phủ định <strong>danh từ</strong> — tương đương dạng phủ định của „ein/eine" (số ít) hoặc của mạo từ-zero ở số nhiều (vd. Bücher → keine Bücher). Còn <strong>nicht</strong> thì phủ định động từ, tính từ hoặc cả câu.</div>
-    <div class="rule-de" style="margin-top:2px;">maskulin/neutral: <strong>kein</strong> Arzt, <strong>kein</strong> Buch &nbsp;|&nbsp; feminin/Plural: <strong>keine</strong> Ärztin, <strong>keine</strong> Bücher</div>
-  </div>
-  <div class="warn-box">
-    <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
-    <div class="wb-de"><span class="wb-err">❌ „Das ist nicht ein Computer."</span> → <span class="wb-ok">✅ „Das ist kein Computer."</span> — vor einem Nomen steht „kein", NICHT „nicht ein"!</div>
-    <div class="wb-vn"><span class="wb-err">❌ „Das ist nicht ein Computer."</span> → <span class="wb-ok">✅ „Das ist kein Computer."</span> — trước danh từ dùng „kein", KHÔNG dùng „nicht ein"!</div>
-    <div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich bin nicht Arzt."</span> → <span class="wb-ok">✅ „Ich bin kein Arzt."</span> — auch ohne Artikel gilt: verneint wird mit „kein"!</div>
-    <div class="wb-vn"><span class="wb-err">❌ „Ich bin nicht Arzt."</span> → <span class="wb-ok">✅ „Ich bin kein Arzt."</span> — dù không có mạo từ, khi phủ định vẫn dùng „kein"!</div>
-  </div>
-
-  <!-- Übung 2: Fehlersuche & Umformung -->
-  <div class="ubung-header">Übung 2 — Fehlersuche &amp; Umformung: „nicht" → „kein" / Sửa lỗi &amp; chuyển đổi câu</div>
-  <div class="ubung-body">
-    <div class="instr-de">Korrigiere die Fehler-Sätze mit „kein"/"keine". Die letzten beiden Sätze übersetzt du direkt.</div>
-    <div class="instr-vn">Dùng „kein"/„keine" để sửa các câu sai. Hai câu cuối hãy dịch trực tiếp sang tiếng Đức.</div>
-    <div class="fehlersuche-item"><span class="fehlersuche-num">1.</span><span class="fs-falsch">Das ist nicht ein Computer.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
-    <div class="fehlersuche-item"><span class="fehlersuche-num">2.</span><span class="fs-falsch">Ich bin nicht Arzt.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
-    <div class="fehlersuche-item"><span class="fehlersuche-num">3.</span><span class="fs-falsch">Er ist nicht ein Lehrer.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
-    <div class="fehlersuche-item"><span class="fehlersuche-num">4.</span><span class="fs-falsch">Das ist nicht eine gute Idee.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
-    <div class="fehlersuche-item"><span class="fehlersuche-num">5.</span><span class="fs-falsch">Sie ist nicht eine Studentin.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
-    <div class="fehlersuche-item"><span class="fehlersuche-num">6.</span><span class="fs-falsch">Wir haben nicht Zeit.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
-    <div class="fehlersuche-item"><span class="fehlersuche-num">7.</span>Tôi không có dụng cụ.<span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
-    <div class="fehlersuche-item"><span class="fehlersuche-num">8.</span>Họ không phải là lập trình viên.<span style="color:#94a3b8; font-size:9px; font-style:italic;">(sie = Plural)</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
-  </div>
-
-  <!-- Kulturinfo 2 -->
-  <div class="kultur-box">
-    <div class="kb-title">🌍 KULTURINFO #2 — Die Feierabend-Kultur / Góc văn hóa 2: Văn hóa „Feierabend" (giờ nghỉ sau giờ làm)</div>
-    <div class="kb-de">Deutsche trennen Arbeitszeit und Freizeit sehr strikt — dieses Konzept heißt <b>Feierabend</b>. Nach Dienstschluss werden Kollegen meist NICHT mehr angerufen, außer es ist ein echter Notfall. Diese Grenze gilt als Respekt vor der Privatsphäre — ähnlich wie die Pünktlichkeit aus Lektion 1 ist auch das Feierabend-Prinzip ein zentraler deutscher Wert im Arbeitsleben.</div>
-    <div class="kb-vn">Người Đức phân định rất rạch ròi giữa thời gian làm việc và thời gian riêng tư — khái niệm này gọi là <b>Feierabend</b> (thời gian nghỉ ngơi sau giờ làm). Sau giờ làm, đồng nghiệp thường <b>sẽ không</b> gọi điện cho nhau nữa, trừ khi có việc thực sự khẩn cấp. Ranh giới này được xem là sự tôn trọng đời tư — cũng giống như văn hóa "đúng giờ" đã học ở bài 1, nguyên tắc "Feierabend" cũng là một giá trị cốt lõi trong môi trường làm việc ở Đức. Điều này khá khác với thói quen ở Việt Nam, nơi việc nhắn tin hay gọi điện công việc ngoài giờ vẫn còn khá phổ biến.</div>
-  </div>
-
-  <div class="footer">
-    <span>Deutsch A1 · Lektion 5</span>
-    <span>Seite 2 / 4</span>
-  </div>
+<div class="page compact page2-tight">
+<div class="doc-header">
+<div>
+<h1>🇩🇪 Deutsch A1 — Lektion 5</h1>
+<h2>Artikel, Negation &amp; Spiel / Mạo từ, phủ định &amp; trò chơi</h2>
 </div>
-
+<div class="badge">A1 · Lektion 5</div>
+</div>
+<!-- Grammatik 1 -->
+<div class="section-title">📖 Grammatik 1 — Artikel-System &amp; Nullartikel bei Berufen / Ngữ pháp 1: Hệ thống mạo từ &amp; hiện tượng không mạo từ khi nói nghề nghiệp</div>
+<div class="gram-box">
+<h4>Bestimmter vs. unbestimmter Artikel (Nominativ) / Mạo từ xác định và không xác định (Cách 1 - Nominativ)</h4>
+<div class="rule-de"><strong>der/die/das</strong> (bestimmt) — Das ist <strong>der</strong> Computer (von meinem Chef).  |  <strong>ein/eine/ein</strong> (unbestimmt) — Das ist <strong>ein</strong> Computer (irgendein Computer).</div>
+<div class="rule-vn"><strong>der/die/das</strong> (mạo từ xác định — chỉ vật cụ thể)  |  <strong>ein/eine/ein</strong> (mạo từ không xác định — chỉ chung chung)</div>
+<div class="rule-de" style="margin-top:2px;">Nach „sein" steht der reine Beruf meist <strong>ohne Artikel</strong>: „Ich bin Arzt." Mit <strong>Adjektiv</strong> braucht es den unbestimmten Artikel: „Sie ist <strong>eine</strong> nette Ärztin."</div>
+<div class="rule-vn">Sau động từ „sein", khi chỉ nói tên nghề nghiệp đơn thuần thì thường <strong>không cần mạo từ</strong>: „Ich bin Arzt." Nhưng khi có thêm <strong>tính từ</strong> thì cần mạo từ không xác định: „Sie ist <strong>eine</strong> nette Ärztin."</div>
+</div>
+<div class="warn-box">
+<div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+<div class="wb-de"><span class="wb-err">❌ „Ich bin ein Lehrer."</span> → <span class="wb-ok">✅ „Ich bin Lehrer."</span> — anders als im Englischen steht bei reinen Berufsangaben KEIN Artikel!</div>
+<div class="wb-vn"><span class="wb-err">❌ „Ich bin ein Lehrer."</span> → <span class="wb-ok">✅ „Ich bin Lehrer."</span> — khác với tiếng Anh, tiếng Đức khi nói nghề nghiệp đơn thuần thì <strong>KHÔNG</strong> dùng mạo từ!</div>
+</div>
+<!-- Übung 1: Satzbau -->
+<div class="ubung-header">Übung 1 — Satzbau: Artikel oder kein Artikel? / Sắp xếp thành câu: có cần mạo từ hay không?</div>
+<div class="ubung-body">
+<div class="instr-de">Sortiere die Wörter zu einem korrekten Satz. Entscheide: Braucht es hier einen Artikel — oder nicht?</div>
+<div class="instr-vn">Sắp xếp các từ bị xáo trộn thành câu đúng, và xác định xem có cần mạo từ hay không.</div>
+<div class="two-col">
+<div>
+<div class="wortsalat-item">
+<span class="wortsalat-num">1.</span>
+<div class="wortsalat-woerter"><span class="wort-chip">Arzt</span><span class="wort-chip">bin</span><span class="wort-chip">Ich</span></div>
+<div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+</div>
+<div class="wortsalat-item">
+<span class="wortsalat-num">2.</span>
+<div class="wortsalat-woerter"><span class="wort-chip">eine</span><span class="wort-chip">ist</span><span class="wort-chip">Sie</span><span class="wort-chip">nette</span><span class="wort-chip">Ärztin</span></div>
+<div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+</div>
+<div class="wortsalat-item">
+<span class="wortsalat-num">3.</span>
+<div class="wortsalat-woerter"><span class="wort-chip">ist</span><span class="wort-chip">Lehrer</span><span class="wort-chip">Er</span></div>
+<div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+</div>
+<div class="wortsalat-item">
+<span class="wortsalat-num">4.</span>
+<div class="wortsalat-woerter"><span class="wort-chip">ist</span><span class="wort-chip">der</span><span class="wort-chip">Computer</span><span class="wort-chip">Das</span></div>
+<div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+</div>
+</div>
+<div>
+<div class="wortsalat-item">
+<span class="wortsalat-num">5.</span>
+<div class="wortsalat-woerter"><span class="wort-chip">ein</span><span class="wort-chip">ist</span><span class="wort-chip">Computer</span><span class="wort-chip">Das</span></div>
+<div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+</div>
+<div class="wortsalat-item">
+<span class="wortsalat-num">6.</span>
+<div class="wortsalat-woerter"><span class="wort-chip">bin</span><span class="wort-chip">selbstständig</span><span class="wort-chip">Ich</span><span class="wort-chip">und</span><span class="wort-chip">Programmiererin</span></div>
+<div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+</div>
+<div class="wortsalat-item">
+<span class="wortsalat-num">7.</span>
+<div class="wortsalat-woerter"><span class="wort-chip">ein</span><span class="wort-chip">ist</span><span class="wort-chip">freundlicher</span><span class="wort-chip">Verkäufer</span><span class="wort-chip">Er</span></div>
+<div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+</div>
+<div class="wortsalat-item">
+<span class="wortsalat-num">8.</span>
+<div class="wortsalat-woerter"><span class="wort-chip">sind</span><span class="wort-chip">wir</span><span class="wort-chip">Studenten</span></div>
+<div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Kulturinfo 1 -->
+<div class="kultur-box">
+<div class="kb-title">🌍 KULTURINFO #1 — Das duale Ausbildungssystem / Góc văn hóa 1: Hệ thống đào tạo nghề song hành</div>
+<div class="kb-de">In Deutschland führt der Weg zum Beruf nicht immer über ein Studium. Sehr verbreitet ist die <b>duale Ausbildung</b>: Man arbeitet mehrere Tage pro Woche praktisch in einem Betrieb und geht an den restlichen Tagen zur <b>Berufsschule</b> — Theorie und Praxis parallel, meist 2–3,5 Jahre. Berufe wie Koch, Verkäufer oder Handwerker werden fast immer so gelernt, nicht an der Universität!</div>
+<div class="kb-vn">Ở Đức, để làm một nghề nào đó không nhất thiết phải học đại học. Rất phổ biến là hình thức <b>đào tạo nghề song hành</b> (duale Ausbildung): học viên làm việc thực tế tại doanh nghiệp vài ngày mỗi tuần, những ngày còn lại đến <b>trường nghề</b> (Berufsschule) học lý thuyết — lý thuyết và thực hành song song, thường kéo dài 2–3,5 năm. Các nghề như đầu bếp, nhân viên bán hàng hay thợ thủ công hầu như đều được học theo cách này, chứ không phải qua đại học! Điều này khá khác với Việt Nam, nơi con đường đại học vẫn thường được ưu tiên hơn.</div>
+</div>
+<!-- Grammatik 2 -->
+<div class="section-title">📖 Grammatik 2 — Negation mit „kein" / Ngữ pháp 2: Phủ định với „kein"</div>
+<div class="gram-box">
+<h4>kein/keine (Nominativ) / kein/keine (Cách 1 - Nominativ)</h4>
+<div class="rule-de"><strong>kein</strong> negiert <strong>Nomen</strong> — es ersetzt „ein/eine" im Negativ. <strong>nicht</strong> negiert dagegen Verben, Adjektive oder ganze Sätze.</div>
+<div class="rule-vn"><strong>kein</strong> dùng để phủ định <strong>danh từ</strong> — tương đương dạng phủ định của „ein/eine" (số ít) hoặc của mạo từ-zero ở số nhiều (vd. Bücher → keine Bücher). Còn <strong>nicht</strong> thì phủ định động từ, tính từ hoặc cả câu.</div>
+<div class="rule-de" style="margin-top:2px;">maskulin/neutral: <strong>kein</strong> Arzt, <strong>kein</strong> Buch  |  feminin/Plural: <strong>keine</strong> Ärztin, <strong>keine</strong> Bücher</div>
+</div>
+<div class="warn-box">
+<div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
+<div class="wb-de"><span class="wb-err">❌ „Das ist nicht ein Computer."</span> → <span class="wb-ok">✅ „Das ist kein Computer."</span> — vor einem Nomen steht „kein", NICHT „nicht ein"!</div>
+<div class="wb-vn"><span class="wb-err">❌ „Das ist nicht ein Computer."</span> → <span class="wb-ok">✅ „Das ist kein Computer."</span> — trước danh từ dùng „kein", KHÔNG dùng „nicht ein"!</div>
+<div class="wb-de" style="margin-top:2px;"><span class="wb-err">❌ „Ich bin nicht Arzt."</span> → <span class="wb-ok">✅ „Ich bin kein Arzt."</span> — auch ohne Artikel gilt: verneint wird mit „kein"!</div>
+<div class="wb-vn"><span class="wb-err">❌ „Ich bin nicht Arzt."</span> → <span class="wb-ok">✅ „Ich bin kein Arzt."</span> — dù không có mạo từ, khi phủ định vẫn dùng „kein"!</div>
+</div>
+<!-- Übung 2: Fehlersuche & Umformung -->
+<div class="ubung-header">Übung 2 — Fehlersuche &amp; Umformung: „nicht" → „kein" / Sửa lỗi &amp; chuyển đổi câu</div>
+<div class="ubung-body">
+<div class="instr-de">Korrigiere die Fehler-Sätze mit „kein"/"keine". Die letzten beiden Sätze übersetzt du direkt.</div>
+<div class="instr-vn">Dùng „kein"/„keine" để sửa các câu sai. Hai câu cuối hãy dịch trực tiếp sang tiếng Đức.</div>
+<div class="fehlersuche-item"><span class="fehlersuche-num">1.</span><span class="fs-falsch">Das ist nicht ein Computer.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+<div class="fehlersuche-item"><span class="fehlersuche-num">2.</span><span class="fs-falsch">Ich bin nicht Arzt.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+<div class="fehlersuche-item"><span class="fehlersuche-num">3.</span><span class="fs-falsch">Er ist nicht ein Lehrer.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+<div class="fehlersuche-item"><span class="fehlersuche-num">4.</span><span class="fs-falsch">Das ist nicht eine gute Idee.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+<div class="fehlersuche-item"><span class="fehlersuche-num">5.</span><span class="fs-falsch">Sie ist nicht eine Studentin.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+<div class="fehlersuche-item"><span class="fehlersuche-num">6.</span><span class="fs-falsch">Wir haben nicht Zeit.</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+<div class="fehlersuche-item"><span class="fehlersuche-num">7.</span>Tôi không có dụng cụ.<span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+<div class="fehlersuche-item"><span class="fehlersuche-num">8.</span>Họ không phải là lập trình viên.<span style="color:#94a3b8; font-size:9px; font-style:italic;">(sie = Plural)</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
+</div>
+<!-- Kulturinfo 2 -->
+<div class="kultur-box">
+<div class="kb-title">🌍 KULTURINFO #2 — Die Feierabend-Kultur / Góc văn hóa 2: Văn hóa „Feierabend" (giờ nghỉ sau giờ làm)</div>
+<div class="kb-de">Deutsche trennen Arbeitszeit und Freizeit sehr strikt — dieses Konzept heißt <b>Feierabend</b>. Nach Dienstschluss werden Kollegen meist NICHT mehr angerufen, außer es ist ein echter Notfall. Diese Grenze gilt als Respekt vor der Privatsphäre — ähnlich wie die Pünktlichkeit aus Lektion 1 ist auch das Feierabend-Prinzip ein zentraler deutscher Wert im Arbeitsleben.</div>
+<div class="kb-vn">Người Đức phân định rất rạch ròi giữa thời gian làm việc và thời gian riêng tư — khái niệm này gọi là <b>Feierabend</b> (thời gian nghỉ ngơi sau giờ làm). Sau giờ làm, đồng nghiệp thường <b>sẽ không</b> gọi điện cho nhau nữa, trừ khi có việc thực sự khẩn cấp. Ranh giới này được xem là sự tôn trọng đời tư — cũng giống như văn hóa "đúng giờ" đã học ở bài 1, nguyên tắc "Feierabend" cũng là một giá trị cốt lõi trong môi trường làm việc ở Đức. Điều này khá khác với thói quen ở Việt Nam, nơi việc nhắn tin hay gọi điện công việc ngoài giờ vẫn còn khá phổ biến.</div>
+</div>
+<div class="footer">
+<span>Deutsch A1 · Lektion 5</span>
+<span>Seite 2 / 4</span>
+</div>
+</div>
 <!-- ═══════════════════════════════ SEITE 3 (Dialog + Lesetext + MC + Freies Sprechen) ═══════════════════════════════ -->
-<div class="page compact">
-
-  <div class="doc-header">
-    <div>
-      <h1>🇩🇪 Deutsch A1 — Lektion 5</h1>
-      <h2>Dialog, Lesen &amp; Sprechen / Hội thoại, đọc hiểu &amp; nói</h2>
-    </div>
-    <div class="badge">A1 · Lektion 5</div>
-  </div>
-
-  <!-- Gamification -->
-  <div class="section-title">🎮 Spiel / Trò chơi</div>
-  <div class="match-game">
-    <div class="game-title">🎯 Was passt zusammen? — Beruf + Arbeitsplatz / Arbeitsgerät</div>
-    <div class="game-de">Der Lehrer/die Lehrerin nennt einen Beruf. Sage schnell einen passenden Arbeitsplatz oder ein passendes Arbeitsgerät.</div>
-    <div class="game-vn">Giáo viên nói một nghề. Hãy nhanh chóng nói nơi làm việc hoặc dụng cụ làm việc phù hợp.</div>
-
-    <div class="match-label">BERUFE</div>
-    <div class="match-row">
-      <div class="match-card">Lehrer</div>
-      <div class="match-card">Ärztin</div>
-      <div class="match-card">Koch</div>
-      <div class="match-card">Verkäufer</div>
-      <div class="match-card">Programmierer</div>
-      <div class="match-card">Krankenpfleger</div>
-    </div>
-
-    <div class="match-label">WAS PASST? — durcheinander</div>
-    <div class="match-row">
-      <div class="match-card answer">Küche</div>
-      <div class="match-card answer">Computer</div>
-      <div class="match-card answer">Schule</div>
-      <div class="match-card answer">Kasse</div>
-      <div class="match-card answer">Krankenhaus</div>
-      <div class="match-card answer">Geschäft</div>
-    </div>
-  </div>
-
-  <!-- Dialog -->
-  <div class="section-title">💬 Beispieldialog: Über den Job sprechen / Đoạn hội thoại mẫu: Nói về công việc</div>
-  <div class="dialog-box">
-    <div class="dialog-line"><span class="speaker">Anna:</span>Was bist du von Beruf?</div>
-    <div class="dialog-line"><span class="speaker">Tom:</span>Ich bin Programmierer. Und du?</div>
-    <div class="dialog-line"><span class="speaker">Anna:</span>Ich bin Ärztin, aber ich bin keine Chirurgin — ich arbeite in einer kleinen Praxi<strong>s</strong>.</div>
-    <div class="dialog-line"><span class="speaker">Tom:</span>Interessant! Arbeitest du im Krankenhau<strong>s</strong>?</div>
-    <div class="dialog-line"><span class="speaker">Anna:</span>Nein, ich arbeite nicht im Krankenhau<strong>s</strong>. Mein Arbeitsplatz ist eine Praxi<strong>s</strong> in der Stad<strong>t</strong>.</div>
-    <div class="dialog-line"><span class="speaker">Tom:</span>Ich bin übrigens selbstständig — ich habe kein feste<strong>s</strong> Büro, ich arbeite meistens zu Hause.</div>
-  </div>
-
-  <!-- Lesetext -->
-  <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
-  <div class="lese-box">
+<div class="page compact page3-tight">
+<div class="doc-header">
+<div>
+<h1>🇩🇪 Deutsch A1 — Lektion 5</h1>
+<h2>Dialog, Lesen &amp; Sprechen / Hội thoại, đọc hiểu &amp; nói</h2>
+</div>
+<div class="badge">A1 · Lektion 5</div>
+</div>
+<!-- Gamification -->
+<div class="section-title">🎮 Spiel / Trò chơi</div>
+<div class="match-game">
+<div class="game-title">🎯 Was passt zusammen? — Beruf + Arbeitsplatz / Arbeitsgerät</div>
+<div class="game-de">Der Lehrer/die Lehrerin nennt einen Beruf. Sage schnell einen passenden Arbeitsplatz oder ein passendes Arbeitsgerät.</div>
+<div class="game-vn">Giáo viên nói một nghề. Hãy nhanh chóng nói nơi làm việc hoặc dụng cụ làm việc phù hợp.</div>
+<div class="match-label">BERUFE</div>
+<div class="match-row">
+<div class="match-card">Lehrer</div>
+<div class="match-card">Ärztin</div>
+<div class="match-card">Koch</div>
+<div class="match-card">Verkäufer</div>
+<div class="match-card">Programmierer</div>
+<div class="match-card">Krankenpfleger</div>
+</div>
+<div class="match-label">WAS PASST? — durcheinander</div>
+<div class="match-row">
+<div class="match-card answer">Küche</div>
+<div class="match-card answer">Computer</div>
+<div class="match-card answer">Schule</div>
+<div class="match-card answer">Kasse</div>
+<div class="match-card answer">Krankenhaus</div>
+<div class="match-card answer">Geschäft</div>
+</div>
+</div>
+<!-- Dialog -->
+<div class="section-title">💬 Beispieldialog: Über den Job sprechen / Đoạn hội thoại mẫu: Nói về công việc</div>
+<div class="dialog-box">
+<div class="dialog-line"><span class="speaker">Anna:</span>Was bist du von Beruf?</div>
+<div class="dialog-line"><span class="speaker">Tom:</span>Ich bin Programmierer. Und du?</div>
+<div class="dialog-line"><span class="speaker">Anna:</span>Ich bin Ärztin, aber ich bin keine Chirurgin — ich arbeite in einer kleinen Praxi<strong>s</strong>.</div>
+<div class="dialog-line"><span class="speaker">Tom:</span>Interessant! Arbeitest du im Krankenhau<strong>s</strong>?</div>
+<div class="dialog-line"><span class="speaker">Anna:</span>Nein, ich arbeite nicht im Krankenhau<strong>s</strong>. Mein Arbeitsplatz ist eine Praxi<strong>s</strong> in der Stad<strong>t</strong>.</div>
+<div class="dialog-line"><span class="speaker">Tom:</span>Ich bin übrigens selbstständig — ich habe kein feste<strong>s</strong> Büro, ich arbeite meistens zu Hause.</div>
+</div><div class="passiv-label">Verständnishilfe / Từ hỗ trợ đọc hiểu</div><table class="passiv-vocab"><tbody><tr><td>die Chirurgin / der Chirurg</td><td>bác sĩ phẫu thuật</td></tr><tr><td>die Praxis</td><td>phòng khám</td></tr><tr><td>übrigens</td><td>nhân tiện / tiện thể</td></tr></tbody></table>
+<!-- Lesetext -->
+<div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
+<div class="lese-box">
     Lisa ist Verkäuferin. Sie arbeitet in einem großen Geschäf<strong>t</strong> in Berlin. Ihr Bruder Paul ist kein Verkäufer — er ist Programmierer und arbeitet selbstständig von zu Hause aus. Paul hat kein feste<strong>s</strong> Büro, nur einen Computer und eine gute Internetverbindung. Lisas Freundin Mia ist Ärztin, aber sie ist keine Chirurgin. Mia arbeitet in einer kleinen Praxi<strong>s</strong>, nicht im großen Krankenhau<strong>s</strong>. Alle drei Freunde treffen sich am Wochenende und sprechen gerne über ihre Job<strong>s</strong>.
-  </div>
+  </div><div class="passiv-label">Verständnishilfe / Từ hỗ trợ đọc hiểu</div><table class="passiv-vocab"><tbody><tr><td>der Bruder</td><td>anh/em trai</td></tr><tr><td>die Internetverbindung</td><td>kết nối Internet</td></tr><tr><td>sich treffen</td><td>gặp nhau</td></tr><tr><td>das Wochenende</td><td>cuối tuần</td></tr></tbody></table>
   <div class="mc-block">
     <div class="mc-frage">1. Was ist Lisa von Beruf?</div>
     <div class="mc-optionen">
@@ -574,106 +600,98 @@ table.vocab tr:hover td { background: #eff6ff; }
       <span><span class="mc-kreis"></span> c) in einem Geschäft</span>
     </div>
   </div>
-  <div class="freie-frage">
-    <div class="ff-de">✏️ Freie Zusatzfrage: Und du? Was bist du von Beruf, oder was möchtest du gerne werden?</div>
-    <div class="ff-vn">Câu hỏi mở rộng: Còn bạn thì sao? Bạn làm nghề gì, hoặc bạn muốn trở thành nghề gì?</div>
-  </div>
-
-  <!-- Freies Sprechen (hochgezogen von Seite 5) -->
-  <div class="section-title">🃏 Freies Sprechen: Berufe im Online-Kurs / Nói tự do: Nói về nghề nghiệp trong lớp học online</div>
-  <div class="tip-box">
-    <div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
-    <div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
-  </div>
-  <div class="karten-grid">
-    <div class="sprech-karte">
-      <div class="karte-num">Karte 1</div>
-      <div class="wort-pill">Beruf</div>
-      <div class="prompt-row">
-        <span class="prompt-tag frage">Frage</span>
-      </div>
-      <div class="anweisung-de">Was bist du von Beruf?</div>
-      <div class="anweisung-vn">Bạn làm nghề gì?</div>
-      <div class="timer-badge">⏱️ 30 Sek.</div>
-    </div>
-    <div class="sprech-karte">
-      <div class="karte-num">Karte 2</div>
-      <div class="wort-pill">selbstständig</div>
-      <div class="prompt-row">
-        <span class="prompt-tag frage">Frage</span>
-      </div>
-      <div class="anweisung-de">Bist du selbstständig?</div>
-      <div class="anweisung-vn">Bạn có tự làm chủ / tự kinh doanh không?</div>
-      <div class="timer-badge">⏱️ 30 Sek.</div>
-    </div>
-    <div class="sprech-karte">
-      <div class="karte-num">Karte 3</div>
-      <div class="wort-pill">Computer</div>
-      <div class="prompt-row">
-        <span class="prompt-tag frage">kein</span>
-      </div>
-      <div class="anweisung-de">Bilde einen Satz mit „kein"!</div>
-      <div class="anweisung-vn">Đặt một câu với „kein"!</div>
-      <div class="timer-badge">⏱️ 30 Sek.</div>
-    </div>
-    <div class="sprech-karte">
-      <div class="karte-num">Karte 4</div>
-      <div class="wort-pill">Arbeitsplatz</div>
-      <div class="prompt-row">
-        <span class="prompt-tag frage">Frage</span>
-      </div>
-      <div class="anweisung-de">Wo arbeitest du?</div>
-      <div class="anweisung-vn">Bạn làm việc ở đâu?</div>
-      <div class="timer-badge">⏱️ 30 Sek.</div>
-    </div>
-  </div>
-
-  <div class="footer">
-    <span>Deutsch A1 · Lektion 5</span>
-    <span>Seite 3 / 4</span>
-  </div>
+<div class="freie-frage">
+<div class="ff-de">✏️ Freie Zusatzfrage: Und du? Was bist du von Beruf, oder was möchtest du gerne werden?</div>
+<div class="ff-vn">Câu hỏi mở rộng: Còn bạn thì sao? Bạn làm nghề gì, hoặc bạn muốn trở thành nghề gì?</div>
 </div>
-
+<!-- Freies Sprechen (hochgezogen von Seite 5) -->
+<div class="section-title">🃏 Freies Sprechen: Berufe im Online-Kurs / Nói tự do: Nói về nghề nghiệp trong lớp học online</div>
+<div class="tip-box">
+<div class="tip-de">Beantworte die Frage sofort und vollständig — du hast nur 30 Sekunden!</div>
+<div class="tip-vn">Trả lời câu hỏi ngay lập tức và đầy đủ — bạn chỉ có 30 giây!</div>
+</div>
+<div class="karten-grid">
+<div class="sprech-karte">
+<div class="karte-num">Karte 1</div>
+<div class="wort-pill">Beruf</div>
+<div class="prompt-row">
+<span class="prompt-tag frage">Frage</span>
+</div>
+<div class="anweisung-de">Was bist du von Beruf?</div>
+<div class="anweisung-vn">Bạn làm nghề gì?</div>
+<div class="timer-badge">⏱️ 30 Sek.</div>
+</div>
+<div class="sprech-karte">
+<div class="karte-num">Karte 2</div>
+<div class="wort-pill">selbstständig</div>
+<div class="prompt-row">
+<span class="prompt-tag frage">Frage</span>
+</div>
+<div class="anweisung-de">Bist du selbstständig?</div>
+<div class="anweisung-vn">Bạn có tự làm chủ / tự kinh doanh không?</div>
+<div class="timer-badge">⏱️ 30 Sek.</div>
+</div>
+<div class="sprech-karte">
+<div class="karte-num">Karte 3</div>
+<div class="wort-pill">Computer</div>
+<div class="prompt-row">
+<span class="prompt-tag frage">kein</span>
+</div>
+<div class="anweisung-de">Bilde einen Satz mit „kein"!</div>
+<div class="anweisung-vn">Đặt một câu với „kein"!</div>
+<div class="timer-badge">⏱️ 30 Sek.</div>
+</div>
+<div class="sprech-karte">
+<div class="karte-num">Karte 4</div>
+<div class="wort-pill">Arbeitsplatz</div>
+<div class="prompt-row">
+<span class="prompt-tag frage">Frage</span>
+</div>
+<div class="anweisung-de">Wo arbeitest du?</div>
+<div class="anweisung-vn">Bạn làm việc ở đâu?</div>
+<div class="timer-badge">⏱️ 30 Sek.</div>
+</div>
+</div>
+<div class="footer">
+<span>Deutsch A1 · Lektion 5</span>
+<span>Seite 3 / 4</span>
+</div>
+</div>
 <!-- ═══════════════════════════════ SEITE 4 (Hausaufgaben + Antworten) ═══════════════════════════════ -->
 <div class="page compact">
-
-  <div class="doc-header">
-    <div>
-      <h1>🇩🇪 Deutsch A1 — Lektion 5</h1>
-      <h2>Hausaufgaben &amp; Antworten / Bài tập về nhà &amp; Đáp án</h2>
-    </div>
-    <div class="badge">A1 · Lektion 5</div>
-  </div>
-
-  <!-- Hausaufgaben -->
-  <div class="ha-box">
-    <h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
-    <div class="ha-item">✏️ <strong>Schreiben / Viết:</strong> Schreib 5 Sätze über deinen (Wunsch-)Beruf. Benutze mindestens einmal „kein".
-      <div class="ha-vn">Viết 5 câu về nghề nghiệp (mơ ước) của bạn. Dùng „kein" ít nhất một lần.</div>
-    </div>
-    <div class="ha-item">🔊 <strong>Üben / Luyện tập:</strong> Sprich alle Berufspaare (maskulin/feminin) laut — mindestens 3×! Achte auf „-er" (âm „ơ" nhẹ) und „ä" (âm „e" mở).
-      <div class="ha-vn">Đọc to tất cả các cặp nghề nghiệp (giống đực/giống cái) — ít nhất 3 lần! Chú ý cách phát âm „-er" (âm „ơ" nhẹ) và „ä" (âm „e" mở miệng).</div>
-    </div>
-    <div class="ha-item">📚 <strong>Vokabeln / Từ vựng:</strong> Lerne alle Berufe, Arbeitsplätze, Arbeitsgeräte und die kein-Deklination (kein/keine) auswendig.
-      <div class="ha-vn">Học thuộc lòng tất cả các nghề nghiệp, nơi làm việc, dụng cụ làm việc, và các dạng biến cách của „kein" (kein/keine).</div>
-    </div>
-  </div>
-
-  <!-- Antworten -->
-  <div class="antworten">
-    <h4>✅ Antworten / Đáp án</h4>
-    <p><strong>Wiederholung (Lektion 4):</strong> 1. wohne &nbsp; 2. 65 &nbsp; 3. antwortet</p>
-    <p><strong>Übung 1 (Satzbau):</strong> 1. Ich bin Arzt. &nbsp; 2. Sie ist eine nette Ärztin. &nbsp; 3. Er ist Lehrer. &nbsp; 4. Das ist der Computer. &nbsp; 5. Das ist ein Computer. &nbsp; 6. Ich bin Programmiererin und selbstständig. &nbsp; 7. Er ist ein freundlicher Verkäufer. &nbsp; 8. Wir sind Studenten.</p>
-    <p><strong>Übung 2 (Fehlersuche/Umformung):</strong> 1. Das ist kein Computer. &nbsp; 2. Ich bin kein Arzt. &nbsp; 3. Er ist kein Lehrer. &nbsp; 4. Das ist keine gute Idee. &nbsp; 5. Sie ist keine Studentin. &nbsp; 6. Wir haben keine Zeit. &nbsp; 7. Ich habe kein Werkzeug. &nbsp; 8. Sie sind keine Programmierer. <span style="color:#64748b;">(sie = Plural „sie", nicht das Höflichkeits-Sie)</span></p>
-    <p><strong>Leseverständnis:</strong> 1. b) Verkäuferin &nbsp; 2. b) in einem Geschäft &nbsp; 3. c) Programmierer &nbsp; 4. b) von zu Hause &nbsp; 5. b) Nein &nbsp; 6. b) in einer kleinen Praxis</p>
-    <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ich bin … von Beruf. &nbsp; Karte 2: Ja, ich bin selbstständig. / Nein, ich bin nicht selbstständig. &nbsp; Karte 3: Das ist kein Computer. &nbsp; Karte 4: Ich arbeite in/im …</p>
-  </div>
-
-  <div class="footer">
-    <span>Deutsch A1 · Lektion 5 · Viel Erfolg! / Chúc bạn học tốt!</span>
-    <span>Seite 4 / 4</span>
-  </div>
+<div class="doc-header">
+<div>
+<h1>🇩🇪 Deutsch A1 — Lektion 5</h1>
+<h2>Hausaufgaben &amp; Antworten / Bài tập về nhà &amp; Đáp án</h2>
 </div>
-
+<div class="badge">A1 · Lektion 5</div>
+</div>
+<!-- Hausaufgaben -->
+<div class="ha-box">
+<h4>🏠 Hausaufgaben / Bài tập về nhà</h4>
+<div class="ha-item">✏️ <strong>Schreiben / Viết:</strong> Schreib 5 Sätze über deinen (Wunsch-)Beruf. Benutze mindestens einmal „kein".
+      <div class="ha-vn">Viết 5 câu về nghề nghiệp (mơ ước) của bạn. Dùng „kein" ít nhất một lần.</div>
+</div>
+<div class="ha-item">🔊 <strong>Üben / Luyện tập:</strong> Sprich alle Berufspaare (maskulin/feminin) laut — mindestens 3×! Achte auf „-er" (âm „ơ" nhẹ) und „ä" (âm „e" mở).
+      <div class="ha-vn">Đọc to tất cả các cặp nghề nghiệp (giống đực/giống cái) — ít nhất 3 lần! Chú ý cách phát âm „-er" (âm „ơ" nhẹ) và „ä" (âm „e" mở miệng).</div>
+</div>
+<div class="ha-item">📚 <strong>Vokabeln / Từ vựng:</strong> Lerne alle Berufe, Arbeitsplätze, Arbeitsgeräte und die kein-Deklination (kein/keine) auswendig.
+      <div class="ha-vn">Học thuộc lòng tất cả các nghề nghiệp, nơi làm việc, dụng cụ làm việc, và các dạng biến cách của „kein" (kein/keine).</div>
+</div>
+</div>
+<!-- Antworten -->
+<div class="antworten">
+<h4>✅ Antworten / Đáp án</h4>
+<p><strong>Wiederholung (Lektion 4):</strong> 1. wohne   2. 65   3. antwortet</p>
+<p><strong>Übung 1 (Satzbau):</strong> 1. Ich bin Arzt.   2. Sie ist eine nette Ärztin.   3. Er ist Lehrer.   4. Das ist der Computer.   5. Das ist ein Computer.   6. Ich bin Programmiererin und selbstständig.   7. Er ist ein freundlicher Verkäufer.   8. Wir sind Studenten.</p>
+<p><strong>Übung 2 (Fehlersuche/Umformung):</strong> 1. Das ist kein Computer.   2. Ich bin kein Arzt.   3. Er ist kein Lehrer.   4. Das ist keine gute Idee.   5. Sie ist keine Studentin.   6. Wir haben keine Zeit.   7. Ich habe kein Werkzeug.   8. Sie sind keine Programmierer. <span style="color:#64748b;">(sie = Plural „sie", nicht das Höflichkeits-Sie)</span></p>
+<p><strong>Leseverständnis:</strong> 1. b) Verkäuferin   2. b) in einem Geschäft   3. c) Programmierer   4. b) von zu Hause   5. b) Nein   6. b) in einer kleinen Praxis</p>
+<p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ich bin … von Beruf.   Karte 2: Ja, ich bin selbstständig. / Nein, ich bin nicht selbstständig.   Karte 3: Das ist kein Computer.   Karte 4: Ich arbeite in/im …</p>
+</div>
+<div class="footer">
+<span>Deutsch A1 · Lektion 5 · Viel Erfolg! / Chúc bạn học tốt!</span>
+<span>Seite 4 / 4</span>
+</div>
+</div>
 </body>
 </html>
