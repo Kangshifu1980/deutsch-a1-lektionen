@@ -165,6 +165,15 @@ table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; 
 .wort-chip { display: inline-block; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 6px; }
 .wortsalat-answer-row { display: flex; align-items: center; gap: 6px; margin-top: 2px; margin-left: 20px; }
 .wortsalat-arrow { color: #94a3b8; font-weight: 700; }
+
+/* Kompakte passive Verständnishilfe – sonstiges Original-Layout unverändert */
+.passiv-hilfe{border:.5px solid #cbd5e1;border-radius:5px;overflow:hidden;margin:2px 0 4px;font-size:9.2px;background:#fff}
+.passiv-hilfe-title{background:#f8fafc;color:#64748b;font-size:8.8px;font-weight:700;padding:2px 6px;border-bottom:.5px solid #e2e8f0}
+.passiv-hilfe-grid{display:grid;grid-template-columns:1fr 1fr}
+.passiv-hilfe-item{display:grid;grid-template-columns:46% 54%;gap:4px;padding:1.5px 6px;border-bottom:.5px solid #eef2f7}
+.passiv-hilfe-item:nth-child(odd){border-right:.5px solid #eef2f7}
+.passiv-hilfe .pw{font-weight:600;color:#374151}.passiv-hilfe .pv{color:#0f766e}
+
 </style>
 </head>
 <body>
@@ -483,6 +492,29 @@ table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; 
     <div class="kb-vn">Nhà ở Đức thường có <b>bốn loại thùng rác</b> phân theo màu. Phân loại rác là bắt buộc — khác với thói quen gộp chung rác phổ biến ở Việt Nam, nên đây là điều cần chú ý ngay khi mới sang Đức.</div>
   </div>
 
+  <!-- Dialog -->
+  <div class="section-title">💬 Beispieldialog / Hội thoại mẫu</div>
+  <div class="dialog-box">
+    <div class="dialog-line"><span class="speaker">Vermieter:</span>Guten Tag! Willkommen zur Wohnungsbesichtigung. Das is<strong>t</strong> das Wohnzimmer.</div>
+    <div class="dialog-line"><span class="speaker">Interessentin:</span>Sehr schön! Wo is<strong>t</strong> die Küche?</div>
+    <div class="dialog-line"><span class="speaker">Vermieter:</span>Die Küche is<strong>t</strong> dort, direkt am Flur. Sie is<strong>t</strong> klein, aber praktisch.</div>
+    <div class="dialog-line"><span class="speaker">Interessentin:</span>Und wie viele Schlafzimmer gib<strong>t</strong> es?</div>
+    <div class="dialog-line"><span class="speaker">Vermieter:</span>Zwei Schlafzimmer. Im ersten Zimmer steh<strong>t</strong> schon ein Be<strong>tt</strong> und ein Schra<strong>nk</strong>.</div>
+    <div class="dialog-line"><span class="speaker">Interessentin:</span>Perfekt für eine WG! Gib<strong>t</strong> es auch einen Balkon?</div>
+    <div class="dialog-line"><span class="speaker">Vermieter:</span>Ja, der Balkon is<strong>t</strong> am Wohnzimmer. Er is<strong>t</strong> klein, aber sehr sonnig.</div>
+    <div class="dialog-line"><span class="speaker">Interessentin:</span>Ich finde die Wohnung toll. Ich möchte sie nehmen!</div>
+  </div>
+  <div class="passiv-hilfe">
+    <div class="passiv-hilfe-title">🔎 Verständnishilfe / Từ hỗ trợ đọc hiểu</div>
+    <div class="passiv-hilfe-grid">
+      <div class="passiv-hilfe-item"><span class="pw">der Vermieter</span><span class="pv">chủ nhà (nam)</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">die Interessentin</span><span class="pv">người quan tâm thuê nhà (nữ)</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">die Wohnungsbesichtigung</span><span class="pv">buổi xem căn hộ</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">sonnig</span><span class="pv">có nhiều nắng</span></div>
+    </div>
+  </div>
+
+
   <div class="footer">
     <span>Deutsch A1 · Lektion 10</span>
     <span>Seite 3 / 4</span>
@@ -500,23 +532,21 @@ table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; 
     <div class="badge">A1 · Lektion 10</div>
   </div>
 
-  <!-- Dialog -->
-  <div class="section-title">💬 Beispieldialog / Hội thoại mẫu</div>
-  <div class="dialog-box">
-    <div class="dialog-line"><span class="speaker">Vermieter:</span>Guten Tag! Willkommen zur Wohnungsbesichtigung. Das is<strong>t</strong> das Wohnzimmer.</div>
-    <div class="dialog-line"><span class="speaker">Interessentin:</span>Sehr schön! Wo is<strong>t</strong> die Küche?</div>
-    <div class="dialog-line"><span class="speaker">Vermieter:</span>Die Küche is<strong>t</strong> dort, direkt am Flur. Sie is<strong>t</strong> klein, aber praktisch.</div>
-    <div class="dialog-line"><span class="speaker">Interessentin:</span>Und wie viele Schlafzimmer gib<strong>t</strong> es?</div>
-    <div class="dialog-line"><span class="speaker">Vermieter:</span>Zwei Schlafzimmer. Im ersten Zimmer steh<strong>t</strong> schon ein Be<strong>tt</strong> und ein Schra<strong>nk</strong>.</div>
-    <div class="dialog-line"><span class="speaker">Interessentin:</span>Perfekt für eine WG! Gib<strong>t</strong> es auch einen Balkon?</div>
-    <div class="dialog-line"><span class="speaker">Vermieter:</span>Ja, der Balkon is<strong>t</strong> am Wohnzimmer. Er is<strong>t</strong> klein, aber sehr sonnig.</div>
-    <div class="dialog-line"><span class="speaker">Interessentin:</span>Ich finde die Wohnung toll. Ich möchte sie nehmen!</div>
-  </div>
-
   <!-- Lesetext -->
   <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
   <div class="lese-box">
     Ich heiße Laura und wohne in einer Wohnung in Berlin. Die Wohnung is<strong>t</strong> schön und ha<strong>t</strong> vier Zimmer: die Küche, das Wohnzimmer, das Schlafzimmer und das Ba<strong>d</strong>. In der Küche steh<strong>t</strong> ein Tisch mit vier Stühlen. Der Tisch is<strong>t</strong> groß, und die Stühle stehen direkt am Tisch. Auf dem Tisch lieg<strong>t</strong> oft eine Zeitung, und daneben steh<strong>t</strong> eine Kaffeetasse. Im Wohnzimmer gib<strong>t</strong> es ein Sofa und ein Regal. Auf dem Regal stehen viele Bücher, denn ich lese sehr gern. Das Sofa is<strong>t</strong> bequem, und an der Wan<strong>d</strong> häng<strong>t</strong> eine Lampe. Im Schlafzimmer steh<strong>t</strong> mein Be<strong>tt</strong>, und daneben is<strong>t</strong> ein Schra<strong>nk</strong> für meine Kleidung. Der Schrank is<strong>t</strong> klein, aber praktisch. Auf dem Boden lieg<strong>t</strong> ein Teppi<strong>ch</strong>; er is<strong>t</strong> weich und warm. Ich wohne nicht allein — ich habe eine WG-Partnerin. Sie heiß<strong>t</strong> Nina und komm<strong>t</strong> aus Hamburg. Ninas Zimmer lieg<strong>t</strong> auch am Flur, direkt neben der Küche. Wir teilen die Küche und das Ba<strong>d</strong> zusammen. Jede von uns ha<strong>t</strong> ihr eigenes Schlafzimmer, das is<strong>t</strong> uns sehr wichtig. Am Wochenende sitzen wir oft zusammen im Wohnzimmer, trinken Tee und sprechen über unsere Woche. Manchmal kommen auch Freunde zu Besuch, und dann sitzen alle auf dem Sofa und auf dem Teppich. Meine Wohnung is<strong>t</strong> klein, aber sehr gemütlich. Ich bin sehr glücklich hier!
+  </div>
+  <div class="passiv-hilfe">
+    <div class="passiv-hilfe-title">🔎 Verständnishilfe / Từ hỗ trợ đọc hiểu</div>
+    <div class="passiv-hilfe-grid">
+      <div class="passiv-hilfe-item"><span class="pw">die Zeitung</span><span class="pv">tờ báo</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">die Kaffeetasse</span><span class="pv">tách cà phê</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">daneben</span><span class="pv">bên cạnh</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">weich</span><span class="pv">mềm</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">allein</span><span class="pv">một mình</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">die WG-Partnerin</span><span class="pv">bạn nữ cùng nhà</span></div>
+    </div>
   </div>
   <div class="mc-block">
     <div class="mc-frage">1. Wo wohnt Laura?</div>

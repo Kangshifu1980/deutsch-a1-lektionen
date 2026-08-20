@@ -193,6 +193,15 @@ table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; 
 .postkarte-body .pk-anrede { color: #0e7490; font-weight: 700; margin-bottom: 3px; }
 .postkarte-body .pk-gruss { color: #0e7490; font-weight: 700; margin-top: 4px; }
 .postkarte-lines { border-bottom: 1px solid #94a3b8; height: 13px; margin-bottom: 5px; }
+
+/* Kompakte passive Verständnishilfe – sonstiges Original-Layout unverändert */
+.passiv-hilfe{border:.5px solid #cbd5e1;border-radius:5px;overflow:hidden;margin:2px 0 4px;font-size:9.2px;background:#fff}
+.passiv-hilfe-title{background:#f8fafc;color:#64748b;font-size:8.8px;font-weight:700;padding:2px 6px;border-bottom:.5px solid #e2e8f0}
+.passiv-hilfe-grid{display:grid;grid-template-columns:1fr 1fr}
+.passiv-hilfe-item{display:grid;grid-template-columns:46% 54%;gap:4px;padding:1.5px 6px;border-bottom:.5px solid #eef2f7}
+.passiv-hilfe-item:nth-child(odd){border-right:.5px solid #eef2f7}
+.passiv-hilfe .pw{font-weight:600;color:#374151}.passiv-hilfe .pv{color:#0f766e}
+
 </style>
 </head>
 <body>
@@ -573,11 +582,31 @@ table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; 
     <div class="dialog-line"><span class="speaker">Kunde:</span>Gut, ich nehme den Pullover und die Schuhe.</div>
     <div class="dialog-line"><span class="speaker">Verkäuferin:</span>Perfekt! Das macht zusammen 95 Euro.</div>
   </div>
+  <div class="passiv-hilfe">
+    <div class="passiv-hilfe-title">🔎 Verständnishilfe / Từ hỗ trợ đọc hiểu</div>
+    <div class="passiv-hilfe-grid">
+      <div class="passiv-hilfe-item"><span class="pw">dort</span><span class="pv">ở đằng kia</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">bequem</span><span class="pv">thoải mái</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">zusammen</span><span class="pv">tổng cộng / cùng nhau</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">Das macht ...</span><span class="pv">Tổng cộng là ...</span></div>
+    </div>
+  </div>
 
   <!-- Lesetext -->
   <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
   <div class="lese-box">
     Heute gehe ich einkaufen. Ich brauche neue Kleidung für den Winter. Zuerst finde ich einen Pullover. Er ist ro<strong>t</strong> und kostet 30 Euro. Dann sehe ich eine Jacke. Sie ist schwarz und kostet 55 Euro. Ich möchte auch neue Schuhe. Sie sind braun und kosten 70 Euro. An der Kasse zahle ich zusammen 155 Euro. Ich bezahle bar — das ist in Deutschland sehr üblich. Zu Hause probiere ich alles an. Der Pullover ist warm und die Schuhe sind bequem. Ich bin sehr glücklich mit meinem Einkauf!
+  </div>
+  <div class="passiv-hilfe">
+    <div class="passiv-hilfe-title">🔎 Verständnishilfe / Từ hỗ trợ đọc hiểu</div>
+    <div class="passiv-hilfe-grid">
+      <div class="passiv-hilfe-item"><span class="pw">die Kleidung</span><span class="pv">quần áo</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">der Winter</span><span class="pv">mùa đông</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">die Kasse</span><span class="pv">quầy tính tiền</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">bar bezahlen</span><span class="pv">trả bằng tiền mặt</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">üblich</span><span class="pv">phổ biến / thông thường</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">anprobieren</span><span class="pv">thử (quần áo)</span></div>
+    </div>
   </div>
   <div class="mc-block">
     <div class="mc-frage">1. Warum geht die Person einkaufen?</div>

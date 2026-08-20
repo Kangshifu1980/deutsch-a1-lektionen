@@ -175,6 +175,44 @@ table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; 
 .wortsalat-arrow { color: #94a3b8; font-weight: 700; }
 
 .postkarte-body { padding: 8px 12px; background: #f0fdff; font-size: 10.5px; line-height: 1.55; min-height: 90px; }
+
+/* ===== Kompakte passive Verständnishilfe ===== */
+.passiv-hilfe {
+  border: 0.5px solid #cbd5e1;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 2px 0 4px 0;
+  font-size: 9.2px;
+  background: #fff;
+}
+.passiv-hilfe-title {
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 8.8px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-bottom: 0.5px solid #e2e8f0;
+}
+.passiv-hilfe-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.passiv-hilfe-item {
+  display: grid;
+  grid-template-columns: 46% 54%;
+  gap: 4px;
+  padding: 1.5px 6px;
+  border-bottom: 0.5px solid #eef2f7;
+}
+.passiv-hilfe-item:nth-child(odd) {
+  border-right: 0.5px solid #eef2f7;
+}
+.passiv-hilfe .pw { font-weight: 600; color: #374151; }
+.passiv-hilfe .pv { color: #0f766e; }
+@media print {
+  @page { size: A4; margin: 0; }
+}
+
 </style>
 </head>
 <body>
@@ -527,10 +565,29 @@ Beispiele: <strong>ich</strong> (ich-Laut) · m<strong>i</strong>ch (ich-Laut) �
     <div class="dialog-line"><span class="speaker">Ben:</span>Nein, ich habe kein Auto — ich fahre meistens mit dem Bus. Das ist praktisch und günstig.</div>
   </div>
 
+  <div class="passiv-hilfe">
+    <div class="passiv-hilfe-title">🔎 Verständnishilfe / Từ hỗ trợ đọc hiểu</div>
+    <div class="passiv-hilfe-grid">
+      <div class="passiv-hilfe-item"><span class="pw">ehrlich gesagt</span><span class="pv">nói thật là</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">übrigens</span><span class="pv">nhân tiện</span></div>
+    </div>
+  </div>
+
   <!-- Lesetext -->
   <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
   <div class="lese-box">
     Mein Name ist Sofia. Heute bin ich sehr müde, denn ich schlafe schlecht. Ich habe auch ein bisschen Kopfschmerzen, aber ich bin nicht krank — nur müde. Um 8 Uhr habe ich Hunger und esse ein Brötchen. Danach bin ich viel besser gelaunt! Meine Schwester Mia ist heute super glücklich: Sie hat ein neues Fahrrad. Wir haben beide kein Auto, denn wir wohnen mitten in der Stadt und finden Carsharing praktischer. Am Nachmittag habe ich eine wichtige Prüfung. Ich bin ein bisschen nervö<strong>s</strong>, aber ich lerne viel, also bin ich auch zuversichtlich. Nach der Prüfung sind Mia und ich sicher beide sehr entspannt!
+  </div>
+
+  <div class="passiv-hilfe">
+    <div class="passiv-hilfe-title">🔎 Verständnishilfe / Từ hỗ trợ đọc hiểu</div>
+    <div class="passiv-hilfe-grid">
+      <div class="passiv-hilfe-item"><span class="pw">Kopfschmerzen</span><span class="pv">đau đầu</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">das Brötchen</span><span class="pv">bánh mì nhỏ</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">gut gelaunt</span><span class="pv">tâm trạng vui vẻ</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">Carsharing</span><span class="pv">dịch vụ dùng chung ô tô</span></div>
+      <div class="passiv-hilfe-item"><span class="pw">zuversichtlich</span><span class="pv">lạc quan / tin tưởng</span></div>
+    </div>
   </div>
   <div class="mc-block">
     <div class="mc-frage">1. Warum ist Sofia heute müde?</div>
@@ -618,9 +675,6 @@ Beispiele: <strong>ich</strong> (ich-Laut) · m<strong>i</strong>ch (ich-Laut) �
     </div>
     <div class="ha-item">✏️ <strong>Fünf Sätze schreiben / Viết năm câu:</strong> Schreibe 3 Sätze mit „sein" + Adjektiv und 2 Sätze mit „haben" + Nomen über dich selbst (z. B. „Ich bin …", „Ich habe …").
       <div class="ha-vn">Viết 3 câu về bản thân bằng „sein" + tính từ, và 2 câu bằng „haben" + danh từ (ví dụ: „Ich bin …", „Ich habe …").</div>
-    </div>
-    <div class="ha-item">🔍 <strong>Fehlerjagd / Săn lỗi:</strong> Suche in einem beliebigen deutschen Text oder Lied 2 Sätze mit „sein" oder „haben" und prüfe, ob sie zu unseren Regeln passen.
-      <div class="ha-vn">Tìm trong một đoạn văn hoặc bài hát tiếng Đức bất kỳ 2 câu có „sein" hoặc „haben", rồi kiểm tra xem chúng có phù hợp với các quy tắc đã học hôm nay không.</div>
     </div>
   </div>
 
