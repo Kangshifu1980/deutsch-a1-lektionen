@@ -276,6 +276,37 @@ table.vocab tr:hover td { background: #eff6ff; }
 
 /* Lesetext-Fragen: klar und gut lesbar, ohne unnötige Verdichtung */
 .page.page3-tight .reading-q:last-child { border-bottom:none; }
+
+/* ===== Ergänzung: farbcodiertes Artikel-System auf Seite 2 ===== */
+.article-system-table { table-layout: fixed; margin: 3px 0 5px 0; }
+.article-system-table th { font-size: 9.4px; padding: 3px 5px; border: 0.5px solid #cbd5e1; background:#f1f5f9; text-align:center; }
+.article-system-table td { font-size: 9.8px; padding: 3px 5px; border: 0.5px solid #e2e8f0; vertical-align: middle; text-align:center; }
+.article-system-table .row-label { text-align:left; font-weight:700; background:#f8fafc; color:#475569; }
+.article-system-table .col-m { background:#eff6ff; }
+.article-system-table .col-f { background:#fdf2f8; }
+.article-system-table .col-n { background:#f0fdf4; }
+.article-system-table .col-p { background:#faf5ff; }
+.article-system-table th.col-m { color:#1e40af; }
+.article-system-table th.col-f { color:#9d174d; }
+.article-system-table th.col-n { color:#14532d; }
+.article-system-table th.col-p { color:#6b21a8; }
+.article-system-table td.col-m strong { color:#1e40af; }
+.article-system-table td.col-f strong { color:#9d174d; }
+.article-system-table td.col-n strong { color:#14532d; }
+.article-system-table td.col-p strong { color:#6b21a8; }
+.page.page2-tight .article-system-table th,
+.page.page2-tight .article-system-table td { padding:2px 4px; }
+
+
+.article-system-table small {
+  display:block;
+  margin-top:1px;
+  font-size:7.6px;
+  line-height:1.05;
+  font-weight:500;
+  color:#64748b;
+}
+
 </style>
 </head>
 <body>
@@ -392,7 +423,7 @@ table.vocab tr:hover td { background: #eff6ff; }
 <span>Seite 1 / 4</span>
 </div>
 </div>
-<!-- ═══════════════════════════════ SEITE 2 (Grammatik 1 + Grammatik 2 + beide Übungen + beide Kulturinfos + Gamification) ═══════════════════════════════ -->
+<!-- ═══════════════════════════════ SEITE 2 (Grammatik 1 + Grammatik 2 + beide Übungen + Kulturinfo 1) ═══════════════════════════════ -->
 <div class="page compact page2-tight">
 <div class="doc-header">
 <div>
@@ -404,11 +435,52 @@ table.vocab tr:hover td { background: #eff6ff; }
 <!-- Grammatik 1 -->
 <div class="section-title">📖 Grammatik 1 — Artikel-System &amp; Nullartikel bei Berufen / Ngữ pháp 1: Hệ thống mạo từ &amp; hiện tượng không mạo từ khi nói nghề nghiệp</div>
 <div class="gram-box">
-<h4>Bestimmter vs. unbestimmter Artikel (Nominativ) / Mạo từ xác định và không xác định (Cách 1 - Nominativ)</h4>
-<div class="rule-de"><strong>der/die/das</strong> (bestimmt) — Das ist <strong>der</strong> Computer (von meinem Chef).  |  <strong>ein/eine/ein</strong> (unbestimmt) — Das ist <strong>ein</strong> Computer (irgendein Computer).</div>
-<div class="rule-vn"><strong>der/die/das</strong> (mạo từ xác định — chỉ vật cụ thể)  |  <strong>ein/eine/ein</strong> (mạo từ không xác định — chỉ chung chung)</div>
-<div class="rule-de" style="margin-top:2px;">Nach „sein" steht der reine Beruf meist <strong>ohne Artikel</strong>: „Ich bin Arzt." Mit <strong>Adjektiv</strong> braucht es den unbestimmten Artikel: „Sie ist <strong>eine</strong> nette Ärztin."</div>
-<div class="rule-vn">Sau động từ „sein", khi chỉ nói tên nghề nghiệp đơn thuần thì thường <strong>không cần mạo từ</strong>: „Ich bin Arzt." Nhưng khi có thêm <strong>tính từ</strong> thì cần mạo từ không xác định: „Sie ist <strong>eine</strong> nette Ärztin."</div>
+<h4>Artikel-System im Nominativ / Hệ thống mạo từ ở Nominativ</h4>
+<div class="rule-de"><strong>Bestimmt</strong> = eine bestimmte/bekannte Person oder Sache: „Das ist <strong>der</strong> Computer von meinem Chef." <strong>Unbestimmt</strong> = eine Person oder Sache allgemein: „Das ist <strong>ein</strong> Computer."</div>
+<div class="rule-vn"><strong>Mạo từ xác định</strong> = người/vật cụ thể, đã biết. <strong>Mạo từ không xác định</strong> = người/vật chưa xác định hoặc nói chung.</div>
+<table class="article-system-table">
+<colgroup>
+  <col style="width:16%"/>
+  <col style="width:21%"/>
+  <col style="width:21%"/>
+  <col style="width:21%"/>
+  <col style="width:21%"/>
+</colgroup>
+<thead>
+<tr>
+  <th></th>
+  <th class="col-m"><span class="der">der</span> MASKULIN<br><small>giống đực</small></th>
+  <th class="col-f"><span class="die">die</span> FEMININ<br><small>giống cái</small></th>
+  <th class="col-n"><span class="das">das</span> NEUTRAL<br><small>giống trung</small></th>
+  <th class="col-p">PLURAL<br><small>số nhiều</small></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="row-label">bestimmt<br><small>xác định</small></td>
+  <td class="col-m"><strong>der</strong> Lehrer</td>
+  <td class="col-f"><strong>die</strong> Lehrerin</td>
+  <td class="col-n"><strong>das</strong> Buch</td>
+  <td class="col-p"><strong>die</strong> Bücher</td>
+</tr>
+<tr>
+  <td class="row-label">unbestimmt<br><small>không xác định</small></td>
+  <td class="col-m"><strong>ein</strong> Lehrer</td>
+  <td class="col-f"><strong>eine</strong> Lehrerin</td>
+  <td class="col-n"><strong>ein</strong> Buch</td>
+  <td class="col-p"><strong>—</strong> Bücher</td>
+</tr>
+<tr>
+  <td class="row-label">Negation<br><small>phủ định</small></td>
+  <td class="col-m"><strong>kein</strong> Lehrer</td>
+  <td class="col-f"><strong>keine</strong> Lehrerin</td>
+  <td class="col-n"><strong>kein</strong> Buch</td>
+  <td class="col-p"><strong>keine</strong> Bücher</td>
+</tr>
+</tbody>
+</table>
+<div class="rule-de"><strong>Berufsregel:</strong> Wenn du mit <strong>sein</strong> nur den Beruf nennst, steht normalerweise <strong>kein Artikel</strong>: „Ich bin Arzt." / „Sie ist Ärztin." Sobald der Beruf mit einem <strong>Adjektiv genauer beschrieben</strong> wird, benutzt du <strong>ein/eine</strong>: „Er ist <strong>ein freundlicher Lehrer</strong>." / „Sie ist <strong>eine nette Ärztin</strong>."</div>
+<div class="rule-vn"><strong>Quy tắc nghề nghiệp:</strong> Khi dùng <strong>sein</strong> và chỉ nêu nghề nghiệp, thông thường <strong>không dùng mạo từ</strong>: „Ich bin Arzt." / „Sie ist Ärztin." Khi nghề nghiệp có <strong>tính từ miêu tả</strong>, dùng <strong>ein/eine</strong>: „Er ist ein freundlicher Lehrer." / „Sie ist eine nette Ärztin."</div>
 </div>
 <div class="warn-box">
 <div class="wb-title">⚠️ Häufige Fehler / Lỗi thường gặp</div>
@@ -502,12 +574,7 @@ table.vocab tr:hover td { background: #eff6ff; }
 <div class="fehlersuche-item"><span class="fehlersuche-num">7.</span>Tôi không có dụng cụ.<span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
 <div class="fehlersuche-item"><span class="fehlersuche-num">8.</span>Họ không phải là lập trình viên.<span style="color:#94a3b8; font-size:9px; font-style:italic;">(sie = Plural)</span><span class="fs-pfeil">→</span><span class="fs-antwort"></span></div>
 </div>
-<!-- Kulturinfo 2 -->
-<div class="kultur-box">
-<div class="kb-title">🌍 KULTURINFO #2 — Die Feierabend-Kultur / Góc văn hóa 2: Văn hóa „Feierabend" (giờ nghỉ sau giờ làm)</div>
-<div class="kb-de">Deutsche trennen Arbeitszeit und Freizeit sehr strikt — dieses Konzept heißt <b>Feierabend</b>. Nach Dienstschluss werden Kollegen meist NICHT mehr angerufen, außer es ist ein echter Notfall. Diese Grenze gilt als Respekt vor der Privatsphäre — ähnlich wie die Pünktlichkeit aus Lektion 1 ist auch das Feierabend-Prinzip ein zentraler deutscher Wert im Arbeitsleben.</div>
-<div class="kb-vn">Người Đức phân định rất rạch ròi giữa thời gian làm việc và thời gian riêng tư — khái niệm này gọi là <b>Feierabend</b> (thời gian nghỉ ngơi sau giờ làm). Sau giờ làm, đồng nghiệp thường <b>sẽ không</b> gọi điện cho nhau nữa, trừ khi có việc thực sự khẩn cấp. Ranh giới này được xem là sự tôn trọng đời tư — cũng giống như văn hóa "đúng giờ" đã học ở bài 1, nguyên tắc "Feierabend" cũng là một giá trị cốt lõi trong môi trường làm việc ở Đức. Điều này khá khác với thói quen ở Việt Nam, nơi việc nhắn tin hay gọi điện công việc ngoài giờ vẫn còn khá phổ biến.</div>
-</div>
+
 <div class="footer">
 <span>Deutsch A1 · Lektion 5</span>
 <span>Seite 2 / 4</span>
