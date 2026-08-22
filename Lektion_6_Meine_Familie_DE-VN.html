@@ -192,6 +192,42 @@ table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; 
 .hilfe-vocab td { padding:1.5px 6px; border-top:0.5px solid #e2e8f0; font-size:9.5px; }
 .hilfe-vocab td:first-child { width:45%; font-weight:600; }
 .hilfe-vocab td:last-child { color:#0f766e; }
+
+/* ===== L6 Possessiv-Tabelle im visuellen System von L5 ===== */
+.poss-overview { table-layout: fixed; margin: 3px 0 5px 0; }
+.poss-overview th,
+.poss-overview td {
+  border: 0.5px solid #d1d5db;
+  padding: 3px 5px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 9.6px;
+  line-height: 1.15;
+}
+.poss-overview th { font-weight:700; background:#f8fafc; }
+.poss-overview .row-label {
+  text-align:left;
+  font-weight:700;
+  background:#f8fafc;
+  color:#475569;
+}
+.poss-overview .col-m { background:#eff6ff; }
+.poss-overview .col-f { background:#fdf2f8; }
+.poss-overview .col-n { background:#f0fdf4; }
+.poss-overview .col-p { background:#faf5ff; }
+.poss-overview th.col-m, .poss-overview td.col-m strong { color:#1e40af; }
+.poss-overview th.col-f, .poss-overview td.col-f strong { color:#9d174d; }
+.poss-overview th.col-n, .poss-overview td.col-n strong { color:#14532d; }
+.poss-overview th.col-p, .poss-overview td.col-p strong { color:#6b21a8; }
+.poss-overview small {
+  display:block;
+  margin-top:1px;
+  font-size:7.7px;
+  line-height:1.05;
+  font-weight:500;
+  color:#64748b;
+}
+
 </style>
 </head>
 <body>
@@ -316,14 +352,45 @@ table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; 
     <div class="tip-de">💡 „mein" und „dein" ändern ihre Form wie „ein": <strong>der → mein Vater · die → meine Mutter · Plural → meine Eltern</strong>.</div>
     <div class="tip-vn">💡 „mein" và „dein" thay đổi giống „ein": <strong>der → mein Vater · die → meine Mutter · số nhiều → meine Eltern</strong>.</div>
   </div>
-  <table class="konj">
-    <colgroup><col style="width:90px"><col style="width:*"><col style="width:*"><col style="width:*"></colgroup>
-    <thead><tr><th class="pronomen-col">Genus</th><th>ein (L5)</th><th>mein</th><th>dein</th></tr></thead>
+  <table class="poss-overview">
+    <colgroup>
+      <col style="width:17%">
+      <col style="width:20.75%">
+      <col style="width:20.75%">
+      <col style="width:20.75%">
+      <col style="width:20.75%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th></th>
+        <th class="col-m"><span class="der">der</span> MASKULIN<small>giống đực</small></th>
+        <th class="col-f"><span class="die">die</span> FEMININ<small>giống cái</small></th>
+        <th class="col-n"><span class="das">das</span> NEUTRAL<small>giống trung</small></th>
+        <th class="col-p">PLURAL<small>số nhiều</small></th>
+      </tr>
+    </thead>
     <tbody>
-      <tr><td class="pronomen"><span class="der">der</span>(m)</td><td>ein Vater</td><td>mein Vater</td><td>dein Vater</td></tr>
-      <tr><td class="pronomen"><span class="die">die</span>(f)</td><td>eine Mutter</td><td>meine Mutter</td><td>deine Mutter</td></tr>
-      <tr><td class="pronomen"><span class="das">das</span>(n)</td><td>ein Kin<strong>d</strong></td><td>mein Kin<strong>d</strong></td><td>dein Kin<strong>d</strong></td></tr>
-      <tr><td class="pronomen">Plural</td><td>— <span style="color:#94a3b8;font-size:9px;">(kein ein-Plural)</span></td><td>meine Eltern</td><td>deine Eltern</td></tr>
+      <tr>
+        <td class="row-label">Artikel L5<small>ôn lại bài 5</small></td>
+        <td class="col-m"><strong>der → ein</strong><br>Vater</td>
+        <td class="col-f"><strong>die → eine</strong><br>Mutter</td>
+        <td class="col-n"><strong>das → ein</strong><br>Kind</td>
+        <td class="col-p"><strong>die → —</strong><br>Eltern</td>
+      </tr>
+      <tr>
+        <td class="row-label">mein<small>của tôi</small></td>
+        <td class="col-m"><strong>mein</strong> Vater</td>
+        <td class="col-f"><strong>meine</strong> Mutter</td>
+        <td class="col-n"><strong>mein</strong> Kind</td>
+        <td class="col-p"><strong>meine</strong> Eltern</td>
+      </tr>
+      <tr>
+        <td class="row-label">dein<small>của bạn</small></td>
+        <td class="col-m"><strong>dein</strong> Vater</td>
+        <td class="col-f"><strong>deine</strong> Mutter</td>
+        <td class="col-n"><strong>dein</strong> Kind</td>
+        <td class="col-p"><strong>deine</strong> Eltern</td>
+      </tr>
     </tbody>
   </table>
   <div class="warn-box">
