@@ -61,9 +61,9 @@ table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; 
 .lese-box { border: 0.5px solid #d1fae5; border-radius: 6px; background: #f0fdf4; padding: 6px 10px; margin-bottom: 5px; font-size: 10.5px; line-height: 1.45; }
 .ubung-header { background: #1e3a8a; color: white; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px 5px 0 0; }
 .ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 5px 5px; padding: 5px 8px; margin-bottom: 4px; }
-.ubung-body .instr-de { font-size: 10px; color: #374151; font-style: italic; }
-.ubung-body .instr-vn { font-size: 9.5px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
-.fill-line { display: flex; align-items: center; gap: 5px; font-size: 10.5px; margin-bottom: 2px; flex-wrap: wrap; }
+.ubung-body .instr-de { font-size: 10.5px; color: #374151; font-style: italic; }
+.ubung-body .instr-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 3px; }
+.fill-line { display: flex; align-items: center; gap: 5px; font-size: 11.2px; margin-bottom: 2px; flex-wrap: wrap; }
 .fill-line .num { color: #64748b; min-width: 16px; font-weight: 600; }
 .blank { border-bottom: 1px solid #94a3b8; min-width: 80px; display: inline-block; }
 .blank-long { border-bottom: 1px solid #94a3b8; min-width: 160px; display: inline-block; }
@@ -204,6 +204,11 @@ table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; 
 .be-text .be-de { color: #1a1a1a; }
 .be-text .be-vn { color: #78716c; font-size: 9px; font-style: italic; display: block; margin-bottom: 3px; }
 .be-schluss { font-size: 10px; margin-top: 2px; color: #1a1a1a; }
+
+.hilfe-vocab { background:#f8fafc; border-left:3px solid #0f766e; border-radius:0 6px 6px 0; padding:4px 8px; margin:3px 0 6px 0; font-size:9.5px; }
+.hilfe-vocab .hilfe-title { font-weight:700; color:#0f766e; margin-bottom:2px; }
+.hilfe-vocab .hilfe-row { display:flex; gap:8px; flex-wrap:wrap; line-height:1.35; }
+.hilfe-vocab .hilfe-item { white-space:nowrap; }
 </style>
 </head>
 <body>
@@ -383,30 +388,16 @@ table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; 
   </div>
 
   <!-- Übung 1b -->
-  <div class="ubung-header">Übung 1b — Wortsalat: Baue Sätze mit „am" / Sắp xếp câu với „am"</div>
+  <div class="ubung-header">Übung 1b — Satzbau: Baue Sätze mit „am" / Sắp xếp câu với „am"</div>
   <div class="ubung-body">
     <div class="instr-de">Bringe die Wörter in die richtige Reihenfolge. Achtung: Position 2 = Verb!</div>
     <div class="instr-vn">Sắp xếp các từ theo đúng thứ tự. Chú ý: vị trí 2 luôn là động từ!</div>
-    <div class="wortsalat-item">
-      <span class="wortsalat-num">1.</span>
-      <div class="wortsalat-woerter"><span class="wort-chip">Montag</span><span class="wort-chip">Deutschkurs</span><span class="wort-chip">ich</span><span class="wort-chip">habe</span><span class="wort-chip">am</span></div>
-      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-    </div>
-    <div class="wortsalat-item">
-      <span class="wortsalat-num">2.</span>
-      <div class="wortsalat-woerter"><span class="wort-chip">wir</span><span class="wort-chip">Samstag</span><span class="wort-chip">im Café</span><span class="wort-chip">treffen</span><span class="wort-chip">uns</span><span class="wort-chip">am</span></div>
-      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-    </div>
-    <div class="wortsalat-item">
-      <span class="wortsalat-num">3.</span>
-      <div class="wortsalat-woerter"><span class="wort-chip">Freitag</span><span class="wort-chip">bis 18 Uhr</span><span class="wort-chip">er</span><span class="wort-chip">arbeitet</span><span class="wort-chip">am</span></div>
-      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-    </div>
-    <div class="wortsalat-item">
-      <span class="wortsalat-num">4.</span>
-      <div class="wortsalat-woerter"><span class="wort-chip">Wochenende</span><span class="wort-chip">nach Hamburg</span><span class="wort-chip">wir</span><span class="wort-chip">fahren</span><span class="wort-chip">am</span></div>
-      <div class="wortsalat-answer-row"><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-    </div>
+    <div class="fill-line"><span class="num">1.</span> Montag / Deutschkurs / ich / habe / am &nbsp;→&nbsp; <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">2.</span> wir / Samstag / im Café / treffen / uns / am &nbsp;→&nbsp; <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Freitag / bis 18 Uhr / er / arbeitet / am &nbsp;→&nbsp; <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Wochenende / nach Hamburg / wir / fahren / am &nbsp;→&nbsp; <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">5.</span> Mittwoch / du / Zeit / hast / am &nbsp;→&nbsp; <span class="blank-xl"></span></div>
+    <div class="fill-line"><span class="num">6.</span> Sonntag / meine Eltern / ich / anrufe / am &nbsp;→&nbsp; <span class="blank-xl"></span></div>
   </div>
 
   <div class="footer">
@@ -509,46 +500,43 @@ table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; 
   </div>
 
   <!-- GAME -->
-  <div class="game-header">🎲 GAME — Der Termin-Würfel: Wer, wann, was muss man tun? / Xúc xắc lịch hẹn: ai, khi nào, phải làm gì?</div>
+  <div class="game-header">🎯 GAME — Termin-Mix: Wer, wann, was muss man tun? / Trò chơi lịch hẹn: ai, khi nào, phải làm gì?</div>
   <div class="game-body">
-    <div class="instr-de">Spielregel: Würfle dreimal (oder wähle drei Zahlen 1–6) und kombiniere Pronomen + Wochentag + trennbares Verb zu einem korrekten Satz mit „müssen". Achtung: Das trennbare Verb bleibt im Infinitiv ZUSAMMEN!</div>
-    <div class="instr-vn">Luật chơi: Gieo xúc xắc ba lần (hoặc chọn ba số từ 1–6) rồi kết hợp đại từ + ngày trong tuần + động từ tách được thành một câu đúng với „müssen". Chú ý: động từ tách được vẫn giữ nguyên dạng nguyên mẫu, KHÔNG tách!</div>
+    <div class="instr-de">Spielregel: Die Zahlen sind vorgegeben. Suche für jede Runde die passenden Wörter in A, B und C und bilde sofort einen korrekten Satz mit „müssen". Achtung: Das trennbare Verb bleibt im Infinitiv ZUSAMMEN!</div>
+    <div class="instr-vn">Luật chơi: Các số đã được cho sẵn. Ở mỗi lượt, tìm từ tương ứng trong A, B và C rồi lập ngay một câu đúng với „müssen". Chú ý: động từ tách được vẫn giữ nguyên dạng nguyên mẫu, KHÔNG tách!</div>
     <div class="wuerfel-grid">
       <div class="wuerfel-spalte">
-        <div class="ws-title">Würfel A: Pronomen</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> ich</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> du</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> er</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> wir</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> ihr</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> sie/Sie</div>
+        <div class="ws-title">A: Pronomen</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> ich</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> du</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> er</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> wir</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> ihr</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> sie/Sie</div>
       </div>
       <div class="wuerfel-spalte">
-        <div class="ws-title">Würfel B: Wochentag</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> Montag</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> Dienstag</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> Mittwoch</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> Donnerstag</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> Freitag</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> Samstag</div>
+        <div class="ws-title">B: Wochentag</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> Montag</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> Dienstag</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> Mittwoch</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> Donnerstag</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> Freitag</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> Samstag</div>
       </div>
       <div class="wuerfel-spalte">
-        <div class="ws-title">Würfel C: Verb (Infinitiv)</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> aufstehen</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> anfangen</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> aufhören</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> einkaufen</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> anrufen</div>
-        <div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> fernsehen</div>
+        <div class="ws-title">C: Verb (Infinitiv)</div>
+        <div class="wuerfel-zeile"><span class="wuerfel-zahl">1</span> aufstehen</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">2</span> anfangen</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">3</span> aufhören</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">4</span> einkaufen</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">5</span> anrufen</div><div class="wuerfel-zeile"><span class="wuerfel-zahl">6</span> aufräumen</div>
       </div>
     </div>
-    <div class="instr-de" style="margin-bottom:3px;">Vorgegebene Würfe — bilde den Satz: <span class="vn-word" style="font-style:normal;">Ghép câu theo các số dưới đây:</span></div>
-    <div class="wuerfel-kombi"><span class="wk-num">1.</span><span class="wk-set"><span class="wuerfel-zahl">2</span><span class="wuerfel-zahl">3</span><span class="wuerfel-zahl">4</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-    <div class="wuerfel-kombi"><span class="wk-num">2.</span><span class="wk-set"><span class="wuerfel-zahl">1</span><span class="wuerfel-zahl">1</span><span class="wuerfel-zahl">1</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-    <div class="wuerfel-kombi"><span class="wk-num">3.</span><span class="wk-set"><span class="wuerfel-zahl">4</span><span class="wuerfel-zahl">5</span><span class="wuerfel-zahl">6</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-    <div class="wuerfel-kombi"><span class="wk-num">4.</span><span class="wk-set"><span class="wuerfel-zahl">3</span><span class="wuerfel-zahl">6</span><span class="wuerfel-zahl">2</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-    <div class="wuerfel-kombi"><span class="wk-num">5.</span><span class="wk-set"><span class="wuerfel-zahl">5</span><span class="wuerfel-zahl">2</span><span class="wuerfel-zahl">5</span></span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
-    <div class="wuerfel-kombi"><span class="wk-num">6.</span><span class="wk-set" style="color:#9a3412; font-weight:700; font-size:9.5px;">🎲 Freie Runde — würfle selbst!</span><span class="wortsalat-arrow">→</span><span class="blank-xl"></span></div>
+    <div class="instr-de" style="margin-bottom:3px;">12 Runden — lies A + B + C ab und bilde den Satz: <span class="vn-word" style="font-style:normal;">12 lượt — đọc A + B + C rồi lập câu:</span></div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px 12px;">
+      <div>
+        <div class="wuerfel-kombi"><span class="wk-num">1.</span><span class="wk-set"><span class="wuerfel-zahl">2</span><span class="wuerfel-zahl">3</span><span class="wuerfel-zahl">4</span></span><span class="wortsalat-arrow">→</span><span class="blank-long"></span></div>
+        <div class="wuerfel-kombi"><span class="wk-num">2.</span><span class="wk-set"><span class="wuerfel-zahl">1</span><span class="wuerfel-zahl">1</span><span class="wuerfel-zahl">1</span></span><span class="wortsalat-arrow">→</span><span class="blank-long"></span></div>
+        <div class="wuerfel-kombi"><span class="wk-num">3.</span><span class="wk-set"><span class="wuerfel-zahl">4</span><span class="wuerfel-zahl">5</span><span class="wuerfel-zahl">6</span></span><span class="wortsalat-arrow">→</span><span class="blank-long"></span></div>
+        <div class="wuerfel-kombi"><span class="wk-num">4.</span><span class="wk-set"><span class="wuerfel-zahl">3</span><span class="wuerfel-zahl">6</span><span class="wuerfel-zahl">2</span></span><span class="wortsalat-arrow">→</span><span class="blank-long"></span></div>
+        <div class="wuerfel-kombi"><span class="wk-num">5.</span><span class="wk-set"><span class="wuerfel-zahl">5</span><span class="wuerfel-zahl">2</span><span class="wuerfel-zahl">5</span></span><span class="wortsalat-arrow">→</span><span class="blank-long"></span></div>
+        <div class="wuerfel-kombi"><span class="wk-num">6.</span><span class="wk-set"><span class="wuerfel-zahl">6</span><span class="wuerfel-zahl">4</span><span class="wuerfel-zahl">3</span></span><span class="wortsalat-arrow">→</span><span class="blank-long"></span></div>
+      </div>
+      <div>
+        <div class="wuerfel-kombi"><span class="wk-num">7.</span><span class="wk-set"><span class="wuerfel-zahl">3</span><span class="wuerfel-zahl">1</span><span class="wuerfel-zahl">5</span></span><span class="wortsalat-arrow">→</span><span class="blank-long"></span></div>
+        <div class="wuerfel-kombi"><span class="wk-num">8.</span><span class="wk-set"><span class="wuerfel-zahl">4</span><span class="wuerfel-zahl">3</span><span class="wuerfel-zahl">4</span></span><span class="wortsalat-arrow">→</span><span class="blank-long"></span></div>
+        <div class="wuerfel-kombi"><span class="wk-num">9.</span><span class="wk-set"><span class="wuerfel-zahl">2</span><span class="wuerfel-zahl">5</span><span class="wuerfel-zahl">1</span></span><span class="wortsalat-arrow">→</span><span class="blank-long"></span></div>
+        <div class="wuerfel-kombi"><span class="wk-num">10.</span><span class="wk-set"><span class="wuerfel-zahl">5</span><span class="wuerfel-zahl">4</span><span class="wuerfel-zahl">2</span></span><span class="wortsalat-arrow">→</span><span class="blank-long"></span></div>
+        <div class="wuerfel-kombi"><span class="wk-num">11.</span><span class="wk-set"><span class="wuerfel-zahl">1</span><span class="wuerfel-zahl">6</span><span class="wuerfel-zahl">3</span></span><span class="wortsalat-arrow">→</span><span class="blank-long"></span></div>
+        <div class="wuerfel-kombi"><span class="wk-num">12.</span><span class="wk-set"><span class="wuerfel-zahl">6</span><span class="wuerfel-zahl">2</span><span class="wuerfel-zahl">6</span></span><span class="wortsalat-arrow">→</span><span class="blank-long"></span></div>
+      </div>
+    </div>
   </div>
 
   <!-- Übung 2 -->
@@ -597,49 +585,44 @@ table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; 
     <div class="dialog-line"><span class="speaker">Empfang:</span>Nein, nur Ihre Versichertenkarte. Bitte rufen Sie an, wenn Sie doch nicht kommen können.</div>
     <div class="dialog-line"><span class="speaker">Herr Klein:</span>Alles klar, vielen Dank! Bis Donnerstag!</div>
   </div>
+  <div class="hilfe-vocab">
+    <div class="hilfe-title">🔎 Verständnishilfe / Từ hỗ trợ đọc hiểu</div>
+    <div class="hilfe-row">
+      <span class="hilfe-item"><strong>die Zahnarztpraxis</strong> — phòng khám nha khoa</span>
+      <span class="hilfe-item"><strong>den Termin verschieben</strong> — đổi lịch hẹn</span>
+      <span class="hilfe-item"><strong>Das passt.</strong> — Thời gian đó phù hợp.</span>
+      <span class="hilfe-item"><strong>mitbringen</strong> — mang theo</span>
+      <span class="hilfe-item"><strong>die Versichertenkarte</strong> — thẻ bảo hiểm y tế</span>
+    </div>
+  </div>
 
   <!-- Lesetext -->
   <div class="section-title">📄 Lesetext / Bài đọc hiểu</div>
   <div class="lese-box">
-    Anna hat eine volle Woche vor sich. Am Montag muss sie früh aufstehen, denn ihr Deutschkurs fäng<strong>t</strong> schon um 8 Uhr an. Am Dienstag muss sie arbeiten, und danach muss sie noch einkaufen, weil der Kühlschrank leer is<strong>t</strong>. Am Mittwoch hat Anna einen Termin beim Arzt — sie muss um 15 Uhr dort sein und darf nicht zu spät kommen. Am Donnerstag muss sie ihre Eltern anrufen, denn sie hat schon lange nicht mehr mit ihnen gesprochen. Am Freitag hör<strong>t</strong> Anna schon um 16 Uhr mit der Arbeit auf, weil sie sich mit Freunden trifft. Am Samstag muss sie die Wohnung aufräumen, bevor am Abend Besuch kommt. Der Sonntag is<strong>t</strong> zum Glück frei — da muss Anna gar nichts tun! Sie steht spät auf, sieht in Ruhe fern und plant schon die nächste Woche. Anna mag ihre Wochenstruktur, auch wenn sie manchmal stressig ist: Jeder Tag hat sein eigenes Programm, und am Wochenende kann sie sich endlich entspannen. „Ohne einen Terminkalender", sagt Anna, „würde ich total durcheinanderkommen!"
+    Anna hat diese Woche viel zu tun. Am Montag muss sie früh aufstehen. Ihr Deutschkurs fängt um 8 Uhr an. Am Nachmittag lernt sie zu Hause. Am Dienstag muss sie arbeiten und danach einkaufen. Am Mittwoch hat sie um 15 Uhr einen Termin beim Arzt. Am Abend kauft sie im Supermarkt ein. Am Donnerstag muss sie ihre Eltern anrufen. Am Freitag hört sie um 16 Uhr mit der Arbeit auf. Am Abend sieht sie ihre Freunde. Am Samstag räumt sie die Wohnung auf. Am Sonntag hat Anna frei. Sie steht spät auf, kocht und hört Musik. Am Abend sieht sie fern.
+  </div>
+  <div class="hilfe-vocab">
+    <div class="hilfe-title">🔎 Verständnishilfe / Từ hỗ trợ đọc hiểu</div>
+    <div class="hilfe-row">
+      <span class="hilfe-item"><strong>viel zu tun haben</strong> — có nhiều việc phải làm</span>
+      <span class="hilfe-item"><strong>der Arzt</strong> — bác sĩ</span>
+      <span class="hilfe-item"><strong>die Wohnung aufräumen</strong> — dọn dẹp căn hộ</span>
+      <span class="hilfe-item"><strong>frei haben</strong> — được nghỉ / rảnh</span>
+    </div>
   </div>
   <div class="mc-block">
-    <div class="mc-frage">1. Um wie viel Uhr fängt Annas Deutschkurs am Montag an?</div>
-    <div class="mc-optionen">
-      <span><span class="mc-kreis"></span> a) um 7 Uhr</span>
-      <span><span class="mc-kreis"></span> b) um 8 Uhr</span>
-      <span><span class="mc-kreis"></span> c) um 15 Uhr</span>
-    </div>
-    <div class="mc-frage">2. Warum muss Anna am Dienstag noch einkaufen?</div>
-    <div class="mc-optionen">
-      <span><span class="mc-kreis"></span> a) sie hat Geburtstag</span>
-      <span><span class="mc-kreis"></span> b) der Kühlschrank ist leer</span>
-      <span><span class="mc-kreis"></span> c) sie bekommt Besuch</span>
-    </div>
+    <div class="mc-frage">1. Wann fängt Annas Deutschkurs am Montag an?</div>
+    <div class="mc-optionen"><span><span class="mc-kreis"></span> a) um 7 Uhr</span><span><span class="mc-kreis"></span> b) um 8 Uhr</span><span><span class="mc-kreis"></span> c) um 15 Uhr</span></div>
+    <div class="mc-frage">2. Was muss Anna am Dienstag machen?</div>
+    <div class="mc-optionen"><span><span class="mc-kreis"></span> a) arbeiten und einkaufen</span><span><span class="mc-kreis"></span> b) ihre Eltern anrufen</span><span><span class="mc-kreis"></span> c) die Wohnung aufräumen</span></div>
     <div class="mc-frage">3. Wann hat Anna einen Arzttermin?</div>
-    <div class="mc-optionen">
-      <span><span class="mc-kreis"></span> a) am Mittwoch um 15 Uhr</span>
-      <span><span class="mc-kreis"></span> b) am Donnerstag um 10 Uhr</span>
-      <span><span class="mc-kreis"></span> c) am Freitag um 16 Uhr</span>
-    </div>
-    <div class="mc-frage">4. Was macht Anna am Freitag?</div>
-    <div class="mc-optionen">
-      <span><span class="mc-kreis"></span> a) sie ruft ihre Eltern an</span>
-      <span><span class="mc-kreis"></span> b) sie räumt die Wohnung auf</span>
-      <span><span class="mc-kreis"></span> c) sie trifft sich mit Freunden</span>
-    </div>
-    <div class="mc-frage">5. Warum muss Anna am Samstag die Wohnung aufräumen?</div>
-    <div class="mc-optionen">
-      <span><span class="mc-kreis"></span> a) weil Besuch kommt</span>
-      <span><span class="mc-kreis"></span> b) weil sie einen Arzttermin hat</span>
-      <span><span class="mc-kreis"></span> c) weil sie umzieht</span>
-    </div>
+    <div class="mc-optionen"><span><span class="mc-kreis"></span> a) am Dienstag um 15 Uhr</span><span><span class="mc-kreis"></span> b) am Mittwoch um 15 Uhr</span><span><span class="mc-kreis"></span> c) am Freitag um 16 Uhr</span></div>
+    <div class="mc-frage">4. Wen muss Anna am Donnerstag anrufen?</div>
+    <div class="mc-optionen"><span><span class="mc-kreis"></span> a) ihre Eltern</span><span><span class="mc-kreis"></span> b) ihre Freunde</span><span><span class="mc-kreis"></span> c) den Arzt</span></div>
+    <div class="mc-frage">5. Was macht Anna am Samstag?</div>
+    <div class="mc-optionen"><span><span class="mc-kreis"></span> a) Sie arbeitet.</span><span><span class="mc-kreis"></span> b) Sie räumt die Wohnung auf.</span><span><span class="mc-kreis"></span> c) Sie kauft ein.</span></div>
     <div class="mc-frage">6. Wie ist Annas Sonntag?</div>
-    <div class="mc-optionen">
-      <span><span class="mc-kreis"></span> a) genauso voll wie die anderen Tage</span>
-      <span><span class="mc-kreis"></span> b) frei — sie muss nichts tun</span>
-      <span><span class="mc-kreis"></span> c) sie muss arbeiten</span>
-    </div>
+    <div class="mc-optionen"><span><span class="mc-kreis"></span> a) Sie hat frei.</span><span><span class="mc-kreis"></span> b) Sie muss arbeiten.</span><span><span class="mc-kreis"></span> c) Sie hat einen Arzttermin.</span></div>
     <div class="freie-frage">
       <div class="ff-de">➕ Freie Zusatzfrage: Wie sieht deine typische Woche aus? Was musst du an welchem Tag machen?</div>
       <div class="ff-vn">➕ Câu hỏi mở rộng: Một tuần điển hình của bạn thường như thế nào? Ngày nào bạn phải làm gì?</div>
@@ -829,10 +812,10 @@ table.konj td.pronomen { background: #f1f5f9; font-weight: 700; color: #1e3a8a; 
     <h4>✅ Antworten / Đáp án</h4>
     <p><strong>Wiederholung (Lektion 11):</strong> 1. stehe ... auf &nbsp; 2. Am Satzende / ở cuối câu &nbsp; 3. Falsch — richtig ist „Ich stehe um 7 Uhr auf." (das Präfix muss ans Satzende)</p>
     <p><strong>Übung 1 (am/im):</strong> 1. am &nbsp; 2. im &nbsp; 3. am &nbsp; 4. Im &nbsp; 5. Am &nbsp; 6. am &nbsp; 7. Im &nbsp; 8. am</p>
-    <p><strong>Übung 1b (Wortsalat):</strong> 1. Ich habe am Montag Deutschkurs. &nbsp; 2. Wir treffen uns am Samstag im Café. &nbsp; 3. Er arbeitet am Freitag bis 18 Uhr. &nbsp; 4. Wir fahren am Wochenende nach Hamburg.</p>
-    <p><strong>Game (Termin-Würfel), Beispiele:</strong> 1. (2,3,4) Du musst am Mittwoch einkaufen. &nbsp; 2. (1,1,1) Ich muss am Montag aufstehen. &nbsp; 3. (4,5,6) Wir müssen am Freitag fernsehen. &nbsp; 4. (3,6,2) Er muss am Samstag anfangen. &nbsp; 5. (5,2,5) Ihr müsst am Dienstag anrufen.</p>
+    <p><strong>Übung 1b (Satzbau):</strong> 1. Ich habe am Montag Deutschkurs. &nbsp; 2. Wir treffen uns am Samstag im Café. &nbsp; 3. Er arbeitet am Freitag bis 18 Uhr. &nbsp; 4. Wir fahren am Wochenende nach Hamburg. &nbsp; 5. Hast du am Mittwoch Zeit? &nbsp; 6. Ich rufe am Sonntag meine Eltern an.</p>
+    <p><strong>Game (Termin-Mix):</strong> 1. Du musst am Mittwoch einkaufen. &nbsp; 2. Ich muss am Montag aufstehen. &nbsp; 3. Wir müssen am Freitag aufräumen. &nbsp; 4. Er muss am Samstag anfangen. &nbsp; 5. Ihr müsst am Dienstag anrufen. &nbsp; 6. Sie müssen am Donnerstag aufhören. &nbsp; 7. Er muss am Montag anrufen. &nbsp; 8. Wir müssen am Mittwoch einkaufen. &nbsp; 9. Du musst am Freitag aufstehen. &nbsp; 10. Ihr müsst am Donnerstag anfangen. &nbsp; 11. Ich muss am Samstag aufhören. &nbsp; 12. Sie müssen am Dienstag aufräumen.</p>
     <p><strong>Übung 2 (Sandwich-Check):</strong> 1. ✅ richtig &nbsp; 2. falsch → „Du musst um 6 Uhr aufstehen." &nbsp; 3. falsch → „Er muss am Samstag einkaufen." &nbsp; 4. ✅ richtig &nbsp; 5. falsch → „Ihr müsst um 17 Uhr anrufen." &nbsp; 6. ✅ richtig</p>
-    <p><strong>Leseverständnis:</strong> 1. b) um 8 Uhr &nbsp; 2. b) der Kühlschrank ist leer &nbsp; 3. a) am Mittwoch um 15 Uhr &nbsp; 4. c) sie trifft sich mit Freunden &nbsp; 5. a) weil Besuch kommt &nbsp; 6. b) frei — sie muss nichts tun</p>
+    <p><strong>Leseverständnis:</strong> 1. b) um 8 Uhr &nbsp; 2. a) arbeiten und einkaufen &nbsp; 3. b) am Mittwoch um 15 Uhr &nbsp; 4. a) ihre Eltern &nbsp; 5. b) Sie räumt die Wohnung auf. &nbsp; 6. a) Sie hat frei.</p>
     <p><strong>Freie Zusatzfrage:</strong> Individuelle Antwort — von der Lehrkraft mündlich zu korrigieren.</p>
     <p><strong>Freies Sprechen (Beispiele):</strong> Karte 1: Ich muss noch einkaufen. &nbsp; Karte 2: Mein Lieblingstag ist Freitag. &nbsp; Karte 3: Ja, ich habe am Donnerstag einen Termin. &nbsp; Karte 4: Ich muss am Montag früh aufstehen.</p>
   </div>
